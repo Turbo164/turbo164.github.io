@@ -133,6 +133,7 @@ async function signOutToGuest(){
  const {error}=await db.auth.signOut({scope:'local'});
  if(error){authUI('Could not sign out: '+error.message);return}
  session=null;customModels=[];photoAdmin=false;photoPending=new Set();switchState();authUI('Signed out. You are now browsing as a guest.');
+ if($('adminUtilities'))$('adminUtilities').hidden=true;
  $('photoAdminPanel').hidden=true;$('modelAdminPanel').hidden=true;
 }
 async function refreshAll({quiet=false}={}){
@@ -289,13 +290,14 @@ async function loadPhotoContributions(){
  }else photoPending=new Set();
  render();
  if(session)await checkPhotoAdmin();
- else{$('photoAdminPanel').hidden=true;$('modelAdminPanel').hidden=true;photoAdmin=false}
+ else{$('photoAdminPanel').hidden=true;$('modelAdminPanel').hidden=true;photoAdmin=false;if($('adminUtilities'))$('adminUtilities').hidden=true}
 }
 async function checkPhotoAdmin(){
  const {data,error}=await db.rpc('is_arbox_photo_admin');
  photoAdmin=!error&&data===true;
  $('photoAdminPanel').hidden=!photoAdmin;
  $('modelAdminPanel').hidden=!photoAdmin;
+ if($('adminUtilities'))$('adminUtilities').hidden=!photoAdmin;
  if(photoAdmin){await loadPhotoAdminQueue();await loadModelAdminQueue()}
 }
 async function loadPhotoAdminQueue(){
@@ -533,7 +535,7 @@ async function start(){
    if(old!==s?.user?.id){customModels=[];photoPending=new Set();switchState()}
    authUI();
    if(s){closeLoginDialog();setTimeout(async()=>{await loadCloud();await loadPublishedModels();await loadPhotoContributions();await loadMyModelSubmissions()},0);}
-   else {$('photoAdminPanel').hidden=true;$('modelAdminPanel').hidden=true;photoAdmin=false;loadPhotoContributions()}
+   else {$('photoAdminPanel').hidden=true;$('modelAdminPanel').hidden=true;photoAdmin=false;if($('adminUtilities'))$('adminUtilities').hidden=true;loadPhotoContributions()}
   });
  }
  await refreshAll({quiet:true});
