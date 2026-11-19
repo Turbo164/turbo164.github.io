@@ -1,4 +1,4 @@
-/* Turbo164 Smart Camera v2.2 — additive to existing classic app.js. No API secrets in browser. */
+/* Turbo164 Smart Camera v2.3 — additive to existing classic app.js. No API secrets in browser. */
 (() => {
   'use strict';
   const COMMON_BRANDS = [
@@ -466,9 +466,9 @@
       area.innerHTML='<p class="sc-hint">Enter a model, livery or product code. Try “Porsche Apple 89”.</p>';return;
     }
     area.innerHTML=`<div class="sc-count">${scanKind==='car'?'Visual lookalikes · ':scanKind==='family'?'Related vehicle releases · ':''}${rows.length} possible release${rows.length!==1?'s':''} ${selectedBrand?'for '+escapeHTML(selectedBrand):'across manufacturers'} · not guaranteed identifications</div>`+
-      (rows.length?rows.slice(0,40).map(showItem).join(''):'<p class="sc-hint">No matching release found. You can search the web or submit a model for review.</p>')+
+      (rows.length?rows.slice(0,40).map(showItem).join(''):'<p class="sc-hint">No matching release found. Search the web, or add the missing release details for review.</p>')+
        `<button type="button" class="sc-outline" id="scSearchWeb">🌐 Search web for this release</button>`+
-      `<button type="button" class="sc-outline" id="scUnlisted">Not listed? Submit a missing release</button>`;
+      `<button type="button" class="sc-outline" id="scUnlisted">Submit this release for review</button>`;
     if (rows.length>40)area.insertAdjacentHTML('beforeend','<p class="sc-hint">Showing top 40. Refine your search or choose a manufacturer.</p>');
   }
   async function addToGarage(status) {
@@ -513,13 +513,13 @@
     ].filter(Boolean).join('\n').slice(0,1000);
     $sc('modelNote').value=notes;
     const photo=imageFile;
-    const dialog=$sc('scDialog');
-    dialog.close();
+    const submission=$sc('submitMissingModel');
+    submission.hidden=false;
     if(photo) {
       try { await addModelPhotos([photo]); }
       catch(e){ $sc('modelSubmitStatus').textContent='Photo could not be copied: '+e.message; }
     }
-    $sc('submitMissingModel').scrollIntoView({behavior:'smooth',block:'start'});
+    submission.scrollIntoView({behavior:'smooth',block:'start'});
     $sc('modelGeneralStatus').textContent='Smart Camera filled this draft. Verify the product code, edition and source; submit for administrator approval. For new brands, the Supabase brand constraint migration must be applied.';
   }
   function renderSelection(row){
@@ -535,7 +535,7 @@
         <button type="button" class="sc-outline" id="scSearchSelected">Search web for selected release</button>
       </div>
       ${row.origin==='catalog' ? `<div class="sc-itemactions"><button type="button" class="sc-primary" data-sc-save="Owned">Add Owned</button><button type="button" data-sc-save="Ordered">Add Ordered</button><button type="button" data-sc-save="Wishlist">Wishlist</button></div>`:
-      `<p class="sc-hint">This release is not yet published in the Turbo164 catalog. Submit it for review; after approval everyone can find it.</p><button type="button" class="sc-primary" id="scSubmitSelected">Prefill missing-model submission</button>`}`;
+      `<p class="sc-hint">This release is not yet in the Turbo164 catalog. Check its details and submit it for administrator review.</p><button type="button" class="sc-primary" id="scSubmitSelected">Add release details for review</button>`}`;
   }
   function open(){
     if(!$sc('scDialog').open)$sc('scDialog').showModal();
@@ -545,7 +545,7 @@
     const main=document.querySelector('main');
     if(!main||$sc('scDialog'))return;
     const launch=document.createElement('section');launch.className='sc-launch';
-    launch.innerHTML='<div><strong>Smart Camera v2.2</strong><p>Scan a diecast, compare manufacturers and choose the exact release.</p></div><button type="button" id="scLaunchBtn" class="sc-primary">📷 Open Scanner</button>';
+    launch.innerHTML='<div><strong>Smart Camera v2.3</strong><p>Scan a diecast, compare manufacturers and choose the exact release.</p></div><button type="button" id="scLaunchBtn" class="sc-primary">📷 Open Scanner</button>';
     (main.querySelector('.hero')||main.firstElementChild)?.insertAdjacentElement('afterend',launch);
     const css=document.createElement('style');css.textContent=`
       .sc-launch{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#151e2b;border:1px solid #806a49;border-radius:16px;padding:15px;margin-bottom:20px}.sc-launch p{margin:5px 0 0;color:#aeb9c9;font-size:13px}
@@ -589,6 +589,8 @@
       <div id="scSelection" class="sc-selection" hidden></div>
       <p class="sc-hint">A matching livery is not proof of the manufacturer, vehicle generation, SKU, or edition. New releases require administrator approval before entering the shared catalog.</p>`;
     document.body.append(modal);
+    const submission=$sc('submitMissingModel');
+    if(submission) modal.append(submission);
     $sc('scLaunchBtn').addEventListener('click',open);
     $sc('scClose').addEventListener('click',()=>modal.close());
     $sc('scCamera').addEventListener('click',()=>$sc('scCameraInput').click());
@@ -666,3 +668,4 @@
   // For browser test harnesses only; never write data to the global catalogue.
   window.Turbo164Scanner = { getReleaseCandidates:()=>candidateRows().map(r=>({...r})), getManufacturers:knownBrands, releaseIdentity:candidateKey };
 })();
+
