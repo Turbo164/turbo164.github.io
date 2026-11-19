@@ -1,4 +1,4 @@
-/* Turbo164 Smart Camera v2.3 — additive to existing classic app.js. No API secrets in browser. */
+/* Turbo164 Smart Camera v2.6 — additive to existing classic app.js. No API secrets in browser. */
 (() => {
   'use strict';
   const COMMON_BRANDS = [
@@ -76,6 +76,7 @@
   function resetPhoto() {
     if (imageUrl) URL.revokeObjectURL(imageUrl);
     imageUrl=null;imageBlob=null;imageFile=null;
+    if ($sc('scAiConsent')) $sc('scAiConsent').checked=false;
     $sc('scPhoto').hidden=true;
     for (const edge of cropEdges) $sc('scCrop'+edge).value = 0;
     updateCrop();
@@ -124,12 +125,12 @@
      return window.__t164OcrLoad;
    }
   const cropEdges = ['Left', 'Top', 'Right', 'Bottom'];
-  let autoQuery = '', scanKind = '', photoRevision = 0;
+  let autoQuery = '', scanKind = '', photoRevision = 0, identifiedLabel = '';
   let referencesReady = Promise.resolve();
 
   function clearResults() {
     if (autoQuery && currentQuery() === autoQuery) $sc('scQuery').value = '';
-    autoQuery = ''; scanKind = ''; aiResult = null;
+    autoQuery = ''; scanKind = ''; aiResult = null; identifiedLabel = '';
     initialMatch = false; found = [];
     renderMatches();
   }
@@ -261,104 +262,73 @@
       'No catalog release matched. Try cropping closer or enter a model or code for web search.');
   }
 
-  // Compare spatial edge and color features. This is a small, local image index,
-  // and returns resemblance to available photos rather than a predicted identity.
-  function visualVector(source, mirror = false) {
-    const side = 64;
-    const canvas = document.createElement('canvas');
-    canvas.width = canvas.height = side;
-    const ctx = canvas.getContext('2d', {willReadFrequently:true});
-    if (mirror) {
-      ctx.translate(side, 0);
-      ctx.scale(-1, 1);
-    }
-    ctx.drawImage(source, 0, 0, side, side);
-    const {data} = ctx.getImageData(0, 0, side, side);
-    const luminance = new Float32Array(side * side);
-    for (let i = 0; i < luminance.length; i++) {
-      const p = i * 4;
-      luminance[i] = .299 * data[p] + .587 * data[p+1] + .114 * data[p+2];
-    }
-    const vector = new Float32Array(16 * 10);
-    let edgeEnergy = 0;
-    for (let y = 1; y < side - 1; y++) {
-      for (let x = 1; x < side - 1; x++) {
-        const i = y * side + x, p = i * 4;
-        const cell = (Math.floor(y / 16) * 4 + Math.floor(x / 16)) * 10;
-        const dx = luminance[i+1] - luminance[i-1], dy = luminance[i+side] - luminance[i-side];
-        const magnitude = Math.hypot(dx, dy);
-        const angle = (Math.atan2(dy, dx) + Math.PI) % Math.PI;
-        vector[cell + Math.floor(angle * 6 / Math.PI)] += magnitude;
-        edgeEnergy += magnitude;
-        const redGreen = data[p] - data[p+1], blueGreen = data[p+2] - data[p+1];
-        vector[cell + (redGreen >= 0 ? 6 : 7)] += Math.abs(redGreen) * .22;
-        vector[cell + (blueGreen >= 0 ? 8 : 9)] += Math.abs(blueGreen) * .22;
-      }
-    }
-    if (edgeEnergy < 4000) return null;
-    const length = Math.hypot(...vector);
-    return vector.map(value => value / length);
-  }
+  // Analyze the uploaded crop with AI, then match catalog entries by the
+  // identities read from the image. Never rank unrelated photos by pixels alone.
+  async function analyzeDiecastImage(preview, mode) {
+    const cropped = cropImage(preview, cropInsets(), 1280, 640);
+    const image = cropped.toDataURL('image/jpeg', 0.86);
+    const modeHint = mode === 'car'
+      ? 'Loose diecast car only. Identify likely real vehicle make, model and generation from body shape. Do not guess the diecast manufacturer unless visible.'
+      : 'Diecast packaging/photo. Read diecast manufacturer, vehicle make and model, generation, product code or SKU, livery, edition, and visible text.';
+    const hint = [modeHint, currentQuery()].filter(Boolean).join('\nCollector search hint: ');
+    msg('AI is analyzing the cropped photo…');
+    const {data,error} = await db.functions.invoke('smart-diecast-scan', {body:{image,hint}});
+    if (error) throw error;
+    const t = data?.identification;
+    if (!t) throw Error('The AI did not return an image analysis.');
+    const vehicleMake = String(t.vehicleMake || t.make || '').trim();
+    const model = String(t.name || t.model || t.vehicleModel || '').trim();
+    const generation = String(t.generation || '').trim();
+    const diecastBrand = String(t.diecastManufacturer || t.modelBrand || t.manufacturer || '').trim();
+    const productCode = String(t.productCode || t.sku || t.code || '').trim();
+    const edition = String(t.edition || t.editionType || '').trim();
+    const livery = String(t.livery || '').trim();
+    const visibleText = String(t.visibleText || '').trim().slice(0, 300);
+    const identity = mode === 'car'
+      ? [vehicleMake, model, generation]
+      : [diecastBrand, productCode, vehicleMake, model, generation, livery, edition];
+    const query = identity.filter(Boolean).join(' ').slice(0, 150);
+    if (!query) throw Error('The AI could not read enough detail. Enter the model name or product code to search manually.');
+    identifiedLabel = mode === 'car'
+      ? [vehicleMake, model, generation].filter(Boolean).join(' · ')
+      : [diecastBrand, productCode, [vehicleMake, model, generation, livery, edition].filter(Boolean).join(' ')].filter(Boolean).join(' · ');
+    aiResult = t;
+    $sc('scQuery').value = query;
+    autoQuery = query;
+    selectedBrand = '';
+    renderBrands();
 
-  function referencePhoto(url) {
-    return new Promise((resolve, reject) => {
-      const image = new Image();
-      const timer = setTimeout(() => {
-        image.removeAttribute('src');
-        reject(Error('Reference photo timed out'));
-      }, 4500);
-      image.crossOrigin = 'anonymous';
-      image.referrerPolicy = 'no-referrer';
-      image.onload = () => { clearTimeout(timer); resolve(image); };
-      image.onerror = () => { clearTimeout(timer); reject(Error('Reference photo unavailable')); };
-      image.src = url;
+    const corpus = [...allCatalogRows(), ...candidateRows()];
+    const makeKey = norm(vehicleMake);
+    const knownBrandKeys = knownBrands().map(norm);
+    const rawBrandKey = norm(diecastBrand);
+    const brandKey = rawBrandKey && knownBrandKeys.find(key => key === rawBrandKey || key.includes(rawBrandKey) || rawBrandKey.includes(key)) || '';
+    let eligible = corpus.filter(row => {
+      const rowMake = norm(row.vehicleMake || '');
+      const rowBrand = norm(row.manufacturer || '');
+      const makeMatches = !makeKey || !rowMake || rowMake === makeKey || rowMake.includes(makeKey) || makeKey.includes(rowMake);
+      const brandMatches = !brandKey || !rowBrand || rowBrand === brandKey || rowBrand.includes(brandKey) || brandKey.includes(rowBrand);
+      return makeMatches && brandMatches;
     });
-  }
-
-  // Insets for the specific stock photos, in left, top, right, bottom order.
-  // Match the full URL so an approved replacement photo never inherits this crop.
-  const stockPhotoCrops = new Map([
-    ["https://aichanvault.com/cdn/shop/files/qCKF0wy.png?v=1786664486&width=1445", [0.01, 0.14, 0.29, 0.18]],
-    ["https://www.tarmacworks.com/cdn/shop/files/T64R-076-BK_M01_1__jpg.jpg?v=1776073449&width=960", [0.25, 0.51, 0.21, 0.13]],
-    ["https://www.tarmacworks.com/cdn/shop/files/T64-075-RE2_M01.jpg?v=1782453925&width=960", [0.3, 0.24, 0.23, 0.29]],
-    ["https://www.tarmacworks.com/cdn/shop/files/T64-089-24CR11_M01.jpg?v=1782456959&width=960", [0.2, 0.33, 0.19, 0.23]],
-    ["https://www.tarmacworks.com/cdn/shop/files/T64-062-26NUR80_M01.jpg?v=1780660615&width=4534", [0.16, 0.17, 0.18, 0.17]],
-    ["https://www.tarmacworks.com/cdn/shop/files/T64G-048-GR_M02.jpg?v=1784514660&width=960", [0.2, 0.34, 0.19, 0.21]],
-    ["https://www.tarmacworks.com/cdn/shop/files/T64G-061-MJ_M01.jpg?v=1770870207&width=5760", [0.36, 0.35, 0.21, 0.31]],
-    ["https://www.tarmacworks.com/cdn/shop/files/T64-TL015-SC_M01.jpg?v=1784538151&width=960", [0.15, 0.4, 0.2, 0.29]]
-  ]);
-
-  async function findSimilarCars(image) {
-    const crop = cropImage(image, cropInsets(), 320);
-    const input = visualVector(crop);
-    if (!input) {msg('Too little detail to compare. Crop closer around the car or try a clearer photo.');return;}
-    const mirrored = visualVector(crop, true) || input;
-    const similarity = (a,b) => a.reduce((sum, value, i) => sum + value * b[i], 0);
-    const corpus = [...candidateRows(), ...allCatalogRows()];
-    const urls = [...new Set(corpus.map(row => row.imageUrl).filter(Boolean))].slice(0, 32);
-    const scores = new Map();
-    for (let i = 0; i < urls.length; i += 8) {
-      msg('Comparing catalog photos locally · ' + i + ' of ' + urls.length + ' attempted…');
-      await Promise.all(urls.slice(i, i+8).map(async url => {
-        try {
-          const photo = await referencePhoto(url);
-          const descriptor = visualVector(cropImage(photo, stockPhotoCrops.get(url) || [0,0,0,0], 320));
-          if (descriptor) scores.set(url, Math.max(similarity(input, descriptor), similarity(mirrored, descriptor)));
-        } catch { /* Failed or cross-origin-blocked reference images are skipped. */ }
-      }));
+    if (productCode) {
+      const codeKey = norm(productCode);
+      const exact = eligible.filter(row => norm(row.productCode || row.displayCode || '') === codeKey);
+      if (exact.length) eligible = exact;
     }
-    const bestScore = Math.max(0, ...scores.values());
-    const cutoff = Math.max(.70, bestScore - .055);
-    found = corpus.filter(row => scores.get(row.imageUrl) >= cutoff)
-      .map(row => ({...row, matchScore:scores.get(row.imageUrl)}))
-      .sort((a,b) => b.matchScore - a.matchScore).slice(0, 3);
-    msg('Compared ' + scores.size + ' of ' + urls.length + ' reference photos across ' + corpus.length +
-      ' releases. ' + (found.length ? 'Review the suggested lookalikes. Confirm the actual release before saving.' :
-        'No useful suggestions. Try another angle or search by model name.'));
+    found = eligible.map(row => ({...row, matchScore:score(row, query)}))
+      .filter(row => row.matchScore > 0)
+      .sort((a,b) => b.matchScore - a.matchScore || String(a.manufacturer).localeCompare(String(b.manufacturer)));
+    initialMatch = true;
+    scanKind = mode === 'car' ? 'car' : 'package';
+    renderMatches();
+    const note = mode === 'car'
+      ? 'AI likely identifies: ' + (identifiedLabel || 'vehicle unclear') + '. Compare catalog options; a loose car may not reveal its exact 1:64 maker or edition.'
+      : 'AI read: ' + (identifiedLabel || 'details unclear') + (visibleText ? ' · Package text: ' + visibleText : '') + '. Catalog options are filtered by the image details.';
+    msg(note);
   }
 
   function setScanControls(disabled) {
-    for (const id of ['scAnalyze', 'scMode', 'scCamera', 'scGallery', 'scFind', 'scClose', 'scQuery', 'scResetCrop', ...cropEdges.map(edge => 'scCrop' + edge)]) {
+    for (const id of ['scAnalyze', 'scMode', 'scCamera', 'scGallery', 'scFind', 'scClose', 'scQuery', 'scResetCrop', 'scAiConsent', ...cropEdges.map(edge => 'scCrop' + edge)]) {
       $sc(id).disabled = disabled;
     }
   }
@@ -366,18 +336,23 @@
   async function scanPhoto() {
     if (busy) return;
     if (!imageBlob) {msg('Take or upload a photo first.');return;}
+    const mode = $sc('scMode').value;
+    if (!$sc('scAiConsent').checked) {msg('Check the box to let AI analyze the cropped photo.');return;}
+    if (typeof db === 'undefined' || !db || typeof session === 'undefined' || !session) {
+      msg('Sign in to use AI image analysis. Manual catalog search is still available.');
+      return;
+    }
     clearResults();
     busy = true;
     setScanControls(true);
     selectedBrand = '';
     renderBrands();
-    scanKind = $sc('scMode').value;
+    scanKind = mode;
     try {
-      msg(scanKind === 'car' ? 'Preparing visual comparison…' : 'Loading the free OCR reader…');
+      msg('Preparing AI image analysis…');
       const image = $sc('scPreview');
       await Promise.all([image.decode(), referencesReady]);
-      if (scanKind === 'car') await findSimilarCars(image);
-      else await readPackaging(image);
+      await analyzeDiecastImage(image, mode);
     } catch (error) {
       msg('Scan could not finish. Manual catalog search is available. ' + error.message);
     } finally {
@@ -465,7 +440,7 @@
     if (!currentQuery() && !scanKind) {
       area.innerHTML='<p class="sc-hint">Enter a model, livery or product code. Try “Porsche Apple 89”.</p>';return;
     }
-    area.innerHTML=`<div class="sc-count">${scanKind==='car'?'Visual lookalikes · ':scanKind==='family'?'Related vehicle releases · ':''}${rows.length} possible release${rows.length!==1?'s':''} ${selectedBrand?'for '+escapeHTML(selectedBrand):'across manufacturers'} · not guaranteed identifications</div>`+
+    area.innerHTML=`<div class="sc-count">${scanKind==='car'?'AI vehicle matches · ':scanKind==='package'?'AI package matches · ':scanKind==='family'?'Related vehicle releases · ':''}${rows.length} possible release${rows.length!==1?'s':''} ${selectedBrand?'for '+escapeHTML(selectedBrand):'across manufacturers'} · not guaranteed identifications</div>`+
       (rows.length?rows.slice(0,40).map(showItem).join(''):'<p class="sc-hint">No matching release found. Search the web, or add the missing release details for review.</p>')+
        `<button type="button" class="sc-outline" id="scSearchWeb">🌐 Search web for this release</button>`+
       `<button type="button" class="sc-outline" id="scUnlisted">Submit this release for review</button>`;
@@ -545,7 +520,7 @@
     const main=document.querySelector('main');
     if(!main||$sc('scDialog'))return;
     const launch=document.createElement('section');launch.className='sc-launch';
-    launch.innerHTML='<div><strong>Smart Camera v2.3</strong><p>Scan a diecast, compare manufacturers and choose the exact release.</p></div><button type="button" id="scLaunchBtn" class="sc-primary">📷 Open Scanner</button>';
+    launch.innerHTML='<div><strong>Smart Camera v2.6</strong><p>Scan a diecast, compare manufacturers and choose the exact release.</p></div><button type="button" id="scLaunchBtn" class="sc-primary">📷 Open Scanner</button>';
     (main.querySelector('.hero')||main.firstElementChild)?.insertAdjacentElement('afterend',launch);
     const css=document.createElement('style');css.textContent=`
       .sc-launch{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#151e2b;border:1px solid #806a49;border-radius:16px;padding:15px;margin-bottom:20px}.sc-launch p{margin:5px 0 0;color:#aeb9c9;font-size:13px}
@@ -564,7 +539,7 @@
       <div class="sc-head"><h2 id="scTitle">📷 Turbo164 Smart Camera</h2><button id="scClose" type="button" aria-label="Close scanner">✕</button></div>
       <label for="scMode">Scan mode</label>
       <select id="scMode"><option value="packaging">Packaging</option><option value="car">Car Only</option></select>
-      <p id="scModeHelp" class="sc-hint">Frame the printed label or box. The first OCR scan may download reader files.</p>
+      <p id="scModeHelp" class="sc-hint">Frame the model and package. AI will read visible brand, model and product-code details.</p>
       <div class="sc-controls"><button type="button" class="sc-primary" id="scCamera">📷 Take photo</button><button type="button" class="sc-outline" id="scGallery">Choose photo</button></div>
       <input type="file" id="scCameraInput" accept="image/*" capture="environment" hidden>
       <input type="file" id="scGalleryInput" accept="image/*" hidden>
@@ -577,7 +552,8 @@
       </div>
       <label for="scQuery">Model name, livery or product code</label>
       <input type="search" id="scQuery" placeholder="e.g. Porsche Apple 89 or T64-015-AP" maxlength="150">
-      <p class="sc-hint">Scans run in your browser. Your photo is only shared if you submit it.</p>
+      <label class="sc-consent"><input type="checkbox" id="scAiConsent"><span id="scAiConsentText">I agree to send the cropped photo to AI for identification. It will not be published.</span></label>
+      <p class="sc-hint">AI analyzes the image, then matches the details it recognizes against the Turbo164 catalog. If it cannot identify the release, it will say so instead of choosing an unrelated car.</p>
       <div class="sc-controls"><button type="button" id="scAnalyze" class="sc-primary">Read packaging</button><button type="button" id="scFind" class="sc-outline">Search catalog & releases</button></div>
       <div id="scMessage" class="sc-message" role="status" aria-live="polite"></div>
       <div class="sc-step">2 · Choose manufacturer (searchable)</div>
@@ -587,7 +563,7 @@
       <div class="sc-step">3 · Choose exact release / package</div>
       <div id="scMatches"><p class="sc-hint">Search to find possible releases.</p></div>
       <div id="scSelection" class="sc-selection" hidden></div>
-      <p class="sc-hint">A matching livery is not proof of the manufacturer, vehicle generation, SKU, or edition. New releases require administrator approval before entering the shared catalog.</p>`;
+      <p class="sc-hint">AI results are suggestions based on the photo. Compare the product code, vehicle generation and packaging before choosing a catalog entry.</p>`;
     document.body.append(modal);
     const submission=$sc('submitMissingModel');
     if(submission) modal.append(submission);
@@ -601,10 +577,13 @@
     $sc('scMode').addEventListener('change', () => {
       clearResults();
       const car = $sc('scMode').value === 'car';
-      $sc('scAnalyze').textContent = car ? 'Find lookalikes' : 'Read packaging';
+      $sc('scAnalyze').textContent = car ? 'Identify vehicle' : 'Analyze package';
+      $sc('scAiConsentText').textContent = car
+        ? 'I agree to send the cropped car photo to AI to identify its likely make, model and generation.'
+        : 'I agree to send the cropped package photo to AI to read its diecast brand, product code and model details.';
       $sc('scModeHelp').textContent = car
-        ? 'Crop tightly around the loose car. The scanner compares shape and color against accessible catalog photos. Viewpoint and background can affect results. Verify the manufacturer, edition and SKU yourself.'
-        : 'Frame the printed label or box. The first OCR scan may download reader files.';
+        ? 'Crop tightly around the loose car. AI identifies the likely vehicle from the image; the exact diecast maker or edition may not be visible.'
+        : 'Frame the package label and model. AI reads the manufacturer, product code, vehicle, livery and edition from the photo.';
       msg('');
     });
     for (const [index, edge] of cropEdges.entries()) {
@@ -668,4 +647,5 @@
   // For browser test harnesses only; never write data to the global catalogue.
   window.Turbo164Scanner = { getReleaseCandidates:()=>candidateRows().map(r=>({...r})), getManufacturers:knownBrands, releaseIdentity:candidateKey };
 })();
+
 
