@@ -1,4 +1,4 @@
-/* Turbo164 Smart Camera v2.6 — additive to existing classic app.js. No API secrets in browser. */
+/* Turbo164 Smart Camera v2.6.2 — free browser OCR; no paid AI backend. */
 (() => {
   'use strict';
   const COMMON_BRANDS = [
@@ -76,7 +76,6 @@
   function resetPhoto() {
     if (imageUrl) URL.revokeObjectURL(imageUrl);
     imageUrl=null;imageBlob=null;imageFile=null;
-    if ($sc('scAiConsent')) $sc('scAiConsent').checked=false;
     $sc('scPhoto').hidden=true;
     for (const edge of cropEdges) $sc('scCrop'+edge).value = 0;
     updateCrop();
@@ -125,12 +124,12 @@
      return window.__t164OcrLoad;
    }
   const cropEdges = ['Left', 'Top', 'Right', 'Bottom'];
-  let autoQuery = '', scanKind = '', photoRevision = 0, identifiedLabel = '';
+  let autoQuery = '', scanKind = '', photoRevision = 0;
   let referencesReady = Promise.resolve();
 
   function clearResults() {
     if (autoQuery && currentQuery() === autoQuery) $sc('scQuery').value = '';
-    autoQuery = ''; scanKind = ''; aiResult = null; identifiedLabel = '';
+    autoQuery = ''; scanKind = ''; aiResult = null;
     initialMatch = false; found = [];
     renderMatches();
   }
@@ -229,7 +228,7 @@
     return {rows, hint, observedCode, vehicleLine};
   }
 
-  async function readPackaging(image) {
+  async function readPhotoText(image, scanMode) {
     const evidence = [];
     await loadOCR();
     const canvas = cropImage(image, cropInsets(), 1900, 950);
@@ -237,7 +236,7 @@
     try {
       worker = await window.Tesseract.createWorker('eng');
       for (const [index, mode] of ['11', '6', '11'].entries()) {
-        msg('Reading packaging locally · pass ' + (index + 1) + ' of 3…');
+        msg((scanMode === 'car' ? 'Reading visible car text locally · pass ' : 'Reading package text locally · pass ') + (index + 1) + ' of 3…');
         if (index === 1) enhance(canvas);
         if (index === 2) {
           const ctx = canvas.getContext('2d');
@@ -254,81 +253,23 @@
     } finally {
       if (worker) await worker.terminate();
     }
-    const {rows, hint, observedCode, vehicleLine} = packagingMatches(evidence, [...allCatalogRows(), ...candidateRows()], knownBrands());
+    const manualHint = currentQuery();
+    const matchEvidence = manualHint ? [...evidence, manualHint] : evidence;
+    const {rows, hint, observedCode, vehicleLine} = packagingMatches(matchEvidence, [...allCatalogRows(), ...candidateRows()], knownBrands());
     found = rows;
-    if (hint && !currentQuery()) $sc('scQuery').value = autoQuery = String(hint).slice(0, 150);
+    if (hint && !manualHint) $sc('scQuery').value = autoQuery = String(hint).slice(0, 150);
     aiResult = {name:vehicleLine, productCode:observedCode, visibleText: [...new Set(evidence.filter(Boolean))].join('\n')};
-    msg(rows.length ? 'Review the possible releases and confirm the manufacturer, edition and SKU.' :
-      'No catalog release matched. Try cropping closer or enter a model or code for web search.');
-  }
-
-  // Analyze the uploaded crop with AI, then match catalog entries by the
-  // identities read from the image. Never rank unrelated photos by pixels alone.
-  async function analyzeDiecastImage(preview, mode) {
-    const cropped = cropImage(preview, cropInsets(), 1280, 640);
-    const image = cropped.toDataURL('image/jpeg', 0.86);
-    const modeHint = mode === 'car'
-      ? 'Loose diecast car only. Identify likely real vehicle make, model and generation from body shape. Do not guess the diecast manufacturer unless visible.'
-      : 'Diecast packaging/photo. Read diecast manufacturer, vehicle make and model, generation, product code or SKU, livery, edition, and visible text.';
-    const hint = [modeHint, currentQuery()].filter(Boolean).join('\nCollector search hint: ');
-    msg('AI is analyzing the cropped photo…');
-    const {data,error} = await db.functions.invoke('smart-diecast-scan', {body:{image,hint}});
-    if (error) throw error;
-    const t = data?.identification;
-    if (!t) throw Error('The AI did not return an image analysis.');
-    const vehicleMake = String(t.vehicleMake || t.make || '').trim();
-    const model = String(t.name || t.model || t.vehicleModel || '').trim();
-    const generation = String(t.generation || '').trim();
-    const diecastBrand = String(t.diecastManufacturer || t.modelBrand || t.manufacturer || '').trim();
-    const productCode = String(t.productCode || t.sku || t.code || '').trim();
-    const edition = String(t.edition || t.editionType || '').trim();
-    const livery = String(t.livery || '').trim();
-    const visibleText = String(t.visibleText || '').trim().slice(0, 300);
-    const identity = mode === 'car'
-      ? [vehicleMake, model, generation]
-      : [diecastBrand, productCode, vehicleMake, model, generation, livery, edition];
-    const query = identity.filter(Boolean).join(' ').slice(0, 150);
-    if (!query) throw Error('The AI could not read enough detail. Enter the model name or product code to search manually.');
-    identifiedLabel = mode === 'car'
-      ? [vehicleMake, model, generation].filter(Boolean).join(' · ')
-      : [diecastBrand, productCode, [vehicleMake, model, generation, livery, edition].filter(Boolean).join(' ')].filter(Boolean).join(' · ');
-    aiResult = t;
-    $sc('scQuery').value = query;
-    autoQuery = query;
-    selectedBrand = '';
-    renderBrands();
-
-    const corpus = [...allCatalogRows(), ...candidateRows()];
-    const makeKey = norm(vehicleMake);
-    const knownBrandKeys = knownBrands().map(norm);
-    const rawBrandKey = norm(diecastBrand);
-    const brandKey = rawBrandKey && knownBrandKeys.find(key => key === rawBrandKey || key.includes(rawBrandKey) || rawBrandKey.includes(key)) || '';
-    let eligible = corpus.filter(row => {
-      const rowMake = norm(row.vehicleMake || '');
-      const rowBrand = norm(row.manufacturer || '');
-      const makeMatches = !makeKey || !rowMake || rowMake === makeKey || rowMake.includes(makeKey) || makeKey.includes(rowMake);
-      const brandMatches = !brandKey || !rowBrand || rowBrand === brandKey || rowBrand.includes(brandKey) || brandKey.includes(rowBrand);
-      return makeMatches && brandMatches;
-    });
-    if (productCode) {
-      const codeKey = norm(productCode);
-      const exact = eligible.filter(row => norm(row.productCode || row.displayCode || '') === codeKey);
-      if (exact.length) eligible = exact;
+    const readableText = evidence.some(text => norm(text).length >= 3);
+    if (scanMode === 'car' && !readableText && !manualHint) {
+      msg('No identifying text was readable on the loose car. Free OCR cannot identify a car by its shape. Enter a make/model or scan the package; no unrelated car was selected.');
+    } else {
+      msg(rows.length ? 'Text was read locally. Review possible catalog matches and confirm the exact release.' :
+        'No catalog release matched the readable text. Crop closer or enter a model name or code to search.');
     }
-    found = eligible.map(row => ({...row, matchScore:score(row, query)}))
-      .filter(row => row.matchScore > 0)
-      .sort((a,b) => b.matchScore - a.matchScore || String(a.manufacturer).localeCompare(String(b.manufacturer)));
-    initialMatch = true;
-    scanKind = mode === 'car' ? 'car' : 'package';
-    renderMatches();
-    const note = mode === 'car'
-      ? 'AI likely identifies: ' + (identifiedLabel || 'vehicle unclear') + '. Compare catalog options; a loose car may not reveal its exact 1:64 maker or edition.'
-      : 'AI read: ' + (identifiedLabel || 'details unclear') + (visibleText ? ' · Package text: ' + visibleText : '') + '. Catalog options are filtered by the image details.';
-    msg(note);
   }
 
   function setScanControls(disabled) {
-    for (const id of ['scAnalyze', 'scMode', 'scCamera', 'scGallery', 'scFind', 'scClose', 'scQuery', 'scResetCrop', 'scAiConsent', ...cropEdges.map(edge => 'scCrop' + edge)]) {
+    for (const id of ['scAnalyze', 'scMode', 'scCamera', 'scGallery', 'scFind', 'scClose', 'scQuery', 'scResetCrop', ...cropEdges.map(edge => 'scCrop' + edge)]) {
       $sc(id).disabled = disabled;
     }
   }
@@ -337,11 +278,6 @@
     if (busy) return;
     if (!imageBlob) {msg('Take or upload a photo first.');return;}
     const mode = $sc('scMode').value;
-    if (!$sc('scAiConsent').checked) {msg('Check the box to let AI analyze the cropped photo.');return;}
-    if (typeof db === 'undefined' || !db || typeof session === 'undefined' || !session) {
-      msg('Sign in to use AI image analysis. Manual catalog search is still available.');
-      return;
-    }
     clearResults();
     busy = true;
     setScanControls(true);
@@ -349,10 +285,10 @@
     renderBrands();
     scanKind = mode;
     try {
-      msg('Preparing AI image analysis…');
+      msg('Preparing local text scan…');
       const image = $sc('scPreview');
       await Promise.all([image.decode(), referencesReady]);
-      await analyzeDiecastImage(image, mode);
+      await readPhotoText(image, mode);
     } catch (error) {
       msg('Scan could not finish. Manual catalog search is available. ' + error.message);
     } finally {
@@ -440,7 +376,7 @@
     if (!currentQuery() && !scanKind) {
       area.innerHTML='<p class="sc-hint">Enter a model, livery or product code. Try “Porsche Apple 89”.</p>';return;
     }
-    area.innerHTML=`<div class="sc-count">${scanKind==='car'?'AI vehicle matches · ':scanKind==='package'?'AI package matches · ':scanKind==='family'?'Related vehicle releases · ':''}${rows.length} possible release${rows.length!==1?'s':''} ${selectedBrand?'for '+escapeHTML(selectedBrand):'across manufacturers'} · not guaranteed identifications</div>`+
+    area.innerHTML=`<div class="sc-count">${scanKind==='car'?'Text matches from car photo · ':scanKind==='packaging'?'Text matches from package · ':scanKind==='family'?'Related vehicle releases · ':''}${rows.length} possible release${rows.length!==1?'s':''} ${selectedBrand?'for '+escapeHTML(selectedBrand):'across manufacturers'} · verify the exact release</div>`+
       (rows.length?rows.slice(0,40).map(showItem).join(''):'<p class="sc-hint">No matching release found. Search the web, or add the missing release details for review.</p>')+
        `<button type="button" class="sc-outline" id="scSearchWeb">🌐 Search web for this release</button>`+
       `<button type="button" class="sc-outline" id="scUnlisted">Submit this release for review</button>`;
@@ -539,7 +475,7 @@
       <div class="sc-head"><h2 id="scTitle">📷 Turbo164 Smart Camera</h2><button id="scClose" type="button" aria-label="Close scanner">✕</button></div>
       <label for="scMode">Scan mode</label>
       <select id="scMode"><option value="packaging">Packaging</option><option value="car">Car Only</option></select>
-      <p id="scModeHelp" class="sc-hint">Frame the model and package. AI will read visible brand, model and product-code details.</p>
+      <p id="scModeHelp" class="sc-hint">Frame the package label. Free OCR reads visible brand, model and product-code text in your browser.</p>
       <div class="sc-controls"><button type="button" class="sc-primary" id="scCamera">📷 Take photo</button><button type="button" class="sc-outline" id="scGallery">Choose photo</button></div>
       <input type="file" id="scCameraInput" accept="image/*" capture="environment" hidden>
       <input type="file" id="scGalleryInput" accept="image/*" hidden>
@@ -552,9 +488,8 @@
       </div>
       <label for="scQuery">Model name, livery or product code</label>
       <input type="search" id="scQuery" placeholder="e.g. Porsche Apple 89 or T64-015-AP" maxlength="150">
-      <label class="sc-consent"><input type="checkbox" id="scAiConsent"><span id="scAiConsentText">I agree to send the cropped photo to AI for identification. It will not be published.</span></label>
-      <p class="sc-hint">AI analyzes the image, then matches the details it recognizes against the Turbo164 catalog. If it cannot identify the release, it will say so instead of choosing an unrelated car.</p>
-      <div class="sc-controls"><button type="button" id="scAnalyze" class="sc-primary">Read packaging</button><button type="button" id="scFind" class="sc-outline">Search catalog & releases</button></div>
+      <p class="sc-hint">The photo stays in your browser. OCR reads visible text only. Car Only cannot identify a vehicle from its shape; if no text is readable, enter the make/model or scan the package. No unrelated reference car will be suggested.</p>
+      <div class="sc-controls"><button type="button" id="scAnalyze" class="sc-primary">Read package text</button><button type="button" id="scFind" class="sc-outline">Search catalog & releases</button></div>
       <div id="scMessage" class="sc-message" role="status" aria-live="polite"></div>
       <div class="sc-step">2 · Choose manufacturer (searchable)</div>
       <input type="search" id="scBrandSearch" placeholder="Filter manufacturer names…" aria-label="Search manufacturers">
@@ -563,7 +498,7 @@
       <div class="sc-step">3 · Choose exact release / package</div>
       <div id="scMatches"><p class="sc-hint">Search to find possible releases.</p></div>
       <div id="scSelection" class="sc-selection" hidden></div>
-      <p class="sc-hint">AI results are suggestions based on the photo. Compare the product code, vehicle generation and packaging before choosing a catalog entry.</p>`;
+      <p class="sc-hint">OCR matches are based on text found in the photo. Check the product code, vehicle and edition before choosing a catalog entry.</p>`;
     document.body.append(modal);
     const submission=$sc('submitMissingModel');
     if(submission) modal.append(submission);
@@ -577,13 +512,10 @@
     $sc('scMode').addEventListener('change', () => {
       clearResults();
       const car = $sc('scMode').value === 'car';
-      $sc('scAnalyze').textContent = car ? 'Identify vehicle' : 'Analyze package';
-      $sc('scAiConsentText').textContent = car
-        ? 'I agree to send the cropped car photo to AI to identify its likely make, model and generation.'
-        : 'I agree to send the cropped package photo to AI to read its diecast brand, product code and model details.';
+      $sc('scAnalyze').textContent = car ? 'Read car text' : 'Read package text';
       $sc('scModeHelp').textContent = car
-        ? 'Crop tightly around the loose car. AI identifies the likely vehicle from the image; the exact diecast maker or edition may not be visible.'
-        : 'Frame the package label and model. AI reads the manufacturer, product code, vehicle, livery and edition from the photo.';
+        ? 'Crop around any visible logos, numbers or markings. Free OCR reads text only; it cannot identify the car from body shape.'
+        : 'Frame the package label and model. Free OCR reads the visible manufacturer, product code and model text locally.';
       msg('');
     });
     for (const [index, edge] of cropEdges.entries()) {

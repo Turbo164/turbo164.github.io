@@ -1,4 +1,4 @@
-const CACHE='turbo-164-brand-v16-smartcam-ai-both';
+const CACHE='turbo-164-brand-v18-smartcam-free-ocr';
 const PRECACHE=['./','index.html','app.js','config.js','catalog.json','manifest.webmanifest','smart-camera.js','scan-references.json'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(PRECACHE))));
 self.addEventListener('activate',event=>event.waitUntil(Promise.all([caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('arbox-garage-')||key.startsWith('turbo-164-brand-')&&key!==CACHE).map(key=>caches.delete(key)))),self.clients.claim()])));
