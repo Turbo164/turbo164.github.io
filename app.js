@@ -718,6 +718,7 @@ async function start(){
    const old=session?.user?.id;session=s;
    if(old!==s?.user?.id){customModels=[];photoPending=new Set();switchState()}
    authUI();
+   if(typeof window.communityAuthChanged==='function')window.communityAuthChanged();
    if(s){closeLoginDialog();setTimeout(async()=>{await loadCloud();await loadPublishedModels();await loadPhotoContributions();await loadMyModelSubmissions()},0);}
    else {$('photoAdminPanel').hidden=true;$('modelAdminPanel').hidden=true;photoAdmin=false;if($('adminUtilities'))$('adminUtilities').hidden=true;loadPhotoContributions()}
   });
