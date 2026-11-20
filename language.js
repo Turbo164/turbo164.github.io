@@ -155,6 +155,18 @@
     ['Items added here will appear in their own catalogue.','รายการที่เพิ่มจะปรากฏในแค็ตตาล็อกของหมวดนี้','ここに追加されたアイテムは専用カタログに表示されます。','添加到此处的条目会显示在对应目录中。'],
     ['0 items','0 รายการ','0 件','0 个条目']
   );
+  rows.push(
+    ['Filter diecast releases','กรองรุ่นรถไดแคสต์','ミニカー製品を絞り込む','筛选合金车款式'],
+    ['All diecast models','รถไดแคสต์ทั้งหมด','すべてのミニカー','所有合金车款式'],
+    ['Car manufacturer','ผู้ผลิตรถยนต์','自動車メーカー','汽车制造商'],
+    ['‹ Back','‹ ย้อนกลับ','‹ 戻る','‹ 返回'],
+    ['‹ All brands','‹ ทุกแบรนด์','‹ すべてのブランド','‹ 所有品牌'],
+    ['No diecast brands are listed yet.','ยังไม่มีแบรนด์รถไดแคสต์ในรายการ','ミニカーブランドはまだ登録されていません。','尚未列出合金车品牌。'],
+    ['No car manufacturers are listed in this catalog.','ยังไม่มีผู้ผลิตรถยนต์ในแค็ตตาล็อกนี้','このカタログには自動車メーカーがまだ登録されていません。','此目录中尚未列出汽车制造商。'],
+    ['catalogue','แค็ตตาล็อก','カタログ','目录'],
+    ['All brands','ทุกแบรนด์','すべてのブランド','所有品牌'],
+    ['All brands ›','ทุกแบรนด์ ›','すべてのブランド ›','所有品牌 ›']
+  );
   const dictionaries={th:{},ja:{},zh:{}};
   rows.forEach(([en,th,ja,zh])=>{dictionaries.th[en]=th;dictionaries.ja[en]=ja;dictionaries.zh[en]=zh;});
   const langStore='turbo164-language-v1';
@@ -166,6 +178,9 @@
   function lookup(raw,lang=language){
     const clean=String(raw??'').trim();if(!clean||lang==='en')return clean;
     const dict=dictionaries[lang];if(dict[clean])return dict[clean];
+    let match=clean.match(/^All (.+) models$/);if(match)return ({th:`รุ่นทั้งหมดของ ${match[1]}`,ja:`${match[1]}の全モデル`,zh:`所有 ${match[1]} 车型`})[lang];
+    match=clean.match(/^(.+) · (.+) catalogue$/);if(match)return `${match[1]} · ${dict.catalogue}`;
+    match=clean.match(/^(.+) diecast catalogue$/);if(match)return `${dict[match[1]]||match[1]} · ${lang==='th'?'รถไดแคสต์':lang==='ja'?'ミニカー': '合金车'} ${dict.catalogue}`;
     let match=clean.match(/^(\d+) models$/);if(match)return ({th:`${match[1]} รุ่น`,ja:`${match[1]} モデル`,zh:`${match[1]} 个车型`})[lang];
     match=clean.match(/^(\d+) possible releases?$/);if(match)return ({th:`${match[1]} รุ่นที่อาจตรงกัน`,ja:`候補製品 ${match[1]} 件`,zh:`${match[1]} 个可能款式`})[lang];
     let dynamic=clean.match(/^Reading (visible car|package) text locally · pass (\d+) of 3…$/);

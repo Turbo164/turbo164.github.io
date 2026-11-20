@@ -1,7 +1,7 @@
 const $=id=>document.getElementById(id);const C=window.ARBOX_CONFIG||{};
 const cloudReady=!!(C.supabaseUrl&&C.supabaseAnonKey&&window.supabase);
 const db=cloudReady?window.supabase.createClient(C.supabaseUrl,C.supabaseAnonKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}}):null;
-let catalog=[],state={},session=null,filter='All',catalogView='Diecast',selectedDiecastBrand='All',radar=[],customModels=[],communityModels=[];
+let catalog=[],state={},session=null,filter='All',catalogView='Diecast',selectedDiecastBrand='All',selectedDiecastMake='All',diecastMenuLevel='root',diecastMenuBrand='All',radar=[],customModels=[],communityModels=[];
 const PHOTO_BUCKET='arbox-photo-contributions';
 const MODEL_BUCKET='arbox-model-submissions';
 let modelPhotos=[]; 
@@ -17,6 +17,9 @@ function saveLocal(){if(session)localStorage.setItem(userKey(),JSON.stringify(st
 function switchState(){state=session?getLocal(userKey()):{};render()}
 function applyItemOverrides(m){const o=itemOverrides[String(m.id)];if(!o)return m;const next={...m};if(o.manufacturer)next.manufacturer=o.manufacturer;if(o.vehicle_make){next.brand=o.vehicle_make;next.vehicleMake=o.vehicle_make}if(o.name)next.name=o.name;if(o.product_code!==null&&o.product_code!==undefined)next.number=o.product_code;if(o.edition_type){next.variant=o.edition_type;next.editionType=o.edition_type}if(o.release)next.release=o.release;if(o.release_year!==null&&o.release_year!==undefined)next.releaseYear=o.release_year;if(o.community_badge!==null&&o.community_badge!==undefined)next.communityBadge=o.community_badge;if(o.source_url!==null&&o.source_url!==undefined)next.photoSource=safeSourceUrl(o.source_url);if(o.resolved_image_url||o.image_url)next.adminImageUrl=safeSourceUrl(o.resolved_image_url||o.image_url);if(o.hide_image===true)next.adminHideImage=true;return next}
 function allModels(){return [...catalog,...communityModels,...customModels].map(applyItemOverrides).filter(eligible)}
+function sharedDiecastModels(){return [...catalog,...communityModels].map(applyItemOverrides).filter(eligible)}
+function availableDiecastBrands(){return [...new Set(sharedDiecastModels().map(maker).filter(Boolean))].sort((a,b)=>a.localeCompare(b))}
+function availableCarManufacturers(brand){return [...new Set(sharedDiecastModels().filter(m=>maker(m)===brand).map(m=>String(m.brand||'').trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b))}
 
 state={};
 const statuses=['Owned','Ordered','Missing','Unconfirmed','Wishlist'];
@@ -31,14 +34,13 @@ function actual(m){return state[m.id]||(m.community?'Not tracking':'Missing')}
 function render(){
  const q=$('search').value.toLowerCase();
  const all=allModels();
- const items=catalogView==='Diecast'?all.filter(m=>(selectedDiecastBrand==='All'||maker(m)===selectedDiecastBrand)&&(filter==='All'||(filter==='Chase'&&edition(m)==='Chase')||(filter==='Event'&&edition(m)==='Event Exclusive')||(filter==='Limited'&&edition(m)==='Limited Edition')||(filter==='Upcoming'&&['TBA','Preorder','Announced','Upcoming'].includes(m.release)))&&(`${m.number} ${displayLabel(m)} ${m.name} ${m.brand} ${maker(m)} ${edition(m)}`.toLowerCase().includes(q))):[];
+ const items=catalogView==='Diecast'?all.filter(m=>(selectedDiecastBrand==='All'||maker(m)===selectedDiecastBrand)&&(selectedDiecastMake==='All'||String(m.brand||'').trim().toLowerCase()===selectedDiecastMake.toLowerCase())&&(filter==='All'||(filter==='Chase'&&edition(m)==='Chase')||(filter==='Event'&&edition(m)==='Event Exclusive')||(filter==='Limited'&&edition(m)==='Limited Edition')||(filter==='Upcoming'&&['TBA','Preorder','Announced','Upcoming'].includes(m.release)))&&(`${m.number} ${displayLabel(m)} ${m.name} ${m.brand} ${maker(m)} ${edition(m)}`.toLowerCase().includes(q))):[];
  // Don't misrepresent public catalogue items as a guest's private collection.
  $('owned').textContent=session?all.filter(m=>actual(m)==='Owned').length:'—';
  $('ordered').textContent=session?all.filter(m=>actual(m)==='Ordered').length:'—';
  $('missing').textContent=session?all.filter(m=>actual(m)==='Missing').length:'—';
- $('catalogTitle').textContent=catalogView==='Diecast'?(selectedDiecastBrand==='All'?'Diecast catalogue':`${selectedDiecastBrand} catalogue`):`${catalogView} catalogue`;
+ $('catalogTitle').textContent=catalogView==='Diecast'?(selectedDiecastBrand==='All'?(filter==='All'?'Diecast catalogue':`${filter} diecast catalogue`):selectedDiecastMake==='All'?`${selectedDiecastBrand} catalogue`:`${selectedDiecastBrand} · ${selectedDiecastMake} catalogue`):`${catalogView} catalogue`;
  $('count').textContent=catalogView==='Diecast'?`${items.length} models`:'0 items';
- $('filters').hidden=catalogView!=='Diecast';
  $('diecastMenuButton').classList.toggle('active',catalogView==='Diecast');
  document.querySelectorAll('[data-category]').forEach(button=>button.classList.toggle('active',button.dataset.category===catalogView));
  $('models').innerHTML=items.map(m=>{
@@ -436,7 +438,7 @@ async function loadPublishedModels(){
   release:x.release,releaseYear:x.release_year,photo:pictures[x.id]||null,
   photoSource:safeSourceUrl(x.source_url),community:true
  }));
- render();
+ renderDiecastMenu();render();
 }
 function safeSourceUrl(value){
  try{const url=new URL(value);return ['https:','http:'].includes(url.protocol)?url.href:''}catch{return ''}
@@ -592,21 +594,55 @@ async function loadModelAdminQueue(){
 }
 
 function closeDiecastMenu(){$('diecastMenu').hidden=true;$('diecastMenuButton').setAttribute('aria-expanded','false')}
+function renderDiecastMenu(){
+ const menu=$('diecastMenu');
+ if(diecastMenuLevel==='root'){
+  menu.innerHTML=`<button type="button" data-open-brand-list>All brands ›</button><div class="diecast-menu-separator"></div><div class="diecast-menu-note">Filter diecast releases</div><button type="button" data-diecast-filter="Chase">Chase</button><button type="button" data-diecast-filter="Event">Event</button><button type="button" data-diecast-filter="Limited">Limited</button><button type="button" data-diecast-filter="Upcoming">Upcoming</button>`;
+  return;
+ }
+ if(diecastMenuLevel==='brands'){
+  const brands=availableDiecastBrands();
+  menu.innerHTML=`<div class="diecast-menu-heading"><button type="button" class="diecast-menu-back" data-menu-back="root">‹ Back</button><strong>All brands</strong></div><button type="button" data-select-all-diecast>All diecast models</button><div class="diecast-menu-separator"></div>${brands.map(brand=>`<button type="button" data-select-diecast-brand="${esc(brand)}">${esc(brand)} ›</button>`).join('')||'<div class="diecast-menu-note">No diecast brands are listed yet.</div>'}`;
+  return;
+ }
+ const makes=availableCarManufacturers(diecastMenuBrand);
+ menu.innerHTML=`<div class="diecast-menu-heading"><button type="button" class="diecast-menu-back" data-menu-back="brands">‹ All brands</button><strong>${esc(diecastMenuBrand)}</strong></div><button type="button" data-select-brand-all="${esc(diecastMenuBrand)}">All ${esc(diecastMenuBrand)} models</button><div class="diecast-menu-separator"></div><div class="diecast-menu-note">Car manufacturer</div>${makes.map(make=>`<button type="button" data-select-car-make="${esc(make)}">${esc(make)}</button>`).join('')||'<div class="diecast-menu-note">No car manufacturers are listed in this catalog.</div>'}`;
+}
 function applyCatalogRouteFromUrl(){
- const url=new URL(location.href),section=url.searchParams.get('section'),brand=url.searchParams.get('brand');
+ const url=new URL(location.href),section=url.searchParams.get('section'),brand=url.searchParams.get('brand'),make=url.searchParams.get('make'),releaseFilter=url.searchParams.get('filter');
  const sections=['Diecast','Diorama','Figure','Accessory','Other'];
  catalogView=sections.find(value=>value.toLowerCase()===String(section||'diecast').toLowerCase())||'Diecast';
- selectedDiecastBrand=catalogView==='Diecast'&&allowedBrands.includes(brand)?brand:'All';
- filter='All';closeDiecastMenu();
+ selectedDiecastBrand=catalogView==='Diecast'&&availableDiecastBrands().includes(brand)?brand:'All';
+ selectedDiecastMake=selectedDiecastBrand!=='All'&&make?make:'All';
+ filter=catalogView==='Diecast'&&['Chase','Event','Limited','Upcoming'].includes(releaseFilter)?releaseFilter:'All';
+ diecastMenuLevel='root';diecastMenuBrand='All';closeDiecastMenu();
 }
-function navigateCatalog(section,brand='All'){
- catalogView=['Diecast','Diorama','Figure','Accessory','Other'].includes(section)?section:'Diecast';
- selectedDiecastBrand=catalogView==='Diecast'&&allowedBrands.includes(brand)?brand:'All';filter='All';$('search').value='';
+function updateCatalogUrl(){
  const url=new URL(location.href);url.searchParams.set('section',catalogView.toLowerCase());
  if(catalogView==='Diecast'&&selectedDiecastBrand!=='All')url.searchParams.set('brand',selectedDiecastBrand);else url.searchParams.delete('brand');
- history.pushState({catalogView,selectedDiecastBrand},'',url);closeDiecastMenu();
- document.querySelectorAll('#filters button').forEach(button=>button.classList.toggle('active',button.dataset.filter==='All'));
- render();$('catalogTitle').scrollIntoView({behavior:'smooth',block:'start'});
+ if(catalogView==='Diecast'&&selectedDiecastMake!=='All')url.searchParams.set('make',selectedDiecastMake);else url.searchParams.delete('make');
+ if(catalogView==='Diecast'&&filter!=='All')url.searchParams.set('filter',filter);else url.searchParams.delete('filter');
+ history.pushState({catalogView,selectedDiecastBrand,selectedDiecastMake,filter},'',url);
+}
+function navigateCatalog(section,brand='All',make='All',releaseFilter='All'){
+ catalogView=['Diecast','Diorama','Figure','Accessory','Other'].includes(section)?section:'Diecast';
+ selectedDiecastBrand=catalogView==='Diecast'&&availableDiecastBrands().includes(brand)?brand:'All';
+ selectedDiecastMake=selectedDiecastBrand!=='All'&&make!=='All'&&availableCarManufacturers(selectedDiecastBrand).includes(make)?make:'All';
+ filter=catalogView==='Diecast'&&['Chase','Event','Limited','Upcoming'].includes(releaseFilter)?releaseFilter:'All';$('search').value='';
+ updateCatalogUrl();closeDiecastMenu();render();$('catalogTitle').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function handleDiecastMenuClick(event){
+ const button=event.target.closest('button');if(!button)return;
+ if(button.hasAttribute('data-open-brand-list')){diecastMenuLevel='brands';renderDiecastMenu();return}
+ if(button.dataset.menuBack){diecastMenuLevel=button.dataset.menuBack;if(diecastMenuLevel==='root')diecastMenuBrand='All';renderDiecastMenu();return}
+ if(button.hasAttribute('data-select-all-diecast')){navigateCatalog('Diecast');return}
+ if(button.dataset.selectDiecastBrand){
+  diecastMenuBrand=button.dataset.selectDiecastBrand;diecastMenuLevel='makes';
+  navigateCatalog('Diecast',diecastMenuBrand);$('diecastMenu').hidden=false;$('diecastMenuButton').setAttribute('aria-expanded','true');renderDiecastMenu();return;
+ }
+ if(button.dataset.selectBrandAll){navigateCatalog('Diecast',button.dataset.selectBrandAll);return}
+ if(button.dataset.selectCarMake){navigateCatalog('Diecast',diecastMenuBrand,button.dataset.selectCarMake);return}
+ if(button.dataset.diecastFilter){navigateCatalog('Diecast','All','All',button.dataset.diecastFilter)}
 }
 
 async function start(){
@@ -614,18 +650,16 @@ async function start(){
  applyCatalogRouteFromUrl();
  render();
  $('search').oninput=render;
- document.querySelectorAll('#filters button').forEach(b=>b.onclick=()=>{
-  filter=b.dataset.filter;
-  document.querySelectorAll('#filters button').forEach(x=>x.classList.toggle('active',x===b));
-  render();
- });
+ renderDiecastMenu();
+ $('diecastMenu').addEventListener('click',handleDiecastMenuClick);
  $('diecastMenuButton').onclick=()=>{
-  if(catalogView!=='Diecast')navigateCatalog('Diecast','All');
-  const menu=$('diecastMenu');menu.hidden=!menu.hidden;$('diecastMenuButton').setAttribute('aria-expanded',String(!menu.hidden));
+  if(catalogView!=='Diecast')navigateCatalog('Diecast');
+  const menu=$('diecastMenu');const opening=menu.hidden;
+  if(opening){diecastMenuLevel='root';diecastMenuBrand='All';renderDiecastMenu()}
+  menu.hidden=!opening;$('diecastMenuButton').setAttribute('aria-expanded',String(opening));
  };
- document.querySelectorAll('[data-diecast-brand]').forEach(button=>button.onclick=()=>navigateCatalog('Diecast',button.dataset.diecastBrand));
  document.querySelectorAll('[data-category]').forEach(button=>button.onclick=()=>navigateCatalog(button.dataset.category));
- window.addEventListener('popstate',()=>{applyCatalogRouteFromUrl();render()});
+ window.addEventListener('popstate',()=>{applyCatalogRouteFromUrl();render();renderDiecastMenu()});
  document.addEventListener('click',event=>{if(!event.target.closest('.diecast-nav'))closeDiecastMenu()});
  $('syncBtn').onclick=()=>refreshAll();
  $('accountMenuRefresh').onclick=()=>{$('accountMenu').hidden=true;refreshAll()};
