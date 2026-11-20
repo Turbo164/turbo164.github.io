@@ -1,5 +1,5 @@
-const CACHE='turbo-164-brand-v28-community';
-const PRECACHE=['./','index.html','app.js?v=admin-full-card-12','language.js?v=5','config.js','catalog.json','manifest.webmanifest','smart-camera.js','scan-references.json','community.js?v=1'];
+const CACHE='turbo-164-brand-v29-language-fix';
+const PRECACHE=['./','index.html','app.js?v=admin-full-card-12','language.js?v=6','config.js','catalog.json','manifest.webmanifest','smart-camera.js','scan-references.json','community.js?v=1'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(PRECACHE))));
 self.addEventListener('activate',event=>event.waitUntil(Promise.all([caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('arbox-garage-')||key.startsWith('turbo-164-brand-')&&key!==CACHE).map(key=>caches.delete(key)))),self.clients.claim()])));
 self.addEventListener('fetch',event=>{if(event.request.method!=='GET'||new URL(event.request.url).origin!==self.location.origin)return;event.respondWith(fetch(event.request).catch(()=>caches.match(event.request)))});

@@ -230,7 +230,7 @@
     let match=clean.match(/^All (.+) models$/);if(match)return ({th:`รุ่นทั้งหมดของ ${match[1]}`,ja:`${match[1]}の全モデル`,zh:`所有 ${match[1]} 车型`})[lang];
     match=clean.match(/^(.+) · (.+) catalogue$/);if(match)return `${match[1]} · ${dict.catalogue}`;
     match=clean.match(/^(.+) diecast catalogue$/);if(match)return `${dict[match[1]]||match[1]} · ${lang==='th'?'รถไดแคสต์':lang==='ja'?'ミニカー': '合金车'} ${dict.catalogue}`;
-    let match=clean.match(/^(\d+) models$/);if(match)return ({th:`${match[1]} รุ่น`,ja:`${match[1]} モデル`,zh:`${match[1]} 个车型`})[lang];
+    match=clean.match(/^(\d+) models$/);if(match)return ({th:`${match[1]} รุ่น`,ja:`${match[1]} モデル`,zh:`${match[1]} 个车型`})[lang];
     match=clean.match(/^(\d+) possible releases?$/);if(match)return ({th:`${match[1]} รุ่นที่อาจตรงกัน`,ja:`候補製品 ${match[1]} 件`,zh:`${match[1]} 个可能款式`})[lang];
     let dynamic=clean.match(/^Reading (visible car|package) text locally · pass (\d+) of 3…$/);
     if(dynamic){const templates={th:dynamic[1]==='visible car'?['กำลังอ่านข้อความบนรถในอุปกรณ์ · รอบที่ ',' จาก 3…']:['กำลังอ่านข้อความบนแพ็กเกจในอุปกรณ์ · รอบที่ ',' จาก 3…'],ja:dynamic[1]==='visible car'?['車体の文字を端末内で読取中 · ',' / 3…']:['パッケージの文字を端末内で読取中 · ',' / 3…'],zh:dynamic[1]==='visible car'?['正在本地读取车身文字 · 第 ',' / 3…']:['正在本地读取包装文字 · 第 ',' / 3…']}[lang];return templates[0]+dynamic[2]+templates[1]}
