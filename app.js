@@ -598,16 +598,18 @@ function renderDiecastMenu(){
  const menu=$('diecastMenu');
  if(diecastMenuLevel==='root'){
   menu.innerHTML=`<button type="button" data-open-brand-list>All brands ›</button><div class="diecast-menu-separator"></div><div class="diecast-menu-note">Filter diecast releases</div><button type="button" data-diecast-filter="Chase">Chase</button><button type="button" data-diecast-filter="Event">Event</button><button type="button" data-diecast-filter="Limited">Limited</button><button type="button" data-diecast-filter="Upcoming">Upcoming</button>`;
-  return;
+  bindDiecastMenuActions(menu);return;
  }
  if(diecastMenuLevel==='brands'){
   const brands=availableDiecastBrands();
   menu.innerHTML=`<div class="diecast-menu-heading"><button type="button" class="diecast-menu-back" data-menu-back="root">‹ Back</button><strong>All brands</strong></div><button type="button" data-select-all-diecast>All diecast models</button><div class="diecast-menu-separator"></div>${brands.map(brand=>`<button type="button" data-select-diecast-brand="${esc(brand)}">${esc(brand)} ›</button>`).join('')||'<div class="diecast-menu-note">No diecast brands are listed yet.</div>'}`;
-  return;
+  bindDiecastMenuActions(menu);return;
  }
  const makes=availableCarManufacturers(diecastMenuBrand);
  menu.innerHTML=`<div class="diecast-menu-heading"><button type="button" class="diecast-menu-back" data-menu-back="brands">‹ All brands</button><strong>${esc(diecastMenuBrand)}</strong></div><button type="button" data-select-brand-all="${esc(diecastMenuBrand)}">All ${esc(diecastMenuBrand)} models</button><div class="diecast-menu-separator"></div><div class="diecast-menu-note">Car manufacturer</div>${makes.map(make=>`<button type="button" data-select-car-make="${esc(make)}">${esc(make)}</button>`).join('')||'<div class="diecast-menu-note">No car manufacturers are listed in this catalog.</div>'}`;
+ bindDiecastMenuActions(menu);
 }
+function bindDiecastMenuActions(menu){menu.querySelectorAll('button').forEach(button=>{button.onclick=()=>handleDiecastMenuButton(button)})}
 function applyCatalogRouteFromUrl(){
  const url=new URL(location.href),section=url.searchParams.get('section'),brand=url.searchParams.get('brand'),make=url.searchParams.get('make'),releaseFilter=url.searchParams.get('filter');
  const sections=['Diecast','Diorama','Figure','Accessory','Other'];
@@ -631,8 +633,8 @@ function navigateCatalog(section,brand='All',make='All',releaseFilter='All'){
  filter=catalogView==='Diecast'&&['Chase','Event','Limited','Upcoming'].includes(releaseFilter)?releaseFilter:'All';$('search').value='';
  updateCatalogUrl();closeDiecastMenu();render();$('catalogTitle').scrollIntoView({behavior:'smooth',block:'start'});
 }
-function handleDiecastMenuClick(event){
- const button=event.target.closest('button');if(!button)return;
+function handleDiecastMenuButton(button){
+ if(!button)return;
  if(button.hasAttribute('data-open-brand-list')){diecastMenuLevel='brands';renderDiecastMenu();return}
  if(button.dataset.menuBack){diecastMenuLevel=button.dataset.menuBack;if(diecastMenuLevel==='root')diecastMenuBrand='All';renderDiecastMenu();return}
  if(button.hasAttribute('data-select-all-diecast')){navigateCatalog('Diecast');return}
@@ -651,7 +653,6 @@ async function start(){
  render();
  $('search').oninput=render;
  renderDiecastMenu();
- $('diecastMenu').addEventListener('click',handleDiecastMenuClick);
  $('diecastMenuButton').onclick=()=>{
   if(catalogView!=='Diecast')navigateCatalog('Diecast');
   const menu=$('diecastMenu');const opening=menu.hidden;
