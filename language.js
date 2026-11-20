@@ -1,0 +1,199 @@
+/* Turbo164 UI translations. Catalogue names and user-entered content stay as entered. */
+(() => {
+  'use strict';
+  const rows = [
+    ['Website language','ภาษาเว็บไซต์','ウェブサイトの言語','网站语言'],
+    ['Refresh catalogue and private garage','รีเฟรชแค็ตตาล็อกและโรงรถส่วนตัว','カタログとマイガレージを更新','刷新目录和个人车库'],
+    ['Refresh','รีเฟรช','更新','刷新'],['↻ Refresh','↻ รีเฟรช','↻ 更新','↻ 刷新'],['↻ Refreshing…','↻ กำลังรีเฟรช…','↻ 更新中…','↻ 正在刷新…'],
+    ['Log in','เข้าสู่ระบบ','ログイン','登录'],['👤 Log in','👤 เข้าสู่ระบบ','👤 ログイン','👤 登录'],['Log in / Sign up','เข้าสู่ระบบ / สมัครสมาชิก','ログイン / 新規登録','登录 / 注册'],['Log out','ออกจากระบบ','ログアウト','退出登录'],['Guest','ผู้เยี่ยมชม','ゲスト','访客'],['Guest · Log in','ผู้เยี่ยมชม · เข้าสู่ระบบ','ゲスト · ログイン','访客 · 登录'],['Guest · browsing only','ผู้เยี่ยมชม · ดูอย่างเดียว','ゲスト · 閲覧のみ','访客 · 仅浏览'],
+    ['Your miniature garage.','โรงรถโมเดลจิ๋วของคุณ','あなたのミニチュアガレージ','您的迷你车库'],['Four diecast brands · One shared catalogue, your own saved garage','รถไดแคสต์ 4 แบรนด์ · แค็ตตาล็อกร่วมและโรงรถส่วนตัวของคุณ','4つのミニカーブランド · 共通カタログと自分専用ガレージ','四个合金车品牌 · 共享目录与您的个人车库'],
+    ['Owned','มีแล้ว','已拥有','已拥有'],['Ordered','สั่งซื้อแล้ว','注文済み','已订购'],['Missing','ยังไม่มี','未拥有','缺少'],['Unconfirmed','ยังไม่ยืนยัน','未确认','未确认'],['Wishlist','สิ่งที่อยากได้','ほしい物リスト','愿望清单'],['＋ Choose status to save','＋ เลือกสถานะเพื่อบันทึก','＋ 保存する状態を選択','＋ 选择状态以保存'],['＋ Add to my private garage','＋ เพิ่มในโรงรถส่วนตัว','＋ マイガレージに追加','＋ 添加到个人车库'],
+    ['Loading collection…','กำลังโหลดคอลเล็กชัน…','コレクションを読み込み中…','正在加载收藏…'],['Shared catalogue & my garage','แค็ตตาล็อกร่วมและโรงรถของฉัน','共有カタログとマイガレージ','共享目录与我的车库'],['Search diecast brand, model or product number…','ค้นหาแบรนด์ รุ่น หรือรหัสสินค้า…','ブランド、モデル、商品番号を検索…','搜索品牌、车型或产品编号…'],
+    ['All','ทั้งหมด','すべて','全部'],['Chase','รุ่น Chase','チェイス','追逐版'],['Event','รุ่นพิเศษงานอีเวนต์','イベント限定','活动版'],['Limited','รุ่นลิมิเต็ด','限定版','限量版'],['Upcoming','เร็ว ๆ นี้','発売予定','即将推出'],['Regular','รุ่นปกติ','通常版','常规版'],['Event Exclusive','รุ่นพิเศษเฉพาะงาน','イベント限定品','活动限定'],['Limited Edition','รุ่นลิมิเต็ด','限定版','限量版'],['Unverified','ยังไม่ยืนยัน','未验证','未验证'],['Announced','ประกาศแล้ว','已公布','已公布'],['Preorder','เปิดจอง','予約受付中','预订中'],['TBA','รอประกาศ','未定','待定'],['Released','วางจำหน่ายแล้ว','発売済み','已发布'],['Discontinued','เลิกผลิต','生産終了','已停产'],
+    ['Release submission','ส่งข้อมูลรุ่นใหม่','新製品の登録','提交新款'],['Community catalogue · Requires approval','แค็ตตาล็อกชุมชน · ต้องได้รับอนุมัติ','コミュニティカタログ · 承認が必要','社区目录 · 需要审核'],['Smart Camera fills this draft with the selected or scanned release details. Check the brand, product code and evidence before sending it for administrator review. Approved releases become available to all collectors.','Smart Camera จะกรอกรายละเอียดรุ่นที่เลือกหรือสแกน ตรวจสอบแบรนด์ รหัสสินค้า และหลักฐานก่อนส่งให้ผู้ดูแลตรวจสอบ รุ่นที่อนุมัติแล้วจะเผยแพร่ให้ทุกคน','Smart Cameraが選択またはスキャンした製品情報を入力します。ブランド、商品コード、証拠を確認して管理者に送信してください。承認された製品は全コレクターに公開されます。','智能相机将填入所选或扫描到的款式信息。发送给管理员审核前，请核对品牌、商品编号和证据。获批款式会对所有收藏者开放。'],
+    ['Diecast brand *','แบรนด์รถไดแคสต์ *','ミニカーブランド *','合金车品牌 *'],['Vehicle manufacturer *','ผู้ผลิตรถยนต์ *','自動車メーカー *','汽车制造商 *'],['Full model name / livery *','ชื่อรุ่น / ลวดลายเต็ม *','モデル名 / カラーリング *','完整车型名称 / 涂装 *'],['Product or catalogue code','รหัสสินค้าหรือแค็ตตาล็อก','商品コードまたはカタログ番号','商品或目录编号'],['Official SKU if known','SKU ทางการ (ถ้าทราบ)','公式SKU（分かる場合）','官方SKU（如已知）'],['Release year (optional)','ปีที่วางจำหน่าย (ไม่บังคับ)','発売年（任意）','发布年份（可选）'],['Edition','รุ่นย่อย','エディション','版本'],['Release status','สถานะการวางจำหน่าย','発売状況','发布状态'],['Product / announcement source (optional)','แหล่งข้อมูลสินค้า / ประกาศ (ไม่บังคับ)','製品 / 発表元のリンク（任意）','产品 / 公告来源（可选）'],['Notes for the administrator','หมายเหตุถึงผู้ดูแล','管理者へのメモ','给管理员的备注'],['What makes this release different? Include event, colour, package, and source details.','รุ่นนี้แตกต่างอย่างไร? ระบุอีเวนต์ สี แพ็กเกจ และแหล่งข้อมูล','この製品の特徴を入力してください。イベント、色、パッケージ、情報元など。','此款产品有何不同？请填写活动、颜色、包装和来源信息。'],['e.g. Porsche / Nissan','เช่น Porsche / Nissan','例: Porsche / Nissan','例如 Porsche / Nissan'],['e.g. Porsche 911 GT3 R Beijing #321','เช่น Porsche 911 GT3 R Beijing #321','例: Porsche 911 GT3 R Beijing #321','例如 Porsche 911 GT3 R Beijing #321'],['e.g. 2026','เช่น 2026','例: 2026','例如 2026'],['https://manufacturer.example/model','https://manufacturer.example/model','https://manufacturer.example/model','https://manufacturer.example/model'],
+    ['Optional photos (up to 3). Photograph the exact model, box and product code when possible.','แนบรูปได้สูงสุด 3 รูป หากทำได้ให้ถ่ายรุ่น กล่อง และรหัสสินค้าให้ชัดเจน','写真は最大3枚まで。可能であればモデル、箱、商品コードを撮影してください。','可选照片（最多3张）。请尽量拍摄确切车型、包装盒和商品编号。'],['📷 Take photo','📷 ถ่ายรูป','📷 写真を撮る','📷 拍照'],['Choose photos','เลือกรูปภาพ','写真を選択','选择照片'],['Choose image','เลือกรูปภาพ','画像を選択','选择图片'],['If I upload images, I confirm I took them or have permission to publish them in the shared catalogue.','หากอัปโหลดรูป ฉันยืนยันว่าเป็นผู้ถ่ายหรือได้รับอนุญาตให้นำไปเผยแพร่ในแค็ตตาล็อกร่วม','画像をアップロードする場合、自分で撮影したか共有カタログへの掲載許可を得ていることを確認します。','如果我上传图片，即表示我确认图片由我拍摄或已获准发布到共享目录。'],['Submit release for review','ส่งรุ่นให้ตรวจสอบ','製品情報を審査に送信','提交款式以供审核'],['My model submissions','รายการรุ่นที่ฉันส่ง','自分の製品申請','我提交的款式'],['Sign in to view your proposals.','เข้าสู่ระบบเพื่อดูรายการที่ส่ง','申請を表示するにはログインしてください。','登录以查看您提交的款式。'],['Model review — Admin only','ตรวจสอบรุ่น — เฉพาะผู้ดูแล','製品審査 — 管理者専用','款式审核 — 仅管理员'],['↻ Refresh queue','↻ รีเฟรชคิว','↻ 審査待ちを更新','↻ 刷新队列'],['Photos submitted by collectors are reviewed before publication.','รูปภาพที่นักสะสมส่งมาจะได้รับการตรวจสอบก่อนเผยแพร่','コレクターから投稿された写真は公開前に審査されます。','收藏者提交的照片会在发布前审核。'],['Photo review — Admin only','ตรวจสอบรูปภาพ — เฉพาะผู้ดูแล','写真審査 — 管理者専用','照片审核 — 仅管理员'],
+    ['Release radar','ติดตามข่าวการวางจำหน่าย','新製品情報','新品动态'],['The radar checks new public announcements daily after the scheduled GitHub workflow is enabled. New matches are leads, not confirmed releases; verify the source before changing a model to Released. This app never silently changes your ownership status.','ระบบจะตรวจประกาศสาธารณะใหม่ทุกวันเมื่อเปิดใช้ GitHub workflow รายการที่พบเป็นเพียงเบาะแส ไม่ใช่ข้อมูลยืนยัน โปรดตรวจสอบแหล่งข้อมูลก่อนเปลี่ยนสถานะเป็นวางจำหน่ายแล้ว แอปจะไม่เปลี่ยนสถานะการครอบครองของคุณเอง','GitHub Actionsを設定すると毎日新しい公開情報を確認します。結果は候補であり確定情報ではありません。発売済みに変更する前に情報元を確認してください。所有状況が自動変更されることはありません。','启用 GitHub 工作流后，系统每天检查新的公开公告。匹配结果仅供参考，并非已确认发布；更改为已发布前请核实来源。本应用不会自动更改您的拥有状态。'],['Notifications','通知','通知','通知'],['Enable iPhone push alerts','开启 iPhone 推送通知','iPhoneのプッシュ通知を有効にする','启用 iPhone 推送提醒'],['Install this app on your Home Screen first. Push requires HTTPS, a configured VAPID key, and the scheduled checker. iPhone permission is requested only when you tap this button.','请先将应用添加到主屏幕。推送通知需要 HTTPS、VAPID 密钥和定时检查器。只有点击此按钮时才会请求 iPhone 权限。','まずホーム画面に追加してください。プッシュ通知にはHTTPS、VAPIDキー、定期チェックの設定が必要です。iPhoneの許可はボタンを押したときのみ求められます。','请先将应用添加到主屏幕。推送需要 HTTPS、已配置的 VAPID 密钥和定时检查器。仅在点击此按钮时请求 iPhone 权限。'],['Backup','备份','バックアップ','备份'],['Export CSV','ส่งออก CSV','CSVを書き出す','导出 CSV'],
+    ['Edit all card details','แก้ไขรายละเอียดทั้งหมดของการ์ด','カード情報をすべて編集','编辑卡片全部信息'],['Brand / category','แบรนด์ / หมวดหมู่','ブランド / カテゴリー','品牌 / 类别'],['Vehicle make / model family','ยี่ห้อรถ / ตระกูลรุ่น','自動車メーカー / 車種','汽车品牌 / 车型系列'],['Card title / livery','ชื่อการ์ด / ลวดลาย','カード名 / カラーリング','卡片标题 / 涂装'],['Product code / SKU','รหัสสินค้า / SKU','商品コード / SKU','商品编号 / SKU'],['Edition / variant','รุ่นย่อย / รุ่นพิเศษ','エディション / バリエーション','版本 / 款式'],['Card badge / verification text','ป้ายกำกับ / ข้อความยืนยันบนการ์ด','カードのバッジ / 確認ラベル','卡片徽标 / 验证文字'],['Card image URL (optional)','URL รูปภาพการ์ด (ไม่บังคับ)','カード画像URL（任意）','卡片图片网址（可选）'],['Or choose a photo from your device. It will be resized and saved to the catalogue.','หรือเลือกรูปจากอุปกรณ์ รูปจะถูกปรับขนาดและบันทึกลงแค็ตตาล็อก','または端末から写真を選択してください。サイズを調整してカタログに保存します。','也可以从设备选择照片。照片会调整大小并保存到目录。'],['Choose replacement photo','เลือกรูปภาพทดแทน','差し替え写真を選択','选择替换照片'],['Restore original catalogue photo','คืนค่ารูปภาพเดิมจากแค็ตตาล็อก','カタログの元の写真に戻す','恢复目录原始图片'],['Hide the photo on this card','ซ่อนรูปภาพในการ์ดนี้','このカードの写真を非表示','隐藏此卡片上的照片'],['Product / source link','ลิงก์สินค้า / แหล่งข้อมูล','製品 / 情報元リンク','产品 / 来源链接'],['Release status is shared. Each collector’s Owned / Missing / Wishlist selection remains private to their own garage.','สถานะการวางจำหน่ายจะแชร์กับทุกคน ส่วนสถานะมีแล้ว / ยังไม่มี / สิ่งที่อยากได้เป็นข้อมูลส่วนตัวของนักสะสมแต่ละคน','発売状況は共有されます。所有・未所有・ほしい物リストは各コレクターの個人ガレージに保存されます。','发布状态为共享信息。每位收藏者的已拥有 / 缺少 / 愿望清单仅保存在个人车库中。'],['Cancel','ยกเลิก','キャンセル','取消'],['Save all card details','บันทึกรายละเอียดทั้งหมด','カード情報をすべて保存','保存全部卡片信息'],['Restore original catalogue photo','คืนค่ารูปภาพเดิมจากแค็ตตาล็อก','カタログの元の写真に戻す','恢复目录原始图片'],
+    ['Welcome to TURBO 164','ยินดีต้อนรับสู่ TURBO 164','TURBO 164へようこそ','欢迎使用 TURBO 164'],['One account, one private garage. Choose how you want to continue.','หนึ่งบัญชีต่อหนึ่งโรงรถส่วนตัว เลือกวิธีดำเนินการต่อ','1つのアカウントに1つの専用ガレージ。続行方法を選択してください。','一个账户，一个私人车库。请选择继续方式。'],['Continue with Google','ดำเนินการต่อด้วย Google','Googleで続行','使用 Google 继续'],['Continue as guest','เข้าชมในฐานะผู้เยี่ยมชม','ゲストとして続行','以访客身份继续'],['Guests can browse all models. Sign in to create a saved list, mark models Owned or Wishlist, and contribute photos.','ผู้เยี่ยมชมดูรุ่นทั้งหมดได้ เข้าสู่ระบบเพื่อบันทึกรายการ ระบุว่ามีแล้วหรืออยากได้ และส่งรูปภาพ','ゲストは全モデルを閲覧できます。ログインするとリスト保存、所有・ほしい物の設定、写真投稿ができます。','访客可浏览所有款式。登录后可保存列表、标记已拥有或愿望清单，并提交照片。'],['Already using email sign-in?','ใช้การเข้าสู่ระบบด้วยอีเมลอยู่แล้วหรือไม่?','メールでログインしますか？','已使用邮箱登录？'],['Email address','อีเมล','メールアドレス','电子邮件地址'],['Send sign-in link','ส่งลิงก์เข้าสู่ระบบ','ログインリンクを送信','发送登录链接'],['Contribute a model photograph','ส่งรูปถ่ายโมเดล','モデル写真を投稿','提交车型照片'],['Photograph the exact model and livery. Packaging or product code in the photo helps us verify your submission. Images are private until approved.','ถ่ายภาพรุ่นและลวดลายที่ตรงกัน รูปกล่องหรือรหัสสินค้าช่วยตรวจสอบได้ รูปจะยังเป็นส่วนตัวจนกว่าจะอนุมัติ','正確なモデルとカラーリングを撮影してください。箱や商品コードがあると確認に役立ちます。承認までは非公開です。','请拍摄准确的车型和涂装。包装或商品编号有助于核实。照片在获批前不会公开。'],['📷 Take photo','📷 ถ่ายรูป','📷 写真を撮る','📷 拍照'],['Optional note for admin (edition, packaging or source)','หมายเหตุถึงผู้ดูแล (รุ่นย่อย แพ็กเกจ หรือแหล่งข้อมูล)','管理者へのメモ（エディション、パッケージ、情報元）','给管理员的备注（版本、包装或来源）'],['Example: Front of original box shows #68-3','ตัวอย่าง: ด้านหน้ากล่องเดิมระบุ #68-3','例: 元箱の正面に#68-3と記載','例如：原包装正面标有 #68-3'],['I took this photo or have permission to share it in the public TURBO 164 catalogue.','ฉันถ่ายรูปนี้เองหรือได้รับอนุญาตให้นำไปแชร์ในแค็ตตาล็อกสาธารณะ TURBO 164','この写真を自分で撮影したか、TURBO 164の公開カタログで共有する許可を得ています。','我拍摄了此照片或已获准将其分享到 TURBO 164 公共目录。'],['Submit for review','ส่งตรวจสอบ','審査に送信','提交审核'],
+    ['Smart Camera v2.6','Smart Camera v2.6','Smart Camera v2.6','Smart Camera v2.6'],['Scan a diecast, compare manufacturers and choose the exact release.','สแกนรถไดแคสต์ เปรียบเทียบผู้ผลิต และเลือกรุ่นที่ตรงกัน','ミニカーをスキャンし、メーカーを比較して正確な製品を選びます。','扫描合金车，对比制造商并选择准确款式。'],['📷 Open Scanner','📷 เปิดเครื่องสแกน','📷 スキャナーを開く','📷 打开扫描器'],['📷 Turbo164 Smart Camera','📷 Turbo164 Smart Camera','📷 Turbo164 スマートカメラ','📷 Turbo164 智能相机'],['Close scanner','ปิดเครื่องสแกน','スキャナーを閉じる','关闭扫描器'],['Scan mode','โหมดสแกน','スキャンモード','扫描模式'],['Packaging','แพ็กเกจ','パッケージ','包装'],['Car Only','รถเท่านั้น','車のみ','仅汽车'],['Frame the printed label or box. The first OCR scan may download reader files.','จัดกรอบให้เห็นฉลากหรือกล่อง การสแกน OCR ครั้งแรกอาจดาวน์โหลดไฟล์อ่านข้อมูล','印刷ラベルまたは箱を枠内に合わせてください。初回のOCRスキャンでは読取ファイルをダウンロードする場合があります。','将印刷标签或包装框入画面。首次 OCR 扫描可能会下载识别文件。'],['📷 Choose photo','📷 เลือกรูป','📷 写真を選択','📷 选择照片'],['Photo with crop outline','รูปภาพพร้อมกรอบครอบตัด','切り抜き枠付き写真','带裁剪框的照片'],['Adjust photo crop','ปรับกรอบรูปภาพ','写真の切り抜きを調整','调整照片裁剪'],['Reset crop','รีเซ็ตกรอบ','切り抜きをリセット','重置裁剪'],['Model name, livery or product code','ชื่อรุ่น ลวดลาย หรือรหัสสินค้า','モデル名、カラーリング、商品コード','车型名称、涂装或商品编号'],['e.g. Porsche Apple 89 or T64-015-AP','เช่น Porsche Apple 89 หรือ T64-015-AP','例: Porsche Apple 89 または T64-015-AP','例如 Porsche Apple 89 或 T64-015-AP'],['Scans run in your browser. Your photo is only shared if you submit it.','การสแกนทำงานในเบราว์เซอร์ รูปของคุณจะแชร์เมื่อคุณส่งเท่านั้น','スキャンはブラウザー内で実行されます。写真は送信した場合のみ共有されます。','扫描在浏览器中运行。仅在您提交时才会分享照片。'],['Read packaging','อ่านข้อความบนแพ็กเกจ','パッケージを読み取る','识别包装'],['Search catalog & releases','ค้นหาแค็ตตาล็อกและรุ่น','カタログと製品を検索','搜索目录和款式'],['2 · Choose manufacturer (searchable)','2 · เลือกผู้ผลิต (ค้นหาได้)','2 · メーカーを選択（検索可能）','2 · 选择制造商（可搜索）'],['Filter manufacturer names…','กรองชื่อผู้ผลิต…','メーカー名を絞り込む…','筛选制造商名称…'],['Search manufacturers','ค้นหาผู้ผลิต','メーカーを検索','搜索制造商'],['Manufacturer options','ตัวเลือกผู้ผลิต','メーカーの選択肢','制造商选项'],['Manufacturer not listed','ไม่มีชื่อผู้ผลิตในรายการ','メーカーが見つからない','未列出的制造商'],['Enter the exact diecast manufacturer','กรอกชื่อผู้ผลิตรถไดแคสต์ให้ตรง','正確なミニカーメーカー名を入力','输入准确的合金车制造商'],['3 · Choose exact release / package','3 · เลือกรุ่น / แพ็กเกจให้ตรง','3 · 正確な製品 / パッケージを選択','3 · 选择准确款式 / 包装'],['Search to find possible releases.','ค้นหาเพื่อดูรุ่นที่อาจตรงกัน','検索して候補を表示します。','搜索以查找可能的款式。'],['A matching livery is not proof of the manufacturer, vehicle generation, SKU, or edition. Check the product code and packaging before saving a catalog match.','ลวดลายที่คล้ายกันไม่ได้ยืนยันผู้ผลิต เจเนอเรชันรถ SKU หรือรุ่นย่อย โปรดตรวจรหัสสินค้าและแพ็กเกจก่อนบันทึกรุ่น','カラーリングが似ていてもメーカー、車両世代、SKU、エディションの証明にはなりません。商品コードとパッケージを確認して保存してください。','涂装相似并不能证明制造商、车辆代次、SKU 或版本。保存目录匹配项前，请核对商品编号和包装。'],
+    ['All manufacturers','ผู้ผลิตทั้งหมด','すべてのメーカー','所有制造商'],['Other / Not listed +','อื่น ๆ / ไม่มีในรายการ +','その他 / 見つからない +','其他 / 未列出 +'],['In Turbo164 catalog','อยู่ในแค็ตตาล็อก Turbo164','Turbo164カタログ掲載','收录于 Turbo164 目录'],['Research lead · not published','ข้อมูลค้นคว้า · ยังไม่เผยแพร่','調査候補 · 未公開','研究线索 · 尚未发布'],['Product code:','รหัสสินค้า:','商品コード:','商品编号：'],['Choose this catalog model','เลือกรุ่นนี้จากแค็ตตาล็อก','このカタログモデルを選択','选择此目录车型'],['Review this exact release','ตรวจสอบรุ่นนี้','この製品を確認','核对此款产品'],['Browse related releases','ดูรุ่นที่เกี่ยวข้อง','関連製品を見る','浏览相关款式'],['Source','แหล่งข้อมูล','情報元','来源'],['Scan a car or search model name, number, or code to see possible matches.','สแกนรถหรือค้นหาชื่อรุ่น หมายเลข หรือรหัสเพื่อดูรายการที่อาจตรงกัน','車をスキャンするか、モデル名、番号、コードで候補を検索してください。','扫描汽车或搜索车型名称、编号、代码以查看可能匹配项。'],['Enter a model, livery or product code. Try “Porsche Apple 89”.','กรอกชื่อรุ่น ลวดลาย หรือรหัสสินค้า ลอง “Porsche Apple 89”','モデル名、カラーリング、商品コードを入力してください。例: “Porsche Apple 89”','输入车型、涂装或商品编号。试试 “Porsche Apple 89”。'],['Visual lookalikes ·','รูปที่มีลักษณะคล้ายกัน ·','見た目が似た候補 ·','外观相似项 ·'],['Related vehicle releases ·','รุ่นรถที่เกี่ยวข้อง ·','関連する車種の製品 ·','相关车型款式 ·'],['possible releases','รุ่นที่อาจตรงกัน','件の候補製品','个可能款式'],['across manufacturers','จากผู้ผลิตทั้งหมด','全メーカー','所有制造商'],['not guaranteed identifications','ไม่รับประกันว่าเป็นรุ่นที่ถูกต้อง','特定を保証するものではありません','不保证识别准确'],['No catalog match found. Search the web to help identify this release.','ไม่พบรุ่นในแค็ตตาล็อก ค้นหาเว็บเพื่อช่วยระบุรุ่นนี้','カタログに一致する製品がありません。ウェブ検索で特定してください。','未找到目录匹配项。请搜索网页以协助识别此款产品。'],['🌐 Search web for this release','🌐 ค้นหาเว็บสำหรับรุ่นนี้','🌐 この製品をウェブ検索','🌐 搜索此款产品'],['Showing top 40. Refine your search or choose a manufacturer.','แสดง 40 รายการแรก ปรับการค้นหาหรือเลือกผู้ผลิต','上位40件を表示中。検索条件を絞るかメーカーを選択してください。','显示前 40 项。请细化搜索或选择制造商。'],['Selected release','รุ่นที่เลือก','選択した製品','已选款式'],['Compare the actual car and check the markings before saving this release.','เปรียบเทียบกับรถจริงและตรวจเครื่องหมายก่อนบันทึกรุ่นนี้','保存する前に実車と比較し、刻印を確認してください。','保存前请与实车对比并检查标记。'],['Find related catalog releases','ค้นหารุ่นในแค็ตตาล็อกที่เกี่ยวข้อง','関連するカタログ製品を検索','查找相关目录款式'],['Search web for selected release','ค้นหาเว็บสำหรับรุ่นที่เลือก','選択した製品をウェブ検索','搜索已选款式'],['Add Owned','เพิ่มในรายการมีแล้ว','所有に追加','添加到已拥有'],['Add Ordered','เพิ่มในรายการสั่งซื้อแล้ว','注文済みに追加','添加到已订购'],['This release is not yet in the Turbo164 catalog. No matching catalog entry is available.','รุ่นนี้ยังไม่มีในแค็ตตาล็อก Turbo164 และไม่พบรายการที่ตรงกัน','この製品はまだTurbo164カタログに登録されていません。一致する項目はありません。','此款产品尚未收录于 Turbo164 目录，目前没有匹配条目。'],
+    ['Please select a photograph.','โปรดเลือกรูปภาพ','写真を選択してください。','请选择照片。'],['Original image must be under 25 MB.','รูปต้นฉบับต้องมีขนาดไม่เกิน 25 MB','元画像は25 MB未満にしてください。','原始图片须小于 25 MB。'],['Preparing photo…','กำลังเตรียมรูปภาพ…','写真を準備中…','正在准备照片…'],['Adjust the crop to frame your subject, then scan.','ปรับกรอบให้พอดีกับวัตถุ แล้วสแกน','対象が枠内に入るよう調整してからスキャンしてください。','调整裁剪框以对准主体，然后扫描。'],['Read packaging','อ่านข้อความบนแพ็กเกจ','パッケージを読み取る','识别包装'],['Find lookalikes','ค้นหารุ่นที่มีลักษณะคล้ายกัน','似たモデルを探す','查找相似车型'],['Car Only','รถเท่านั้น','車のみ','仅汽车'],['Smart Camera fills this draft','Smart Camera กรอกร่างนี้','Smart Cameraが下書きを入力','智能相机填写此草稿'],
+    ['Browse the catalogue. Log in to create a saved list; cloud sign-in must be configured first.','ดูแค็ตตาล็อก เข้าสู่ระบบเพื่อบันทึกรายการ โดยต้องตั้งค่าการเข้าสู่ระบบคลาวด์ก่อน','カタログを閲覧できます。リストを保存するにはログインしてください。クラウドログインの設定が必要です。','浏览目录。登录后可创建保存列表；请先配置云登录。'],['Guest preview','โหมดตัวอย่างสำหรับผู้เยี่ยมชม','ゲストプレビュー','访客预览'],['Guest mode','โหมดผู้เยี่ยมชม','ゲストモード','访客模式'],['Browse all four brands freely. To create a saved list or change a model’s status, log in with Google or email.','ดูทั้ง 4 แบรนด์ได้อย่างอิสระ หากต้องการบันทึกรายการหรือเปลี่ยนสถานะรุ่น โปรดเข้าสู่ระบบด้วย Google หรืออีเมล','4ブランドすべてを閲覧できます。リスト保存や状態変更にはGoogleまたはメールでログインしてください。','可自由浏览四个品牌。登录 Google 或邮箱后即可保存列表或更改款式状态。'],['☁ Cloud sync enabled','☁ เปิดซิงก์คลาวด์แล้ว','☁ クラウド同期中','☁ 云同步已启用'],['Signed in:','เข้าสู่ระบบแล้ว:','ログイン中:','已登录：'],['Your private garage is loaded.','โหลดโรงรถส่วนตัวแล้ว','マイガレージを読み込みました。','个人车库已加载。'],['Your garage has been refreshed.','รีเฟรชโรงรถแล้ว','ガレージを更新しました。','车库已刷新。'],['Public catalogue refreshed. Log in to save a personal list.','รีเฟรชแค็ตตาล็อกสาธารณะแล้ว เข้าสู่ระบบเพื่อบันทึกรายการส่วนตัว','公開カタログを更新しました。個人リストの保存にはログインしてください。','公共目录已刷新。登录后可保存个人列表。'],['No release leads have been collected yet. Enable the scheduled checker in GitHub Actions, then refresh.','ยังไม่มีข้อมูลรุ่นใหม่ เปิดตัวตรวจสอบตามกำหนดเวลาใน GitHub Actions แล้วรีเฟรช','新製品候補はまだありません。GitHub Actionsで定期チェックを有効にして更新してください。','尚未收集到新品线索。请在 GitHub Actions 中启用定时检查，然后刷新。'],['View source ↗','ดูแหล่งข้อมูล ↗','情報元を見る ↗','查看来源 ↗'],['No matching models.','ไม่พบรุ่นที่ตรงกัน','一致するモデルがありません。','没有匹配车型。'],['No models submitted yet.','ยังไม่มีการส่งรุ่น','まだ製品申請はありません。','尚未提交款式。'],['No pending photographs.','ไม่มีรูปภาพที่รอตรวจสอบ','審査待ちの写真はありません。','没有待审核照片。'],['No pending model submissions.','ไม่มีรุ่นที่รอตรวจสอบ','審査待ちの製品申請はありません。','没有待审核的款式。'],['Export CSV','ส่งออก CSV','CSVを書き出す','导出 CSV']
+  ];
+  rows.push(
+    ['Cloud sync enabled','เปิดซิงก์คลาวด์แล้ว','クラウド同期中','云同步已启用'],
+    ['Guest · browsing only','ผู้เยี่ยมชม · ดูอย่างเดียว','ゲスト · 閲覧のみ','访客 · 仅浏览'],
+    ['Choose a status for','เลือกสถานะสำหรับ','状態を選択','选择状态：'],
+    ['Collection status for','สถานะคอลเล็กชันของ','コレクションの状態','收藏状态：'],
+    ['In Turbo164 catalog','อยู่ในแค็ตตาล็อก Turbo164','Turbo164カタログ掲載','收录于 Turbo164 目录'],
+    ['Research lead · not published','ข้อมูลค้นคว้า · ยังไม่เผยแพร่','調査候補 · 未公開','研究线索 · 尚未发布'],
+    ['Choose this catalog model','เลือกรุ่นนี้จากแค็ตตาล็อก','このカタログモデルを選択','选择此目录车型'],
+    ['Review this exact release','ตรวจสอบรุ่นนี้','この製品を確認','核对此款产品'],
+    ['Browse related releases','ดูรุ่นที่เกี่ยวข้อง','関連製品を見る','浏览相关款式'],
+    ['Source','แหล่งข้อมูล','情報元','来源'],
+    ['📷 Open Scanner','📷 เปิดเครื่องสแกน','📷 スキャナーを開く','📷 打开扫描器'],
+    ['Read car text','อ่านข้อความบนรถ','車体の文字を読み取る','识别车身文字'],
+    ['Read package text','อ่านข้อความบนแพ็กเกจ','パッケージの文字を読み取る','识别包装文字'],
+    ['Scan a car or search model name, number, or code to see possible matches.','สแกนรถหรือค้นหาชื่อรุ่น หมายเลข หรือรหัสเพื่อดูรายการที่อาจตรงกัน','車をスキャンするか、モデル名、番号、コードで候補を検索してください。','扫描汽车或搜索车型名称、编号、代码以查看可能匹配项。'],
+    ['Too little detail to compare. Crop closer around the car or try a clearer photo.','ข้อมูลไม่พอสำหรับเปรียบเทียบ ลองครอบตัดให้ใกล้รถขึ้นหรือใช้รูปที่ชัดกว่า','比較する情報が不足しています。車に近づけて切り抜くか、鮮明な写真をお試しください。','可比较的信息太少。请更紧密地裁剪汽车或尝试更清晰的照片。'],
+    ['No identifying text was readable on the loose car. Free OCR cannot identify a car by its shape. Enter a make/model or scan the package; no unrelated car was selected.','ไม่พบข้อความระบุตัวตนบนรถ OCR ฟรีไม่สามารถระบุรถจากรูปร่างได้ โปรดกรอกยี่ห้อ/รุ่นหรือสแกนแพ็กเกจ ระบบไม่ได้เลือกรถที่ไม่เกี่ยวข้อง','車体から識別できる文字を読み取れませんでした。無料OCRは形状だけで車を特定できません。メーカー/モデルを入力するかパッケージをスキャンしてください。無関係な車は選択されていません。','未能读取车身上的识别文字。免费 OCR 无法仅凭外形识别汽车。请输入品牌/车型或扫描包装；系统未选择无关车型。'],
+    ['Text was read locally. Review possible catalog matches and confirm the exact release.','อ่านข้อความบนอุปกรณ์แล้ว ตรวจสอบรายการที่ตรงกันและยืนยันรุ่นให้ถูกต้อง','端末内で文字を読み取りました。カタログ候補を確認し、製品を特定してください。','已在本地读取文字。请查看目录匹配项并确认具体款式。'],
+    ['Take or upload a photo first.','ถ่ายหรืออัปโหลดรูปก่อน','先拍摄或上传照片。','请先拍摄或上传照片。'],
+    ['Preparing local text scan…','กำลังเตรียมสแกนข้อความในอุปกรณ์…','端末内の文字スキャンを準備中…','正在准备本地文字扫描…'],
+    ['Enter a model name or product code before searching the web.','กรอกชื่อรุ่นหรือรหัสสินค้าก่อนค้นหาเว็บ','ウェブ検索の前にモデル名または商品コードを入力してください。','搜索网页前请输入车型名称或商品编号。'],
+    ['Web search opened. Verify the manufacturer, SKU and source before submitting a new release.','เปิดการค้นหาเว็บแล้ว โปรดตรวจสอบผู้ผลิต SKU และแหล่งข้อมูลก่อนส่งรุ่นใหม่','ウェブ検索を開きました。新製品を申請する前にメーカー、SKU、情報元を確認してください。','已打开网页搜索。提交新款前请核实制造商、SKU 和来源。'],
+    ['Garage saving is not available.','ไม่สามารถบันทึกลงโรงรถได้','ガレージに保存できません。','无法保存到车库。'],
+    ['Select or enter the diecast manufacturer first.','เลือกหรือกรอกชื่อผู้ผลิตรถไดแคสต์ก่อน','先にミニカーメーカーを選択または入力してください。','请先选择或输入合金车制造商。'],
+    ['Enter a valid manufacturer.','กรอกชื่อผู้ผลิตที่ถูกต้อง','有効なメーカー名を入力してください。','请输入有效的制造商。'],
+    ['Enter the model name in the search field before opening a missing-model draft.','กรอกชื่อรุ่นในช่องค้นหาก่อนเปิดแบบฟอร์มรุ่นที่ไม่มีในรายการ','未登録モデルの申請を開く前に検索欄へモデル名を入力してください。','打开缺失款式草稿前，请先在搜索框中输入车型名称。'],
+    ['This model and edition are already listed. Please use a distinct model / livery name for a genuinely different release.','มีรุ่นและรุ่นย่อยนี้อยู่แล้ว โปรดใช้ชื่อรุ่น/ลวดลายที่แตกต่างสำหรับรุ่นที่ไม่ซ้ำ','このモデルとエディションは既に登録されています。別製品の場合は異なるモデル名/カラーリングを入力してください。','此车型和版本已列出。若为不同款式，请使用不同的车型 / 涂装名称。'],
+    ['This model and edition are already listed. Please use a distinct model / livery name for a genuinely different release.','มีรุ่นและรุ่นย่อยนี้อยู่แล้ว โปรดใช้ชื่อรุ่น/ลวดลายที่แตกต่างสำหรับรุ่นที่ไม่ซ้ำ','このモデルとエディションは既に登録されています。別製品の場合は異なるモデル名/カラーリングを入力してください。','此车型和版本已列出。若为不同款式，请使用不同的车型 / 涂装名称。'],
+    ['Submission received! It remains private until an administrator approves it.','ได้รับข้อมูลแล้ว ข้อมูลจะยังเป็นส่วนตัวจนกว่าผู้ดูแลจะอนุมัติ','申請を受け付けました。管理者が承認するまで非公開です。','已收到提交内容。管理员批准前将保持私密。'],
+    ['Sign in to see your proposals and their review statuses.','เข้าสู่ระบบเพื่อดูรายการที่ส่งและสถานะการตรวจสอบ','申請内容と審査状況を確認するにはログインしてください。','登录以查看您提交的款式及审核状态。'],
+    ['Loading pending photos…','กำลังโหลดรูปภาพที่รอตรวจสอบ…','審査待ちの写真を読み込み中…','正在加载待审核照片…'],
+    ['Loading model proposals…','กำลังโหลดข้อเสนอรุ่นใหม่…','製品申請を読み込み中…','正在加载款式提案…'],
+    ['Submit for review','ส่งตรวจสอบ','審査に送信','提交审核'],
+    ['Photos submitted by collectors are reviewed before publication.','รูปภาพที่นักสะสมส่งมาจะได้รับการตรวจสอบก่อนเผยแพร่','コレクターから投稿された写真は公開前に審査されます。','收藏者提交的照片会在发布前审核。'],
+    ['Add Owned','เพิ่มในรายการมีแล้ว','所有に追加','添加到已拥有'],
+    ['Add Ordered','เพิ่มในรายการสั่งซื้อแล้ว','注文済みに追加','添加到已订购'],
+    ['No matching models.','ไม่พบรุ่นที่ตรงกัน','一致するモデルがありません。','没有匹配车型。'],
+    ['No release leads have been collected yet. Enable the scheduled checker in GitHub Actions, then refresh.','ยังไม่มีข้อมูลรุ่นใหม่ เปิดตัวตรวจสอบตามกำหนดเวลาใน GitHub Actions แล้วรีเฟรช','新製品候補はまだありません。GitHub Actionsで定期チェックを有効にして更新してください。','尚未收集到新品线索。请在 GitHub Actions 中启用定时检查，然后刷新。'],
+    ['A matching livery is not proof of the manufacturer, vehicle generation, SKU, or edition. Check the product code and packaging before saving a catalog match.','ลวดลายที่คล้ายกันไม่ได้ยืนยันผู้ผลิต เจเนอเรชันรถ SKU หรือรุ่นย่อย โปรดตรวจรหัสสินค้าและแพ็กเกจก่อนบันทึกรุ่น','カラーリングが似ていてもメーカー、車両世代、SKU、エディションの証明にはなりません。商品コードとパッケージを確認して保存してください。','涂装相似并不能证明制造商、车辆代次、SKU 或版本。保存目录匹配项前，请核对商品编号和包装。'],
+    ['Not tracking','ยังไม่ติดตาม','未登録','未跟踪'],
+    ['SKU pending','รอ SKU','SKU未登録','SKU 待定'],
+    ['Community verified','ชุมชนยืนยันแล้ว','コミュニティ確認済み','社区已验证'],
+    ['Approve photo','อนุมัติรูปภาพ','写真を承認','批准照片'],
+    ['Reject','ปฏิเสธ','却下','拒绝'],
+    ['Approve & publish','อนุมัติและเผยแพร่','承認して公開','批准并发布'],
+    ['Edit label','แก้ไขป้ายกำกับ','ラベルを編集','编辑标签'],
+    ['Choose a matching catalog model','เลือกรุ่นจากแค็ตตาล็อกที่ตรงกัน','一致するカタログモデルを選択','选择匹配的目录车型'],
+    ['Search web for this release','ค้นหาเว็บสำหรับรุ่นนี้','この製品をウェブ検索','搜索此款产品'],
+    ['Photo awaiting review','รูปภาพรอตรวจสอบ','写真の審査待ち','照片待审核'],
+    ['📷 Suggest replacement photo','📷 เสนอรูปภาพทดแทน','📷 差し替え写真を提案','📷 建议替换照片'],
+    ['📷 Contribute a photo','📷 ส่งรูปภาพ','📷 投稿写真','📷 提交照片'],
+    ['Photos submitted by collectors are reviewed before publication.','รูปภาพที่นักสะสมส่งมาจะได้รับการตรวจสอบก่อนเผยแพร่','コレクターから投稿された写真は公開前に審査されます。','收藏者提交的照片会在发布前审核。'],
+    ['Model review — Admin only','ตรวจสอบรุ่น — เฉพาะผู้ดูแล','製品審査 — 管理者専用','款式审核 — 仅管理员'],
+    ['Photo review — Admin only','ตรวจสอบรูปภาพ — เฉพาะผู้ดูแล','写真審査 — 管理者専用','照片审核 — 仅管理员'],
+    ['Enable iPhone push alerts','เปิดการแจ้งเตือน iPhone','iPhoneの通知を有効化','启用 iPhone 推送提醒'],
+    ['Backup','สำรองข้อมูล','バックアップ','备份'],
+    ['Sign in to cloud sync first.','เข้าสู่ระบบเพื่อซิงก์คลาวด์ก่อน','先にログインしてクラウド同期してください。','请先登录以启用云同步。'],
+    ['Choose an image file.','เลือกไฟล์รูปภาพ','画像ファイルを選択してください。','请选择图片文件。'],
+    ['That image is too large. Please select one under 25 MB.','รูปภาพใหญ่เกินไป โปรดเลือกรูปที่มีขนาดต่ำกว่า 25 MB','画像が大きすぎます。25 MB未満の画像を選択してください。','图片过大，请选择小于 25 MB 的图片。'],
+    ['Photo ready. Please confirm permission before submitting.','เตรียมรูปภาพแล้ว โปรดยืนยันสิทธิ์ก่อนส่ง','写真の準備ができました。送信前に許可を確認してください。','照片已准备好。提交前请确认拥有使用权限。'],
+    ['Please sign in first.','โปรดเข้าสู่ระบบก่อน','先にログインしてください。','请先登录。'],
+    ['Choose or take a photograph first.','เลือกรูปหรือถ่ายรูปก่อน','先に写真を選択または撮影してください。','请先选择或拍摄照片。'],
+    ['Photo submitted for review. It will not appear publicly until approved.','ส่งรูปภาพเพื่อตรวจสอบแล้ว รูปจะไม่ปรากฏต่อสาธารณะจนกว่าจะอนุมัติ','写真を審査に送信しました。承認されるまで公開されません。','照片已提交审核，获批前不会公开。'],
+    ['No pending photographs.','ไม่มีรูปภาพที่รอตรวจสอบ','審査待ちの写真はありません。','没有待审核照片。'],
+    ['No pending model submissions.','ไม่มีรุ่นที่รอตรวจสอบ','審査待ちの製品申請はありません。','没有待审核的款式。'],
+    ['The scanner compares shape and color against accessible catalog photos. Viewpoint and background can affect results. Verify the manufacturer, edition and SKU yourself.','เครื่องสแกนเปรียบเทียบรูปร่างและสีกับรูปในแค็ตตาล็อก มุมมองและพื้นหลังอาจส่งผลต่อผลลัพธ์ โปรดตรวจสอบผู้ผลิต รุ่นย่อย และ SKU ด้วยตนเอง','スキャナーは形状と色をカタログ写真と比較します。角度や背景で結果が変わる場合があります。メーカー、エディション、SKUを確認してください。','扫描器会将外形和颜色与目录照片进行比较。视角和背景可能影响结果，请自行核实制造商、版本和 SKU。'],
+    ['Crop tightly around the loose car.','ครอบตัดให้ชิดรอบตัวรถ','車体の周囲をぴったり切り抜いてください。','紧密裁剪汽车周围。'],
+    ['Search web for selected release','ค้นหาเว็บสำหรับรุ่นที่เลือก','選択した製品をウェブ検索','搜索已选款式'],
+    ['Submit release for review','ส่งรุ่นให้ตรวจสอบ','製品情報を審査に送信','提交款式以供审核'],
+    ['Cancel','ยกเลิก','キャンセル','取消'],
+    ['Save all card details','บันทึกรายละเอียดทั้งหมด','カード情報をすべて保存','保存全部卡片信息'],
+    ['No matching models.','ไม่พบรุ่นที่ตรงกัน','一致するモデルがありません。','没有匹配车型。'],
+    ['Please choose a supported brand and enter model information.','โปรดเลือกแบรนด์ที่รองรับและกรอกข้อมูลรุ่น','対応ブランドを選び、モデル情報を入力してください。','请选择受支持的品牌并填写款式信息。'],
+    ['Enter a valid release year.','กรอกปีที่วางจำหน่ายให้ถูกต้อง','有効な発売年を入力してください。','请输入有效的发布年份。'],
+    ['Sign in to create a saved list','เข้าสู่ระบบเพื่อสร้างรายการที่บันทึกไว้','保存リストを作成するにはログイン','登录以创建已保存列表'],
+    ['A free account lets you mark models Owned, Ordered, Missing or Wishlist and save your garage across devices.','บัญชีฟรีช่วยให้คุณระบุรุ่นที่มีแล้ว สั่งซื้อแล้ว ยังไม่มี หรืออยากได้ และบันทึกโรงรถข้ามอุปกรณ์','無料アカウントで所有、注文済み、未所有、ほしい物を設定し、複数端末でガレージを保存できます。','免费账户可标记已拥有、已订购、缺少或愿望清单，并在不同设备间保存车库。'],
+    ['One account, one private garage. Choose how you want to continue.','หนึ่งบัญชีต่อหนึ่งโรงรถส่วนตัว เลือกวิธีดำเนินการต่อ','1つのアカウントに1つの専用ガレージ。続行方法を選択してください。','一个账户，一个私人车库。请选择继续方式。'],
+    ['Could not upload replacement photo:','อัปโหลดรูปภาพทดแทนไม่สำเร็จ:','差し替え写真をアップロードできませんでした:','无法上传替换照片：'],
+    ['Could not save item:','บันทึกรายการไม่สำเร็จ:','項目を保存できませんでした:','无法保存项目：'],
+    ['Could not prepare photo:','เตรียมรูปภาพไม่สำเร็จ:','写真を準備できませんでした:','无法准备照片：'],
+    ['Could not sign out:','ออกจากระบบไม่สำเร็จ:','ログアウトできませんでした:','无法退出登录：'],
+    ['Refresh failed:','รีเฟรชไม่สำเร็จ:','更新に失敗しました:','刷新失败：'],
+    ['Collection loaded, but custom models are unavailable. Run the v2 SQL migration.','โหลดคอลเล็กชันแล้ว แต่ไม่สามารถใช้รุ่นที่กำหนดเองได้ โปรดใช้ SQL migration v2','コレクションを読み込みましたが、カスタムモデルを利用できません。v2 SQL移行を実行してください。','收藏已加载，但自定义款式不可用。请运行 v2 SQL 迁移。'],
+    ['Signed out. You are now browsing as a guest.','ออกจากระบบแล้ว ขณะนี้กำลังดูในฐานะผู้เยี่ยมชม','ログアウトしました。ゲストとして閲覧中です。','已退出登录。您现在以访客身份浏览。'],
+    ['Your private garage is loaded.','โหลดโรงรถส่วนตัวแล้ว','マイガレージを読み込みました。','个人车库已加载。'],
+    ['Shared card details updated for all collectors.','อัปเดตรายละเอียดการ์ดที่แชร์ให้ผู้สะสมทุกคนแล้ว','共有カード情報を全コレクター向けに更新しました。','已为所有收藏者更新共享卡片信息。'],
+    ['Vehicle make and model title are required.','จำเป็นต้องกรอกยี่ห้อรถและชื่อรุ่น','メーカー名とモデル名は必須です。','汽车品牌和车型标题为必填项。'],
+    ['Image and source must be valid http or https URLs.','รูปภาพและแหล่งข้อมูลต้องเป็น URL http หรือ https ที่ถูกต้อง','画像と情報元には有効なhttpまたはhttpsのURLを入力してください。','图片和来源必须是有效的 http 或 https 网址。'],
+    ['Replacement photo ready.','เตรียมรูปภาพทดแทนแล้ว','差し替え写真の準備ができました。','替换照片已准备好。'],
+    ['The selected release','รุ่นที่เลือก','選択した製品','已选款式'],
+    ['Review this exact release','ตรวจสอบรุ่นนี้','この製品を確認','核对此款产品'],
+    ['Search web for this release','ค้นหาเว็บสำหรับรุ่นนี้','この製品をウェブ検索','搜索此款产品'],
+    ['SKU pending','รอ SKU','SKU未登録','SKU 待定'],
+    ['Photo could not be copied:','คัดลอกรูปภาพไม่สำเร็จ:','写真をコピーできませんでした:','无法复制照片：'],
+    ['Smart Camera filled this draft. Verify the product code, edition and source; submit for administrator approval. For new brands, the Supabase brand constraint migration must be applied.','Smart Camera กรอกร่างนี้แล้ว โปรดตรวจรหัสสินค้า รุ่นย่อย และแหล่งข้อมูลก่อนส่งให้ผู้ดูแลอนุมัติ แบรนด์ใหม่ต้องใช้ Supabase migration เพื่ออัปเดตข้อกำหนดแบรนด์','Smart Cameraが下書きを入力しました。商品コード、エディション、情報元を確認して管理者の承認に送信してください。新しいブランドにはSupabaseの制約移行が必要です。','智能相机已填写此草稿。请核对商品编号、版本和来源后提交管理员批准。新品牌需应用 Supabase 品牌约束迁移。'],
+    ['Loading pending photos…','กำลังโหลดรูปภาพที่รอตรวจสอบ…','審査待ちの写真を読み込み中…','正在加载待审核照片…'],
+    ['Review queue unavailable:','ไม่สามารถเปิดคิวตรวจสอบได้:','審査キューを利用できません:','审核队列不可用：'],
+    ['Photo submitted for review. It will not appear publicly until approved.','ส่งรูปภาพเพื่อตรวจสอบแล้ว รูปจะไม่ปรากฏต่อสาธารณะจนกว่าจะอนุมัติ','写真を審査に送信しました。承認されるまで公開されません。','照片已提交审核，获批前不会公开。'],
+    ['Awaiting review','รอตรวจสอบ','審査待ち','待审核'],
+    ['Approved','อนุมัติแล้ว','承認済み','已批准'],
+    ['Rejected','ถูกปฏิเสธ','却下','已拒绝'],
+    ['This model and edition are already listed.','มีรุ่นและรุ่นย่อยนี้อยู่ในรายการแล้ว','このモデルとエディションは既に登録されています。','此车型和版本已列出。'],
+    ['Model name / livery','ชื่อรุ่น / ลวดลาย','モデル名 / カラーリング','车型名称 / 涂装'],
+    ['Photo selected for contribution','เลือกรูปภาพเพื่อส่ง','投稿用に選択した写真','已选择要提交的照片'],
+    ['Reference photo for','รูปอ้างอิงของ','参照写真:','参考照片：'],
+    ['View source ↗','ดูแหล่งข้อมูล ↗','情報元を見る ↗','查看来源 ↗'],
+    ['No catalog match found. Search the web to help identify this release.','ไม่พบรุ่นในแค็ตตาล็อก ค้นหาเว็บเพื่อช่วยระบุรุ่นนี้','カタログに一致する製品がありません。ウェブ検索で特定してください。','未找到目录匹配项。请搜索网页以协助识别此款产品。']
+  );
+  const dictionaries={th:{},ja:{},zh:{}};
+  rows.forEach(([en,th,ja,zh])=>{dictionaries.th[en]=th;dictionaries.ja[en]=ja;dictionaries.zh[en]=zh;});
+  const langStore='turbo164-language-v1';
+  const supported=['en','th','ja','zh'];
+  const textState=new WeakMap(),attrState=new WeakMap();
+  let language=localStorage.getItem(langStore)||'en';
+  if(!supported.includes(language))language='en';
+  function preserveSpace(source,translated){const lead=(source.match(/^\s*/)||[''])[0],tail=(source.match(/\s*$/)||[''])[0];return lead+translated+tail;}
+  function lookup(raw,lang=language){
+    const clean=String(raw??'').trim();if(!clean||lang==='en')return clean;
+    const dict=dictionaries[lang];if(dict[clean])return dict[clean];
+    let match=clean.match(/^(\d+) models$/);if(match)return ({th:`${match[1]} รุ่น`,ja:`${match[1]} モデル`,zh:`${match[1]} 个车型`})[lang];
+    match=clean.match(/^(\d+) possible releases?$/);if(match)return ({th:`${match[1]} รุ่นที่อาจตรงกัน`,ja:`候補製品 ${match[1]} 件`,zh:`${match[1]} 个可能款式`})[lang];
+    let dynamic=clean.match(/^Reading (visible car|package) text locally · pass (\d+) of 3…$/);
+    if(dynamic){const templates={th:dynamic[1]==='visible car'?['กำลังอ่านข้อความบนรถในอุปกรณ์ · รอบที่ ',' จาก 3…']:['กำลังอ่านข้อความบนแพ็กเกจในอุปกรณ์ · รอบที่ ',' จาก 3…'],ja:dynamic[1]==='visible car'?['車体の文字を端末内で読取中 · ',' / 3…']:['パッケージの文字を端末内で読取中 · ',' / 3…'],zh:dynamic[1]==='visible car'?['正在本地读取车身文字 · 第 ',' / 3…']:['正在本地读取包装文字 · 第 ',' / 3…']}[lang];return templates[0]+dynamic[2]+templates[1]}
+    const prefixes={
+      'Signed in: ':{th:'เข้าสู่ระบบแล้ว: ',ja:'ログイン中: ',zh:'已登录：'},
+      'Editing the shared card: ':{th:'กำลังแก้ไขการ์ดที่แชร์: ',ja:'共有カードを編集中: ',zh:'正在编辑共享卡片：'},
+      'Could not upload replacement photo: ':{th:'อัปโหลดรูปภาพทดแทนไม่สำเร็จ: ',ja:'差し替え写真をアップロードできませんでした: ',zh:'无法上传替换照片：'},
+      'Could not save item: ':{th:'บันทึกรายการไม่สำเร็จ: ',ja:'項目を保存できませんでした: ',zh:'无法保存项目：'},
+      'Refresh failed: ':{th:'รีเฟรชไม่สำเร็จ: ',ja:'更新に失敗しました: ',zh:'刷新失败：'},
+      'Review queue unavailable: ':{th:'ไม่สามารถเปิดคิวตรวจสอบได้: ',ja:'審査キューを利用できません: ',zh:'审核队列不可用：'},
+      'Photo submitted for review. It will not appear publicly until approved.':{th:'ส่งรูปภาพเพื่อตรวจสอบแล้ว รูปจะไม่ปรากฏต่อสาธารณะจนกว่าจะอนุมัติ',ja:'写真を審査に送信しました。承認されるまで公開されません。',zh:'照片已提交审核，获批前不会公开。'}
+    };
+    for(const [prefix,translations] of Object.entries(prefixes))if(clean.startsWith(prefix))return translations[lang]+clean.slice(prefix.length);
+    dynamic=clean.match(/^Uploading photograph (\d+) of (\d+)(…?)$/);
+    if(dynamic){const templates={th:['กำลังอัปโหลดรูปที่ ',' จาก ','…'],ja:['写真をアップロード中 ',' / ','…'],zh:['正在上传照片 ',' / ','…']}[lang];return templates[0]+dynamic[1]+templates[1]+dynamic[2]+templates[2]}
+    dynamic=clean.match(/^(Visual lookalikes · |Related vehicle releases · )?(\d+) possible releases? (across manufacturers|for .+?) · not guaranteed identifications$/);
+    if(dynamic){const lead=dynamic[1]?.startsWith('Visual')?{th:'ภาพที่คล้ายกัน · ',ja:'見た目が似た候補 · ',zh:'外观相似项 · '}[lang]:dynamic[1]?{th:'รุ่นรถที่เกี่ยวข้อง · ',ja:'関連する車種の製品 · ',zh:'相关车型款式 · '}[lang]:'';const count={th:`${dynamic[2]} รุ่นที่อาจตรงกัน`,ja:`候補製品 ${dynamic[2]} 件`,zh:`${dynamic[2]} 个可能款式`}[lang];const scope=dynamic[3]==='across manufacturers'?{th:'จากผู้ผลิตทั้งหมด',ja:'全メーカー',zh:'所有制造商'}[lang]:dynamic[3].replace(/^for /,'');return `${lead}${count} ${scope} · `+{th:'ไม่รับประกันการระบุ',ja:'特定を保証するものではありません',zh:'不保证识别准确'}[lang]}
+    return clean;
+  }
+  function translateNode(node){
+    if(node.parentElement?.closest('[data-no-i18n]'))return;
+    const current=node.nodeValue;if(!current.trim())return;const previous=textState.get(node);
+    const source=previous&&current===previous.applied?previous.source:current;
+    const translated=preserveSpace(source,lookup(source));
+    textState.set(node,{source,applied:translated});
+    if(current!==translated)node.nodeValue=translated;
+  }
+  const attrs=['placeholder','title','aria-label','alt'];
+  function translateElement(el){
+    if(el.closest?.('[data-no-i18n]'))return;
+    let state=attrState.get(el);if(!state){state={};attrState.set(el,state)}
+    for(const attr of attrs){if(!el.hasAttribute(attr))continue;const current=el.getAttribute(attr),previous=state[attr];const source=previous&&current===previous.applied?previous.source:current;const translated=lookup(source);state[attr]={source,applied:translated};if(current!==translated)el.setAttribute(attr,translated);}
+  }
+  function apply(root=document.body){
+    if(!root)return;
+    if(root.nodeType===Node.TEXT_NODE){translateNode(root);return;}
+    if(root.nodeType===Node.ELEMENT_NODE)translateElement(root);
+    const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
+    let node;while((node=walker.nextNode()))translateNode(node);
+    if(root.querySelectorAll)root.querySelectorAll('*').forEach(translateElement);
+  }
+  function setLanguage(next){
+    if(!supported.includes(next))return;language=next;try{localStorage.setItem(langStore,next)}catch{}document.documentElement.lang=next;apply();
+    const select=document.getElementById('languageSelect');if(select)select.value=next;
+    window.dispatchEvent(new CustomEvent('turbo164:languagechange',{detail:{language:next}}));
+  }
+  window.T164I18N={get language(){return language;},translate:lookup,setLanguage,apply};
+  document.documentElement.lang=language;
+  const select=document.getElementById('languageSelect');if(select){select.value=language;select.addEventListener('change',()=>setLanguage(select.value));}
+  apply();
+  new MutationObserver(records=>records.forEach(record=>{
+    if(record.type==='characterData')translateNode(record.target);
+    else if(record.type==='attributes')translateElement(record.target);
+    else record.addedNodes.forEach(node=>apply(node));
+  })).observe(document.body,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:attrs});
+})();

@@ -48,7 +48,7 @@ function render(){
     ?`<select aria-label="Choose status for ${esc(label)} — login required to save" data-id="${esc(m.id)}"><option value="" selected disabled>＋ Choose status to save</option>${statuses.map(status=>`<option value="${status}">${status}</option>`).join('')}</select>`
     :m.community&&actual(m)==='Not tracking'
     ?`<button type="button" class="track-action" data-add-garage="${esc(m.id)}">＋ Add to my private garage</button>`
-    :`<select aria-label="Collection status for ${esc(label)}" data-id="${esc(m.id)}">${(m.community?['Not tracking',...statuses]:statuses).map(status=>`<option ${actual(m)===status?'selected':''}>${status}</option>`).join('')}</select>`;
+    :`<select aria-label="Collection status for ${esc(label)}" data-id="${esc(m.id)}">${(m.community?['Not tracking',...statuses]:statuses).map(status=>`<option value="${esc(status)}" ${actual(m)===status?'selected':''}>${esc(status)}</option>`).join('')}</select>`;
   const cardEdition=edition(m);
   const editionBadge=cardEdition==='Regular'?'':cardEdition==='Chase'?'<span class="variant">✦ CHASE</span>':cardEdition==='Event Exclusive'?'<span class="variant">EVENT</span>':cardEdition==='Limited Edition'?'<span class="variant">LIMITED</span>':`<span class="variant">${esc(cardEdition)}</span>`;
   const yearMarkup=m.releaseYear?`<span class="muted">${esc(m.releaseYear)}</span>`:'';
