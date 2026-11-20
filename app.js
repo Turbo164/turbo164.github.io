@@ -616,7 +616,7 @@ function renderDiecastMenu(){
   </section>`;
  bindDiecastMenuActions(menu);
 }
-function bindDiecastMenuActions(menu){menu.querySelectorAll('button').forEach(button=>{button.onclick=()=>handleDiecastMenuButton(button)})}
+function bindDiecastMenuActions(menu){menu.querySelectorAll('button').forEach(button=>{button.onclick=event=>{event.stopPropagation();handleDiecastMenuButton(button)}})}
 function applyCatalogRouteFromUrl(){
  const url=new URL(location.href),section=url.searchParams.get('section'),brand=url.searchParams.get('brand'),make=url.searchParams.get('make'),releaseFilter=url.searchParams.get('filter');
  const sections=['Diecast','Diorama','Figure','Accessory','Other'];
