@@ -655,6 +655,11 @@ function handleDiecastMenuButton(button){
 }
 
 async function start(){
+ const backToTop=$('backToTop');
+ const updateBackToTop=()=>{backToTop.hidden=window.scrollY<480};
+ backToTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}));
+ window.addEventListener('scroll',updateBackToTop,{passive:true});
+ updateBackToTop();
  catalog=(await (await fetch('catalog.json')).json()).filter(eligible);
  applyCatalogRouteFromUrl();
  render();
