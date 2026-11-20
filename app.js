@@ -5,8 +5,8 @@ let catalog=[],state={},session=null,filter='All',radar=[],customModels=[],commu
 const PHOTO_BUCKET='arbox-photo-contributions';
 const MODEL_BUCKET='arbox-model-submissions';
 let modelPhotos=[]; 
-let photoOverrides={},photoPending=new Set(),photoAdmin=false,selectedPhotoModel=null,chosenPhotoBlob=null,previewObjectUrl=null,labelOverrides={};
-let editingCatalogLabelId=null;
+let photoOverrides={},photoPending=new Set(),photoAdmin=false,selectedPhotoModel=null,chosenPhotoBlob=null,previewObjectUrl=null,itemOverrides={};
+let editingCatalogItemId=null,editingAdminPhoto=null,editingAdminPhotoPreview=null;
 
 const guestKey='arbox-garage-guest-v2';
 function getLocal(key){try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}}
@@ -15,7 +15,8 @@ function userKey(){return session?'arbox-garage-user-'+session.user.id:guestKey}
 // Never copy browser-only guest selections into an authenticated account.
 function saveLocal(){if(session)localStorage.setItem(userKey(),JSON.stringify(state))}
 function switchState(){state=session?getLocal(userKey()):{};render()}
-function allModels(){return [...catalog,...communityModels,...customModels].filter(eligible)}
+function applyItemOverrides(m){const o=itemOverrides[String(m.id)];if(!o)return m;const next={...m};if(o.manufacturer)next.manufacturer=o.manufacturer;if(o.vehicle_make){next.brand=o.vehicle_make;next.vehicleMake=o.vehicle_make}if(o.name)next.name=o.name;if(o.product_code!==null&&o.product_code!==undefined)next.number=o.product_code;if(o.edition_type){next.variant=o.edition_type;next.editionType=o.edition_type}if(o.release)next.release=o.release;if(o.release_year!==null&&o.release_year!==undefined)next.releaseYear=o.release_year;if(o.community_badge!==null&&o.community_badge!==undefined)next.communityBadge=o.community_badge;if(o.source_url!==null&&o.source_url!==undefined)next.photoSource=safeSourceUrl(o.source_url);if(o.resolved_image_url||o.image_url)next.adminImageUrl=safeSourceUrl(o.resolved_image_url||o.image_url);if(o.hide_image===true)next.adminHideImage=true;return next}
+function allModels(){return [...catalog,...communityModels,...customModels].map(applyItemOverrides).filter(eligible)}
 
 state={};
 const statuses=['Owned','Ordered','Missing','Unconfirmed','Wishlist'];
@@ -24,7 +25,7 @@ const editionTypes=['Regular','Chase','Event Exclusive','Limited Edition'];
 function maker(m){return m.manufacturer||(m.brand==='Porsche'||m.brand==='Land Rover'?'ARBOX':m.brand)}
 function eligible(m){return allowedBrands.includes(maker(m))}
 function edition(m){return m.editionType||(m.variant==='Chase'?'Chase':'Regular')}
-function displayLabel(m){return labelOverrides[m.id]||m.name}
+function displayLabel(m){return m.name}
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function actual(m){return state[m.id]||(m.community?'Not tracking':'Missing')}
 function render(){
@@ -39,24 +40,27 @@ function render(){
  $('models').innerHTML=items.map(m=>{
   const label=displayLabel(m);
   const approved=photoOverrides[m.id];
-  const imageUrl=approved||m.photo;
+  const imageUrl=m.adminHideImage?null:(m.adminImageUrl||approved||m.photo);
   const isPending=photoPending.has(m.id);
   const photoButton=isPending?'<button class="photo-action" disabled>Photo awaiting review</button>':`<button class="photo-action" type="button" data-photo-model="${esc(m.id)}">${imageUrl?'📷 Suggest replacement photo':'📷 Contribute a photo'}</button>`;
-  const photoMarkup=imageUrl?`<a class="photo-link" href="${esc(approved||m.photoSource||m.photo)}" target="_blank" rel="noopener noreferrer" aria-label="Photo or source for ${esc(label)}"><img loading="lazy" src="${esc(imageUrl)}" alt="${approved?'Approved collector photo':'Product listing photo'}: ${esc(label)}" onerror="this.hidden=true;this.parentElement.nextElementSibling.hidden=false"></a><span class="photo-pending" hidden>Photo unavailable${m.photoSource?`<a class="source-link" href="${esc(m.photoSource)}" target="_blank" rel="noopener noreferrer">View product listing ↗</a>`:''}</span>`:`<span class="photo-pending">Exact product photo pending${m.photoSource?`<a class="source-link" href="${esc(m.photoSource)}" target="_blank" rel="noopener noreferrer">View product listing ↗</a>`:''}</span>`;
+  const photoMarkup=imageUrl?`<a class="photo-link" href="${esc(approved||m.photoSource||m.adminImageUrl||m.photo)}" target="_blank" rel="noopener noreferrer" aria-label="Photo or source for ${esc(label)}"><img loading="lazy" src="${esc(imageUrl)}" alt="${approved?'Approved collector photo':'Product listing photo'}: ${esc(label)}" onerror="this.hidden=true;this.parentElement.nextElementSibling.hidden=false"></a><span class="photo-pending" hidden>Photo unavailable${m.photoSource?`<a class="source-link" href="${esc(m.photoSource)}" target="_blank" rel="noopener noreferrer">View product listing ↗</a>`:''}</span>`:`<span class="photo-pending">Exact product photo pending${m.photoSource?`<a class="source-link" href="${esc(m.photoSource)}" target="_blank" rel="noopener noreferrer">View product listing ↗</a>`:''}</span>`;
   const tracking=!session
     ?`<select aria-label="Choose status for ${esc(label)} — login required to save" data-id="${esc(m.id)}"><option value="" selected disabled>＋ Choose status to save</option>${statuses.map(status=>`<option value="${status}">${status}</option>`).join('')}</select>`
     :m.community&&actual(m)==='Not tracking'
     ?`<button type="button" class="track-action" data-add-garage="${esc(m.id)}">＋ Add to my private garage</button>`
     :`<select aria-label="Collection status for ${esc(label)}" data-id="${esc(m.id)}">${(m.community?['Not tracking',...statuses]:statuses).map(status=>`<option ${actual(m)===status?'selected':''}>${status}</option>`).join('')}</select>`;
-  const adminMenu=photoAdmin?`<div class="admin-menu-wrapper"><button type="button" class="admin-menu-trigger" data-admin-menu-toggle aria-label="Admin actions for ${esc(label)}" aria-expanded="false">⋮</button><div class="admin-menu-popover" hidden><button type="button" data-edit-catalog-label="${esc(m.id)}">Edit label</button></div></div>`:'';
-  return `<article class="model"><div class="photo">${photoMarkup}<span class="number">${m.number?`#${esc(m.number)}`:'SKU pending'}</span>${edition(m)==='Chase'?'<span class="variant">✦ CHASE</span>':edition(m)==='Event Exclusive'?'<span class="variant">EVENT</span>':edition(m)==='Limited Edition'?'<span class="variant">LIMITED</span>':''}</div><div class="info"><div class="model-card-heading"><div class="muted">${esc(maker(m))} · ${esc(m.brand)}${m.community?' · Community verified':''}</div>${adminMenu}</div><div class="name">${esc(label)}</div><div class="sub"><span class="pill ${esc(String(m.release).toLowerCase())}">${esc(m.release)}</span></div>${photoButton}${tracking}</div></article>`;
+  const cardEdition=edition(m);
+  const editionBadge=cardEdition==='Regular'?'':cardEdition==='Chase'?'<span class="variant">✦ CHASE</span>':cardEdition==='Event Exclusive'?'<span class="variant">EVENT</span>':cardEdition==='Limited Edition'?'<span class="variant">LIMITED</span>':`<span class="variant">${esc(cardEdition)}</span>`;
+  const yearMarkup=m.releaseYear?`<span class="muted">${esc(m.releaseYear)}</span>`:'';
+  const adminMenu=photoAdmin&&(m.community||catalog.some(item=>String(item.id)===String(m.id)))?`<div class="admin-menu-wrapper"><button type="button" class="admin-menu-trigger" data-admin-menu-toggle aria-label="Admin actions for ${esc(label)}" aria-expanded="false">⋮</button><div class="admin-menu-popover" hidden><button type="button" data-edit-catalog-item="${esc(m.id)}">Edit all card details</button></div></div>`:'';
+  return `<article class="model"><div class="photo">${photoMarkup}<span class="number">${m.number?`#${esc(m.number)}`:'SKU pending'}</span>${editionBadge}</div><div class="info"><div class="model-card-heading"><div class="muted">${esc(maker(m))} · ${esc(m.brand)}${(m.communityBadge!==undefined?m.communityBadge:(m.community?'Community verified':''))?' · '+esc(m.communityBadge!==undefined?m.communityBadge:'Community verified'):''}</div>${adminMenu}</div><div class="name">${esc(label)}</div><div class="sub"><span class="pill ${esc(String(m.release).toLowerCase())}">${esc(m.release)}</span>${yearMarkup}</div>${photoButton}${tracking}</div></article>`;
  }).join('')||'<p>No matching models.</p>';
  document.querySelectorAll('select[data-id]').forEach(sel=>sel.addEventListener('change',()=>saveStatus(sel.dataset.id,sel.value)));
  document.querySelectorAll('button[data-photo-model]').forEach(btn=>btn.addEventListener('click',()=>openPhotoDialog(btn.dataset.photoModel)));
  document.querySelectorAll('button[data-add-garage]').forEach(btn=>btn.addEventListener('click',()=>saveStatus(btn.dataset.addGarage,'Wishlist')));
  bindAdminMenus($('models'));
- $('models').querySelectorAll('button[data-edit-catalog-label]').forEach(btn=>btn.addEventListener('click',()=>{
-  closeAdminMenus();openCatalogLabelEditor(btn.dataset.editCatalogLabel);
+ $('models').querySelectorAll('button[data-edit-catalog-item]').forEach(btn=>btn.addEventListener('click',()=>{
+  closeAdminMenus();openCatalogItemEditor(btn.dataset.editCatalogItem);
  }));
 }
 function closeAdminMenus(){
@@ -69,36 +73,66 @@ function bindAdminMenus(root){
   const open=menu.hidden;closeAdminMenus();menu.hidden=!open;button.setAttribute('aria-expanded',String(open));
  }));
 }
-async function loadCatalogLabelOverrides(){
- labelOverrides={};
+async function loadCatalogItemOverrides(){
+ itemOverrides={};
  if(!db)return;
- const {data,error}=await db.from('arbox_catalog_label_overrides').select('model_id,label');
- if(error){console.warn('Catalog label overrides are unavailable. Apply the admin label migration to enable shared edits.',error.message);return}
- for(const row of data||[])if(row?.model_id&&row?.label)labelOverrides[row.model_id]=row.label;
+ const {data,error}=await db.from('arbox_catalog_item_overrides').select('model_id,manufacturer,vehicle_make,name,product_code,edition_type,release,release_year,community_badge,source_url,image_url,image_path,hide_image');
+ if(error){console.warn('Catalogue item overrides are unavailable. Apply the full item edit migration to enable shared edits.',error.message);return}
+ const rows=data||[],withImage=rows.filter(row=>row.image_path),resolved={};
+ for(let offset=0;offset<withImage.length;offset+=40){
+  const batch=withImage.slice(offset,offset+40);
+  const {data:signed}=await db.storage.from(MODEL_BUCKET).createSignedUrls(batch.map(row=>row.image_path),6*60*60);
+  (signed||[]).forEach((item,i)=>{if(item?.signedUrl&&!item.error)resolved[String(batch[i].model_id)]=item.signedUrl});
+ }
+ for(const row of rows)if(row?.model_id)itemOverrides[String(row.model_id)]={...row,resolved_image_url:resolved[String(row.model_id)]||null};
 }
-function openCatalogLabelEditor(id){
+function openCatalogItemEditor(id){
  if(!photoAdmin||!session||!db)return;
- const model=allModels().find(item=>String(item.id)===String(id));
+ const model=[...catalog,...communityModels].map(applyItemOverrides).find(item=>String(item.id)===String(id));
  if(!model)return;
- editingCatalogLabelId=String(id);
- $('adminLabelItem').textContent=`${maker(model)} · ${model.brand}`;
- $('adminLabelInput').value=displayLabel(model);
- $('adminLabelDialog').showModal();
- setTimeout(()=>$('adminLabelInput').focus(),30);
+ editingCatalogItemId=String(id);
+ $('adminItemSummary').textContent=`Editing the shared card: ${maker(model)} · ${model.brand} · ${model.name}`;
+ $('adminItemManufacturer').value=maker(model);
+ $('adminItemVehicleMake').value=model.brand||'';
+ $('adminItemName').value=model.name||'';
+ $('adminItemCode').value=model.number||'';
+ $('adminItemEdition').value=edition(model)||'Regular';
+ const releaseOptions=['Unverified','Announced','Preorder','TBA','Released','Discontinued'];
+ const currentRelease=String(model.release||'Unverified');
+ $('adminItemRelease').innerHTML=[...new Set([...releaseOptions,currentRelease])].map(value=>`<option value="${esc(value)}">${esc(value)}</option>`).join('');
+ $('adminItemRelease').value=currentRelease;
+ $('adminItemYear').value=model.releaseYear||'';
+ $('adminItemBadge').value=model.communityBadge!==undefined?model.communityBadge:(model.community?'Community verified':'');
+ $('adminItemImageUrl').value=itemOverrides[String(id)]?.image_url||'';
+ $('adminItemHideImage').checked=itemOverrides[String(id)]?.hide_image===true;
+ $('adminItemClearImage').checked=false;$('adminItemImageFile').value='';editingAdminPhoto=null;
+ if(editingAdminPhotoPreview){URL.revokeObjectURL(editingAdminPhotoPreview);editingAdminPhotoPreview=null}
+ const imagePreview=$('adminItemImagePreview'),existingImage=model.adminImageUrl||model.photo;imagePreview.hidden=!existingImage;if(existingImage)imagePreview.src=existingImage;
+ $('adminItemSource').value=model.photoSource||'';$('adminItemMessage').textContent='';
+ $('adminItemDialog').showModal();
+ setTimeout(()=>$('adminItemName').focus(),30);
 }
-async function saveCatalogLabelEdit(){
- if(!photoAdmin||!session||!db||!editingCatalogLabelId)return;
- const id=editingCatalogLabelId;
- const model=allModels().find(item=>String(item.id)===id);
- if(!model)return;
- const label=$('adminLabelInput').value.trim();
- if(label.length>180){authUI('Labels must be 180 characters or fewer.');return}
- const result=label
-  ?await db.from('arbox_catalog_label_overrides').upsert({model_id:String(id),label,updated_by:session.user.id},{onConflict:'model_id'})
-  :await db.from('arbox_catalog_label_overrides').delete().eq('model_id',String(id));
- if(result.error){authUI('Could not save label: '+result.error.message);return}
- $('adminLabelDialog').close();editingCatalogLabelId=null;
- await loadCatalogLabelOverrides();render();authUI(label?'Shared label updated.':'Original label restored.');
+async function saveCatalogItemEdit(){
+ if(!photoAdmin||!session||!db||!editingCatalogItemId)return;
+ const id=editingCatalogItemId;
+ const text=id=>$(id).value.trim();
+ const name=text('adminItemName');
+ const vehicleMake=text('adminItemVehicleMake');
+ if(!name||!vehicleMake){$('adminItemMessage').textContent='Vehicle make and model title are required.';return}
+ const safeUrl=value=>{if(!value)return '';const safe=safeSourceUrl(value);return safe||false};
+ const source=safeUrl(text('adminItemSource'));
+ const image=safeUrl(text('adminItemImageUrl'));
+ if(source===false||image===false){$('adminItemMessage').textContent='Image and source must be valid http or https URLs.';return}
+ let imagePath=itemOverrides[id]?.image_path||null,uploadedPath=null;
+ $('adminItemSave').disabled=true;$('adminItemMessage').textContent='Saving shared card details…';
+ if(editingAdminPhoto&&!$('adminItemClearImage').checked){imagePath=`${session.user.id}/admin-card-edits/${crypto.randomUUID()}.jpg`;const upload=await db.storage.from(MODEL_BUCKET).upload(imagePath,editingAdminPhoto,{contentType:'image/jpeg',upsert:false});if(upload.error){$('adminItemSave').disabled=false;$('adminItemMessage').textContent='Could not upload replacement photo: '+upload.error.message;return}uploadedPath=imagePath}
+ if($('adminItemClearImage').checked){imagePath=null}
+ const row={model_id:id,manufacturer:text('adminItemManufacturer'),vehicle_make:vehicleMake,name,product_code:text('adminItemCode'),edition_type:text('adminItemEdition'),release:text('adminItemRelease'),release_year:text('adminItemYear'),community_badge:text('adminItemBadge'),source_url:source,image_url:$('adminItemClearImage').checked?'':image,image_path:imagePath,hide_image:$('adminItemHideImage').checked,updated_by:session.user.id};
+ const {error}=await db.from('arbox_catalog_item_overrides').upsert(row,{onConflict:'model_id'});
+ $('adminItemSave').disabled=false;
+ if(error){if(uploadedPath)await db.storage.from(MODEL_BUCKET).remove([uploadedPath]);$('adminItemMessage').textContent='Could not save item: '+error.message;return}
+ $('adminItemDialog').close();editingCatalogItemId=null;
+ await loadCatalogItemOverrides();render();authUI('Shared card details updated for all collectors.');
 }
 async function saveStatus(id,status){
  if(!session){
@@ -337,7 +371,7 @@ async function loadPhotoContributions(){
   const {data:mine,error:mineError}=await db.from('model_photo_contributions').select('model_id').eq('user_id',session.user.id).eq('status','pending');
   if(!mineError)photoPending=new Set((mine||[]).map(x=>x.model_id));
  }else photoPending=new Set();
- await loadCatalogLabelOverrides();
+ await loadCatalogItemOverrides();
  render();
  if(session)await checkPhotoAdmin();
  else{$('photoAdminPanel').hidden=true;$('modelAdminPanel').hidden=true;photoAdmin=false;if($('adminUtilities'))$('adminUtilities').hidden=true}
@@ -593,10 +627,11 @@ async function start(){
  $('modelPhotoGalleryInput').onchange=e=>addModelPhotos(e.target.files);
  $('modelSubmitSend').onclick=submitMissingModel;
  $('modelAdminRefresh').onclick=loadModelAdminQueue;
- $('adminLabelSave').onclick=saveCatalogLabelEdit;
- $('adminLabelRestore').onclick=()=>{$('adminLabelInput').value=''};
- $('adminLabelCancel').onclick=()=>{$('adminLabelDialog').close()};
- $('adminLabelDialog').addEventListener('close',()=>{editingCatalogLabelId=null});
+ $('adminItemSave').onclick=saveCatalogItemEdit;
+ $('adminItemCancel').onclick=()=>{$('adminItemDialog').close()};
+ $('adminItemChooseImage').onclick=()=>$('adminItemImageFile').click();
+ $('adminItemImageFile').onchange=async e=>{const file=e.target.files?.[0];if(!file)return;try{const prepared=await prepareModelPhoto(file);if(editingAdminPhotoPreview)URL.revokeObjectURL(editingAdminPhotoPreview);editingAdminPhoto=prepared.blob;editingAdminPhotoPreview=prepared.preview;$('adminItemImagePreview').src=prepared.preview;$('adminItemImagePreview').hidden=false;$('adminItemClearImage').checked=false;$('adminItemMessage').textContent='Replacement photo ready.'}catch(error){$('adminItemMessage').textContent='Could not prepare photo: '+error.message}};
+ $('adminItemDialog').addEventListener('close',()=>{editingCatalogItemId=null;editingAdminPhoto=null;if(editingAdminPhotoPreview)URL.revokeObjectURL(editingAdminPhotoPreview);editingAdminPhotoPreview=null;$('adminItemMessage').textContent=''});
 
  $('photoDialog').addEventListener('close',()=>{selectedPhotoModel=null;clearPhotoPreview()});
  if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
