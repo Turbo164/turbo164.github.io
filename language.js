@@ -165,7 +165,8 @@
     ['No car manufacturers are listed in this catalog.','ยังไม่มีผู้ผลิตรถยนต์ในแค็ตตาล็อกนี้','このカタログには自動車メーカーがまだ登録されていません。','此目录中尚未列出汽车制造商。'],
     ['catalogue','แค็ตตาล็อก','カタログ','目录'],
     ['All brands','ทุกแบรนด์','すべてのブランド','所有品牌'],
-    ['All brands ›','ทุกแบรนด์ ›','すべてのブランド ›','所有品牌 ›']
+    ['All brands ›','ทุกแบรนด์ ›','すべてのブランド ›','所有品牌 ›'],
+    ['Choose brand','เลือกแบรนด์','ブランドを選択','选择品牌']
   );
   const dictionaries={th:{},ja:{},zh:{}};
   rows.forEach(([en,th,ja,zh])=>{dictionaries.th[en]=th;dictionaries.ja[en]=ja;dictionaries.zh[en]=zh;});

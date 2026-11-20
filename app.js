@@ -596,17 +596,24 @@ async function loadModelAdminQueue(){
 function closeDiecastMenu(){$('diecastMenu').hidden=true;$('diecastMenuButton').setAttribute('aria-expanded','false')}
 function renderDiecastMenu(){
  const menu=$('diecastMenu');
- if(diecastMenuLevel==='root'){
-  menu.innerHTML=`<button type="button" data-open-brand-list>All brands ›</button><div class="diecast-menu-separator"></div><div class="diecast-menu-note">Filter diecast releases</div><button type="button" data-diecast-filter="Chase">Chase</button><button type="button" data-diecast-filter="Event">Event</button><button type="button" data-diecast-filter="Limited">Limited</button><button type="button" data-diecast-filter="Upcoming">Upcoming</button>`;
-  bindDiecastMenuActions(menu);return;
- }
- if(diecastMenuLevel==='brands'){
-  const brands=availableDiecastBrands();
-  menu.innerHTML=`<div class="diecast-menu-heading"><button type="button" class="diecast-menu-back" data-menu-back="root">‹ Back</button><strong>All brands</strong></div><button type="button" data-select-all-diecast>All diecast models</button><div class="diecast-menu-separator"></div>${brands.map(brand=>`<button type="button" data-select-diecast-brand="${esc(brand)}">${esc(brand)} ›</button>`).join('')||'<div class="diecast-menu-note">No diecast brands are listed yet.</div>'}`;
-  bindDiecastMenuActions(menu);return;
- }
- const makes=availableCarManufacturers(diecastMenuBrand);
- menu.innerHTML=`<div class="diecast-menu-heading"><button type="button" class="diecast-menu-back" data-menu-back="brands">‹ All brands</button><strong>${esc(diecastMenuBrand)}</strong></div><button type="button" data-select-brand-all="${esc(diecastMenuBrand)}">All ${esc(diecastMenuBrand)} models</button><div class="diecast-menu-separator"></div><div class="diecast-menu-note">Car manufacturer</div>${makes.map(make=>`<button type="button" data-select-car-make="${esc(make)}">${esc(make)}</button>`).join('')||'<div class="diecast-menu-note">No car manufacturers are listed in this catalog.</div>'}`;
+ const brands=availableDiecastBrands();
+ const makes=diecastMenuBrand==='All'?[]:availableCarManufacturers(diecastMenuBrand);
+ menu.dataset.level=diecastMenuLevel;
+ menu.innerHTML=`
+  <section class="diecast-menu-panel diecast-menu-panel-root" aria-label="Diecast filters">
+   <button type="button" data-open-brand-list>All brands <span aria-hidden="true">›</span></button>
+   <div class="diecast-menu-separator"></div><div class="diecast-menu-note">Filter diecast releases</div>
+   <button type="button" data-diecast-filter="Chase">Chase</button><button type="button" data-diecast-filter="Event">Event</button><button type="button" data-diecast-filter="Limited">Limited</button><button type="button" data-diecast-filter="Upcoming">Upcoming</button>
+  </section>
+  <section class="diecast-menu-panel diecast-menu-panel-brands" aria-label="Diecast brands">
+   <div class="diecast-menu-heading"><button type="button" class="diecast-menu-back diecast-menu-mobile-back" data-menu-back="root">‹ Back</button><strong>All brands</strong></div>
+   <button type="button" data-select-all-diecast>All diecast models</button><div class="diecast-menu-separator"></div>
+   ${brands.map(brand=>`<button type="button" data-select-diecast-brand="${esc(brand)}">${esc(brand)} <span aria-hidden="true">›</span></button>`).join('')||'<div class="diecast-menu-note">No diecast brands are listed yet.</div>'}
+  </section>
+  <section class="diecast-menu-panel diecast-menu-panel-makes" aria-label="Car manufacturers">
+   <div class="diecast-menu-heading"><button type="button" class="diecast-menu-back diecast-menu-mobile-back" data-menu-back="brands">‹ All brands</button><strong>${esc(diecastMenuBrand==='All'?'Choose brand':diecastMenuBrand)}</strong></div>
+   ${diecastMenuBrand==='All'?'<div class="diecast-menu-note">Choose a brand to see its catalog manufacturers.</div>':`<button type="button" data-select-brand-all="${esc(diecastMenuBrand)}">All ${esc(diecastMenuBrand)} models</button><div class="diecast-menu-separator"></div><div class="diecast-menu-note">Car manufacturer</div>${makes.map(make=>`<button type="button" data-select-car-make="${esc(make)}">${esc(make)}</button>`).join('')||'<div class="diecast-menu-note">No car manufacturers are listed in this catalog.</div>'}`}
+  </section>`;
  bindDiecastMenuActions(menu);
 }
 function bindDiecastMenuActions(menu){menu.querySelectorAll('button').forEach(button=>{button.onclick=()=>handleDiecastMenuButton(button)})}
