@@ -129,6 +129,32 @@
     ['View source ↗','ดูแหล่งข้อมูล ↗','情報元を見る ↗','查看来源 ↗'],
     ['No catalog match found. Search the web to help identify this release.','ไม่พบรุ่นในแค็ตตาล็อก ค้นหาเว็บเพื่อช่วยระบุรุ่นนี้','カタログに一致する製品がありません。ウェブ検索で特定してください。','未找到目录匹配项。请搜索网页以协助识别此款产品。']
   );
+  rows.push(
+    ['Product categories','หมวดหมู่สินค้า','商品カテゴリー','商品类别'],
+    ['Diecast','รถไดแคสต์','ミニカー','合金车'],
+    ['Diorama','ฉากไดโอรามา','ジオラマ','场景模型'],
+    ['Figure','ฟิกเกอร์','フィギュア','人偶'],
+    ['Accessory','อุปกรณ์เสริม','アクセサリー','配件'],
+    ['Other','อื่น ๆ','その他','其他'],
+    ['Diecast ▾','รถไดแคสต์ ▾','ミニカー ▾','合金车 ▾'],
+    ['All brands','ทุกแบรนด์','すべてのブランド','所有品牌'],
+    ['Diecast catalogue','แค็ตตาล็อกรถไดแคสต์','ミニカーカタログ','合金车目录'],
+    ['ARBOX catalogue','แค็ตตาล็อก ARBOX','ARBOXカタログ','ARBOX 目录'],
+    ['PGM catalogue','แค็ตตาล็อก PGM','PGMカタログ','PGM 目录'],
+    ['Tarmac Works catalogue','แค็ตตาล็อก Tarmac Works','Tarmac Worksカタログ','Tarmac Works 目录'],
+    ['INNO64 catalogue','แค็ตตาล็อก INNO64','INNO64カタログ','INNO64 目录'],
+    ['Diorama catalogue','แค็ตตาล็อกฉากไดโอรามา','ジオラマカタログ','场景模型目录'],
+    ['Figure catalogue','แค็ตตาล็อกฟิกเกอร์','フィギュアカタログ','人偶目录'],
+    ['Accessory catalogue','แค็ตตาล็อกอุปกรณ์เสริม','アクセサリーカタログ','配件目录'],
+    ['Other catalogue','แค็ตตาล็อกอื่น ๆ','その他のカタログ','其他目录'],
+    ['Diorama collection','หมวดฉากไดโอรามา','ジオラマコレクション','场景模型分类'],
+    ['Figure collection','หมวดฟิกเกอร์','フィギュアコレクション','人偶分类'],
+    ['Accessory collection','หมวดอุปกรณ์เสริม','アクセサリーコレクション','配件分类'],
+    ['Other collection','หมวดอื่น ๆ','その他のコレクション','其他分类'],
+    ['No listings yet in this category.','ยังไม่มีรายการในหมวดหมู่นี้','このカテゴリーにはまだ登録がありません。','此类别暂无条目。'],
+    ['Items added here will appear in their own catalogue.','รายการที่เพิ่มจะปรากฏในแค็ตตาล็อกของหมวดนี้','ここに追加されたアイテムは専用カタログに表示されます。','添加到此处的条目会显示在对应目录中。'],
+    ['0 items','0 รายการ','0 件','0 个条目']
+  );
   const dictionaries={th:{},ja:{},zh:{}};
   rows.forEach(([en,th,ja,zh])=>{dictionaries.th[en]=th;dictionaries.ja[en]=ja;dictionaries.zh[en]=zh;});
   const langStore='turbo164-language-v1';
