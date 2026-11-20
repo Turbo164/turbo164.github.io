@@ -5,7 +5,8 @@ let catalog=[],state={},session=null,filter='All',radar=[],customModels=[],commu
 const PHOTO_BUCKET='arbox-photo-contributions';
 const MODEL_BUCKET='arbox-model-submissions';
 let modelPhotos=[]; 
-let photoOverrides={},photoPending=new Set(),photoAdmin=false,selectedPhotoModel=null,chosenPhotoBlob=null,previewObjectUrl=null;
+let photoOverrides={},photoPending=new Set(),photoAdmin=false,selectedPhotoModel=null,chosenPhotoBlob=null,previewObjectUrl=null,labelOverrides={};
+let editingCatalogLabelId=null;
 
 const guestKey='arbox-garage-guest-v2';
 function getLocal(key){try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return {}}}
@@ -23,33 +24,81 @@ const editionTypes=['Regular','Chase','Event Exclusive','Limited Edition'];
 function maker(m){return m.manufacturer||(m.brand==='Porsche'||m.brand==='Land Rover'?'ARBOX':m.brand)}
 function eligible(m){return allowedBrands.includes(maker(m))}
 function edition(m){return m.editionType||(m.variant==='Chase'?'Chase':'Regular')}
+function displayLabel(m){return labelOverrides[m.id]||m.name}
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function actual(m){return state[m.id]||(m.community?'Not tracking':'Missing')}
 function render(){
  const q=$('search').value.toLowerCase();
  const all=allModels();
- const items=all.filter(m=>(filter==='All'||maker(m)===filter||(filter==='Chase'&&edition(m)==='Chase')||(filter==='Event'&&edition(m)==='Event Exclusive')||(filter==='Limited'&&edition(m)==='Limited Edition')||(filter==='Upcoming'&&['TBA','Preorder','Announced','Upcoming'].includes(m.release)))&&(`${m.number} ${m.name} ${m.brand} ${maker(m)} ${edition(m)}`.toLowerCase().includes(q)));
+ const items=all.filter(m=>(filter==='All'||maker(m)===filter||(filter==='Chase'&&edition(m)==='Chase')||(filter==='Event'&&edition(m)==='Event Exclusive')||(filter==='Limited'&&edition(m)==='Limited Edition')||(filter==='Upcoming'&&['TBA','Preorder','Announced','Upcoming'].includes(m.release)))&&(`${m.number} ${displayLabel(m)} ${m.name} ${m.brand} ${maker(m)} ${edition(m)}`.toLowerCase().includes(q)));
  // Don't misrepresent public catalogue items as a guest's private collection.
  $('owned').textContent=session?all.filter(m=>actual(m)==='Owned').length:'—';
  $('ordered').textContent=session?all.filter(m=>actual(m)==='Ordered').length:'—';
  $('missing').textContent=session?all.filter(m=>actual(m)==='Missing').length:'—';
  $('count').textContent=`${items.length} models`;
  $('models').innerHTML=items.map(m=>{
+  const label=displayLabel(m);
   const approved=photoOverrides[m.id];
   const imageUrl=approved||m.photo;
   const isPending=photoPending.has(m.id);
   const photoButton=isPending?'<button class="photo-action" disabled>Photo awaiting review</button>':`<button class="photo-action" type="button" data-photo-model="${esc(m.id)}">${imageUrl?'📷 Suggest replacement photo':'📷 Contribute a photo'}</button>`;
-  const photoMarkup=imageUrl?`<a class="photo-link" href="${esc(approved||m.photoSource||m.photo)}" target="_blank" rel="noopener noreferrer" aria-label="Photo or source for ${esc(m.name)}"><img loading="lazy" src="${esc(imageUrl)}" alt="${approved?'Approved collector photo':'Product listing photo'}: ${esc(m.name)}" onerror="this.hidden=true;this.parentElement.nextElementSibling.hidden=false"></a><span class="photo-pending" hidden>Photo unavailable${m.photoSource?`<a class="source-link" href="${esc(m.photoSource)}" target="_blank" rel="noopener noreferrer">View product listing ↗</a>`:''}</span>`:`<span class="photo-pending">Exact product photo pending${m.photoSource?`<a class="source-link" href="${esc(m.photoSource)}" target="_blank" rel="noopener noreferrer">View product listing ↗</a>`:''}</span>`;
+  const photoMarkup=imageUrl?`<a class="photo-link" href="${esc(approved||m.photoSource||m.photo)}" target="_blank" rel="noopener noreferrer" aria-label="Photo or source for ${esc(label)}"><img loading="lazy" src="${esc(imageUrl)}" alt="${approved?'Approved collector photo':'Product listing photo'}: ${esc(label)}" onerror="this.hidden=true;this.parentElement.nextElementSibling.hidden=false"></a><span class="photo-pending" hidden>Photo unavailable${m.photoSource?`<a class="source-link" href="${esc(m.photoSource)}" target="_blank" rel="noopener noreferrer">View product listing ↗</a>`:''}</span>`:`<span class="photo-pending">Exact product photo pending${m.photoSource?`<a class="source-link" href="${esc(m.photoSource)}" target="_blank" rel="noopener noreferrer">View product listing ↗</a>`:''}</span>`;
   const tracking=!session
-    ?`<select aria-label="Choose status for ${esc(m.name)} — login required to save" data-id="${esc(m.id)}"><option value="" selected disabled>＋ Choose status to save</option>${statuses.map(status=>`<option value="${status}">${status}</option>`).join('')}</select>`
+    ?`<select aria-label="Choose status for ${esc(label)} — login required to save" data-id="${esc(m.id)}"><option value="" selected disabled>＋ Choose status to save</option>${statuses.map(status=>`<option value="${status}">${status}</option>`).join('')}</select>`
     :m.community&&actual(m)==='Not tracking'
     ?`<button type="button" class="track-action" data-add-garage="${esc(m.id)}">＋ Add to my private garage</button>`
-    :`<select aria-label="Collection status for ${esc(m.name)}" data-id="${esc(m.id)}">${(m.community?['Not tracking',...statuses]:statuses).map(status=>`<option ${actual(m)===status?'selected':''}>${status}</option>`).join('')}</select>`;
-  return `<article class="model"><div class="photo">${photoMarkup}<span class="number">${m.number?`#${esc(m.number)}`:'SKU pending'}</span>${edition(m)==='Chase'?'<span class="variant">✦ CHASE</span>':edition(m)==='Event Exclusive'?'<span class="variant">EVENT</span>':edition(m)==='Limited Edition'?'<span class="variant">LIMITED</span>':''}</div><div class="info"><div class="muted">${esc(maker(m))} · ${esc(m.brand)}${m.community?' · Community verified':''}</div><div class="name">${esc(m.name)}</div><div class="sub"><span class="pill ${esc(String(m.release).toLowerCase())}">${esc(m.release)}</span></div>${photoButton}${tracking}</div></article>`;
+    :`<select aria-label="Collection status for ${esc(label)}" data-id="${esc(m.id)}">${(m.community?['Not tracking',...statuses]:statuses).map(status=>`<option ${actual(m)===status?'selected':''}>${status}</option>`).join('')}</select>`;
+  const adminMenu=photoAdmin?`<div class="admin-menu-wrapper"><button type="button" class="admin-menu-trigger" data-admin-menu-toggle aria-label="Admin actions for ${esc(label)}" aria-expanded="false">⋮</button><div class="admin-menu-popover" hidden><button type="button" data-edit-catalog-label="${esc(m.id)}">Edit label</button></div></div>`:'';
+  return `<article class="model"><div class="photo">${photoMarkup}<span class="number">${m.number?`#${esc(m.number)}`:'SKU pending'}</span>${edition(m)==='Chase'?'<span class="variant">✦ CHASE</span>':edition(m)==='Event Exclusive'?'<span class="variant">EVENT</span>':edition(m)==='Limited Edition'?'<span class="variant">LIMITED</span>':''}</div><div class="info"><div class="model-card-heading"><div class="muted">${esc(maker(m))} · ${esc(m.brand)}${m.community?' · Community verified':''}</div>${adminMenu}</div><div class="name">${esc(label)}</div><div class="sub"><span class="pill ${esc(String(m.release).toLowerCase())}">${esc(m.release)}</span></div>${photoButton}${tracking}</div></article>`;
  }).join('')||'<p>No matching models.</p>';
  document.querySelectorAll('select[data-id]').forEach(sel=>sel.addEventListener('change',()=>saveStatus(sel.dataset.id,sel.value)));
  document.querySelectorAll('button[data-photo-model]').forEach(btn=>btn.addEventListener('click',()=>openPhotoDialog(btn.dataset.photoModel)));
  document.querySelectorAll('button[data-add-garage]').forEach(btn=>btn.addEventListener('click',()=>saveStatus(btn.dataset.addGarage,'Wishlist')));
+ bindAdminMenus($('models'));
+ $('models').querySelectorAll('button[data-edit-catalog-label]').forEach(btn=>btn.addEventListener('click',()=>{
+  closeAdminMenus();openCatalogLabelEditor(btn.dataset.editCatalogLabel);
+ }));
+}
+function closeAdminMenus(){
+ document.querySelectorAll('.admin-menu-popover:not([hidden])').forEach(menu=>{menu.hidden=true;menu.parentElement?.querySelector('[data-admin-menu-toggle]')?.setAttribute('aria-expanded','false')});
+}
+function bindAdminMenus(root){
+ root.querySelectorAll('[data-admin-menu-toggle]').forEach(button=>button.addEventListener('click',event=>{
+  event.preventDefault();event.stopPropagation();
+  const menu=button.parentElement.querySelector('.admin-menu-popover');
+  const open=menu.hidden;closeAdminMenus();menu.hidden=!open;button.setAttribute('aria-expanded',String(open));
+ }));
+}
+async function loadCatalogLabelOverrides(){
+ labelOverrides={};
+ if(!db)return;
+ const {data,error}=await db.from('arbox_catalog_label_overrides').select('model_id,label');
+ if(error){console.warn('Catalog label overrides are unavailable. Apply the admin label migration to enable shared edits.',error.message);return}
+ for(const row of data||[])if(row?.model_id&&row?.label)labelOverrides[row.model_id]=row.label;
+}
+function openCatalogLabelEditor(id){
+ if(!photoAdmin||!session||!db)return;
+ const model=allModels().find(item=>String(item.id)===String(id));
+ if(!model)return;
+ editingCatalogLabelId=String(id);
+ $('adminLabelItem').textContent=`${maker(model)} · ${model.brand}`;
+ $('adminLabelInput').value=displayLabel(model);
+ $('adminLabelDialog').showModal();
+ setTimeout(()=>$('adminLabelInput').focus(),30);
+}
+async function saveCatalogLabelEdit(){
+ if(!photoAdmin||!session||!db||!editingCatalogLabelId)return;
+ const id=editingCatalogLabelId;
+ const model=allModels().find(item=>String(item.id)===id);
+ if(!model)return;
+ const label=$('adminLabelInput').value.trim();
+ if(label.length>180){authUI('Labels must be 180 characters or fewer.');return}
+ const result=label
+  ?await db.from('arbox_catalog_label_overrides').upsert({model_id:String(id),label,updated_by:session.user.id},{onConflict:'model_id'})
+  :await db.from('arbox_catalog_label_overrides').delete().eq('model_id',String(id));
+ if(result.error){authUI('Could not save label: '+result.error.message);return}
+ $('adminLabelDialog').close();editingCatalogLabelId=null;
+ await loadCatalogLabelOverrides();render();authUI(label?'Shared label updated.':'Original label restored.');
 }
 async function saveStatus(id,status){
  if(!session){
@@ -288,6 +337,7 @@ async function loadPhotoContributions(){
   const {data:mine,error:mineError}=await db.from('model_photo_contributions').select('model_id').eq('user_id',session.user.id).eq('status','pending');
   if(!mineError)photoPending=new Set((mine||[]).map(x=>x.model_id));
  }else photoPending=new Set();
+ await loadCatalogLabelOverrides();
  render();
  if(session)await checkPhotoAdmin();
  else{$('photoAdminPanel').hidden=true;$('modelAdminPanel').hidden=true;photoAdmin=false;if($('adminUtilities'))$('adminUtilities').hidden=true}
@@ -298,6 +348,7 @@ async function checkPhotoAdmin(){
  $('photoAdminPanel').hidden=!photoAdmin;
  $('modelAdminPanel').hidden=!photoAdmin;
  if($('adminUtilities'))$('adminUtilities').hidden=!photoAdmin;
+ render();
  if(photoAdmin){await loadPhotoAdminQueue();await loadModelAdminQueue()}
 }
 async function loadPhotoAdminQueue(){
@@ -473,9 +524,22 @@ async function loadModelAdminQueue(){
    ||m.name.trim().toLowerCase()===rec.name.trim().toLowerCase()));
   const dupLabel=duplicates.length?`<p class="model-warning">⚠ Potential catalogue match: ${esc(duplicates.slice(0,3).map(m=>m.name).join('; '))}. Verify before approving.</p>`:'';
   const source=safeSourceUrl(rec.source_url);
-  return `<article class="model-review"><strong>${esc(rec.brand)} · ${esc(rec.name)}</strong><p class="muted">Vehicle: ${esc(rec.vehicle_make)} · Code: ${esc(rec.product_code||'Not supplied')} · ${esc(rec.edition_type)} · ${esc(rec.release)}${rec.release_year?' · '+esc(rec.release_year):''}</p>${source?`<p><a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Submitted source ↗</a></p>`:''}<p class="muted">Notes: ${esc(rec.note||'None')}</p>${dupLabel}<div class="model-review-photos">${photos.map(src=>`<img loading="lazy" src="${esc(src)}" alt="Photo supporting new model submission">`).join('')}</div><div class="review-actions"><button type="button" class="primary" data-model-review="${esc(rec.id)}" data-model-review-status="approved">Approve &amp; publish</button><button type="button" data-model-review="${esc(rec.id)}" data-model-review-status="rejected">Reject</button></div></article>`;
+  return `<article class="model-review"><div class="model-review-heading"><strong>${esc(rec.brand)} · ${esc(rec.name)}</strong><div class="admin-menu-wrapper"><button type="button" class="admin-menu-trigger" data-admin-menu-toggle aria-label="Admin actions for pending ${esc(rec.name)}" aria-expanded="false">⋮</button><div class="admin-menu-popover" hidden><button type="button" data-edit-submission-label="${esc(rec.id)}" data-current-label="${esc(rec.name)}">Edit label</button></div></div></div><p class="muted">Vehicle: ${esc(rec.vehicle_make)} · Code: ${esc(rec.product_code||'Not supplied')} · ${esc(rec.edition_type)} · ${esc(rec.release)}${rec.release_year?' · '+esc(rec.release_year):''}</p>${source?`<p><a href="${esc(source)}" target="_blank" rel="noopener noreferrer">Submitted source ↗</a></p>`:''}<p class="muted">Notes: ${esc(rec.note||'None')}</p>${dupLabel}<div class="model-review-photos">${photos.map(src=>`<img loading="lazy" src="${esc(src)}" alt="Photo supporting new model submission">`).join('')}</div><div class="review-actions"><button type="button" class="primary" data-model-review="${esc(rec.id)}" data-model-review-status="approved">Approve &amp; publish</button><button type="button" data-model-review="${esc(rec.id)}" data-model-review-status="rejected">Reject</button></div></article>`;
  }));
  area.innerHTML=cards.join('');
+ bindAdminMenus(area);
+ area.querySelectorAll('[data-edit-submission-label]').forEach(button=>button.addEventListener('click',async()=>{
+  closeAdminMenus();
+  const label=prompt('Edit the submitted release label before review:',button.dataset.currentLabel||'');
+  if(label===null)return;
+  const next=label.trim();
+  if(!next||next.length>180){$('modelAdminMessage').textContent='Enter a label from 1 to 180 characters.';return}
+  button.disabled=true;
+  const {error:updateError}=await db.rpc('admin_edit_arbox_model_submission_label',{p_id:button.dataset.editSubmissionLabel,p_label:next});
+  if(updateError){$('modelAdminMessage').textContent='Could not edit submission label: '+updateError.message;button.disabled=false;return}
+  $('modelAdminMessage').textContent='Submission label updated.';
+  await loadModelAdminQueue();
+ }));
  area.querySelectorAll('[data-model-review]').forEach(button=>button.addEventListener('click',async()=>{
   const id=button.dataset.modelReview,status=button.dataset.modelReviewStatus;
   let reviewNote='';
@@ -508,7 +572,10 @@ async function start(){
  $('loginGoogle').onclick=()=>oauthLogin('google');
  $('loginEmailForm').onsubmit=e=>{e.preventDefault();emailLinkLogin()};
  $('loginDialog').addEventListener('close',()=>localStorage.setItem(loginPromptKey,'1'));
- document.addEventListener('click',e=>{if(!$('accountMenu').hidden&&!e.target.closest('.account-anchor')){$('accountMenu').hidden=true;$('accountBtn').setAttribute('aria-expanded','false')}});
+ document.addEventListener('click',e=>{
+  if(!e.target.closest('.admin-menu-wrapper'))closeAdminMenus();
+  if(!$('accountMenu').hidden&&!e.target.closest('.account-anchor')){$('accountMenu').hidden=true;$('accountBtn').setAttribute('aria-expanded','false')}
+ });
  installPullToRefresh();
  $('refresh').onclick=loadRadar;
  $('export').onclick=csv;
@@ -526,6 +593,10 @@ async function start(){
  $('modelPhotoGalleryInput').onchange=e=>addModelPhotos(e.target.files);
  $('modelSubmitSend').onclick=submitMissingModel;
  $('modelAdminRefresh').onclick=loadModelAdminQueue;
+ $('adminLabelSave').onclick=saveCatalogLabelEdit;
+ $('adminLabelRestore').onclick=()=>{$('adminLabelInput').value=''};
+ $('adminLabelCancel').onclick=()=>{$('adminLabelDialog').close()};
+ $('adminLabelDialog').addEventListener('close',()=>{editingCatalogLabelId=null});
 
  $('photoDialog').addEventListener('close',()=>{selectedPhotoModel=null;clearPhotoPreview()});
  if('serviceWorker'in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
