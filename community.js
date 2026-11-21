@@ -14,11 +14,11 @@
  const dateLabel=value=>{try{return new Intl.DateTimeFormat(undefined,{dateStyle:'medium',timeStyle:'short'}).format(new Date(value))}catch{return ''}};
  const t=(en)=>window.T164I18N?.translate(en)||en;
  function message(text,error=false){const el=$('communityMessage');el.textContent=text||'';el.classList.toggle('error',!!error)}
- function showCommunity(mode='feed'){
+ async function showCommunity(mode='feed'){
   currentMode=mode;document.body.classList.add('community-view');$('communityPage').hidden=false;
   $('communityComposer').hidden=mode==='saved';$('communityPageTitle').textContent=mode==='saved'?t('Saved community posts'):t('Community');
   $('communityBack').hidden=mode==='saved';$('communitySavedBack').hidden=mode!=='saved';
-  message('');loadPosts();loadCommunityWarnings();if(adminCommunity)loadAdminReports();
+  message('');await loadPosts();loadCommunityWarnings();if(adminCommunity)loadAdminReports();
  }
  function hideCommunity(){document.body.classList.remove('community-view');$('communityPage').hidden=true;currentMode='feed'}
  window.openTurbo164Community=showCommunity;
@@ -31,6 +31,7 @@
   loadCommunityWarnings();checkCommunityAdmin();
  };
  window.communityRefresh=()=>{if(document.body.classList.contains('community-view'))loadPosts()};
+ window.addEventListener('hashchange',()=>{const match=location.hash.match(/^#community-post-([0-9a-f-]{36})$/i);if(match)openReportedPost(match[1],false)});
  function requireLogin(action){if(communityUser())return true;openLoginDialog(`Log in to ${action} in the community.`);return false}
  function publicUrl(path){if(!path)return '';return activeDb().storage.from(bucket).getPublicUrl(path).data.publicUrl}
  function authorName(){const u=communityUser()?.user;if(!u)return '';const meta=u.user_metadata||{};return String(meta.full_name||meta.name||fallbackName(u.id)).slice(0,70)}
@@ -61,14 +62,23 @@
   if(adminCommunity&&document.body.classList.contains('community-view'))loadAdminReports();
  }
  async function loadReportData(){
-  const status=$('communityReportDataStatus'),area=$('communityReportDataTable');
-  if(!adminCommunity||!activeDb()){status.textContent=t('Admin access required.');area.replaceChildren();return}
-  status.textContent=t('Loading report data…');area.replaceChildren();
-  const {data,error}=await activeDb().rpc('community_admin_report_data');
-  if(error){status.textContent=`${t('Could not load report data:')} ${error.message}`;return}
+  const status=$('communityReportDataStatus'),issues=$('communityReportIssueList'),users=$('communityReportUserTable');
+  if(!adminCommunity||!activeDb()){status.textContent=t('Admin access required.');issues.replaceChildren();users.replaceChildren();return}
+  status.textContent=t('Loading report data…');issues.replaceChildren();users.replaceChildren();
+  const [detailResult,userResult]=await Promise.all([activeDb().rpc('community_admin_report_details'),activeDb().rpc('community_admin_report_data')]);
+  if(detailResult.error||userResult.error){const error=detailResult.error||userResult.error;status.textContent=`${t('Could not load report data:')} ${error.message}`;return}
   status.textContent='';
-  if(!data?.length){status.textContent=t('No report data yet.');return}
-  area.innerHTML=`<div class="community-report-data-table-wrap"><table class="community-report-data-table"><thead><tr><th>${esc(t('User email'))}</th><th>${esc(t('Reports received'))}</th><th>${esc(t('Warnings sent'))}</th></tr></thead><tbody>${data.map(row=>`<tr><td class="community-report-data-email">${esc(row.user_email||t('Email unavailable'))}</td><td>${Number(row.reports_received)||0}</td><td>${Number(row.warnings_sent)||0}</td></tr>`).join('')}</tbody></table></div>`;
+  const reports=detailResult.data||[],reportedUsers=userResult.data||[];
+  $('communityReportIssuesTitle').textContent=t('Reported issues');$('communityReportedUsersTitle').textContent=t('Reported users');
+  if(!reports.length)issues.innerHTML=`<p class="muted">${esc(t('No reports yet.'))}</p>`;
+  else issues.innerHTML=`<div class="community-report-data-table-wrap"><table class="community-report-data-table community-report-issues-table"><thead><tr><th>${esc(t('Reported issue'))}</th><th>${esc(t('Post from'))}</th><th>${esc(t('Reported by'))}</th><th>${esc(t('Report reason'))}</th><th>${esc(t('Status'))}</th></tr></thead><tbody>${reports.map(row=>`<tr><td>${row.post_id?`<a href="#community-post-${esc(row.post_id)}" data-open-reported-post="${esc(row.post_id)}">${esc(t('Open post'))}</a>`:esc(t('Post removed or unavailable'))}<small class="community-report-meta">${esc(dateLabel(row.reported_at))}</small></td><td class="community-report-data-email">${esc(row.post_owner_email||t('Email unavailable'))}</td><td class="community-report-data-email">${esc(row.reporter_email||t('Email unavailable'))}</td><td>${esc(row.report_reason)}</td><td>${esc(t(row.report_status[0].toUpperCase()+row.report_status.slice(1)))}</td></tr>`).join('')}</tbody></table></div>`;
+  if(!reportedUsers.length)users.innerHTML=`<p class="muted">${esc(t('No reported users yet.'))}</p>`;
+  else users.innerHTML=`<div class="community-report-data-table-wrap"><table class="community-report-data-table"><thead><tr><th>${esc(t('User email'))}</th><th>${esc(t('Posts reported'))}</th><th>${esc(t('Warnings given'))}</th></tr></thead><tbody>${reportedUsers.map(row=>`<tr><td class="community-report-data-email">${esc(row.user_email||t('Email unavailable'))}</td><td>${Number(row.reports_received)||0}</td><td>${Number(row.warnings_sent)||0}</td></tr>`).join('')}</tbody></table></div>`;
+  issues.querySelectorAll('[data-open-reported-post]').forEach(link=>link.onclick=event=>{event.preventDefault();openReportedPost(link.dataset.openReportedPost)});
+ }
+ async function openReportedPost(postId,updateHash=true){
+  $('communityReportDataDialog').close();if(updateHash&&location.hash!==`#community-post-${postId}`)history.pushState(null,'',`#community-post-${encodeURIComponent(postId)}`);
+  await showCommunity('feed');const card=document.getElementById(`community-post-${postId}`);if(card)card.scrollIntoView({behavior:'smooth',block:'center'});
  }
  async function loadAdminReports(){
   if(!adminCommunity)return;
@@ -155,7 +165,7 @@
    const menuAction=own?`<button type="button" data-delete-post="${esc(post.id)}">${esc(t('Delete this post'))}</button>`:`<button type="button" data-report-post="${esc(post.id)}">${esc(t('Report this post'))}</button>`;
    const hearted=hearts.has(post.id),isSaved=saved.has(post.id),canSave=post.allow_saves||isSaved;
    const open=commentOpen.has(post.id);
-   return `<article class="community-post" data-post-id="${esc(post.id)}"><div class="community-post-top"><div class="community-post-menu"><button type="button" class="community-post-menu-trigger" data-post-menu aria-label="${esc(t('Post options'))}" aria-expanded="false">⋮</button><div class="community-post-menu-panel" hidden>${menuAction}</div></div></div><div class="community-post-head"><div><strong>${esc(displayAuthor(post.author_id))}</strong><time>${esc(dateLabel(post.created_at))}</time></div></div>${ownerControls}${post.body?`<p class="community-post-body">${esc(post.body).replace(/\n/g,'<br>')}</p>`:''}${media}<div class="community-actions"><button type="button" class="community-heart ${hearted?'hearted':''}" data-heart-post="${esc(post.id)}" aria-pressed="${hearted}">♥ <span>${heartCounts[post.id]||0}</span> ${esc(t('Love'))}</button>${canSave?`<button type="button" class="community-save ${isSaved?'is-saved':''}" data-save-post="${esc(post.id)}">${isSaved?'✓ '+esc(t('Saved')):'＋ '+esc(t('Save post'))}</button>`:`<span class="community-save-disabled">${esc(t('Saving disabled by author'))}</span>`}<button type="button" class="community-comments-toggle" data-toggle-comments="${esc(post.id)}">▢ ${esc(t('Comments'))} (${commentCounts[post.id]||0})</button></div><div class="community-comments" data-comments-for="${esc(post.id)}" ${open?'':'hidden'}>${open?`<div class="comment-list">${esc(t('Loading comments…'))}</div><form class="community-comment-form" data-comment-form="${esc(post.id)}"><input name="comment" maxlength="2000" placeholder="${esc(t('Write a comment…'))}" required><button type="submit">${esc(t('Post'))}</button></form>`:''}</div></article>`;
+   return `<article class="community-post" id="community-post-${esc(post.id)}" data-post-id="${esc(post.id)}"><div class="community-post-top"><div class="community-post-menu"><button type="button" class="community-post-menu-trigger" data-post-menu aria-label="${esc(t('Post options'))}" aria-expanded="false">⋮</button><div class="community-post-menu-panel" hidden>${menuAction}</div></div></div><div class="community-post-head"><div><strong>${esc(displayAuthor(post.author_id))}</strong><time>${esc(dateLabel(post.created_at))}</time></div></div>${ownerControls}${post.body?`<p class="community-post-body">${esc(post.body).replace(/\n/g,'<br>')}</p>`:''}${media}<div class="community-actions"><button type="button" class="community-heart ${hearted?'hearted':''}" data-heart-post="${esc(post.id)}" aria-pressed="${hearted}">♥ <span>${heartCounts[post.id]||0}</span> ${esc(t('Love'))}</button>${canSave?`<button type="button" class="community-save ${isSaved?'is-saved':''}" data-save-post="${esc(post.id)}">${isSaved?'✓ '+esc(t('Saved')):'＋ '+esc(t('Save post'))}</button>`:`<span class="community-save-disabled">${esc(t('Saving disabled by author'))}</span>`}<button type="button" class="community-comments-toggle" data-toggle-comments="${esc(post.id)}">▢ ${esc(t('Comments'))} (${commentCounts[post.id]||0})</button></div><div class="community-comments" data-comments-for="${esc(post.id)}" ${open?'':'hidden'}>${open?`<div class="comment-list">${esc(t('Loading comments…'))}</div><form class="community-comment-form" data-comment-form="${esc(post.id)}"><input name="comment" maxlength="2000" placeholder="${esc(t('Write a comment…'))}" required><button type="submit">${esc(t('Post'))}</button></form>`:''}</div></article>`;
   }).join('');
   area.querySelectorAll('[data-heart-post]').forEach(b=>b.onclick=()=>toggleHeart(b.dataset.heartPost));
   area.querySelectorAll('[data-save-post]').forEach(b=>b.onclick=()=>toggleSave(b.dataset.savePost));
@@ -269,7 +279,7 @@
   $('communityWarningForm').onsubmit=sendAdminWarning;$('communityWarningCancel').onclick=()=>{$('communityWarningDialog').close();warningReportId=null};
   document.addEventListener('click',event=>{if(!event.target.closest('.community-post-menu'))document.querySelectorAll('.community-post-menu-panel').forEach(panel=>panel.hidden=true)});
   window.addEventListener('turbo164:languagechange',()=>{const label=$('communityPageTitle');if(label&&document.body.classList.contains('community-view'))label.textContent=currentMode==='saved'?t('Saved community posts'):t('Community');syncComposerType(false);loadCommunityWarnings();if($('communityReportDataDialog').open)loadReportData()});
-  window.communityAuthChanged();syncComposerType();
+  window.communityAuthChanged();syncComposerType();const initialPost=location.hash.match(/^#community-post-([0-9a-f-]{36})$/i);if(initialPost)openReportedPost(initialPost[1],false);
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
