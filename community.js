@@ -24,6 +24,7 @@
  window.openTurbo164Community=showCommunity;
  window.closeTurbo164Community=hideCommunity;
  window.communityAuthChanged=()=>{
+  syncProfileAccount();
   const isIn=!!communityUser();
   $('communitySavedBtn').hidden=!isIn;
   $('communityAccountLogin').hidden=isIn;
@@ -69,8 +70,158 @@
   if(error){status.textContent=`${t('Could not load contributors:')} ${error.message}`;return}
   if(!data?.length){status.textContent=t('No contributors yet.');return}
   status.textContent='';
-  list.innerHTML=data.slice(0,5).map((row,index)=>{const rank=index+1,badge=rank<=3?`<span class="top-contributor-medal top-medal-${rank}" aria-label="${esc(t('Rank'))} ${rank}">🏆</span>`:`<span class="top-contributor-rank">#${rank}</span>`;return `<li class="top-contributor-row">${badge}<div><div class="top-contributor-name">${esc(row.username)}</div><div class="top-contributor-stats"><span>${esc(t('Post shared'))}: ${Number(row.posts_shared)||0}</span><span>${esc(t('Car upload'))}: ${Number(row.car_uploads)||0}</span></div></div><div class="top-contributor-points"><strong>${Number(row.points)||0}</strong><span>${esc(t('Points'))}</span></div></li>`}).join('');
+  list.innerHTML=data.slice(0,5).map((row,index)=>{const rank=index+1,badge=rank<=3?`<span class="top-contributor-medal top-medal-${rank}" aria-label="${esc(t('Rank'))} ${rank}">🏆</span>`:`<span class="top-contributor-rank">#${rank}</span>`;return `<li class="top-contributor-row">${badge}<div><div class="top-contributor-name">${esc(row.username==='Anonymous contributor'?t('Anonymous contributor'):row.username)}</div><div class="top-contributor-stats"><span>${esc(t('Post shared'))}: ${Number(row.posts_shared)||0}</span><span>${esc(t('Car upload'))}: ${Number(row.car_uploads)||0}</span></div></div><div class="top-contributor-points"><strong>${Number(row.points)||0}</strong><span>${esc(t('Points'))}</span></div></li>`}).join('');
  }
+ function setProfileAvatar(image, value){
+  const valid=typeof value==='string'&&/^data:image\/jpeg;base64,[A-Za-z0-9+/]+={0,2}$/.test(value);
+  if(valid)image.src=value;else image.removeAttribute('src');
+  image.hidden=!valid;
+ }
+ let appearanceOwner=null, appearanceLoad=0, pointsLoad=0, pendingAvatar=null;
+ function renderProfileIdentity(row){
+  setProfileAvatar($('accountProfileAvatar'),row?.avatar);
+  $('accountProfileUsername').textContent=row?.username||'';
+  $('accountProfileUsername').hidden=!row?.username;
+ }
+ async function readAppearance(userId){
+  const {data,error}=await activeDb().from('community_appearance')
+    .select('username,show_username,avatar').eq('user_id',userId).maybeSingle();
+  if(error)throw error;
+  return data;
+ }
+ function syncProfileAccount(){
+  const userId=communityUser()?.user.id||null;
+  $('communityAppearanceBtn').hidden=!userId;
+  $('communityPointsBtn').hidden=!userId;
+  if(userId===appearanceOwner)return;
+  appearanceOwner=userId;
+  const request=++appearanceLoad;
+  ++pointsLoad;
+  $('communityAppearanceDialog').close();
+  $('communityPointsDialog').close();
+  $('communityAppearanceForm').reset();
+  $('communityPointsResults').hidden=true;
+  pendingAvatar=null;
+  setProfileAvatar($('communityAvatarPreview'),null);
+  renderProfileIdentity(null);
+  if(userId&&activeDb())readAppearance(userId).then(row=>{
+   if(request===appearanceLoad&&communityUser()?.user.id===userId)renderProfileIdentity(row);
+  }).catch(()=>{});
+ }
+ function openProfileDialog(id){
+  if(!communityUser()||!activeDb())return false;
+  $(id).showModal();
+  $('accountMenu').hidden=true;
+  $('accountBtn').setAttribute('aria-expanded','false');
+  $(id).addEventListener('close',()=>$('accountBtn').focus(),{once:true});
+  return true;
+ }
+ async function openAppearance(){
+  if(!openProfileDialog('communityAppearanceDialog'))return;
+  const userId=communityUser().user.id, request=++appearanceLoad;
+  const status=$('communityAppearanceStatus'),fields=$('communityAppearanceFields');
+  fields.disabled=true;
+  $('communityAppearanceForm').reset();
+  pendingAvatar=null;
+  setProfileAvatar($('communityAvatarPreview'),null);
+  status.textContent=t('Loading profile…');
+  try{
+   const row=await readAppearance(userId);
+   if(request!==appearanceLoad||communityUser()?.user.id!==userId)return;
+   pendingAvatar=row?.avatar||null;
+   $('communityUsername').value=row?.username||'';
+   $('communityShowUsername').checked=row?.show_username===true;
+   setProfileAvatar($('communityAvatarPreview'),pendingAvatar);
+   renderProfileIdentity(row);
+   fields.disabled=false;
+   status.textContent='';
+  }catch(error){
+   if(request===appearanceLoad)status.textContent=t('Could not load profile. Close and reopen Appearance to retry.');
+  }
+ }
+ async function prepareAvatar(file){
+  if(!file.type.startsWith('image/')||file.size>12*1024*1024)throw Error(t('Choose a picture under 12 MB.'));
+  const url=URL.createObjectURL(file),image=new Image();
+  try{
+   image.src=url;await image.decode();
+   const canvas=document.createElement('canvas');canvas.width=canvas.height=160;
+   const context=canvas.getContext('2d'),side=Math.min(image.naturalWidth,image.naturalHeight);
+   context.fillStyle='#151d29';context.fillRect(0,0,160,160);
+   context.drawImage(image,(image.naturalWidth-side)/2,(image.naturalHeight-side)/2,side,side,0,0,160,160);
+   const avatar=canvas.toDataURL('image/jpeg',.8);
+   if(avatar.length>48000)throw Error(t('Could not read that picture.'));
+   return avatar;
+  }finally{URL.revokeObjectURL(url)}
+ }
+ async function previewAvatar(){
+  const input=$('communityAvatarFile'),file=input.files[0];
+  if(!file)return;
+  const request=appearanceLoad,fields=$('communityAppearanceFields'),status=$('communityAppearanceStatus');
+  fields.disabled=true;
+  try{
+   const avatar=await prepareAvatar(file);
+   if(request!==appearanceLoad)return;
+   pendingAvatar=avatar;setProfileAvatar($('communityAvatarPreview'),pendingAvatar);
+   status.textContent='';
+  }catch{if(request===appearanceLoad)status.textContent=t('Choose a readable picture under 12 MB.')}
+  finally{if(request===appearanceLoad){input.value='';fields.disabled=false}}
+ }
+ async function saveAppearance(event){
+  event.preventDefault();
+  const userId=communityUser()?.user.id, request=appearanceLoad;
+  const fields=$('communityAppearanceFields'),status=$('communityAppearanceStatus');
+  if(!userId||fields.disabled)return;
+  const username=$('communityUsername').value.trim(),show_username=$('communityShowUsername').checked;
+  if(show_username&&!username){
+   status.textContent=t('Enter a username before showing it on Top Contributors.');
+   $('communityUsername').focus();return;
+  }
+  const row={user_id:userId,username,show_username,avatar:pendingAvatar};
+  fields.disabled=true;status.textContent=t('Saving profile…');
+  try{
+   const {error}=await activeDb().from('community_appearance').upsert(row,{onConflict:'user_id'});
+   if(error)throw error;
+   if(request!==appearanceLoad||communityUser()?.user.id!==userId)return;
+   renderProfileIdentity(row);
+   status.textContent=t('Profile saved.');
+   if(document.body.classList.contains('community-view')&&currentMode==='feed')loadTopContributors();
+  }catch{if(request===appearanceLoad)status.textContent=t('Could not save profile. Please try again.')}
+  finally{if(request===appearanceLoad)fields.disabled=false}
+ }
+ function renderPoints(row){
+  const month=$('communityPointsMonth');
+  month.textContent=row?contributorMonthLabel(row.month_start):'';
+  $('communityPointsPosts').textContent=String(row?.posts_shared??0);
+  $('communityPointsCars').textContent=String(row?.car_uploads??0);
+  $('communityPointsTotal').textContent=String(row?.points??0);
+  $('communityPointsResults').hidden=!row;
+ }
+ async function openPoints(){
+  if(!openProfileDialog('communityPointsDialog'))return;
+  const userId=communityUser().user.id,request=++pointsLoad,status=$('communityPointsStatus');
+  renderPoints(null);status.textContent=t('Loading contribution points…');
+  try{
+   const {data,error}=await activeDb().rpc('community_my_contribution_points');
+   if(error||!data?.length)throw error||Error('Empty response');
+   if(request!==pointsLoad||communityUser()?.user.id!==userId)return;
+   renderPoints(data[0]);status.textContent='';
+  }catch{if(request===pointsLoad)status.textContent=t('Could not load your points. Close and reopen to retry.')}
+ }
+ function initProfile(){
+  $('communityAppearanceBtn').onclick=openAppearance;
+  $('communityPointsBtn').onclick=openPoints;
+  $('communityAppearanceForm').onsubmit=saveAppearance;
+  $('communityAvatarFile').onchange=previewAvatar;
+  $('communityRemoveAvatar').onclick=()=>{
+   pendingAvatar=null;setProfileAvatar($('communityAvatarPreview'),null);
+   $('communityAppearanceStatus').textContent='';
+  };
+  $('communityAppearanceClose').onclick=()=>$('communityAppearanceDialog').close();
+  $('communityPointsClose').onclick=()=>$('communityPointsDialog').close();
+  $('communityPointsDialog').addEventListener('close',()=>{++pointsLoad;renderPoints(null)});
+ }
+
+
  function contributorMonthLabel(monthStart){
   const language=$('languageSelect')?.value||'en',locale={en:'en-GB',th:'th-TH',ja:'ja-JP',zh:'zh-CN'}[language]||'en-GB';
   return new Intl.DateTimeFormat(locale,{year:'numeric',month:'long',timeZone:'Asia/Bangkok'}).format(new Date(`${monthStart}T12:00:00+07:00`));
@@ -79,7 +230,7 @@
   const selected=$('topContributorHistoryMonth').value,list=$('topContributorHistoryList');
   const rows=contributorHistory.filter(row=>row.month_start===selected);
   const medals=['top-medal-1','top-medal-2','top-medal-3'];
-  list.innerHTML=rows.map(row=>{const rank=Number(row.contributor_rank),badge=rank<=3?`<span class="top-contributor-medal ${medals[rank-1]}" aria-label="${esc(t('Rank'))} ${rank}">🏆</span>`:`<span class="top-contributor-rank">#${rank}</span>`;return `<li class="top-contributor-row">${badge}<div><div class="top-contributor-name">${esc(row.username)}</div><div class="top-contributor-stats"><span>${esc(t('Post shared'))}: ${Number(row.posts_shared)||0}</span><span>${esc(t('Car upload'))}: ${Number(row.car_uploads)||0}</span></div></div><div class="top-contributor-points"><strong>${Number(row.points)||0}</strong><span>${esc(t('Points'))}</span></div></li>`}).join('');
+  list.innerHTML=rows.map(row=>{const rank=Number(row.contributor_rank),badge=rank<=3?`<span class="top-contributor-medal ${medals[rank-1]}" aria-label="${esc(t('Rank'))} ${rank}">🏆</span>`:`<span class="top-contributor-rank">#${rank}</span>`;return `<li class="top-contributor-row">${badge}<div><div class="top-contributor-name">${esc(row.username==='Anonymous contributor'?t('Anonymous contributor'):row.username)}</div><div class="top-contributor-stats"><span>${esc(t('Post shared'))}: ${Number(row.posts_shared)||0}</span><span>${esc(t('Car upload'))}: ${Number(row.car_uploads)||0}</span></div></div><div class="top-contributor-points"><strong>${Number(row.points)||0}</strong><span>${esc(t('Points'))}</span></div></li>`}).join('');
  }
  async function loadContributorHistory(){
   const status=$('topContributorHistoryStatus'),select=$('topContributorHistoryMonth'),list=$('topContributorHistoryList');
@@ -299,6 +450,7 @@
   files.forEach(file=>{const image=document.createElement('img');image.alt=file.name;image.src=URL.createObjectURL(file);preview.append(image)});
  }
  async function init(){
+  initProfile();
   $('communityTopBtn').onclick=()=>showCommunity('feed');$('communityBack').onclick=hideCommunity;$('communitySavedBack').onclick=hideCommunity;
   $('communityReportDataBtn').onclick=()=>{if(!adminCommunity)return;$('accountMenu').hidden=true;$('accountBtn').setAttribute('aria-expanded','false');$('communityReportDataDialog').showModal();loadReportData()};
   $('topContributorHistoryBtn').onclick=()=>{if(!adminCommunity)return;$('accountMenu').hidden=true;$('accountBtn').setAttribute('aria-expanded','false');$('topContributorHistoryDialog').showModal();loadContributorHistory()};
