@@ -54,11 +54,21 @@
   if(error){message(error.message,true);return}loadCommunityWarnings();
  }
  async function checkCommunityAdmin(){
-  const panel=$('communityAdminPanel');if(!panel)return;
-  if(!communityUser()||!activeDb()){adminCommunity=false;panel.hidden=true;return}
+  const panel=$('communityAdminPanel'),reportDataButton=$('communityReportDataBtn');if(!panel)return;
+  if(!communityUser()||!activeDb()){adminCommunity=false;panel.hidden=true;if(reportDataButton)reportDataButton.hidden=true;return}
   const {data,error}=await activeDb().rpc('is_arbox_photo_admin');
-  adminCommunity=!error&&data===true;panel.hidden=!adminCommunity;
+  adminCommunity=!error&&data===true;panel.hidden=!adminCommunity;if(reportDataButton)reportDataButton.hidden=!adminCommunity;
   if(adminCommunity&&document.body.classList.contains('community-view'))loadAdminReports();
+ }
+ async function loadReportData(){
+  const status=$('communityReportDataStatus'),area=$('communityReportDataTable');
+  if(!adminCommunity||!activeDb()){status.textContent=t('Admin access required.');area.replaceChildren();return}
+  status.textContent=t('Loading report data…');area.replaceChildren();
+  const {data,error}=await activeDb().rpc('community_admin_report_data');
+  if(error){status.textContent=`${t('Could not load report data:')} ${error.message}`;return}
+  status.textContent='';
+  if(!data?.length){status.textContent=t('No report data yet.');return}
+  area.innerHTML=`<div class="community-report-data-table-wrap"><table class="community-report-data-table"><thead><tr><th>${esc(t('User email'))}</th><th>${esc(t('Reports received'))}</th><th>${esc(t('Warnings sent'))}</th></tr></thead><tbody>${data.map(row=>`<tr><td class="community-report-data-email">${esc(row.user_email||t('Email unavailable'))}</td><td>${Number(row.reports_received)||0}</td><td>${Number(row.warnings_sent)||0}</td></tr>`).join('')}</tbody></table></div>`;
  }
  async function loadAdminReports(){
   if(!adminCommunity)return;
@@ -248,6 +258,7 @@
  }
  async function init(){
   $('communityTopBtn').onclick=()=>showCommunity('feed');$('communityBack').onclick=hideCommunity;$('communitySavedBack').onclick=hideCommunity;
+  $('communityReportDataBtn').onclick=()=>{if(!adminCommunity)return;$('accountMenu').hidden=true;$('accountBtn').setAttribute('aria-expanded','false');$('communityReportDataDialog').showModal();loadReportData()};
   $('communitySavedBtn').onclick=()=>{ $('accountMenu').hidden=true;$('accountBtn').setAttribute('aria-expanded','false');showCommunity('saved')};
   $('communityAccountLogin').onclick=()=>{ $('accountMenu').hidden=true;openLoginDialog('Log in to save posts, react, comment, and publish.')};
   $('communityComposerForm').onsubmit=publishPost;$('communityPostType').onchange=()=>syncComposerType();
@@ -256,7 +267,7 @@
   $('communityReportForm').onsubmit=submitReport;$('communityReportCancel').onclick=()=>{$('communityReportDialog').close();reportPostId=null};
   $('communityWarningForm').onsubmit=sendAdminWarning;$('communityWarningCancel').onclick=()=>{$('communityWarningDialog').close();warningReportId=null};
   document.addEventListener('click',event=>{if(!event.target.closest('.community-post-menu'))document.querySelectorAll('.community-post-menu-panel').forEach(panel=>panel.hidden=true)});
-  window.addEventListener('turbo164:languagechange',()=>{const label=$('communityPageTitle');if(label&&document.body.classList.contains('community-view'))label.textContent=currentMode==='saved'?t('Saved community posts'):t('Community');syncComposerType(false);loadCommunityWarnings()});
+  window.addEventListener('turbo164:languagechange',()=>{const label=$('communityPageTitle');if(label&&document.body.classList.contains('community-view'))label.textContent=currentMode==='saved'?t('Saved community posts'):t('Community');syncComposerType(false);loadCommunityWarnings();if($('communityReportDataDialog').open)loadReportData()});
   window.communityAuthChanged();syncComposerType();
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
