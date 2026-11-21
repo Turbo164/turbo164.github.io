@@ -10,7 +10,11 @@ from urllib.request import Request, urlopen
 
 ORIGIN = "https://www.flim164.com"
 HOSTS = {"flim164.com", "www.flim164.com"}
-CATEGORIES = {"diorama-164": "Diorama 1:64", "mini-diorama-164": "Mini Diorama 1:64"}
+CATEGORIES = {
+    "diorama-164": "Diorama 1:64",
+    "mini-diorama-164": "Mini Diorama 1:64",
+    "decorative-accessories": "Decorative Accessories",
+}
 OUTPUT = Path(__file__).resolve().parents[1] / "diorama-catalog.json"
 
 
@@ -79,6 +83,9 @@ class DetailPage(HTMLParser):
         self.description = []
         self.read_description = False
         self.has_title = False
+        self.price_parts = []
+        self.read_price = False
+        self.sold_out = None
         self.feed(html)
 
     def handle_starttag(self, tag, attributes):
@@ -87,14 +94,31 @@ class DetailPage(HTMLParser):
             self.read_description = True
         if tag == "h1" and "product-title" in classes:
             self.has_title = True
+        if self.has_title and tag == "span":
+            if "price" in classes:
+                self.read_price = True
+            if "out-of-stock" in classes:
+                self.sold_out = True
+            elif "in-stock" in classes:
+                self.sold_out = False
 
     def handle_endtag(self, tag):
         if tag == "div":
             self.read_description = False
+        if tag == "span":
+            self.read_price = False
 
     def handle_data(self, data):
         if self.read_description:
             self.description.append(data)
+        if self.read_price:
+            self.price_parts.append(data)
+
+    def price(self):
+        amount = " ".join("".join(self.price_parts).split())
+        if not re.fullmatch(r"\$\s*\d[\d,]*(?:\.\d{2})?", amount):
+            raise ValueError(f"Unrecognized product price: {amount!r}")
+        return amount
 
     def dimensions(self):
         if not self.has_title:
@@ -133,8 +157,15 @@ def sync():
     for key, label in CATEGORIES.items():
         for item in list_category(key):
             if item["url"] not in entries:
-                dimensions = DetailPage(fetch(item["url"])).dimensions()
-                entries[item["url"]] = {**item, "category": label, "scale": "1:64", "dimensions": dimensions}
+                detail = DetailPage(fetch(item["url"]))
+                dimensions = detail.dimensions()
+                if detail.sold_out is None:
+                    raise ValueError(f"Unrecognized availability for {item['url']}")
+                has_scale = key != "decorative-accessories" or bool(re.search(r"\b1\s*[:/]\s*64\b", item["name"]))
+                entries[item["url"]] = {
+                    **item, "category": label, "scale": "1:64" if has_scale else None, "dimensions": dimensions,
+                    "price": detail.price(), "soldOut": detail.sold_out
+                }
     if not entries:
         raise ValueError("Empty partner catalog; retaining previous snapshot")
     products = sorted(entries.values(), key=lambda item: (item["name"].casefold(), item["url"]))
