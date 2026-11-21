@@ -26,7 +26,16 @@ const statuses=['Owned','Ordered','Missing','Unconfirmed','Wishlist'];
 const allowedBrands=['ARBOX','PGM','Tarmac Works','INNO64'];
 const editionTypes=['Regular','Chase','Event Exclusive','Limited Edition'];
 function maker(m){return m.manufacturer||(m.brand==='Porsche'||m.brand==='Land Rover'?'ARBOX':m.brand)}
-function eligible(m){return allowedBrands.includes(maker(m))}
+function eligible(m){
+ const brand=maker(m);
+ return allowedBrands.includes(brand)||!!(brand&&itemOverrides[String(m.id)]?.manufacturer===brand);
+}
+function adminBrandSuggestions(current){
+ const brands=[current,...allowedBrands,...availableDiecastBrands()].filter(Boolean);
+ const unique=new Map();
+ for(const brand of brands){const key=brand.trim().toLowerCase();if(key&&!unique.has(key))unique.set(key,brand.trim());}
+ return [...unique.values()].sort((a,b)=>a.localeCompare(b));
+}
 function edition(m){return m.editionType||(m.variant==='Chase'?'Chase':'Regular')}
 function displayLabel(m){return m.name}
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -187,7 +196,8 @@ function openCatalogItemEditor(id){
  if(!model)return;
  editingCatalogItemId=String(id);
  $('adminItemSummary').textContent=`Editing the shared card: ${maker(model)} · ${model.brand} · ${model.name}`;
- $('adminItemManufacturer').value=maker(model);
+ $('adminItemManufacturer').value=maker(model)||'';
+ $('adminItemManufacturerOptions').replaceChildren(...adminBrandSuggestions(maker(model)).map(brand=>new Option(brand,brand)));
  $('adminItemVehicleMake').value=model.brand||'';
  $('adminItemName').value=model.name||'';
  $('adminItemCode').value=model.number||'';
@@ -213,6 +223,8 @@ async function saveCatalogItemEdit(){
  const text=id=>$(id).value.trim();
  const name=text('adminItemName');
  const vehicleMake=text('adminItemVehicleMake');
+ const manufacturer=text('adminItemManufacturer');
+ if(!manufacturer||manufacturer.length>120){$('adminItemMessage').textContent='Enter a brand name of 1 to 120 characters.';return}
  if(!name||!vehicleMake){$('adminItemMessage').textContent='Vehicle make and model title are required.';return}
  const safeUrl=value=>{if(!value)return '';const safe=safeSourceUrl(value);return safe||false};
  const source=safeUrl(text('adminItemSource'));
@@ -222,7 +234,7 @@ async function saveCatalogItemEdit(){
  $('adminItemSave').disabled=true;$('adminItemMessage').textContent='Saving shared card details…';
  if(editingAdminPhoto&&!$('adminItemClearImage').checked){imagePath=`${session.user.id}/admin-card-edits/${crypto.randomUUID()}.jpg`;const upload=await db.storage.from(MODEL_BUCKET).upload(imagePath,editingAdminPhoto,{contentType:'image/jpeg',upsert:false});if(upload.error){$('adminItemSave').disabled=false;$('adminItemMessage').textContent='Could not upload replacement photo: '+upload.error.message;return}uploadedPath=imagePath}
  if($('adminItemClearImage').checked){imagePath=null}
- const row={model_id:id,manufacturer:text('adminItemManufacturer'),vehicle_make:vehicleMake,name,product_code:text('adminItemCode'),edition_type:text('adminItemEdition'),release:text('adminItemRelease'),release_year:text('adminItemYear'),community_badge:text('adminItemBadge'),source_url:source,image_url:$('adminItemClearImage').checked?'':image,image_path:imagePath,hide_image:$('adminItemHideImage').checked,updated_by:session.user.id};
+ const row={model_id:id,manufacturer,vehicle_make:vehicleMake,name,product_code:text('adminItemCode'),edition_type:text('adminItemEdition'),release:text('adminItemRelease'),release_year:text('adminItemYear'),community_badge:text('adminItemBadge'),source_url:source,image_url:$('adminItemClearImage').checked?'':image,image_path:imagePath,hide_image:$('adminItemHideImage').checked,updated_by:session.user.id};
  const {error}=await db.from('arbox_catalog_item_overrides').upsert(row,{onConflict:'model_id'});
  $('adminItemSave').disabled=false;
  if(error){if(uploadedPath)await db.storage.from(MODEL_BUCKET).remove([uploadedPath]);$('adminItemMessage').textContent='Could not save item: '+error.message;return}
