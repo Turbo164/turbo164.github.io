@@ -33,6 +33,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 function actual(m){return state[m.id]||(m.community?'Not tracking':'Missing')}
 const dioramaSource='https://www.flim164.com/products';
 let dioramaProducts=null,dioramaLoading=false,dioramaUnavailable=false;
+function isPartnerSection(){return catalogView==='Diorama'||catalogView==='Accessory'}
 function partnerUrl(value,path){
  try{
   const url=new URL(value);
@@ -54,21 +55,25 @@ async function loadDioramaCatalogue(){
  }
  dioramaUnavailable=!dioramaProducts;
  dioramaLoading=false;
- if(catalogView==='Diorama')render();
+ if(isPartnerSection())render();
 }
-function renderDioramaCatalogue(query){
+function renderPartnerCatalogue(query){
  if(!dioramaProducts&&!dioramaLoading&&!dioramaUnavailable)void loadDioramaCatalogue();
- const items=(dioramaProducts||[]).filter(item=>[item.name,item.category,item.scale,item.dimensions,'FILM CUSTOM MODEL FLIM164']
-  .join(' ').toLowerCase().includes(query.trim()));
+ const accessoryView=catalogView==='Accessory';
+ const items=(dioramaProducts||[]).filter(item=>(item.category==='Decorative Accessories')===accessoryView&&
+  [item.name,item.category,item.scale,item.dimensions,'FILM CUSTOM MODEL FLIM164'].join(' ').toLowerCase().includes(query.trim()));
  $('count').textContent=dioramaProducts?`${items.length} ${items.length===1?"item":"items"}`:'';
- const status=dioramaUnavailable?'The partner catalog is temporarily unavailable.':dioramaLoading?'Loading dioramas…':items.length?'':'No matching dioramas.';
+ const status=dioramaUnavailable?'The partner catalog is temporarily unavailable.':dioramaLoading?'Loading partner catalog…':items.length?'':accessoryView?'No matching accessories.':'No matching dioramas.';
  $('models').innerHTML=`<div class="notice diorama-partner"><strong>FILM CUSTOM MODEL</strong> <span class="muted">Turbo164 partner</span> <a class="source-link" href="${dioramaSource}" target="_blank" rel="noopener noreferrer">Browse all on FLIM164 ↗</a>
  ${status?`<p role="status">${esc(status)}</p>`:''}</div>`+items.map(item=>{
   const href=partnerUrl(item.url,/^\/products\/[a-z0-9-]+$/);
   const image=partnerUrl(item.image,/^\/media\/products\/[A-Za-z0-9._/-]+$/);
-  return `<article class="model">
-   <div class="photo">${image?`<a class="photo-link" href="${esc(href)}" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="${esc(image)}" alt="${esc(item.name)}" onerror="this.parentElement.hidden=true;this.parentElement.nextElementSibling.hidden=false"></a>`:''}<span class="photo-pending" ${image?'hidden':''}>Photo unavailable</span></div>
+  const soldOut=item.soldOut===true;
+  const price=typeof item.price==='string'&&/^\$\s*\d[\d,]*(?:\.\d{2})?$/.test(item.price)?item.price:'';
+  return `<article class="model${soldOut?' diorama-sold-out':''}">
+   <div class="photo">${soldOut?`<span class="diorama-sold-out-label">Sold out</span>`:''}${image?`<a class="photo-link" href="${esc(href)}" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="${esc(image)}" alt="${esc(item.name)}" onerror="this.parentElement.hidden=true;this.parentElement.nextElementSibling.hidden=false"></a>`:''}<span class="photo-pending" ${image?'hidden':''}>Photo unavailable</span></div>
    <div class="info"><div class="name">${esc(item.name)}</div><div class="sub"><span class="pill">${esc(item.category)}</span></div>
+   ${price?`<p class="diorama-price">${esc(price)}</p>`:''}
    ${item.dimensions?`<p class="muted">${esc(item.dimensions)}</p>`:''}<a class="source-link" href="${esc(href)}" target="_blank" rel="noopener noreferrer">View on FLIM164 ↗</a></div>
   </article>`;
  }).join('');
@@ -87,7 +92,7 @@ function render(){
  $('count').textContent=catalogView==='Diecast'?`${items.length} models`:'0 items';
  $('diecastMenuButton').classList.toggle('active',catalogView==='Diecast');
  document.querySelectorAll('[data-category]').forEach(button=>button.classList.toggle('active',button.dataset.category===catalogView));
- if(catalogView==='Diorama'){renderDioramaCatalogue(q);return}
+ if(isPartnerSection()){renderPartnerCatalogue(q);return}
  $('models').innerHTML=items.map(m=>{
   const label=displayLabel(m);
   const approved=photoOverrides[m.id];

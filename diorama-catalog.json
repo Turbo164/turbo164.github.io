@@ -3,12 +3,24 @@
   "updated": "2026-11-21",
   "products": [
     {
+      "name": "Automatic water dispenser",
+      "url": "https://www.flim164.com/products/automatic-water-dispenser-698b27b4efc8d",
+      "image": "https://www.flim164.com/media/products/lNxaJvbcSYFbIGCxvwTdF2jG2BeZGoc1luq97zVf.jpg",
+      "category": "Decorative Accessories",
+      "scale": null,
+      "dimensions": null,
+      "price": "$12.50",
+      "soldOut": true
+    },
+    {
       "name": "Diorama bigsize",
       "url": "https://www.flim164.com/products/diorama-bigsize-699c0b2eba14e",
       "image": "https://www.flim164.com/media/products/JtXh6IhvVfP4DWGM4nzhgrqxDsTcdfaeOSO0dNSt.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "117 × 37 cm"
+      "dimensions": "117 × 37 cm",
+      "price": "$306.38",
+      "soldOut": true
     },
     {
       "name": "Diorama Bigsize",
@@ -16,7 +28,9 @@
       "image": "https://www.flim164.com/media/products/5djzIwxy91bXxFlOlmKlD0MULa3PKNB5ipuKQs20.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "56 × 38 × 20 cm"
+      "dimensions": "56 × 38 × 20 cm",
+      "price": "$454.64",
+      "soldOut": false
     },
     {
       "name": "Diorama Boxmini Japan 1:64",
@@ -24,7 +38,9 @@
       "image": "https://www.flim164.com/media/products/zBgsOAkEz0mguS8ZMUamS54Y1AC8X8x1UpDwQnMv.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "26 × 17.5 cm"
+      "dimensions": "26 × 17.5 cm",
+      "price": "$125.20",
+      "soldOut": true
     },
     {
       "name": "Diorama Boxmini scale 1:64",
@@ -32,7 +48,9 @@
       "image": "https://www.flim164.com/media/products/jLWuunm41rqriU7BcSfeqDieJ3bOyymbHQNe1jTP.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "9 × 12.8 × 9.7 cm"
+      "dimensions": "9 × 12.8 × 9.7 cm",
+      "price": "$50.00",
+      "soldOut": true
     },
     {
       "name": "Diorama Bridge",
@@ -40,7 +58,9 @@
       "image": "https://www.flim164.com/media/products/AYzRvzozTDT3nZWfZxJ0oS6pkp4JAtbMGrCcsGzh.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "30 × 30 × 17 cm"
+      "dimensions": "30 × 30 × 17 cm",
+      "price": "$239.44",
+      "soldOut": false
     },
     {
       "name": "Diorama City of Racing Cars scale 1:64",
@@ -48,7 +68,9 @@
       "image": "https://www.flim164.com/media/products/UULMmJT4RKl72NGidbikviXxJyzJcPFmSWsFP6Hx.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "60 × 35 × 21 cm"
+      "dimensions": "60 × 35 × 21 cm",
+      "price": "$475.31",
+      "soldOut": true
     },
     {
       "name": "Diorama Express warehouse scale 1:64",
@@ -56,7 +78,9 @@
       "image": "https://www.flim164.com/media/products/7pQHihLRSXe6tM2ERBP4w5MiRdvWxjSxlIl8JTdP.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "43 × 42 cm"
+      "dimensions": "43 × 42 cm",
+      "price": "$300.00",
+      "soldOut": true
     },
     {
       "name": "Diorama Garage Japan 164",
@@ -64,7 +88,9 @@
       "image": "https://www.flim164.com/media/products/VRSMVPI6WGzD6EBTIT0Or7oVqhP2aIWDUDBb6DZ5.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "65 × 45 × 25 cm"
+      "dimensions": "65 × 45 × 25 cm",
+      "price": "$401.31",
+      "soldOut": false
     },
     {
       "name": "Diorama Garage Thai scale 1:64",
@@ -72,7 +98,9 @@
       "image": "https://www.flim164.com/media/products/WD9dyHHRnoubYpu1BgAGcPZEuOWy56ua9F8ZjgXh.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "45 × 33 cm"
+      "dimensions": "45 × 33 cm",
+      "price": "$269.34",
+      "soldOut": true
     },
     {
       "name": "Diorama GT3",
@@ -80,7 +108,9 @@
       "image": "https://www.flim164.com/media/products/nAaU1HgRKsIJbD1QlVaYi39pWDNsqMXCc9JBBs54.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": null
+      "dimensions": null,
+      "price": "$60.00",
+      "soldOut": false
     },
     {
       "name": "Diorama Japan scale 1:64",
@@ -88,7 +118,9 @@
       "image": "https://www.flim164.com/media/products/iTotTidPPjhAms606ddFTXUVfaRLdHyRrMjbMlmA.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "60 × 30 cm"
+      "dimensions": "60 × 30 cm",
+      "price": "$380.24",
+      "soldOut": true
     },
     {
       "name": "Diorama Japan scale 1:64",
@@ -96,7 +128,9 @@
       "image": "https://www.flim164.com/media/products/Fpb4fNWZBJQ18FLiGDQYSJLkcGXMqdCex0vP7sni.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "40 × 25 cm"
+      "dimensions": "40 × 25 cm",
+      "price": "$174.28",
+      "soldOut": false
     },
     {
       "name": "Diorama Japan scale 1:64",
@@ -104,7 +138,9 @@
       "image": "https://www.flim164.com/media/products/sBE4DvrYLJflAEdsEUgtk2w5UFvUlnTaal7y2xJ0.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "26 × 17.5 cm"
+      "dimensions": "26 × 17.5 cm",
+      "price": "$142.60",
+      "soldOut": true
     },
     {
       "name": "Diorama Japan scale 1:64",
@@ -112,7 +148,9 @@
       "image": "https://www.flim164.com/media/products/nirGOlCVkNigwiKDs6XmVabEsEOk7utP065LZJjc.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "35 × 30 × 25 cm"
+      "dimensions": "35 × 30 × 25 cm",
+      "price": "$250.33",
+      "soldOut": true
     },
     {
       "name": "Diorama Japan scale 1:64",
@@ -120,7 +158,9 @@
       "image": "https://www.flim164.com/media/products/78unXoaIVXnC15MvU27BA6NtndAVeHeVqjjsxELe.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "35 × 25 × 15 cm"
+      "dimensions": "35 × 25 × 15 cm",
+      "price": "$247.25",
+      "soldOut": false
     },
     {
       "name": "Diorama Japanese expressways scale 1:64",
@@ -128,7 +168,9 @@
       "image": "https://www.flim164.com/media/products/1BpJyblZRC4S8vbCGSoU8zPfYKraXkXAe1Q5jy0t.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "30 × 20 × 25 cm"
+      "dimensions": "30 × 20 × 25 cm",
+      "price": "$142.60",
+      "soldOut": true
     },
     {
       "name": "Diorama JDM",
@@ -136,7 +178,9 @@
       "image": "https://www.flim164.com/media/products/TUEXtvrBgnDuhMda6srp8odixJbwwXz9isz1koEs.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "44.2 × 30 cm"
+      "dimensions": "44.2 × 30 cm",
+      "price": "$224.62",
+      "soldOut": true
     },
     {
       "name": "Diorama Mountain racing road scale 1:64",
@@ -144,7 +188,9 @@
       "image": "https://www.flim164.com/media/products/sBTNwHMOrIhmBfcx0zUiE8Ldum1nwzK0IzXZrHNh.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "35 × 35 cm"
+      "dimensions": "35 × 35 cm",
+      "price": "$142.60",
+      "soldOut": false
     },
     {
       "name": "Diorama Old warehouse scale 1:64",
@@ -152,7 +198,9 @@
       "image": "https://www.flim164.com/media/products/4JOxSjc4iF0ywgIFveA5HpGJX4qRBLWFGrIWS28I.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "50 × 50 × 17 cm"
+      "dimensions": "50 × 50 × 17 cm",
+      "price": "$300.00",
+      "soldOut": true
     },
     {
       "name": "Diorama Parking lot scale1:64",
@@ -160,7 +208,9 @@
       "image": "https://www.flim164.com/media/products/cWMAx7p00A0dirX5jtF6FOGiNWbV7tsYHG6tS1pO.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "30 × 30 cm"
+      "dimensions": "30 × 30 cm",
+      "price": "$94.79",
+      "soldOut": false
     },
     {
       "name": "Diorama PORSCHE scale 1:64",
@@ -168,7 +218,9 @@
       "image": "https://www.flim164.com/media/products/2drFloMo46c2e789FWNKRDzhnezpGvDqpj7JUzJ7.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "40 × 30 × 15 cm"
+      "dimensions": "40 × 30 × 15 cm",
+      "price": "$250.33",
+      "soldOut": true
     },
     {
       "name": "Diorama Race Track",
@@ -176,7 +228,9 @@
       "image": "https://www.flim164.com/media/products/TzRcfNLweW464NakIHV8NdGS9OIHXQI2SpWgXobi.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "60 × 40 cm"
+      "dimensions": "60 × 40 cm",
+      "price": "$209.15",
+      "soldOut": false
     },
     {
       "name": "Diorama Racing City scale 1:64",
@@ -184,7 +238,9 @@
       "image": "https://www.flim164.com/media/products/T5yEc1JrgJV3ij4i72qzTttFDJUyODRvkDPxx0pg.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "50 × 30 cm"
+      "dimensions": "50 × 30 cm",
+      "price": "$475.31",
+      "soldOut": true
     },
     {
       "name": "Diorama Re Amemiya scale 1:64",
@@ -192,7 +248,9 @@
       "image": "https://www.flim164.com/media/products/pgSVKGFJs1GxRO4TZHQ3RsuFNS96JvroeJSOT6YH.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "40 × 30 × 15 cm"
+      "dimensions": "40 × 30 × 15 cm",
+      "price": "$250.33",
+      "soldOut": true
     },
     {
       "name": "Diorama Seaside warehouse scale 1:64",
@@ -200,7 +258,9 @@
       "image": "https://www.flim164.com/media/products/Lb8hVgCb6Aqu87lTn9HAHz7ac8WwFqozCe9eLuDf.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "46 × 26 cm"
+      "dimensions": "46 × 26 cm",
+      "price": "$250.33",
+      "soldOut": true
     },
     {
       "name": "Diorama Takumi's House scale 1:64",
@@ -208,7 +268,9 @@
       "image": "https://www.flim164.com/media/products/idXkVleTkANJ5TtbVoENGQcVNkzC5szampumyeR3.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "30 × 20 cm"
+      "dimensions": "30 × 20 cm",
+      "price": "$142.60",
+      "soldOut": false
     },
     {
       "name": "Diorama Tamiya",
@@ -216,7 +278,9 @@
       "image": "https://www.flim164.com/media/products/ounNPRYV5B2R10Xr05HH5xuuZT8Q2tGvAoFbI4Mc.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "12.2 × 8.5 × 9 cm"
+      "dimensions": "12.2 × 8.5 × 9 cm",
+      "price": "$23.28",
+      "soldOut": false
     },
     {
       "name": "Diorama Top secret scale 1:64",
@@ -224,7 +288,9 @@
       "image": "https://www.flim164.com/media/products/X1jFPxB30SyjTUUkNpbHVrabKdrGkPwKo8wp61Ic.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "40 × 25 × 15 cm"
+      "dimensions": "40 × 25 × 15 cm",
+      "price": "$125.20",
+      "soldOut": true
     },
     {
       "name": "Diothaimini 1/64",
@@ -232,7 +298,9 @@
       "image": "https://www.flim164.com/media/products/rb1iHQ3gbFezY2w6Hx6mVkHsdm1D8HuJg3MWQu11.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": null
+      "dimensions": null,
+      "price": "$46.56",
+      "soldOut": false
     },
     {
       "name": "Garage Thai",
@@ -240,7 +308,9 @@
       "image": "https://www.flim164.com/media/products/S8HtPIbc2kQVy8QYr4C0kD5sripL4pSggk5GUksN.jpg",
       "category": "Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "60 × 40 × 20 cm"
+      "dimensions": "60 × 40 × 20 cm",
+      "price": "$310.25",
+      "soldOut": false
     },
     {
       "name": "mini box Top secret",
@@ -248,7 +318,69 @@
       "image": "https://www.flim164.com/media/products/fcufBCKMHgVu8zojyJqsJ3vcMDbjxNzENh4lCOff.jpg",
       "category": "Mini Diorama 1:64",
       "scale": "1:64",
-      "dimensions": "12.2 × 8.5 × 9 cm"
+      "dimensions": "12.2 × 8.5 × 9 cm",
+      "price": "$23.28",
+      "soldOut": false
+    },
+    {
+      "name": "Stan Ramen 1:64",
+      "url": "https://www.flim164.com/products/stan-ramen-164-698c06ef92c6c",
+      "image": "https://www.flim164.com/media/products/t2l01I86xsMkzVV8LVe0W1cvWqKiqPXjtERNjWre.jpg",
+      "category": "Decorative Accessories",
+      "scale": "1:64",
+      "dimensions": null,
+      "price": "$8.03",
+      "soldOut": true
+    },
+    {
+      "name": "Toy vending machine",
+      "url": "https://www.flim164.com/products/toy-vending-machine-698b2550e2082",
+      "image": "https://www.flim164.com/media/products/Hgj1POk3UqcFppnDgT3u5CeNNDEys1IHikBvtliB.jpg",
+      "category": "Decorative Accessories",
+      "scale": null,
+      "dimensions": null,
+      "price": "$12.50",
+      "soldOut": false
+    },
+    {
+      "name": "Toy vending machine",
+      "url": "https://www.flim164.com/products/toy-vending-machine-698b271151ed0",
+      "image": "https://www.flim164.com/media/products/ipXJYuhlj2AP8lrgjRzs2CyNiBvuUng2ypfcLcVW.jpg",
+      "category": "Decorative Accessories",
+      "scale": null,
+      "dimensions": null,
+      "price": "$12.50",
+      "soldOut": true
+    },
+    {
+      "name": "Toy vending machine",
+      "url": "https://www.flim164.com/products/toy-vending-machine-698b27456ab1b",
+      "image": "https://www.flim164.com/media/products/NUV3np6rkUKKTxtqQCIDYhGmDkL9SdwbkAsC9XY9.jpg",
+      "category": "Decorative Accessories",
+      "scale": null,
+      "dimensions": null,
+      "price": "$12.50",
+      "soldOut": true
+    },
+    {
+      "name": "Vending machine for top-secret model cars.",
+      "url": "https://www.flim164.com/products/vending-machine-for-top-secret-model-cars-69fd5cbc69170",
+      "image": "https://www.flim164.com/media/products/gblcVzGtdBNphvjxh5TRnzSiFED2SIQ4n31d1xIh.jpg",
+      "category": "Decorative Accessories",
+      "scale": null,
+      "dimensions": null,
+      "price": "$12.10",
+      "soldOut": true
+    },
+    {
+      "name": "Wall-mounted display case for model cars.",
+      "url": "https://www.flim164.com/products/wall-mounted-display-case-for-model-cars-69fd5ee35f054",
+      "image": "https://www.flim164.com/media/products/umy3XmHgWbVWZRMjJnkipf9dFgAnYKQ3p1BRPpQm.jpg",
+      "category": "Decorative Accessories",
+      "scale": null,
+      "dimensions": null,
+      "price": "$30.72",
+      "soldOut": true
     }
   ]
 }
