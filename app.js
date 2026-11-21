@@ -80,9 +80,48 @@ function renderPartnerCatalogue(query){
 }
 
 
+const garageStatuses=['Owned','Ordered','Wishlist'];
+let garageStatus='Owned',garageOwner=null;
+function renderMiniGarage(models){
+ const dialog=$('miniGarageDialog');
+ if(!dialog.open)return;
+ if(session?.user.id!==garageOwner){
+  $('miniGarageItems').replaceChildren();
+  dialog.close();
+  return;
+ }
+ const groups=Object.fromEntries(garageStatuses.map(status=>[status,[]]));
+ for(const model of models){
+  const status=actual(model);
+  if(garageStatuses.includes(status))groups[status].push(model);
+ }
+ for(const button of $('miniGarageFilters').querySelectorAll('[data-garage-status]')){
+  const status=button.dataset.garageStatus;
+  button.setAttribute('aria-pressed',String(status===garageStatus));
+  button.querySelector('small').textContent=groups[status].length;
+ }
+ const rows=groups[garageStatus];
+ $('miniGarageEmpty').hidden=rows.length>0;
+ $('miniGarageItems').innerHTML=rows.map(model=>{
+  const details=[maker(model),model.number?'#'+model.number:'',edition(model)].filter(Boolean).join(' · ');
+  return `<li><strong>${esc(displayLabel(model))}</strong><span class="muted">${esc(details)}</span></li>`;
+ }).join('');
+}
+function openMiniGarage(status='Owned'){
+ if(!session){
+  openLoginDialog('Log in to open your mini garage.',{savedList:true});
+  return;
+ }
+ garageOwner=session.user.id;
+ garageStatus=status;
+ $('miniGarageDialog').showModal();
+ renderMiniGarage(allModels());
+}
+
 function render(){
  const q=$('search').value.toLowerCase();
  const all=allModels();
+ renderMiniGarage(all);
  const items=catalogView==='Diecast'?all.filter(m=>(selectedDiecastBrand==='All'||maker(m)===selectedDiecastBrand)&&(selectedDiecastMake==='All'||String(m.brand||'').trim().toLowerCase()===selectedDiecastMake.toLowerCase())&&(filter==='All'||(filter==='Chase'&&edition(m)==='Chase')||(filter==='Event'&&edition(m)==='Event Exclusive')||(filter==='Limited'&&edition(m)==='Limited Edition')||(filter==='Upcoming'&&['TBA','Preorder','Announced','Upcoming'].includes(m.release)))&&(`${m.number} ${displayLabel(m)} ${m.name} ${m.brand} ${maker(m)} ${edition(m)}`.toLowerCase().includes(q))):[];
  // Don't misrepresent public catalogue items as a guest's private collection.
  $('owned').textContent=session?all.filter(m=>actual(m)==='Owned').length:'—';
@@ -704,6 +743,14 @@ function handleDiecastMenuButton(button){
 }
 
 async function start(){
+ $('miniGarageOpen').onclick=()=>openMiniGarage();
+ $('miniGarageClose').onclick=()=>$('miniGarageDialog').close();
+ $('miniGarageFilters').onclick=event=>{
+  const button=event.target.closest('[data-garage-status]');
+  if(!button)return;
+  garageStatus=button.dataset.garageStatus;
+  renderMiniGarage(allModels());
+ };
  const backToTop=$('backToTop');
  const updateBackToTop=()=>{backToTop.hidden=window.scrollY<480};
  backToTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}));
