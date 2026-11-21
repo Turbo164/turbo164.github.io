@@ -224,6 +224,7 @@ async function signOutToGuest(){
  session=null;customModels=[];photoAdmin=false;photoPending=new Set();switchState();authUI('Signed out. You are now browsing as a guest.');
  if($('adminUtilities'))$('adminUtilities').hidden=true;
  $('photoAdminPanel').hidden=true;$('modelAdminPanel').hidden=true;
+ if(typeof window.communityAuthChanged==='function')window.communityAuthChanged();
 }
 async function refreshAll({quiet=false}={}){
  if(refreshInProgress)return;
@@ -263,7 +264,7 @@ function installPullToRefresh(){
  document.addEventListener('touchend',()=>{
   const shouldRefresh=tracking&&armed;
   tracking=false;armed=false;hint.hidden=true;
-  if(shouldRefresh)refreshAll();
+  if(shouldRefresh){if(document.body.classList.contains('community-view'))window.communityRefresh?.();else refreshAll()}
  },{passive:true});
  document.addEventListener('touchcancel',()=>{tracking=false;armed=false;hint.hidden=true},{passive:true});
 }
