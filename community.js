@@ -16,9 +16,9 @@
  function message(text,error=false){const el=$('communityMessage');el.textContent=text||'';el.classList.toggle('error',!!error)}
  async function showCommunity(mode='feed'){
   currentMode=mode;document.body.classList.add('community-view');$('communityPage').hidden=false;
-  $('communityComposer').hidden=mode==='saved';$('communityPageTitle').textContent=mode==='saved'?t('Saved community posts'):t('Community');
+  $('communityComposer').hidden=mode==='saved';$('topContributorsPanel').hidden=mode==='saved';$('communityPageTitle').textContent=mode==='saved'?t('Saved community posts'):t('Community');
   $('communityBack').hidden=mode==='saved';$('communitySavedBack').hidden=mode!=='saved';
-  message('');await loadPosts();loadCommunityWarnings();if(adminCommunity)loadAdminReports();
+  message('');if(mode==='feed')await Promise.all([loadPosts(),loadTopContributors()]);else await loadPosts();loadCommunityWarnings();if(adminCommunity)loadAdminReports();
  }
  function hideCommunity(){document.body.classList.remove('community-view');$('communityPage').hidden=true;currentMode='feed'}
  window.openTurbo164Community=showCommunity;
@@ -30,7 +30,7 @@
   if(document.body.classList.contains('community-view'))loadPosts();
   loadCommunityWarnings();checkCommunityAdmin();
  };
- window.communityRefresh=()=>{if(document.body.classList.contains('community-view'))loadPosts()};
+ window.communityRefresh=async()=>{if(document.body.classList.contains('community-view'))await Promise.all([loadPosts(),loadTopContributors()])};
  window.addEventListener('hashchange',()=>{const match=location.hash.match(/^#community-post-([0-9a-f-]{36})$/i);if(match)openReportedPost(match[1],false)});
  function requireLogin(action){if(communityUser())return true;openLoginDialog(`Log in to ${action} in the community.`);return false}
  function publicUrl(path){if(!path)return '';return activeDb().storage.from(bucket).getPublicUrl(path).data.publicUrl}
@@ -60,6 +60,16 @@
   const {data,error}=await activeDb().rpc('is_arbox_photo_admin');
   adminCommunity=!error&&data===true;panel.hidden=!adminCommunity;if(reportDataButton)reportDataButton.hidden=!adminCommunity;
   if(adminCommunity&&document.body.classList.contains('community-view'))loadAdminReports();
+ }
+ async function loadTopContributors(){
+  const status=$('topContributorsStatus'),list=$('topContributorsList');if(!status||!list)return;
+  if(!activeDb()){status.textContent=t('Community cloud service is not configured.');list.replaceChildren();return}
+  status.textContent=t('Loading contributors…');list.replaceChildren();
+  const {data,error}=await activeDb().rpc('community_top_contributors');
+  if(error){status.textContent=`${t('Could not load contributors:')} ${error.message}`;return}
+  if(!data?.length){status.textContent=t('No contributors yet.');return}
+  status.textContent='';
+  list.innerHTML=data.slice(0,5).map((row,index)=>{const rank=index+1,badge=rank<=3?`<span class="top-contributor-medal top-medal-${rank}" aria-label="${esc(t('Rank'))} ${rank}">🏆</span>`:`<span class="top-contributor-rank">#${rank}</span>`;return `<li class="top-contributor-row">${badge}<div><div class="top-contributor-name">${esc(row.username)}</div><div class="top-contributor-stats"><span>${esc(t('Post shared'))}: ${Number(row.posts_shared)||0}</span><span>${esc(t('Car upload'))}: ${Number(row.car_uploads)||0}</span></div></div><div class="top-contributor-points"><strong>${Number(row.points)||0}</strong><span>${esc(t('Points'))}</span></div></li>`}).join('');
  }
  async function loadReportData(){
   const status=$('communityReportDataStatus'),issues=$('communityReportIssueList'),users=$('communityReportUserTable');
@@ -199,7 +209,7 @@
   if(error){message(error.message,true);return}
   const mediaPaths=Array.isArray(post?.media_paths)&&post.media_paths.length?post.media_paths:(post?.media_path?[post.media_path]:[]);
   if(mediaPaths.length)await activeDb().storage.from(bucket).remove(mediaPaths);
-  commentOpen.delete(id);message(t('Post deleted.'));await loadPosts();
+  commentOpen.delete(id);message(t('Post deleted.'));await Promise.all([loadPosts(),loadTopContributors()]);
  }
  async function toggleComments(id){
   if(commentOpen.has(id))commentOpen.delete(id);else commentOpen.add(id);renderPosts();
@@ -248,7 +258,7 @@
    }
    const {error}=await activeDb().from('community_posts').insert({author_id:u.id,post_type:type,body:body||'',media_path:mediaPaths[0]||null,media_paths:mediaPaths,allow_saves:$('communityAllowSaves').checked});
    if(error)throw error;
-   form.reset();syncComposerType();message(t('Post published.'));currentMode='feed';await loadPosts();
+   form.reset();syncComposerType();message(t('Post published.'));currentMode='feed';await Promise.all([loadPosts(),loadTopContributors()]);
   }catch(error){if(mediaPaths.length)await activeDb().storage.from(bucket).remove(mediaPaths);message(`${t('Could not publish post:')} ${error.message||error}`,true)}
   finally{submit.disabled=false}
  }
