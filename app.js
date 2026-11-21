@@ -229,8 +229,6 @@ async function signOutToGuest(){
 async function refreshAll({quiet=false}={}){
  if(refreshInProgress)return;
  refreshInProgress=true;
- const button=$('syncBtn');
- button.disabled=true;button.textContent='↻ Refreshing…';
  try{
   await sync();
   await loadPublishedModels();
@@ -240,7 +238,7 @@ async function refreshAll({quiet=false}={}){
   if(!quiet)authUI(session?'Your garage has been refreshed.':'Public catalogue refreshed. Log in to save a personal list.');
  }catch(e){
   authUI('Refresh failed: '+e.message);
- }finally{refreshInProgress=false;button.disabled=false;button.textContent='↻ Refresh'}
+ }finally{refreshInProgress=false}
 }
 function installPullToRefresh(){
  // A gentle top-of-page gesture; browser-native pull-to-refresh also remains usable.
@@ -675,8 +673,6 @@ async function start(){
  document.querySelectorAll('[data-category]').forEach(button=>button.onclick=()=>navigateCatalog(button.dataset.category));
  window.addEventListener('popstate',()=>{applyCatalogRouteFromUrl();render();renderDiecastMenu()});
  document.addEventListener('click',event=>{if(!event.target.closest('.diecast-nav'))closeDiecastMenu()});
- $('syncBtn').onclick=()=>refreshAll();
- $('accountMenuRefresh').onclick=()=>{$('accountMenu').hidden=true;refreshAll()};
  $('accountBtn').onclick=()=>{if(!session){openLoginDialog();return}const menu=$('accountMenu');menu.hidden=!menu.hidden;$('accountBtn').setAttribute('aria-expanded',String(!menu.hidden))};
  $('accountLogin').onclick=()=>openLoginDialog();
  $('accountSignOut').onclick=signOutToGuest;
