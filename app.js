@@ -31,6 +31,50 @@ function edition(m){return m.editionType||(m.variant==='Chase'?'Chase':'Regular'
 function displayLabel(m){return m.name}
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function actual(m){return state[m.id]||(m.community?'Not tracking':'Missing')}
+const dioramaSource='https://www.flim164.com/products';
+let dioramaProducts=null,dioramaLoading=false,dioramaUnavailable=false;
+function partnerUrl(value,path){
+ try{
+  const url=new URL(value);
+  return url.origin==='https://www.flim164.com'&&path.test(url.pathname)?url.href:'';
+ }catch{return ''}
+}
+async function loadDioramaCatalogue(){
+ dioramaLoading=true;
+ for(const url of ['https://raw.githubusercontent.com/Turbo164/turbo164.github.io/main/diorama-catalog.json','diorama-catalog.json']){
+  try{
+   const response=await fetch(url,{signal:AbortSignal.timeout?.(6000)});
+   if(!response.ok)continue;
+   const data=await response.json();
+   const items=data.products?.filter(item=>typeof item?.name==='string'&&item.name.trim()&&partnerUrl(item.url,/^\/products\/[a-z0-9-]+$/));
+   if(!items?.length)continue;
+   dioramaProducts=items;
+   break;
+  }catch{/* Try the bundled snapshot when the live GitHub copy is unavailable. */}
+ }
+ dioramaUnavailable=!dioramaProducts;
+ dioramaLoading=false;
+ if(catalogView==='Diorama')render();
+}
+function renderDioramaCatalogue(query){
+ if(!dioramaProducts&&!dioramaLoading&&!dioramaUnavailable)void loadDioramaCatalogue();
+ const items=(dioramaProducts||[]).filter(item=>[item.name,item.category,item.scale,item.dimensions,'FILM CUSTOM MODEL FLIM164']
+  .join(' ').toLowerCase().includes(query.trim()));
+ $('count').textContent=dioramaProducts?`${items.length} ${items.length===1?"item":"items"}`:'';
+ const status=dioramaUnavailable?'The partner catalog is temporarily unavailable.':dioramaLoading?'Loading dioramas…':items.length?'':'No matching dioramas.';
+ $('models').innerHTML=`<div class="notice diorama-partner"><strong>FILM CUSTOM MODEL</strong> <span class="muted">Turbo164 partner</span> <a class="source-link" href="${dioramaSource}" target="_blank" rel="noopener noreferrer">Browse all on FLIM164 ↗</a>
+ ${status?`<p role="status">${esc(status)}</p>`:''}</div>`+items.map(item=>{
+  const href=partnerUrl(item.url,/^\/products\/[a-z0-9-]+$/);
+  const image=partnerUrl(item.image,/^\/media\/products\/[A-Za-z0-9._/-]+$/);
+  return `<article class="model">
+   <div class="photo">${image?`<a class="photo-link" href="${esc(href)}" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="${esc(image)}" alt="${esc(item.name)}" onerror="this.parentElement.hidden=true;this.parentElement.nextElementSibling.hidden=false"></a>`:''}<span class="photo-pending" ${image?'hidden':''}>Photo unavailable</span></div>
+   <div class="info"><div class="name">${esc(item.name)}</div><div class="sub"><span class="pill">${esc(item.category)}</span></div>
+   ${item.dimensions?`<p class="muted">${esc(item.dimensions)}</p>`:''}<a class="source-link" href="${esc(href)}" target="_blank" rel="noopener noreferrer">View on FLIM164 ↗</a></div>
+  </article>`;
+ }).join('');
+}
+
+
 function render(){
  const q=$('search').value.toLowerCase();
  const all=allModels();
@@ -43,6 +87,7 @@ function render(){
  $('count').textContent=catalogView==='Diecast'?`${items.length} models`:'0 items';
  $('diecastMenuButton').classList.toggle('active',catalogView==='Diecast');
  document.querySelectorAll('[data-category]').forEach(button=>button.classList.toggle('active',button.dataset.category===catalogView));
+ if(catalogView==='Diorama'){renderDioramaCatalogue(q);return}
  $('models').innerHTML=items.map(m=>{
   const label=displayLabel(m);
   const approved=photoOverrides[m.id];
