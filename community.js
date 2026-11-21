@@ -5,7 +5,7 @@
  const $=id=>document.getElementById(id);
  const bucket='community-media';
  const maxVideoBytes=80*1024*1024;
- let currentMode='feed',posts=[],profiles={},hearts=new Set(),saved=new Set(),heartCounts={},commentCounts={},commentOpen=new Set(),reportPostId=null,warningReportId=null,adminCommunity=false;
+ let currentMode='feed',posts=[],profiles={},hearts=new Set(),saved=new Set(),heartCounts={},commentCounts={},commentOpen=new Set(),reportPostId=null,warningReportId=null,adminCommunity=false,contributorHistory=[];
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const communityUser=()=>typeof session!=='undefined'?session:null;
  const activeDb=()=>typeof db!=='undefined'?db:null;
@@ -55,10 +55,10 @@
   if(error){message(error.message,true);return}loadCommunityWarnings();
  }
  async function checkCommunityAdmin(){
-  const panel=$('communityAdminPanel'),reportDataButton=$('communityReportDataBtn');if(!panel)return;
-  if(!communityUser()||!activeDb()){adminCommunity=false;panel.hidden=true;if(reportDataButton)reportDataButton.hidden=true;return}
+  const panel=$('communityAdminPanel'),reportDataButton=$('communityReportDataBtn'),historyButton=$('topContributorHistoryBtn');if(!panel)return;
+  if(!communityUser()||!activeDb()){adminCommunity=false;panel.hidden=true;if(reportDataButton)reportDataButton.hidden=true;if(historyButton)historyButton.hidden=true;return}
   const {data,error}=await activeDb().rpc('is_arbox_photo_admin');
-  adminCommunity=!error&&data===true;panel.hidden=!adminCommunity;if(reportDataButton)reportDataButton.hidden=!adminCommunity;
+  adminCommunity=!error&&data===true;panel.hidden=!adminCommunity;if(reportDataButton)reportDataButton.hidden=!adminCommunity;if(historyButton)historyButton.hidden=!adminCommunity;
   if(adminCommunity&&document.body.classList.contains('community-view'))loadAdminReports();
  }
  async function loadTopContributors(){
@@ -70,6 +70,28 @@
   if(!data?.length){status.textContent=t('No contributors yet.');return}
   status.textContent='';
   list.innerHTML=data.slice(0,5).map((row,index)=>{const rank=index+1,badge=rank<=3?`<span class="top-contributor-medal top-medal-${rank}" aria-label="${esc(t('Rank'))} ${rank}">🏆</span>`:`<span class="top-contributor-rank">#${rank}</span>`;return `<li class="top-contributor-row">${badge}<div><div class="top-contributor-name">${esc(row.username)}</div><div class="top-contributor-stats"><span>${esc(t('Post shared'))}: ${Number(row.posts_shared)||0}</span><span>${esc(t('Car upload'))}: ${Number(row.car_uploads)||0}</span></div></div><div class="top-contributor-points"><strong>${Number(row.points)||0}</strong><span>${esc(t('Points'))}</span></div></li>`}).join('');
+ }
+ function contributorMonthLabel(monthStart){
+  const language=$('languageSelect')?.value||'en',locale={en:'en-GB',th:'th-TH',ja:'ja-JP',zh:'zh-CN'}[language]||'en-GB';
+  return new Intl.DateTimeFormat(locale,{year:'numeric',month:'long',timeZone:'Asia/Bangkok'}).format(new Date(`${monthStart}T12:00:00+07:00`));
+ }
+ function renderContributorHistoryMonth(){
+  const selected=$('topContributorHistoryMonth').value,list=$('topContributorHistoryList');
+  const rows=contributorHistory.filter(row=>row.month_start===selected);
+  const medals=['top-medal-1','top-medal-2','top-medal-3'];
+  list.innerHTML=rows.map(row=>{const rank=Number(row.contributor_rank),badge=rank<=3?`<span class="top-contributor-medal ${medals[rank-1]}" aria-label="${esc(t('Rank'))} ${rank}">🏆</span>`:`<span class="top-contributor-rank">#${rank}</span>`;return `<li class="top-contributor-row">${badge}<div><div class="top-contributor-name">${esc(row.username)}</div><div class="top-contributor-stats"><span>${esc(t('Post shared'))}: ${Number(row.posts_shared)||0}</span><span>${esc(t('Car upload'))}: ${Number(row.car_uploads)||0}</span></div></div><div class="top-contributor-points"><strong>${Number(row.points)||0}</strong><span>${esc(t('Points'))}</span></div></li>`}).join('');
+ }
+ async function loadContributorHistory(){
+  const status=$('topContributorHistoryStatus'),select=$('topContributorHistoryMonth'),list=$('topContributorHistoryList');
+  if(!adminCommunity||!activeDb()){status.textContent=t('Admin access required.');select.hidden=true;list.replaceChildren();return}
+  status.textContent=t('Loading history…');select.hidden=true;list.replaceChildren();
+  const {error:archiveError}=await activeDb().rpc('community_top_contributors');
+  if(archiveError){status.textContent=`${t('Could not load contributor history:')} ${archiveError.message}`;return}
+  const {data,error}=await activeDb().rpc('community_admin_contributor_history');
+  if(error){status.textContent=`${t('Could not load contributor history:')} ${error.message}`;return}
+  contributorHistory=data||[];const months=[...new Set(contributorHistory.map(row=>row.month_start))].sort((a,b)=>b.localeCompare(a));
+  if(!months.length){status.textContent=t('No monthly history yet.');return}
+  status.textContent='';select.innerHTML=months.map(month=>`<option value="${esc(month)}">${esc(contributorMonthLabel(month))}</option>`).join('');select.hidden=false;select.onchange=renderContributorHistoryMonth;renderContributorHistoryMonth();
  }
  async function loadReportData(){
   const status=$('communityReportDataStatus'),issues=$('communityReportIssueList'),users=$('communityReportUserTable');
@@ -279,6 +301,7 @@
  async function init(){
   $('communityTopBtn').onclick=()=>showCommunity('feed');$('communityBack').onclick=hideCommunity;$('communitySavedBack').onclick=hideCommunity;
   $('communityReportDataBtn').onclick=()=>{if(!adminCommunity)return;$('accountMenu').hidden=true;$('accountBtn').setAttribute('aria-expanded','false');$('communityReportDataDialog').showModal();loadReportData()};
+  $('topContributorHistoryBtn').onclick=()=>{if(!adminCommunity)return;$('accountMenu').hidden=true;$('accountBtn').setAttribute('aria-expanded','false');$('topContributorHistoryDialog').showModal();loadContributorHistory()};
   $('communityReportDataOpenQueue').onclick=()=>{if(!adminCommunity)return;$('communityReportDataDialog').close();showCommunity('feed');requestAnimationFrame(()=> $('communityAdminPanel').scrollIntoView({behavior:'smooth',block:'start'}))};
   $('communitySavedBtn').onclick=()=>{ $('accountMenu').hidden=true;$('accountBtn').setAttribute('aria-expanded','false');showCommunity('saved')};
   $('communityAccountLogin').onclick=()=>{ $('accountMenu').hidden=true;openLoginDialog('Log in to save posts, react, comment, and publish.')};
@@ -288,7 +311,7 @@
   $('communityReportForm').onsubmit=submitReport;$('communityReportCancel').onclick=()=>{$('communityReportDialog').close();reportPostId=null};
   $('communityWarningForm').onsubmit=sendAdminWarning;$('communityWarningCancel').onclick=()=>{$('communityWarningDialog').close();warningReportId=null};
   document.addEventListener('click',event=>{if(!event.target.closest('.community-post-menu'))document.querySelectorAll('.community-post-menu-panel').forEach(panel=>panel.hidden=true)});
-  window.addEventListener('turbo164:languagechange',()=>{const label=$('communityPageTitle');if(label&&document.body.classList.contains('community-view'))label.textContent=currentMode==='saved'?t('Saved community posts'):t('Community');syncComposerType(false);loadCommunityWarnings();if($('communityReportDataDialog').open)loadReportData()});
+  window.addEventListener('turbo164:languagechange',()=>{const label=$('communityPageTitle');if(label&&document.body.classList.contains('community-view'))label.textContent=currentMode==='saved'?t('Saved community posts'):t('Community');syncComposerType(false);loadCommunityWarnings();if($('communityReportDataDialog').open)loadReportData();if($('topContributorHistoryDialog').open)loadContributorHistory()});
   window.communityAuthChanged();syncComposerType();const initialPost=location.hash.match(/^#community-post-([0-9a-f-]{36})$/i);if(initialPost)openReportedPost(initialPost[1],false);
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
