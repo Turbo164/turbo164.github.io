@@ -80,7 +80,6 @@
  }
  let appearanceOwner=null, appearanceLoad=0, pointsLoad=0, pendingAvatar=null;
  function renderProfileIdentity(row){
-  setProfileAvatar($('accountProfileAvatar'),row?.avatar);
   const hasButtonAvatar=setProfileAvatar($('accountButtonAvatar'),row?.avatar);
   $('accountButtonFallback').hidden=hasButtonAvatar;
   $('accountProfileUsername').textContent=row?.username||'';
