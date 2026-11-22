@@ -836,7 +836,22 @@ async function loadHomeHighlights(){
   db.from('community_posts').select('id,author_id,body,post_type,media_path,media_paths,created_at').gte('created_at',startIso).lt('created_at',endIso).order('created_at',{ascending:false}).limit(500),
   db.rpc('turbo164_public_user_count')
  ]);
- if(userResult.error){$('homeUserCount').textContent='—'}else{$('homeUserCount').textContent=Number(userResult.data??0).toLocaleString(locale)}
+ const accountCount = userResult.error || userResult.data == null ? NaN : Number(userResult.data);
+ const countAvailable = Number.isSafeInteger(accountCount) && accountCount >= 0;
+ const accountCountLabel = countAvailable ? accountCount.toLocaleString(locale) : '—';
+ $('homeUserCount').textContent = accountCountLabel;
+ const accountProgress = $('accountGoalProgress');
+ const accountProgressCount = $('accountGoalCount');
+ if (accountProgress && accountProgressCount) {
+  accountProgressCount.textContent = accountCountLabel;
+  if (countAvailable) {
+   accountProgress.value = Math.min(accountCount, accountProgress.max);
+   accountProgress.setAttribute('aria-valuetext', `${accountCountLabel} / ${accountProgress.max.toLocaleString(locale)}`);
+  } else {
+   accountProgress.removeAttribute('value');
+   accountProgress.removeAttribute('aria-valuetext');
+  }
+ }
  if(postResult.error){$('homeTopPost').textContent=homeText('Could not load community highlights.');$('homePhotoOfMonth').textContent=homeText('Could not load community highlights.');return}
  const posts=postResult.data||[],ids=posts.map(p=>p.id),likes={};
  for(let offset=0;offset<ids.length;offset+=100){
