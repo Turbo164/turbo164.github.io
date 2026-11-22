@@ -293,6 +293,7 @@
   $('monthlyAnnouncementPhoto').value='';$('monthlyAnnouncementVideo').value='';
   $('monthlyAnnouncementPreview').textContent=data?(t('Editing the saved announcement. Choose new media to replace its photo or video.')):t('No announcement is saved for this month yet.');
   status.textContent=data?t('Announcement loaded.'):t('Ready to create this month’s announcement.');
+  await loadMonthlyAnnouncementEntries();
  }
  async function publishMonthlyAnnouncement(event){
   event.preventDefault();if(!adminCommunity||!communityUser()?.user)return;
