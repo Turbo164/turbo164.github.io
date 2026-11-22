@@ -5,7 +5,7 @@
  const $=id=>document.getElementById(id);
  const bucket='community-media';
  const maxVideoBytes=80*1024*1024;
- let currentMode='feed',posts=[],profiles={},hearts=new Set(),saved=new Set(),heartCounts={},commentCounts={},commentOpen=new Set(),reportPostId=null,warningReportId=null,adminCommunity=false,contributorHistory=[];
+ let currentMode='feed',posts=[],profiles={},profileAvatars={},hearts=new Set(),saved=new Set(),heartCounts={},commentCounts={},commentOpen=new Set(),reportPostId=null,warningReportId=null,adminCommunity=false,contributorHistory=[];
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const communityUser=()=>typeof session!=='undefined'?session:null;
  const activeDb=()=>typeof db!=='undefined'?db:null;
@@ -413,13 +413,15 @@
   posts=rows;
   if(!rows.length){area.innerHTML=`<div class="notice">${esc(currentMode==='saved'?t('You have no saved community posts yet.'):t('No posts yet. Be the first to share something with the community.'))}</div>`;return}
   const ids=rows.map(p=>p.id),users=[...new Set(rows.map(p=>p.author_id))];
-  const [profileResult,heartResult,commentResult,saveResult]=await Promise.all([
+  const [profileResult,avatarResult,heartResult,commentResult,saveResult]=await Promise.all([
    activeDb().from('community_profiles').select('user_id,display_name').in('user_id',users),
+   activeDb().from('community_appearance').select('user_id,avatar').in('user_id',users),
    activeDb().from('community_post_hearts').select('post_id,user_id').in('post_id',ids),
    activeDb().from('community_comments').select('post_id').in('post_id',ids).limit(1000),
    communityUser()?activeDb().from('community_saved_posts').select('post_id').eq('user_id',communityUser().user.id).in('post_id',ids):Promise.resolve({data:[]})
   ]);
   profiles={};(profileResult.data||[]).forEach(p=>profiles[p.user_id]=p.display_name);
+  profileAvatars={};(avatarResult.data||[]).forEach(p=>profileAvatars[p.user_id]=p.avatar);
   heartCounts={};hearts=new Set();(heartResult.data||[]).forEach(h=>{heartCounts[h.post_id]=(heartCounts[h.post_id]||0)+1;if(communityUser()?.user.id===h.user_id)hearts.add(h.post_id)});
   commentCounts={};(commentResult.data||[]).forEach(c=>commentCounts[c.post_id]=(commentCounts[c.post_id]||0)+1);
   saved=new Set((saveResult.data||[]).map(x=>x.post_id));
@@ -436,7 +438,9 @@
    const menuAction=own?`<button type="button" data-delete-post="${esc(post.id)}">${esc(t('Delete this post'))}</button>`:`<button type="button" data-report-post="${esc(post.id)}">${esc(t('Report this post'))}</button>`;
    const hearted=hearts.has(post.id),isSaved=saved.has(post.id),canSave=post.allow_saves||isSaved;
    const open=commentOpen.has(post.id);
-   return `<article class="community-post" id="community-post-${esc(post.id)}" data-post-id="${esc(post.id)}"><div class="community-post-top"><div class="community-post-menu"><button type="button" class="community-post-menu-trigger" data-post-menu aria-label="${esc(t('Post options'))}" aria-expanded="false">⋮</button><div class="community-post-menu-panel" hidden>${menuAction}</div></div></div><div class="community-post-head"><div><strong>${esc(displayAuthor(post.author_id))}</strong><time>${esc(dateLabel(post.created_at))}</time></div></div>${ownerControls}${post.body?`<p class="community-post-body">${esc(post.body).replace(/\n/g,'<br>')}</p>`:''}${media}<div class="community-actions"><button type="button" class="community-heart ${hearted?'hearted':''}" data-heart-post="${esc(post.id)}" aria-pressed="${hearted}">♥ <span>${heartCounts[post.id]||0}</span> ${esc(t('Love'))}</button>${canSave?`<button type="button" class="community-save ${isSaved?'is-saved':''}" data-save-post="${esc(post.id)}">${isSaved?'✓ '+esc(t('Saved')):'＋ '+esc(t('Save post'))}</button>`:`<span class="community-save-disabled">${esc(t('Saving disabled by author'))}</span>`}<button type="button" class="community-comments-toggle" data-toggle-comments="${esc(post.id)}">▢ ${esc(t('Comments'))} (${commentCounts[post.id]||0})</button></div><div class="community-comments" data-comments-for="${esc(post.id)}" ${open?'':'hidden'}>${open?`<div class="comment-list">${esc(t('Loading comments…'))}</div><form class="community-comment-form" data-comment-form="${esc(post.id)}"><input name="comment" maxlength="2000" placeholder="${esc(t('Write a comment…'))}" required><button type="submit">${esc(t('Post'))}</button></form>`:''}</div></article>`;
+   const avatar=profileAvatars[post.author_id],hasAvatar=typeof avatar==='string'&&/^data:image\/jpeg;base64,[A-Za-z0-9+/]+={0,2}$/.test(avatar);
+   const authorAvatar=hasAvatar?`<img class="community-author-avatar" src="${esc(avatar)}" alt="" loading="lazy">`:`<span class="community-author-avatar-fallback" aria-hidden="true">👤</span>`;
+   return `<article class="community-post" id="community-post-${esc(post.id)}" data-post-id="${esc(post.id)}"><div class="community-post-top"><div class="community-post-menu"><button type="button" class="community-post-menu-trigger" data-post-menu aria-label="${esc(t('Post options'))}" aria-expanded="false">⋮</button><div class="community-post-menu-panel" hidden>${menuAction}</div></div></div><div class="community-post-head"><div class="community-post-author">${authorAvatar}<div><strong>${esc(displayAuthor(post.author_id))}</strong><time>${esc(dateLabel(post.created_at))}</time></div></div></div>${ownerControls}${post.body?`<p class="community-post-body">${esc(post.body).replace(/\n/g,'<br>')}</p>`:''}${media}<div class="community-actions"><button type="button" class="community-heart ${hearted?'hearted':''}" data-heart-post="${esc(post.id)}" aria-pressed="${hearted}">♥ <span>${heartCounts[post.id]||0}</span> ${esc(t('Love'))}</button>${canSave?`<button type="button" class="community-save ${isSaved?'is-saved':''}" data-save-post="${esc(post.id)}">${isSaved?'✓ '+esc(t('Saved')):'＋ '+esc(t('Save post'))}</button>`:`<span class="community-save-disabled">${esc(t('Saving disabled by author'))}</span>`}<button type="button" class="community-comments-toggle" data-toggle-comments="${esc(post.id)}">▢ ${esc(t('Comments'))} (${commentCounts[post.id]||0})</button></div><div class="community-comments" data-comments-for="${esc(post.id)}" ${open?'':'hidden'}>${open?`<div class="comment-list">${esc(t('Loading comments…'))}</div><form class="community-comment-form" data-comment-form="${esc(post.id)}"><input name="comment" maxlength="2000" placeholder="${esc(t('Write a comment…'))}" required><button type="submit">${esc(t('Post'))}</button></form>`:''}</div></article>`;
   }).join('');
   area.querySelectorAll('[data-heart-post]').forEach(b=>b.onclick=()=>toggleHeart(b.dataset.heartPost));
   area.querySelectorAll('[data-save-post]').forEach(b=>b.onclick=()=>toggleSave(b.dataset.savePost));
