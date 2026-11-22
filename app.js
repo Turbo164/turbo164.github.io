@@ -834,9 +834,9 @@ async function loadHomeHighlights(){
  const startIso=new Date(`${monthStart}T00:00:00+07:00`).toISOString(),endIso=new Date(`${monthEnd}T00:00:00+07:00`).toISOString();
  const [postResult,userResult]=await Promise.all([
   db.from('community_posts').select('id,author_id,body,post_type,media_path,media_paths,created_at').gte('created_at',startIso).lt('created_at',endIso).order('created_at',{ascending:false}).limit(500),
-  db.from('community_profiles').select('user_id',{count:'exact',head:true})
+  db.rpc('turbo164_public_user_count')
  ]);
- if(userResult.error){$('homeUserCount').textContent='—'}else{$('homeUserCount').textContent=(userResult.count??0).toLocaleString(locale)}
+ if(userResult.error){$('homeUserCount').textContent='—'}else{$('homeUserCount').textContent=Number(userResult.data??0).toLocaleString(locale)}
  if(postResult.error){$('homeTopPost').textContent=homeText('Could not load community highlights.');$('homePhotoOfMonth').textContent=homeText('Could not load community highlights.');return}
  const posts=postResult.data||[],ids=posts.map(p=>p.id),likes={};
  for(let offset=0;offset<ids.length;offset+=100){
