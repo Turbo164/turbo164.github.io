@@ -333,6 +333,17 @@
     ["Monthly announcement published.","เผยแพร่ประกาศประจำเดือนแล้ว","月間のお知らせを公開しました。","每月公告已发布。"],
     ["Could not publish announcement:","ไม่สามารถเผยแพร่ประกาศได้:","お知らせを公開できませんでした:","无法发布公告："]
   );
+  rows.push(
+    ["Publish one featured announcement for a month. It appears below Top Contributor and above the community feed.","เผยแพร่ประกาศเด่นหนึ่งรายการต่อเดือน โดยจะแสดงใต้ผู้ร่วมให้ข้อมูลสูงสุดและเหนือฟีดชุมชน","毎月1件のお知らせを掲載します。トップコントリビューターの下、コミュニティフィードの上に表示されます。","每月发布一则精选公告，显示在顶级贡献者下方、社区动态上方。"],
+    ["Announcement month","เดือนที่ประกาศ","掲載する月","公告月份"],
+    ["Title","หัวข้อ","タイトル","标题"],
+    ["Announcement text","ข้อความประกาศ","お知らせ本文","公告内容"],
+    ["Write your announcement…","เขียนประกาศของคุณ…","お知らせを入力…","撰写公告…"],
+    ["Photo (optional)","รูปภาพ (ไม่บังคับ)","写真（任意）","照片（可选）"],
+    ["Video (optional)","วิดีโอ (ไม่บังคับ)","วิดีโอ（ไม่บังคับ）","视频（可选）"],
+    ["Load selected month","โหลดเดือนที่เลือก","選択した月を読み込む","加载所选月份"],
+    ["Publish announcement","เผยแพร่ประกาศ","お知らせを公開","发布公告"]
+  );
   const dictionaries={th:{},ja:{},zh:{}};
   rows.forEach(([en,th,ja,zh])=>{dictionaries.th[en]=th;dictionaries.ja[en]=ja;dictionaries.zh[en]=zh;});
   const langStore='turbo164-language-v1';
