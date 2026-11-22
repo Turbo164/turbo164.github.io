@@ -344,6 +344,28 @@
     ["Load selected month","โหลดเดือนที่เลือก","選択した月を読み込む","加载所选月份"],
     ["Publish announcement","เผยแพร่ประกาศ","お知らせを公開","发布公告"]
   );
+  rows.push(
+    ["Event hashtag","แฮชแท็กกิจกรรม","イベント用ハッシュタグ","活动话题标签"],
+    ["Join this month’s event","ร่วมกิจกรรมประจำเดือนนี้","今月のイベントに参加","参加本月活动"],
+    ["Share a community post using this hashtag:","โพสต์ในชุมชนโดยใช้แฮชแท็กนี้:","このハッシュタグを付けてコミュニティに投稿してください:","发布社区动态时请使用此标签："],
+    ["Copy hashtag","คัดลอกแฮชแท็ก","ハッシュタグをコピー","复制话题标签"],
+    ["Copied!","คัดลอกแล้ว!","コピーしました！","已复制！"],
+    ["Could not copy hashtag. Please copy it manually.","คัดลอกแฮชแท็กไม่ได้ โปรดคัดลอกด้วยตนเอง","ハッシュタグをコピーできません。手動でコピーしてください。","无法复制话题标签，请手动复制。"],
+    ["Enter a hashtag beginning with #, with no spaces.","ใส่แฮชแท็กที่ขึ้นต้นด้วย # และไม่มีช่องว่าง","#で始まり、空白を含まないハッシュタグを入力してください。","请输入以 # 开头且不含空格的话题标签。"],
+    ["Event hashtag entries","รายการโพสต์ที่ใช้แฮชแท็กกิจกรรม","イベントハッシュタグの投稿","活动话题标签投稿"],
+    ["Review posts for the selected month that use this announcement’s hashtag.","ตรวจสอบโพสต์ของเดือนที่เลือกซึ่งใช้แฮชแท็กในประกาศนี้","選択した月に、このお知らせのハッシュタグを使った投稿を確認します。","查看所选月份中使用此公告话题标签的帖子。"],
+    ["Refresh entries","รีเฟรชรายการ","投稿を更新","刷新投稿"],
+    ["Choose a month first.","เลือกเดือนก่อน","先に月を選択してください。","请先选择月份。"],
+    ["Loading hashtag entries…","กำลังโหลดโพสต์ที่ใช้แฮชแท็ก…","ハッシュタグ投稿を読み込み中…","正在加载话题标签帖子…"],
+    ["Apply the hashtag database update before monitoring entries.","เรียกใช้การอัปเดตฐานข้อมูลแฮชแท็กก่อนตรวจสอบรายการ","投稿を確認する前に、ハッシュタグ用データベース更新を適用してください。","请先应用话题标签数据库更新，再监控投稿。"],
+    ["Save an event hashtag for this month first.","บันทึกแฮชแท็กกิจกรรมของเดือนนี้ก่อน","先に今月のイベント用ハッシュタグを保存してください。","请先保存本月活动的话题标签。"],
+    ["Could not load hashtag entries:","โหลดโพสต์ที่ใช้แฮชแท็กไม่สำเร็จ:","ハッシュタグ投稿を読み込めませんでした:","无法加载话题标签帖子："],
+    ["matching posts","โพสต์ที่ตรงกัน","件の投稿","条匹配帖子"],
+    ["unique entrants","ผู้เข้าร่วมไม่ซ้ำ","人の参加者","位不同参赛者"],
+    ["No posts have used this hashtag for the selected month yet.","ยังไม่มีโพสต์ที่ใช้แฮชแท็กนี้ในเดือนที่เลือก","選択した月にこのハッシュタグを使った投稿はまだありません。","所选月份尚无帖子使用此话题标签。"],
+    ["Competition entry photo","รูปภาพผลงานเข้าร่วมกิจกรรม","イベント応募写真","活动参赛照片"],
+    ["Open community post","เปิดโพสต์ชุมชน","コミュニティ投稿を開く","打开社区帖子"]
+  );
   const dictionaries={th:{},ja:{},zh:{}};
   rows.forEach(([en,th,ja,zh])=>{dictionaries.th[en]=th;dictionaries.ja[en]=ja;dictionaries.zh[en]=zh;});
   const langStore='turbo164-language-v1';
