@@ -382,6 +382,13 @@
     ["Most-liked community post","โพสต์ชุมชนที่มีคนกดถูกใจมากที่สุด","最も「いいね」が多いコミュニティ投稿","获赞最多的社区帖子"],
     ["Photo of the month","ภาพถ่ายประจำเดือน","今月の写真","本月照片"]
   );
+  rows.push(
+    ["NEW JOINERS · PAST 3 DAYS","สมาชิกใหม่ · 3 วันที่ผ่านมา","新規参加者 · 過去3日間","新成员 · 过去3天"],
+    ["No one joined in the past 3 days.","ในช่วง 3 วันที่ผ่านมาไม่มีผู้ใช้ใหม่","過去3日間に新規参加者はいません。","过去3天没有新用户加入。"],
+    ["Could not load new joiners.","ไม่สามารถโหลดรายชื่อสมาชิกใหม่ได้","新規参加者を読み込めませんでした。","无法加载新成员名单。"],
+    ["New collector","นักสะสมใหม่","新しいコレクター","新收藏者"],
+    ["Joined","เข้าร่วม","参加","加入"]
+  );
   const dictionaries={th:{},ja:{},zh:{}};
   rows.forEach(([en,th,ja,zh])=>{dictionaries.th[en]=th;dictionaries.ja[en]=ja;dictionaries.zh[en]=zh;});
   const langStore='turbo164-language-v1';
