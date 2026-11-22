@@ -319,6 +319,20 @@
     ["Turbo164 was added to your Home Screen.","เพิ่ม Turbo164 ไปยังหน้าจอหลักแล้ว","Turbo164をホーム画面に追加しました。","Turbo164 已添加到主屏幕。"],
     ["Turbo164 opens like an app from your Home Screen.","Turbo164 จะเปิดใช้งานเหมือนแอปจากหน้าจอหลัก","Turbo164はホーム画面からアプリのように開けます。","Turbo164 可像应用一样从主屏幕打开。"],
   );
+  rows.push(
+    ["Monthly announcement","ประกาศประจำเดือน","月間のお知らせ","每月公告"],
+    ["Loading monthly announcement…","กำลังโหลดประกาศประจำเดือน…","月間のお知らせを読み込み中…","正在加载每月公告…"],
+    ["Monthly announcements setup is required. Apply monthly-announcements.sql in Supabase.","ต้องตั้งค่าประกาศประจำเดือนก่อน โปรดเรียกใช้ monthly-announcements.sql ใน Supabase","月間のお知らせの設定が必要です。Supabaseで monthly-announcements.sql を適用してください。","需要先配置每月公告。请在 Supabase 中运行 monthly-announcements.sql。"],
+    ["Editing the saved announcement. Choose new media to replace its photo or video.","กำลังแก้ไขประกาศที่บันทึกไว้ เลือกสื่อใหม่เพื่อเปลี่ยนรูปภาพหรือวิดีโอ","保存済みのお知らせを編集中です。写真または動画を置き換えるには、新しいメディアを選択してください。","正在编辑已保存的公告。选择新媒体以替换照片或视频。"],
+    ["No announcement is saved for this month yet.","ยังไม่มีประกาศที่บันทึกไว้สำหรับเดือนนี้","今月のお知らせはまだ保存されていません。","本月尚未保存公告。"],
+    ["Announcement loaded.","โหลดประกาศแล้ว","お知らせを読み込みました。","公告已加载。"],
+    ["Ready to create this month’s announcement.","พร้อมสร้างประกาศของเดือนนี้","今月のお知らせを作成できます。","可以创建本月公告。"],
+    ["Choose a month and enter a title.","เลือกเดือนและกรอกหัวข้อ","月を選択してタイトルを入力してください。","请选择月份并输入标题。"],
+    ["Add announcement text, a photo, or a video.","เพิ่มข้อความประกาศ รูปภาพ หรือวิดีโอ","お知らせの文章、写真、または動画を追加してください。","请添加公告文字、照片或视频。"],
+    ["Publishing announcement…","กำลังเผยแพร่ประกาศ…","お知らせを公開中…","正在发布公告…"],
+    ["Monthly announcement published.","เผยแพร่ประกาศประจำเดือนแล้ว","月間のお知らせを公開しました。","每月公告已发布。"],
+    ["Could not publish announcement:","ไม่สามารถเผยแพร่ประกาศได้:","お知らせを公開できませんでした:","无法发布公告："]
+  );
   const dictionaries={th:{},ja:{},zh:{}};
   rows.forEach(([en,th,ja,zh])=>{dictionaries.th[en]=th;dictionaries.ja[en]=ja;dictionaries.zh[en]=zh;});
   const langStore='turbo164-language-v1';
