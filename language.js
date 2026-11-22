@@ -389,6 +389,16 @@
     ["New collector","นักสะสมใหม่","新しいコレクター","新收藏者"],
     ["Joined","เข้าร่วม","参加","加入"]
   );
+  rows.push(
+    ['Official partner','พันธมิตรอย่างเป็นทางการ','公式パートナー','官方合作伙伴'],
+    ['FILM 164 · Custom Model Shop','FILM 164 · ร้านโมเดลแต่ง','FILM 164 · カスタムモデルショップ','FILM 164 · 定制模型店'],
+    ['FILM 164 Custom Model Shop','FILM 164 ร้านโมเดลแต่ง','FILM 164 カスタムモデルショップ','FILM 164 定制模型店'],
+    ['Realpaint Studio 1:64, Made in Thailand','Realpaint Studio 1:64 ผลิตในประเทศไทย','Realpaint Studio 1:64 タイ製','Realpaint Studio 1:64 泰国制造'],
+    ['Turbo164 Buy, Sell, Show Diecast Community Thailand','ชุมชนรถไดแคสต์ Turbo164 ซื้อ ขาย และโชว์ ประเทศไทย','Turbo164 タイのミニカー売買・展示コミュニティ','Turbo164 泰国合金车买卖与展示社区'],
+    ['Turbo164 Community Thailand','ชุมชน Turbo164 ประเทศไทย','Turbo164 タイコミュニティ','Turbo164 泰国社区'],
+    ['Website','เว็บไซต์','ウェブサイト','网站'],
+    ['Official YouTube channel URL needed','ต้องการ URL ช่อง YouTube อย่างเป็นทางการ','公式YouTubeチャンネルのURLが必要です','需要官方 YouTube 频道网址']
+  );
   const dictionaries={th:{},ja:{},zh:{}};
   rows.forEach(([en,th,ja,zh])=>{dictionaries.th[en]=th;dictionaries.ja[en]=ja;dictionaries.zh[en]=zh;});
   const langStore='turbo164-language-v1';
