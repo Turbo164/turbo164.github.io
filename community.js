@@ -434,20 +434,18 @@
    const photoPaths=(Array.isArray(post.media_paths)?post.media_paths.filter(Boolean):[]);if(!photoPaths.length&&post.post_type==='photo'&&post.media_path)photoPaths.push(post.media_path);
    const photos=post.post_type==='photo'?photoPaths.slice(0,6).map(path=>`<img class="community-media" loading="lazy" src="${esc(publicUrl(path))}" alt="${esc(t('Photo shared by'))} ${esc(displayAuthor(post.author_id))}">`).join(''):'';
    const media=photos?`<div class="community-photo-gallery ${photoPaths.length===1?'single':''}">${photos}</div>`:post.post_type==='video'&&url?`<video class="community-media" controls playsinline preload="metadata" src="${esc(url)}">${esc(t('Your browser does not support embedded video.'))}</video>`:'';
-   const ownerControls=own?`<div class="community-owner-controls"><label class="community-allow-save"><input type="checkbox" data-post-save-permission="${esc(post.id)}" ${post.allow_saves?'checked':''}> ${esc(t('Allow others to save this post'))}</label></div>`:'';
    const menuAction=own?`<button type="button" data-delete-post="${esc(post.id)}">${esc(t('Delete this post'))}</button>`:`<button type="button" data-report-post="${esc(post.id)}">${esc(t('Report this post'))}</button>`;
-   const hearted=hearts.has(post.id),isSaved=saved.has(post.id),canSave=post.allow_saves||isSaved;
+   const hearted=hearts.has(post.id),isSaved=saved.has(post.id);
    const open=commentOpen.has(post.id);
    const avatar=profileAvatars[post.author_id],hasAvatar=typeof avatar==='string'&&/^data:image\/jpeg;base64,[A-Za-z0-9+/]+={0,2}$/.test(avatar);
    const authorAvatar=hasAvatar?`<img class="community-author-avatar" src="${esc(avatar)}" alt="" loading="lazy">`:`<span class="community-author-avatar-fallback" aria-hidden="true">👤</span>`;
-   return `<article class="community-post" id="community-post-${esc(post.id)}" data-post-id="${esc(post.id)}"><div class="community-post-top"><div class="community-post-menu"><button type="button" class="community-post-menu-trigger" data-post-menu aria-label="${esc(t('Post options'))}" aria-expanded="false">⋮</button><div class="community-post-menu-panel" hidden>${menuAction}</div></div></div><div class="community-post-head"><div class="community-post-author">${authorAvatar}<div><strong>${esc(displayAuthor(post.author_id))}</strong><time>${esc(dateLabel(post.created_at))}</time></div></div></div>${ownerControls}${post.body?`<p class="community-post-body">${esc(post.body).replace(/\n/g,'<br>')}</p>`:''}${media}<div class="community-actions"><button type="button" class="community-heart ${hearted?'hearted':''}" data-heart-post="${esc(post.id)}" aria-pressed="${hearted}">♥ <span>${heartCounts[post.id]||0}</span> ${esc(t('Love'))}</button>${canSave?`<button type="button" class="community-save ${isSaved?'is-saved':''}" data-save-post="${esc(post.id)}">${isSaved?'✓ '+esc(t('Saved')):'＋ '+esc(t('Save post'))}</button>`:`<span class="community-save-disabled">${esc(t('Saving disabled by author'))}</span>`}<button type="button" class="community-comments-toggle" data-toggle-comments="${esc(post.id)}">▢ ${esc(t('Comments'))} (${commentCounts[post.id]||0})</button></div><div class="community-comments" data-comments-for="${esc(post.id)}" ${open?'':'hidden'}>${open?`<div class="comment-list">${esc(t('Loading comments…'))}</div><form class="community-comment-form" data-comment-form="${esc(post.id)}"><input name="comment" maxlength="2000" placeholder="${esc(t('Write a comment…'))}" required><button type="submit">${esc(t('Post'))}</button></form>`:''}</div></article>`;
+   return `<article class="community-post" id="community-post-${esc(post.id)}" data-post-id="${esc(post.id)}"><div class="community-post-top"><div class="community-post-menu"><button type="button" class="community-post-menu-trigger" data-post-menu aria-label="${esc(t('Post options'))}" aria-expanded="false">⋮</button><div class="community-post-menu-panel" hidden>${menuAction}</div></div></div><div class="community-post-head"><div class="community-post-author">${authorAvatar}<div><strong>${esc(displayAuthor(post.author_id))}</strong><time>${esc(dateLabel(post.created_at))}</time></div></div></div>${post.body?`<p class="community-post-body">${esc(post.body).replace(/\n/g,'<br>')}</p>`:''}${media}<div class="community-actions"><button type="button" class="community-heart ${hearted?'hearted':''}" data-heart-post="${esc(post.id)}" aria-pressed="${hearted}">♥ <span>${heartCounts[post.id]||0}</span> ${esc(t('Love'))}</button><button type="button" class="community-save ${isSaved?'is-saved':''}" data-save-post="${esc(post.id)}">${isSaved?'✓ '+esc(t('Saved')):'＋ '+esc(t('Save post'))}</button><button type="button" class="community-comments-toggle" data-toggle-comments="${esc(post.id)}">▢ ${esc(t('Comments'))} (${commentCounts[post.id]||0})</button></div><div class="community-comments" data-comments-for="${esc(post.id)}" ${open?'':'hidden'}>${open?`<div class="comment-list">${esc(t('Loading comments…'))}</div><form class="community-comment-form" data-comment-form="${esc(post.id)}"><input name="comment" maxlength="2000" placeholder="${esc(t('Write a comment…'))}" required><button type="submit">${esc(t('Post'))}</button></form>`:''}</div></article>`;
   }).join('');
   area.querySelectorAll('[data-heart-post]').forEach(b=>b.onclick=()=>toggleHeart(b.dataset.heartPost));
   area.querySelectorAll('[data-save-post]').forEach(b=>b.onclick=()=>toggleSave(b.dataset.savePost));
   area.querySelectorAll('[data-post-menu]').forEach(b=>b.onclick=event=>{event.stopPropagation();const panel=b.nextElementSibling,opening=panel.hidden;area.querySelectorAll('.community-post-menu-panel').forEach(x=>x.hidden=true);area.querySelectorAll('[data-post-menu]').forEach(x=>x.setAttribute('aria-expanded','false'));panel.hidden=!opening;b.setAttribute('aria-expanded',String(opening))});
   area.querySelectorAll('[data-report-post]').forEach(b=>b.onclick=()=>{b.closest('.community-post-menu-panel').hidden=true;openReportDialog(b.dataset.reportPost)});
   area.querySelectorAll('[data-toggle-comments]').forEach(b=>b.onclick=()=>toggleComments(b.dataset.toggleComments));
-  area.querySelectorAll('[data-post-save-permission]').forEach(el=>el.onchange=()=>setSavePermission(el.dataset.postSavePermission,el.checked));
   area.querySelectorAll('[data-delete-post]').forEach(b=>b.onclick=()=>deletePost(b.dataset.deletePost));
   area.querySelectorAll('[data-comment-form]').forEach(form=>form.onsubmit=event=>submitComment(event,form.dataset.commentForm));
   commentOpen.forEach(id=>{const post=area.querySelector(`[data-comments-for="${CSS.escape(id)}"]`);if(post)loadComments(id,post.querySelector('.comment-list'))});
@@ -461,12 +459,8 @@
  async function toggleSave(id){
   if(!requireLogin('save posts'))return;const post=posts.find(p=>p.id===id);if(!post)return;
   if(saved.has(id)){const {error}=await activeDb().from('community_saved_posts').delete().eq('post_id',id).eq('user_id',communityUser().user.id);if(error){message(error.message,true);return}}
-  else{if(!post.allow_saves){message(t('The owner has disabled saving for this post.'),true);return}const {error}=await activeDb().from('community_saved_posts').insert({post_id:id,user_id:communityUser().user.id});if(error){message(error.message,true);return}}
+  else{const {error}=await activeDb().from('community_saved_posts').insert({post_id:id,user_id:communityUser().user.id});if(error){message(error.message,true);return}}
   await loadPosts();
- }
- async function setSavePermission(id,allowed){
-  const {error}=await activeDb().from('community_posts').update({allow_saves:allowed}).eq('id',id).eq('author_id',communityUser().user.id);
-  if(error){message(error.message,true);await loadPosts();return}message(allowed?t('Other people can now save this post.'):t('Other people can no longer save this post.'));await loadPosts();
  }
  async function deletePost(id){
   if(!confirm(t('Delete this post and its comments, hearts and saves? This cannot be undone.')))return;
@@ -521,7 +515,7 @@
     const {error:uploadError}=await activeDb().storage.from(bucket).upload(path,blob,{contentType,upsert:false});if(uploadError)throw uploadError;
     mediaPaths.push(path);
    }
-   const {error}=await activeDb().from('community_posts').insert({author_id:u.id,post_type:type,body:body||'',media_path:mediaPaths[0]||null,media_paths:mediaPaths,allow_saves:$('communityAllowSaves').checked});
+   const {error}=await activeDb().from('community_posts').insert({author_id:u.id,post_type:type,body:body||'',media_path:mediaPaths[0]||null,media_paths:mediaPaths,allow_saves:true});
    if(error)throw error;
    form.reset();syncComposerType();message(t('Post published.'));currentMode='feed';await Promise.all([loadPosts(),loadTopContributors()]);
   }catch(error){if(mediaPaths.length)await activeDb().storage.from(bucket).remove(mediaPaths);message(`${t('Could not publish post:')} ${error.message||error}`,true)}
