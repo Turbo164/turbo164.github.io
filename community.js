@@ -272,12 +272,13 @@
  async function loadMonthlyAnnouncementPublic(){
   const area=$('monthlyAnnouncementPublic');if(!area||!activeDb())return;
   const monthStart=`${bangkokMonthValue()}-01`;
-  const {data,error}=await activeDb().from('community_monthly_announcements').select('month_start,title,body,photo_path,video_path').eq('month_start',monthStart).maybeSingle();
+  const {data,error}=await activeDb().from('community_monthly_announcements').select('month_start,title,body,hashtag,photo_path,video_path').eq('month_start',monthStart).maybeSingle();
   if(error||!data){area.hidden=true;area.replaceChildren();return}
   const monthLabel=new Intl.DateTimeFormat(undefined,{month:'long',year:'numeric',timeZone:'Asia/Bangkok'}).format(new Date(`${monthStart}T12:00:00+07:00`));
   const photo=data.photo_path?'<img loading="lazy" alt="Monthly community announcement" src="'+esc(publicUrl(data.photo_path))+'">':'';
   const video=data.video_path?'<video controls playsinline preload="metadata" src="'+esc(publicUrl(data.video_path))+'">Your browser does not support embedded video.</video>':'';
-  area.hidden=false;area.innerHTML='<div class="announcement-month">'+esc(monthLabel)+' · '+esc(t('Monthly announcement'))+'</div><h2>'+esc(data.title)+'</h2>'+(data.body?'<p>'+esc(data.body)+'</p>':'')+photo+video;
+  const eventTag=data.hashtag?'<div class="announcement-event-tag"><strong>'+esc(t('Join this month’s event'))+'</strong><span>'+esc(t('Share a community post using this hashtag:'))+' <b>'+esc(data.hashtag)+'</b></span><button type="button" class="outline" data-copy-event-hashtag="'+esc(data.hashtag)+'">'+esc(t('Copy hashtag'))+'</button></div>':'';
+  area.hidden=false;area.innerHTML='<div class="announcement-month">'+esc(monthLabel)+' · '+esc(t('Monthly announcement'))+'</div><h2>'+esc(data.title)+'</h2>'+(data.body?'<p>'+esc(data.body)+'</p>':'')+eventTag+photo+video;
  }
  async function loadMonthlyAnnouncementEditor(){
   const month=$('monthlyAnnouncementMonth'),status=$('monthlyAnnouncementAdminStatus');if(!month||!status||!adminCommunity)return;
@@ -287,6 +288,7 @@
   if(error){loadedMonthlyAnnouncement=null;status.textContent=t('Monthly announcements setup is required. Apply monthly-announcements.sql in Supabase.');return}
   loadedMonthlyAnnouncement=data||null;
   $('monthlyAnnouncementTitle').value=data?.title||'';
+  $('monthlyAnnouncementHashtag').value=data?.hashtag||'';
   $('monthlyAnnouncementText').value=data?.body||'';
   $('monthlyAnnouncementPhoto').value='';$('monthlyAnnouncementVideo').value='';
   $('monthlyAnnouncementPreview').textContent=data?(t('Editing the saved announcement. Choose new media to replace its photo or video.')):t('No announcement is saved for this month yet.');
@@ -294,8 +296,9 @@
  }
  async function publishMonthlyAnnouncement(event){
   event.preventDefault();if(!adminCommunity||!communityUser()?.user)return;
-  const u=communityUser().user,month=$('monthlyAnnouncementMonth').value,title=$('monthlyAnnouncementTitle').value.trim(),body=$('monthlyAnnouncementText').value.trim(),photoFile=$('monthlyAnnouncementPhoto').files?.[0],videoFile=$('monthlyAnnouncementVideo').files?.[0],status=$('monthlyAnnouncementAdminStatus'),submit=$('monthlyAnnouncementPublish');
+  const u=communityUser().user,month=$('monthlyAnnouncementMonth').value,title=$('monthlyAnnouncementTitle').value.trim(),body=$('monthlyAnnouncementText').value.trim(),photoFile=$('monthlyAnnouncementPhoto').files?.[0],videoFile=$('monthlyAnnouncementVideo').files?.[0],hashtag=$('monthlyAnnouncementHashtag').value.trim(),status=$('monthlyAnnouncementAdminStatus'),submit=$('monthlyAnnouncementPublish');
   if(!month||!title){status.textContent=t('Choose a month and enter a title.');return}
+  if(!/^#[\\p{L}\\p{N}_]{2,50}$/u.test(hashtag)){status.textContent=t('Enter a hashtag beginning with #, with no spaces.');return}
   if(videoFile&&(!videoFile.type.startsWith('video/')||videoFile.size>maxVideoBytes)){status.textContent=t('Choose an MP4, MOV, or WebM video under 80 MB.');return}
   if(!body&&!photoFile&&!videoFile&&!loadedMonthlyAnnouncement?.photo_path&&!loadedMonthlyAnnouncement?.video_path){status.textContent=t('Add announcement text, a photo, or a video.');return}
   submit.disabled=true;status.textContent=t('Publishing announcement…');
@@ -309,7 +312,7 @@
    }
    if(photoFile)photoPath=await upload(photoFile,'photo');
    if(videoFile)videoPath=await upload(videoFile,'video');
-   const {error}=await activeDb().from('community_monthly_announcements').upsert({month_start:monthStart,title,body,photo_path:photoPath,video_path:videoPath,updated_by:u.id,updated_at:new Date().toISOString()},{onConflict:'month_start'});
+   const {error}=await activeDb().from('community_monthly_announcements').upsert({month_start:monthStart,title,body,hashtag,photo_path:photoPath,video_path:videoPath,updated_by:u.id,updated_at:new Date().toISOString()},{onConflict:'month_start'});
    if(error)throw error;
    status.textContent=t('Monthly announcement published.');
    await loadMonthlyAnnouncementEditor();
@@ -318,6 +321,32 @@
    if(newPaths.length)await activeDb().storage.from(bucket).remove(newPaths);
    status.textContent=`${t('Could not publish announcement:')} ${error.message||error}`;
   }finally{submit.disabled=false}
+ }
+
+ async function loadMonthlyAnnouncementEntries(){
+  const status=$('monthlyAnnouncementEntrySummary'),area=$('monthlyAnnouncementEntries'),month=$('monthlyAnnouncementMonth')?.value;
+  if(!status||!area||!adminCommunity)return;
+  if(!month){status.textContent=t('Choose a month first.');area.replaceChildren();return}
+  status.textContent=t('Loading hashtag entries…');area.replaceChildren();
+  const monthStart=`${month}-01`,[year,monthNumber]=month.split('-').map(Number),nextDate=new Date(Date.UTC(year,monthNumber,1)),monthEnd=`${nextDate.getUTCFullYear()}-${String(nextDate.getUTCMonth()+1).padStart(2,'0')}-01`;
+  const {data:announcement,error:announcementError}=await activeDb().from('community_monthly_announcements').select('hashtag').eq('month_start',monthStart).maybeSingle();
+  if(announcementError){status.textContent=t('Apply the hashtag database update before monitoring entries.');return}
+  const tag=announcement?.hashtag;
+  if(!tag){status.textContent=t('Save an event hashtag for this month first.');return}
+  const startIso=new Date(`${monthStart}T00:00:00+07:00`).toISOString(),endIso=new Date(`${monthEnd}T00:00:00+07:00`).toISOString();
+  const {data:rows,error}=await activeDb().from('community_posts').select('id,author_id,body,post_type,media_path,media_paths,created_at').gte('created_at',startIso).lt('created_at',endIso).ilike('body',`%${tag}%`).order('created_at',{ascending:false}).limit(500);
+  if(error){status.textContent=`${t('Could not load hashtag entries:')} ${error.message}`;return}
+  const escaped=tag.slice(1).replace(/[.*+?^${}()|[\]\\]/g,'\\ async function loadAdminReports(){'),exactTag=new RegExp(`(^|[^\\p{L}\\p{N}_])#${escaped}(?![\\p{L}\\p{N}_])`,'iu');
+  const entries=(rows||[]).filter(row=>exactTag.test(row.body||''));
+  const authors=[...new Set(entries.map(row=>row.author_id).filter(Boolean))];let names={};
+  if(authors.length){const {data:people}=await activeDb().from('community_profiles').select('user_id,display_name').in('user_id',authors);for(const person of people||[])names[person.user_id]=person.display_name||fallbackName(person.user_id)}
+  const entrants=new Set(entries.map(row=>row.author_id));
+  status.textContent=`${tag} · ${entries.length} ${t('matching posts')} · ${entrants.size} ${t('unique entrants')}`;
+  if(!entries.length){area.innerHTML=`<p class="muted">${esc(t('No posts have used this hashtag for the selected month yet.'))}</p>`;return}
+  area.innerHTML=entries.map(row=>{
+   const author=names[row.author_id]||fallbackName(row.author_id),url=row.media_path?publicUrl(row.media_path):'',photos=(Array.isArray(row.media_paths)?row.media_paths.filter(Boolean):[]),media=row.post_type==='video'&&url?`<video class="community-media" controls playsinline preload="metadata" src="${esc(url)}"></video>`:row.post_type==='photo'?(photos.length?photos:[row.media_path].filter(Boolean)).map(path=>`<img class="community-media" loading="lazy" src="${esc(publicUrl(path))}" alt="${esc(t('Competition entry photo'))}">`).join(''):'';
+   return `<article class="community-report-card"><h4>${esc(author)}</h4><div class="community-report-meta">${esc(dateLabel(row.created_at))} · <a href="#community-post-${esc(row.id)}">${esc(t('Open community post'))}</a></div><p>${esc(row.body||'').replace(/\n/g,'<br>')}</p>${media}</article>`
+  }).join('');
  }
  async function loadAdminReports(){
   if(!adminCommunity)return;
@@ -514,11 +543,12 @@
   $('communitySavedBtn').onclick=()=>{ $('accountMenu').hidden=true;$('accountBtn').setAttribute('aria-expanded','false');showCommunity('saved')};
   $('communityAccountLogin').onclick=()=>{ $('accountMenu').hidden=true;openLoginDialog('Log in to save posts, react, comment, and publish.')};
   $('communityComposerForm').onsubmit=publishPost;$('communityPostType').onchange=()=>syncComposerType();
-  $('monthlyAnnouncementForm').onsubmit=publishMonthlyAnnouncement;$('monthlyAnnouncementLoad').onclick=loadMonthlyAnnouncementEditor;$('monthlyAnnouncementMonth').onchange=loadMonthlyAnnouncementEditor;
+  $('monthlyAnnouncementForm').onsubmit=publishMonthlyAnnouncement;$('monthlyAnnouncementLoad').onclick=loadMonthlyAnnouncementEditor;$('monthlyAnnouncementMonth').onchange=loadMonthlyAnnouncementEditor;$('monthlyAnnouncementMonitorRefresh').onclick=loadMonthlyAnnouncementEntries;$('monthlyAnnouncementMonth').addEventListener('change',loadMonthlyAnnouncementEntries);
   $('communityMediaPicker').onclick=()=>$('communityMediaFile').click();
   $('communityMediaFile').onchange=previewCommunityPhotos;
   $('communityReportForm').onsubmit=submitReport;$('communityReportCancel').onclick=()=>{$('communityReportDialog').close();reportPostId=null};
   $('communityWarningForm').onsubmit=sendAdminWarning;$('communityWarningCancel').onclick=()=>{$('communityWarningDialog').close();warningReportId=null};
+  $('monthlyAnnouncementPublic').addEventListener('click',async event=>{const button=event.target.closest('[data-copy-event-hashtag]');if(!button)return;try{await navigator.clipboard.writeText(button.dataset.copyEventHashtag);button.textContent=t('Copied!')}catch{message(t('Could not copy hashtag. Please copy it manually.'),true)}});
   document.addEventListener('click',event=>{if(!event.target.closest('.community-post-menu'))document.querySelectorAll('.community-post-menu-panel').forEach(panel=>panel.hidden=true)});
   window.addEventListener('turbo164:languagechange',()=>{const label=$('communityPageTitle');if(label&&document.body.classList.contains('community-view'))label.textContent=currentMode==='saved'?t('Saved community posts'):t('Community');syncComposerType(false);loadCommunityWarnings();if($('communityReportDataDialog').open)loadReportData();if($('topContributorHistoryDialog').open)loadContributorHistory()});
   window.communityAuthChanged();syncComposerType();const initialPost=location.hash.match(/^#community-post-([0-9a-f-]{36})$/i);if(initialPost)openReportedPost(initialPost[1],false);
