@@ -18,7 +18,7 @@
   currentMode=mode;document.body.classList.add('community-view');$('communityPage').hidden=false;
   $('communityComposer').hidden=mode==='saved';$('topContributorsPanel').hidden=mode==='saved';$('communityPageTitle').textContent=mode==='saved'?t('Saved community posts'):t('Community');
   $('communityBack').hidden=mode==='saved';$('communitySavedBack').hidden=mode!=='saved';
-  message('');if(mode==='feed')await Promise.all([loadPosts(),loadTopContributors()]);else await loadPosts();loadCommunityWarnings();if(adminCommunity)loadAdminReports();
+  message('');if(mode==='feed')await Promise.all([loadPosts(),loadTopContributors(),loadMonthlyAnnouncementPublic()]);else await loadPosts();loadCommunityWarnings();if(adminCommunity)loadAdminReports();
  }
  function hideCommunity(){document.body.classList.remove('community-view');$('communityPage').hidden=true;currentMode='feed'}
  window.openTurbo164Community=showCommunity;
@@ -31,7 +31,7 @@
   if(document.body.classList.contains('community-view'))loadPosts();
   loadCommunityWarnings();checkCommunityAdmin();
  };
- window.communityRefresh=async()=>{if(document.body.classList.contains('community-view'))await Promise.all([loadPosts(),loadTopContributors()])};
+ window.communityRefresh=async()=>{if(document.body.classList.contains('community-view'))await Promise.all([loadPosts(),loadTopContributors(),loadMonthlyAnnouncementPublic()])};
  window.addEventListener('hashchange',()=>{const match=location.hash.match(/^#community-post-([0-9a-f-]{36})$/i);if(match)openReportedPost(match[1],false)});
  function requireLogin(action){if(communityUser())return true;openLoginDialog(`Log in to ${action} in the community.`);return false}
  function publicUrl(path){if(!path)return '';return activeDb().storage.from(bucket).getPublicUrl(path).data.publicUrl}
@@ -60,7 +60,7 @@
   if(!communityUser()||!activeDb()){adminCommunity=false;panel.hidden=true;if(reportDataButton)reportDataButton.hidden=true;if(historyButton)historyButton.hidden=true;return}
   const {data,error}=await activeDb().rpc('is_arbox_photo_admin');
   adminCommunity=!error&&data===true;panel.hidden=!adminCommunity;if(reportDataButton)reportDataButton.hidden=!adminCommunity;if(historyButton)historyButton.hidden=!adminCommunity;
-  if(adminCommunity&&document.body.classList.contains('community-view'))loadAdminReports();
+  if(adminCommunity){loadMonthlyAnnouncementEditor();if(document.body.classList.contains('community-view'))loadAdminReports();}
  }
  async function loadTopContributors(){
   const status=$('topContributorsStatus'),list=$('topContributorsList');if(!status||!list)return;
@@ -263,6 +263,62 @@
   $('communityReportDataDialog').close();if(updateHash&&location.hash!==`#community-post-${postId}`)history.pushState(null,'',`#community-post-${encodeURIComponent(postId)}`);
   await showCommunity('feed');const card=document.getElementById(`community-post-${postId}`);if(card)card.scrollIntoView({behavior:'smooth',block:'center'});
  }
+
+ let loadedMonthlyAnnouncement=null;
+ function bangkokMonthValue(){
+  const parts=new Intl.DateTimeFormat('en',{timeZone:'Asia/Bangkok',year:'numeric',month:'2-digit'}).formatToParts(new Date());
+  return `${parts.find(p=>p.type==='year')?.value}-${parts.find(p=>p.type==='month')?.value}`;
+ }
+ async function loadMonthlyAnnouncementPublic(){
+  const area=$('monthlyAnnouncementPublic');if(!area||!activeDb())return;
+  const monthStart=`${bangkokMonthValue()}-01`;
+  const {data,error}=await activeDb().from('community_monthly_announcements').select('month_start,title,body,photo_path,video_path').eq('month_start',monthStart).maybeSingle();
+  if(error||!data){area.hidden=true;area.replaceChildren();return}
+  const monthLabel=new Intl.DateTimeFormat(undefined,{month:'long',year:'numeric',timeZone:'Asia/Bangkok'}).format(new Date(`${monthStart}T12:00:00+07:00`));
+  const photo=data.photo_path?'<img loading="lazy" alt="Monthly community announcement" src="'+esc(publicUrl(data.photo_path))+'">':'';
+  const video=data.video_path?'<video controls playsinline preload="metadata" src="'+esc(publicUrl(data.video_path))+'">Your browser does not support embedded video.</video>':'';
+  area.hidden=false;area.innerHTML='<div class="announcement-month">'+esc(monthLabel)+' · '+esc(t('Monthly announcement'))+'</div><h2>'+esc(data.title)+'</h2>'+(data.body?'<p>'+esc(data.body)+'</p>':'')+photo+video;
+ }
+ async function loadMonthlyAnnouncementEditor(){
+  const month=$('monthlyAnnouncementMonth'),status=$('monthlyAnnouncementAdminStatus');if(!month||!status||!adminCommunity)return;
+  if(!month.value)month.value=bangkokMonthValue();
+  status.textContent=t('Loading monthly announcement…');
+  const {data,error}=await activeDb().from('community_monthly_announcements').select('*').eq('month_start',`${month.value}-01`).maybeSingle();
+  if(error){loadedMonthlyAnnouncement=null;status.textContent=t('Monthly announcements setup is required. Apply monthly-announcements.sql in Supabase.');return}
+  loadedMonthlyAnnouncement=data||null;
+  $('monthlyAnnouncementTitle').value=data?.title||'';
+  $('monthlyAnnouncementText').value=data?.body||'';
+  $('monthlyAnnouncementPhoto').value='';$('monthlyAnnouncementVideo').value='';
+  $('monthlyAnnouncementPreview').textContent=data?(t('Editing the saved announcement. Choose new media to replace its photo or video.')):t('No announcement is saved for this month yet.');
+  status.textContent=data?t('Announcement loaded.'):t('Ready to create this month’s announcement.');
+ }
+ async function publishMonthlyAnnouncement(event){
+  event.preventDefault();if(!adminCommunity||!communityUser()?.user)return;
+  const u=communityUser().user,month=$('monthlyAnnouncementMonth').value,title=$('monthlyAnnouncementTitle').value.trim(),body=$('monthlyAnnouncementText').value.trim(),photoFile=$('monthlyAnnouncementPhoto').files?.[0],videoFile=$('monthlyAnnouncementVideo').files?.[0],status=$('monthlyAnnouncementAdminStatus'),submit=$('monthlyAnnouncementPublish');
+  if(!month||!title){status.textContent=t('Choose a month and enter a title.');return}
+  if(videoFile&&(!videoFile.type.startsWith('video/')||videoFile.size>maxVideoBytes)){status.textContent=t('Choose an MP4, MOV, or WebM video under 80 MB.');return}
+  if(!body&&!photoFile&&!videoFile&&!loadedMonthlyAnnouncement?.photo_path&&!loadedMonthlyAnnouncement?.video_path){status.textContent=t('Add announcement text, a photo, or a video.');return}
+  submit.disabled=true;status.textContent=t('Publishing announcement…');
+  const monthStart=`${month}-01`;let photoPath=loadedMonthlyAnnouncement?.photo_path||null,videoPath=loadedMonthlyAnnouncement?.video_path||null,newPaths=[];
+  try{
+   async function upload(file,kind){
+    let blob=file,contentType=file.type||'application/octet-stream',ext=(file.name.split('.').pop()||'bin').toLowerCase().replace(/[^a-z0-9]/g,'');
+    if(kind==='photo'){const prepared=await prepareModelPhoto(file);blob=prepared.blob;contentType='image/jpeg';ext='jpg';URL.revokeObjectURL(prepared.preview)}
+    const path=`${u.id}/announcements/${monthStart}/${crypto.randomUUID()}.${ext}`;
+    const {error}=await activeDb().storage.from(bucket).upload(path,blob,{contentType,upsert:false});if(error)throw error;newPaths.push(path);return path;
+   }
+   if(photoFile)photoPath=await upload(photoFile,'photo');
+   if(videoFile)videoPath=await upload(videoFile,'video');
+   const {error}=await activeDb().from('community_monthly_announcements').upsert({month_start:monthStart,title,body,photo_path:photoPath,video_path:videoPath,updated_by:u.id,updated_at:new Date().toISOString()},{onConflict:'month_start'});
+   if(error)throw error;
+   status.textContent=t('Monthly announcement published.');
+   await loadMonthlyAnnouncementEditor();
+   if(month===bangkokMonthValue())await loadMonthlyAnnouncementPublic();
+  }catch(error){
+   if(newPaths.length)await activeDb().storage.from(bucket).remove(newPaths);
+   status.textContent=`${t('Could not publish announcement:')} ${error.message||error}`;
+  }finally{submit.disabled=false}
+ }
  async function loadAdminReports(){
   if(!adminCommunity)return;
   const area=$('communityReports'),status=$('communityAdminMessage');status.textContent=t('Loading reports…');
@@ -458,6 +514,7 @@
   $('communitySavedBtn').onclick=()=>{ $('accountMenu').hidden=true;$('accountBtn').setAttribute('aria-expanded','false');showCommunity('saved')};
   $('communityAccountLogin').onclick=()=>{ $('accountMenu').hidden=true;openLoginDialog('Log in to save posts, react, comment, and publish.')};
   $('communityComposerForm').onsubmit=publishPost;$('communityPostType').onchange=()=>syncComposerType();
+  $('monthlyAnnouncementForm').onsubmit=publishMonthlyAnnouncement;$('monthlyAnnouncementLoad').onclick=loadMonthlyAnnouncementEditor;$('monthlyAnnouncementMonth').onchange=loadMonthlyAnnouncementEditor;
   $('communityMediaPicker').onclick=()=>$('communityMediaFile').click();
   $('communityMediaFile').onchange=previewCommunityPhotos;
   $('communityReportForm').onsubmit=submitReport;$('communityReportCancel').onclick=()=>{$('communityReportDialog').close();reportPostId=null};
