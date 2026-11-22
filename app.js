@@ -331,19 +331,19 @@ function authUI(message=''){
  const area=$('authArea'),button=$('accountBtn'),menu=$('accountMenu');
  menu.hidden=true;button.setAttribute('aria-expanded','false');
  if(!cloudReady){
-  button.textContent='Guest · Log in';
+  $('accountBtnLabel').textContent='Guest · Log in';$('accountButtonFallback').hidden=false;
   area.innerHTML='<b>Guest preview</b><div class="muted">Browse the catalogue. Log in to create a saved list; cloud sign-in must be configured first.</div>';
   return;
  }
  if(session){
   const label=displayName();
-  button.textContent='👤 '+(label.length>17?label.slice(0,16)+'…':label);
+  $('accountBtnLabel').textContent=label.length>17?label.slice(0,16)+'…':label;$('accountButtonFallback').hidden=!$('accountButtonAvatar').hidden;
   $('accountIdentity').textContent=session.user.email||label;
   $('accountSignOut').hidden=false;
   $('accountLogin').hidden=true;
   area.innerHTML=`<b>☁ Cloud sync enabled</b><div class="muted">Signed in: ${esc(session.user.email||label)}</div>${message?`<p class="muted">${esc(message)}</p>`:''}`;
  }else{
-  button.textContent='👤 Log in';
+  $('accountBtnLabel').textContent='Log in';$('accountButtonFallback').hidden=false;
   $('accountIdentity').textContent='Guest · browsing only';
   $('accountSignOut').hidden=true;
   $('accountLogin').hidden=false;
