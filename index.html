@@ -168,8 +168,13 @@
 .catalog-pagination{display:flex;flex-direction:column;align-items:center;gap:10px;margin:22px auto 28px;padding:14px;border:1px solid #344258;border-radius:14px;background:#121c29}.catalog-page-summary{font-size:13px;color:#b8c4d5;text-align:center}.catalog-page-controls{display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap}.catalog-page-controls button{min-width:38px;min-height:38px;padding:8px 11px}.catalog-page-number{border:1px solid #46556c;border-radius:9px;background:#1d2938;color:#e9eef5}.catalog-page-number[aria-current="page"]{background:#d6a850;border-color:#d6a850;color:#111827;font-weight:700}.catalog-page-controls button:disabled{opacity:.45;cursor:not-allowed}.catalog-pagination[hidden]{display:none!important}.home-layout{display:contents}
 #homeHighlights{max-width:800px;min-width:0;margin:12px auto 20px;width:calc(100% - 40px);padding:16px;display:flex;flex-direction:column;gap:12px;border:1px solid #28364b;border-radius:22px;background:linear-gradient(160deg,#121a27f5,#0d131ef5);box-shadow:0 18px 55px #0006;backdrop-filter:blur(14px)}
 body.community-view #homeHighlights{display:none!important}
+@media(max-width:767px){
+.home-layout > #homeHighlights{display:none}
+body.community-view #communityPage #homeHighlights{display:flex!important;width:100%;margin:12px 0 20px}
+body.community-view #communityPage:has(#communitySavedBack:not([hidden])) #homeHighlights{display:none!important}
+}
 @media(max-width:520px){
-#homeHighlights{width:calc(100% - 24px);padding:12px}
+#homeHighlights{padding:12px}
 #homeHighlights .home-highlight-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(min-width:1500px){
@@ -276,6 +281,22 @@ body.community-view #homeHighlights{display:none!important}
  <p class="muted install-app-note">Turbo164 opens like an app from your Home Screen.</p>
  <button type="button" class="outline" id="installAppClose">Close</button>
 </dialog>
+<script>
+{
+  const mobileCommunityLayout = window.matchMedia('(max-width: 767px)');
+  const communityPulse = document.getElementById('homeHighlights');
+  const desktopAnchor = document.getElementById('officialPartners');
+  const mobileAnchor = document.getElementById('communityMessage');
+
+  function placeCommunityPulse() {
+    const anchor = mobileCommunityLayout.matches ? mobileAnchor : desktopAnchor;
+    if (communityPulse.nextElementSibling !== anchor) anchor.before(communityPulse);
+  }
+
+  placeCommunityPulse();
+  mobileCommunityLayout.addEventListener('change', placeCommunityPulse);
+}
+</script>
 <script src="community.js?v=15"></script><script src="install.js?v=1"></script></body></html>
 
 
