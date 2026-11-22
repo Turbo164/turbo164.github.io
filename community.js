@@ -298,7 +298,7 @@
   event.preventDefault();if(!adminCommunity||!communityUser()?.user)return;
   const u=communityUser().user,month=$('monthlyAnnouncementMonth').value,title=$('monthlyAnnouncementTitle').value.trim(),body=$('monthlyAnnouncementText').value.trim(),photoFile=$('monthlyAnnouncementPhoto').files?.[0],videoFile=$('monthlyAnnouncementVideo').files?.[0],hashtag=$('monthlyAnnouncementHashtag').value.trim(),status=$('monthlyAnnouncementAdminStatus'),submit=$('monthlyAnnouncementPublish');
   if(!month||!title){status.textContent=t('Choose a month and enter a title.');return}
-  if(!/^#[\\p{L}\\p{N}_]{2,50}$/u.test(hashtag)){status.textContent=t('Enter a hashtag beginning with #, with no spaces.');return}
+  if(!/^#[\p{L}\p{N}_]{2,50}$/u.test(hashtag)){status.textContent=t('Enter a hashtag beginning with #, with no spaces.');return}
   if(videoFile&&(!videoFile.type.startsWith('video/')||videoFile.size>maxVideoBytes)){status.textContent=t('Choose an MP4, MOV, or WebM video under 80 MB.');return}
   if(!body&&!photoFile&&!videoFile&&!loadedMonthlyAnnouncement?.photo_path&&!loadedMonthlyAnnouncement?.video_path){status.textContent=t('Add announcement text, a photo, or a video.');return}
   submit.disabled=true;status.textContent=t('Publishing announcement…');
@@ -336,7 +336,7 @@
   const startIso=new Date(`${monthStart}T00:00:00+07:00`).toISOString(),endIso=new Date(`${monthEnd}T00:00:00+07:00`).toISOString();
   const {data:rows,error}=await activeDb().from('community_posts').select('id,author_id,body,post_type,media_path,media_paths,created_at').gte('created_at',startIso).lt('created_at',endIso).ilike('body',`%${tag}%`).order('created_at',{ascending:false}).limit(500);
   if(error){status.textContent=`${t('Could not load hashtag entries:')} ${error.message}`;return}
-  const escaped=tag.slice(1).replace(/[.*+?^${}()|[\]\\]/g,'\\ async function loadAdminReports(){'),exactTag=new RegExp(`(^|[^\\p{L}\\p{N}_])#${escaped}(?![\\p{L}\\p{N}_])`,'iu');
+  const exactTag=new RegExp('(^|[^\\p{L}\\p{N}_])'+tag+'(?![\\p{L}\\p{N}_])','iu');
   const entries=(rows||[]).filter(row=>exactTag.test(row.body||''));
   const authors=[...new Set(entries.map(row=>row.author_id).filter(Boolean))];let names={};
   if(authors.length){const {data:people}=await activeDb().from('community_profiles').select('user_id,display_name').in('user_id',authors);for(const person of people||[])names[person.user_id]=person.display_name||fallbackName(person.user_id)}
