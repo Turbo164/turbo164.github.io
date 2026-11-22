@@ -76,10 +76,13 @@
   const valid=typeof value==='string'&&/^data:image\/jpeg;base64,[A-Za-z0-9+/]+={0,2}$/.test(value);
   if(valid)image.src=value;else image.removeAttribute('src');
   image.hidden=!valid;
+  return valid;
  }
  let appearanceOwner=null, appearanceLoad=0, pointsLoad=0, pendingAvatar=null;
  function renderProfileIdentity(row){
   setProfileAvatar($('accountProfileAvatar'),row?.avatar);
+  const hasButtonAvatar=setProfileAvatar($('accountButtonAvatar'),row?.avatar);
+  $('accountButtonFallback').hidden=hasButtonAvatar;
   $('accountProfileUsername').textContent=row?.username||'';
   $('accountProfileUsername').hidden=!row?.username;
  }
