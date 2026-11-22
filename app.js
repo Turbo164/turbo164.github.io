@@ -856,6 +856,25 @@ async function loadHomeHighlights(){
  renderMonthlySpotlight('homeTopPost',topPost,authors[topPost?.author_id],likes[topPost?.id]||0);
  renderMonthlySpotlight('homePhotoOfMonth',photoPost,authors[photoPost?.author_id],likes[photoPost?.id]||0,true);
 }
+
+function formatHomeRelativeTime(value,locale){
+ const seconds=Math.max(0,(Date.now()-new Date(value).getTime())/1000),formatter=new Intl.RelativeTimeFormat(locale,{numeric:'auto'});
+ if(seconds<3600)return formatter.format(-Math.max(1,Math.floor(seconds/60)),'minute');
+ if(seconds<86400)return formatter.format(-Math.floor(seconds/3600),'hour');
+ return formatter.format(-Math.floor(seconds/86400),'day');
+}
+async function loadHomeNewJoiners(){
+ const area=$('homeNewJoiners');if(!area||!db)return;
+ const locale={en:'en-US',th:'th-TH',ja:'ja-JP',zh:'zh-CN'}[window.T164I18N?.language||'en']||'en-US';
+ const {data,error}=await db.rpc('turbo164_recent_joiners');
+ if(error){area.textContent=homeText('Could not load new joiners.');return}
+ const rows=Array.isArray(data)?data:[];
+ if(!rows.length){area.textContent=homeText('No one joined in the past 3 days.');return}
+ area.innerHTML=rows.slice(0,25).map(row=>{
+  const name=String(row.display_name||homeText('New collector')),initials=name.trim().split(/\\s+/).slice(0,2).map(part=>part[0]||'').join('').toUpperCase();
+  return `<div class="home-joiner-row"><span class="home-joiner-avatar" aria-hidden="true">${esc(initials||'T')}</span><span><span class="home-joiner-name">${esc(name)}</span><span class="home-joiner-time">${esc(homeText('Joined'))} ${esc(formatHomeRelativeTime(row.joined_at,locale))}</span></span></div>`;
+ }).join('');
+}
 function startHomePresence(){
  const target=$('homeOnlineCount');if(!target||!db?.channel)return;
  const keyName='turbo164-home-presence-key-v1';let key;
@@ -942,7 +961,7 @@ async function start(){
   });
  }
  await refreshAll({quiet:true});
- void loadHomeHighlights();startHomePresence();
+ void loadHomeHighlights();void loadHomeNewJoiners();startHomePresence();
  if(!session&&!localStorage.getItem(loginPromptKey)){openLoginDialog();}
 }
 start().catch(e=>{$('authArea').textContent='Could not load app: '+e.message});
