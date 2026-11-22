@@ -366,6 +366,22 @@
     ["Competition entry photo","รูปภาพผลงานเข้าร่วมกิจกรรม","イベント応募写真","活动参赛照片"],
     ["Open community post","เปิดโพสต์ชุมชน","コミュニティ投稿を開く","打开社区帖子"]
   );
+  rows.push(
+    ["TURBO164 COMMUNITY","ชุมชน TURBO164","TURBO164 コミュニティ","TURBO164 社区"],
+    ["Community Pulse","ภาพรวมชุมชน","コミュニティの動向","社区动态"],
+    ["MOST-LIKED POST THIS MONTH","โพสต์ที่มีคนกดถูกใจมากที่สุดประจำเดือน","今月最も「いいね」が多い投稿","本月获赞最多的帖子"],
+    ["PHOTO OF THE MONTH","ภาพถ่ายประจำเดือน","今月の写真","本月照片"],
+    ["TOTAL USERS","ผู้ใช้ทั้งหมด","総ユーザー数","用户总数"],
+    ["ONLINE NOW","ออนไลน์ขณะนี้","現在オンライン","当前在线"],
+    ["No posts yet this month.","เดือนนี้ยังไม่มีโพสต์","今月の投稿はまだありません。","本月还没有帖子。"],
+    ["No photo posts yet this month.","เดือนนี้ยังไม่มีโพสต์รูปภาพ","今月の写真投稿はまだありません。","本月还没有照片帖子。"],
+    ["Community data is unavailable.","ไม่สามารถโหลดข้อมูลชุมชนได้","コミュニティデータを利用できません。","社区数据暂不可用。"],
+    ["Could not load community highlights.","ไม่สามารถโหลดไฮไลต์ชุมชนได้","コミュニティのハイライトを読み込めませんでした。","无法加载社区精选内容。"],
+    ["likes","ถูกใจ","いいね","赞"],
+    ["Monthly highlights update from community activity.","ไฮไลต์ประจำเดือนอัปเดตจากกิจกรรมของชุมชน","月間ハイライトはコミュニティの活動に基づいて更新されます。","月度精选根据社区活动更新。"],
+    ["Most-liked community post","โพสต์ชุมชนที่มีคนกดถูกใจมากที่สุด","最も「いいね」が多いコミュニティ投稿","获赞最多的社区帖子"],
+    ["Photo of the month","ภาพถ่ายประจำเดือน","今月の写真","本月照片"]
+  );
   const dictionaries={th:{},ja:{},zh:{}};
   rows.forEach(([en,th,ja,zh])=>{dictionaries.th[en]=th;dictionaries.ja[en]=ja;dictionaries.zh[en]=zh;});
   const langStore='turbo164-language-v1';
