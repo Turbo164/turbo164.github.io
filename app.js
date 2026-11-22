@@ -1,7 +1,7 @@
 const $=id=>document.getElementById(id);const C=window.ARBOX_CONFIG||{};
 const cloudReady=!!(C.supabaseUrl&&C.supabaseAnonKey&&window.supabase);
 const db=cloudReady?window.supabase.createClient(C.supabaseUrl,C.supabaseAnonKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}}):null;
-let catalog=[],state={},session=null,filter='All',catalogView='Diecast',selectedDiecastBrand='All',selectedDiecastMake='All',diecastMenuLevel='root',diecastMenuBrand='All',radar=[],customModels=[],communityModels=[];
+let catalog=[],state={},session=null,filter='All',catalogView='Diecast',selectedDiecastBrand='All',selectedDiecastMake='All',diecastMenuLevel='root',diecastMenuBrand='All',catalogPage=1,radar=[],customModels=[],communityModels=[];
 const PHOTO_BUCKET='arbox-photo-contributions';
 const MODEL_BUCKET='arbox-model-submissions';
 let modelPhotos=[]; 
@@ -160,8 +160,24 @@ function renderRealpaintCatalogue(){
  }
 }
 
+function renderCatalogPagination(total){
+ const nav=$('catalogPagination');if(!nav)return;
+ const pageSize=25,totalPages=Math.max(1,Math.ceil(total/pageSize));
+ catalogPage=Math.min(Math.max(1,catalogPage),totalPages);
+ if(catalogView!=='Diecast'||total<=pageSize){nav.hidden=true;nav.replaceChildren();return}
+ nav.hidden=false;
+ const first=(catalogPage-1)*pageSize+1,last=Math.min(total,catalogPage*pageSize);
+ const start=Math.max(1,Math.min(catalogPage-2,totalPages-4)),end=Math.min(totalPages,start+4);
+ const numbers=Array.from({length:end-start+1},(_,i)=>start+i).map(page=>`<button type="button" class="catalog-page-number" data-catalog-page="${page}" ${page===catalogPage?'aria-current="page"':''} aria-label="Page ${page}">${page}</button>`).join('');
+ nav.innerHTML=`<span class="catalog-page-summary">Showing ${first}–${last} of ${total} cars · Page ${catalogPage} of ${totalPages}</span><div class="catalog-page-controls"><button type="button" class="outline" data-catalog-page="${Math.max(1,catalogPage-1)}" ${catalogPage===1?'disabled':''}>‹ Previous</button>${numbers}<button type="button" class="outline" data-catalog-page="${Math.min(totalPages,catalogPage+1)}" ${catalogPage===totalPages?'disabled':''}>Next ›</button></div>`;
+ nav.querySelectorAll('[data-catalog-page]').forEach(button=>button.addEventListener('click',()=>{
+  const next=Number(button.dataset.catalogPage);if(!Number.isInteger(next)||next===catalogPage)return;
+  catalogPage=next;render();$('catalogTitle').scrollIntoView({behavior:'smooth',block:'start'});
+ }));
+}
 function render(){
  $('search').hidden=catalogView==='Figure';
+ $('catalogPagination').hidden=catalogView!=='Diecast';
  const q=$('search').value.toLowerCase();
  const all=allModels();
  renderMiniGarage(all);
@@ -172,11 +188,12 @@ function render(){
  $('missing').textContent=session?all.filter(m=>actual(m)==='Missing').length:'—';
  $('catalogTitle').textContent=catalogView==='Diecast'?(selectedDiecastBrand==='All'?(filter==='All'?'Diecast catalogue':`${filter} diecast catalogue`):selectedDiecastMake==='All'?`${selectedDiecastBrand} catalogue`:`${selectedDiecastBrand} · ${selectedDiecastMake} catalogue`):`${catalogView} catalogue`;
  $('count').textContent=catalogView==='Diecast'?`${items.length} models`:'0 items';
+ const totalCatalogPages=Math.max(1,Math.ceil(items.length/25));catalogPage=Math.min(catalogPage,totalCatalogPages);const pageItems=items.slice((catalogPage-1)*25,catalogPage*25);
  $('diecastMenuButton').classList.toggle('active',catalogView==='Diecast');
  document.querySelectorAll('[data-category]').forEach(button=>button.classList.toggle('active',button.dataset.category===catalogView));
  if(catalogView==='Figure'){renderRealpaintCatalogue();return}
  if(isPartnerSection()){renderPartnerCatalogue(q);return}
- $('models').innerHTML=items.map(m=>{
+ $('models').innerHTML=pageItems.map(m=>{
   const label=displayLabel(m);
   const approved=photoOverrides[m.id];
   const imageUrl=m.adminHideImage?null:(m.adminImageUrl||approved||m.photo);
@@ -194,6 +211,7 @@ function render(){
   const adminMenu=photoAdmin&&(m.community||catalog.some(item=>String(item.id)===String(m.id)))?`<div class="admin-menu-wrapper"><button type="button" class="admin-menu-trigger" data-admin-menu-toggle aria-label="Admin actions for ${esc(label)}" aria-expanded="false">⋮</button><div class="admin-menu-popover" hidden><button type="button" data-edit-catalog-item="${esc(m.id)}">Edit all card details</button></div></div>`:'';
   return `<article class="model"><div class="photo">${photoMarkup}<span class="number">${m.number?`#${esc(m.number)}`:'SKU pending'}</span>${editionBadge}</div><div class="info"><div class="model-card-heading"><div class="muted">${esc(maker(m))} · ${esc(m.brand)}${(m.communityBadge!==undefined?m.communityBadge:(m.community?'Community verified':''))?' · '+esc(m.communityBadge!==undefined?m.communityBadge:'Community verified'):''}</div>${adminMenu}</div><div class="name">${esc(label)}</div><div class="sub"><span class="pill ${esc(String(m.release).toLowerCase())}">${esc(m.release)}</span>${yearMarkup}</div>${photoButton}${tracking}</div></article>`;
  }).join('')||(catalogView==='Diecast'?'<p>No matching models.</p>':`<div class="notice category-empty"><strong>${esc(catalogView)} collection</strong><p>No listings yet in this category.</p><p>Items added here will appear in their own catalogue.</p></div>`);
+ renderCatalogPagination(items.length);
  document.querySelectorAll('select[data-id]').forEach(sel=>sel.addEventListener('change',()=>saveStatus(sel.dataset.id,sel.value)));
  document.querySelectorAll('button[data-photo-model]').forEach(btn=>btn.addEventListener('click',()=>openPhotoDialog(btn.dataset.photoModel)));
  document.querySelectorAll('button[data-add-garage]').forEach(btn=>btn.addEventListener('click',()=>saveStatus(btn.dataset.addGarage,'Wishlist')));
@@ -772,7 +790,7 @@ function navigateCatalog(section,brand='All',make='All',releaseFilter='All'){
  catalogView=['Diecast','Diorama','Figure','Accessory','Other'].includes(section)?section:'Diecast';
  selectedDiecastBrand=catalogView==='Diecast'&&availableDiecastBrands().includes(brand)?brand:'All';
  selectedDiecastMake=selectedDiecastBrand!=='All'&&make!=='All'&&availableCarManufacturers(selectedDiecastBrand).includes(make)?make:'All';
- filter=catalogView==='Diecast'&&['Chase','Event','Limited','Upcoming'].includes(releaseFilter)?releaseFilter:'All';$('search').value='';
+ filter=catalogView==='Diecast'&&['Chase','Event','Limited','Upcoming'].includes(releaseFilter)?releaseFilter:'All';catalogPage=1;$('search').value='';
  updateCatalogUrl();closeDiecastMenu();render();$('catalogTitle').scrollIntoView({behavior:'smooth',block:'start'});
 }
 function handleDiecastMenuButton(button){
@@ -806,7 +824,7 @@ async function start(){
  catalog=(await (await fetch('catalog.json')).json()).filter(eligible);
  applyCatalogRouteFromUrl();
  render();
- $('search').oninput=render;
+ $('search').oninput=()=>{catalogPage=1;render()};
  renderDiecastMenu();
  $('diecastMenuButton').onclick=()=>{
   if(catalogView!=='Diecast')navigateCatalog('Diecast');
