@@ -871,7 +871,7 @@ async function loadHomeNewJoiners(){
  const rows=Array.isArray(data)?data:[];
  if(!rows.length){area.textContent=homeText('No one joined in the past 3 days.');return}
  area.innerHTML=rows.slice(0,25).map(row=>{
-  const name=String(row.display_name||homeText('New collector')),initials=name.trim().split(/\\s+/).slice(0,2).map(part=>part[0]||'').join('').toUpperCase();
+  const name=String(row.display_name||homeText('New collector')),initials=name.trim().split(/\s+/).slice(0,2).map(part=>part[0]||'').join('').toUpperCase();
   return `<div class="home-joiner-row"><span class="home-joiner-avatar" aria-hidden="true">${esc(initials||'T')}</span><span><span class="home-joiner-name">${esc(name)}</span><span class="home-joiner-time">${esc(homeText('Joined'))} ${esc(formatHomeRelativeTime(row.joined_at,locale))}</span></span></div>`;
  }).join('');
 }
