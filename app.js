@@ -823,8 +823,8 @@ function renderMonthlySpotlight(targetId,post,author,likes,photoOnly=false){
  const paths=Array.isArray(post.media_paths)?post.media_paths.filter(Boolean):[];
  const imagePath=paths[0]||(post.post_type==='photo'?post.media_path:null);
  const media=photoOnly||post.post_type==='photo'
-  ?(imagePath?`<img src="${esc(homePublicMedia(imagePath))}" alt="${esc(homeText(photoOnly?'Photo of the month':'Most-liked community post'))}" loading="lazy">`:'')
-  :post.post_type==='video'&&post.media_path?`<video src="${esc(homePublicMedia(post.media_path))}" controls playsinline preload="metadata"></video>`:'';
+  ?(imagePath?`<button type="button" class="community-media-open home-highlight-media-open" data-view-community-media="image" data-media-src="${esc(homePublicMedia(imagePath))}" data-media-alt="${esc(homeText(photoOnly?'Photo of the month':'Most-liked community post'))}" aria-label="${esc(homeText('Open photo in larger view'))}"><img src="${esc(homePublicMedia(imagePath))}" alt="${esc(homeText(photoOnly?'Photo of the month':'Most-liked community post'))}" loading="lazy"></button>`:'')
+  :post.post_type==='video'&&post.media_path?`<div class="community-video-wrap home-highlight-video-wrap"><video src="${esc(homePublicMedia(post.media_path))}" controls playsinline preload="metadata"></video><button type="button" class="community-media-expand" data-view-community-media="video" data-media-src="${esc(homePublicMedia(post.media_path))}" aria-label="${esc(homeText('Open video in larger view'))}" title="${esc(homeText('Open video in larger view'))}">⤢</button></div>`:'';
  const excerpt=String(post.body||'').trim().slice(0,190);
  target.innerHTML=`${media}${excerpt?`<p>${esc(excerpt)}${post.body.length>190?'…':''}</p>`:''}<div class="home-highlight-byline">${esc(author||'Turbo164 collector')} · ♥ ${Number(likes)||0} ${esc(homeText('likes'))}</div>`;
 }
@@ -903,6 +903,7 @@ function startHomePresence(){
  window.addEventListener('pagehide',()=>{void channel.untrack();void db.removeChannel(channel)},{once:true});
 }
 async function start(){
+  document.addEventListener('click',event=>{const button=event.target.closest('#homeHighlights [data-view-community-media]');if(!button)return;window.openTurbo164MediaViewer?.(button.dataset.viewCommunityMedia,button.dataset.mediaSrc,button.dataset.mediaAlt||'')});
  $('miniGarageOpen').onclick=()=>openMiniGarage();
  $('miniGarageClose').onclick=()=>$('miniGarageDialog').close();
  $('miniGarageFilters').onclick=event=>{

@@ -427,7 +427,7 @@
   saved=new Set((saveResult.data||[]).map(x=>x.post_id));
   renderPosts();
  }
- function showCommunityMedia(type,src,alt=''){
+ function showCommunityMedia(type,src,alt=''){window.openTurbo164MediaViewer=showCommunityMedia;
   const dialog=$('communityMediaViewer'),image=$('communityMediaViewerImage'),video=$('communityMediaViewerVideo');
   image.hidden=type!=='image';video.hidden=type!=='video';
   if(type==='image'){image.src=src;image.alt=alt}
