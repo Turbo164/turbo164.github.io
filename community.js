@@ -5,7 +5,7 @@
  const $=id=>document.getElementById(id);
  const bucket='community-media';
  const maxVideoBytes=80*1024*1024;
- let currentMode='feed',posts=[],profiles={},profileAvatars={},hearts=new Set(),saved=new Set(),heartCounts={},commentCounts={},commentOpen=new Set(),reportPostId=null,warningReportId=null,adminCommunity=false,contributorHistory=[];
+ let currentMode='feed',posts=[],profiles={},profileAvatars={},hearts=new Set(),saved=new Set(),heartCounts={},commentCounts={},commentOpen=new Set(),reportPostId=null,warningReportId=null,adminCommunity=false,contributorHistory=[],postQuery='',postTypeFilter='all';
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const communityUser=()=>typeof session!=='undefined'?session:null;
  const activeDb=()=>typeof db!=='undefined'?db:null;
@@ -14,11 +14,12 @@
  const dateLabel=value=>{try{return new Intl.DateTimeFormat(undefined,{dateStyle:'medium',timeStyle:'short'}).format(new Date(value))}catch{return ''}};
  const t=(en)=>window.T164I18N?.translate(en)||en;
  function message(text,error=false){const el=$('communityMessage');el.textContent=text||'';el.classList.toggle('error',!!error)}
+ function syncCommunityWelcome(){const userId=communityUser()?.user.id||'guest';let dismissed=false;try{dismissed=localStorage.getItem(`turbo164-community-welcome-${userId}`)==='1'}catch{}$('communityWelcome').hidden=dismissed}
  async function showCommunity(mode='feed'){
   currentMode=mode;document.body.classList.add('community-view');$('communityPage').hidden=false;
   $('communityComposer').hidden=mode==='saved';$('topContributorsPanel').hidden=mode==='saved';$('communityPageTitle').textContent=mode==='saved'?t('Saved community posts'):t('Community');
   $('communityBack').hidden=mode==='saved';$('communitySavedBack').hidden=mode!=='saved';
-  message('');if(mode==='feed')await Promise.all([loadPosts(),loadTopContributors(),loadMonthlyAnnouncementPublic()]);else await loadPosts();loadCommunityWarnings();if(adminCommunity)loadAdminReports();
+  message('');syncCommunityWelcome();if(mode==='feed')await Promise.all([loadPosts(),loadTopContributors(),loadMonthlyAnnouncementPublic()]);else await loadPosts();loadCommunityWarnings();if(adminCommunity)loadAdminReports();
  }
  function hideCommunity(){document.body.classList.remove('community-view');$('communityPage').hidden=true;currentMode='feed'}
  window.openTurbo164Community=showCommunity;
@@ -393,7 +394,7 @@
  async function loadPosts(){
   const area=$('communityFeed');if(!area)return;
   if(!activeDb()){area.innerHTML=`<div class="notice">${esc(t('Community cloud service is not configured.'))}</div>`;return}
-  area.innerHTML=`<div class="notice">${esc(t('Loading community posts…'))}</div>`;
+  $('communityPostCount').textContent='';area.innerHTML=`<div class="notice">${esc(t('Loading community posts…'))}</div>`;
   const u=communityUser()?.user;
   let rows=[];
   if(currentMode==='saved'){
@@ -411,7 +412,7 @@
    rows=data||[];
   }
   posts=rows;
-  if(!rows.length){area.innerHTML=`<div class="notice">${esc(currentMode==='saved'?t('You have no saved community posts yet.'):t('No posts yet. Be the first to share something with the community.'))}</div>`;return}
+  if(!rows.length){$('communityPostCount').textContent='';area.innerHTML=`<div class="notice">${esc(currentMode==='saved'?t('You have no saved community posts yet.'):t('No posts yet. Be the first to share something with the community.'))}</div>`;return}
   const ids=rows.map(p=>p.id),users=[...new Set(rows.map(p=>p.author_id))];
   const [profileResult,avatarResult,heartResult,commentResult,saveResult]=await Promise.all([
    activeDb().from('community_profiles').select('user_id,display_name').in('user_id',users),
@@ -437,7 +438,10 @@
  }
  function renderPosts(){
   const area=$('communityFeed'),u=communityUser()?.user;
-  area.innerHTML=posts.map(post=>{
+  const query=postQuery,visiblePosts=posts.filter(post=>{const matchesType=postTypeFilter==='all'||post.post_type===postTypeFilter;const haystack=`${displayAuthor(post.author_id)} ${post.body||''}`.toLocaleLowerCase();return matchesType&&(!query||haystack.includes(query))});
+  $('communityPostCount').textContent=posts.length?`${visiblePosts.length} ${t('matching posts')}`:'';
+  if(posts.length&&!visiblePosts.length){area.innerHTML=`<div class="notice">${esc(t('No community posts match your search.'))}</div>`;return}
+  area.innerHTML=visiblePosts.map(post=>{
    const own=u?.id===post.author_id,url=post.media_path?publicUrl(post.media_path):'';
    const photoPaths=(Array.isArray(post.media_paths)?post.media_paths.filter(Boolean):[]);if(!photoPaths.length&&post.post_type==='photo'&&post.media_path)photoPaths.push(post.media_path);
    const photos=post.post_type==='photo'?photoPaths.slice(0,6).map(path=>{const src=publicUrl(path),alt=`${t('Photo shared by')} ${displayAuthor(post.author_id)}`;return `<button type="button" class="community-media-open" data-view-community-media="image" data-media-src="${esc(src)}" data-media-alt="${esc(alt)}" aria-label="${esc(t('Open photo in larger view'))}"><img class="community-media" loading="lazy" src="${esc(src)}" alt="${esc(alt)}"></button>`}).join(''):'';
@@ -447,7 +451,7 @@
    const open=commentOpen.has(post.id);
    const avatar=profileAvatars[post.author_id],hasAvatar=typeof avatar==='string'&&/^data:image\/jpeg;base64,[A-Za-z0-9+/]+={0,2}$/.test(avatar);
    const authorAvatar=hasAvatar?`<img class="community-author-avatar" src="${esc(avatar)}" alt="" loading="lazy">`:`<span class="community-author-avatar-fallback" aria-hidden="true">👤</span>`;
-   return `<article class="community-post" id="community-post-${esc(post.id)}" data-post-id="${esc(post.id)}"><div class="community-post-top"><div class="community-post-menu"><button type="button" class="community-post-menu-trigger" data-post-menu aria-label="${esc(t('Post options'))}" aria-expanded="false">⋮</button><div class="community-post-menu-panel" hidden>${menuAction}</div></div></div><div class="community-post-head"><div class="community-post-author">${authorAvatar}<div><strong>${esc(displayAuthor(post.author_id))}</strong><time>${esc(dateLabel(post.created_at))}</time></div></div></div>${post.body?`<p class="community-post-body">${esc(post.body).replace(/\n/g,'<br>')}</p>`:''}${media}<div class="community-actions"><button type="button" class="community-heart ${hearted?'hearted':''}" data-heart-post="${esc(post.id)}" aria-pressed="${hearted}">♥ <span>${heartCounts[post.id]||0}</span> ${esc(t('Love'))}</button><button type="button" class="community-save ${isSaved?'is-saved':''}" data-save-post="${esc(post.id)}">${isSaved?'✓ '+esc(t('Saved')):'＋ '+esc(t('Save post'))}</button><button type="button" class="community-comments-toggle" data-toggle-comments="${esc(post.id)}">▢ ${esc(t('Comments'))} (${commentCounts[post.id]||0})</button></div><div class="community-comments" data-comments-for="${esc(post.id)}" ${open?'':'hidden'}>${open?`<div class="comment-list">${esc(t('Loading comments…'))}</div><form class="community-comment-form" data-comment-form="${esc(post.id)}"><input name="comment" maxlength="2000" placeholder="${esc(t('Write a comment…'))}" required><button type="submit">${esc(t('Post'))}</button></form>`:''}</div></article>`;
+   return `<article class="community-post" id="community-post-${esc(post.id)}" data-post-id="${esc(post.id)}"><div class="community-post-top"><div class="community-post-menu"><button type="button" class="community-post-menu-trigger" data-post-menu aria-label="${esc(t('Post options'))}" aria-expanded="false">⋮</button><div class="community-post-menu-panel" hidden>${menuAction}</div></div></div><div class="community-post-head"><div class="community-post-author">${authorAvatar}<div><strong>${esc(displayAuthor(post.author_id))}</strong><time datetime="${esc(post.created_at)}">${esc(dateLabel(post.created_at))}</time></div></div></div>${post.body?`<p class="community-post-body">${esc(post.body).replace(/\n/g,'<br>')}</p>`:''}${media}<div class="community-actions"><button type="button" class="community-heart ${hearted?'hearted':''}" data-heart-post="${esc(post.id)}" aria-pressed="${hearted}">♥ <span>${heartCounts[post.id]||0}</span> ${esc(t('Love'))}</button><button type="button" class="community-save ${isSaved?'is-saved':''}" data-save-post="${esc(post.id)}" aria-pressed="${isSaved}">${isSaved?'✓ '+esc(t('Saved')):'＋ '+esc(t('Save post'))}</button><button type="button" class="community-comments-toggle" data-toggle-comments="${esc(post.id)}" aria-expanded="${open}">▢ ${esc(t('Comments'))} (${commentCounts[post.id]||0})</button></div><div class="community-comments" data-comments-for="${esc(post.id)}" ${open?'':'hidden'}>${open?`<div class="comment-list">${esc(t('Loading comments…'))}</div><form class="community-comment-form" data-comment-form="${esc(post.id)}"><input name="comment" maxlength="2000" aria-label="${esc(t('Write a comment…'))}" placeholder="${esc(t('Write a comment…'))}" required><button type="submit">${esc(t('Post'))}</button></form>`:''}</div></article>`;
   }).join('');
   area.querySelectorAll('[data-view-community-media]').forEach(button=>button.onclick=()=>showCommunityMedia(button.dataset.viewCommunityMedia,button.dataset.mediaSrc,button.dataset.mediaAlt||''));   area.querySelectorAll('[data-heart-post]').forEach(b=>b.onclick=()=>toggleHeart(b.dataset.heartPost));
   area.querySelectorAll('[data-save-post]').forEach(b=>b.onclick=()=>toggleSave(b.dataset.savePost));
@@ -552,6 +556,9 @@
   $('communitySavedBtn').onclick=()=>{ $('accountMenu').hidden=true;$('accountBtn').setAttribute('aria-expanded','false');showCommunity('saved')};
   $('communityAccountLogin').onclick=()=>{ $('accountMenu').hidden=true;openLoginDialog('Log in to save posts, react, comment, and publish.')};
   $('communityComposerForm').onsubmit=publishPost;$('communityPostType').onchange=()=>syncComposerType();
+  $('communityWelcomeDismiss').onclick=()=>{const userId=communityUser()?.user.id||'guest';try{localStorage.setItem(`turbo164-community-welcome-${userId}`,'1')}catch{}$('communityWelcome').hidden=true};
+  $('communityPostSearch').addEventListener('input',()=>{postQuery=$('communityPostSearch').value.trim().toLocaleLowerCase();renderPosts()});
+  $('communityPostTypeFilter').addEventListener('change',()=>{postTypeFilter=$('communityPostTypeFilter').value;renderPosts()});
   $('monthlyAnnouncementForm').onsubmit=publishMonthlyAnnouncement;$('monthlyAnnouncementLoad').onclick=loadMonthlyAnnouncementEditor;$('monthlyAnnouncementMonth').onchange=loadMonthlyAnnouncementEditor;$('monthlyAnnouncementMonitorRefresh').onclick=loadMonthlyAnnouncementEntries;$('monthlyAnnouncementMonth').addEventListener('change',loadMonthlyAnnouncementEntries);
   $('communityMediaPicker').onclick=()=>$('communityMediaFile').click();
   $('communityMediaFile').onchange=previewCommunityPhotos;
@@ -562,7 +569,7 @@
   $('communityWarningForm').onsubmit=sendAdminWarning;$('communityWarningCancel').onclick=()=>{$('communityWarningDialog').close();warningReportId=null};
   $('monthlyAnnouncementPublic').addEventListener('click',async event=>{const button=event.target.closest('[data-copy-event-hashtag]');if(!button)return;try{await navigator.clipboard.writeText(button.dataset.copyEventHashtag);button.textContent=t('Copied!')}catch{message(t('Could not copy hashtag. Please copy it manually.'),true)}});
   document.addEventListener('click',event=>{if(!event.target.closest('.community-post-menu'))document.querySelectorAll('.community-post-menu-panel').forEach(panel=>panel.hidden=true)});
-  window.addEventListener('turbo164:languagechange',()=>{const label=$('communityPageTitle');if(label&&document.body.classList.contains('community-view'))label.textContent=currentMode==='saved'?t('Saved community posts'):t('Community');syncComposerType(false);loadCommunityWarnings();if($('communityReportDataDialog').open)loadReportData();if($('topContributorHistoryDialog').open)loadContributorHistory()});
+  window.addEventListener('turbo164:languagechange',()=>{const label=$('communityPageTitle');if(label&&document.body.classList.contains('community-view'))label.textContent=currentMode==='saved'?t('Saved community posts'):t('Community');syncComposerType(false);syncCommunityWelcome();loadCommunityWarnings();if($('communityReportDataDialog').open)loadReportData();if($('topContributorHistoryDialog').open)loadContributorHistory()});
   window.communityAuthChanged();syncComposerType();const initialPost=location.hash.match(/^#community-post-([0-9a-f-]{36})$/i);if(initialPost)openReportedPost(initialPost[1],false);
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
