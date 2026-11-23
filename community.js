@@ -437,6 +437,7 @@
   dialog.showModal();
   if(type==='video')video.play().catch(()=>{});
  }
+ window.openTurbo164MediaViewer=showCommunityMedia;
  function renderPosts(){
   const area=$('communityFeed'),u=communityUser()?.user;
   const query=postQuery,visiblePosts=posts.filter(post=>{const matchesType=postTypeFilter==='all'||post.post_type===postTypeFilter;const haystack=`${displayAuthor(post.author_id)} ${post.body||''}`.toLocaleLowerCase();return matchesType&&(!query||haystack.includes(query))});
