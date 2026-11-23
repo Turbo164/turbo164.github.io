@@ -17,9 +17,9 @@
  function syncCommunityWelcome(){const userId=communityUser()?.user.id||'guest';let dismissed=false;try{dismissed=localStorage.getItem(`turbo164-community-welcome-${userId}`)==='1'}catch{}$('communityWelcome').hidden=dismissed}
  async function showCommunity(mode='feed'){
   currentMode=mode;document.body.classList.add('community-view');$('communityPage').hidden=false;
-  $('communityComposer').hidden=mode==='saved';$('topContributorsPanel').hidden=mode==='saved';$('communityPageTitle').textContent=mode==='saved'?t('Saved community posts'):t('Community');
+  $('communityComposer').hidden=mode==='saved';$('topContributorsPanel').hidden=mode==='saved';$('monthlyAnnouncementPublic').hidden=mode==='saved';$('savedAnnouncementsPanel').hidden=mode!=='saved';$('communityPageTitle').textContent=mode==='saved'?t('Saved community posts'):t('Community');
   $('communityBack').hidden=mode==='saved';$('communitySavedBack').hidden=mode!=='saved';
-  message('');syncCommunityWelcome();if(mode==='feed')await Promise.all([loadPosts(),loadTopContributors(),loadMonthlyAnnouncementPublic()]);else await loadPosts();loadCommunityWarnings();if(adminCommunity)loadAdminReports();
+  message('');syncCommunityWelcome();if(mode==='feed')await Promise.all([loadPosts(),loadTopContributors(),loadMonthlyAnnouncementPublic()]);else await Promise.all([loadPosts(),loadSavedAnnouncements()]);loadCommunityWarnings();if(adminCommunity)loadAdminReports();
  }
  function hideCommunity(){document.body.classList.remove('community-view');$('communityPage').hidden=true;currentMode='feed'}
  window.openTurbo164Community=showCommunity;
@@ -57,10 +57,10 @@
   if(error){message(error.message,true);return}loadCommunityWarnings();
  }
  async function checkCommunityAdmin(){
-  const panel=$('communityAdminPanel'),reportDataButton=$('communityReportDataBtn'),historyButton=$('topContributorHistoryBtn');if(!panel)return;
-  if(!communityUser()||!activeDb()){adminCommunity=false;panel.hidden=true;if(reportDataButton)reportDataButton.hidden=true;if(historyButton)historyButton.hidden=true;return}
+  const panel=$('communityAdminPanel'),reportDataButton=$('communityReportDataBtn'),historyButton=$('topContributorHistoryBtn'),pastButton=$('pastAnnouncementsBtn');if(!panel)return;
+  if(!communityUser()||!activeDb()){adminCommunity=false;panel.hidden=true;if(reportDataButton)reportDataButton.hidden=true;if(historyButton)historyButton.hidden=true;if(pastButton)pastButton.hidden=true;return}
   const {data,error}=await activeDb().rpc('is_arbox_photo_admin');
-  adminCommunity=!error&&data===true;panel.hidden=!adminCommunity;if(reportDataButton)reportDataButton.hidden=!adminCommunity;if(historyButton)historyButton.hidden=!adminCommunity;
+  adminCommunity=!error&&data===true;panel.hidden=!adminCommunity;if(reportDataButton)reportDataButton.hidden=!adminCommunity;if(historyButton)historyButton.hidden=!adminCommunity;if(pastButton)pastButton.hidden=!adminCommunity;
   if(adminCommunity){loadMonthlyAnnouncementEditor();if(document.body.classList.contains('community-view'))loadAdminReports();}
  }
  async function loadTopContributors(){
@@ -281,7 +281,45 @@
   const photo=data.photo_path?'<img loading="lazy" alt="Monthly community announcement" src="'+esc(publicUrl(data.photo_path))+'">':'';
   const video=data.video_path?'<video controls playsinline preload="metadata" src="'+esc(publicUrl(data.video_path))+'">Your browser does not support embedded video.</video>':'';
   const eventTag=data.hashtag?'<div class="announcement-event-tag"><strong>'+esc(t('Join this month’s event'))+'</strong><span>'+esc(t('Share a community post using this hashtag:'))+' <b>'+esc(data.hashtag)+'</b></span><button type="button" class="outline" data-copy-event-hashtag="'+esc(data.hashtag)+'">'+esc(t('Copy hashtag'))+'</button></div>':'';
-  area.hidden=false;area.innerHTML='<div class="announcement-month">'+esc(monthLabel)+' · '+esc(t('Monthly announcement'))+'</div><h2>'+esc(data.title)+'</h2>'+(data.body?'<p>'+esc(data.body)+'</p>':'')+eventTag+photo+video;
+  const {data:engagementRows}=await activeDb().rpc('community_monthly_announcement_engagement',{p_month_start:monthStart});
+  const engagement=Array.isArray(engagementRows)?engagementRows[0]:engagementRows,liked=!!engagement?.liked,savedAnnouncement=!!engagement?.saved,likeCount=Number(engagement?.like_count)||0;
+  area.hidden=false;area.innerHTML='<div class="announcement-month">'+esc(monthLabel)+' · '+esc(t('Monthly announcement'))+'</div><h2>'+esc(data.title)+'</h2>'+(data.body?'<p>'+esc(data.body)+'</p>':'')+eventTag+photo+video+'<div class="announcement-engagement"><button type="button" class="community-heart '+(liked?'hearted':'')+'" data-announcement-like aria-pressed="'+liked+'">♥ <span>'+likeCount+'</span> '+esc(t('Like'))+'</button><button type="button" class="community-save '+(savedAnnouncement?'is-saved':'')+'" data-announcement-save aria-pressed="'+savedAnnouncement+'">'+(savedAnnouncement?'✓ '+esc(t('Saved')):'＋ '+esc(t('Save announcement')) )+'</button></div>';
+ }
+ async function toggleMonthlyAnnouncement(action){
+  if(!requireLogin(action==='like'?'like announcements':'save announcements'))return;
+  const monthStart=bangkokMonthValue()+'-01',u=communityUser().user,table=action==='like'?'community_monthly_announcement_likes':'community_saved_monthly_announcements';
+  const {data:rows,error:readError}=await activeDb().rpc('community_monthly_announcement_engagement',{p_month_start:monthStart});
+  if(readError){message(t('Monthly announcement likes and saves require the Supabase update.'),true);return}
+  const engagement=Array.isArray(rows)?rows[0]:rows,isActive=action==='like'?engagement?.liked:engagement?.saved;
+  const result=isActive?await activeDb().from(table).delete().eq('month_start',monthStart).eq('user_id',u.id):await activeDb().from(table).insert({month_start:monthStart,user_id:u.id});
+  if(result.error){message(result.error.message,true);return}await loadMonthlyAnnouncementPublic();
+ }
+ async function loadSavedAnnouncements(){
+  const area=$('savedAnnouncementsList');if(!area||!activeDb()||!communityUser())return;
+  area.innerHTML='<p class="muted">'+esc(t('Loading saved announcements…'))+'</p>';
+  const {data:saves,error}=await activeDb().from('community_saved_monthly_announcements').select('month_start').eq('user_id',communityUser().user.id).order('month_start',{ascending:false});
+  if(error){area.innerHTML='<p class="muted">'+esc(t('Could not load saved announcements:'))+' '+esc(error.message)+'</p>';return}
+  const months=(saves||[]).map(row=>row.month_start);if(!months.length){area.innerHTML='<p class="muted">'+esc(t('You have no saved announcements yet.'))+'</p>';return}
+  const {data:rows,error:announcementError}=await activeDb().from('community_monthly_announcements').select('month_start,title,body,hashtag,photo_path,video_path').in('month_start',months).order('month_start',{ascending:false});
+  if(announcementError){area.innerHTML='<p class="muted">'+esc(announcementError.message)+'</p>';return}
+  area.innerHTML=(rows||[]).map(row=>{const label=new Intl.DateTimeFormat(undefined,{month:'long',year:'numeric',timeZone:'Asia/Bangkok'}).format(new Date(row.month_start+'T12:00:00+07:00'));const media=row.photo_path?'<img loading="lazy" alt="'+esc(t('Monthly announcement photo'))+'" src="'+esc(publicUrl(row.photo_path))+'">':row.video_path?'<video controls playsinline preload="metadata" src="'+esc(publicUrl(row.video_path))+'"></video>':'';return '<article class="saved-announcement-card"><div class="announcement-month">'+esc(label)+'</div><h3>'+esc(row.title)+'</h3>'+(row.body?'<p>'+esc(row.body)+'</p>':'')+media+'<button type="button" class="community-save is-saved" data-unsave-announcement="'+esc(row.month_start)+'">✓ '+esc(t('Saved'))+'</button></article>'}).join('');
+  area.querySelectorAll('[data-unsave-announcement]').forEach(button=>button.onclick=async()=>{const {error}=await activeDb().from('community_saved_monthly_announcements').delete().eq('month_start',button.dataset.unsaveAnnouncement).eq('user_id',communityUser().user.id);if(error){message(error.message,true);return}await loadSavedAnnouncements()});
+ }
+ async function loadPastAnnouncements(){
+  if(!adminCommunity)return;const area=$('pastAnnouncementsList'),status=$('pastAnnouncementsStatus');if(!area||!status)return;
+  status.textContent=t('Loading past announcements…');area.replaceChildren();
+  const {data,error}=await activeDb().from('community_monthly_announcements').select('*').lt('month_start',bangkokMonthValue()+'-01').order('month_start',{ascending:false}).limit(100);
+  if(error){status.textContent=error.message;return}if(!data?.length){status.textContent=t('No past announcements yet.');return}
+  status.textContent='';area.innerHTML=data.map(row=>{const label=new Intl.DateTimeFormat(undefined,{month:'long',year:'numeric',timeZone:'Asia/Bangkok'}).format(new Date(row.month_start+'T12:00:00+07:00'));const media=row.photo_path?'<img loading="lazy" alt="'+esc(t('Monthly announcement photo'))+'" src="'+esc(publicUrl(row.photo_path))+'">':row.video_path?'<video controls playsinline preload="metadata" src="'+esc(publicUrl(row.video_path))+'"></video>':'';return '<article class="saved-announcement-card"><div class="announcement-month">'+esc(label)+'</div><h3>'+esc(row.title)+'</h3>'+(row.body?'<p>'+esc(row.body)+'</p>':'')+media+'<button type="button" class="outline" data-remove-announcement="'+esc(row.month_start)+'">'+esc(t('Remove announcement'))+'</button></article>'}).join('');
+  area.querySelectorAll('[data-remove-announcement]').forEach(button=>button.onclick=()=>removeMonthlyAnnouncement(button.dataset.removeAnnouncement));
+ }
+ async function removeMonthlyAnnouncement(monthStart){
+  if(!adminCommunity)return;if(!confirm(t('Remove this announcement permanently? This cannot be undone.')))return;
+  const {data:row,error:readError}=await activeDb().from('community_monthly_announcements').select('photo_path,video_path').eq('month_start',monthStart).maybeSingle();if(readError){message(readError.message,true);return}
+  const {error}=await activeDb().from('community_monthly_announcements').delete().eq('month_start',monthStart);if(error){message(error.message,true);return}
+  const paths=[row?.photo_path,row?.video_path].filter(Boolean);if(paths.length)await activeDb().storage.from(bucket).remove(paths);
+  if($('monthlyAnnouncementMonth')?.value+'-01'===monthStart){loadedMonthlyAnnouncement=null;$('monthlyAnnouncementRemove').hidden=true;$('monthlyAnnouncementTitle').value='';$('monthlyAnnouncementHashtag').value='';$('monthlyAnnouncementText').value='';$('monthlyAnnouncementPreview').textContent=t('No announcement is saved for this month yet.');$('monthlyAnnouncementAdminStatus').textContent=t('Announcement removed.')}
+  if(monthStart===bangkokMonthValue()+'-01')await loadMonthlyAnnouncementPublic();await loadPastAnnouncements();await loadMonthlyAnnouncementEntries();
  }
  async function loadMonthlyAnnouncementEditor(){
   const month=$('monthlyAnnouncementMonth'),status=$('monthlyAnnouncementAdminStatus');if(!month||!status||!adminCommunity)return;
@@ -289,7 +327,7 @@
   status.textContent=t('Loading monthly announcement…');
   const {data,error}=await activeDb().from('community_monthly_announcements').select('*').eq('month_start',`${month.value}-01`).maybeSingle();
   if(error){loadedMonthlyAnnouncement=null;status.textContent=t('Monthly announcements setup is required. Apply monthly-announcements.sql in Supabase.');return}
-  loadedMonthlyAnnouncement=data||null;
+  loadedMonthlyAnnouncement=data||null;$('monthlyAnnouncementRemove').hidden=!data;
   $('monthlyAnnouncementTitle').value=data?.title||'';
   $('monthlyAnnouncementHashtag').value=data?.hashtag||'';
   $('monthlyAnnouncementText').value=data?.body||'';
@@ -554,6 +592,7 @@
   $('communityTopBtn').onclick=()=>showCommunity('feed');$('communityBack').onclick=hideCommunity;$('communitySavedBack').onclick=hideCommunity;
   $('communityReportDataBtn').onclick=()=>{if(!adminCommunity)return;$('accountMenu').hidden=true;$('accountBtn').setAttribute('aria-expanded','false');$('communityReportDataDialog').showModal();loadReportData()};
   $('topContributorHistoryBtn').onclick=()=>{if(!adminCommunity)return;$('accountMenu').hidden=true;$('accountBtn').setAttribute('aria-expanded','false');$('topContributorHistoryDialog').showModal();loadContributorHistory()};
+  $('pastAnnouncementsBtn').onclick=()=>{if(!adminCommunity)return;$('accountMenu').hidden=true;$('accountBtn').setAttribute('aria-expanded','false');$('pastAnnouncementsDialog').showModal();loadPastAnnouncements()};
   $('communityReportDataOpenQueue').onclick=()=>{if(!adminCommunity)return;$('communityReportDataDialog').close();showCommunity('feed');requestAnimationFrame(()=> $('communityAdminPanel').scrollIntoView({behavior:'smooth',block:'start'}))};
   $('communitySavedBtn').onclick=()=>{ $('accountMenu').hidden=true;$('accountBtn').setAttribute('aria-expanded','false');showCommunity('saved')};
   $('communityAccountLogin').onclick=()=>{ $('accountMenu').hidden=true;openLoginDialog('Log in to save posts, react, comment, and publish.')};
@@ -562,7 +601,7 @@
   $('communityPostSearch').addEventListener('input',()=>{postQuery=$('communityPostSearch').value.trim().toLocaleLowerCase();renderPosts()});
   $('communityPostTypeFilter').addEventListener('change',()=>{postTypeFilter=$('communityPostTypeFilter').value;renderPosts()});
   $('communityLoadMore').onclick=()=>loadPosts(true);
-  $('monthlyAnnouncementForm').onsubmit=publishMonthlyAnnouncement;$('monthlyAnnouncementLoad').onclick=loadMonthlyAnnouncementEditor;$('monthlyAnnouncementMonth').onchange=loadMonthlyAnnouncementEditor;$('monthlyAnnouncementMonitorRefresh').onclick=loadMonthlyAnnouncementEntries;$('monthlyAnnouncementMonth').addEventListener('change',loadMonthlyAnnouncementEntries);
+  $('monthlyAnnouncementForm').onsubmit=publishMonthlyAnnouncement;$('monthlyAnnouncementLoad').onclick=loadMonthlyAnnouncementEditor;$('monthlyAnnouncementRemove').onclick=()=>loadedMonthlyAnnouncement&&removeMonthlyAnnouncement(loadedMonthlyAnnouncement.month_start);$('monthlyAnnouncementMonth').onchange=loadMonthlyAnnouncementEditor;$('monthlyAnnouncementMonitorRefresh').onclick=loadMonthlyAnnouncementEntries;$('monthlyAnnouncementMonth').addEventListener('change',loadMonthlyAnnouncementEntries);
   $('communityMediaPicker').onclick=()=>$('communityMediaFile').click();
   $('communityMediaFile').onchange=previewCommunityPhotos;
   $('communityMediaViewerClose').onclick=()=>$('communityMediaViewer').close();
@@ -570,7 +609,7 @@
    $('communityMediaViewer').addEventListener('close',()=>{const video=$('communityMediaViewerVideo');video.pause();video.removeAttribute('src');video.load();$('communityMediaViewerImage').removeAttribute('src')});
    $('communityReportForm').onsubmit=submitReport;$('communityReportCancel').onclick=()=>{$('communityReportDialog').close();reportPostId=null};
   $('communityWarningForm').onsubmit=sendAdminWarning;$('communityWarningCancel').onclick=()=>{$('communityWarningDialog').close();warningReportId=null};
-  $('monthlyAnnouncementPublic').addEventListener('click',async event=>{const button=event.target.closest('[data-copy-event-hashtag]');if(!button)return;try{await navigator.clipboard.writeText(button.dataset.copyEventHashtag);button.textContent=t('Copied!')}catch{message(t('Could not copy hashtag. Please copy it manually.'),true)}});
+  $('monthlyAnnouncementPublic').addEventListener('click',async event=>{const like=event.target.closest('[data-announcement-like]'),save=event.target.closest('[data-announcement-save]'),copy=event.target.closest('[data-copy-event-hashtag]');if(like){toggleMonthlyAnnouncement('like');return}if(save){toggleMonthlyAnnouncement('save');return}if(copy){try{await navigator.clipboard.writeText(copy.dataset.copyEventHashtag);copy.textContent=t('Copied!')}catch{message(t('Could not copy hashtag. Please copy it manually.'),true)}}});
   document.addEventListener('click',event=>{if(!event.target.closest('.community-post-menu'))document.querySelectorAll('.community-post-menu-panel').forEach(panel=>panel.hidden=true)});
   window.addEventListener('turbo164:languagechange',()=>{const label=$('communityPageTitle');if(label&&document.body.classList.contains('community-view'))label.textContent=currentMode==='saved'?t('Saved community posts'):t('Community');syncComposerType(false);syncCommunityWelcome();loadCommunityWarnings();if($('communityReportDataDialog').open)loadReportData();if($('topContributorHistoryDialog').open)loadContributorHistory()});
   window.communityAuthChanged();syncComposerType();const initialPost=location.hash.match(/^#community-post-([0-9a-f-]{36})$/i);if(initialPost)openReportedPost(initialPost[1],false);
