@@ -1,0 +1,60 @@
+name: Track new catalog cars
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - catalog.json
+
+permissions:
+  contents: write
+
+jobs:
+  count-new-cars:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Count newly added catalog IDs
+        env:
+          BASE_SHA: ${{ github.event.before }}
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const { execFileSync } = require('node:child_process');
+          const baseSha = process.env.BASE_SHA || '';
+          let previous = [];
+          if (baseSha && !/^0+$/.test(baseSha)) {
+            try {
+              previous = JSON.parse(execFileSync('git', ['show', baseSha + ':catalog.json'], { encoding: 'utf8' }));
+            } catch {
+              previous = [];
+            }
+          }
+          const current = JSON.parse(fs.readFileSync('catalog.json', 'utf8'));
+          const key = item => String(item.id || [item.manufacturer, item.number, item.name].join('|'));
+          const priorIds = new Set(previous.map(key));
+          const added = current.filter(item => !priorIds.has(key(item)));
+          const manifest = {
+            count: added.length,
+            updatedAt: new Date().toISOString(),
+            ids: added.map(key)
+          };
+          fs.writeFileSync('catalog-additions.json', JSON.stringify(manifest, null, 2) + '\n');
+          NODE
+
+      - name: Commit the latest additions count
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog-additions.json
+          if git diff --cached --quiet; then
+            echo "The additions count is unchanged."
+            exit 0
+          fi
+          git commit -m "Update new catalog additions count"
+          git push
