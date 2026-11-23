@@ -559,7 +559,8 @@
   $('communityComposerForm').onsubmit=publishPost;$('communityPostType').onchange=()=>syncComposerType();
   $('communityWelcomeDismiss').onclick=()=>{const userId=communityUser()?.user.id||'guest';try{localStorage.setItem(`turbo164-community-welcome-${userId}`,'1')}catch{}$('communityWelcome').hidden=true};
   $('communityPostSearch').addEventListener('input',()=>{postQuery=$('communityPostSearch').value.trim().toLocaleLowerCase();renderPosts()});
-  $('communityPostTypeFilter').addEventListener('change',()=>{postTypeFilter=$('communityPostTypeFilter').value;renderPosts()});\n  $('communityLoadMore').onclick=()=>loadPosts(true);
+  $('communityPostTypeFilter').addEventListener('change',()=>{postTypeFilter=$('communityPostTypeFilter').value;renderPosts()});
+  $('communityLoadMore').onclick=()=>loadPosts(true);
   $('monthlyAnnouncementForm').onsubmit=publishMonthlyAnnouncement;$('monthlyAnnouncementLoad').onclick=loadMonthlyAnnouncementEditor;$('monthlyAnnouncementMonth').onchange=loadMonthlyAnnouncementEditor;$('monthlyAnnouncementMonitorRefresh').onclick=loadMonthlyAnnouncementEntries;$('monthlyAnnouncementMonth').addEventListener('change',loadMonthlyAnnouncementEntries);
   $('communityMediaPicker').onclick=()=>$('communityMediaFile').click();
   $('communityMediaFile').onchange=previewCommunityPhotos;
