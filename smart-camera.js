@@ -457,7 +457,7 @@
     if(!main||$sc('scDialog'))return;
     const launch=document.createElement('section');launch.className='sc-launch';
     launch.innerHTML='<div><strong>Smart Camera v2.6</strong><p>Scan a diecast, compare manufacturers and choose the exact release.</p></div><button type="button" id="scLaunchBtn" class="sc-primary">📷 Open Scanner</button>';
-    const actions=$sc('heroActions');\n    if(actions)actions.append(launch);\n    else (main.querySelector('.hero')||main.firstElementChild)?.insertAdjacentElement('afterend',launch);
+    const actions=$sc('heroActions');if(actions)actions.append(launch);else (main.querySelector('.hero')||main.firstElementChild)?.insertAdjacentElement('afterend',launch);
     const css=document.createElement('style');css.textContent=`
       .sc-launch{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#151e2b;border:1px solid #806a49;border-radius:16px;padding:15px;margin-bottom:20px}.sc-launch p{margin:5px 0 0;color:#aeb9c9;font-size:13px}
       .sc-primary{background:#d5a65a!important;color:#15120c!important;font-weight:800;border:0;border-radius:10px;padding:11px 13px}.sc-outline{border:1px solid #526178!important;background:#1c2735!important;color:#e4edff!important;border-radius:10px;padding:10px 12px}
