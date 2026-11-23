@@ -406,6 +406,7 @@
     ['Text posts','โพสต์ข้อความ','テキスト投稿','文字帖子'],['Photo posts','โพสต์รูปภาพ','写真投稿','图片帖子'],['Video posts','โพสต์วิดีโอ','動画投稿','视频帖子'],
     ['No community posts match your search.','ไม่พบโพสต์ชุมชนที่ตรงกับการค้นหา','検索に一致するコミュニティ投稿はありません。','没有符合搜索条件的社区帖子。']
   );
+  rows.push(['Load older posts','โหลดโพสต์เก่า','古い投稿を読み込む','加载更早的帖子']);
   rows.forEach(([en,th,ja,zh])=>{dictionaries.th[en]=th;dictionaries.ja[en]=ja;dictionaries.zh[en]=zh;});
   const langStore='turbo164-language-v1';
   const supported=['en','th','ja','zh'];
