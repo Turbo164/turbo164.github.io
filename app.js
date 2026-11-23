@@ -332,6 +332,7 @@ function closeLoginDialog(){if($('loginDialog').open)$('loginDialog').close()}
 function authUI(message=''){
  const area=$('authArea'),button=$('accountBtn'),menu=$('accountMenu');
  menu.hidden=true;button.setAttribute('aria-expanded','false');
+ area.hidden=false;
  if(!cloudReady){
   $('accountBtnLabel').textContent='Guest · Log in';$('accountButtonFallback').hidden=false;
   area.innerHTML='<b>Guest preview</b><div class="muted">Browse the catalogue. Log in to create a saved list; cloud sign-in must be configured first.</div>';
@@ -343,7 +344,7 @@ function authUI(message=''){
   $('accountIdentity').textContent=session.user.email||label;
   $('accountSignOut').hidden=false;
   $('accountLogin').hidden=true;
-  area.innerHTML=`<b>☁ Cloud sync enabled</b><div class="muted">Signed in: ${esc(session.user.email||label)}</div>${message?`<p class="muted">${esc(message)}</p>`:''}`;
+  area.replaceChildren();area.hidden=true;
  }else{
   $('accountBtnLabel').textContent='Log in';$('accountButtonFallback').hidden=false;
   $('accountIdentity').textContent='Guest · browsing only';
