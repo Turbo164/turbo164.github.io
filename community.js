@@ -5,7 +5,7 @@
  const $=id=>document.getElementById(id);
  const bucket='community-media';
  const maxVideoBytes=80*1024*1024;
- let currentMode='feed',posts=[],profiles={},profileAvatars={},hearts=new Set(),saved=new Set(),heartCounts={},commentCounts={},commentOpen=new Set(),reportPostId=null,warningReportId=null,adminCommunity=false,contributorHistory=[],postQuery='',postTypeFilter='all';
+ let currentMode='feed',posts=[],profiles={},profileAvatars={},hearts=new Set(),saved=new Set(),heartCounts={},commentCounts={},commentOpen=new Set(),reportPostId=null,warningReportId=null,adminCommunity=false,contributorHistory=[],postQuery='',postTypeFilter='all',postOffset=0,postHasMore=false;
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const communityUser=()=>typeof session!=='undefined'?session:null;
  const activeDb=()=>typeof db!=='undefined'?db:null;
@@ -391,10 +391,10 @@
   submit.disabled=false;if(error){message(error.code==='23505'?t('You already reported this post.'):error.message,true);return}
   $('communityReportDialog').close();reportPostId=null;message(t('Report sent to the admin for review.'));
  }
- async function loadPosts(){
+ async function loadPosts(append=false){
   const area=$('communityFeed');if(!area)return;
   if(!activeDb()){area.innerHTML=`<div class="notice">${esc(t('Community cloud service is not configured.'))}</div>`;return}
-  $('communityPostCount').textContent='';area.innerHTML=`<div class="notice">${esc(t('Loading community posts…'))}</div>`;
+  if(!append){postOffset=0;postHasMore=false;$('communityPostCount').textContent='';area.innerHTML=`<div class="notice">${esc(t('Loading community posts…'))}</div>`;}
   const u=communityUser()?.user;
   let rows=[];
   if(currentMode==='saved'){
@@ -407,9 +407,10 @@
    if(postsError){area.innerHTML=`<div class="notice">${esc(postsError.message)}</div>`;return}
    const order=new Map(ids.map((id,i)=>[id,i]));rows=(posts||[]).sort((a,b)=>(order.get(a.id)??999)-(order.get(b.id)??999));
   }else{
-   const {data,error}=await activeDb().from('community_posts').select('*').order('created_at',{ascending:false}).limit(60);
+   const offset=append?postOffset:0;
+   const {data,error}=await activeDb().from('community_posts').select('*').order('created_at',{ascending:false}).range(offset,offset+59);
    if(error){area.innerHTML=`<div class="notice">${esc(t('Community setup is incomplete. Run turbo164-community-setup.sql in Supabase.'))}<br><span class="muted">${esc(error.message)}</span></div>`;return}
-   rows=data||[];
+   const page=data||[];postHasMore=page.length===60;postOffset=offset+page.length;rows=append?[...posts,...page]:page;
   }
   posts=rows;
   if(!rows.length){$('communityPostCount').textContent='';area.innerHTML=`<div class="notice">${esc(currentMode==='saved'?t('You have no saved community posts yet.'):t('No posts yet. Be the first to share something with the community.'))}</div>`;return}
@@ -439,7 +440,7 @@
  function renderPosts(){
   const area=$('communityFeed'),u=communityUser()?.user;
   const query=postQuery,visiblePosts=posts.filter(post=>{const matchesType=postTypeFilter==='all'||post.post_type===postTypeFilter;const haystack=`${displayAuthor(post.author_id)} ${post.body||''}`.toLocaleLowerCase();return matchesType&&(!query||haystack.includes(query))});
-  $('communityPostCount').textContent=posts.length?`${visiblePosts.length} ${t('matching posts')}`:'';
+  $('communityPostCount').textContent=posts.length?`${visiblePosts.length} ${t('matching posts')}`:'';$('communityLoadMore').hidden=currentMode!=='feed'||!postHasMore;
   if(posts.length&&!visiblePosts.length){area.innerHTML=`<div class="notice">${esc(t('No community posts match your search.'))}</div>`;return}
   area.innerHTML=visiblePosts.map(post=>{
    const own=u?.id===post.author_id,url=post.media_path?publicUrl(post.media_path):'';
@@ -558,7 +559,7 @@
   $('communityComposerForm').onsubmit=publishPost;$('communityPostType').onchange=()=>syncComposerType();
   $('communityWelcomeDismiss').onclick=()=>{const userId=communityUser()?.user.id||'guest';try{localStorage.setItem(`turbo164-community-welcome-${userId}`,'1')}catch{}$('communityWelcome').hidden=true};
   $('communityPostSearch').addEventListener('input',()=>{postQuery=$('communityPostSearch').value.trim().toLocaleLowerCase();renderPosts()});
-  $('communityPostTypeFilter').addEventListener('change',()=>{postTypeFilter=$('communityPostTypeFilter').value;renderPosts()});
+  $('communityPostTypeFilter').addEventListener('change',()=>{postTypeFilter=$('communityPostTypeFilter').value;renderPosts()});\n  $('communityLoadMore').onclick=()=>loadPosts(true);
   $('monthlyAnnouncementForm').onsubmit=publishMonthlyAnnouncement;$('monthlyAnnouncementLoad').onclick=loadMonthlyAnnouncementEditor;$('monthlyAnnouncementMonth').onchange=loadMonthlyAnnouncementEditor;$('monthlyAnnouncementMonitorRefresh').onclick=loadMonthlyAnnouncementEntries;$('monthlyAnnouncementMonth').addEventListener('change',loadMonthlyAnnouncementEntries);
   $('communityMediaPicker').onclick=()=>$('communityMediaFile').click();
   $('communityMediaFile').onchange=previewCommunityPhotos;
