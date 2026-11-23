@@ -272,7 +272,17 @@
   const parts=new Intl.DateTimeFormat('en',{timeZone:'Asia/Bangkok',year:'numeric',month:'2-digit'}).formatToParts(new Date());
   return `${parts.find(p=>p.type==='year')?.value}-${parts.find(p=>p.type==='month')?.value}`;
  }
- async function loadMonthlyAnnouncementPublic(){
+ function renderAnnouncementItem(row,options={}){
+  const monthLabel=new Intl.DateTimeFormat(undefined,{month:'long',year:'numeric',timeZone:'Asia/Bangkok'}).format(new Date(row.month_start+'T12:00:00+07:00'));
+  const photo=row.photo_path?'<img loading="lazy" alt="'+esc(t('Monthly announcement photo'))+'" src="'+esc(publicUrl(row.photo_path))+'">':'';
+  const video=row.video_path?'<video controls playsinline preload="metadata" src="'+esc(publicUrl(row.video_path))+'"></video>':'';
+  const hashtag=row.hashtag?'<div class="announcement-event-tag"><strong>'+esc(t('Join this month’s event'))+'</strong><span>'+esc(t('Share a community post using this hashtag:'))+' <b>'+esc(row.hashtag)+'</b></span><button type="button" class="outline" data-copy-event-hashtag="'+esc(row.hashtag)+'">'+esc(t('Copy hashtag'))+'</button></div>':'';
+  const actions=options.engagement?'<div class="announcement-engagement"><button type="button" class="community-heart '+(options.engagement.liked?'hearted':'')+'" data-announcement-like="'+esc(row.id)+'" aria-pressed="'+!!options.engagement.liked+'">♥ <span>'+Number(options.engagement.like_count||0)+'</span> '+esc(t('Like'))+'</button><button type="button" class="community-save '+(options.engagement.saved?'is-saved':'')+'" data-announcement-save="'+esc(row.id)+'" aria-pressed="'+!!options.engagement.saved+'">'+(options.engagement.saved?'✓ '+esc(t('Saved')):'＋ '+esc(t('Save announcement')) )+'</button></div>':'';
+  const adminActions=options.admin?'<div class="community-compose-footer"><button type="button" class="outline" data-edit-announcement="'+esc(row.id)+'">'+esc(t('Edit announcement'))+'</button><button type="button" class="outline" data-remove-announcement="'+esc(row.id)+'">'+esc(t('Remove announcement'))+'</button></div>':'';
+  const savedAction=options.saved?'<button type="button" class="community-save is-saved" data-unsave-announcement="'+esc(row.id)+'">✓ '+esc(t('Saved'))+'</button>':'';
+  return '<article class="saved-announcement-card" data-announcement-id="'+esc(row.id)+'"><div class="announcement-month">'+esc(monthLabel)+(row.created_at?' · '+esc(dateLabel(row.created_at)):'')+'</div><h3>'+esc(row.title)+'</h3>'+(row.body?'<p>'+esc(row.body)+'</p>':'')+hashtag+photo+video+actions+adminActions+savedAction+'</article>';
+}
+async function loadMonthlyAnnouncementPublic(){
   const area=$('monthlyAnnouncementPublic');if(!area||!activeDb())return;
   const monthStart=bangkokMonthValue()+'-01';
   const {data:rows,error}=await activeDb().from('community_monthly_announcement_items').select('*').eq('month_start',monthStart).order('created_at',{ascending:false});
