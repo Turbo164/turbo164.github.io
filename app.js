@@ -112,8 +112,10 @@ function renderMiniGarage(models){
  const rows=groups[garageStatus];
  $('miniGarageEmpty').hidden=rows.length>0;
  $('miniGarageItems').innerHTML=rows.map(model=>{
-  const details=[maker(model),model.number?'#'+model.number:'',edition(model)].filter(Boolean).join(' · ');
-  return `<li><strong>${esc(displayLabel(model))}</strong><span class="muted">${esc(details)}</span></li>`;
+  const imageUrl=model.adminHideImage?null:(model.adminImageUrl||photoOverrides[model.id]||model.photo);
+  const details=[maker(model),model.brand,model.number?'#'+model.number:'',model.releaseYear,model.release,edition(model)].filter(Boolean).join(' · ');
+  const imageMarkup=imageUrl?`<img loading="lazy" src="${esc(imageUrl)}" alt="${esc(displayLabel(model))}" onerror="this.hidden=true;this.nextElementSibling.hidden=false">`:'';
+  return `<li class="mini-garage-card"><div class="mini-garage-card-image">${imageMarkup}<span class="mini-garage-image-fallback" ${imageUrl?'hidden':''}>🚘 Image unavailable</span></div><div class="mini-garage-card-content"><strong>${esc(displayLabel(model))}</strong><span class="muted">${esc(details)}</span></div></li>`;
  }).join('');
 }
 function openMiniGarage(status='Owned'){

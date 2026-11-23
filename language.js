@@ -2,6 +2,7 @@
 (() => {
   'use strict';
   const rows = [
+    ['Open photo in larger view','เปิดรูปภาพขนาดใหญ่','写真を拡大表示','放大查看照片'],['Open video in larger view','เปิดวิดีโอขนาดใหญ่','動画を拡大表示','放大查看视频'],
     ['Theme','ธีม','テーマ','主题'],['Christmas theme','ธีมคริสต์มาส','クリスマステーマ','圣诞主题'],
     ['Website language','ภาษาเว็บไซต์','ウェブサイトの言語','网站语言'],
     ['Refresh catalogue and private garage','รีเฟรชแค็ตตาล็อกและโรงรถส่วนตัว','カタログとマイガレージを更新','刷新目录和个人车库'],
