@@ -395,6 +395,17 @@
     ['Official partner','พันธมิตรอย่างเป็นทางการ','公式パートナー','官方合作伙伴']
   );
   const dictionaries={th:{},ja:{},zh:{}};
+  rows.push(
+    ['Welcome to the TURBO164 community','ยินดีต้อนรับสู่ชุมชน TURBO164','TURBO164コミュニティへようこそ','欢迎来到 TURBO164 社区'],
+    ['Share your diecast photos, find posts with search and filters, and save posts to revisit later.','แชร์รูปรถไดแคสต์ ค้นหาโพสต์ด้วยตัวกรอง และบันทึกโพสต์ไว้อ่านภายหลัง','ミニカーの写真を共有し、検索や絞り込みで投稿を探し、後で見る投稿を保存できます。','分享合金车照片，搜索和筛选帖子，并保存帖子以便稍后查看。'],
+    ['Dismiss community welcome','ปิดข้อความต้อนรับชุมชน','コミュニティの案内を閉じる','关闭社区欢迎提示'],['Got it','เข้าใจแล้ว','了解','知道了'],
+    ['Community post search and filters','ค้นหาและตัวกรองโพสต์ชุมชน','コミュニティ投稿の検索と絞り込み','社区帖子搜索和筛选'],
+    ['Search community posts','ค้นหาโพสต์ในชุมชน','コミュニティ投稿を検索','搜索社区帖子'],
+    ['Search posts, captions, or members…','ค้นหาโพสต์ คำบรรยาย หรือสมาชิก…','投稿、キャプション、メンバーを検索…','搜索帖子、说明或成员…'],
+    ['Post type','ประเภทโพสต์','投稿タイプ','帖子类型'],['All post types','ทุกประเภทโพสต์','すべての投稿タイプ','所有帖子类型'],
+    ['Text posts','โพสต์ข้อความ','テキスト投稿','文字帖子'],['Photo posts','โพสต์รูปภาพ','写真投稿','图片帖子'],['Video posts','โพสต์วิดีโอ','動画投稿','视频帖子'],
+    ['No community posts match your search.','ไม่พบโพสต์ชุมชนที่ตรงกับการค้นหา','検索に一致するコミュニティ投稿はありません。','没有符合搜索条件的社区帖子。']
+  );
   rows.forEach(([en,th,ja,zh])=>{dictionaries.th[en]=th;dictionaries.ja[en]=ja;dictionaries.zh[en]=zh;});
   const langStore='turbo164-language-v1';
   const supported=['en','th','ja','zh'];
