@@ -1,4 +1,4 @@
-const $=id=>document.getElementById(id);const C=window.ARBOX_CONFIG||{};
+const $=id=>document.getElementById(id);const christmasThemePreferenceKey='turbo164-christmas-theme-v1';function applyChristmasTheme(enabled){document.documentElement.classList.toggle('christmas-theme',enabled)}try{applyChristmasTheme(localStorage.getItem(christmasThemePreferenceKey)!=='off')}catch{applyChristmasTheme(true)};const C=window.ARBOX_CONFIG||{};
 const cloudReady=!!(C.supabaseUrl&&C.supabaseAnonKey&&window.supabase);
 const db=cloudReady?window.supabase.createClient(C.supabaseUrl,C.supabaseAnonKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}}):null;
 let catalog=[],state={},session=null,filter='All',catalogView='Diecast',selectedDiecastBrand='All',selectedDiecastMake='All',diecastMenuLevel='root',diecastMenuBrand='All',catalogPage=1,radar=[],customModels=[],communityModels=[];
@@ -373,7 +373,7 @@ async function signOutToGuest(){
  $('accountMenu').hidden=true;
  const {error}=await db.auth.signOut({scope:'local'});
  if(error){authUI('Could not sign out: '+error.message);return}
- session=null;customModels=[];photoAdmin=false;photoPending=new Set();switchState();authUI('Signed out. You are now browsing as a guest.');
+ session=null;customModels=[];photoAdmin=false;photoPending=new Set();$('adminThemeSetting').hidden=true;switchState();authUI('Signed out. You are now browsing as a guest.');
  if($('adminUtilities'))$('adminUtilities').hidden=true;
  $('photoAdminPanel').hidden=true;$('modelAdminPanel').hidden=true;
  if(typeof window.communityAuthChanged==='function')window.communityAuthChanged();
@@ -536,7 +536,7 @@ async function loadPhotoContributions(){
 async function checkPhotoAdmin(){
  const {data,error}=await db.rpc('is_arbox_photo_admin');
  photoAdmin=!error&&data===true;
- $('photoAdminPanel').hidden=!photoAdmin;
+ $('adminThemeSetting').hidden=!photoAdmin;$('christmasThemeToggle').checked=localStorage.getItem(christmasThemePreferenceKey)!=='off';$('photoAdminPanel').hidden=!photoAdmin;
  $('modelAdminPanel').hidden=!photoAdmin;
  if($('adminUtilities'))$('adminUtilities').hidden=!photoAdmin;
  render();
@@ -930,7 +930,7 @@ async function start(){
  document.addEventListener('click',event=>{if(!event.target.closest('.diecast-nav'))closeDiecastMenu()});
  $('accountBtn').onclick=()=>{if(!session){openLoginDialog();return}const menu=$('accountMenu');menu.hidden=!menu.hidden;$('accountBtn').setAttribute('aria-expanded',String(!menu.hidden))};
  $('accountLogin').onclick=()=>openLoginDialog();
- $('accountSignOut').onclick=signOutToGuest;
+ $('accountSignOut').onclick=signOutToGuest;  $('christmasThemeToggle').addEventListener('change',()=>{const enabled=$('christmasThemeToggle').checked;applyChristmasTheme(enabled);localStorage.setItem(christmasThemePreferenceKey,enabled?'on':'off')});
  $('loginClose').onclick=closeLoginDialog;
  $('loginGuest').onclick=()=>{localStorage.setItem(loginPromptKey,'1');closeLoginDialog();authUI()};
  $('loginGoogle').onclick=()=>oauthLogin('google');
