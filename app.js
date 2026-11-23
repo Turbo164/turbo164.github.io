@@ -1,7 +1,7 @@
 const $=id=>document.getElementById(id);const christmasThemePreferenceKey='turbo164-christmas-theme-v1';function applyChristmasTheme(enabled){document.documentElement.classList.toggle('christmas-theme',enabled)}try{applyChristmasTheme(localStorage.getItem(christmasThemePreferenceKey)!=='off')}catch{applyChristmasTheme(true)};const C=window.ARBOX_CONFIG||{};
 const cloudReady=!!(C.supabaseUrl&&C.supabaseAnonKey&&window.supabase);
 const db=cloudReady?window.supabase.createClient(C.supabaseUrl,C.supabaseAnonKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}}):null;
-let catalog=[],state={},session=null,filter='All',catalogView='Diecast',selectedDiecastBrand='All',selectedDiecastMake='All',diecastMenuLevel='root',diecastMenuBrand='All',catalogPage=1,radar=[],customModels=[],communityModels=[];
+let catalog=[],state={},session=null,filter='All',catalogView='Diecast',selectedDiecastBrand='All',selectedDiecastMake='All',diecastMenuLevel='root',diecastMenuBrand='All',catalogPage=1,radar=[],customModels=[],communityModels=[],catalogAdditionManifest={count:0,updatedAt:null};
 const PHOTO_BUCKET='arbox-photo-contributions';
 const MODEL_BUCKET='arbox-model-submissions';
 let modelPhotos=[]; 
@@ -17,6 +17,21 @@ function saveLocal(){if(session)localStorage.setItem(userKey(),JSON.stringify(st
 function switchState(){state=session?getLocal(userKey()):{};render()}
 function applyItemOverrides(m){const o=itemOverrides[String(m.id)];if(!o)return m;const next={...m};if(o.manufacturer)next.manufacturer=o.manufacturer;if(o.vehicle_make){next.brand=o.vehicle_make;next.vehicleMake=o.vehicle_make}if(o.name)next.name=o.name;if(o.product_code!==null&&o.product_code!==undefined)next.number=o.product_code;if(o.edition_type){next.variant=o.edition_type;next.editionType=o.edition_type}if(o.release)next.release=o.release;if(o.release_year!==null&&o.release_year!==undefined)next.releaseYear=o.release_year;if(o.community_badge!==null&&o.community_badge!==undefined)next.communityBadge=o.community_badge;if(o.source_url!==null&&o.source_url!==undefined)next.photoSource=safeSourceUrl(o.source_url);if(o.resolved_image_url||o.image_url)next.adminImageUrl=safeSourceUrl(o.resolved_image_url||o.image_url);if(o.hide_image===true)next.adminHideImage=true;return next}
 function allModels(){return [...catalog,...communityModels,...customModels].map(applyItemOverrides).filter(eligible)}
+async function loadCatalogAdditionManifest(){
+ try{
+  const response=await fetch('catalog-additions.json?v=1',{cache:'no-store'});
+  if(response.ok){const data=await response.json();catalogAdditionManifest={count:Math.max(0,Number(data.count)||0),updatedAt:data.updatedAt||null}}
+ }catch{}
+ render();
+}
+function renderNewCatalogAdditions(){
+ const badge=$('newCatalogAdditions');if(!badge)return;
+ const updatedAt=Date.parse(catalogAdditionManifest.updatedAt||'')||Date.now()-30*24*60*60*1000;
+ const recentlyPublished=communityModels.filter(model=>{const published=Date.parse(model.publishedAt||'');return Number.isFinite(published)&&published>updatedAt}).length;
+ const count=Math.max(0,Number(catalogAdditionManifest.count)||0)+recentlyPublished;
+ badge.hidden=catalogView!=='Diecast'||count===0;
+ if(!badge.hidden)badge.innerHTML='<strong>+'+count+'</strong><span data-i18n="new cars added">new cars added</span>';
+}
 function sharedDiecastModels(){return [...catalog,...communityModels].map(applyItemOverrides).filter(eligible)}
 function availableDiecastBrands(){return [...new Set(sharedDiecastModels().map(maker).filter(Boolean))].sort((a,b)=>a.localeCompare(b))}
 function availableCarManufacturers(brand){return [...new Set(sharedDiecastModels().filter(m=>maker(m)===brand).map(m=>String(m.brand||'').trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b))}
@@ -188,6 +203,7 @@ function render(){
  $('missing').textContent=session?all.filter(m=>actual(m)==='Missing').length:'—';
  $('catalogTitle').textContent=catalogView==='Diecast'?(selectedDiecastBrand==='All'?(filter==='All'?'Diecast catalogue':`${filter} diecast catalogue`):selectedDiecastMake==='All'?`${selectedDiecastBrand} catalogue`:`${selectedDiecastBrand} · ${selectedDiecastMake} catalogue`):`${catalogView} catalogue`;
  $('count').textContent=catalogView==='Diecast'?`${items.length} models`:'0 items';
+ renderNewCatalogAdditions();
  const totalCatalogPages=Math.max(1,Math.ceil(items.length/27));catalogPage=Math.min(catalogPage,totalCatalogPages);const pageItems=items.slice((catalogPage-1)*27,catalogPage*27);
  $('diecastMenuButton').classList.toggle('active',catalogView==='Diecast');
  document.querySelectorAll('[data-category]').forEach(button=>button.classList.toggle('active',button.dataset.category===catalogView));
@@ -574,7 +590,7 @@ async function loadPublishedModels(){
  if(!db)return;
  const results=[];
  for(let offset=0;;offset+=500){
-  const {data,error}=await db.from('arbox_published_models').select('id,manufacturer,vehicle_make,name,number,edition_type,release,release_year,source_url,photo_paths').order('published_at',{ascending:true}).range(offset,offset+499);
+  const {data,error}=await db.from('arbox_published_models').select('id,manufacturer,vehicle_make,name,number,edition_type,release,release_year,source_url,photo_paths,published_at').order('published_at',{ascending:true}).range(offset,offset+499);
   if(error){$('modelGeneralStatus').textContent='Community catalogue unavailable: '+error.message;return}
   results.push(...(data||[]));if(!data||data.length<500)break;
  }
@@ -590,7 +606,7 @@ async function loadPublishedModels(){
   id:x.id,manufacturer:x.manufacturer,brand:x.vehicle_make,vehicleMake:x.vehicle_make,
   name:x.name,number:x.number,variant:x.edition_type,editionType:x.edition_type,
   release:x.release,releaseYear:x.release_year,photo:pictures[x.id]||null,
-  photoSource:safeSourceUrl(x.source_url),community:true
+  photoSource:safeSourceUrl(x.source_url),publishedAt:x.published_at,community:true
  }));
  renderDiecastMenu();render();
 }
@@ -921,6 +937,7 @@ async function start(){
  catalog=(await (await fetch('catalog.json')).json()).filter(eligible);
  applyCatalogRouteFromUrl();
  render();
+ void loadCatalogAdditionManifest();
  $('search').oninput=()=>{catalogPage=1;render()};
  renderDiecastMenu();
  $('diecastMenuButton').onclick=()=>{
