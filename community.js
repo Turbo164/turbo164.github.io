@@ -5,7 +5,7 @@
  const $=id=>document.getElementById(id);
  const bucket='community-media';
  const maxVideoBytes=80*1024*1024;
- let currentMode='feed',posts=[],profiles={},profileAvatars={},hearts=new Set(),saved=new Set(),heartCounts={},commentCounts={},commentOpen=new Set(),reportPostId=null,warningReportId=null,adminCommunity=false,contributorHistory=[],postQuery='',postTypeFilter='all',postOffset=0,postHasMore=false;
+ let lastDailyRewardLogin=null,currentMode='feed',posts=[],profiles={},profileAvatars={},hearts=new Set(),saved=new Set(),heartCounts={},commentCounts={},commentOpen=new Set(),reportPostId=null,warningReportId=null,adminCommunity=false,contributorHistory=[],postQuery='',postTypeFilter='all',postOffset=0,postHasMore=false;
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const communityUser=()=>typeof session!=='undefined'?session:null;
  const activeDb=()=>typeof db!=='undefined'?db:null;
@@ -15,6 +15,17 @@
  const t=(en)=>window.T164I18N?.translate(en)||en;
  function message(text,error=false){const el=$('communityMessage');el.textContent=text||'';el.classList.toggle('error',!!error)}
  function syncCommunityWelcome(){const userId=communityUser()?.user.id||'guest';let dismissed=false;try{dismissed=localStorage.getItem(`turbo164-community-welcome-${userId}`)==='1'}catch{}$('communityWelcome').hidden=dismissed}
+ function bangkokDateKey(){return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Bangkok',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())}
+ function maybeShowDailyReward(){
+  const userId=communityUser()?.user.id;if(!userId)return;
+  let dismissed=false;try{dismissed=localStorage.getItem(`turbo164-daily-reward-dismissed-${userId}`)===bangkokDateKey()}catch{}
+  if(!dismissed&&!$('dailyRewardDialog').open)$('dailyRewardDialog').showModal();
+ }
+ function closeDailyReward(){
+  const userId=communityUser()?.user.id;
+  if($('dailyRewardCloseToday').checked&&userId){try{localStorage.setItem(`turbo164-daily-reward-dismissed-${userId}`,bangkokDateKey())}catch{}}
+  $('dailyRewardDialog').close();
+ }
  async function showCommunity(mode='feed'){
   currentMode=mode;document.body.classList.add('community-view');$('communityPage').hidden=false;
   $('communityComposer').hidden=mode==='saved';$('topContributorsPanel').hidden=mode==='saved';$('monthlyAnnouncementPublic').hidden=mode==='saved';$('savedAnnouncementsPanel').hidden=mode!=='saved';$('communityPageTitle').textContent=mode==='saved'?t('Saved community posts'):t('Community');
@@ -30,6 +41,9 @@
   $('communitySavedBtn').hidden=!isIn;
   $('communityAccountLogin').hidden=isIn;
   if(document.body.classList.contains('community-view'))loadPosts();
+  const loginId=communityUser()?.user.id||null;
+  if(isIn&&loginId!==lastDailyRewardLogin){lastDailyRewardLogin=loginId;setTimeout(maybeShowDailyReward,250)}
+  else if(!isIn){lastDailyRewardLogin=null;if($('dailyRewardDialog').open)$('dailyRewardDialog').close()}
   loadCommunityWarnings();checkCommunityAdmin();
  };
  window.communityRefresh=async()=>{if(document.body.classList.contains('community-view'))await Promise.all([loadPosts(),loadTopContributors(),loadMonthlyAnnouncementPublic()])};
@@ -247,6 +261,10 @@
   $('communityAppearanceClose').onclick=()=>$('communityAppearanceDialog').close();
   $('communityPointsClose').onclick=()=>$('communityPointsDialog').close();
   $('communityDailyClaim').onclick=claimDailyPoint;
+  $('dailyRewardClose').onclick=closeDailyReward;
+  $('dailyRewardViewPoints').onclick=()=>{closeDailyReward();openPoints()};
+  $('dailyRewardDialog').addEventListener('cancel',event=>{if($('dailyRewardCloseToday').checked){event.preventDefault();closeDailyReward()}});
+  $('dailyRewardDialog').addEventListener('close',()=>{$('dailyRewardCloseToday').checked=false});
   $('communityPointsDialog').addEventListener('close',()=>{++pointsLoad;renderPoints(null)});
  }
 
