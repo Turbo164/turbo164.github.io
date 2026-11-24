@@ -380,10 +380,10 @@ html.christmas-theme .holiday-gift{top:88px;left:calc(50% + 82px);font-size:19px
 
 <dialog class="login-dialog daily-reward-dialog" id="dailyRewardDialog" aria-labelledby="dailyRewardTitle">
  <div class="daily-reward-heading"><span class="daily-reward-icon" aria-hidden="true">🎁</span><div><h2 id="dailyRewardTitle">Turbo164 daily reward</h2><p class="daily-reward-subtitle">Collect. Discover. Earn.</p></div></div>
- <div class="daily-reward-value">+1 POINT</div>
- <p class="daily-reward-note">Claim today's reward from My contribution points. One claim is available per day, resetting at midnight Bangkok time.</p>
+ <div class="daily-reward-value" id="dailyRewardValue">+1 point to claim</div>
+ <p class="daily-reward-note" id="dailyRewardNote">Checking today's reward status…</p>
  <label class="daily-reward-dismiss"><input type="checkbox" id="dailyRewardCloseToday"> Close for today</label>
- <button type="button" class="primary" id="dailyRewardViewPoints">View daily reward</button>
+ <button type="button" class="primary" id="dailyRewardViewPoints">Go to claim point</button>
  <button type="button" class="outline" id="dailyRewardClose">Close</button>
 </dialog>
 <dialog id="installAppDialog" class="login-dialog install-app-dialog" aria-labelledby="installAppTitle">
@@ -410,6 +410,6 @@ html.christmas-theme .holiday-gift{top:88px;left:calc(50% + 82px);font-size:19px
   desktopLayout.addEventListener('change', placeCommunityPulse);
 }
 </script>
-<script src="community.js?v=daily-reward-popup-20261124"></script><script src="live-chat.js?v=community-chat-20261124-2"></script><script src="install.js?v=1"></script></body></html>
+<script src="community.js?v=daily-reward-claim-status-20261124"></script><script src="live-chat.js?v=community-chat-20261124-2"></script><script src="install.js?v=1"></script></body></html>
 
 
