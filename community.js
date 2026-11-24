@@ -16,10 +16,20 @@
  function message(text,error=false){const el=$('communityMessage');el.textContent=text||'';el.classList.toggle('error',!!error)}
  function syncCommunityWelcome(){const userId=communityUser()?.user.id||'guest';let dismissed=false;try{dismissed=localStorage.getItem(`turbo164-community-welcome-${userId}`)==='1'}catch{}$('communityWelcome').hidden=dismissed}
  function bangkokDateKey(){return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Bangkok',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())}
- function maybeShowDailyReward(){
-  const userId=communityUser()?.user.id;if(!userId)return;
+ async function maybeShowDailyReward(userId){
+  if(!userId||communityUser()?.user.id!==userId||!activeDb())return;
   let dismissed=false;try{dismissed=localStorage.getItem(`turbo164-daily-reward-dismissed-${userId}`)===bangkokDateKey()}catch{}
-  if(!dismissed&&!$('dailyRewardDialog').open)$('dailyRewardDialog').showModal();
+  if(dismissed||$('dailyRewardDialog').open)return;
+  const {data,error}=await activeDb().rpc('community_daily_login_status');
+  if(communityUser()?.user.id!==userId||$('dailyRewardDialog').open)return;
+  const checked=!error&&!!data?.length;
+  const claimed=checked&&data[0].claimed_today===true;
+  $('dailyRewardValue').textContent=checked?(claimed?t('Claimed for today'):t('+1 point to claim')):t('Claim status unavailable');
+  $('dailyRewardNote').textContent=checked
+   ?(claimed?t("You already claimed today's reward. It will be available again after midnight Bangkok time."):t("Today's +1 point is ready to claim. Open My contribution points to claim it."))
+   :t("We couldn't check today's reward. Open My contribution points to check your claim status.");
+  $('dailyRewardViewPoints').textContent=claimed?t('View my points'):t('Go to claim point');
+  $('dailyRewardDialog').showModal();
  }
  function closeDailyReward(){
   const userId=communityUser()?.user.id;
@@ -42,7 +52,7 @@
   $('communityAccountLogin').hidden=isIn;
   if(document.body.classList.contains('community-view'))loadPosts();
   const loginId=communityUser()?.user.id||null;
-  if(isIn&&loginId!==lastDailyRewardLogin){lastDailyRewardLogin=loginId;setTimeout(maybeShowDailyReward,250)}
+  if(isIn&&loginId!==lastDailyRewardLogin){lastDailyRewardLogin=loginId;setTimeout(()=>maybeShowDailyReward(loginId),250)}
   else if(!isIn){lastDailyRewardLogin=null;if($('dailyRewardDialog').open)$('dailyRewardDialog').close()}
   loadCommunityWarnings();checkCommunityAdmin();
  };
