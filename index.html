@@ -336,8 +336,12 @@ html.christmas-theme .holiday-gift{top:88px;left:calc(50% + 82px);font-size:19px
    <div><dt>Posts shared</dt><dd id="communityPointsPosts">0</dd></div>
    <div><dt>Approved model uploads</dt><dd id="communityPointsCars">0</dd></div>
    <div><dt>Points</dt><dd id="communityPointsTotal">0</dd></div>
+   <div><dt>Daily login points this month</dt><dd id="communityPointsDaily">0</dd></div>
   </dl>
-  <p class="muted">Each post and each approved model upload earns one point. Totals reset monthly at Bangkok time.</p>
+  <p class="muted">Each post and each approved model upload earns one contributor point. Totals reset monthly at Bangkok time.</p>
+  <p class="muted">Claim one daily login point while signed in. The claim day follows Bangkok time. Daily login points are tracked separately from contributor ranking points.</p>
+  <button type="button" class="primary" id="communityDailyClaim">Claim today's point</button>
+  <p class="muted" id="communityDailyClaimStatus" role="status"></p>
  </div>
  <button type="button" class="outline" id="communityPointsClose">Close</button>
 </dialog>

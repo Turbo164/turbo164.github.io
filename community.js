@@ -191,24 +191,49 @@
   }catch{if(request===appearanceLoad)status.textContent=t('Could not save profile. Please try again.')}
   finally{if(request===appearanceLoad)fields.disabled=false}
  }
- function renderPoints(row){
+ function renderPoints(row,daily){
   const month=$('communityPointsMonth');
   month.textContent=row?contributorMonthLabel(row.month_start):'';
   $('communityPointsPosts').textContent=String(row?.posts_shared??0);
   $('communityPointsCars').textContent=String(row?.car_uploads??0);
   $('communityPointsTotal').textContent=String(row?.points??0);
-  $('communityPointsResults').hidden=!row;
+  $('communityPointsDaily').textContent=String(daily?.points_this_month??0);
+  const claim=$('communityDailyClaim');
+  claim.disabled=!!daily?.claimed_today;
+  claim.textContent=daily?.claimed_today?t('Claimed today'):t("Claim today's point");
+  $('communityDailyClaimStatus').textContent=daily?.claimed_today?t("Today's point is already claimed. Come back after midnight (Bangkok time)."):'';
+  $('communityPointsResults').hidden=!row||!daily;
+ }
+ async function loadPointsData(userId,request){
+  const [contribution,daily]=await Promise.all([
+   activeDb().rpc('community_my_contribution_points'),
+   activeDb().rpc('community_daily_login_status')
+  ]);
+  if(contribution.error||!contribution.data?.length)throw contribution.error||Error('No contribution points');
+  if(daily.error||!daily.data?.length)throw daily.error||Error('No daily point status');
+  if(request!==pointsLoad||communityUser()?.user.id!==userId)return false;
+  renderPoints(contribution.data[0],daily.data[0]);
+  return true;
  }
  async function openPoints(){
   if(!openProfileDialog('communityPointsDialog'))return;
   const userId=communityUser().user.id,request=++pointsLoad,status=$('communityPointsStatus');
-  renderPoints(null);status.textContent=t('Loading contribution points…');
+  renderPoints(null,null);status.textContent=t('Loading contribution points…');
   try{
-   const {data,error}=await activeDb().rpc('community_my_contribution_points');
-   if(error||!data?.length)throw error||Error('Empty response');
-   if(request!==pointsLoad||communityUser()?.user.id!==userId)return;
-   renderPoints(data[0]);status.textContent='';
+   if(await loadPointsData(userId,request))status.textContent='';
   }catch{if(request===pointsLoad)status.textContent=t('Could not load your points. Close and reopen to retry.')}
+ }
+ async function claimDailyPoint(){
+  if(!communityUser()||!activeDb())return;
+  const userId=communityUser().user.id,request=pointsLoad,status=$('communityDailyClaimStatus'),button=$('communityDailyClaim');
+  button.disabled=true;status.textContent=t('Claiming…');
+  const {data,error}=await activeDb().rpc('community_claim_daily_login_point');
+  if(error||!data?.length){button.disabled=false;status.textContent=t('Could not claim your daily point. Please try again.');return}
+  try{
+   if(await loadPointsData(userId,request)){
+    status.textContent=Number(data[0].points_awarded)>0?t("You earned 1 point for today's login."):t("Today's point is already claimed. Come back after midnight (Bangkok time).");
+   }
+  }catch{button.disabled=false;status.textContent=t('Could not load your points. Close and reopen to retry.')}
  }
  function initProfile(){
   $('communityAppearanceBtn').onclick=openAppearance;
@@ -221,6 +246,7 @@
   };
   $('communityAppearanceClose').onclick=()=>$('communityAppearanceDialog').close();
   $('communityPointsClose').onclick=()=>$('communityPointsDialog').close();
+  $('communityDailyClaim').onclick=claimDailyPoint;
   $('communityPointsDialog').addEventListener('close',()=>{++pointsLoad;renderPoints(null)});
  }
 
