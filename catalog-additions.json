@@ -1,30 +1,11 @@
 {
-  "count": 24,
-  "updatedAt": "2026-11-24T08:01:00.420Z",
+  "count": 5,
+  "updatedAt": "2026-11-24T10:01:17.615Z",
   "ids": [
-    "poprace-pre001",
-    "poprace-pr640131",
-    "poprace-pr640153",
-    "poprace-pr640030",
-    "poprace-pr640255",
-    "bmcreations-bmc64b0458",
-    "bmcreations-bmc64b0459",
-    "bmcreations-bmc64b0448",
-    "bmcreations-bmc64b0454",
-    "bmcreations-bmc64b0466",
-    "bmcreations-bmc64b0421",
-    "bmcreations-bmc64b0437",
-    "bmcreations-bmc64b0411",
-    "poprace-pr640178",
-    "poprace-pr640227",
-    "m2machines-31500-mjs80",
-    "m2machines-31500-mjs81",
-    "m2machines-39000-mjs04",
-    "poprace-pr640240",
-    "poprace-pr640250",
-    "hobbyjapan-hj641061bbk",
-    "hobbyjapan-hj642071bk",
-    "hobbyjapan-hj642071bl",
-    "hobbyjapan-hjdmd006"
+    "mini-gt-mgt00732",
+    "mini-gt-mgt00702",
+    "mini-gt-mgt00671",
+    "mini-gt-mgt00722",
+    "mini-gt-mgt00698"
   ]
 }
