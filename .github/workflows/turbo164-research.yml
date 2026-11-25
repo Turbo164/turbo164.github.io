@@ -1,4 +1,4 @@
-name: Turbo164 research V5.2
+name: Turbo164 research V5.3
 on:
   workflow_dispatch:
   schedule:
@@ -22,6 +22,14 @@ jobs:
           mkdir -p research
           run=$(gh run list --workflow turbo164-research.yml --status success --limit 1 --json databaseId --jq '.[0].databaseId // empty')
           if [ -n "$run" ]; then gh run download "$run" -n turbo164-research -D research; fi
+      - name: Import historical checkpoint if supplied
+        run: |
+          mkdir -p research-master
+          if [ -f research-master/historical.csv ]; then
+            echo 'Historical checkpoint present'
+          else
+            echo 'Historical checkpoint missing; preserving recovered pilot history only'
+          fi
       - name: Collect research leads
         run: |
           python - <<'PY'
@@ -468,20 +476,43 @@ jobs:
             final_keys.add(key)
             title=str(item.get('name') or '')+' '+str(item.get('variant') or '')
             if re.search(r'\b(bundle|combo|multipack|assortment|trading.card|gift.set|set of|case of|multi.pack|2.pack|3.pack)\b',title,re.I): continue
-            final_review.append({**item,'edition_hint':'chase' if re.search(r'\bchase\b',title,re.I) else 'unconfirmed','release_hint':'preorder' if re.search(r'\bpre[- ]?order\b',title,re.I) else 'unconfirmed','publication_status':'NEEDS VERIFICATION','required_review':['car make and exact model identity','edition and release evidence','fresh main catalog duplicate check']})
+            detail=details.get(item['sourceUrl'],{})
+            excerpts=detail.get('evidence_excerpts',[]) if detail.get('sku')==item['productCode'] else []
+            final_review.append({**item,'official_description_evidence':excerpts,'limited_production_hint':any(re.search(r'\blimited\b',x,re.I) for x in excerpts),'chase_mentioned_in_description':any(re.search(r'\bchase\b',x,re.I) for x in excerpts),'edition_hint':'chase' if re.search(r'\bchase\b',title,re.I) else 'unconfirmed','release_hint':'preorder' if re.search(r'\bpre[- ]?order\b',title,re.I) else 'unconfirmed','publication_status':'NEEDS VERIFICATION','required_review':['car make and exact model identity','edition and release evidence','fresh main catalog duplicate check']})
           (root/'final-publication-review.json').write_text(json.dumps(final_review,indent=2))
           log.append(['V5.1','unique official candidates for final review',len(final_review),'approved for publication',0])
           # Preserve historical master separately from the pilot evidence queue.
           historical=pathlib.Path('research-master/historical.csv')
           combined=[]
-          identities=set()
+          identities={}
           for source in ([historical] if historical.exists() else [])+([root/'cumulative-master.csv'] if (root/'cumulative-master.csv').exists() else [])+[master]:
             with source.open(encoding='utf-8-sig',newline='') as f:
               for original in csv.DictReader(f):
                 item={k:original.get(k,'') for k in cols}
                 key=tuple(item[k] for k in ('Manufacturer','Product Code','Model Name','Color/Variant','Source URL'))
-                if key in identities: continue
-                identities.add(key);combined.append(item)
+                if key in identities:
+                  old=combined[identities[key]]
+                  if item['Last Checked Date']>old['Last Checked Date']:
+                    for field in ('Last Checked Date','Check Date (Bangkok)'):
+                      old[field]=item[field]
+                  for field in cols:
+                    if not old[field] and item[field]: old[field]=item[field]
+                  dates=[d for d in (old['First Seen Date'],item['First Seen Date']) if d]
+                  if dates: old['First Seen Date']=min(dates)
+                  continue
+                identities[key]=len(combined);combined.append(item)
+          # Reconcile exact official evidence without inventing edition or release.
+          official_by_sku=defaultdict(list)
+          for item in final_review:
+            official_by_sku[(norm(item['manufacturer']),norm(item['productCode']))].append(item)
+          for row in combined:
+            key=(norm(row['Manufacturer']),norm(row['Product Code']))
+            matches=official_by_sku.get(key,[]) if key[1] else []
+            if len(matches)==1:
+              item=matches[0]
+              row['Notes']+=' | Official evidence: '+item['sourceUrl'] if item['sourceUrl'] not in row['Notes'] else ''
+            if key[1] and catalog_index.get(key) and row['GitHub Status']!='ALREADY IN GITHUB':
+              row['GitHub Status']='POSSIBLE DUPLICATE'
           with (root/'cumulative-master.csv').open('w',newline='',encoding='utf-8') as f:
             w=csv.DictWriter(f,fieldnames=cols);w.writeheader();w.writerows(combined)
           log.append(['V4.4','historical master available',historical.exists(),'combined records',len(combined),'cross-source candidates',len(corroborated)])
@@ -491,7 +522,7 @@ jobs:
           import shutil
           shutil.copyfile(master,root/('Turbo164_Pilot_Leads_'+stamp+'.csv'))
           shutil.copyfile(root/'cumulative-master.csv',root/('Turbo164_Master_Catalog_'+stamp+'.csv'))
-          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'5.2','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
+          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'5.3','historical_master_present':historical.exists(),'cumulative_count':len(combined),'review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
           print(json.dumps(log))
           PY
       - name: Save pilot checkpoint
