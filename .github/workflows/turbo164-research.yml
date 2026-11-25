@@ -1,4 +1,4 @@
-name: Turbo164 research V4.1
+name: Turbo164 research V4.2
 on:
   workflow_dispatch:
   schedule:
@@ -48,11 +48,16 @@ jobs:
             ('PGM','https://www.modelcarshouston.com/collections/pgm'),
             ('MINI GT','https://www.modelcarshouston.com/collections/mini-gt'),
             ('INNO64','https://www.modelcarshouston.com/collections/inno64'),
-            ('POP RACE','https://www.modelcarshouston.com/collections/pop-race')]
+            ('POP RACE','https://www.modelcarshouston.com/collections/pop-race'),
+            ('Kaido House','https://www.modelcarshouston.com/collections/kaido-house'),
+            ('Ignition Model','https://www.modelcarshouston.com/collections/ignition-model'),
+            ('GreenLight','https://www.modelcarshouston.com/collections/greenlight'),
+            ('M2 Machines','https://www.modelcarshouston.com/collections/m2-machines')]
           log=[]
           def fetch(url):
             if time.monotonic()>=deadline: raise RuntimeError('research deadline reached')
             p=urllib.parse.urlsplit(url)
+            url=urllib.parse.urlunsplit((p.scheme,p.netloc,urllib.parse.quote(p.path,safe='/%:@!            p=urllib.parse.urlsplit(url)\'()*+,;=-._~'),urllib.parse.quote(p.query,safe='=&%+/:?'),''))
             robots=urllib.robotparser.RobotFileParser(p.scheme+'://'+p.netloc+'/robots.txt')
             robots.read()
             if not robots.can_fetch(ua,url): raise RuntimeError('robots disallows')
@@ -76,7 +81,7 @@ jobs:
                   state[base]=1;break
                 digest=hashlib.sha256(json.dumps([p.get('id') for p in products]).encode()).hexdigest()
                 if digest in state.get(base+' fingerprints',[]):
-                  log.append([brand,'repeated page',page]);state[base]=1;break
+                  log.append([brand,'repeated page',page]);state[base]=page+1;break
                 for p in products:
                   for v in p.get('variants',[]):
                     sku=str(v.get('sku') or '').strip()
@@ -176,7 +181,7 @@ jobs:
           for brand,items in groups.items():
             cursor=state.get(brand+' verify cursor',0)%len(items)
             ordered=items[cursor:]+items[:cursor]
-            queues[brand]=deque(row for row in ordered if row['Source URL'] not in evidence)
+            queues[brand]=deque(row for row in ordered if row['Source URL'] not in evidence or ('error' in evidence[row['Source URL']] and evidence[row['Source URL']].get('attempts',1)<3))
           blocked_hosts=set()
           inspected=0
           while time.monotonic()<deadline and any(queues.values()):
@@ -186,7 +191,9 @@ jobs:
               row=q.popleft()
               url=row['Source URL']
               host=urllib.parse.urlsplit(url).netloc
-              if host in blocked_hosts or url in evidence: continue
+              if host in blocked_hosts: continue
+              previous=evidence.get(url,{})
+              if previous and ('error' not in previous or previous.get('attempts',1)>=3): continue
               try:
                 raw=fetch(url).decode('utf-8','replace')
                 plain=unescape(re.sub(r'<[^>]+>',' ',raw))
@@ -196,7 +203,7 @@ jobs:
                 evidence[url]={'checked':now,'scale_mention':scale,'sku_mention':sku_found,'status':'page-level evidence only; exact variant requires review'}
                 row['Last Checked Date']=now
               except Exception as e:
-                evidence[url]={'checked':now,'error':str(e)}
+                evidence[url]={'checked':now,'error':str(e),'attempts':previous.get('attempts',0)+1}
                 log.append([brand,'verification blocked',str(e)])
                 if any(x in str(e).lower() for x in ('403','429','robots','401')):
                   blocked_hosts.add(host)
@@ -207,7 +214,7 @@ jobs:
           evidencefile.write_text(json.dumps(evidence,indent=2))
           save()
           log.append(['V4.1','new page inspections',inspected,'deadline reached' if time.monotonic()>=deadline else 'pending accessible queue exhausted'])
-          # V4: review queue, never publish on page-wide evidence alone.
+          # V4.2: review queue, never publish on page-wide evidence alone.
           def norm(s):
             return re.sub(r'[^a-z0-9]+','',str(s or '').casefold())
           catalog_index=defaultdict(list)
@@ -230,7 +237,7 @@ jobs:
           stamp=datetime.datetime.now(ZoneInfo('Asia/Bangkok')).strftime('%Y-%m-%d_%H%M')
           import shutil
           shutil.copyfile(master,root/('Turbo164_Pilot_Leads_'+stamp+'.csv'))
-          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'4.1','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
+          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'4.2','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
           print(json.dumps(log))
           PY
       - name: Save pilot checkpoint
