@@ -1,4 +1,4 @@
-name: Turbo164 research V4.4
+name: Turbo164 research V4.5
 on:
   workflow_dispatch:
   schedule:
@@ -249,6 +249,40 @@ jobs:
             w=csv.DictWriter(f,fieldnames=cols);w.writeheader();w.writerows(review)
           with (root/'quarantine.csv').open('w',newline='',encoding='utf-8') as f:
             w=csv.DictWriter(f,fieldnames=cols);w.writeheader();w.writerows(quarantine)
+          # V4.5: search independent retailer storefronts by exact SKU.
+          searchfile=root/'independent-search.json'
+          searches=json.loads(searchfile.read_text()) if searchfile.exists() else {}
+          retailers=['https://www.modelcarshouston.com','https://www.autoworldstore.com','https://www.tarmacworks.com']
+          pending=defaultdict(deque)
+          for row in review:
+            sku=row['Product Code'].strip()
+            if not sku: continue
+            for base in retailers:
+              if urllib.parse.urlsplit(base).netloc==urllib.parse.urlsplit(row['Source URL']).netloc: continue
+              key=base+'|'+row['Manufacturer']+'|'+sku
+              if key not in searches: pending[row['Manufacturer']].append((row,base,key))
+          search_count=0
+          while time.monotonic()<deadline and any(pending.values()):
+            for brand,q in pending.items():
+              if time.monotonic()>=deadline: break
+              if not q: continue
+              row,base,key=q.popleft()
+              if key in searches or urllib.parse.urlsplit(base).netloc in blocked_hosts: continue
+              try:
+                query=urllib.parse.urlencode({'q':row['Product Code'],'resources[type]':'product','resources[limit]':10})
+                data=json.loads(fetch(base+'/search/suggest.json?'+query))
+                hits=data.get('resources',{}).get('results',{}).get('products',[])
+                searches[key]={'checked':now,'hits':[{'title':p.get('title'),'url':urllib.parse.urljoin(base,p.get('url') or '')} for p in hits],'status':'discovery only; exact SKU and variant not verified'}
+              except Exception as e:
+                searches[key]={'checked':now,'error':str(e)}
+                if any(x in str(e).lower() for x in ('403','429','robots','401','404')):
+                  blocked_hosts.add(urllib.parse.urlsplit(base).netloc)
+              search_count+=1
+              if search_count%10==0:
+                searchfile.write_text(json.dumps(searches,indent=2))
+                save()
+          searchfile.write_text(json.dumps(searches,indent=2))
+          log.append(['V4.5','independent storefront searches',search_count])
           # Independent cross-source corroboration, not automatic approval.
           cross=defaultdict(list)
           for row in rows:
@@ -283,7 +317,7 @@ jobs:
           stamp=datetime.datetime.now(ZoneInfo('Asia/Bangkok')).strftime('%Y-%m-%d_%H%M')
           import shutil
           shutil.copyfile(master,root/('Turbo164_Pilot_Leads_'+stamp+'.csv'))
-          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'4.4','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
+          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'4.5','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
           print(json.dumps(log))
           PY
       - name: Save pilot checkpoint
