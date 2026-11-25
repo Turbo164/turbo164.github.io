@@ -1,4 +1,4 @@
-name: Turbo164 research V5.0
+name: Turbo164 research V5.1
 on:
   workflow_dispatch:
   schedule:
@@ -409,7 +409,7 @@ jobs:
                   title=str(product.get('title',''))+' '+str(v.get('title',''))
                   if str(v.get('sku') or '').strip().casefold()!=sku.strip().casefold() or scales(title)!={'64'}: continue
                   if norm(product.get('vendor'))!='tarmacworks': continue
-                  if re.search(r'\\b(bundle|combo|multipack|assortment|trading.card|gift.set)\\b',title,re.I): continue
+                  if re.search(r'\b(bundle|combo|multipack|assortment|trading.card|gift.set|set of|case of|multi.pack|2.pack|3.pack)\b',title,re.I): continue
                   if catalog_index.get(('tarmacworks',norm(sku))): continue
                   verified_official.append({'manufacturer':'Tarmac Works','productCode':sku,'name':product.get('title'),'variant':v.get('title'),'sourceUrl':url.split('?')[0]+'?variant='+str(v.get('id')),'checked':now,'verification':'Official SKU and scale matched; edition, release and identity review pending','retailerSource':item.get('sourceUrl')})
               except Exception as e:
@@ -433,11 +433,23 @@ jobs:
             official_review.append({**item,'official_source_host':official,'release_hint':release,'edition_hint':edition,'review_flags':flags})
           (root/'official-source-review.json').write_text(json.dumps(official_review,indent=2))
           log.append(['V4.8','official-host candidates',sum(x['official_source_host'] for x in official_review),'publication approved',0])
+          # V5.1: final review gate; never infer release or edition from missing evidence.
+          final_review=[]
+          final_keys=set()
+          for item in verified_official:
+            key=(norm(item['manufacturer']),norm(item['productCode']))
+            if key in final_keys or catalog_index.get(key): continue
+            final_keys.add(key)
+            title=str(item.get('name') or '')+' '+str(item.get('variant') or '')
+            if re.search(r'\b(bundle|combo|multipack|assortment|trading.card|gift.set|set of|case of|multi.pack|2.pack|3.pack)\b',title,re.I): continue
+            final_review.append({**item,'edition_hint':'chase' if re.search(r'\bchase\b',title,re.I) else 'unconfirmed','release_hint':'preorder' if re.search(r'\bpre[- ]?order\b',title,re.I) else 'unconfirmed','publication_status':'NEEDS VERIFICATION','required_review':['car make and exact model identity','edition and release evidence','fresh main catalog duplicate check']})
+          (root/'final-publication-review.json').write_text(json.dumps(final_review,indent=2))
+          log.append(['V5.1','unique official candidates for final review',len(final_review),'approved for publication',0])
           # Preserve historical master separately from the pilot evidence queue.
           historical=pathlib.Path('research-master/historical.csv')
           combined=[]
           identities=set()
-          for source in ([historical] if historical.exists() else [])+[master]:
+          for source in ([historical] if historical.exists() else [])+([root/'cumulative-master.csv'] if (root/'cumulative-master.csv').exists() else [])+[master]:
             with source.open(encoding='utf-8-sig',newline='') as f:
               for original in csv.DictReader(f):
                 item={k:original.get(k,'') for k in cols}
@@ -447,13 +459,13 @@ jobs:
           with (root/'cumulative-master.csv').open('w',newline='',encoding='utf-8') as f:
             w=csv.DictWriter(f,fieldnames=cols);w.writeheader();w.writerows(combined)
           log.append(['V4.4','historical master available',historical.exists(),'combined records',len(combined),'cross-source candidates',len(corroborated)])
-          (root/'publication-preview.json').write_text(json.dumps({'eligible_verified':0,'quarantined':len(quarantine),'review_candidates':len(review),'additions':[],'manufacturer_matched_review':candidate_rows,'reason':'Exact product-level evidence and historical master reconciliation required before publication'},indent=2))
+          (root/'publication-preview.json').write_text(json.dumps({'eligible_verified':0,'quarantined':len(quarantine),'review_candidates':len(review),'additions':[],'manufacturer_matched_review':candidate_rows,'official_final_review':final_review,'reason':'Exact product-level evidence and historical master reconciliation required before publication'},indent=2))
           save()
           stamp=datetime.datetime.now(ZoneInfo('Asia/Bangkok')).strftime('%Y-%m-%d_%H%M')
           import shutil
           shutil.copyfile(master,root/('Turbo164_Pilot_Leads_'+stamp+'.csv'))
           shutil.copyfile(root/'cumulative-master.csv',root/('Turbo164_Master_Catalog_'+stamp+'.csv'))
-          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'5.0','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
+          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'5.1','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
           print(json.dumps(log))
           PY
       - name: Save pilot checkpoint
