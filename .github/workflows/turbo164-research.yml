@@ -1,4 +1,4 @@
-name: Turbo164 research V4.3
+name: Turbo164 research V4.4
 on:
   workflow_dispatch:
   schedule:
@@ -249,12 +249,41 @@ jobs:
             w=csv.DictWriter(f,fieldnames=cols);w.writeheader();w.writerows(review)
           with (root/'quarantine.csv').open('w',newline='',encoding='utf-8') as f:
             w=csv.DictWriter(f,fieldnames=cols);w.writeheader();w.writerows(quarantine)
+          # Independent cross-source corroboration, not automatic approval.
+          cross=defaultdict(list)
+          for row in rows:
+            ev=evidence.get(row['Source URL'],{})
+            if ev.get('method')=='product-json-v43' and ev.get('product_scales')==['64'] and ev.get('sku_match'):
+              cross[(norm(row['Manufacturer']),norm(row['Product Code']))].append(row)
+          corroborated=[]
+          for row in review:
+            key=(norm(row['Manufacturer']),norm(row['Product Code']))
+            host=urllib.parse.urlsplit(row['Source URL']).hostname or ''
+            peers=[p for p in cross[key] if (urllib.parse.urlsplit(p['Source URL']).hostname or '').removeprefix('www.')!=host.removeprefix('www.') and norm(p['Model Name'])==norm(row['Model Name']) and norm(p['Color/Variant'])==norm(row['Color/Variant'])]
+            if peers:
+              corroborated.append({**row,'Notes':row['Notes']+' | Cross-source match: '+peers[0]['Source URL']})
+          with (root/'corroborated-review.csv').open('w',newline='',encoding='utf-8') as f:
+            w=csv.DictWriter(f,fieldnames=cols);w.writeheader();w.writerows(corroborated)
+          # Preserve historical master separately from the pilot evidence queue.
+          historical=pathlib.Path('research-master/historical.csv')
+          combined=[]
+          identities=set()
+          for source in ([historical] if historical.exists() else [])+[master]:
+            with source.open(encoding='utf-8-sig',newline='') as f:
+              for original in csv.DictReader(f):
+                item={k:original.get(k,'') for k in cols}
+                key=tuple(item[k] for k in ('Manufacturer','Product Code','Model Name','Color/Variant','Source URL'))
+                if key in identities: continue
+                identities.add(key);combined.append(item)
+          with (root/'cumulative-master.csv').open('w',newline='',encoding='utf-8') as f:
+            w=csv.DictWriter(f,fieldnames=cols);w.writeheader();w.writerows(combined)
+          log.append(['V4.4','historical master available',historical.exists(),'combined records',len(combined),'cross-source candidates',len(corroborated)])
           (root/'publication-preview.json').write_text(json.dumps({'eligible_verified':0,'quarantined':len(quarantine),'review_candidates':len(review),'additions':[],'reason':'Exact product-level evidence and historical master reconciliation required before publication'},indent=2))
           save()
           stamp=datetime.datetime.now(ZoneInfo('Asia/Bangkok')).strftime('%Y-%m-%d_%H%M')
           import shutil
           shutil.copyfile(master,root/('Turbo164_Pilot_Leads_'+stamp+'.csv'))
-          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'4.3','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
+          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'4.4','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
           print(json.dumps(log))
           PY
       - name: Save pilot checkpoint
