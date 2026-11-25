@@ -1,4 +1,4 @@
-name: Turbo164 research V4.5
+name: Turbo164 research V4.6
 on:
   workflow_dispatch:
   schedule:
@@ -57,7 +57,7 @@ jobs:
           def fetch(url):
             if time.monotonic()>=deadline: raise RuntimeError('research deadline reached')
             p=urllib.parse.urlsplit(url)
-            url=urllib.parse.urlunsplit((p.scheme,p.netloc,urllib.parse.quote(p.path,safe='/%:@!            p=urllib.parse.urlsplit(url)\'()*+,;=-._~'),urllib.parse.quote(p.query,safe='=&%+/:?'),''))
+            url=urllib.parse.urlunsplit((p.scheme,p.netloc,urllib.parse.quote(p.path,safe="/%:@!$&'()*+,;=-._~"),urllib.parse.quote(p.query,safe='=&%+/:?'),''))
             robots=urllib.robotparser.RobotFileParser(p.scheme+'://'+p.netloc+'/robots.txt')
             robots.read()
             if not robots.can_fetch(ua,url): raise RuntimeError('robots disallows')
@@ -253,6 +253,39 @@ jobs:
           searchfile=root/'independent-search.json'
           searches=json.loads(searchfile.read_text()) if searchfile.exists() else {}
           retailers=['https://www.modelcarshouston.com','https://www.autoworldstore.com','https://www.tarmacworks.com']
+          # Inspect discovered links before spending the remaining budget on discovery.
+          hitfile=root/'independent-product-evidence.json'
+          hit_evidence=json.loads(hitfile.read_text()) if hitfile.exists() else {}
+          review_index=defaultdict(list)
+          for row in review:
+            review_index[(row['Manufacturer'],row['Product Code'])].append(row)
+          for key,record in list(searches.items()):
+            if time.monotonic()>=deadline: break
+            parts=key.split('|',2)
+            if len(parts)!=3: continue
+            base,brand,sku=parts
+            sku=sku.removesuffix('|model')
+            for hit in record.get('hits',[]):
+              if time.monotonic()>=deadline: break
+              url=hit.get('url') or ''
+              p=urllib.parse.urlsplit(url)
+              if p.scheme!='https' or p.netloc!=urllib.parse.urlsplit(base).netloc or '/products/' not in p.path: continue
+              ident=key+'|'+url
+              if ident in hit_evidence and not hit_evidence[ident].get('error'): continue
+              if hit_evidence.get(ident,{}).get('attempts',0)>=3: continue
+              try:
+                endpoint=urllib.parse.urlunsplit((p.scheme,p.netloc,p.path.rstrip('/')+'.js','',''))
+                product=json.loads(fetch(endpoint))
+                matches=[]
+                for v in product.get('variants',[]):
+                  title=str(product.get('title',''))+' '+str(v.get('title',''))
+                  if str(v.get('sku') or '').strip().casefold()!=sku.strip().casefold() or scales(title)!={'64'}: continue
+                  matches.append({'sku':v['sku'],'variant_id':v.get('id'),'title':product.get('title'),'variant':v.get('title'),'vendor':product.get('vendor'),'url':url.split('?')[0]+'?variant='+str(v.get('id'))})
+                hit_evidence[ident]={'checked':now,'manufacturer_requested':brand,'matches':matches,'status':'review only; manufacturer and edition require confirmation'}
+              except Exception as e:
+                hit_evidence[ident]={'checked':now,'error':str(e),'attempts':hit_evidence.get(ident,{}).get('attempts',0)+1}
+              hitfile.write_text(json.dumps(hit_evidence,indent=2))
+          log.append(['V4.6','product links inspected',len(hit_evidence),'exact scale/SKU matches',sum(len(x.get('matches',[])) for x in hit_evidence.values())])
           pending=defaultdict(deque)
           for row in review:
             sku=row['Product Code'].strip()
@@ -261,6 +294,7 @@ jobs:
               if urllib.parse.urlsplit(base).netloc==urllib.parse.urlsplit(row['Source URL']).netloc: continue
               key=base+'|'+row['Manufacturer']+'|'+sku
               if key not in searches: pending[row['Manufacturer']].append((row,base,key))
+              elif not searches[key].get('hits') and key+'|model' not in searches: pending[row['Manufacturer']].append((row,base,key+'|model'))
           search_count=0
           while time.monotonic()<deadline and any(pending.values()):
             for brand,q in pending.items():
@@ -269,7 +303,7 @@ jobs:
               row,base,key=q.popleft()
               if key in searches or urllib.parse.urlsplit(base).netloc in blocked_hosts: continue
               try:
-                query=urllib.parse.urlencode({'q':row['Product Code'],'resources[type]':'product','resources[limit]':10})
+                query=urllib.parse.urlencode({'q':(row['Manufacturer']+' '+row['Model Name']) if key.endswith('|model') else row['Product Code'],'resources[type]':'product','resources[limit]':10})
                 data=json.loads(fetch(base+'/search/suggest.json?'+query))
                 hits=data.get('resources',{}).get('results',{}).get('products',[])
                 searches[key]={'checked':now,'hits':[{'title':p.get('title'),'url':urllib.parse.urljoin(base,p.get('url') or '')} for p in hits],'status':'discovery only; exact SKU and variant not verified'}
@@ -317,7 +351,7 @@ jobs:
           stamp=datetime.datetime.now(ZoneInfo('Asia/Bangkok')).strftime('%Y-%m-%d_%H%M')
           import shutil
           shutil.copyfile(master,root/('Turbo164_Pilot_Leads_'+stamp+'.csv'))
-          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'4.5','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
+          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'4.6','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
           print(json.dumps(log))
           PY
       - name: Save pilot checkpoint
