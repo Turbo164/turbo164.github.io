@@ -1,4 +1,4 @@
-name: Turbo164 research V4.9
+name: Turbo164 research V5.0
 on:
   workflow_dispatch:
   schedule:
@@ -252,7 +252,7 @@ jobs:
           # V4.5: search independent retailer storefronts by exact SKU.
           searchfile=root/'independent-search.json'
           searches=json.loads(searchfile.read_text()) if searchfile.exists() else {}
-          retailers=['https://www.modelcarshouston.com','https://www.autoworldstore.com','https://www.tarmacworks.com','https://www.diecasttalk.com','https://www.3000toys.com','https://www.kaidohouse.com']
+          retailers=['https://www.modelcarshouston.com','https://www.autoworldstore.com','https://www.tarmacworks.com']
           # Inspect discovered links before spending the remaining budget on discovery.
           hitfile=root/'independent-product-evidence.json'
           hit_evidence=json.loads(hitfile.read_text()) if hitfile.exists() else {}
@@ -308,7 +308,7 @@ jobs:
               if key not in searches: pending[row['Manufacturer']].append((row,base,key))
               elif not searches[key].get('hits') and key+'|model' not in searches: pending[row['Manufacturer']].append((row,base,key+'|model'))
           search_count=0
-          search_deadline=min(deadline,started+45*60)
+          search_deadline=min(deadline,started+40*60)
           while time.monotonic()<search_deadline and any(pending.values()):
             for brand,q in pending.items():
               if time.monotonic()>=deadline: break
@@ -376,7 +376,7 @@ jobs:
           officialfile=root/'official-discovery.json'
           official_discovery=json.loads(officialfile.read_text()) if officialfile.exists() else {}
           for item in candidate_rows:
-            if time.monotonic()>=deadline-30: break
+            if time.monotonic()>=deadline-300: break
             if norm(item['manufacturer'])!='tarmacworks': continue
             sku=item['productCode']
             if sku in official_discovery: continue
@@ -390,6 +390,32 @@ jobs:
               if any(x in str(e).lower() for x in ('403','429','robots','401')): break
             finally:
               officialfile.write_text(json.dumps(official_discovery,indent=2))
+          # V5.0: independently fetch official exact variant payloads.
+          verified_official=[]
+          official_errors=[]
+          for item in candidate_rows:
+            if time.monotonic()>=deadline-30: break
+            if norm(item['manufacturer'])!='tarmacworks': continue
+            sku=item['productCode']
+            for hit in official_discovery.get(sku,{}).get('hits',[]):
+              if time.monotonic()>=deadline-30: break
+              url=urllib.parse.urljoin('https://www.tarmacworks.com',hit.get('url') or '')
+              p=urllib.parse.urlsplit(url)
+              if p.scheme!='https' or p.hostname not in ('www.tarmacworks.com','tarmacworks.com') or '/products/' not in p.path: continue
+              try:
+                endpoint=urllib.parse.urlunsplit((p.scheme,p.netloc,p.path.rstrip('/')+'.js','',''))
+                product=json.loads(fetch(endpoint))
+                for v in product.get('variants',[]):
+                  title=str(product.get('title',''))+' '+str(v.get('title',''))
+                  if str(v.get('sku') or '').strip().casefold()!=sku.strip().casefold() or scales(title)!={'64'}: continue
+                  if norm(product.get('vendor'))!='tarmacworks': continue
+                  if re.search(r'\\b(bundle|combo|multipack|assortment|trading.card|gift.set)\\b',title,re.I): continue
+                  if catalog_index.get(('tarmacworks',norm(sku))): continue
+                  verified_official.append({'manufacturer':'Tarmac Works','productCode':sku,'name':product.get('title'),'variant':v.get('title'),'sourceUrl':url.split('?')[0]+'?variant='+str(v.get('id')),'checked':now,'verification':'Official SKU and scale matched; edition, release and identity review pending','retailerSource':item.get('sourceUrl')})
+              except Exception as e:
+                official_errors.append({'sku':sku,'url':url,'error':str(e)})
+          (root/'official-variant-verification.json').write_text(json.dumps({'matches':verified_official,'errors':official_errors},indent=2))
+          log.append(['V5.0','official exact variant matches',len(verified_official),'errors',len(official_errors)])
           # V4.8: official-source evidence gate, with explicit release and edition review.
           official_review=[]
           for item in candidate_rows:
@@ -427,7 +453,7 @@ jobs:
           import shutil
           shutil.copyfile(master,root/('Turbo164_Pilot_Leads_'+stamp+'.csv'))
           shutil.copyfile(root/'cumulative-master.csv',root/('Turbo164_Master_Catalog_'+stamp+'.csv'))
-          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'4.9','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
+          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'5.0','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
           print(json.dumps(log))
           PY
       - name: Save pilot checkpoint
