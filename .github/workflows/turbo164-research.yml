@@ -1,4 +1,4 @@
-name: Turbo164 research V5.1
+name: Turbo164 research V5.2
 on:
   workflow_dispatch:
   schedule:
@@ -70,10 +70,14 @@ jobs:
               w=csv.DictWriter(f,fieldnames=cols);w.writeheader();w.writerows(rows)
             tmp.replace(master)
             statefile.write_text(json.dumps(state,indent=2))
+          # V5.2: rotate collection priority and revisit previously seen pages for changes.
+          offset=state.get('collection_rotation',0)%len(sources)
+          sources=sources[offset:]+sources[:offset]
+          state['collection_rotation']=offset+1
           for brand,base in sources:
             page=state.get(base,1)
             try:
-              for _ in range(8):
+              for _ in range(2):
                 if time.monotonic()>deadline: break
                 url=base+'/products.json?limit=250&page='+str(page)
                 products=json.loads(fetch(url))['products']
@@ -81,7 +85,7 @@ jobs:
                   state[base]=1;break
                 digest=hashlib.sha256(json.dumps([p.get('id') for p in products]).encode()).hexdigest()
                 if digest in state.get(base+' fingerprints',[]):
-                  log.append([brand,'repeated page',page]);state[base]=page+1;break
+                  log.append([brand,'repeated page; checking variants for changes',page])
                 for p in products:
                   for v in p.get('variants',[]):
                     sku=str(v.get('sku') or '').strip()
@@ -263,7 +267,7 @@ jobs:
           cachefile=root/'product-payload-cache.json'
           payload_cache=json.loads(cachefile.read_text()) if cachefile.exists() else {}
           cache_hits=0
-          inspection_deadline=min(deadline,started+30*60)
+          inspection_deadline=min(deadline,started+20*60)
           for key,record in list(searches.items()):
             if time.monotonic()>=inspection_deadline: break
             parts=key.split('|',2)
@@ -433,6 +437,28 @@ jobs:
             official_review.append({**item,'official_source_host':official,'release_hint':release,'edition_hint':edition,'review_flags':flags})
           (root/'official-source-review.json').write_text(json.dumps(official_review,indent=2))
           log.append(['V4.8','official-host candidates',sum(x['official_source_host'] for x in official_review),'publication approved',0])
+          # V5.2: collect explicit edition/release evidence from official product descriptions.
+          detailfile=root/'official-detail-evidence.json'
+          details=json.loads(detailfile.read_text()) if detailfile.exists() else {}
+          for item in verified_official:
+            if time.monotonic()>=deadline-45: break
+            url=item['sourceUrl']
+            p=urllib.parse.urlsplit(url)
+            if p.scheme!='https' or p.hostname not in ('www.tarmacworks.com','tarmacworks.com'): continue
+            try:
+              endpoint=urllib.parse.urlunsplit((p.scheme,p.netloc,p.path.rstrip('/')+'.js','',''))
+              product=json.loads(fetch(endpoint))
+              variant_id=urllib.parse.parse_qs(p.query).get('variant',[''])[0]
+              v=next((v for v in product.get('variants',[]) if str(v.get('id'))==variant_id and str(v.get('sku') or '').casefold()==item['productCode'].casefold()),None)
+              if v is None: continue
+              description=unescape(re.sub(r'<[^>]+>',' ',str(product.get('description') or '')))
+              sentences=re.split(r'[\n.!?]+',description)
+              excerpts=[s.strip()[:500] for s in sentences if re.search(r'\b(chase|limited|exclusive|regular|pre[- ]?order|release|in stock|sold out|shipping)\b',s,re.I)]
+              details[url]={'checked':now,'sku':item['productCode'],'title':product.get('title'),'variant':v.get('title'),'available':v.get('available'),'evidence_excerpts':excerpts[:20],'status':'manual classification required; availability is not release status'}
+            except Exception as e:
+              log.append(['V5.2','official detail error',str(e)])
+            detailfile.write_text(json.dumps(details,indent=2))
+          log.append(['V5.2','official detail evidence records',len(details)])
           # V5.1: final review gate; never infer release or edition from missing evidence.
           final_review=[]
           final_keys=set()
@@ -465,7 +491,7 @@ jobs:
           import shutil
           shutil.copyfile(master,root/('Turbo164_Pilot_Leads_'+stamp+'.csv'))
           shutil.copyfile(root/'cumulative-master.csv',root/('Turbo164_Master_Catalog_'+stamp+'.csv'))
-          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'5.1','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
+          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'5.2','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
           print(json.dumps(log))
           PY
       - name: Save pilot checkpoint
