@@ -1,0 +1,99 @@
+name: Turbo164 research pilot
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0-23/2 * * *'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: turbo164-research-pilot
+  cancel-in-progress: false
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Recover previous pilot state
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p research
+          run=$(gh run list --workflow turbo164-research.yml --status success --limit 1 --json databaseId --jq '.[0].databaseId // empty')
+          if [ -n "$run" ]; then gh run download "$run" -n turbo164-research -D research; fi
+      - name: Collect research leads
+        run: |
+          python - <<'PY'
+          import csv, json, time, pathlib, urllib.request, urllib.parse, urllib.robotparser, datetime, hashlib
+          from zoneinfo import ZoneInfo
+          root=pathlib.Path('research')
+          statefile=root/'state.json'
+          state=json.loads(statefile.read_text()) if statefile.exists() else {}
+          master=root/'pilot-leads.csv'
+          cols=['Check Date (Bangkok)','Manufacturer','Product Code','Car Make','Model Name','Color/Variant','Edition Type','Release Status','Photo URL','Photo Source URL','Image Status','Source URL','GitHub Status','Verification','Notes','GitHub Model ID','First Seen Date','Last Checked Date']
+          rows=list(csv.DictReader(master.open())) if master.exists() else []
+          now=datetime.datetime.now(ZoneInfo('Asia/Bangkok')).isoformat()
+          deadline=time.monotonic()+45*60
+          ua='Turbo164Research/1.0 (+https://turbo164.github.io/)'
+          catalog=json.loads(pathlib.Path('catalog.json').read_text())
+          codes={(str(x.get('manufacturer','')).casefold(),str(x.get('productCode','')).casefold()) for x in catalog if x.get('productCode')}
+          seen={(r['Manufacturer'],r['Source URL'],r['Product Code'],r['Color/Variant']) for r in rows}
+          sources=[
+            ('Tarmac Works','https://www.tarmacworks.com/collections/1-64-scale'),
+            ('Hobby Japan','https://www.modelcarshouston.com/collections/hobby-japan-minicar-project'),
+            ('Johnny Lightning','https://www.autoworldstore.com/collections/johnny-lightning-1-64-scale'),
+            ('Auto World','https://www.autoworldstore.com/collections/auto-world-1-64-scale')]
+          log=[]
+          def fetch(url):
+            p=urllib.parse.urlsplit(url)
+            robots=urllib.robotparser.RobotFileParser(p.scheme+'://'+p.netloc+'/robots.txt')
+            robots.read()
+            if not robots.can_fetch(ua,url): raise RuntimeError('robots disallows')
+            time.sleep(max(2,robots.crawl_delay(ua) or 0))
+            with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':ua}),timeout=20) as f:
+              return f.read(8_000_000)
+          def save():
+            tmp=master.with_suffix('.tmp')
+            with tmp.open('w',newline='',encoding='utf-8') as f:
+              w=csv.DictWriter(f,fieldnames=cols);w.writeheader();w.writerows(rows)
+            tmp.replace(master)
+            statefile.write_text(json.dumps(state,indent=2))
+          for brand,base in sources:
+            page=state.get(brand,1)
+            try:
+              for _ in range(8):
+                if time.monotonic()>deadline: break
+                url=base+'/products.json?limit=250&page='+str(page)
+                products=json.loads(fetch(url))['products']
+                if not products:
+                  state[brand]=1;break
+                digest=hashlib.sha256(json.dumps([p.get('id') for p in products]).encode()).hexdigest()
+                if digest==state.get(brand+' fingerprint'):
+                  log.append([brand,'repeated page',page]);state[brand]=1;break
+                for p in products:
+                  for v in p.get('variants',[]):
+                    sku=str(v.get('sku') or '').strip()
+                    link=base.split('/collections/')[0]+'/products/'+p['handle']+'?variant='+str(v['id'])
+                    key=(brand,link,sku,str(v.get('title','')))
+                    if key in seen: continue
+                    seen.add(key)
+                    row=dict.fromkeys(cols,'')
+                    row.update({'Check Date (Bangkok)':now,'Manufacturer':brand,'Product Code':sku,'Model Name':p['title'],'Color/Variant':key[3],'Source URL':link,'Image Status':'MISSING PHOTO','GitHub Status':'POSSIBLE DUPLICATE' if sku and (brand.casefold(),sku.casefold()) in codes else 'NEEDS VERIFICATION','Verification':'NEEDS VERIFICATION','Notes':'Shopify lead only; scale, manufacturer SKU, edition and release require independent verification','First Seen Date':now,'Last Checked Date':now})
+                    rows.append(row)
+                log.append([brand,'page collected',page,len(products)])
+                state[brand+' fingerprint']=digest
+                page+=1;state[brand]=page;save()
+            except Exception as e:
+              log.append([brand,'blocked',str(e)])
+          save()
+          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
+          print(json.dumps(log))
+          PY
+      - name: Save pilot checkpoint
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: turbo164-research
+          path: research/
+          retention-days: 90
