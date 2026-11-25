@@ -1,4 +1,4 @@
-name: Turbo164 research V4.7
+name: Turbo164 research V4.8
 on:
   workflow_dispatch:
   schedule:
@@ -350,7 +350,7 @@ jobs:
               reason=''
               if not sku or not brand or brandkey(vendor)!=brandkey(brand): reason='manufacturer mismatch or missing vendor'
               elif scales(title)!={'64'}: reason='scale not explicit'
-              elif re.search(r'\b(bundle|set of|case of|assortment|multipack|multi.pack)\b',title,re.I): reason='possible bundle'
+              elif re.search(r'\b(bundle|set of|case of|assortment|multipack|multi.pack|combo|trading.card|gift.set|2.pack|3.pack)\b',title,re.I): reason='possible bundle'
               elif catalog_index.get(key): reason='possible existing SKU'
               elif key in candidate_keys: reason='duplicate candidate SKU; inspect variants manually'
               if reason:
@@ -359,6 +359,23 @@ jobs:
               candidate_rows.append({'manufacturer':brand,'productCode':sku,'name':match.get('title'),'variant':match.get('variant'),'sourceUrl':match.get('url'),'vendor':vendor,'releaseStatus':'unconfirmed','editionType':'unconfirmed','verification':'NEEDS VERIFICATION','photo':None})
           (root/'manufacturer-review.json').write_text(json.dumps({'candidates':candidate_rows,'excluded':rejected},indent=2))
           log.append(['V4.7','manufacturer-matched review candidates',len(candidate_rows),'excluded or duplicate',len(rejected)])
+          # V4.8: official-source evidence gate, with explicit release and edition review.
+          official_review=[]
+          for item in candidate_rows:
+            p=urllib.parse.urlsplit(item.get('sourceUrl') or '')
+            official=(norm(item['manufacturer'])=='tarmacworks' and p.scheme=='https' and p.hostname in ('www.tarmacworks.com','tarmacworks.com'))
+            title=str(item.get('name') or '')+' '+str(item.get('variant') or '')
+            flags=[]
+            if not official: flags.append('official manufacturer product evidence missing')
+            if re.search(r'\b(combo|bundle|trading.card|gift.set|multipack|assortment)\b',title,re.I): flags.append('possible combination product')
+            release='preorder' if re.search(r'\bpre[- ]?order\b',title,re.I) else 'unconfirmed'
+            edition='chase' if re.search(r'\bchase\b',title,re.I) else 'unconfirmed'
+            if release=='unconfirmed': flags.append('release status requires evidence')
+            if edition=='unconfirmed': flags.append('edition requires evidence')
+            flags.append('exact catalog variant and car make require final review')
+            official_review.append({**item,'official_source_host':official,'release_hint':release,'edition_hint':edition,'review_flags':flags})
+          (root/'official-source-review.json').write_text(json.dumps(official_review,indent=2))
+          log.append(['V4.8','official-host candidates',sum(x['official_source_host'] for x in official_review),'publication approved',0])
           # Preserve historical master separately from the pilot evidence queue.
           historical=pathlib.Path('research-master/historical.csv')
           combined=[]
@@ -378,7 +395,8 @@ jobs:
           stamp=datetime.datetime.now(ZoneInfo('Asia/Bangkok')).strftime('%Y-%m-%d_%H%M')
           import shutil
           shutil.copyfile(master,root/('Turbo164_Pilot_Leads_'+stamp+'.csv'))
-          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'4.7','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
+          shutil.copyfile(root/'cumulative-master.csv',root/('Turbo164_Master_Catalog_'+stamp+'.csv'))
+          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'4.8','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
           print(json.dumps(log))
           PY
       - name: Save pilot checkpoint
