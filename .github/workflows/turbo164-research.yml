@@ -86,6 +86,75 @@ jobs:
                 page+=1;state[brand]=page;save()
             except Exception as e:
               log.append([brand,'blocked',str(e)])
+          # Discover links on official archives; never infer SKU or scale from URL.
+          from html.parser import HTMLParser
+          class Links(HTMLParser):
+            def __init__(self):
+              super().__init__(); self.links=[]; self.href=None; self.parts=[]
+            def handle_starttag(self,tag,attrs):
+              if tag=='a': self.href=dict(attrs).get('href'); self.parts=[]
+            def handle_data(self,data):
+              if self.href: self.parts.append(data)
+            def handle_endtag(self,tag):
+              if tag=='a' and self.href:
+                self.links.append((self.href,' '.join(self.parts).strip())); self.href=None
+          archives=[
+            ('MINI GT','https://minigt.tsm-models.com/index.php?action=product-list&b_id=13&p='),
+            ('INNO64','https://www.inno-models.com/scale/1-64/'),
+            ('ARBOX','https://www.armodel.com.cn/product.html?cid=22'),
+            ('PGM','https://www.modelcarshouston.com/collections/pgm'),
+            ('POP RACE','https://www.poprace.net/'),
+            ('Ignition Model','https://ig-model.com/'),
+            ('GreenLight','https://www.greenlightcollectibles.com/'),
+            ('M2 Machines','https://www.m2machines.com/'),
+            ('Kaido House','https://kaidohouse.com/')]
+          for brand,base in archives:
+            if time.monotonic()>deadline: break
+            try:
+              page=state.get(brand+' archive page',1)
+              url=base+str(page) if brand=='MINI GT' else base
+              parser=Links();parser.feed(fetch(url).decode('utf-8','replace'))
+              count=0
+              for href,title in parser.links:
+                link=urllib.parse.urljoin(url,href)
+                if not title or urllib.parse.urlsplit(link).netloc!=urllib.parse.urlsplit(url).netloc: continue
+                if not any(s in link.lower() for s in ('product/detail','product-detail','product_detail','product-info','product_id=','/products/','/product/','action=product')): continue
+                if 'product-list' in link or link==url: continue
+                key=(brand,link,'','')
+                if key in seen: continue
+                seen.add(key);count+=1
+                row=dict.fromkeys(cols,'')
+                row.update({'Check Date (Bangkok)':now,'Manufacturer':brand,'Model Name':title,'Source URL':link,'Image Status':'MISSING PHOTO','GitHub Status':'NEEDS VERIFICATION','Verification':'NEEDS VERIFICATION','Notes':'Archive link lead; product identity and scale unverified','First Seen Date':now,'Last Checked Date':now})
+                rows.append(row)
+              if brand=='MINI GT': state[brand+' archive page']=page+1 if count else 1
+              log.append([brand,'archive links',count]);save()
+            except Exception as e: log.append([brand,'blocked',str(e)])
+          # Wiki category discovery with continuation, not official product codes.
+          for brand,host in [('Hot Wheels','hotwheels'),('Matchbox','matchbox'),('Tomica','tomica'),('Majorette','majorette')]:
+            if time.monotonic()>deadline: break
+            try:
+              base='https://'+host+'.fandom.com'
+              params={'action':'query','list':'categorymembers','cmtitle':'Category:Cars','cmlimit':50,'format':'json'}
+              params.update(state.get(brand+' continuation',{}))
+              data=json.loads(fetch(base+'/api.php?'+urllib.parse.urlencode(params)))
+              count=0
+              for item in data['query']['categorymembers']:
+                if item.get('ns')!=0: continue
+                title=item['title'];link=base+'/wiki/'+urllib.parse.quote(title.replace(' ','_'))
+                key=(brand,link,'','')
+                if key in seen: continue
+                seen.add(key);count+=1
+                row=dict.fromkeys(cols,'')
+                row.update({'Check Date (Bangkok)':now,'Manufacturer':brand,'Model Name':title,'Source URL':link,'Image Status':'MISSING PHOTO','GitHub Status':'NEEDS VERIFICATION','Verification':'NEEDS VERIFICATION','Notes':'Wiki lead only; exact scale, SKU and variant unverified','First Seen Date':now,'Last Checked Date':now})
+                rows.append(row)
+              state[brand+' continuation']=data.get('continue',{})
+              log.append([brand,'wiki leads',count]);save()
+            except Exception as e: log.append([brand,'blocked',str(e)])
+          # Re-screen all accumulated leads against current catalog, without treating SKU match as variant proof.
+          for row in rows:
+            sku=row['Product Code'].strip()
+            if sku and (row['Manufacturer'].casefold(),sku.casefold()) in codes:
+              row['GitHub Status']='POSSIBLE DUPLICATE'
           save()
           (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
           print(json.dumps(log))
