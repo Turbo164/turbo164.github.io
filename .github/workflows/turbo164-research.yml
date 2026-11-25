@@ -1,4 +1,4 @@
-name: Turbo164 research V4
+name: Turbo164 research V4.1
 on:
   workflow_dispatch:
   schedule:
@@ -34,7 +34,8 @@ jobs:
           cols=['Check Date (Bangkok)','Manufacturer','Product Code','Car Make','Model Name','Color/Variant','Edition Type','Release Status','Photo URL','Photo Source URL','Image Status','Source URL','GitHub Status','Verification','Notes','GitHub Model ID','First Seen Date','Last Checked Date']
           rows=list(csv.DictReader(master.open())) if master.exists() else []
           now=datetime.datetime.now(ZoneInfo('Asia/Bangkok')).isoformat()
-          deadline=time.monotonic()+45*60
+          started=time.monotonic()
+          deadline=started+53*60
           ua='Turbo164Research/1.0 (+https://turbo164.github.io/)'
           catalog=json.loads(pathlib.Path('catalog.json').read_text())
           codes={(str(x.get('manufacturer','')).casefold(),str(x.get('productCode','')).casefold()) for x in catalog if x.get('productCode')}
@@ -43,9 +44,14 @@ jobs:
             ('Tarmac Works','https://www.tarmacworks.com/collections/1-64-scale'),
             ('Hobby Japan','https://www.modelcarshouston.com/collections/hobby-japan-minicar-project'),
             ('Johnny Lightning','https://www.autoworldstore.com/collections/johnny-lightning-1-64-scale'),
-            ('Auto World','https://www.autoworldstore.com/collections/auto-world-1-64-scale')]
+            ('Auto World','https://www.autoworldstore.com/collections/auto-world-1-64-scale'),
+            ('PGM','https://www.modelcarshouston.com/collections/pgm'),
+            ('MINI GT','https://www.modelcarshouston.com/collections/mini-gt'),
+            ('INNO64','https://www.modelcarshouston.com/collections/inno64'),
+            ('POP RACE','https://www.modelcarshouston.com/collections/pop-race')]
           log=[]
           def fetch(url):
+            if time.monotonic()>=deadline: raise RuntimeError('research deadline reached')
             p=urllib.parse.urlsplit(url)
             robots=urllib.robotparser.RobotFileParser(p.scheme+'://'+p.netloc+'/robots.txt')
             robots.read()
@@ -60,17 +66,17 @@ jobs:
             tmp.replace(master)
             statefile.write_text(json.dumps(state,indent=2))
           for brand,base in sources:
-            page=state.get(brand,1)
+            page=state.get(base,1)
             try:
               for _ in range(8):
                 if time.monotonic()>deadline: break
                 url=base+'/products.json?limit=250&page='+str(page)
                 products=json.loads(fetch(url))['products']
                 if not products:
-                  state[brand]=1;break
+                  state[base]=1;break
                 digest=hashlib.sha256(json.dumps([p.get('id') for p in products]).encode()).hexdigest()
-                if digest==state.get(brand+' fingerprint'):
-                  log.append([brand,'repeated page',page]);state[brand]=1;break
+                if digest in state.get(base+' fingerprints',[]):
+                  log.append([brand,'repeated page',page]);state[base]=1;break
                 for p in products:
                   for v in p.get('variants',[]):
                     sku=str(v.get('sku') or '').strip()
@@ -82,8 +88,8 @@ jobs:
                     row.update({'Check Date (Bangkok)':now,'Manufacturer':brand,'Product Code':sku,'Model Name':p['title'],'Color/Variant':key[3],'Source URL':link,'Image Status':'MISSING PHOTO','GitHub Status':'POSSIBLE DUPLICATE' if sku and (brand.casefold(),sku.casefold()) in codes else 'NEEDS VERIFICATION','Verification':'NEEDS VERIFICATION','Notes':'Shopify lead only; scale, manufacturer SKU, edition and release require independent verification','First Seen Date':now,'Last Checked Date':now})
                     rows.append(row)
                 log.append([brand,'page collected',page,len(products)])
-                state[brand+' fingerprint']=digest
-                page+=1;state[brand]=page;save()
+                state[base+' fingerprints']=(state.get(base+' fingerprints',[])+[digest])[-100:]
+                page+=1;state[base]=page;save()
             except Exception as e:
               log.append([brand,'blocked',str(e)])
           # Discover links on official archives; never infer SKU or scale from URL.
@@ -164,12 +170,23 @@ jobs:
             if row['Source URL']: groups[row['Manufacturer']].append(row)
           evidencefile=root/'evidence.json'
           evidence=json.loads(evidencefile.read_text()) if evidencefile.exists() else {}
+          # Round-robin pending evidence; no artificial waiting or repeated requests.
+          from collections import deque
+          queues={}
           for brand,items in groups.items():
             cursor=state.get(brand+' verify cursor',0)%len(items)
-            for offset in range(min(30,len(items))):
-              if time.monotonic()>deadline: break
-              row=items[(cursor+offset)%len(items)]
+            ordered=items[cursor:]+items[:cursor]
+            queues[brand]=deque(row for row in ordered if row['Source URL'] not in evidence)
+          blocked_hosts=set()
+          inspected=0
+          while time.monotonic()<deadline and any(queues.values()):
+            for brand,q in queues.items():
+              if time.monotonic()>=deadline: break
+              if not q: continue
+              row=q.popleft()
               url=row['Source URL']
+              host=urllib.parse.urlsplit(url).netloc
+              if host in blocked_hosts or url in evidence: continue
               try:
                 raw=fetch(url).decode('utf-8','replace')
                 plain=unescape(re.sub(r'<[^>]+>',' ',raw))
@@ -178,15 +195,18 @@ jobs:
                 sku_found=bool(sku and re.search(r'(?<![\w-])'+re.escape(sku)+r'(?![\w-])',plain,re.I))
                 evidence[url]={'checked':now,'scale_mention':scale,'sku_mention':sku_found,'status':'page-level evidence only; exact variant requires review'}
                 row['Last Checked Date']=now
-                row['Notes']+=' | V3 page evidence recorded' if 'V3 page evidence recorded' not in row['Notes'] else ''
               except Exception as e:
                 evidence[url]={'checked':now,'error':str(e)}
                 log.append([brand,'verification blocked',str(e)])
-                state[brand+' verify cursor']=(cursor+offset+1)%len(items)
-                break
-              state[brand+' verify cursor']=(cursor+offset+1)%len(items)
-            evidencefile.write_text(json.dumps(evidence,indent=2))
-            save()
+                if any(x in str(e).lower() for x in ('403','429','robots','401')):
+                  blocked_hosts.add(host)
+              inspected+=1
+              if inspected%10==0:
+                evidencefile.write_text(json.dumps(evidence,indent=2))
+                save()
+          evidencefile.write_text(json.dumps(evidence,indent=2))
+          save()
+          log.append(['V4.1','new page inspections',inspected,'deadline reached' if time.monotonic()>=deadline else 'pending accessible queue exhausted'])
           # V4: review queue, never publish on page-wide evidence alone.
           def norm(s):
             return re.sub(r'[^a-z0-9]+','',str(s or '').casefold())
@@ -210,7 +230,7 @@ jobs:
           stamp=datetime.datetime.now(ZoneInfo('Asia/Bangkok')).strftime('%Y-%m-%d_%H%M')
           import shutil
           shutil.copyfile(master,root/('Turbo164_Pilot_Leads_'+stamp+'.csv'))
-          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':4,'review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-(deadline-45*60)),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
+          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'4.1','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
           print(json.dumps(log))
           PY
       - name: Save pilot checkpoint
