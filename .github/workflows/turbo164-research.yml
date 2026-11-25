@@ -1,4 +1,4 @@
-name: Turbo164 research V4.2
+name: Turbo164 research V4.3
 on:
   workflow_dispatch:
   schedule:
@@ -170,9 +170,14 @@ jobs:
           import re
           from html import unescape
           from collections import defaultdict
+          def scales(title):
+            return set(re.findall(r'(?<!\d)1\s*[:/]\s*(\d{1,3})(?!\d)',title or ''))
+          def excluded(row):
+            s=scales(row['Model Name']+' '+row['Color/Variant'])
+            return bool(s and '64' not in s)
           groups=defaultdict(list)
           for row in rows:
-            if row['Source URL']: groups[row['Manufacturer']].append(row)
+            if row['Source URL'] and not excluded(row): groups[row['Manufacturer']].append(row)
           evidencefile=root/'evidence.json'
           evidence=json.loads(evidencefile.read_text()) if evidencefile.exists() else {}
           # Round-robin pending evidence; no artificial waiting or repeated requests.
@@ -181,7 +186,7 @@ jobs:
           for brand,items in groups.items():
             cursor=state.get(brand+' verify cursor',0)%len(items)
             ordered=items[cursor:]+items[:cursor]
-            queues[brand]=deque(row for row in ordered if row['Source URL'] not in evidence or ('error' in evidence[row['Source URL']] and evidence[row['Source URL']].get('attempts',1)<3))
+            queues[brand]=deque(row for row in ordered if row['Source URL'] not in evidence or (evidence[row['Source URL']].get('method')!='product-json-v43' and evidence[row['Source URL']].get('v43_attempts',0)<3))
           blocked_hosts=set()
           inspected=0
           while time.monotonic()<deadline and any(queues.values()):
@@ -193,17 +198,23 @@ jobs:
               host=urllib.parse.urlsplit(url).netloc
               if host in blocked_hosts: continue
               previous=evidence.get(url,{})
-              if previous and ('error' not in previous or previous.get('attempts',1)>=3): continue
+              if previous.get('method')=='product-json-v43' or previous.get('v43_attempts',0)>=3: continue
               try:
-                raw=fetch(url).decode('utf-8','replace')
-                plain=unescape(re.sub(r'<[^>]+>',' ',raw))
-                scale=bool(re.search(r'(?<![0-9])1\s*[:/]\s*64(?![0-9])',plain))
-                sku=row['Product Code'].strip()
-                sku_found=bool(sku and re.search(r'(?<![\w-])'+re.escape(sku)+r'(?![\w-])',plain,re.I))
-                evidence[url]={'checked':now,'scale_mention':scale,'sku_mention':sku_found,'status':'page-level evidence only; exact variant requires review'}
+                p=urllib.parse.urlsplit(url)
+                variant_id=urllib.parse.parse_qs(p.query).get('variant',[''])[0]
+                if '/products/' not in p.path or not variant_id:
+                  evidence[url]={'checked':now,'method':'product-json-v43','status':'manual review required: no exact Shopify variant identifier'}
+                else:
+                  endpoint=urllib.parse.urlunsplit((p.scheme,p.netloc,p.path.rstrip('/')+'.js','',''))
+                  product=json.loads(fetch(endpoint))
+                  variant=next((v for v in product.get('variants',[]) if str(v.get('id'))==variant_id),None)
+                  if variant is None: raise ValueError('exact variant missing')
+                  title=str(product.get('title',''))+' '+str(variant.get('title',''))
+                  sku=str(variant.get('sku') or '').strip()
+                  evidence[url]={'checked':now,'method':'product-json-v43','product_title':title,'product_scales':sorted(scales(title)),'variant_id':variant_id,'variant_sku':sku,'vendor':product.get('vendor'),'sku_match':bool(sku and sku.casefold()==row['Product Code'].strip().casefold()),'status':'retailer product evidence; independent manufacturer confirmation required'}
                 row['Last Checked Date']=now
               except Exception as e:
-                evidence[url]={'checked':now,'error':str(e),'attempts':previous.get('attempts',0)+1}
+                evidence[url]={'checked':now,'error':str(e),'v43_attempts':previous.get('v43_attempts',0)+1}
                 log.append([brand,'verification blocked',str(e)])
                 if any(x in str(e).lower() for x in ('403','429','robots','401')):
                   blocked_hosts.add(host)
@@ -222,22 +233,28 @@ jobs:
             for code in {norm(item.get('productCode')),norm(item.get('number'))}-{''}:
               catalog_index[(norm(item.get('manufacturer')),code)].append(item)
           review=[]
+          quarantine=[]
           for row in rows:
             sku=row['Product Code'].strip()
             ev=evidence.get(row['Source URL'],{})
             matches=catalog_index.get((norm(row['Manufacturer']),norm(sku)),[]) if sku else []
             if matches:
               row['GitHub Status']='POSSIBLE DUPLICATE'
-            if not sku or not ev.get('scale_mention') or not ev.get('sku_mention') or matches: continue
+            if excluded(row) or (ev.get('product_scales') and '64' not in ev['product_scales']):
+              quarantine.append({**row,'Notes':row['Notes']+' | Explicit non-1:64 scale; excluded from review'})
+              continue
+            if not sku or ev.get('method')!='product-json-v43' or ev.get('product_scales')!=['64'] or not ev.get('sku_match') or matches: continue
             review.append({**row,'Notes':row['Notes']+' | REVIEW ONLY: exact variant, scale and manufacturer SKU not yet proven'})
           with (root/'review-queue.csv').open('w',newline='',encoding='utf-8') as f:
             w=csv.DictWriter(f,fieldnames=cols);w.writeheader();w.writerows(review)
-          (root/'publication-preview.json').write_text(json.dumps({'eligible_verified':0,'review_candidates':len(review),'additions':[],'reason':'Exact product-level evidence and historical master reconciliation required before publication'},indent=2))
+          with (root/'quarantine.csv').open('w',newline='',encoding='utf-8') as f:
+            w=csv.DictWriter(f,fieldnames=cols);w.writeheader();w.writerows(quarantine)
+          (root/'publication-preview.json').write_text(json.dumps({'eligible_verified':0,'quarantined':len(quarantine),'review_candidates':len(review),'additions':[],'reason':'Exact product-level evidence and historical master reconciliation required before publication'},indent=2))
           save()
           stamp=datetime.datetime.now(ZoneInfo('Asia/Bangkok')).strftime('%Y-%m-%d_%H%M')
           import shutil
           shutil.copyfile(master,root/('Turbo164_Pilot_Leads_'+stamp+'.csv'))
-          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'4.2','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
+          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'4.3','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
           print(json.dumps(log))
           PY
       - name: Save pilot checkpoint
