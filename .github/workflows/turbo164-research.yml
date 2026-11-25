@@ -1,4 +1,4 @@
-name: Turbo164 research V4.8
+name: Turbo164 research V4.9
 on:
   workflow_dispatch:
   schedule:
@@ -252,21 +252,26 @@ jobs:
           # V4.5: search independent retailer storefronts by exact SKU.
           searchfile=root/'independent-search.json'
           searches=json.loads(searchfile.read_text()) if searchfile.exists() else {}
-          retailers=['https://www.modelcarshouston.com','https://www.autoworldstore.com','https://www.tarmacworks.com']
+          retailers=['https://www.modelcarshouston.com','https://www.autoworldstore.com','https://www.tarmacworks.com','https://www.diecasttalk.com','https://www.3000toys.com','https://www.kaidohouse.com']
           # Inspect discovered links before spending the remaining budget on discovery.
           hitfile=root/'independent-product-evidence.json'
           hit_evidence=json.loads(hitfile.read_text()) if hitfile.exists() else {}
           review_index=defaultdict(list)
           for row in review:
             review_index[(row['Manufacturer'],row['Product Code'])].append(row)
+          # V4.9: cache actual product payloads across SKU queries and rounds.
+          cachefile=root/'product-payload-cache.json'
+          payload_cache=json.loads(cachefile.read_text()) if cachefile.exists() else {}
+          cache_hits=0
+          inspection_deadline=min(deadline,started+30*60)
           for key,record in list(searches.items()):
-            if time.monotonic()>=deadline: break
+            if time.monotonic()>=inspection_deadline: break
             parts=key.split('|',2)
             if len(parts)!=3: continue
             base,brand,sku=parts
             sku=sku.removesuffix('|model')
             for hit in record.get('hits',[]):
-              if time.monotonic()>=deadline: break
+              if time.monotonic()>=inspection_deadline: break
               url=hit.get('url') or ''
               p=urllib.parse.urlsplit(url)
               if p.scheme!='https' or p.netloc!=urllib.parse.urlsplit(base).netloc or '/products/' not in p.path: continue
@@ -275,7 +280,13 @@ jobs:
               if hit_evidence.get(ident,{}).get('attempts',0)>=3: continue
               try:
                 endpoint=urllib.parse.urlunsplit((p.scheme,p.netloc,p.path.rstrip('/')+'.js','',''))
-                product=json.loads(fetch(endpoint))
+                if endpoint in payload_cache:
+                  product=payload_cache[endpoint]
+                  cache_hits+=1
+                else:
+                  product=json.loads(fetch(endpoint))
+                  payload_cache[endpoint]={'title':product.get('title'),'vendor':product.get('vendor'),'variants':[{'id':v.get('id'),'sku':v.get('sku'),'title':v.get('title')} for v in product.get('variants',[])]}
+                  cachefile.write_text(json.dumps(payload_cache))
                 matches=[]
                 for v in product.get('variants',[]):
                   title=str(product.get('title',''))+' '+str(v.get('title',''))
@@ -286,6 +297,7 @@ jobs:
                 hit_evidence[ident]={'checked':now,'error':str(e),'attempts':hit_evidence.get(ident,{}).get('attempts',0)+1}
               hitfile.write_text(json.dumps(hit_evidence,indent=2))
           log.append(['V4.6','product links inspected',len(hit_evidence),'exact scale/SKU matches',sum(len(x.get('matches',[])) for x in hit_evidence.values())])
+          log.append(['V4.9','cached product requests avoided',cache_hits,'unique cached endpoints',len(payload_cache)])
           pending=defaultdict(deque)
           for row in review:
             sku=row['Product Code'].strip()
@@ -296,7 +308,8 @@ jobs:
               if key not in searches: pending[row['Manufacturer']].append((row,base,key))
               elif not searches[key].get('hits') and key+'|model' not in searches: pending[row['Manufacturer']].append((row,base,key+'|model'))
           search_count=0
-          while time.monotonic()<deadline and any(pending.values()):
+          search_deadline=min(deadline,started+45*60)
+          while time.monotonic()<search_deadline and any(pending.values()):
             for brand,q in pending.items():
               if time.monotonic()>=deadline: break
               if not q: continue
@@ -359,6 +372,24 @@ jobs:
               candidate_rows.append({'manufacturer':brand,'productCode':sku,'name':match.get('title'),'variant':match.get('variant'),'sourceUrl':match.get('url'),'vendor':vendor,'releaseStatus':'unconfirmed','editionType':'unconfirmed','verification':'NEEDS VERIFICATION','photo':None})
           (root/'manufacturer-review.json').write_text(json.dumps({'candidates':candidate_rows,'excluded':rejected},indent=2))
           log.append(['V4.7','manufacturer-matched review candidates',len(candidate_rows),'excluded or duplicate',len(rejected)])
+          # V4.9: targeted official storefront discovery for matched Tarmac candidates.
+          officialfile=root/'official-discovery.json'
+          official_discovery=json.loads(officialfile.read_text()) if officialfile.exists() else {}
+          for item in candidate_rows:
+            if time.monotonic()>=deadline-30: break
+            if norm(item['manufacturer'])!='tarmacworks': continue
+            sku=item['productCode']
+            if sku in official_discovery: continue
+            try:
+              base='https://www.tarmacworks.com'
+              query=urllib.parse.urlencode({'q':sku,'resources[type]':'product','resources[limit]':10})
+              result=json.loads(fetch(base+'/search/suggest.json?'+query))
+              official_discovery[sku]={'checked':now,'hits':result.get('resources',{}).get('results',{}).get('products',[]),'status':'official discovery only; exact variant verification pending'}
+            except Exception as e:
+              official_discovery[sku]={'checked':now,'error':str(e)}
+              if any(x in str(e).lower() for x in ('403','429','robots','401')): break
+            finally:
+              officialfile.write_text(json.dumps(official_discovery,indent=2))
           # V4.8: official-source evidence gate, with explicit release and edition review.
           official_review=[]
           for item in candidate_rows:
@@ -396,7 +427,7 @@ jobs:
           import shutil
           shutil.copyfile(master,root/('Turbo164_Pilot_Leads_'+stamp+'.csv'))
           shutil.copyfile(root/'cumulative-master.csv',root/('Turbo164_Master_Catalog_'+stamp+'.csv'))
-          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'4.8','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
+          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'4.9','review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
           print(json.dumps(log))
           PY
       - name: Save pilot checkpoint
