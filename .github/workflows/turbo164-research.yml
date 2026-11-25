@@ -1,4 +1,4 @@
-name: Turbo164 research V3
+name: Turbo164 research V4
 on:
   workflow_dispatch:
   schedule:
@@ -166,7 +166,7 @@ jobs:
           evidence=json.loads(evidencefile.read_text()) if evidencefile.exists() else {}
           for brand,items in groups.items():
             cursor=state.get(brand+' verify cursor',0)%len(items)
-            for offset in range(min(12,len(items))):
+            for offset in range(min(30,len(items))):
               if time.monotonic()>deadline: break
               row=items[(cursor+offset)%len(items)]
               url=row['Source URL']
@@ -187,8 +187,30 @@ jobs:
               state[brand+' verify cursor']=(cursor+offset+1)%len(items)
             evidencefile.write_text(json.dumps(evidence,indent=2))
             save()
+          # V4: review queue, never publish on page-wide evidence alone.
+          def norm(s):
+            return re.sub(r'[^a-z0-9]+','',str(s or '').casefold())
+          catalog_index=defaultdict(list)
+          for item in catalog:
+            for code in {norm(item.get('productCode')),norm(item.get('number'))}-{''}:
+              catalog_index[(norm(item.get('manufacturer')),code)].append(item)
+          review=[]
+          for row in rows:
+            sku=row['Product Code'].strip()
+            ev=evidence.get(row['Source URL'],{})
+            matches=catalog_index.get((norm(row['Manufacturer']),norm(sku)),[]) if sku else []
+            if matches:
+              row['GitHub Status']='POSSIBLE DUPLICATE'
+            if not sku or not ev.get('scale_mention') or not ev.get('sku_mention') or matches: continue
+            review.append({**row,'Notes':row['Notes']+' | REVIEW ONLY: exact variant, scale and manufacturer SKU not yet proven'})
+          with (root/'review-queue.csv').open('w',newline='',encoding='utf-8') as f:
+            w=csv.DictWriter(f,fieldnames=cols);w.writeheader();w.writerows(review)
+          (root/'publication-preview.json').write_text(json.dumps({'eligible_verified':0,'review_candidates':len(review),'additions':[],'reason':'Exact product-level evidence and historical master reconciliation required before publication'},indent=2))
           save()
-          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
+          stamp=datetime.datetime.now(ZoneInfo('Asia/Bangkok')).strftime('%Y-%m-%d_%H%M')
+          import shutil
+          shutil.copyfile(master,root/('Turbo164_Pilot_Leads_'+stamp+'.csv'))
+          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':4,'review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-(deadline-45*60)),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
           print(json.dumps(log))
           PY
       - name: Save pilot checkpoint
