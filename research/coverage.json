@@ -1,59 +1,15 @@
 {
-  "time": "2026-11-26T23:25:49.465755+07:00",
+  "time": "2026-11-26T23:31:38.992558+07:00",
   "pilot_only": true,
   "version": "6.1",
-  "new_leads": 0,
+  "new_leads": 231,
   "historical_master_present": false,
-  "cumulative_count": 2177,
+  "cumulative_count": 2408,
   "review_candidates": 1331,
-  "elapsed_research_seconds": 87,
+  "elapsed_research_seconds": 107,
   "catalog_count": 304,
-  "lead_count": 2177,
+  "lead_count": 2408,
   "sources": [
-    [
-      "Ignition Model",
-      "repeated page; checking variants for changes",
-      1
-    ],
-    [
-      "Ignition Model",
-      "page collected",
-      1,
-      250
-    ],
-    [
-      "Ignition Model",
-      "repeated page; checking variants for changes",
-      2
-    ],
-    [
-      "Ignition Model",
-      "page collected",
-      2,
-      250
-    ],
-    [
-      "Ignition Model",
-      "repeated page; checking variants for changes",
-      3
-    ],
-    [
-      "Ignition Model",
-      "page collected",
-      3,
-      250
-    ],
-    [
-      "Ignition Model",
-      "repeated page; checking variants for changes",
-      4
-    ],
-    [
-      "Ignition Model",
-      "page collected",
-      4,
-      201
-    ],
     [
       "Tarmac Works",
       "repeated page; checking variants for changes",
@@ -132,6 +88,50 @@
       62
     ],
     [
+      "Ignition Model",
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "Ignition Model",
+      "page collected",
+      1,
+      250
+    ],
+    [
+      "Ignition Model",
+      "repeated page; checking variants for changes",
+      2
+    ],
+    [
+      "Ignition Model",
+      "page collected",
+      2,
+      250
+    ],
+    [
+      "Ignition Model",
+      "repeated page; checking variants for changes",
+      3
+    ],
+    [
+      "Ignition Model",
+      "page collected",
+      3,
+      250
+    ],
+    [
+      "Ignition Model",
+      "repeated page; checking variants for changes",
+      4
+    ],
+    [
+      "Ignition Model",
+      "page collected",
+      4,
+      201
+    ],
+    [
       "MINI GT",
       "blocked",
       "robots disallows"
@@ -197,9 +197,61 @@
       "robots disallows"
     ],
     [
+      "wholesale",
+      "new listing leads",
+      1,
+      45,
+      "product links",
+      45
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      2,
+      47,
+      "product links",
+      47
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      3,
+      48,
+      "product links",
+      48
+    ],
+    [
+      "hobbysearch",
+      "blocked",
+      "HTTP Error 403: Forbidden"
+    ],
+    [
+      "Hot Wheels",
+      "historical archive leads",
+      "https://southtexasdiecast.com/hwguide/1900_1939_guide.html",
+      23
+    ],
+    [
+      "Hot Wheels",
+      "historical archive leads",
+      "https://southtexasdiecast.com/hwguide/1940_1949_guide.html",
+      17
+    ],
+    [
+      "Hot Wheels",
+      "historical archive leads",
+      "https://southtexasdiecast.com/hwguide/1950_1959_guide.html",
+      51
+    ],
+    [
+      "Hot Wheels",
+      "historical archive index pages",
+      98
+    ],
+    [
       "V4.1",
       "new page inspections",
-      0,
+      230,
       "pending accessible queue exhausted"
     ],
     [
@@ -259,7 +311,7 @@
       "historical master available",
       false,
       "combined records",
-      2177,
+      2408,
       "cross-source candidates",
       0
     ]
