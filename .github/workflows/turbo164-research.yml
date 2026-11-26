@@ -1,4 +1,4 @@
-name: Turbo164 research V5.3
+name: Turbo164 research V5.4
 on:
   workflow_dispatch:
   schedule:
@@ -78,6 +78,13 @@ jobs:
               w=csv.DictWriter(f,fieldnames=cols);w.writeheader();w.writerows(rows)
             tmp.replace(master)
             statefile.write_text(json.dumps(state,indent=2))
+          # V5.4: broaden discovery with additional retailer collections.
+          sources.extend([
+            ('MINI GT','https://www.diecasttalk.com/collections/mini-gt'),
+            ('POP RACE','https://www.diecasttalk.com/collections/pop-race'),
+            ('INNO64','https://www.diecasttalk.com/collections/inno64'),
+            ('Kaido House','https://www.diecasttalk.com/collections/kaido-house'),
+            ('Tarmac Works','https://www.diecasttalk.com/collections/tarmac-works')])
           # V5.2: rotate collection priority and revisit previously seen pages for changes.
           offset=state.get('collection_rotation',0)%len(sources)
           sources=sources[offset:]+sources[:offset]
@@ -481,6 +488,14 @@ jobs:
             final_review.append({**item,'official_description_evidence':excerpts,'limited_production_hint':any(re.search(r'\blimited\b',x,re.I) for x in excerpts),'chase_mentioned_in_description':any(re.search(r'\bchase\b',x,re.I) for x in excerpts),'edition_hint':'chase' if re.search(r'\bchase\b',title,re.I) else 'unconfirmed','release_hint':'preorder' if re.search(r'\bpre[- ]?order\b',title,re.I) else 'unconfirmed','publication_status':'NEEDS VERIFICATION','required_review':['car make and exact model identity','edition and release evidence','fresh main catalog duplicate check']})
           (root/'final-publication-review.json').write_text(json.dumps(final_review,indent=2))
           log.append(['V5.1','unique official candidates for final review',len(final_review),'approved for publication',0])
+          # V5.4: retain official matches as actionable evidence, not just review notes.
+          for item in final_review:
+            for row in rows:
+              if norm(row['Manufacturer'])!=norm(item['manufacturer']) or norm(row['Product Code'])!=norm(item['productCode']): continue
+              if row['Source URL']!=item['sourceUrl']: continue
+              row['Verification']='Official exact SKU and 1:64 scale confirmed; edition and release pending'
+              row['Last Checked Date']=item['checked']
+          save()
           # Preserve historical master separately from the pilot evidence queue.
           historical=pathlib.Path('research-master/historical.csv')
           combined=[]
@@ -520,9 +535,13 @@ jobs:
           save()
           stamp=datetime.datetime.now(ZoneInfo('Asia/Bangkok')).strftime('%Y-%m-%d_%H%M')
           import shutil
+          for old in root.glob('Turbo164_Pilot_Leads_*.csv'):
+            old.unlink()
+          for old in root.glob('Turbo164_Master_Catalog_*.csv'):
+            old.unlink()
           shutil.copyfile(master,root/('Turbo164_Pilot_Leads_'+stamp+'.csv'))
           shutil.copyfile(root/'cumulative-master.csv',root/('Turbo164_Master_Catalog_'+stamp+'.csv'))
-          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'5.3','historical_master_present':historical.exists(),'cumulative_count':len(combined),'review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
+          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'5.4','historical_master_present':historical.exists(),'cumulative_count':len(combined),'review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
           print(json.dumps(log))
           PY
       - name: Save pilot checkpoint
