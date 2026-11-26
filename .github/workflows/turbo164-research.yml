@@ -682,8 +682,8 @@ jobs:
             if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._/-]{2,60}',sku): return None
             if re.search(r'\b(bundle|combo|multipack|assortment|trading.card|gift.set|set of|case of|multi.pack|2.pack|3.pack|random|mystery)\b',title+' '+variant,re.I): return None
             return {'manufacturer':brandkey(brand),'sku':sku,'model':canonical_model(title,brand),'variant':'' if default_variant(variant) else norm(variant),'host':p.hostname.removeprefix('www.'),'url':url,'title':title,'variant_title':variant,'brand':brand}
-          aa=proof_record('MINI GT','MGT001','Ford GT Red 1/64 MINI GT','Default Title','https://a.example/product?variant=1')
-          bb=proof_record('MINI GT','MGT001','Ford GT Red 1/64 Diecast Model Car by MINI GT','Default Title','https://b.example/product')
+          aa=proof_record('MINI GT','MGT001','Ford GT Metallic Red 1/64 MINI GT','Default Title','https://a.example/product?variant=1')
+          bb=proof_record('MINI GT','MGT001','Ford GT Metallic Red 1/64 Diecast Model Car by MINI GT','Default Title','https://b.example/product')
           assert exact_pair(aa,bb)
           assert not exact_pair(aa,{**bb,'host':aa['host']})
           assert not exact_pair(aa,{**bb,'model':'fordgtblue'})
@@ -696,7 +696,9 @@ jobs:
             if not ev.get('variant_id') or urllib.parse.parse_qs(urllib.parse.urlsplit(url).query).get('variant',[''])[0]!=ev['variant_id']: continue
             title=str(ev.get('product_title') or '')
             variant=row['Color/Variant']
-            if variant and title.endswith(' '+variant): title=title[:-len(variant)-1]
+            if variant:
+              if not title.endswith(' '+variant): continue
+              title=title[:-len(variant)-1]
             p=proof_record(row['Manufacturer'],str(ev.get('variant_sku') or ''),title,variant,url)
             if p: proofs[(p['manufacturer'],p['sku'].casefold())].append(p)
           for url,ev in wholesale_evidence.items():
