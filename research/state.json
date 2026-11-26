@@ -36,8 +36,10 @@
     "972e71693c9c71c140512a9387f54723a038fd35fc578b893187700df791aa67",
     "972e71693c9c71c140512a9387f54723a038fd35fc578b893187700df791aa67"
   ],
-  "https://www.tarmacworks.com/collections/1-64-scale": 2,
+  "https://www.tarmacworks.com/collections/1-64-scale": 1,
   "https://www.modelcarshouston.com/collections/hobby-japan-minicar-project fingerprints": [
+    "362a0b8452eec2eb9cafde1572638961d87e34f4b77a0f2edaa9b22fea702f0e",
+    "7af460c34ccc81f85f4a8c18937648d42a60ee041ef1218c519aab00d5aa44a7",
     "362a0b8452eec2eb9cafde1572638961d87e34f4b77a0f2edaa9b22fea702f0e",
     "7af460c34ccc81f85f4a8c18937648d42a60ee041ef1218c519aab00d5aa44a7",
     "362a0b8452eec2eb9cafde1572638961d87e34f4b77a0f2edaa9b22fea702f0e",
@@ -76,6 +78,7 @@
     "d6b5067d174eca493536b541b3f29ec82e82386497d3bbc34e1c786101394c4e",
     "32e37bd4fe5c9bd5f59f419d7d8dbe76f958624b835a9126029aa8d3a771b240",
     "32e37bd4fe5c9bd5f59f419d7d8dbe76f958624b835a9126029aa8d3a771b240",
+    "32e37bd4fe5c9bd5f59f419d7d8dbe76f958624b835a9126029aa8d3a771b240",
     "32e37bd4fe5c9bd5f59f419d7d8dbe76f958624b835a9126029aa8d3a771b240"
   ],
   "https://www.autoworldstore.com/collections/johnny-lightning-1-64-scale": 1,
@@ -100,9 +103,11 @@
     "f5fd778d57348a218d0cc16c790e609c4a0d97baf81e4ad2a85daaca7dffcc3e",
     "f5fd778d57348a218d0cc16c790e609c4a0d97baf81e4ad2a85daaca7dffcc3e"
   ],
-  "https://www.autoworldstore.com/collections/auto-world-1-64-scale": 2,
+  "https://www.autoworldstore.com/collections/auto-world-1-64-scale": 1,
   "https://www.modelcarshouston.com/collections/pgm": 1,
   "https://www.modelcarshouston.com/collections/mini-gt fingerprints": [
+    "65224b87829f85338f4f47ea0b481671db2e1d474001d4220d7d4202408ae55b",
+    "52a522dd51610f0bde9b05a371476b13330ca7012402f036db51a3a68ad7eed2",
     "65224b87829f85338f4f47ea0b481671db2e1d474001d4220d7d4202408ae55b",
     "52a522dd51610f0bde9b05a371476b13330ca7012402f036db51a3a68ad7eed2",
     "65224b87829f85338f4f47ea0b481671db2e1d474001d4220d7d4202408ae55b",
@@ -153,10 +158,12 @@
     "617aa3bf29c00adb1cf4706d109d743f3c897e7ed8f4d54732f6646425758ab2",
     "fd60f4b4e5c038d24c4eeb2c8a5994696cd07a087e9498746ec42c50bce1c219",
     "c3e30f57ccd21880c2d9e97441a89db901400f2efdb9cb4cb14eab5e77008394",
-    "f678d70e7895229d6346d8bb8c0dc7c145f25e57b038982e5be26e7062e78d5f"
+    "f678d70e7895229d6346d8bb8c0dc7c145f25e57b038982e5be26e7062e78d5f",
+    "617aa3bf29c00adb1cf4706d109d743f3c897e7ed8f4d54732f6646425758ab2",
+    "fd60f4b4e5c038d24c4eeb2c8a5994696cd07a087e9498746ec42c50bce1c219"
   ],
-  "https://www.modelcarshouston.com/collections/ignition-model": 3,
+  "https://www.modelcarshouston.com/collections/ignition-model": 1,
   "https://www.modelcarshouston.com/collections/greenlight": 1,
   "https://www.modelcarshouston.com/collections/m2-machines": 1,
-  "collection_rotation": 8
+  "collection_rotation": 9
 }

@@ -1,91 +1,91 @@
 {
-  "time": "2026-11-26T23:07:11.065709+07:00",
+  "time": "2026-11-26T23:10:27.913458+07:00",
   "pilot_only": true,
   "version": "6.1",
   "new_leads": 0,
   "historical_master_present": false,
   "cumulative_count": 2177,
   "review_candidates": 1331,
-  "elapsed_research_seconds": 71,
+  "elapsed_research_seconds": 76,
   "catalog_count": 304,
   "lead_count": 2177,
   "sources": [
     [
-      "POP RACE",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
-    ],
-    [
-      "Kaido House",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "Ignition Model",
+      "repeated page; checking variants for changes",
+      3
     ],
     [
       "Ignition Model",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
-    ],
-    [
-      "GreenLight",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
-    ],
-    [
-      "Tarmac Works",
-      "repeated page; checking variants for changes",
-      1
-    ],
-    [
-      "Tarmac Works",
       "page collected",
-      1,
-      249
+      3,
+      250
     ],
     [
-      "Tarmac Works",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "Ignition Model",
+      "repeated page; checking variants for changes",
+      4
+    ],
+    [
+      "Ignition Model",
+      "page collected",
+      4,
+      201
     ],
     [
       "Hobby Japan",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
-    ],
-    [
-      "Johnny Lightning",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
-    ],
-    [
-      "Auto World",
       "repeated page; checking variants for changes",
       1
     ],
     [
-      "Auto World",
+      "Hobby Japan",
       "page collected",
       1,
-      101
+      250
     ],
     [
-      "Auto World",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "Hobby Japan",
+      "repeated page; checking variants for changes",
+      2
     ],
     [
-      "PGM",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "Hobby Japan",
+      "page collected",
+      2,
+      149
+    ],
+    [
+      "Johnny Lightning",
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "Johnny Lightning",
+      "page collected",
+      1,
+      133
     ],
     [
       "MINI GT",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "repeated page; checking variants for changes",
+      1
     ],
     [
-      "INNO64",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "MINI GT",
+      "page collected",
+      1,
+      250
+    ],
+    [
+      "MINI GT",
+      "repeated page; checking variants for changes",
+      2
+    ],
+    [
+      "MINI GT",
+      "page collected",
+      2,
+      62
     ],
     [
       "MINI GT",
@@ -153,29 +153,9 @@
       "robots disallows"
     ],
     [
-      "Tarmac Works",
-      "verification blocked",
-      "HTTP Error 404: Not Found"
-    ],
-    [
-      "Tarmac Works",
-      "verification blocked",
-      "HTTP Error 404: Not Found"
-    ],
-    [
-      "Tarmac Works",
-      "verification blocked",
-      "HTTP Error 404: Not Found"
-    ],
-    [
-      "Tarmac Works",
-      "verification blocked",
-      "HTTP Error 404: Not Found"
-    ],
-    [
       "V4.1",
       "new page inspections",
-      4,
+      0,
       "pending accessible queue exhausted"
     ],
     [
