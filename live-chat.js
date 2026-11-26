@@ -4,8 +4,8 @@
   const TABLE='community_live_chat_messages', REACTIONS='community_live_chat_reactions', SETTINGS='community_live_chat_settings', BLOCKS='community_live_chat_blocks', BUCKET='community-live-chat';
   const mutedKey='turbo164-live-chat-muted-v1', minimizedKey='turbo164-live-chat-minimized-v1';
   const labels={
-    en:{title:'Turbo164 Community Chat',online:'One shared room',empty:'Say hello to the community.',guest:'Log in to send a message.',placeholder:'Write a message…',send:'Send',mute:'Mute message sounds',unmute:'Unmute message sounds',minimize:'Minimize chat',open:'Open community chat',setup:'Chat is getting set up. Please check back soon.',offline:'Chat is temporarily unavailable. Please try again.',login:'Log in to join the chat.',limit:'Please wait a moment before sending another message.',error:'Could not send your message. Please try again.',pauseChat:'Pause chat',resumeChat:'Resume chat',pauseReactions:'Pause reactions',resumeReactions:'Resume reactions',chatPaused:'Chat is paused by an admin.',reactionsPaused:'Reactions are paused.',blocked:'Your account is blocked from this chat.',admin:'Chat admin',blockedUsers:'Blocked users',unblock:'Unblock',block:'Block',confirmBlock:'Block this user from Turbo164 chat?',file:'Attach photo or video',fileTooBig:'Choose a file smaller than 50 MB.',fileType:'Choose an image or a supported video.',uploading:'Uploading…',choose:'Choose a photo or video',removeFile:'Remove attachment',reportError:'Could not update chat settings.',noBlocked:'No blocked users.',loginReact:'Log in to react.',reactError:'Could not save your reaction.',textOrMedia:'Add a message or attach a photo/video.',imageAlt:'Shared photo',videoAlt:'Shared video'},
-    th:{title:'แชตชุมชน Turbo164',online:'ห้องแชตรวม',empty:'ทักทายชุมชนได้เลย',guest:'เข้าสู่ระบบเพื่อส่งข้อความ',placeholder:'เขียนข้อความ…',send:'ส่ง',mute:'ปิดเสียงข้อความ',unmute:'เปิดเสียงข้อความ',minimize:'ย่อหน้าต่างแชต',open:'เปิดแชตชุมชน',setup:'กำลังตั้งค่าแชต โปรดลองใหม่ภายหลัง',offline:'แชตไม่พร้อมใช้งานชั่วคราว โปรดลองใหม่',login:'เข้าสู่ระบบเพื่อร่วมแชต',limit:'โปรดรอสักครู่ก่อนส่งข้อความถัดไป',error:'ส่งข้อความไม่สำเร็จ โปรดลองอีกครั้ง',pauseChat:'หยุดแชต',resumeChat:'เปิดแชตอีกครั้ง',pauseReactions:'หยุดรีแอ็กชัน',resumeReactions:'เปิดรีแอ็กชันอีกครั้ง',chatPaused:'ผู้ดูแลหยุดแชตชั่วคราว',reactionsPaused:'รีแอ็กชันถูกหยุดชั่วคราว',blocked:'บัญชีของคุณถูกบล็อกจากแชตนี้',admin:'ผู้ดูแลแชต',blockedUsers:'ผู้ใช้ที่ถูกบล็อก',unblock:'ปลดบล็อก',block:'บล็อก',confirmBlock:'บล็อกผู้ใช้นี้จากแชต Turbo164 หรือไม่?',file:'แนบรูปภาพหรือวิดีโอ',fileTooBig:'เลือกไฟล์ที่มีขนาดต่ำกว่า 50 MB',fileType:'เลือกภาพหรือวิดีโอที่รองรับ',uploading:'กำลังอัปโหลด…',choose:'เลือกรูปภาพหรือวิดีโอ',removeFile:'นำไฟล์แนบออก',reportError:'อัปเดตการตั้งค่าแชตไม่สำเร็จ',noBlocked:'ไม่มีผู้ใช้ที่ถูกบล็อก',loginReact:'เข้าสู่ระบบเพื่อรีแอ็กชัน',reactError:'บันทึกรีแอ็กชันไม่สำเร็จ',textOrMedia:'เขียนข้อความหรือแนบรูปภาพ/วิดีโอ',imageAlt:'รูปภาพที่แชร์',videoAlt:'วิดีโอที่แชร์'}
+    en:{title:'Turbo164 Community Chat',online:'One shared room',empty:'Say hello to the community.',guest:'Log in to send a message.',placeholder:'Write a message…',send:'Send',mute:'Mute message sounds',unmute:'Unmute message sounds',minimize:'Minimize chat',open:'Open community chat',setup:'Chat is getting set up. Please check back soon.',offline:'Chat is temporarily unavailable. Please try again.',login:'Log in to join the chat.',limit:'Please wait a moment before sending another message.',error:'Could not send your message. Please try again.',pauseChat:'Pause chat',resumeChat:'Resume chat',pauseReactions:'Pause reactions',resumeReactions:'Resume reactions',chatPaused:'Chat is paused by an admin.',reactionsPaused:'Reactions are paused.',blocked:'Your account is blocked from this chat.',admin:'Chat admin',blockedUsers:'Blocked users',unblock:'Unblock',block:'Block',confirmBlock:'Block this user from Turbo164 chat?',file:'Attach photo or video',fileTooBig:'Choose a file smaller than 50 MB.',fileType:'Choose an image or a supported video.',uploading:'Uploading…',choose:'Choose a photo or video',removeFile:'Remove attachment',reportError:'Could not update chat settings.',noBlocked:'No blocked users.',loginReact:'Log in to react.',reactError:'Could not save your reaction.',textOrMedia:'Add a message or attach a photo/video.',imageAlt:'Shared photo',videoAlt:'Shared video',deleteMessage:'Delete',confirmDelete:'Delete this message from the chat?',deleteError:'Could not delete your message. Please try again.'},
+    th:{title:'แชตชุมชน Turbo164',online:'ห้องแชตรวม',empty:'ทักทายชุมชนได้เลย',guest:'เข้าสู่ระบบเพื่อส่งข้อความ',placeholder:'เขียนข้อความ…',send:'ส่ง',mute:'ปิดเสียงข้อความ',unmute:'เปิดเสียงข้อความ',minimize:'ย่อหน้าต่างแชต',open:'เปิดแชตชุมชน',setup:'กำลังตั้งค่าแชต โปรดลองใหม่ภายหลัง',offline:'แชตไม่พร้อมใช้งานชั่วคราว โปรดลองใหม่',login:'เข้าสู่ระบบเพื่อร่วมแชต',limit:'โปรดรอสักครู่ก่อนส่งข้อความถัดไป',error:'ส่งข้อความไม่สำเร็จ โปรดลองอีกครั้ง',pauseChat:'หยุดแชต',resumeChat:'เปิดแชตอีกครั้ง',pauseReactions:'หยุดรีแอ็กชัน',resumeReactions:'เปิดรีแอ็กชันอีกครั้ง',chatPaused:'ผู้ดูแลหยุดแชตชั่วคราว',reactionsPaused:'รีแอ็กชันถูกหยุดชั่วคราว',blocked:'บัญชีของคุณถูกบล็อกจากแชตนี้',admin:'ผู้ดูแลแชต',blockedUsers:'ผู้ใช้ที่ถูกบล็อก',unblock:'ปลดบล็อก',block:'บล็อก',confirmBlock:'บล็อกผู้ใช้นี้จากแชต Turbo164 หรือไม่?',file:'แนบรูปภาพหรือวิดีโอ',fileTooBig:'เลือกไฟล์ที่มีขนาดต่ำกว่า 50 MB',fileType:'เลือกภาพหรือวิดีโอที่รองรับ',uploading:'กำลังอัปโหลด…',choose:'เลือกรูปภาพหรือวิดีโอ',removeFile:'นำไฟล์แนบออก',reportError:'อัปเดตการตั้งค่าแชตไม่สำเร็จ',noBlocked:'ไม่มีผู้ใช้ที่ถูกบล็อก',loginReact:'เข้าสู่ระบบเพื่อรีแอ็กชัน',reactError:'บันทึกรีแอ็กชันไม่สำเร็จ',textOrMedia:'เขียนข้อความหรือแนบรูปภาพ/วิดีโอ',imageAlt:'รูปภาพที่แชร์',videoAlt:'วิดีโอที่แชร์',deleteMessage:'ลบ',confirmDelete:'ลบข้อความนี้ออกจากแชตหรือไม่?',deleteError:'ลบข้อความไม่สำเร็จ โปรดลองอีกครั้ง'}
   };
   const lang=()=>window.T164I18N?.language==='th'?'th':'en', t=k=>(labels[lang()]||labels.en)[k]||k;
   const allowedMimes=['image/jpeg','image/png','image/webp','image/gif','video/mp4','video/webm','video/quicktime'];
@@ -35,6 +35,7 @@
     '.t164-chat-message{max-width:96%;align-self:flex-start;background:#202d3e;border:1px solid #334258;border-radius:12px 12px 12px 4px;padding:8px 9px;overflow-wrap:anywhere}',
     '.t164-chat-message.mine{align-self:flex-end;background:#3b3222;border-color:#725d38;border-radius:12px 12px 4px 12px}',
     '.t164-chat-meta{display:flex;gap:7px;align-items:center;color:#e2bc77;font-size:11px;font-weight:700;margin-bottom:4px}',
+    '.t164-chat-delete{margin-left:auto;padding:3px 6px;border-radius:7px;background:#28374b;color:#d6e2f2;font-size:10px;font-weight:600}',
     '.t164-chat-time{color:#8f9caf;font-size:10px;font-weight:400}',
     '.t164-chat-body{font-size:13px;line-height:1.45;white-space:pre-wrap}',
     '.t164-chat-media{display:block;max-width:min(260px,68vw);max-height:240px;width:auto;height:auto;object-fit:contain;border-radius:9px;margin:5px 0;background:#0b0f17}.t164-chat-media-video{width:min(270px,70vw)}',
@@ -143,11 +144,13 @@
   function appendMessage(row,notify){
     const key=String(row.id);if(seen.has(key))return;seen.add(key);
     const mine=!!currentUser&&row.author_id===currentUser.id;
-    const article=document.createElement('article');article.className='t164-chat-message'+(mine?' mine':'');article.dataset.chatAuthor=row.author_id||'';
+    const article=document.createElement('article');article.className='t164-chat-message'+(mine?' mine':'');article.id='t164-chat-message-'+key;article.dataset.messageId=key;article.dataset.chatAuthor=row.author_id||'';
     const meta=document.createElement('div');meta.className='t164-chat-meta';
     const author=document.createElement('span');author.textContent=nameFor(row.author_id);
     const time=document.createElement('time');time.className='t164-chat-time';try{time.textContent=new Date(row.created_at).toLocaleTimeString([],{hour:'numeric',minute:'2-digit'});}catch{}
-    meta.append(author,time);article.appendChild(meta);
+    meta.append(author,time);
+    if(mine){const remove=document.createElement('button');remove.type='button';remove.className='t164-chat-delete';remove.textContent=t('deleteMessage');remove.setAttribute('aria-label',t('deleteMessage'));remove.addEventListener('click',()=>deleteOwnMessage(row,remove));meta.appendChild(remove);}
+    article.appendChild(meta);
     if(row.body){const body=document.createElement('div');body.className='t164-chat-body';body.textContent=row.body;article.appendChild(body);}
     addMedia(article,row);
     const reactions=document.createElement('div');reactions.className='t164-chat-reactions';reactions.id='t164-chat-reactions-'+row.id;reactions.dataset.messageId=String(row.id);article.appendChild(reactions);
@@ -157,6 +160,20 @@
     $('t164-chat-messages').appendChild(article);renderReactionBar(row.id);
     const empty=$('t164-chat-empty');if(empty)empty.remove();
     if(notify&&!mine){if(minimized){unread++;updateBadge();beep();}else requestAnimationFrame(()=>{$('t164-chat-messages').scrollTop=$('t164-chat-messages').scrollHeight;});}
+  }
+  function removeMessage(messageId){
+    if(messageId==null)return;
+    const key=String(messageId);seen.delete(key);reactionState.delete(key);
+    document.getElementById('t164-chat-message-'+key)?.remove();showEmpty();
+  }
+  async function deleteOwnMessage(row,button){
+    if(!currentUser||row.author_id!==currentUser.id)return;
+    if(!window.confirm(t('confirmDelete')))return;
+    button.disabled=true;
+    const d=dbRef(),{data,error}=await d.from(TABLE).delete().eq('id',row.id).eq('author_id',currentUser.id).select('id').maybeSingle();
+    if(error||!data){setStatus(t('deleteError'));button.disabled=false;return;}
+    removeMessage(row.id);
+    if(row.media_path){const {error:mediaError}=await d.storage.from(BUCKET).remove([row.media_path]);if(mediaError)setStatus(t('deleteError'));}
   }
   function showEmpty(){if(!$('t164-chat-messages').children.length){const empty=document.createElement('div');empty.id='t164-chat-empty';empty.className='t164-chat-empty';empty.textContent=t('empty');$('t164-chat-messages').appendChild(empty);}}
   async function loadHistory(){
@@ -212,6 +229,7 @@
       if(channel)return;
       channel=d.channel('turbo164-live-chat-main')
         .on('postgres_changes',{event:'INSERT',schema:'public',table:TABLE},payload=>onIncoming(payload.new))
+        .on('postgres_changes',{event:'DELETE',schema:'public',table:TABLE},payload=>removeMessage(payload.old?.id))
         .on('postgres_changes',{event:'*',schema:'public',table:REACTIONS},payload=>handleReactionEvent(payload))
         .on('postgres_changes',{event:'UPDATE',schema:'public',table:SETTINGS},()=>refreshSettings());
       channel.subscribe(status=>{if(status==='CHANNEL_ERROR'||status==='TIMED_OUT'){if(!setupMissing)setStatus(t('offline'));}});
