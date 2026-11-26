@@ -5193,5 +5193,33 @@
     "release": "Unverified",
     "sourceUrl": "https://www.tarmacworks.com/products/1-64-mercedes-benz-sls-amg-gt3-macau-gt-cup-fia-gt-world-cup-2015-1-winner-maro-engel-tarmac-works-hobby64?variant=50251092197633",
     "verification": "Official SKU and scale matched; edition, release and identity review pending"
+  },
+  {
+    "id": "tarmac-works-t64g075bl",
+    "number": "T64G-075-BL",
+    "productCode": "T64G-075-BL",
+    "brand": "Mazda",
+    "vehicleMake": "Mazda",
+    "manufacturer": "Tarmac Works",
+    "name": "1/64 Mazda RX-7 VeilSide Fortune7 Blue - Tarmac Works GLOBAL64",
+    "variant": "Unverified",
+    "editionType": "Unverified",
+    "release": "Unverified",
+    "sourceUrl": "https://www.tarmacworks.com/products/1-64-mazda-rx-7-veilside-fortune7-blue-tarmac-works-global64?variant=49232858349825",
+    "verification": "Official SKU and scale matched; edition, release and identity review pending"
+  },
+  {
+    "id": "tarmac-works-t64011jv",
+    "number": "T64-011-JV",
+    "productCode": "T64-011-JV",
+    "brand": "Toyota",
+    "vehicleMake": "Toyota",
+    "manufacturer": "Tarmac Works",
+    "name": "1/64 Toyota Supra - Designed by Joshua Vides - Tarmac Works HOBBY64",
+    "variant": "Unverified",
+    "editionType": "Unverified",
+    "release": "Unverified",
+    "sourceUrl": "https://www.tarmacworks.com/products/1-64-toyota-supra-designed-by-joshua-vides-tarmac-works-hobby64?variant=48765891543297",
+    "verification": "Official SKU and scale matched; edition, release and identity review pending"
   }
 ]
