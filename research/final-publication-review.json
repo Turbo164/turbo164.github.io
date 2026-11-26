@@ -5,7 +5,7 @@
     "name": "1/64 VERTEX Silvia (S 15) Tarmac Works 10th Anniversary - Tarmac Works GLOBAL64",
     "variant": "Default Title",
     "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-vertex-silvia-s-15-tarmac-works-10th-anniversary-global64?variant=46968151376129",
-    "checked": "2026-11-26T23:38:42.266185+07:00",
+    "checked": "2026-11-26T23:52:51.758683+07:00",
     "verification": "Official SKU and scale matched; edition, release and identity review pending",
     "retailerSource": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-vertex-silvia-s15-tarmac-works-10th-anniversary-limited-edition?variant=46794798530816",
     "official_description_evidence": [
@@ -20,7 +20,9 @@
       "car make and exact model identity",
       "edition and release evidence",
       "fresh main catalog duplicate check"
-    ]
+    ],
+    "verifiedMake": "Nissan",
+    "makeEvidence": "https://www.modelcarworld.com/en/prod/1007872/nissan-silvia-s15-vertex-tarmac-works-10th-anniversary-blau-schwarz-1-64-tarmac-works"
   },
   {
     "manufacturer": "Tarmac Works",
@@ -28,7 +30,7 @@
     "name": "1/64 Old & New 997 Gray Metallic - Tarmac Works ROAD64",
     "variant": "Default Title",
     "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-old-new-997-gray-metallic-road64?variant=45396186890497",
-    "checked": "2026-11-26T23:38:42.266185+07:00",
+    "checked": "2026-11-26T23:52:51.758683+07:00",
     "verification": "Official SKU and scale matched; edition, release and identity review pending",
     "retailerSource": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-porsche-997-911-old-new-in-gray-metallic?variant=44375184310528",
     "official_description_evidence": [
@@ -44,6 +46,8 @@
       "car make and exact model identity",
       "edition and release evidence",
       "fresh main catalog duplicate check"
-    ]
+    ],
+    "verifiedMake": "Porsche",
+    "makeEvidence": "https://www.modelcarworld.com/en/prod/271929/tarmac-works-porsche-911-997-rwb-old-new-metallic-grey-1-64"
   }
 ]

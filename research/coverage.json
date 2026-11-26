@@ -1,26 +1,15 @@
 {
-  "time": "2026-11-26T23:38:42.266185+07:00",
+  "time": "2026-11-26T23:52:51.758683+07:00",
   "pilot_only": true,
   "version": "6.1",
-  "new_leads": 292,
+  "new_leads": 163,
   "historical_master_present": false,
-  "cumulative_count": 2700,
+  "cumulative_count": 3167,
   "review_candidates": 1331,
-  "elapsed_research_seconds": 106,
+  "elapsed_research_seconds": 312,
   "catalog_count": 304,
-  "lead_count": 2700,
+  "lead_count": 3167,
   "sources": [
-    [
-      "Tarmac Works",
-      "repeated page; checking variants for changes",
-      1
-    ],
-    [
-      "Tarmac Works",
-      "page collected",
-      1,
-      249
-    ],
     [
       "Hobby Japan",
       "repeated page; checking variants for changes",
@@ -132,6 +121,17 @@
       201
     ],
     [
+      "Tarmac Works",
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "Tarmac Works",
+      "page collected",
+      1,
+      249
+    ],
+    [
       "MINI GT",
       "blocked",
       "robots disallows"
@@ -199,26 +199,26 @@
     [
       "wholesale",
       "new listing leads",
-      4,
-      41,
-      "product links",
-      41
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      5,
-      47,
-      "product links",
-      47
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      6,
+      10,
       48,
       "product links",
       48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      11,
+      48,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      12,
+      42,
+      "product links",
+      42
     ],
     [
       "hobbysearch",
@@ -228,20 +228,20 @@
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1960_1969_guide.html",
-      114
+      "https://southtexasdiecast.com/hwguide/1972guide.html",
+      7
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1968guide.html",
-      18
+      "https://southtexasdiecast.com/hwguide/1973guide.html",
+      9
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1969guide.html",
-      24
+      "https://southtexasdiecast.com/hwguide/1974guide.html",
+      9
     ],
     [
       "Hot Wheels",
@@ -249,9 +249,16 @@
       98
     ],
     [
+      "V6.1",
+      "wholesale product pages attempted",
+      80,
+      "exact listing details",
+      159
+    ],
+    [
       "V4.1",
       "new page inspections",
-      292,
+      163,
       "pending accessible queue exhausted"
     ],
     [
@@ -300,6 +307,11 @@
       19
     ],
     [
+      "V6.1",
+      "independent exact-variant publication candidates",
+      0
+    ],
+    [
       "V5.1",
       "unique official candidates for final review",
       2,
@@ -311,7 +323,7 @@
       "historical master available",
       false,
       "combined records",
-      2700,
+      3167,
       "cross-source candidates",
       0
     ]
