@@ -1,14 +1,14 @@
 {
-  "time": "2026-11-26T23:31:38.992558+07:00",
+  "time": "2026-11-26T23:38:42.266185+07:00",
   "pilot_only": true,
   "version": "6.1",
-  "new_leads": 231,
+  "new_leads": 292,
   "historical_master_present": false,
-  "cumulative_count": 2408,
+  "cumulative_count": 2700,
   "review_candidates": 1331,
-  "elapsed_research_seconds": 107,
+  "elapsed_research_seconds": 106,
   "catalog_count": 304,
-  "lead_count": 2408,
+  "lead_count": 2700,
   "sources": [
     [
       "Tarmac Works",
@@ -199,15 +199,15 @@
     [
       "wholesale",
       "new listing leads",
-      1,
-      45,
+      4,
+      41,
       "product links",
-      45
+      41
     ],
     [
       "wholesale",
       "new listing leads",
-      2,
+      5,
       47,
       "product links",
       47
@@ -215,7 +215,7 @@
     [
       "wholesale",
       "new listing leads",
-      3,
+      6,
       48,
       "product links",
       48
@@ -228,20 +228,20 @@
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1900_1939_guide.html",
-      23
+      "https://southtexasdiecast.com/hwguide/1960_1969_guide.html",
+      114
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1940_1949_guide.html",
-      17
+      "https://southtexasdiecast.com/hwguide/1968guide.html",
+      18
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1950_1959_guide.html",
-      51
+      "https://southtexasdiecast.com/hwguide/1969guide.html",
+      24
     ],
     [
       "Hot Wheels",
@@ -251,7 +251,7 @@
     [
       "V4.1",
       "new page inspections",
-      230,
+      292,
       "pending accessible queue exhausted"
     ],
     [
@@ -311,7 +311,7 @@
       "historical master available",
       false,
       "combined records",
-      2408,
+      2700,
       "cross-source candidates",
       0
     ]
