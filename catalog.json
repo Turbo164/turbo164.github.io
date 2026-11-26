@@ -5067,5 +5067,61 @@
     "release": "Unverified",
     "sourceUrl": "https://www.tarmacworks.com/products/1-64-toyota-gr-corolla-widebody-white-designed-by-jon-sibal-tarmac-works-global64?variant=50367348474113",
     "verification": "Official SKU and scale matched; edition, release and identity review pending"
+  },
+  {
+    "id": "tarmac-works-t64gtl015bcf",
+    "number": "T64G-TL015-BCF",
+    "productCode": "T64G-TL015-BCF",
+    "brand": "Pagani",
+    "vehicleMake": "Pagani",
+    "manufacturer": "Tarmac Works",
+    "name": "1/64 Pagani Zonda R Matte Exposed Carbon Fiber - Tarmac Works GLOBAL64",
+    "variant": "Unverified",
+    "editionType": "Unverified",
+    "release": "Unverified",
+    "sourceUrl": "https://www.tarmacworks.com/products/1-64-pagani-zonda-r-matte-exposed-carbon-fiber-tarmac-works-global64?variant=50663722123521",
+    "verification": "Official SKU and scale matched; edition, release and identity review pending"
+  },
+  {
+    "id": "tarmac-works-t64ttl001lby",
+    "number": "T64T-TL001-LBY",
+    "productCode": "T64T-TL001-LBY",
+    "brand": "Mitsubishi",
+    "vehicleMake": "Mitsubishi",
+    "manufacturer": "Tarmac Works",
+    "name": "1/64 Mitsubishi Fuso Super Great LB-TRUCKS - Tarmac Works TRUCK64",
+    "variant": "Unverified",
+    "editionType": "Unverified",
+    "release": "Unverified",
+    "sourceUrl": "https://www.tarmacworks.com/products/1-64-mitsubishi-fuso-super-great-lb-trucks-tarmac-works-truck64?variant=50250702455041",
+    "verification": "Official SKU and scale matched; edition, release and identity review pending"
+  },
+  {
+    "id": "tarmac-works-t64g038gy",
+    "number": "T64G-038-GY",
+    "productCode": "T64G-038-GY",
+    "brand": "Toyota",
+    "vehicleMake": "Toyota",
+    "manufacturer": "Tarmac Works",
+    "name": "1/64 HKS Toyota GR86 Grey with Oil Can - Tarmac Works GLOBAL64",
+    "variant": "Unverified",
+    "editionType": "Unverified",
+    "release": "Unverified",
+    "sourceUrl": "https://www.tarmacworks.com/products/1-64-hks-toyota-gr86-grey-with-oil-can-tarmac-works-global64?variant=50367341363457",
+    "verification": "Official SKU and scale matched; edition, release and identity review pending"
+  },
+  {
+    "id": "tarmac-works-t64090wh",
+    "number": "T64-090-WH",
+    "productCode": "T64-090-WH",
+    "brand": "Nissan",
+    "vehicleMake": "Nissan",
+    "manufacturer": "Tarmac Works",
+    "name": "1/64 LB-WORKS NISSAN GT-R R35 type 2 White - Tarmac Works HOBBY64",
+    "variant": "Unverified",
+    "editionType": "Unverified",
+    "release": "Unverified",
+    "sourceUrl": "https://www.tarmacworks.com/products/1-64-lb-works-nissan-gt-r-r35-type-2-white-tarmac-works-hobby64?variant=50251131617537",
+    "verification": "Official SKU and scale matched; edition, release and identity review pending"
   }
 ]
