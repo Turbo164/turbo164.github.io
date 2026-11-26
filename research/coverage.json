@@ -1,68 +1,35 @@
 {
-  "time": "2026-11-26T19:05:23.940547+07:00",
+  "time": "2026-11-26T19:54:49.034380+07:00",
   "pilot_only": true,
   "version": "6.0",
   "historical_master_present": false,
   "cumulative_count": 2177,
   "review_candidates": 1331,
-  "elapsed_research_seconds": 78,
+  "elapsed_research_seconds": 74,
   "catalog_count": 304,
   "lead_count": 2177,
   "sources": [
     [
-      "Auto World",
-      "repeated page; checking variants for changes",
-      1
-    ],
-    [
-      "Auto World",
-      "page collected",
-      1,
-      101
-    ],
-    [
-      "MINI GT",
-      "repeated page; checking variants for changes",
-      1
-    ],
-    [
-      "MINI GT",
-      "page collected",
-      1,
-      250
-    ],
-    [
-      "MINI GT",
-      "repeated page; checking variants for changes",
-      2
-    ],
-    [
-      "MINI GT",
-      "page collected",
-      2,
-      62
-    ],
-    [
       "Ignition Model",
       "repeated page; checking variants for changes",
-      1
+      3
     ],
     [
       "Ignition Model",
       "page collected",
-      1,
+      3,
       250
     ],
     [
       "Ignition Model",
       "repeated page; checking variants for changes",
-      2
+      4
     ],
     [
       "Ignition Model",
       "page collected",
-      2,
-      250
+      4,
+      201
     ],
     [
       "Tarmac Works",
@@ -76,37 +43,16 @@
       249
     ],
     [
-      "Hobby Japan",
-      "repeated page; checking variants for changes",
-      1
-    ],
-    [
-      "Hobby Japan",
-      "page collected",
-      1,
-      250
-    ],
-    [
-      "Hobby Japan",
-      "repeated page; checking variants for changes",
-      2
-    ],
-    [
-      "Hobby Japan",
-      "page collected",
-      2,
-      149
-    ],
-    [
-      "Johnny Lightning",
-      "repeated page; checking variants for changes",
-      1
-    ],
-    [
       "Johnny Lightning",
       "page collected",
       1,
       133
+    ],
+    [
+      "Auto World",
+      "page collected",
+      1,
+      101
     ],
     [
       "MINI GT",
