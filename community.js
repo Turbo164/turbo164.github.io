@@ -40,7 +40,7 @@
   currentMode=mode;document.body.classList.add('community-view');$('communityPage').hidden=false;
   $('communityComposer').hidden=mode==='saved';$('topContributorsPanel').hidden=mode==='saved';$('monthlyAnnouncementPublic').hidden=mode==='saved';$('savedAnnouncementsPanel').hidden=mode!=='saved';$('communityPageTitle').textContent=mode==='saved'?t('Saved community posts'):t('Community');
   $('communityBack').hidden=mode==='saved';$('communitySavedBack').hidden=mode!=='saved';
-  message('');syncCommunityWelcome();if(mode==='feed')await Promise.all([loadPosts(),loadTopContributors(),loadMonthlyAnnouncementPublic()]);else await Promise.all([loadPosts(),loadSavedAnnouncements()]);loadCommunityWarnings();if(adminCommunity)loadAdminReports();
+  message('');syncCommunityWelcome();window.T164GiveawayPoll?.show(mode);if(mode==='feed')await Promise.all([loadPosts(),loadTopContributors(),loadMonthlyAnnouncementPublic()]);else await Promise.all([loadPosts(),loadSavedAnnouncements()]);loadCommunityWarnings();if(adminCommunity)loadAdminReports();
  }
  function hideCommunity(){document.body.classList.remove('community-view');$('communityPage').hidden=true;currentMode='feed'}
  window.openTurbo164Community=showCommunity;
@@ -54,7 +54,7 @@
   const loginId=communityUser()?.user.id||null;
   if(isIn&&loginId!==lastDailyRewardLogin){lastDailyRewardLogin=loginId;setTimeout(()=>maybeShowDailyReward(loginId),250)}
   else if(!isIn){lastDailyRewardLogin=null;if($('dailyRewardDialog').open)$('dailyRewardDialog').close()}
-  loadCommunityWarnings();checkCommunityAdmin();
+  window.T164GiveawayPoll?.authChanged();loadCommunityWarnings();checkCommunityAdmin();
  };
  window.communityRefresh=async()=>{if(document.body.classList.contains('community-view'))await Promise.all([loadPosts(),loadTopContributors(),loadMonthlyAnnouncementPublic()])};
  window.addEventListener('hashchange',()=>{const match=location.hash.match(/^#community-post-([0-9a-f-]{36})$/i);if(match)openReportedPost(match[1],false)});
