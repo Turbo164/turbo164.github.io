@@ -1,0 +1,245 @@
+{
+  "time": "2026-11-26T15:51:41.277543+07:00",
+  "pilot_only": true,
+  "version": "5.6",
+  "historical_master_present": false,
+  "cumulative_count": 2177,
+  "review_candidates": 1331,
+  "elapsed_research_seconds": 81,
+  "catalog_count": 304,
+  "lead_count": 2177,
+  "sources": [
+    [
+      "Hobby Japan",
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "Hobby Japan",
+      "page collected",
+      1,
+      250
+    ],
+    [
+      "Hobby Japan",
+      "repeated page; checking variants for changes",
+      2
+    ],
+    [
+      "Hobby Japan",
+      "page collected",
+      2,
+      149
+    ],
+    [
+      "Johnny Lightning",
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "Johnny Lightning",
+      "page collected",
+      1,
+      133
+    ],
+    [
+      "Auto World",
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "Auto World",
+      "page collected",
+      1,
+      101
+    ],
+    [
+      "MINI GT",
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "MINI GT",
+      "page collected",
+      1,
+      250
+    ],
+    [
+      "MINI GT",
+      "repeated page; checking variants for changes",
+      2
+    ],
+    [
+      "MINI GT",
+      "page collected",
+      2,
+      62
+    ],
+    [
+      "Ignition Model",
+      "repeated page; checking variants for changes",
+      3
+    ],
+    [
+      "Ignition Model",
+      "page collected",
+      3,
+      250
+    ],
+    [
+      "Ignition Model",
+      "repeated page; checking variants for changes",
+      4
+    ],
+    [
+      "Ignition Model",
+      "page collected",
+      4,
+      201
+    ],
+    [
+      "Tarmac Works",
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "Tarmac Works",
+      "page collected",
+      1,
+      249
+    ],
+    [
+      "MINI GT",
+      "blocked",
+      "robots disallows"
+    ],
+    [
+      "INNO64",
+      "blocked",
+      "robots disallows"
+    ],
+    [
+      "ARBOX",
+      "archive links",
+      0
+    ],
+    [
+      "PGM",
+      "blocked",
+      "HTTP Error 404: Not Found"
+    ],
+    [
+      "POP RACE",
+      "blocked",
+      "robots disallows"
+    ],
+    [
+      "Ignition Model",
+      "archive links",
+      0
+    ],
+    [
+      "GreenLight",
+      "blocked",
+      "robots disallows"
+    ],
+    [
+      "M2 Machines",
+      "archive links",
+      0
+    ],
+    [
+      "Kaido House",
+      "archive links",
+      0
+    ],
+    [
+      "Hot Wheels",
+      "blocked",
+      "robots disallows"
+    ],
+    [
+      "Matchbox",
+      "blocked",
+      "robots disallows"
+    ],
+    [
+      "Tomica",
+      "blocked",
+      "robots disallows"
+    ],
+    [
+      "Majorette",
+      "blocked",
+      "robots disallows"
+    ],
+    [
+      "V4.1",
+      "new page inspections",
+      0,
+      "pending accessible queue exhausted"
+    ],
+    [
+      "V4.6",
+      "product links inspected",
+      22870,
+      "exact scale/SKU matches",
+      51
+    ],
+    [
+      "V4.9",
+      "cached product requests avoided",
+      0,
+      "unique cached endpoints",
+      773
+    ],
+    [
+      "V4.5",
+      "independent storefront searches",
+      0
+    ],
+    [
+      "V4.7",
+      "manufacturer-matched review candidates",
+      5,
+      "excluded or duplicate",
+      46
+    ],
+    [
+      "V5.0",
+      "official exact variant matches",
+      2,
+      "errors",
+      0
+    ],
+    [
+      "V4.8",
+      "official-host candidates",
+      0,
+      "publication approved",
+      0
+    ],
+    [
+      "V5.2",
+      "official detail evidence records",
+      19
+    ],
+    [
+      "V5.1",
+      "unique official candidates for final review",
+      2,
+      "approved for publication",
+      0
+    ],
+    [
+      "V4.4",
+      "historical master available",
+      false,
+      "combined records",
+      2177,
+      "cross-source candidates",
+      0
+    ]
+  ],
+  "publication": "disabled; no verified master merge"
+}

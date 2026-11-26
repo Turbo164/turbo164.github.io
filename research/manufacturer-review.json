@@ -1,0 +1,526 @@
+{
+  "candidates": [
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64S-017-RS",
+      "name": "Tarmac Works 1:64 Porsche 911 964 RS in Ruby Star",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-porsche-911-964-rs-in-ruby-star?variant=46528211845376",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64S-023-WR",
+      "name": "Tarmac Works 1:64 Porsche 911 Carrera RS 2.7 Lightweight in White / Red",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-porsche-911-carrera-rs-2-7-lightweight-in-white-red?variant=46322001903872",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "JC64-TL009-WH",
+      "name": "Tarmac Works 1:64 Honda Prelude (BA4) J-Collection in White",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-honda-prelude-ba4-j-collection-in-white?variant=46761047261440",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64G-023-10TH",
+      "name": "Tarmac Works 1:64 VERTEX Silvia (S15) Tarmac Works 10th Anniversary Limited Edition",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-vertex-silvia-s15-tarmac-works-10th-anniversary-limited-edition?variant=46794798530816",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64R-TL053-GRY",
+      "name": "Tarmac Works 1/64 Porsche 997 (911) Old New in Gray Metallic",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-porsche-997-911-old-new-in-gray-metallic?variant=44375184310528",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    }
+  ],
+  "excluded": [
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64-097-BUZZ",
+      "variant_id": 48795061453056,
+      "title": "*PREORDER* Tarmac Works 1:64 LB-Kaido Works R32 SKYLINE Disney Buzz Lightyear Edition",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-lb-kaido-works-r32-skyline-disney-buzz-lightyear-edition?variant=48795061453056"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible bundle",
+      "sku": "T64-084-25SUZ13",
+      "variant_id": 47675252179200,
+      "title": "*PREORDER* Tarmac Works 1:64 Porsche 911 GT3 R \u2013 Suzuka 1000km IGTC 2025 with Trading Cards Combo",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-porsche-911-gt3-r-suzuka-1000km-intercontinental-gt-challenge-2025-model-car-with-trading-cards-combo-set?variant=47675252179200"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64-087-14ZDV33",
+      "variant_id": 47675240382720,
+      "title": "*PREORDER* Tarmac Works 1:64 Mercedes-Benz SLS AMG GT3 12h ZANDVOORT 2014 Winner",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mercedes-benz-sls-amg-gt3-12h-zandvoort-2014-winner?variant=47675240382720"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64-049-93PIR06",
+      "variant_id": 47675197489408,
+      "title": "*PREORDER* Tarmac Works 1:64 Lancia Delta HF Integrale, ECR Piancavallo Rally 1993 Winner",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-lancia-delta-hf-integrale-ecr-piancavallo-rally-1993-winner?variant=47675197489408"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64-077-98STW45",
+      "variant_id": 47083721883904,
+      "title": "Tarmac Works 1:64 Audi A4 Quattro Super Tourenwagen Cup 1998 Frank Biela",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-audi-a4-quattro-super-tourenwagen-cup-1998-frank-biela?variant=47083721883904"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64G-F070-LN2",
+      "variant_id": 47173193236736,
+      "title": "Tarmac Works 1:64 McLaren MCL60 British Grand Prix 2023 \u2013 Lando Norris",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mclaren-mcl60-british-grand-prix-2023-lando-norris?variant=47173193236736"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64R-TL022-RE",
+      "variant_id": 46883409756416,
+      "title": "Tarmac Works 1:64 Honda Integra TYPE R DC5 Custom in Red",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-honda-integra-type-r-dc5-custom-in-red?variant=46883409756416"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64G-075-GY",
+      "variant_id": 46693414076672,
+      "title": "Tarmac Works 1:64 Mazda RX-7 VeilSide Fortune7 in Grey Metallic / Black",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mazda-rx-7-veilside-fortune7-in-gray-metallic-black?variant=46693414076672"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible bundle",
+      "sku": "T64G-073-PRE",
+      "variant_id": 46761041625344,
+      "title": "Tarmac Works 1:64 Nissan S-Cargo Presentation Model Car + Trading Cards Combo Set in White",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-nissan-s-cargo-presentation-model-car-trading-cards-combo-set-in-white?variant=46761041625344"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64-082-93CHA02",
+      "variant_id": 46547353436416,
+      "title": "Tarmac Works 1:64 Ferrari 348 Challenge #2 1993",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-ferrari-348-challenge-2-1993?variant=46547353436416"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64-083-00WCS54",
+      "variant_id": 46478412349696,
+      "title": "Tarmac Works 1:64 Ferrari F355 Challenge World Challenge Series 2000 Matt Drendel",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-ferrari-f355-challenge-world-challenge-series-2000-matt-drendel?variant=46478412349696"
+    },
+    {
+      "manufacturer": "Ignition Model",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2496",
+      "variant_id": 42722144846081,
+      "title": "1/64 Mazda RX-7 (FC3S) RE Amemiya Green Metallic - Ignition Model",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/ignition-model-1-64-mazda-rx-7-fc3s-re-amemiya-green-metallic?variant=42722144846081"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64G-TL058-WH",
+      "variant_id": 46321993679104,
+      "title": "Tarmac Works 1:64 Honda Ballade Sports MUGEN CR-X PRO in White",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-honda-ballade-sports-mugen-cr-x-pro-in-white?variant=46321993679104"
+    },
+    {
+      "manufacturer": "Ignition Model",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2334",
+      "variant_id": 39951947399328,
+      "title": "1/64 PANDEM Supra (A90) Matte Blue Gray Metallic - Ignition Model",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/ignition-model-1-64-pandem-supra-a90-matte-blue-gray-metallic?variant=39951947399328"
+    },
+    {
+      "manufacturer": "Ignition Model",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2336",
+      "variant_id": 39951980757152,
+      "title": "1/64 PANDEM Supra (A90) Green Metallic - Ignition Model",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/ignition-model-1-64-pandem-supra-a90-green-metallic?variant=39951980757152"
+    },
+    {
+      "manufacturer": "Ignition Model",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2331",
+      "variant_id": 39951983214752,
+      "title": "1/64 PANDEM Supra (A90) Blue Metallic - Ignition Model",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/ignition-model-1-64-pandem-supra-a90-blue-metallic?variant=39951983214752"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64-052-SD",
+      "variant_id": 45974942482688,
+      "title": "Tarmac Works 1:64 Student Driver Datsun 510 Trans-Am B-Sedan 2.5 Challenge 2023 Daniel Wu",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-student-driver-datsun-510-trans-am-b-sedan-2-5-challenge-2023-daniel-wu?variant=45974942482688"
+    },
+    {
+      "manufacturer": "Ignition Model",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2339",
+      "variant_id": 39719568113824,
+      "title": "1/64 PANDEM Supra (A90) Pink - Ignition Model",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/ignition-model-1-64-pandem-supra-a90-pink?variant=39719568113824"
+    },
+    {
+      "manufacturer": "Ignition Model",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2338",
+      "variant_id": 39719572242592,
+      "title": "1/64 PANDEM Supra (A90) Silver with Mr. Miura - Ignition Model",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/ignition-model-1-64-pandem-supra-a90-silver-with-mr-miura?variant=39719572242592"
+    },
+    {
+      "manufacturer": "Ignition Model",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2332",
+      "variant_id": 39558077448352,
+      "title": "1/64 PANDEM Supra (A90) Red Metallic - Ignition Model",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/ignition-model-1-64-pandem-supra-a90-red-metallic?variant=39558077448352"
+    },
+    {
+      "manufacturer": "Ignition Model",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2337",
+      "variant_id": 39558089703584,
+      "title": "1/64 PANDEM Supra (A90) Yellow Green - Ignition Model",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/ignition-model-1-64-pandem-supra-a90-yellow-green?variant=39558089703584"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64G-023-GDY",
+      "variant_id": 45216259834112,
+      "title": "Tarmac Works 1:64 Nissan Silvia (S15) GReddy Special Limited Edition",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-nissan-silvia-s15-greddy-special-limited-edition?variant=45216259834112"
+    },
+    {
+      "manufacturer": "Ignition Model",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2335",
+      "variant_id": 38081843298464,
+      "title": "1/64 PANDEM Supra (A90) Matte Purple - Ignition Model",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/ignition-model-1-64-pandem-supra-a90-matte-purple?variant=38081843298464"
+    },
+    {
+      "manufacturer": "Ignition Model",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2333",
+      "variant_id": 38081850048672,
+      "title": "1/64 PANDEM Supra (A90) Pearl White - Ignition Model",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/ignition-model-1-64-pandem-supra-a90-pearl-white?variant=38081850048672"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64G-050-BK",
+      "variant_id": 44374275129600,
+      "title": "Tarmac Works 1/64 Mitsubishi Lancer GSR Evolution III in Black",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mitsubishi-lancer-gsr-evolution-in-black?variant=44374275129600"
+    },
+    {
+      "manufacturer": "Ignition Model",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG1945",
+      "variant_id": 37723450540192,
+      "title": "1/64 Honda NSX (NA1) Matte Yellow - Ignition Model",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/ignition-model-1-64-honda-nsx-na1-matte-yellow?variant=37723450540192"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64G-048-RE",
+      "variant_id": 44321011892480,
+      "title": "Tarmac Works 1/64 Mitsubishi Lancer GSR Evolution in Red",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mitsubishi-lancer-gsr-evolution-in-red?variant=44321011892480"
+    },
+    {
+      "manufacturer": "Ignition Model",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG1947",
+      "variant_id": 37723507130528,
+      "title": "1/64 Mazda RX-7 (FD3S) RE Amemiya Green Metallic - Ignition Model",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/ignition-model-1-64-mazda-rx-7-fd3s-re-amemiya-green-metallic?variant=37723507130528"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64R-052-GR",
+      "variant_id": 44616386412800,
+      "title": "Tarmac Works 1:64 Datsun 510 in Light Green",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-datsun-510-in-light-green?variant=44616386412800"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64R-041-CAMP",
+      "variant_id": 44616398012672,
+      "title": "Tarmac Works 1:64 Toyota Hilux with Camper in Grey",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-toyota-hilux-with-camper-in-grey?variant=44616398012672"
+    },
+    {
+      "manufacturer": "Ignition Model",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG1946",
+      "variant_id": 36641108721824,
+      "title": "1/64 Honda NSX (NA1) Titanium Gray - Ignition Model",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/ignition-model-1-64-honda-nsx-na1-titanium-gray?variant=36641108721824"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64G-043-SL",
+      "variant_id": 43707819131136,
+      "title": "Tarmac Works 1:64 Nissan Skyline 2000 GT-R (KPGC10) in Silver",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-nissan-skyline-2000-gt-r-kpgc10-in-silver?variant=43707819131136"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64R-055-GRE",
+      "variant_id": 43766012018944,
+      "title": "Tarmac Works 1:64 Mitsubishi Starion in Silver / Dark Red",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mitsubishi-starion-in-silver-dark-red?variant=43766012018944"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2496",
+      "variant_id": 40457651880109,
+      "title": "Ignition Model 1:64 Mazda RX-7 (FC3S) RE Amemiya in Green Metallic",
+      "variant": "Default Title",
+      "vendor": "Ignition Model",
+      "url": "https://www.modelcarshouston.com/products/preorder-mazda-rx-7-fc3s-re-amemiya-in-green-metallic?variant=40457651880109"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2331",
+      "variant_id": 39951036055725,
+      "title": "Ignition Model 1:64 Toyota GR Supra Pandem in Blue Metallic",
+      "variant": "Default Title",
+      "vendor": "Ignition Model",
+      "url": "https://www.modelcarshouston.com/products/toyota-gr-supra-pandem-in-blue-metallic?variant=39951036055725"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2336",
+      "variant_id": 39951038185645,
+      "title": "Ignition Model 1:64 Toyota GR Supra Pandem in Green Metallic",
+      "variant": "Default Title",
+      "vendor": "Ignition Model",
+      "url": "https://www.modelcarshouston.com/products/toyota-gr-supra-pandem-in-green-metallic?variant=39951038185645"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2334",
+      "variant_id": 39951041659053,
+      "title": "Ignition Model 1:64 Toyota GR Supra Pandem in Matte Blue Gray Metallic",
+      "variant": "Default Title",
+      "vendor": "Ignition Model",
+      "url": "https://www.modelcarshouston.com/products/toyota-gr-supra-pandem-in-matte-blue-gray-metallic?variant=39951041659053"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2338",
+      "variant_id": 39606921003181,
+      "title": "Ignition Model 1:64 Toyota GR Supra Pandem in Silver With Mr. Miura",
+      "variant": "Default Title",
+      "vendor": "Ignition Model",
+      "url": "https://www.modelcarshouston.com/products/toyota-gr-supra-pandem-in-silver-with-mr-miura?variant=39606921003181"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2339",
+      "variant_id": 39606939287725,
+      "title": "Ignition Model 1:64 Toyota GR Supra Pandem in Pink",
+      "variant": "Default Title",
+      "vendor": "Ignition Model",
+      "url": "https://www.modelcarshouston.com/products/toyota-gr-supra-pandem-in-pink?variant=39606939287725"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2337",
+      "variant_id": 39502682456237,
+      "title": "Ignition Model 1:64 Toyota GR Supra Pandem in Yellow Green",
+      "variant": "Default Title",
+      "vendor": "Ignition Model",
+      "url": "https://www.modelcarshouston.com/products/toyota-gr-supra-pandem-in-yellow-green?variant=39502682456237"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2332",
+      "variant_id": 39502683209901,
+      "title": "Ignition Model 1:64 Toyota GR Supra Pandem in Red Metallic",
+      "variant": "Default Title",
+      "vendor": "Ignition Model",
+      "url": "https://www.modelcarshouston.com/products/toyota-gr-supra-pandem-in-red-metallic?variant=39502683209901"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2333",
+      "variant_id": 38129014407341,
+      "title": "Ignition Model 1:64 Toyota GR Supra Pandem in Pearl White",
+      "variant": "Default Title",
+      "vendor": "Ignition Model",
+      "url": "https://www.modelcarshouston.com/products/toyota-gr-supra-pandem-in-pearl-white?variant=38129014407341"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG2335",
+      "variant_id": 38129018405037,
+      "title": "Ignition Model 1:64 Toyota GR Supra Pandem in Matte Purple",
+      "variant": "Default Title",
+      "vendor": "Ignition Model",
+      "url": "https://www.modelcarshouston.com/products/toyota-gr-supra-pandem-in-matte-purple?variant=38129018405037"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG1947",
+      "variant_id": 37961560916141,
+      "title": "Ignition Model 1:64 Mazda RX-7 FD3S RE Amemiya Green",
+      "variant": "Default Title",
+      "vendor": "Ignition Model",
+      "url": "https://www.modelcarshouston.com/products/mazda-rx-7-fd3s-re-amemiya-green?variant=37961560916141"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG1945",
+      "variant_id": 37961575301293,
+      "title": "Ignition Model 1:64 Honda NSX NA1 Titanium Matte Yellow",
+      "variant": "Default Title",
+      "vendor": "Ignition Model",
+      "url": "https://www.modelcarshouston.com/products/honda-nsx-na1-titanium-matte-yellow?variant=37961575301293"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IG1946",
+      "variant_id": 37729363329197,
+      "title": "Ignition Model 1:64 Honda NSX NA1 Titanium Matte Gray",
+      "variant": "Default Title",
+      "vendor": "Ignition Model",
+      "url": "https://www.modelcarshouston.com/products/honda-nsx-na1-titanium-matte-gray?variant=37729363329197"
+    }
+  ]
+}

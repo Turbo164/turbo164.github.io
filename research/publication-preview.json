@@ -1,0 +1,118 @@
+{
+  "eligible_verified": 0,
+  "quarantined": 763,
+  "review_candidates": 1331,
+  "additions": [],
+  "manufacturer_matched_review": [
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64S-017-RS",
+      "name": "Tarmac Works 1:64 Porsche 911 964 RS in Ruby Star",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-porsche-911-964-rs-in-ruby-star?variant=46528211845376",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64S-023-WR",
+      "name": "Tarmac Works 1:64 Porsche 911 Carrera RS 2.7 Lightweight in White / Red",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-porsche-911-carrera-rs-2-7-lightweight-in-white-red?variant=46322001903872",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "JC64-TL009-WH",
+      "name": "Tarmac Works 1:64 Honda Prelude (BA4) J-Collection in White",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-honda-prelude-ba4-j-collection-in-white?variant=46761047261440",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64G-023-10TH",
+      "name": "Tarmac Works 1:64 VERTEX Silvia (S15) Tarmac Works 10th Anniversary Limited Edition",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-vertex-silvia-s15-tarmac-works-10th-anniversary-limited-edition?variant=46794798530816",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64R-TL053-GRY",
+      "name": "Tarmac Works 1/64 Porsche 997 (911) Old New in Gray Metallic",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-porsche-997-911-old-new-in-gray-metallic?variant=44375184310528",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    }
+  ],
+  "official_final_review": [
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64G-023-10TH",
+      "name": "1/64 VERTEX Silvia (S 15) Tarmac Works 10th Anniversary - Tarmac Works GLOBAL64",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-vertex-silvia-s-15-tarmac-works-10th-anniversary-global64?variant=46968151376129",
+      "checked": "2026-11-26T15:51:41.277543+07:00",
+      "verification": "Official SKU and scale matched; edition, release and identity review pending",
+      "retailerSource": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-vertex-silvia-s15-tarmac-works-10th-anniversary-limited-edition?variant=46794798530816",
+      "official_description_evidence": [
+        "Limited production run and will never be produced again"
+      ],
+      "limited_production_hint": true,
+      "chase_mentioned_in_description": false,
+      "edition_hint": "unconfirmed",
+      "release_hint": "unconfirmed",
+      "publication_status": "NEEDS VERIFICATION",
+      "required_review": [
+        "car make and exact model identity",
+        "edition and release evidence",
+        "fresh main catalog duplicate check"
+      ]
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64R-TL053-GRY",
+      "name": "1/64 Old & New 997 Gray Metallic - Tarmac Works ROAD64",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-old-new-997-gray-metallic-road64?variant=45396186890497",
+      "checked": "2026-11-26T15:51:41.277543+07:00",
+      "verification": "Official SKU and scale matched; edition, release and identity review pending",
+      "retailerSource": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-porsche-997-911-old-new-in-gray-metallic?variant=44375184310528",
+      "official_description_evidence": [
+        "Limited production run and will never be produced again",
+        "* - Exclusive membership car included - Exclusive 24-hour early bird window on all releases - Purchase exclusive Members-Only-Models  Click \u00a0  here \u00a0for more detail"
+      ],
+      "limited_production_hint": true,
+      "chase_mentioned_in_description": false,
+      "edition_hint": "unconfirmed",
+      "release_hint": "unconfirmed",
+      "publication_status": "NEEDS VERIFICATION",
+      "required_review": [
+        "car make and exact model identity",
+        "edition and release evidence",
+        "fresh main catalog duplicate check"
+      ]
+    }
+  ],
+  "reason": "Exact product-level evidence and historical master reconciliation required before publication"
+}
