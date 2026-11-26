@@ -10,7 +10,7 @@
   zh:{title:'本月赠车投票',noPoll:'目前没有赠车投票。',create:'创建投票',question:'投票问题',choices:'投票选项',choice:'选项',addChoice:'添加选项',photo:'赠送车辆照片（可选）',selectPhoto:'选择车辆照片',publish:'发布投票',vote:'提交投票',changeVote:'投票开放期间可以更改选择。',closed:'投票已结束。',login:'登录后即可投票。',close:'结束投票',confirmClose:'结束此投票？结束后用户将无法继续投票。',empty:'请填写问题并至少添加两个选项。',choiceError:'请添加2至8个文字选项。',photoError:'请选择小于12 MB的图片。',loadError:'无法加载投票，请重试。',voteError:'无法保存投票，请重试。',createError:'无法发布投票，请重试。',closeError:'无法结束投票，请重试。',pollPublished:'投票已发布。',voteSaved:'已保存您的投票。',pollClosed:'投票已结束。',total:'票',loading:'正在加载投票…'}
  };
  const t=k=>(copy[window.T164I18N?.language]||copy.en)[k]||copy.en[k]||k;
- const client=()=>typeof db!=='undefined'?db:null;
+ const getDb=()=>typeof db!=='undefined'?db:null;
  const user=()=>typeof session!=='undefined'?session?.user||null:null;
  let root=null,isAdmin=false,currentMode='feed',selectedOption=null,activePoll=null;
  const style=document.createElement('style');
@@ -30,14 +30,14 @@
   target.innerHTML='<h2 id="t164-gp-title">'+t('title')+'</h2><p class="gp-status" role="status" aria-live="polite">'+t('loading')+'</p>';
  }
  function publicImage(path){
-  const client=client();return path&&client?client.storage.from(BUCKET).getPublicUrl(path).data.publicUrl:'';
+  const client=getDb();return path&&client?client.storage.from(BUCKET).getPublicUrl(path).data.publicUrl:'';
  }
  function make(tag,cls,text){
   const node=document.createElement(tag);if(cls)node.className=cls;if(text!=null)node.textContent=text;return node;
  }
  async function load(){
   const target=getRoot();if(!target||currentMode==='saved')return;
-  const client=client();if(!client){target.innerHTML='<h2 id="t164-gp-title">'+t('title')+'</h2><p class="gp-status">'+t('loadError')+'</p>';return}
+  const client=getDb();if(!client){target.innerHTML='<h2 id="t164-gp-title">'+t('title')+'</h2><p class="gp-status">'+t('loadError')+'</p>';return}
   setLoading();
   const me=user();
   isAdmin=false;
@@ -89,7 +89,7 @@
    const me=user();if(!me){if(typeof openLoginDialog==='function')openLoginDialog(t('login'));else say(target,t('login'));return}
    const selected=form.querySelector('input[name="giveaway-option"]:checked');if(!selected)return;
    submit.disabled=true;say(target,t('loading'));
-   const client=client(),{error}=await client.from('community_giveaway_poll_votes').upsert({poll_id:poll.id,option_id:Number(selected.value),user_id:me.id},{onConflict:'poll_id,user_id'});
+   const client=getDb(),{error}=await client.from('community_giveaway_poll_votes').upsert({poll_id:poll.id,option_id:Number(selected.value),user_id:me.id},{onConflict:'poll_id,user_id'});
    if(error){say(target,t('voteError'),true);submit.disabled=false;return}
    say(target,t('voteSaved'));await load();
   });
@@ -100,7 +100,7 @@
   if(isAdmin&&poll.is_active){
    const close=make('button','outline','× '+t('close'));close.type='button';close.addEventListener('click',async()=>{
     if(!window.confirm(t('confirmClose')))return;
-    close.disabled=true;const {error}=await client().from(POLLS).update({is_active:false}).eq('id',poll.id).eq('is_active',true);
+    close.disabled=true;const {error}=await getDb().from(POLLS).update({is_active:false}).eq('id',poll.id).eq('is_active',true);
     if(error){say(target,t('closeError'),true);close.disabled=false;return}
     await load();
    });
@@ -130,7 +130,7 @@
    if(choices.length<2||choices.length>8||choices.some(value=>!value)){say(box,t('choiceError'),true);return}
    if(photo&&(!photo.type.startsWith('image/')||photo.size>12*1024*1024)){say(box,t('photoError'),true);return}
    const button=form.querySelector('button[type=submit]');button.disabled=true;say(box,t('loading'));
-   const client=client(),me=user();let photoPath=null,pollId=null;
+   const client=getDb(),me=user();let photoPath=null,pollId=null;
    try{
     if(photo){
      const ext=photo.type==='image/png'?'png':photo.type==='image/webp'?'webp':'jpg';
