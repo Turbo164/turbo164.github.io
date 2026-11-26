@@ -218,5 +218,100 @@
       "* - Exclusive membership car included - Exclusive 24-hour early bird window on all releases - Purchase exclusive Members-Only-Models  Click \u00a0  here \u00a0for more detail"
     ],
     "status": "manual classification required; availability is not release status"
+  },
+  "https://www.tarmacworks.com/products/1-64-toyota-gr-corolla-widebody-beige-designed-by-jon-sibal-tarmac-works-global64-blister?variant=51013085888769": {
+    "checked": "2026-11-27T00:14:25.440451+07:00",
+    "sku": "T64G-063-BE-B",
+    "title": "1/64 Toyota GR Corolla Widebody Beige - Designed by Jon Sibal - Tarmac Works GLOBAL64 (Blister)",
+    "variant": "Default Title",
+    "available": true,
+    "evidence_excerpts": [
+      "Chrome Chase Version will replace normal version in random order",
+      "Limited production run and will never be produced again"
+    ],
+    "status": "manual classification required; availability is not release status"
+  },
+  "https://www.tarmacworks.com/products/1-64-hks-toyota-gr86-black-tarmac-works-global64-blister?variant=51013083595009": {
+    "checked": "2026-11-27T00:14:25.440451+07:00",
+    "sku": "T64G-038-BK2-B",
+    "title": "1/64 HKS Toyota GR86 Black - Tarmac Works GLOBAL64 (Blister)",
+    "variant": "Default Title",
+    "available": true,
+    "evidence_excerpts": [
+      "Raw Metal Chase Version will replace normal version in random order",
+      "Limited production run and will never be produced again"
+    ],
+    "status": "manual classification required; availability is not release status"
+  },
+  "https://www.tarmacworks.com/products/1-64-lb-works-720s-black-tarmac-works-hobby64?variant=50161024729345": {
+    "checked": "2026-11-27T00:14:25.440451+07:00",
+    "sku": "T64-106-BK",
+    "title": "1/64 LB-WORKS 720S Black - Tarmac Works HOBBY64",
+    "variant": "Default Title",
+    "available": false,
+    "evidence_excerpts": [
+      "Limited production run and will never be produced again"
+    ],
+    "status": "manual classification required; availability is not release status"
+  },
+  "https://www.tarmacworks.com/products/1-64-rwb-993-furusato-with-tarmac-cards-tarmac-works-hobby64?variant=50662897516801": {
+    "checked": "2026-11-27T00:14:25.440451+07:00",
+    "sku": "T64-TL017-FU",
+    "title": "1/64 RWB 993 Furusato with Tarmac Cards - Tarmac Works HOBBY64",
+    "variant": "Default Title",
+    "available": true,
+    "evidence_excerpts": [
+      "Limited production run and will never be produced again",
+      "\u2060Chase the very rare Lavender [#'d/99] car owner Sidney Hoffmann's autograph card and Nu-Disco [#'d/199] parallel card"
+    ],
+    "status": "manual classification required; availability is not release status"
+  },
+  "https://www.tarmacworks.com/products/1-64-pagani-utopia-green-metallic-tarmac-works-global64?variant=50367324389633": {
+    "checked": "2026-11-27T00:14:25.440451+07:00",
+    "sku": "T64G-TL055-GR",
+    "title": "1/64 Pagani Utopia Green Metallic - Tarmac Works GLOBAL64",
+    "variant": "Default Title",
+    "available": true,
+    "evidence_excerpts": [
+      "Limited production run and will never be produced again",
+      "No chase car"
+    ],
+    "status": "manual classification required; availability is not release status"
+  },
+  "https://www.tarmacworks.com/products/1-64-pagani-utopia-blue-metallic-tarmac-works-global64?variant=50663720386817": {
+    "checked": "2026-11-27T00:14:25.440451+07:00",
+    "sku": "T64G-TL055-BL",
+    "title": "1/64 Pagani Utopia Blue Metallic - Tarmac Works GLOBAL64",
+    "variant": "Default Title",
+    "available": true,
+    "evidence_excerpts": [
+      "Limited production run and will never be produced again",
+      "No chase car"
+    ],
+    "status": "manual classification required; availability is not release status"
+  },
+  "https://www.tarmacworks.com/products/1-64-porsche-959-silver-tarmac-works-x-ixo-models-global64?variant=50367323963649": {
+    "checked": "2026-11-27T00:14:25.440451+07:00",
+    "sku": "T64G-068-SL",
+    "title": "1/64 Porsche 959 Silver - Tarmac Works x iXO Models GLOBAL64",
+    "variant": "Default Title",
+    "available": true,
+    "evidence_excerpts": [
+      "Chrome Chase Version will replace normal version in random order",
+      "Limited production run and will never be produced again"
+    ],
+    "status": "manual classification required; availability is not release status"
+  },
+  "https://www.tarmacworks.com/products/1-64-toyota-gr-corolla-widebody-white-designed-by-jon-sibal-tarmac-works-global64?variant=50367348474113": {
+    "checked": "2026-11-27T00:14:25.440451+07:00",
+    "sku": "T64G-063-WH",
+    "title": "1/64 Toyota GR Corolla Widebody White - Designed by Jon Sibal - Tarmac Works GLOBAL64",
+    "variant": "Default Title",
+    "available": true,
+    "evidence_excerpts": [
+      "Chrome Chase Version will replace normal version in random order",
+      "Limited production run and will never be produced again"
+    ],
+    "status": "manual classification required; availability is not release status"
   }
 }
