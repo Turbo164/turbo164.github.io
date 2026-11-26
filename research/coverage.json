@@ -1,35 +1,34 @@
 {
-  "time": "2026-11-26T21:47:21.378143+07:00",
+  "time": "2026-11-26T23:07:11.065709+07:00",
   "pilot_only": true,
-  "version": "6.0",
+  "version": "6.1",
+  "new_leads": 0,
   "historical_master_present": false,
   "cumulative_count": 2177,
   "review_candidates": 1331,
-  "elapsed_research_seconds": 72,
+  "elapsed_research_seconds": 71,
   "catalog_count": 304,
   "lead_count": 2177,
   "sources": [
     [
-      "Ignition Model",
-      "repeated page; checking variants for changes",
-      1
+      "POP RACE",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
+    ],
+    [
+      "Kaido House",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
       "Ignition Model",
-      "page collected",
-      1,
-      250
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
-      "Ignition Model",
-      "repeated page; checking variants for changes",
-      2
-    ],
-    [
-      "Ignition Model",
-      "page collected",
-      2,
-      250
+      "GreenLight",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
       "Tarmac Works",
@@ -43,15 +42,19 @@
       249
     ],
     [
-      "Johnny Lightning",
-      "repeated page; checking variants for changes",
-      1
+      "Tarmac Works",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
+    ],
+    [
+      "Hobby Japan",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
       "Johnny Lightning",
-      "page collected",
-      1,
-      133
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
       "Auto World",
@@ -63,6 +66,26 @@
       "page collected",
       1,
       101
+    ],
+    [
+      "Auto World",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
+    ],
+    [
+      "PGM",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
+    ],
+    [
+      "MINI GT",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
+    ],
+    [
+      "INNO64",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
       "MINI GT",
@@ -130,9 +153,29 @@
       "robots disallows"
     ],
     [
+      "Tarmac Works",
+      "verification blocked",
+      "HTTP Error 404: Not Found"
+    ],
+    [
+      "Tarmac Works",
+      "verification blocked",
+      "HTTP Error 404: Not Found"
+    ],
+    [
+      "Tarmac Works",
+      "verification blocked",
+      "HTTP Error 404: Not Found"
+    ],
+    [
+      "Tarmac Works",
+      "verification blocked",
+      "HTTP Error 404: Not Found"
+    ],
+    [
       "V4.1",
       "new page inspections",
-      0,
+      4,
       "pending accessible queue exhausted"
     ],
     [
@@ -197,5 +240,5 @@
       0
     ]
   ],
-  "publication": "disabled; no verified master merge"
+  "publication": "pending separate publication step; see publication-result.json"
 }
