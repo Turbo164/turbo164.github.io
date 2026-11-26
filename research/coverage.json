@@ -1,35 +1,35 @@
 {
-  "time": "2026-11-26T19:54:49.034380+07:00",
+  "time": "2026-11-26T21:04:48.569664+07:00",
   "pilot_only": true,
   "version": "6.0",
   "historical_master_present": false,
   "cumulative_count": 2177,
   "review_candidates": 1331,
-  "elapsed_research_seconds": 74,
+  "elapsed_research_seconds": 75,
   "catalog_count": 304,
   "lead_count": 2177,
   "sources": [
     [
-      "Ignition Model",
+      "MINI GT",
       "repeated page; checking variants for changes",
-      3
+      1
     ],
     [
-      "Ignition Model",
+      "MINI GT",
       "page collected",
-      3,
+      1,
       250
     ],
     [
-      "Ignition Model",
+      "MINI GT",
       "repeated page; checking variants for changes",
-      4
+      2
     ],
     [
-      "Ignition Model",
+      "MINI GT",
       "page collected",
-      4,
-      201
+      2,
+      62
     ],
     [
       "Tarmac Works",
@@ -43,10 +43,42 @@
       249
     ],
     [
+      "Hobby Japan",
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "Hobby Japan",
+      "page collected",
+      1,
+      250
+    ],
+    [
+      "Hobby Japan",
+      "repeated page; checking variants for changes",
+      2
+    ],
+    [
+      "Hobby Japan",
+      "page collected",
+      2,
+      149
+    ],
+    [
+      "Johnny Lightning",
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
       "Johnny Lightning",
       "page collected",
       1,
       133
+    ],
+    [
+      "Auto World",
+      "repeated page; checking variants for changes",
+      1
     ],
     [
       "Auto World",
