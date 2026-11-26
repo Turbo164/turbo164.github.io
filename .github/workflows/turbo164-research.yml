@@ -1,10 +1,10 @@
-name: Turbo164 research V5.4
+name: Turbo164 research V5.5
 on:
   workflow_dispatch:
   schedule:
     - cron: '0 0-23/2 * * *'
 permissions:
-  contents: read
+  contents: write
   actions: read
 concurrency:
   group: turbo164-research-pilot
@@ -79,12 +79,6 @@ jobs:
             tmp.replace(master)
             statefile.write_text(json.dumps(state,indent=2))
           # V5.4: broaden discovery with additional retailer collections.
-          sources.extend([
-            ('MINI GT','https://www.diecasttalk.com/collections/mini-gt'),
-            ('POP RACE','https://www.diecasttalk.com/collections/pop-race'),
-            ('INNO64','https://www.diecasttalk.com/collections/inno64'),
-            ('Kaido House','https://www.diecasttalk.com/collections/kaido-house'),
-            ('Tarmac Works','https://www.diecasttalk.com/collections/tarmac-works')])
           # V5.2: rotate collection priority and revisit previously seen pages for changes.
           offset=state.get('collection_rotation',0)%len(sources)
           sources=sources[offset:]+sources[:offset]
@@ -541,8 +535,76 @@ jobs:
             old.unlink()
           shutil.copyfile(master,root/('Turbo164_Pilot_Leads_'+stamp+'.csv'))
           shutil.copyfile(root/'cumulative-master.csv',root/('Turbo164_Master_Catalog_'+stamp+'.csv'))
-          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'5.4','historical_master_present':historical.exists(),'cumulative_count':len(combined),'review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
+          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'5.5','historical_master_present':historical.exists(),'cumulative_count':len(combined),'review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
           print(json.dumps(log))
+          PY
+      - name: Publish verified missing models
+        run: |
+          python - <<'PY'
+          import json,pathlib,re,subprocess
+          root=pathlib.Path('research')
+          report={'published':0,'status':'not started'}
+          def git(*args):
+            return subprocess.check_output(['git',*args],text=True).strip()
+          def norm(s):
+            return re.sub(r'[^a-z0-9]','',str(s or '').lower())
+          try:
+            git('fetch','origin','main')
+            git('checkout','--detach','origin/main')
+            p=pathlib.Path('catalog.json')
+            original=json.loads(p.read_text())
+            assert isinstance(original,list)
+            ids={x['id'] for x in original}
+            assert len(ids)==len(original)
+            codes={(norm(x.get('manufacturer')),norm(x.get(k))) for x in original for k in ('number','productCode') if x.get(k)}
+            names={(norm(x.get('manufacturer')),norm(x.get('name'))) for x in original}
+            additions=[]
+            makes=['Mercedes-Benz','Alfa Romeo','Land Rover','Aston Martin','Volkswagen','Porsche','Ferrari','Nissan','Toyota','Honda','Mitsubishi','Subaru','Mazda','BMW','Audi','Ford','Chevrolet','Dodge','Lamborghini','McLaren','Hyundai','Lancia','Fiat','Peugeot','Renault','Bentley','Lotus','Pagani','Bugatti','Suzuki','Isuzu','Volvo','Acura','Lexus','Datsun','Jaguar','Pontiac','Cadillac']
+            for x in json.loads((root/'final-publication-review.json').read_text()):
+              sku=str(x.get('productCode') or '').strip()
+              title=str(x.get('name') or '').strip()
+              variant=str(x.get('variant') or '').strip()
+              url=str(x.get('sourceUrl') or '')
+              key=('tarmacworks',norm(sku))
+              if x.get('manufacturer')!='Tarmac Works' or not sku or not re.fullmatch(r'https://(?:www\.)?tarmacworks\.com/products/[^?]+\?variant=\d+',url) or not re.search(r'1\s*[:/]\s*64\b',title+' '+variant): continue
+              if key in codes or ('tarmacworks',norm(title)) in names: continue
+              if any(norm(y.get('manufacturer'))=='tarmacworks' and str(y.get('sourceUrl') or y.get('photoSource') or '').split('?')[0]==url.split('?')[0] for y in original): continue
+              if re.search(r'\b(bundle|combo|set of|multipack|assortment|trading.card|gift.set|case of)\b',title,re.I): continue
+              found=[m for m in makes if re.search(r'\b'+re.escape(m)+r'\b',title,re.I)]
+              if len(found)!=1 or variant.lower() not in ('','default title','regular','standard'): continue
+              make=found[0]
+              edition='Unverified'
+              for pattern,label in [(r'\bchase\b','Chase'),(r'\bevent (?:special|exclusive)\b','Event Exclusive'),(r'\bexclusive\b','Exclusive'),(r'\blimited edition\b','Limited Edition'),(r'\bspecial edition\b','Special Edition')]:
+                if re.search(pattern,title,re.I): edition=label;break
+              release='Preorder' if re.search(r'\bpre[- ]?order\b',title,re.I) else 'Unverified'
+              ident='tarmac-works-'+norm(sku)
+              if ident in ids: continue
+              additions.append({'id':ident,'number':sku,'productCode':sku,'brand':make,'vehicleMake':make,'manufacturer':'Tarmac Works','name':title,'variant':edition,'editionType':edition,'release':release,'sourceUrl':url,'verification':'Official exact SKU and 1:64 scale confirmed; edition and release may remain unverified.'})
+              ids.add(ident);codes.add(key);names.add(('tarmacworks',norm(title)))
+            report['eligible']=len(additions)
+            if additions:
+              merged=original+additions
+              p.write_text(json.dumps(merged,ensure_ascii=False,indent=2)+'\n')
+              assert json.loads(p.read_text())[:len(original)]==original
+              assert len({x['id'] for x in merged})==len(merged)
+              git('config','user.name','github-actions[bot]')
+              git('config','user.email','41898282+github-actions[bot]@users.noreply.github.com')
+              git('add','--','catalog.json')
+              assert git('diff','--cached','--name-only')=='catalog.json'
+              git('commit','-m','Turbo164: add verified missing 1:64 models')
+              commit=git('rev-parse','HEAD')
+              git('push','origin','HEAD:refs/heads/main')
+              git('fetch','origin','main')
+              remote=json.loads(git('show','origin/main:catalog.json'))
+              assert all(x in remote for x in additions)
+              report.update(published=len(additions),status='verified readback',commit=commit,additions=additions)
+            else: report['status']='no eligible additions'
+          except Exception as e:
+            report['status']='deferred or uncertain; do not retry blindly'
+            report['error']=str(e)
+          finally:
+            (root/'publication-result.json').write_text(json.dumps(report,indent=2))
+            print(json.dumps(report))
           PY
       - name: Save pilot checkpoint
         if: always()
