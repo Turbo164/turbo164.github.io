@@ -52,6 +52,7 @@ jobs:
             echo 'Historical checkpoint missing; preserving recovered pilot history only'
           fi
       - name: Collect research leads
+        id: collect
         run: |
           python - <<'PY'
           import csv, json, time, pathlib, urllib.request, urllib.parse, urllib.robotparser, datetime, hashlib
@@ -80,7 +81,9 @@ jobs:
             return not record or (bool(record.get('error')) and retry_due(record,12)) or (not record.get('hits') and retry_due(record,168))
           def evidence_due(record):
             return not record or (bool(record.get('error')) and retry_due(record,12))
-          catalog=json.loads(pathlib.Path('catalog.json').read_text())
+          import subprocess
+          subprocess.run(['git','fetch','origin','main:refs/remotes/origin/main'],check=True)
+          catalog=json.loads(subprocess.check_output(['git','show','refs/remotes/origin/main:catalog.json'],text=True))
           codes={(str(x.get('manufacturer','')).casefold(),str(x.get('productCode','')).casefold()) for x in catalog if x.get('productCode')}
           seen={(r['Manufacturer'],r['Source URL'],r['Product Code'],r['Color/Variant']) for r in rows}
           sources=[
@@ -249,7 +252,7 @@ jobs:
           for kind,base in extra_sources:
             page=max(1,int(state.get('v61 extra '+kind,1)))
             try:
-              for _ in range(3):
+              for _ in range(10 if kind=='wholesale' else 3):
                 if time.monotonic()>=extra_deadline: break
                 if kind=='wholesale':
                   url=base+'?page='+str(page)
@@ -297,7 +300,7 @@ jobs:
                 if link not in indexes: indexes.append(link)
               indexes.sort()
               cursor=int(state.get('v61 historical cursor',0))%max(1,len(indexes))
-              for i in range(min(3,len(indexes))):
+              for i in range(min(8,len(indexes))):
                 if time.monotonic()>=extra_deadline: break
                 url=indexes[(cursor+i)%len(indexes)]
                 count=0
@@ -339,10 +342,10 @@ jobs:
           assert wholesale_record('<h1>Ford GT 1/64 Diecast Model Car by Mini GT</h1><h2>SKU: MGT001</h2>','MINI GT','Ford GT 1/64 Diecast Model Car by Mini GT')['sku']=='MGT001'
           assert wholesale_record('<h1>Ford GT 1/64 Diecast Model Car by Mini GT</h1><h2>SKU: MGT001</h2><h2>SKU: MGT002</h2>','MINI GT','Ford GT 1/64 Diecast Model Car by Mini GT') is None
           assert wholesale_record('<h1>Ford GT 1/43 Diecast Model Car by Mini GT</h1><h2>SKU: MGT001</h2>','MINI GT','Ford GT 1/43 Diecast Model Car by Mini GT') is None
-          wholesale_deadline=min(deadline-900,time.monotonic()+6*60)
+          wholesale_deadline=min(deadline-900,time.monotonic()+9*60)
           wholesale_attempted=0
           for row in rows:
-            if time.monotonic()>=wholesale_deadline or wholesale_attempted>=80: break
+            if time.monotonic()>=wholesale_deadline or wholesale_attempted>=120: break
             url=row['Source URL'];p=urllib.parse.urlsplit(url)
             if p.scheme!='https' or p.hostname not in ('www.diecastmodelswholesale.com','diecastmodelswholesale.com'): continue
             old=wholesale_evidence.get(url,{})
@@ -462,41 +465,54 @@ jobs:
           payload_cache=json.loads(cachefile.read_text()) if cachefile.exists() else {}
           cache_hits=0
           inspection_deadline=min(deadline,started+28*60)
-          for key,record in list(searches.items()):
-            if time.monotonic()>=inspection_deadline: break
-            parts=key.split('|',2)
-            if len(parts)!=3: continue
-            base,brand,sku=parts
-            sku=sku.removesuffix('|model')
-            for hit in record.get('hits',[]):
+          def inspect_search_hits(records,inspection_deadline):
+            global cache_hits
+            for key,record in records:
               if time.monotonic()>=inspection_deadline: break
-              url=hit.get('url') or ''
-              p=urllib.parse.urlsplit(url)
-              if p.scheme!='https' or p.netloc!=urllib.parse.urlsplit(base).netloc or '/products/' not in p.path: continue
-              ident=key+'|'+url
-              if not evidence_due(hit_evidence.get(ident,{})): continue
-              try:
-                endpoint=urllib.parse.urlunsplit((p.scheme,p.netloc,p.path.rstrip('/')+'.js','',''))
-                if endpoint in payload_cache:
-                  product=payload_cache[endpoint]
-                  cache_hits+=1
-                else:
-                  product=json.loads(fetch(endpoint))
-                  payload_cache[endpoint]={'title':product.get('title'),'vendor':product.get('vendor'),'variants':[{'id':v.get('id'),'sku':v.get('sku'),'title':v.get('title')} for v in product.get('variants',[])]}
-                  cachefile.write_text(json.dumps(payload_cache))
-                matches=[]
-                for v in product.get('variants',[]):
-                  title=str(product.get('title',''))+' '+str(v.get('title',''))
-                  if str(v.get('sku') or '').strip().casefold()!=sku.strip().casefold() or scales(title)!={'64'}: continue
-                  matches.append({'sku':v['sku'],'variant_id':v.get('id'),'title':product.get('title'),'variant':v.get('title'),'vendor':product.get('vendor'),'url':url.split('?')[0]+'?variant='+str(v.get('id'))})
-                hit_evidence[ident]={'checked':now,'manufacturer_requested':brand,'matches':matches,'status':'review only; manufacturer and edition require confirmation'}
-              except Exception as e:
-                hit_evidence[ident]={'checked':now,'error':str(e),'attempts':hit_evidence.get(ident,{}).get('attempts',0)+1}
-              hitfile.write_text(json.dumps(hit_evidence,indent=2))
+              parts=key.split('|',2)
+              if len(parts)!=3: continue
+              base,brand,sku=parts
+              sku=sku.removesuffix('|model')
+              for hit in record.get('hits',[]):
+                if time.monotonic()>=inspection_deadline: break
+                url=hit.get('url') or ''
+                p=urllib.parse.urlsplit(url)
+                if p.scheme!='https' or p.netloc!=urllib.parse.urlsplit(base).netloc or '/products/' not in p.path: continue
+                ident=key+'|'+url
+                if not evidence_due(hit_evidence.get(ident,{})): continue
+                try:
+                  endpoint=urllib.parse.urlunsplit((p.scheme,p.netloc,p.path.rstrip('/')+'.js','',''))
+                  if endpoint in payload_cache:
+                    product=payload_cache[endpoint]
+                    cache_hits+=1
+                  else:
+                    product=json.loads(fetch(endpoint))
+                    payload_cache[endpoint]={'title':product.get('title'),'vendor':product.get('vendor'),'variants':[{'id':v.get('id'),'sku':v.get('sku'),'title':v.get('title')} for v in product.get('variants',[])]}
+                    cachefile.write_text(json.dumps(payload_cache))
+                  matches=[]
+                  for v in product.get('variants',[]):
+                    title=str(product.get('title',''))+' '+str(v.get('title',''))
+                    if str(v.get('sku') or '').strip().casefold()!=sku.strip().casefold() or scales(title)!={'64'}: continue
+                    matches.append({'sku':v['sku'],'variant_id':v.get('id'),'title':product.get('title'),'variant':v.get('title'),'vendor':product.get('vendor'),'url':url.split('?')[0]+'?variant='+str(v.get('id'))})
+                  hit_evidence[ident]={'checked':now,'manufacturer_requested':brand,'matches':matches,'status':'review only; manufacturer and edition require confirmation'}
+                except Exception as e:
+                  hit_evidence[ident]={'checked':now,'error':str(e),'attempts':hit_evidence.get(ident,{}).get('attempts',0)+1}
+                hitfile.write_text(json.dumps(hit_evidence,indent=2))
+          inspect_search_hits(list(searches.items()),inspection_deadline)
           log.append(['V4.6','product links inspected',len(hit_evidence),'exact scale/SKU matches',sum(len(x.get('matches',[])) for x in hit_evidence.values())])
           log.append(['V4.9','cached product requests avoided',cache_hits,'unique cached endpoints',len(payload_cache)])
           pending=defaultdict(deque)
-          for row in review:
+          # Give the previously isolated non-Shopify product SKU backlog independent searches.
+          # These temporary query rows do not change historical CSV identity columns.
+          wholesale_queries=[]
+          for url,ev in wholesale_evidence.items():
+            if not ev.get('sku') or not ev.get('manufacturer'): continue
+            if catalog_index.get((norm(ev['manufacturer']),norm(ev['sku']))): continue
+            wholesale_queries.append({'Manufacturer':ev['manufacturer'],'Product Code':ev['sku'],'Model Name':ev['title'],'Source URL':url})
+          if wholesale_queries:
+            offset=int(state.get('wholesale search cursor',0))%len(wholesale_queries)
+            wholesale_queries=wholesale_queries[offset:]+wholesale_queries[:offset]
+          for row in wholesale_queries+review:
             sku=row['Product Code'].strip()
             if not sku: continue
             for base in retailers:
@@ -505,7 +521,8 @@ jobs:
               if search_due(searches.get(key,{})): pending[row['Manufacturer']].append((row,base,key))
               elif not searches[key].get('hits') and search_due(searches.get(key+'|model',{})): pending[row['Manufacturer']].append((row,base,key+'|model'))
           search_count=0
-          search_deadline=min(deadline,started+40*60)
+          newly_searched=[]
+          search_deadline=min(deadline-600,time.monotonic()+10*60)
           while time.monotonic()<search_deadline and any(pending.values()):
             for brand,q in pending.items():
               if time.monotonic()>=search_deadline: break
@@ -522,11 +539,16 @@ jobs:
                 if any(x in str(e).lower() for x in ('403','429','robots','401','404')):
                   blocked_hosts.add(urllib.parse.urlsplit(base).netloc)
               search_count+=1
+              newly_searched.append(key)
               if search_count%10==0:
                 searchfile.write_text(json.dumps(searches,indent=2))
                 save()
           searchfile.write_text(json.dumps(searches,indent=2))
-          log.append(['V4.5','independent storefront searches',search_count])
+          if wholesale_queries:
+            state['wholesale search cursor']=(offset+max(1,search_count))%len(wholesale_queries)
+          # Inspect this round's hits immediately, not just on the next scheduled run.
+          inspect_search_hits([(key,searches[key]) for key in dict.fromkeys(newly_searched)],min(deadline-300,time.monotonic()+5*60))
+          log.append(['V4.5','independent storefront searches',search_count,'wholesale SKU backlog',len(wholesale_queries),'new search records inspected',len(set(newly_searched))])
           # Independent cross-source corroboration, not automatic approval.
           cross=defaultdict(list)
           for row in rows:
@@ -705,6 +727,15 @@ jobs:
             if not ev.get('sku'): continue
             p=proof_record(ev['manufacturer'],ev['sku'],ev['title'],ev['variant'],url)
             if p: proofs[(p['manufacturer'],p['sku'].casefold())].append(p)
+          for rec in hit_evidence.values():
+            brand=str(rec.get('manufacturer_requested') or '')
+            for match in rec.get('matches',[]):
+              if not brand or brandkey(match.get('vendor'))!=brandkey(brand): continue
+              url=str(match.get('url') or '')
+              vid=str(match.get('variant_id') or '')
+              if not vid or urllib.parse.parse_qs(urllib.parse.urlsplit(url).query).get('variant',[''])[0]!=vid: continue
+              p=proof_record(brand,str(match.get('sku') or ''),str(match.get('title') or ''),str(match.get('variant') or ''),url)
+              if p: proofs[(p['manufacturer'],p['sku'].casefold())].append(p)
           cross_ready=[]
           for key,items in proofs.items():
             if catalog_index.get((key[0],norm(key[1]))): continue
@@ -783,6 +814,7 @@ jobs:
           print(json.dumps(log))
           PY
       - name: Publish verified missing models
+        id: publish
         run: |
           python - <<'PY'
           import json,pathlib,re,subprocess,csv,urllib.parse
@@ -878,6 +910,37 @@ jobs:
           finally:
             (root/'publication-result.json').write_text(json.dumps(report,indent=2))
             print(json.dumps(report))
+          PY
+      - name: Finalize research report
+        if: always()
+        env:
+          COLLECT_OUTCOME: ${{ steps.collect.outcome }}
+          PUBLISH_OUTCOME: ${{ steps.publish.outcome }}
+        run: |
+          python - <<'PY'
+          import json,os,pathlib
+          root=pathlib.Path('research')
+          root.mkdir(exist_ok=True)
+          cp=root/'coverage.json'
+          pp=root/'publication-result.json'
+          collected=os.environ.get('COLLECT_OUTCOME')=='success'
+          executed=os.environ.get('PUBLISH_OUTCOME')=='success'
+          if collected and cp.exists():
+            coverage=json.loads(cp.read_text())
+          else:
+            coverage={'research_status':'failed or skipped','new_leads':None,'cumulative_count':None}
+          if collected and executed and pp.exists():
+            report=json.loads(pp.read_text())
+          else:
+            report={'status':'not executed or failed; see job logs','published':None,'eligible':None}
+          run={'run_id':os.environ.get('GITHUB_RUN_ID'),'run_attempt':os.environ.get('GITHUB_RUN_ATTEMPT'),'commit':os.environ.get('GITHUB_SHA')}
+          coverage.update(run,publication=report['status'],published=report.get('published'),eligible_verified=report.get('eligible'),research_status='completed' if collected else 'failed or skipped')
+          if report.get('catalog_count') is not None: coverage['catalog_count']=report['catalog_count']
+          else: coverage['catalog_count']=None
+          report.update({'workflow_run':run})
+          cp.write_text(json.dumps(coverage,indent=2))
+          pp.write_text(json.dumps(report,indent=2))
+          print(json.dumps({'publication':coverage['publication'],'published':coverage['published'],'catalog_count':coverage['catalog_count'],'run':run}))
           PY
       - name: Persist research checkpoint
         if: always()
