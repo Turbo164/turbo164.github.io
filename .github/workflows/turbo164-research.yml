@@ -311,6 +311,52 @@ jobs:
                 save()
               log.append(['Hot Wheels','historical archive index pages',len(indexes)])
             except Exception as e: log.append(['Hot Wheels','historical archive blocked',str(e)])
+          # Product-page verification for the new non-Shopify retailer.
+          wholesale_file=root/'wholesale-product-evidence.json'
+          wholesale_evidence=json.loads(wholesale_file.read_text()) if wholesale_file.exists() else {}
+          class ProductHeadings(HTMLParser):
+            def __init__(self):
+              super().__init__();self.tag=None;self.parts=[];self.headings=[]
+            def handle_starttag(self,tag,attrs):
+              if tag in ('h1','h2'):
+                self.tag=tag;self.parts=[]
+            def handle_data(self,data):
+              if self.tag: self.parts.append(data)
+            def handle_endtag(self,tag):
+              if tag==self.tag:
+                self.headings.append((tag,' '.join(' '.join(self.parts).split())))
+                self.tag=None
+          def wholesale_record(html,expected_brand,expected_title):
+            parser=ProductHeadings();parser.feed(html)
+            titles={t for tag,t in parser.headings if tag=='h1' and t}
+            skus={m.group(1) for tag,t in parser.headings if tag=='h2' and (m:=re.fullmatch(r'SKU\s*:\s*([A-Za-z0-9][A-Za-z0-9._/-]{2,60})',t,re.I))}
+            if len(titles)!=1 or len(skus)!=1: return None
+            title=next(iter(titles));sku=next(iter(skus))
+            if wholesale_brand(title).casefold()!=expected_brand.casefold(): return None
+            if re.sub(r'\W','',title.casefold())!=re.sub(r'\W','',expected_title.casefold()): return None
+            if set(re.findall(r'(?<!\d)1\s*[:/]\s*(\d{1,3})(?!\d)',title))!={'64'}: return None
+            return {'manufacturer':expected_brand,'sku':sku,'title':title,'variant':'Default Title'}
+          assert wholesale_record('<h1>Ford GT 1/64 Diecast Model Car by Mini GT</h1><h2>SKU: MGT001</h2>','MINI GT','Ford GT 1/64 Diecast Model Car by Mini GT')['sku']=='MGT001'
+          assert wholesale_record('<h1>Ford GT 1/64 Diecast Model Car by Mini GT</h1><h2>SKU: MGT001</h2><h2>SKU: MGT002</h2>','MINI GT','Ford GT 1/64 Diecast Model Car by Mini GT') is None
+          assert wholesale_record('<h1>Ford GT 1/43 Diecast Model Car by Mini GT</h1><h2>SKU: MGT001</h2>','MINI GT','Ford GT 1/43 Diecast Model Car by Mini GT') is None
+          wholesale_deadline=min(deadline-900,time.monotonic()+6*60)
+          wholesale_attempted=0
+          for row in rows:
+            if time.monotonic()>=wholesale_deadline or wholesale_attempted>=80: break
+            url=row['Source URL'];p=urllib.parse.urlsplit(url)
+            if p.scheme!='https' or p.hostname not in ('www.diecastmodelswholesale.com','diecastmodelswholesale.com'): continue
+            old=wholesale_evidence.get(url,{})
+            if old.get('sku') or (old and not retry_due(old,168)): continue
+            wholesale_attempted+=1
+            try:
+              result=wholesale_record(fetch(url).decode('utf-8','replace'),row['Manufacturer'],row['Model Name'])
+              wholesale_evidence[url]={**(result or {'status':'no unambiguous product headings'}),'checked':now}
+            except Exception as e:
+              wholesale_evidence[url]={'checked':now,'error':str(e)}
+              if any(x in str(e).lower() for x in ('403','429','robots','401')): break
+            finally:
+              wholesale_file.write_text(json.dumps(wholesale_evidence,indent=2))
+          log.append(['V6.1','wholesale product pages attempted',wholesale_attempted,'exact listing details',sum(bool(x.get('sku')) for x in wholesale_evidence.values())])
           # Re-screen all accumulated leads against current catalog, without treating SKU match as variant proof.
           for row in rows:
             sku=row['Product Code'].strip()
@@ -618,6 +664,64 @@ jobs:
             detail=details.get(item['sourceUrl'],{})
             excerpts=detail.get('evidence_excerpts',[]) if detail.get('sku')==item['productCode'] else []
             final_review.append({**item,'official_description_evidence':excerpts,'limited_production_hint':any(re.search(r'\blimited\b',x,re.I) for x in excerpts),'chase_mentioned_in_description':any(re.search(r'\bchase\b',x,re.I) for x in excerpts),'edition_hint':'chase' if re.search(r'\bchase\b',title,re.I) else 'unconfirmed','release_hint':'preorder' if re.search(r'\bpre[- ]?order\b',title,re.I) else 'unconfirmed','publication_status':'NEEDS VERIFICATION','required_review':['car make and exact model identity','edition and release evidence','fresh main catalog duplicate check']})
+          # All-brand publication requires exact SKU, explicit scale, independent vendor and identical variant evidence.
+          def canonical_model(title,brand):
+            value=str(title or '').casefold()
+            value=re.sub(r'(?<!\d)1\s*[:/]\s*64(?!\d)',' ',value)
+            value=re.sub(r'\b(?:diecast model car|die cast model car|diecast model truck|pre[- ]?order|default title)\b',' ',value)
+            value=re.sub(r'\bby\s+'+re.escape(brand.casefold())+r'\b',' ',value)
+            value=re.sub(r'\b'+re.escape(brand.casefold())+r'\b',' ',value)
+            return norm(value)
+          def default_variant(v):
+            return str(v or '').strip().casefold() in ('','default title','regular','standard')
+          def exact_pair(a,b):
+            return (a['host']!=b['host'] and a['manufacturer']==b['manufacturer'] and a['sku'].casefold()==b['sku'].casefold() and bool(a['sku']) and len(a['model'])>=10 and a['model']==b['model'] and a['variant']==b['variant'])
+          def proof_record(brand,sku,title,variant,url):
+            p=urllib.parse.urlsplit(url)
+            if p.scheme!='https' or not p.hostname or not brand or not sku or scales(title+' '+variant)!={'64'}: return None
+            if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._/-]{2,60}',sku): return None
+            if re.search(r'\b(bundle|combo|multipack|assortment|trading.card|gift.set|set of|case of|multi.pack|2.pack|3.pack|random|mystery)\b',title+' '+variant,re.I): return None
+            return {'manufacturer':brandkey(brand),'sku':sku,'model':canonical_model(title,brand),'variant':'' if default_variant(variant) else norm(variant),'host':p.hostname.removeprefix('www.'),'url':url,'title':title,'variant_title':variant,'brand':brand}
+          aa=proof_record('MINI GT','MGT001','Ford GT Red 1/64 MINI GT','Default Title','https://a.example/product?variant=1')
+          bb=proof_record('MINI GT','MGT001','Ford GT Red 1/64 Diecast Model Car by MINI GT','Default Title','https://b.example/product')
+          assert exact_pair(aa,bb)
+          assert not exact_pair(aa,{**bb,'host':aa['host']})
+          assert not exact_pair(aa,{**bb,'model':'fordgtblue'})
+          assert not exact_pair(aa,{**bb,'sku':'MGT002'})
+          assert not exact_pair(aa,{**bb,'variant':'chase'})
+          proofs=defaultdict(list)
+          for row in rows:
+            url=row['Source URL'];ev=evidence.get(url,{})
+            if ev.get('method')!='product-json-v43' or ev.get('product_scales')!=['64'] or not ev.get('sku_match') or brandkey(ev.get('vendor'))!=brandkey(row['Manufacturer']): continue
+            if not ev.get('variant_id') or urllib.parse.parse_qs(urllib.parse.urlsplit(url).query).get('variant',[''])[0]!=ev['variant_id']: continue
+            title=str(ev.get('product_title') or '')
+            variant=row['Color/Variant']
+            if variant and title.endswith(' '+variant): title=title[:-len(variant)-1]
+            p=proof_record(row['Manufacturer'],str(ev.get('variant_sku') or ''),title,variant,url)
+            if p: proofs[(p['manufacturer'],p['sku'].casefold())].append(p)
+          for url,ev in wholesale_evidence.items():
+            if not ev.get('sku'): continue
+            p=proof_record(ev['manufacturer'],ev['sku'],ev['title'],ev['variant'],url)
+            if p: proofs[(p['manufacturer'],p['sku'].casefold())].append(p)
+          cross_ready=[]
+          for key,items in proofs.items():
+            if catalog_index.get((key[0],norm(key[1]))): continue
+            pairs=[(a,b) for i,a in enumerate(items) for b in items[i+1:] if exact_pair(a,b)]
+            # Reject conflicting claims about the same manufacturer SKU, not merely ambiguous pairs.
+            if not pairs or len({(x['model'],x['variant']) for x in items})!=1: continue
+            a,b=pairs[0]
+            cross_ready.append({'manufacturer':a['brand'],'productCode':a['sku'],'name':a['title'],'variant':a['variant_title'],'sourceUrl':a['url'],'corroboratingSource':b['url'],'proofs':[a,b],'verification':'Independent exact product evidence: matching manufacturer, SKU, scale and variant','method':'cross-source-exact-v61'})
+          (root/'cross-publication-review.json').write_text(json.dumps(cross_ready,indent=2))
+          log.append(['V6.1','independent exact-variant publication candidates',len(cross_ready)])
+          # Independently reviewed exact official SKUs: the official titles omit the car make.
+          # These evidence links are product-specific, not general make aliases.
+          verified_make_refs={
+            'T64G-023-10TH':('Nissan','https://www.modelcarworld.com/en/prod/1007872/nissan-silvia-s15-vertex-tarmac-works-10th-anniversary-blau-schwarz-1-64-tarmac-works','1/64 VERTEX Silvia (S 15) Tarmac Works 10th Anniversary - Tarmac Works GLOBAL64'),
+            'T64R-TL053-GRY':('Porsche','https://www.modelcarworld.com/en/prod/271929/tarmac-works-porsche-911-997-rwb-old-new-metallic-grey-1-64','1/64 Old & New 997 Gray Metallic - Tarmac Works ROAD64')}
+          for item in final_review:
+            ref=verified_make_refs.get(item['productCode'])
+            if ref and item['name']==ref[2] and default_variant(item['variant']):
+              item.update(verifiedMake=ref[0],makeEvidence=ref[1])
           (root/'final-publication-review.json').write_text(json.dumps(final_review,indent=2))
           log.append(['V5.1','unique official candidates for final review',len(final_review),'approved for publication',0])
           # V5.4: retain official matches as actionable evidence, not just review notes.
@@ -679,7 +783,7 @@ jobs:
       - name: Publish verified missing models
         run: |
           python - <<'PY'
-          import json,pathlib,re,subprocess
+          import json,pathlib,re,subprocess,csv,urllib.parse
           root=pathlib.Path('research')
           report={'published':0,'status':'not started'}
           def git(*args):
@@ -698,27 +802,41 @@ jobs:
             names={(norm(x.get('manufacturer')),norm(x.get('name'))) for x in original}
             additions=[]
             makes=['Mercedes-Benz','Alfa Romeo','Land Rover','Aston Martin','Volkswagen','Porsche','Ferrari','Nissan','Toyota','Honda','Mitsubishi','Subaru','Mazda','BMW','Audi','Ford','Chevrolet','Dodge','Lamborghini','McLaren','Hyundai','Lancia','Fiat','Peugeot','Renault','Bentley','Lotus','Pagani','Bugatti','Suzuki','Isuzu','Volvo','Acura','Lexus','Datsun','Jaguar','Pontiac','Cadillac']
-            for x in json.loads((root/'final-publication-review.json').read_text()):
+            candidates=json.loads((root/'final-publication-review.json').read_text())+json.loads((root/'cross-publication-review.json').read_text())
+            for x in candidates:
               sku=str(x.get('productCode') or '').strip()
               title=str(x.get('name') or '').strip()
               variant=str(x.get('variant') or '').strip()
               url=str(x.get('sourceUrl') or '')
-              key=('tarmacworks',norm(sku))
-              if x.get('manufacturer')!='Tarmac Works' or not sku or not re.fullmatch(r'https://(?:www\.)?tarmacworks\.com/products/[^?]+\?variant=\d+',url) or not re.search(r'1\s*[:/]\s*64\b',title+' '+variant): continue
-              if key in codes or ('tarmacworks',norm(title)) in names: continue
-              if any(norm(y.get('manufacturer'))=='tarmacworks' and str(y.get('sourceUrl') or y.get('photoSource') or '').split('?')[0]==url.split('?')[0] for y in original): continue
+              manufacturer=str(x.get('manufacturer') or '').strip()
+              key=(norm(manufacturer),norm(sku))
+              if not manufacturer or not sku or not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._/-]{2,60}',sku) or set(re.findall(r'(?<!\d)1\s*[:/]\s*(\d{1,3})(?!\d)',title+' '+variant))!={'64'}: continue
+              if x.get('method')=='cross-source-exact-v61':
+                evidence=x.get('proofs',[])
+                if len(evidence)!=2: continue
+                a,b=evidence
+                if any(p.get('manufacturer')!=key[0] or str(p.get('sku','')).casefold()!=sku.casefold() or urllib.parse.urlsplit(p.get('url','')).scheme!='https' for p in evidence): continue
+                if a.get('host')==b.get('host') or a.get('model')!=b.get('model') or len(a.get('model',''))<10 or a.get('variant')!=b.get('variant'): continue
+                if a.get('url')!=url or b.get('url')!=x.get('corroboratingSource') or a.get('title')!=title or a.get('variant_title')!=variant: continue
+              elif manufacturer!='Tarmac Works' or not re.fullmatch(r'https://(?:www\.)?tarmacworks\.com/products/[^?]+\?variant=\d+',url): continue
+              if key in codes or (key[0],norm(title)) in names: continue
+              if any(norm(y.get('manufacturer'))==key[0] and str(y.get('sourceUrl') or y.get('photoSource') or '').split('?')[0]==url.split('?')[0] for y in original): continue
               if re.search(r'\b(bundle|combo|set of|multipack|assortment|trading.card|gift.set|case of)\b',title,re.I): continue
               found=[m for m in makes if re.search(r'\b'+re.escape(m)+r'\b',title,re.I)]
-              if len(found)!=1 or variant.lower() not in ('','default title','regular','standard'): continue
+              if not found and x.get('verifiedMake') in makes and x.get('makeEvidence'): found=[x['verifiedMake']]
+              if len(found)!=1: continue
+              if x.get('method')!='cross-source-exact-v61' and variant.lower() not in ('','default title','regular','standard'): continue
               make=found[0]
               edition='Unverified'
               for pattern,label in [(r'\bchase\b','Chase'),(r'\bevent (?:special|exclusive)\b','Event Exclusive'),(r'\bexclusive\b','Exclusive'),(r'\blimited edition\b','Limited Edition'),(r'\bspecial edition\b','Special Edition')]:
-                if re.search(pattern,title,re.I): edition=label;break
+                if re.search(pattern,title+' '+variant,re.I): edition=label;break
               release='Preorder' if re.search(r'\bpre[- ]?order\b',title,re.I) else 'Unverified'
-              ident='tarmac-works-'+norm(sku)
+              ident=re.sub(r'[^a-z0-9]+','-',manufacturer.lower()).strip('-')+'-'+norm(sku)
               if ident in ids: continue
-              additions.append({'id':ident,'number':sku,'productCode':sku,'brand':make,'vehicleMake':make,'manufacturer':'Tarmac Works','name':title,'variant':edition,'editionType':edition,'release':release,'sourceUrl':url,'verification':'Official exact SKU and 1:64 scale confirmed; edition and release may remain unverified.'})
-              ids.add(ident);codes.add(key);names.add(('tarmacworks',norm(title)))
+              addition={'id':ident,'number':sku,'productCode':sku,'brand':make,'vehicleMake':make,'manufacturer':manufacturer,'name':title,'variant':variant if variant.lower() not in ('','default title','regular','standard') else edition,'editionType':edition,'release':release,'sourceUrl':url,'verification':x.get('verification','Exact SKU and scale confirmed; edition and release may remain unverified.')}
+              if x.get('corroboratingSource') or x.get('makeEvidence'): addition['verificationSource']=x.get('corroboratingSource') or x.get('makeEvidence')
+              additions.append(addition)
+              ids.add(ident);codes.add(key);names.add((key[0],norm(title)))
             report['eligible']=len(additions)
             if additions:
               merged=original+additions
@@ -735,8 +853,23 @@ jobs:
               git('fetch','origin','main')
               remote=json.loads(git('show','origin/main:catalog.json'))
               assert all(x in remote for x in additions)
-              report.update(published=len(additions),status='verified readback',commit=commit,additions=additions)
-            else: report['status']='no eligible additions'
+              report.update(published=len(additions),status='verified readback',commit=commit,additions=additions,catalog_count=len(remote))
+            else: report.update(status='no eligible additions',catalog_count=len(original))
+            # Reconcile only exact source/SKU matches, preserving all historical identity fields.
+            if report['published']:
+              for filename in ('cumulative-master.csv','pilot-leads.csv'):
+                f=root/filename
+                if not f.exists(): continue
+                with f.open(encoding='utf-8-sig',newline='') as inp:
+                  reader=csv.DictReader(inp);fields=reader.fieldnames;records=list(reader)
+                for row in records:
+                  for entry in additions:
+                    if row['Manufacturer'].casefold()==entry['manufacturer'].casefold() and row['Product Code'].casefold()==entry['productCode'].casefold() and row['Source URL'] in (entry['sourceUrl'],entry.get('verificationSource')):
+                      row['GitHub Status']='ALREADY IN GITHUB';row['GitHub Model ID']=entry['id'];row['Verification']=entry['verification']
+                temp=f.with_suffix('.tmp')
+                with temp.open('w',encoding='utf-8',newline='') as out:
+                  writer=csv.DictWriter(out,fieldnames=fields);writer.writeheader();writer.writerows(records)
+                temp.replace(f)
           except Exception as e:
             report['status']='deferred or uncertain; do not retry blindly'
             report['error']=str(e)
