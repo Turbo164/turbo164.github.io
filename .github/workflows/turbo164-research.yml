@@ -1,4 +1,4 @@
-name: Turbo164 research V5.6
+name: Turbo164 research V6.0
 on:
   workflow_dispatch:
   schedule:
@@ -15,10 +15,21 @@ jobs:
     timeout-minutes: 65
     steps:
       - uses: actions/checkout@v4
+      - name: Validate embedded research programs
+        run: |
+          python - <<'PY'
+          import pathlib, re
+          source=pathlib.Path('.github/workflows/turbo164-research.yml').read_text()
+          blocks=re.findall(r"^          python - <<'PY'\n(.*?)^          PY$",source,re.M|re.S)
+          assert len(blocks)>=3, 'Missing embedded programs'
+          for i,block in enumerate(blocks):
+            compile('\n'.join(line[10:] for line in block.splitlines()),f'workflow-program-{i}','exec')
+          print('Embedded Python syntax checks passed')
+          PY
       - name: Recover durable research state
         run: |
           mkdir -p research
-          if git fetch origin refs/heads/turbo164-research-state; then
+          if git fetch origin refs/heads/turbo164-research-state:refs/remotes/origin/turbo164-research-state; then
             git archive FETCH_HEAD research | tar -x
           fi
       - name: Recover previous pilot state
@@ -541,7 +552,7 @@ jobs:
             old.unlink()
           shutil.copyfile(master,root/('Turbo164_Pilot_Leads_'+stamp+'.csv'))
           shutil.copyfile(root/'cumulative-master.csv',root/('Turbo164_Master_Catalog_'+stamp+'.csv'))
-          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'5.6','historical_master_present':historical.exists(),'cumulative_count':len(combined),'review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
+          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'6.0','historical_master_present':historical.exists(),'cumulative_count':len(combined),'review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
           print(json.dumps(log))
           PY
       - name: Publish verified missing models
@@ -616,6 +627,22 @@ jobs:
         if: always()
         run: |
           test -s research/cumulative-master.csv
+          python - <<'PY'
+          import csv, pathlib, subprocess, io
+          p=pathlib.Path('research/cumulative-master.csv')
+          with p.open(encoding='utf-8-sig',newline='') as f:
+            reader=csv.DictReader(f)
+            keys=('Manufacturer','Product Code','Model Name','Color/Variant','Source URL')
+            assert set(keys)<=set(reader.fieldnames or [])
+            rows=list(reader)
+          assert rows and all(None not in r for r in rows)
+          old=subprocess.run(['git','show','refs/remotes/origin/turbo164-research-state:research/cumulative-master.csv'],capture_output=True,text=True)
+          if old.returncode==0:
+            previous=list(csv.DictReader(io.StringIO(old.stdout)))
+            identity=lambda r: tuple(r.get(k,'') for k in keys)
+            assert {identity(r) for r in previous}<={identity(r) for r in rows}, 'Historical records would be lost'
+          print('Checkpoint validation passed:',len(rows))
+          PY
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           tmp=$(mktemp -d)
