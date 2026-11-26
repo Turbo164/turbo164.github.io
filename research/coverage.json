@@ -1,135 +1,69 @@
 {
-  "time": "2026-11-26T23:52:51.758683+07:00",
+  "time": "2026-11-26T23:58:29.643444+07:00",
   "pilot_only": true,
   "version": "6.1",
-  "new_leads": 163,
+  "new_leads": 190,
   "historical_master_present": false,
-  "cumulative_count": 3167,
+  "cumulative_count": 3357,
   "review_candidates": 1331,
-  "elapsed_research_seconds": 312,
+  "elapsed_research_seconds": 283,
   "catalog_count": 304,
-  "lead_count": 3167,
+  "lead_count": 3357,
   "sources": [
     [
-      "Hobby Japan",
-      "repeated page; checking variants for changes",
-      1
-    ],
-    [
-      "Hobby Japan",
-      "page collected",
-      1,
-      250
-    ],
-    [
-      "Hobby Japan",
-      "repeated page; checking variants for changes",
-      2
-    ],
-    [
-      "Hobby Japan",
-      "page collected",
-      2,
-      149
-    ],
-    [
       "Johnny Lightning",
-      "repeated page; checking variants for changes",
-      1
-    ],
-    [
-      "Johnny Lightning",
-      "page collected",
-      1,
-      133
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
       "Auto World",
-      "repeated page; checking variants for changes",
-      1
-    ],
-    [
-      "Auto World",
-      "page collected",
-      1,
-      101
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
       "MINI GT",
-      "repeated page; checking variants for changes",
-      1
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
-      "MINI GT",
-      "page collected",
-      1,
-      250
+      "INNO64",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
-      "MINI GT",
-      "repeated page; checking variants for changes",
-      2
+      "POP RACE",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
-      "MINI GT",
-      "page collected",
-      2,
-      62
-    ],
-    [
-      "Ignition Model",
-      "repeated page; checking variants for changes",
-      1
+      "Kaido House",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
       "Ignition Model",
-      "page collected",
-      1,
-      250
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
-      "Ignition Model",
-      "repeated page; checking variants for changes",
-      2
+      "GreenLight",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
-      "Ignition Model",
-      "page collected",
-      2,
-      250
-    ],
-    [
-      "Ignition Model",
-      "repeated page; checking variants for changes",
-      3
-    ],
-    [
-      "Ignition Model",
-      "page collected",
-      3,
-      250
-    ],
-    [
-      "Ignition Model",
-      "repeated page; checking variants for changes",
-      4
-    ],
-    [
-      "Ignition Model",
-      "page collected",
-      4,
-      201
+      "M2 Machines",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
       "Tarmac Works",
-      "repeated page; checking variants for changes",
-      1
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
-      "Tarmac Works",
-      "page collected",
-      1,
-      249
+      "Hobby Japan",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
       "MINI GT",
@@ -199,7 +133,7 @@
     [
       "wholesale",
       "new listing leads",
-      10,
+      13,
       48,
       "product links",
       48
@@ -207,7 +141,7 @@
     [
       "wholesale",
       "new listing leads",
-      11,
+      14,
       48,
       "product links",
       48
@@ -215,10 +149,10 @@
     [
       "wholesale",
       "new listing leads",
-      12,
-      42,
+      15,
+      48,
       "product links",
-      42
+      48
     ],
     [
       "hobbysearch",
@@ -228,19 +162,19 @@
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1972guide.html",
-      7
+      "https://southtexasdiecast.com/hwguide/1975guide.html",
+      22
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1973guide.html",
-      9
+      "https://southtexasdiecast.com/hwguide/1976guide.html",
+      15
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1974guide.html",
+      "https://southtexasdiecast.com/hwguide/1977guide.html",
       9
     ],
     [
@@ -253,12 +187,12 @@
       "wholesale product pages attempted",
       80,
       "exact listing details",
-      159
+      239
     ],
     [
       "V4.1",
       "new page inspections",
-      163,
+      190,
       "pending accessible queue exhausted"
     ],
     [
@@ -323,7 +257,7 @@
       "historical master available",
       false,
       "combined records",
-      3167,
+      3357,
       "cross-source candidates",
       0
     ]

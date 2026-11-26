@@ -1,39 +1,6 @@
 {
-  "published": 2,
-  "status": "verified readback",
-  "eligible": 2,
-  "commit": "56c2d5665a4a62218f6a3808d42f2ced75e84acd",
-  "additions": [
-    {
-      "id": "tarmac-works-t64g02310th",
-      "number": "T64G-023-10TH",
-      "productCode": "T64G-023-10TH",
-      "brand": "Nissan",
-      "vehicleMake": "Nissan",
-      "manufacturer": "Tarmac Works",
-      "name": "1/64 VERTEX Silvia (S 15) Tarmac Works 10th Anniversary - Tarmac Works GLOBAL64",
-      "variant": "Unverified",
-      "editionType": "Unverified",
-      "release": "Unverified",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-vertex-silvia-s-15-tarmac-works-10th-anniversary-global64?variant=46968151376129",
-      "verification": "Official SKU and scale matched; edition, release and identity review pending",
-      "verificationSource": "https://www.modelcarworld.com/en/prod/1007872/nissan-silvia-s15-vertex-tarmac-works-10th-anniversary-blau-schwarz-1-64-tarmac-works"
-    },
-    {
-      "id": "tarmac-works-t64rtl053gry",
-      "number": "T64R-TL053-GRY",
-      "productCode": "T64R-TL053-GRY",
-      "brand": "Porsche",
-      "vehicleMake": "Porsche",
-      "manufacturer": "Tarmac Works",
-      "name": "1/64 Old & New 997 Gray Metallic - Tarmac Works ROAD64",
-      "variant": "Unverified",
-      "editionType": "Unverified",
-      "release": "Unverified",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-old-new-997-gray-metallic-road64?variant=45396186890497",
-      "verification": "Official SKU and scale matched; edition, release and identity review pending",
-      "verificationSource": "https://www.modelcarworld.com/en/prod/271929/tarmac-works-porsche-911-997-rwb-old-new-metallic-grey-1-64"
-    }
-  ],
+  "published": 0,
+  "status": "no eligible additions",
+  "eligible": 0,
   "catalog_count": 306
 }
