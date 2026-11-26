@@ -241,30 +241,6 @@
       "photo": null
     },
     {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-TL015-BCF",
-      "name": "1/64 Pagani Zonda R Matte Exposed Carbon Fiber - Tarmac Works GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-pagani-zonda-r-matte-exposed-carbon-fiber-tarmac-works-global64?variant=50663722123521",
-      "vendor": "Tarmac Works",
-      "releaseStatus": "unconfirmed",
-      "editionType": "unconfirmed",
-      "verification": "NEEDS VERIFICATION",
-      "photo": null
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64T-TL001-LBY",
-      "name": "1/64 Mitsubishi Fuso Super Great LB-TRUCKS - Tarmac Works TRUCK64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-mitsubishi-fuso-super-great-lb-trucks-tarmac-works-truck64?variant=50250702455041",
-      "vendor": "Tarmac Works",
-      "releaseStatus": "unconfirmed",
-      "editionType": "unconfirmed",
-      "verification": "NEEDS VERIFICATION",
-      "photo": null
-    },
-    {
       "manufacturer": "Trends Hobby",
       "productCode": "241084-H",
       "name": "Trends Hobby 1:64 Porsche 911 GT3 R Manthey 1ST Phorm 2025 Le Mans 24H LMGT3 WINNER #92",
@@ -277,36 +253,156 @@
       "photo": null
     },
     {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-038-GY",
-      "name": "1/64 HKS Toyota GR86 Grey with Oil Can - Tarmac Works GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-hks-toyota-gr86-grey-with-oil-can-tarmac-works-global64?variant=50367341363457",
-      "vendor": "Tarmac Works",
-      "releaseStatus": "unconfirmed",
-      "editionType": "unconfirmed",
-      "verification": "NEEDS VERIFICATION",
-      "photo": null
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-090-WH",
-      "name": "Tarmac Works 1:64 LB-WORKS NISSAN GT-R R35 type 2 With Oil Can in White",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-lb-works-nissan-gt-r-r35-type-2-with-oil-can-in-white?variant=47675262861568",
-      "vendor": "Tarmac Works",
-      "releaseStatus": "unconfirmed",
-      "editionType": "unconfirmed",
-      "verification": "NEEDS VERIFICATION",
-      "photo": null
-    },
-    {
       "manufacturer": "Trends Hobby",
       "productCode": "241084-I",
       "name": "Trends Hobby 1:64 Porsche 911 GT3 R Le Man 24H 2025 #90 Chip Hart Racing",
       "variant": "Default Title",
       "sourceUrl": "https://www.modelcarshouston.com/products/preorder-trends-hobby-1-64-porsche-911-gt3-r-le-man-24h-2025-90-chip-hart-racing?variant=48205013876992",
       "vendor": "Trends Hobby",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "MotorHelix",
+      "productCode": "M67104",
+      "name": "MotorHelix 1:64 Subaru Impreza Wagon WRX STi Ver. VI in Cashmere Yellow",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/motorhelix-1-64-subaru-impreza-wagon-wrx-sti-ver-vi-in-cashmere-yellow?variant=50544623812864",
+      "vendor": "MotorHelix",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64R-088-RE",
+      "name": "1/64 Ferrari F40 GTE Red - Tarmac Works x iXO Models ROAD64",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.tarmacworks.com/products/1-64-ferrari-f40-gte-red-tarmac-works-x-ixo-models-road64?variant=50160933142785",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64G-TL046-SL",
+      "name": "1/64 Pagani Imola Matt Silver - Tarmac Works GLOBAL64",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.tarmacworks.com/products/1-64-pagani-imola-matt-silver-tarmac-works-global64?variant=50251417026817",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "MotorHelix",
+      "productCode": "M67103",
+      "name": "*PREORDER* MotorHelix 1:64 Subaru Impreza Wagon WRX STi Ver. VI in Arctic Silver Metallic",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-subaru-impreza-wagon-wrx-sti-ver-vi-in-arctic-silver-metallic?variant=50544615817472",
+      "vendor": "MotorHelix",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64G-066-GY",
+      "name": "1/64 Toyota GR Corolla Grey with oil can packaging - Tarmac Works GLOBAL64",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.tarmacworks.com/products/1-64-toyota-gr-corolla-grey-with-oil-can-packaging-tarmac-works-global64?variant=50161228906753",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64G-004-BR",
+      "name": "1/64 Aston Martin DBS Superleggera Brown Metallic - Tarmac Works x iXO Models GLOBAL64",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.tarmacworks.com/products/1-64-aston-martin-dbs-superleggera-brown-metallic-tarmac-works-x-ixo-models-global64?variant=50663760462081",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Hobby Japan",
+      "productCode": "HJDMD002B",
+      "name": "HobbyJapan 1/64 MAZDA RX-7 (FD3S) Project D/ INITIAL D Keisuke Takahashi  VS Wataru Akiyama",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-hobbyjapan-1-64-mazda-rx-7-fd3s-project-d-initial-d-keisuke-takahashi-vs-wataru-akiyama?variant=47486698651904",
+      "vendor": "Hobby Japan",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "MotorHelix",
+      "productCode": "M65810",
+      "name": "MotorHelix 1:64 Honda Integra Type-R (DC5) MUGEN in Phoenix Yellow",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-honda-integra-type-r-dc5-mugen-in-phoenix-yellow?variant=48159517966592",
+      "vendor": "MotorHelix",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64-106-WH",
+      "name": "1/64 LB-WORKS 720S White - Tarmac Works HOBBY64",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.tarmacworks.com/products/1-64-lb-works-720s-white-tarmac-works-hobby64?variant=50161181720833",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64-087-15MGP01",
+      "name": "1/64 Mercedes-Benz SLS AMG GT3 Macau GT Cup - FIA GT World Cup 2015 #1 Winner - Maro Engel - Tarmac Works HOBBY64",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.tarmacworks.com/products/1-64-mercedes-benz-sls-amg-gt3-macau-gt-cup-fia-gt-world-cup-2015-1-winner-maro-engel-tarmac-works-hobby64?variant=50251092197633",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "MotorHelix",
+      "productCode": "M65152",
+      "name": "MotorHelix 1:64 Honda S2000 J\u2019s Racing in Apex Blue Pearl",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-honda-s2000?variant=47254193864960",
+      "vendor": "MotorHelix",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64G-TL053-GY",
+      "name": "Tarmac Works 1:64 Koenigsegg Gemera in Grey",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-koenigsegg-gemera-grey?variant=47173218828544",
+      "vendor": "Tarmac Works",
       "releaseStatus": "unconfirmed",
       "editionType": "unconfirmed",
       "verification": "NEEDS VERIFICATION",
@@ -915,6 +1011,26 @@
       "url": "https://www.tarmacworks.com/products/1-64-toyota-gr-corolla-widebody-white-designed-by-jon-sibal-tarmac-works-global64?variant=50367348474113"
     },
     {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64G-TL015-BCF",
+      "variant_id": 50663722123521,
+      "title": "1/64 Pagani Zonda R Matte Exposed Carbon Fiber - Tarmac Works GLOBAL64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/1-64-pagani-zonda-r-matte-exposed-carbon-fiber-tarmac-works-global64?variant=50663722123521"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64T-TL001-LBY",
+      "variant_id": 50250702455041,
+      "title": "1/64 Mitsubishi Fuso Super Great LB-TRUCKS - Tarmac Works TRUCK64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/1-64-mitsubishi-fuso-super-great-lb-trucks-tarmac-works-truck64?variant=50250702455041"
+    },
+    {
       "manufacturer": "INNO64",
       "reason": "manufacturer mismatch or missing vendor",
       "sku": "IN64-997P-PPIG",
@@ -923,6 +1039,26 @@
       "variant": "Default Title",
       "vendor": "INNO Models",
       "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-porsche-997-pandem-pink-pig-edition?variant=48771933864192"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64G-038-GY",
+      "variant_id": 50367341363457,
+      "title": "1/64 HKS Toyota GR86 Grey with Oil Can - Tarmac Works GLOBAL64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/1-64-hks-toyota-gr86-grey-with-oil-can-tarmac-works-global64?variant=50367341363457"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64-090-WH",
+      "variant_id": 47675262861568,
+      "title": "Tarmac Works 1:64 LB-WORKS NISSAN GT-R R35 type 2 With Oil Can in White",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-lb-works-nissan-gt-r-r35-type-2-with-oil-can-in-white?variant=47675262861568"
     },
     {
       "manufacturer": "Schuco & Tarmac Works",
@@ -936,13 +1072,53 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "reason": "duplicate candidate SKU; inspect variants manually",
+      "reason": "possible existing SKU",
       "sku": "T64-090-WH",
       "variant_id": 50251131617537,
       "title": "1/64 LB-WORKS NISSAN GT-R R35 type 2 White - Tarmac Works HOBBY64",
       "variant": "Default Title",
       "vendor": "Tarmac Works",
       "url": "https://www.tarmacworks.com/products/1-64-lb-works-nissan-gt-r-r35-type-2-white-tarmac-works-hobby64?variant=50251131617537"
+    },
+    {
+      "manufacturer": "Schuco & Tarmac Works",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "T64S-023-WR",
+      "variant_id": 46322001903872,
+      "title": "Tarmac Works 1:64 Porsche 911 Carrera RS 2.7 Lightweight in White / Red",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-porsche-911-carrera-rs-2-7-lightweight-in-white-red?variant=46322001903872"
+    },
+    {
+      "manufacturer": "Schuco & Tarmac Works",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "T64S-023-WR",
+      "variant_id": 48763207188737,
+      "title": "1/64 Porsche 911 Carrera RS 2.7 Lightweight White/Red - Schuco x Tarmac Works COLLAB64",
+      "variant": "Default Title",
+      "vendor": "Schuco",
+      "url": "https://www.tarmacworks.com/products/1-64-porsche-911-carrera-rs-2-7-lightweight-white-red-collab64-schuco-x-tarmac-works-old-copy?variant=48763207188737"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-787B-LM91W",
+      "variant_id": 47603188924672,
+      "title": "*PREORDER* INNO64 1:64 Mazda 787B Winner At 24 Hours Le Mans 1991",
+      "variant": "Default Title",
+      "vendor": "INNO Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-mazda-787b-winner-at-24-hours-le-mans-1991?variant=47603188924672"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "duplicate candidate SKU; inspect variants manually",
+      "sku": "T64G-TL053-GY",
+      "variant_id": 48765921952001,
+      "title": "1/64 Koenigsegg Gemera Grey - Tarmac Works GLOBAL64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/1-64-koenigsegg-gemera-grey-tarmac-works-global64?variant=48765921952001"
     }
   ]
 }

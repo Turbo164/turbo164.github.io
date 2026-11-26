@@ -244,7 +244,7 @@
     "status": "manual classification required; availability is not release status"
   },
   "https://www.tarmacworks.com/products/1-64-lb-works-720s-black-tarmac-works-hobby64?variant=50161024729345": {
-    "checked": "2026-11-27T01:40:19.571844+07:00",
+    "checked": "2026-11-27T03:40:02.911041+07:00",
     "sku": "T64-106-BK",
     "title": "1/64 LB-WORKS 720S Black - Tarmac Works HOBBY64",
     "variant": "Default Title",
@@ -255,7 +255,7 @@
     "status": "manual classification required; availability is not release status"
   },
   "https://www.tarmacworks.com/products/1-64-rwb-993-furusato-with-tarmac-cards-tarmac-works-hobby64?variant=50662897516801": {
-    "checked": "2026-11-27T01:40:19.571844+07:00",
+    "checked": "2026-11-27T03:40:02.911041+07:00",
     "sku": "T64-TL017-FU",
     "title": "1/64 RWB 993 Furusato with Tarmac Cards - Tarmac Works HOBBY64",
     "variant": "Default Title",
@@ -353,6 +353,87 @@
     "checked": "2026-11-27T01:40:19.571844+07:00",
     "sku": "T64-090-WH",
     "title": "1/64 LB-WORKS NISSAN GT-R R35 type 2 White - Tarmac Works HOBBY64",
+    "variant": "Default Title",
+    "available": false,
+    "evidence_excerpts": [
+      "Limited production run and will never be produced again"
+    ],
+    "status": "manual classification required; availability is not release status"
+  },
+  "https://www.tarmacworks.com/products/1-64-ferrari-f40-gte-red-tarmac-works-x-ixo-models-road64?variant=50160933142785": {
+    "checked": "2026-11-27T03:40:02.911041+07:00",
+    "sku": "T64R-088-RE",
+    "title": "1/64 Ferrari F40 GTE Red - Tarmac Works x iXO Models ROAD64",
+    "variant": "Default Title",
+    "available": false,
+    "evidence_excerpts": [
+      "Limited production run and will never be produced again"
+    ],
+    "status": "manual classification required; availability is not release status"
+  },
+  "https://www.tarmacworks.com/products/1-64-pagani-imola-matt-silver-tarmac-works-global64?variant=50251417026817": {
+    "checked": "2026-11-27T03:40:02.911041+07:00",
+    "sku": "T64G-TL046-SL",
+    "title": "1/64 Pagani Imola Matt Silver - Tarmac Works GLOBAL64",
+    "variant": "Default Title",
+    "available": true,
+    "evidence_excerpts": [
+      "Limited production run and will never be produced again",
+      "No chase car"
+    ],
+    "status": "manual classification required; availability is not release status"
+  },
+  "https://www.tarmacworks.com/products/1-64-toyota-gr-corolla-grey-with-oil-can-packaging-tarmac-works-global64?variant=50161228906753": {
+    "checked": "2026-11-27T03:40:02.911041+07:00",
+    "sku": "T64G-066-GY",
+    "title": "1/64 Toyota GR Corolla Grey with oil can packaging - Tarmac Works GLOBAL64",
+    "variant": "Default Title",
+    "available": true,
+    "evidence_excerpts": [
+      "Limited production run and will never be produced again",
+      "No chase car"
+    ],
+    "status": "manual classification required; availability is not release status"
+  },
+  "https://www.tarmacworks.com/products/1-64-aston-martin-dbs-superleggera-brown-metallic-tarmac-works-x-ixo-models-global64?variant=50663760462081": {
+    "checked": "2026-11-27T03:40:02.911041+07:00",
+    "sku": "T64G-004-BR",
+    "title": "1/64 Aston Martin DBS Superleggera Brown Metallic - Tarmac Works x iXO Models GLOBAL64",
+    "variant": "Default Title",
+    "available": true,
+    "evidence_excerpts": [
+      "Chase Version will replace normal version in random order",
+      "Limited production run and will never be produced again"
+    ],
+    "status": "manual classification required; availability is not release status"
+  },
+  "https://www.tarmacworks.com/products/1-64-lb-works-720s-white-tarmac-works-hobby64?variant=50161181720833": {
+    "checked": "2026-11-27T03:40:02.911041+07:00",
+    "sku": "T64-106-WH",
+    "title": "1/64 LB-WORKS 720S White - Tarmac Works HOBBY64",
+    "variant": "Default Title",
+    "available": false,
+    "evidence_excerpts": [
+      "Limited production run and will never be produced again"
+    ],
+    "status": "manual classification required; availability is not release status"
+  },
+  "https://www.tarmacworks.com/products/1-64-mercedes-benz-sls-amg-gt3-macau-gt-cup-fia-gt-world-cup-2015-1-winner-maro-engel-tarmac-works-hobby64?variant=50251092197633": {
+    "checked": "2026-11-27T03:40:02.911041+07:00",
+    "sku": "T64-087-15MGP01",
+    "title": "1/64 Mercedes-Benz SLS AMG GT3 Macau GT Cup - FIA GT World Cup 2015 #1 Winner - Maro Engel - Tarmac Works HOBBY64",
+    "variant": "Default Title",
+    "available": true,
+    "evidence_excerpts": [
+      "Limited production run and will never be produced again",
+      "\u2060Chase the very rare Disco [#'d/199] parallel card"
+    ],
+    "status": "manual classification required; availability is not release status"
+  },
+  "https://www.tarmacworks.com/products/1-64-koenigsegg-gemera-grey-tarmac-works-global64?variant=48765921952001": {
+    "checked": "2026-11-27T03:40:02.911041+07:00",
+    "sku": "T64G-TL053-GY",
+    "title": "1/64 Koenigsegg Gemera Grey - Tarmac Works GLOBAL64",
     "variant": "Default Title",
     "available": false,
     "evidence_excerpts": [

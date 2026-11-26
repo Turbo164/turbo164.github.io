@@ -1,69 +1,130 @@
 {
-  "time": "2026-11-27T01:40:19.571844+07:00",
+  "time": "2026-11-27T03:40:02.911041+07:00",
   "pilot_only": true,
   "version": "6.1",
-  "new_leads": 548,
+  "new_leads": 437,
   "historical_master_present": false,
-  "cumulative_count": 4508,
-  "review_candidates": 1323,
-  "elapsed_research_seconds": 1149,
-  "catalog_count": 316,
-  "lead_count": 4508,
+  "cumulative_count": 4945,
+  "review_candidates": 1320,
+  "elapsed_research_seconds": 1223,
+  "catalog_count": 321,
+  "lead_count": 4945,
   "sources": [
     [
-      "PGM",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "MINI GT",
+      "repeated page; checking variants for changes",
+      1
     ],
     [
       "MINI GT",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "page collected",
+      1,
+      250
     ],
     [
-      "INNO64",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "MINI GT",
+      "repeated page; checking variants for changes",
+      2
     ],
     [
-      "Kaido House",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "MINI GT",
+      "page collected",
+      2,
+      62
     ],
     [
       "Ignition Model",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "repeated page; checking variants for changes",
+      1
     ],
     [
-      "GreenLight",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "Ignition Model",
+      "page collected",
+      1,
+      250
     ],
     [
-      "M2 Machines",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "Ignition Model",
+      "repeated page; checking variants for changes",
+      2
+    ],
+    [
+      "Ignition Model",
+      "page collected",
+      2,
+      250
+    ],
+    [
+      "Ignition Model",
+      "repeated page; checking variants for changes",
+      3
+    ],
+    [
+      "Ignition Model",
+      "page collected",
+      3,
+      250
+    ],
+    [
+      "Ignition Model",
+      "repeated page; checking variants for changes",
+      4
+    ],
+    [
+      "Ignition Model",
+      "page collected",
+      4,
+      201
     ],
     [
       "Tarmac Works",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "page collected",
+      1,
+      248
     ],
     [
       "Hobby Japan",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "Hobby Japan",
+      "page collected",
+      1,
+      250
+    ],
+    [
+      "Hobby Japan",
+      "repeated page; checking variants for changes",
+      2
+    ],
+    [
+      "Hobby Japan",
+      "page collected",
+      2,
+      149
     ],
     [
       "Johnny Lightning",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "Johnny Lightning",
+      "page collected",
+      1,
+      133
     ],
     [
       "Auto World",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "Auto World",
+      "page collected",
+      1,
+      101
     ],
     [
       "MINI GT",
@@ -133,71 +194,31 @@
     [
       "wholesale",
       "new listing leads",
-      26,
-      48,
+      36,
+      39,
       "product links",
-      48
+      39
     ],
     [
       "wholesale",
       "new listing leads",
-      27,
-      48,
+      37,
+      39,
       "product links",
-      48
+      39
     ],
     [
       "wholesale",
       "new listing leads",
-      28,
-      48,
+      38,
+      41,
       "product links",
-      48
+      41
     ],
     [
       "wholesale",
       "new listing leads",
-      29,
-      48,
-      "product links",
-      48
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      30,
-      46,
-      "product links",
-      46
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      31,
-      46,
-      "product links",
-      46
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      32,
-      48,
-      "product links",
-      48
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      33,
-      47,
-      "product links",
-      47
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      34,
+      39,
       37,
       "product links",
       37
@@ -205,10 +226,31 @@
     [
       "wholesale",
       "new listing leads",
-      35,
-      44,
+      40,
+      47,
       "product links",
-      44
+      47
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      41,
+      45,
+      "product links",
+      45
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      42,
+      21,
+      "product links",
+      21
+    ],
+    [
+      "wholesale",
+      "no parseable product links",
+      43
     ],
     [
       "hobbysearch",
@@ -218,50 +260,50 @@
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1985guide.html",
-      5
+      "https://southtexasdiecast.com/hwguide/1992guide.html",
+      9
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1986guide.html",
-      6
+      "https://southtexasdiecast.com/hwguide/1993guide.html",
+      19
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1987guide.html",
+      "https://southtexasdiecast.com/hwguide/1994guide.html",
       10
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1988guide.html",
-      12
+      "https://southtexasdiecast.com/hwguide/1995guide.html",
+      10
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1989guide.html",
-      13
+      "https://southtexasdiecast.com/hwguide/1996guide.html",
+      25
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1990_1999_guide.html",
-      15
+      "https://southtexasdiecast.com/hwguide/1997guide.html",
+      31
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1990guide.html",
-      8
+      "https://southtexasdiecast.com/hwguide/1998guide.html",
+      37
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1991guide.html",
-      19
+      "https://southtexasdiecast.com/hwguide/1999guide.html",
+      27
     ],
     [
       "Hot Wheels",
@@ -273,62 +315,62 @@
       "wholesale product pages attempted",
       120,
       "exact listing details",
-      478
+      597
     ],
     [
       "V4.1",
       "new page inspections",
-      548,
+      437,
       "pending accessible queue exhausted"
     ],
     [
       "V4.6",
       "product links inspected",
-      22898,
+      23036,
       "exact scale/SKU matches",
-      72
+      89
     ],
     [
       "V4.9",
       "cached product requests avoided",
       0,
       "unique cached endpoints",
-      788
+      838
     ],
     [
       "V4.5",
       "independent storefront searches",
-      279,
+      280,
       "wholesale SKU backlog",
-      467,
+      581,
       "new search records inspected",
-      279
+      280
     ],
     [
       "V4.7",
       "manufacturer-matched review candidates",
-      26,
+      34,
       "excluded or duplicate",
-      63
+      71
     ],
     [
       "V5.0",
       "official exact variant matches",
-      6,
+      9,
       "errors",
       0
     ],
     [
       "V4.8",
       "official-host candidates",
-      5,
+      8,
       "publication approved",
       0
     ],
     [
       "V5.2",
       "official detail evidence records",
-      31
+      38
     ],
     [
       "V6.1",
@@ -338,7 +380,7 @@
     [
       "V5.1",
       "unique official candidates for final review",
-      6,
+      9,
       "approved for publication",
       0
     ],
@@ -347,16 +389,16 @@
       "historical master available",
       false,
       "combined records",
-      4508,
+      4945,
       "cross-source candidates",
       0
     ]
   ],
   "publication": "verified readback",
-  "run_id": "45877754960",
+  "run_id": "45892669536",
   "run_attempt": "1",
-  "commit": "ef01be0b8a898f92351d36e4ca2bdb429f601132",
-  "published": 4,
-  "eligible_verified": 4,
+  "commit": "94558dbc5f5f356ab941c9f2176c76c4f266e9c2",
+  "published": 5,
+  "eligible_verified": 5,
   "research_status": "completed"
 }
