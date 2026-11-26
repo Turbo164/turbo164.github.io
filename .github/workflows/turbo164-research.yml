@@ -219,6 +219,98 @@ jobs:
               state[brand+' continuation']=data.get('continue',{})
               log.append([brand,'wiki leads',count]);save()
             except Exception as e: log.append([brand,'blocked',str(e)])
+          # V6.1: independent historical and mixed-brand discovery, no publication on listing evidence.
+          import re
+          def add_archive_lead(brand,title,link,note):
+            title=' '.join(title.split()).strip()
+            if not title or len(title)>350: return False
+            key=(brand,link,'','')
+            if key in seen: return False
+            seen.add(key)
+            row=dict.fromkeys(cols,'')
+            row.update({'Check Date (Bangkok)':now,'Manufacturer':brand,'Model Name':title,'Source URL':link,'Image Status':'MISSING PHOTO','GitHub Status':'NEEDS VERIFICATION','Verification':'NEEDS VERIFICATION','Notes':note,'First Seen Date':now,'Last Checked Date':now})
+            rows.append(row)
+            return True
+          def listing_links(url):
+            parser=Links()
+            parser.feed(fetch(url).decode('utf-8','replace'))
+            return [(urllib.parse.urljoin(url,h), ' '.join(t.split())) for h,t in parser.links if h]
+          def wholesale_brand(title):
+            m=re.search(r'\b1\s*[:/]\s*64\b.*?\b(?:diecast|model car|model truck|scale model)\b.*?\bby\s+([^|]{2,65})$',title,re.I)
+            if not m: return ''
+            brand=m.group(1).strip(' .')
+            aliases={'mini gt':'MINI GT','mini gt tsm':'MINI GT','inno models':'INNO64','inno64':'INNO64','tarmac works':'Tarmac Works','greenlight':'GreenLight','m2 machines':'M2 Machines','johnny lightning':'Johnny Lightning','auto world':'Auto World'}
+            return aliases.get(brand.casefold(),brand)
+          extra_deadline=min(deadline-300,time.monotonic()+8*60)
+          # Each source gets an independent durable page cursor. No year cutoff.
+          extra_sources=[
+            ('wholesale','https://www.diecastmodelswholesale.com/1-64/'),
+            ('hobbysearch','https://www.1999.co.jp/eng/search')]
+          for kind,base in extra_sources:
+            page=max(1,int(state.get('v61 extra '+kind,1)))
+            try:
+              for _ in range(3):
+                if time.monotonic()>=extra_deadline: break
+                if kind=='wholesale':
+                  url=base+'?page='+str(page)
+                else:
+                  url=base+'?'+urllib.parse.urlencode({'cat':'mini','searchkey':'1/64','sold':'0','sortid':'0','spage':page,'state':'','target':'','typ1_c':'106'})
+                candidates={}
+                for link,title in listing_links(url):
+                  p=urllib.parse.urlsplit(link)
+                  if p.scheme!='https' or p.hostname!=urllib.parse.urlsplit(base).hostname: continue
+                  link=urllib.parse.urlunsplit((p.scheme,p.netloc,p.path,'',''))
+                  if kind=='wholesale':
+                    brand=wholesale_brand(title)
+                    if not brand or p.path.count('/')!=2 or p.path=='/1-64/': continue
+                  else:
+                    if not re.fullmatch(r'/eng/\d{7,10}/?',p.path): continue
+                    if not title or not re.search(r'diecast car',title,re.I): continue
+                    brand='Unknown manufacturer'
+                  if len(title)>len(candidates.get(link,('',''))[1]): candidates[link]=(brand,title)
+                digest=hashlib.sha256(json.dumps(sorted(candidates)).encode()).hexdigest()
+                if not candidates:
+                  log.append([kind,'no parseable product links',page])
+                  state['v61 extra '+kind]=1
+                  break
+                if digest==state.get('v61 extra last '+kind) and page>1:
+                  log.append([kind,'repeated listing; reset cursor',page])
+                  state['v61 extra '+kind]=1
+                  break
+                count=sum(add_archive_lead(b,t,l,'Independent 1:64 retailer listing lead; manufacturer, SKU, exact variant and release require confirmation') for l,(b,t) in candidates.items())
+                log.append([kind,'new listing leads',page,count,'product links',len(candidates)])
+                state['v61 extra last '+kind]=digest
+                page+=1
+                state['v61 extra '+kind]=page
+                save()
+            except Exception as e:
+              log.append([kind,'blocked',str(e)])
+          # Historical casting/series index; linked casting pages are leads, not individual variants.
+          history_index='https://southtexasdiecast.com/hwguide.html'
+          if time.monotonic()<extra_deadline:
+            try:
+              indexes=[]
+              for link,title in listing_links(history_index):
+                p=urllib.parse.urlsplit(link)
+                if p.hostname not in ('southtexasdiecast.com','www.southtexasdiecast.com') or not p.path.startswith('/hwguide/') or not p.path.endswith('.html'): continue
+                if not re.search(r'(?:guide\.html|treasure|firstedition|mainline|segment)',p.path,re.I): continue
+                if link not in indexes: indexes.append(link)
+              indexes.sort()
+              cursor=int(state.get('v61 historical cursor',0))%max(1,len(indexes))
+              for i in range(min(3,len(indexes))):
+                if time.monotonic()>=extra_deadline: break
+                url=indexes[(cursor+i)%len(indexes)]
+                count=0
+                for link,title in listing_links(url):
+                  p=urllib.parse.urlsplit(link)
+                  if p.hostname not in ('southtexasdiecast.com','www.southtexasdiecast.com') or not p.path.startswith('/hwguide/') or not p.path.endswith('.html') or link==url or link in indexes: continue
+                  if len(title)<3 or re.search(r'^(home|back|next|previous|copyright|email|click here|price guide)',title,re.I): continue
+                  count+=add_archive_lead('Hot Wheels',title,link,'Historical casting/series archive lead only; individual variant, actual scale and SKU unverified')
+                state['v61 historical cursor']=(cursor+i+1)%len(indexes)
+                log.append(['Hot Wheels','historical archive leads',url,count])
+                save()
+              log.append(['Hot Wheels','historical archive index pages',len(indexes)])
+            except Exception as e: log.append(['Hot Wheels','historical archive blocked',str(e)])
           # Re-screen all accumulated leads against current catalog, without treating SKU match as variant proof.
           for row in rows:
             sku=row['Product Code'].strip()
