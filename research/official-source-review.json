@@ -478,46 +478,6 @@
     ]
   },
   {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64R-088-RE",
-    "name": "1/64 Ferrari F40 GTE Red - Tarmac Works x iXO Models ROAD64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/1-64-ferrari-f40-gte-red-tarmac-works-x-ixo-models-road64?variant=50160933142785",
-    "vendor": "Tarmac Works",
-    "releaseStatus": "unconfirmed",
-    "editionType": "unconfirmed",
-    "verification": "NEEDS VERIFICATION",
-    "photo": null,
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64G-TL046-SL",
-    "name": "1/64 Pagani Imola Matt Silver - Tarmac Works GLOBAL64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/1-64-pagani-imola-matt-silver-tarmac-works-global64?variant=50251417026817",
-    "vendor": "Tarmac Works",
-    "releaseStatus": "unconfirmed",
-    "editionType": "unconfirmed",
-    "verification": "NEEDS VERIFICATION",
-    "photo": null,
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
     "manufacturer": "MotorHelix",
     "productCode": "M67103",
     "name": "*PREORDER* MotorHelix 1:64 Subaru Impreza Wagon WRX STi Ver. VI in Arctic Silver Metallic",
@@ -533,46 +493,6 @@
     "edition_hint": "unconfirmed",
     "review_flags": [
       "official manufacturer product evidence missing",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64G-066-GY",
-    "name": "1/64 Toyota GR Corolla Grey with oil can packaging - Tarmac Works GLOBAL64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/1-64-toyota-gr-corolla-grey-with-oil-can-packaging-tarmac-works-global64?variant=50161228906753",
-    "vendor": "Tarmac Works",
-    "releaseStatus": "unconfirmed",
-    "editionType": "unconfirmed",
-    "verification": "NEEDS VERIFICATION",
-    "photo": null,
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64G-004-BR",
-    "name": "1/64 Aston Martin DBS Superleggera Brown Metallic - Tarmac Works x iXO Models GLOBAL64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/1-64-aston-martin-dbs-superleggera-brown-metallic-tarmac-works-x-ixo-models-global64?variant=50663760462081",
-    "vendor": "Tarmac Works",
-    "releaseStatus": "unconfirmed",
-    "editionType": "unconfirmed",
-    "verification": "NEEDS VERIFICATION",
-    "photo": null,
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
       "edition requires evidence",
       "exact catalog variant and car make require final review"
     ]
@@ -640,26 +560,6 @@
     ]
   },
   {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64-087-15MGP01",
-    "name": "1/64 Mercedes-Benz SLS AMG GT3 Macau GT Cup - FIA GT World Cup 2015 #1 Winner - Maro Engel - Tarmac Works HOBBY64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/1-64-mercedes-benz-sls-amg-gt3-macau-gt-cup-fia-gt-world-cup-2015-1-winner-maro-engel-tarmac-works-hobby64?variant=50251092197633",
-    "vendor": "Tarmac Works",
-    "releaseStatus": "unconfirmed",
-    "editionType": "unconfirmed",
-    "verification": "NEEDS VERIFICATION",
-    "photo": null,
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
     "manufacturer": "MotorHelix",
     "productCode": "M65152",
     "name": "MotorHelix 1:64 Honda S2000 J\u2019s Racing in Apex Blue Pearl",
@@ -686,6 +586,131 @@
     "name": "Tarmac Works 1:64 Koenigsegg Gemera in Grey",
     "variant": "Default Title",
     "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-koenigsegg-gemera-grey?variant=47173218828544",
+    "vendor": "Tarmac Works",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": false,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "official manufacturer product evidence missing",
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "Ignition Model",
+    "productCode": "IG3872",
+    "name": "Ignition Model 1:64 RWB 993  in Blue Green",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-ignition-model-1-64-rwb-993-in-blue-green?variant=46999519494400",
+    "vendor": "Ignition Model",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": false,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "official manufacturer product evidence missing",
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "Tarmac Works",
+    "productCode": "T64G-F064-GR2",
+    "name": "1/64 Mercedes-AMG F1 W14 E Performance Italian Grand Prix 2023 #63 George Russell - Tarmac Works x iXO Models GLOBAL64",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.tarmacworks.com/products/1-64-mercedes-amg-f1-w14-e-performance-italian-grand-prix-2023-63-george-russell-tarmac-works-global64?variant=48765919428865",
+    "vendor": "Tarmac Works",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": true,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "Tarmac Works",
+    "productCode": "T64G-080-TE3005",
+    "name": "Tarmac Works 1:64 Vertex Ridge TE3005 Soarer with Trading Cards",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-vertex-ridge-te3005-soarer-with-trading-card-in-red?variant=47170338488576",
+    "vendor": "Tarmac Works",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": false,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "official manufacturer product evidence missing",
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "Tarmac Works",
+    "productCode": "T64G-075-BL",
+    "name": "Tarmac Works 1:64 Mazda RX-7 VeilSide Fortune7 in Blue",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mazda-rx-7-veilside-fortune7-blue-global64?variant=47173127471360",
+    "vendor": "Tarmac Works",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": false,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "official manufacturer product evidence missing",
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "MotorHelix",
+    "productCode": "M63521",
+    "name": "MotorHelix 1:64 Nissan GT-R NISMO (R35) Special Edition 2022 NISMO in Stealth Gray",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.modelcarshouston.com/products/motorhelix-1-64-nissan-gt-r-nismo-r35-special-edition-2022-nismo-in-stealth-gray?variant=49150530715904",
+    "vendor": "MotorHelix",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": false,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "official manufacturer product evidence missing",
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "Tarmac Works",
+    "productCode": "T64-011-JV",
+    "name": "Tarmac Works 1:64 Toyota Supra Designed by Joshua Vides",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-toyota-supra-designed-by-joshua-vides?variant=47353185435904",
     "vendor": "Tarmac Works",
     "releaseStatus": "unconfirmed",
     "editionType": "unconfirmed",
