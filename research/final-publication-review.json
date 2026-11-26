@@ -1,59 +1,11 @@
 [
   {
     "manufacturer": "Tarmac Works",
-    "productCode": "T64G-063-BE-B",
-    "name": "1/64 Toyota GR Corolla Widebody Beige - Designed by Jon Sibal - Tarmac Works GLOBAL64 (Blister)",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/1-64-toyota-gr-corolla-widebody-beige-designed-by-jon-sibal-tarmac-works-global64-blister?variant=51013085888769",
-    "checked": "2026-11-27T00:14:25.440451+07:00",
-    "verification": "Official SKU and scale matched; edition, release and identity review pending",
-    "retailerSource": "https://www.tarmacworks.com/products/1-64-toyota-gr-corolla-widebody-beige-designed-by-jon-sibal-tarmac-works-global64-blister?variant=51013085888769",
-    "official_description_evidence": [
-      "Chrome Chase Version will replace normal version in random order",
-      "Limited production run and will never be produced again"
-    ],
-    "limited_production_hint": true,
-    "chase_mentioned_in_description": true,
-    "edition_hint": "unconfirmed",
-    "release_hint": "unconfirmed",
-    "publication_status": "NEEDS VERIFICATION",
-    "required_review": [
-      "car make and exact model identity",
-      "edition and release evidence",
-      "fresh main catalog duplicate check"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64G-038-BK2-B",
-    "name": "1/64 HKS Toyota GR86 Black - Tarmac Works GLOBAL64 (Blister)",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/1-64-hks-toyota-gr86-black-tarmac-works-global64-blister?variant=51013083595009",
-    "checked": "2026-11-27T00:14:25.440451+07:00",
-    "verification": "Official SKU and scale matched; edition, release and identity review pending",
-    "retailerSource": "https://www.tarmacworks.com/products/1-64-hks-toyota-gr86-black-tarmac-works-global64-blister?variant=51013083595009",
-    "official_description_evidence": [
-      "Raw Metal Chase Version will replace normal version in random order",
-      "Limited production run and will never be produced again"
-    ],
-    "limited_production_hint": true,
-    "chase_mentioned_in_description": true,
-    "edition_hint": "unconfirmed",
-    "release_hint": "unconfirmed",
-    "publication_status": "NEEDS VERIFICATION",
-    "required_review": [
-      "car make and exact model identity",
-      "edition and release evidence",
-      "fresh main catalog duplicate check"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
     "productCode": "T64-106-BK",
     "name": "1/64 LB-WORKS 720S Black - Tarmac Works HOBBY64",
     "variant": "Default Title",
     "sourceUrl": "https://www.tarmacworks.com/products/1-64-lb-works-720s-black-tarmac-works-hobby64?variant=50161024729345",
-    "checked": "2026-11-27T00:14:25.440451+07:00",
+    "checked": "2026-11-27T01:40:19.571844+07:00",
     "verification": "Official SKU and scale matched; edition, release and identity review pending",
     "retailerSource": "https://www.tarmacworks.com/products/1-64-lb-works-720s-black-tarmac-works-hobby64?variant=50161024729345",
     "official_description_evidence": [
@@ -76,7 +28,7 @@
     "name": "1/64 RWB 993 Furusato with Tarmac Cards - Tarmac Works HOBBY64",
     "variant": "Default Title",
     "sourceUrl": "https://www.tarmacworks.com/products/1-64-rwb-993-furusato-with-tarmac-cards-tarmac-works-hobby64?variant=50662897516801",
-    "checked": "2026-11-27T00:14:25.440451+07:00",
+    "checked": "2026-11-27T01:40:19.571844+07:00",
     "verification": "Official SKU and scale matched; edition, release and identity review pending",
     "retailerSource": "https://www.tarmacworks.com/products/1-64-rwb-993-furusato-with-tarmac-cards-tarmac-works-hobby64?variant=50662897516801",
     "official_description_evidence": [
@@ -96,13 +48,13 @@
   },
   {
     "manufacturer": "Tarmac Works",
-    "productCode": "T64G-TL055-GR",
-    "name": "1/64 Pagani Utopia Green Metallic - Tarmac Works GLOBAL64",
+    "productCode": "T64G-TL015-BCF",
+    "name": "1/64 Pagani Zonda R Matte Exposed Carbon Fiber - Tarmac Works GLOBAL64",
     "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/1-64-pagani-utopia-green-metallic-tarmac-works-global64?variant=50367324389633",
-    "checked": "2026-11-27T00:14:25.440451+07:00",
+    "sourceUrl": "https://www.tarmacworks.com/products/1-64-pagani-zonda-r-matte-exposed-carbon-fiber-tarmac-works-global64?variant=50663722123521",
+    "checked": "2026-11-27T01:40:19.571844+07:00",
     "verification": "Official SKU and scale matched; edition, release and identity review pending",
-    "retailerSource": "https://www.tarmacworks.com/products/1-64-pagani-utopia-green-metallic-tarmac-works-global64?variant=50367324389633",
+    "retailerSource": "https://www.tarmacworks.com/products/1-64-pagani-zonda-r-matte-exposed-carbon-fiber-tarmac-works-global64?variant=50663722123521",
     "official_description_evidence": [
       "Limited production run and will never be produced again",
       "No chase car"
@@ -120,13 +72,36 @@
   },
   {
     "manufacturer": "Tarmac Works",
-    "productCode": "T64G-TL055-BL",
-    "name": "1/64 Pagani Utopia Blue Metallic - Tarmac Works GLOBAL64",
+    "productCode": "T64T-TL001-LBY",
+    "name": "1/64 Mitsubishi Fuso Super Great LB-TRUCKS - Tarmac Works TRUCK64",
     "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/1-64-pagani-utopia-blue-metallic-tarmac-works-global64?variant=50663720386817",
-    "checked": "2026-11-27T00:14:25.440451+07:00",
+    "sourceUrl": "https://www.tarmacworks.com/products/1-64-mitsubishi-fuso-super-great-lb-trucks-tarmac-works-truck64?variant=50250702455041",
+    "checked": "2026-11-27T01:40:19.571844+07:00",
     "verification": "Official SKU and scale matched; edition, release and identity review pending",
-    "retailerSource": "https://www.tarmacworks.com/products/1-64-pagani-utopia-blue-metallic-tarmac-works-global64?variant=50663720386817",
+    "retailerSource": "https://www.tarmacworks.com/products/1-64-mitsubishi-fuso-super-great-lb-trucks-tarmac-works-truck64?variant=50250702455041",
+    "official_description_evidence": [
+      "Limited production run and will never be produced again"
+    ],
+    "limited_production_hint": true,
+    "chase_mentioned_in_description": false,
+    "edition_hint": "unconfirmed",
+    "release_hint": "unconfirmed",
+    "publication_status": "NEEDS VERIFICATION",
+    "required_review": [
+      "car make and exact model identity",
+      "edition and release evidence",
+      "fresh main catalog duplicate check"
+    ]
+  },
+  {
+    "manufacturer": "Tarmac Works",
+    "productCode": "T64G-038-GY",
+    "name": "1/64 HKS Toyota GR86 Grey with Oil Can - Tarmac Works GLOBAL64",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.tarmacworks.com/products/1-64-hks-toyota-gr86-grey-with-oil-can-tarmac-works-global64?variant=50367341363457",
+    "checked": "2026-11-27T01:40:19.571844+07:00",
+    "verification": "Official SKU and scale matched; edition, release and identity review pending",
+    "retailerSource": "https://www.tarmacworks.com/products/1-64-hks-toyota-gr86-grey-with-oil-can-tarmac-works-global64?variant=50367341363457",
     "official_description_evidence": [
       "Limited production run and will never be produced again",
       "No chase car"
@@ -144,43 +119,18 @@
   },
   {
     "manufacturer": "Tarmac Works",
-    "productCode": "T64G-068-SL",
-    "name": "1/64 Porsche 959 Silver - Tarmac Works x iXO Models GLOBAL64",
+    "productCode": "T64-090-WH",
+    "name": "1/64 LB-WORKS NISSAN GT-R R35 type 2 White - Tarmac Works HOBBY64",
     "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/1-64-porsche-959-silver-tarmac-works-x-ixo-models-global64?variant=50367323963649",
-    "checked": "2026-11-27T00:14:25.440451+07:00",
+    "sourceUrl": "https://www.tarmacworks.com/products/1-64-lb-works-nissan-gt-r-r35-type-2-white-tarmac-works-hobby64?variant=50251131617537",
+    "checked": "2026-11-27T01:40:19.571844+07:00",
     "verification": "Official SKU and scale matched; edition, release and identity review pending",
-    "retailerSource": "https://www.tarmacworks.com/products/1-64-porsche-959-silver-tarmac-works-x-ixo-models-global64?variant=50367323963649",
+    "retailerSource": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-lb-works-nissan-gt-r-r35-type-2-with-oil-can-in-white?variant=47675262861568",
     "official_description_evidence": [
-      "Chrome Chase Version will replace normal version in random order",
       "Limited production run and will never be produced again"
     ],
     "limited_production_hint": true,
-    "chase_mentioned_in_description": true,
-    "edition_hint": "unconfirmed",
-    "release_hint": "unconfirmed",
-    "publication_status": "NEEDS VERIFICATION",
-    "required_review": [
-      "car make and exact model identity",
-      "edition and release evidence",
-      "fresh main catalog duplicate check"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64G-063-WH",
-    "name": "1/64 Toyota GR Corolla Widebody White - Designed by Jon Sibal - Tarmac Works GLOBAL64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/1-64-toyota-gr-corolla-widebody-white-designed-by-jon-sibal-tarmac-works-global64?variant=50367348474113",
-    "checked": "2026-11-27T00:14:25.440451+07:00",
-    "verification": "Official SKU and scale matched; edition, release and identity review pending",
-    "retailerSource": "https://www.tarmacworks.com/products/1-64-toyota-gr-corolla-widebody-white-designed-by-jon-sibal-tarmac-works-global64?variant=50367348474113",
-    "official_description_evidence": [
-      "Chrome Chase Version will replace normal version in random order",
-      "Limited production run and will never be produced again"
-    ],
-    "limited_production_hint": true,
-    "chase_mentioned_in_description": true,
+    "chase_mentioned_in_description": false,
     "edition_hint": "unconfirmed",
     "release_hint": "unconfirmed",
     "publication_status": "NEEDS VERIFICATION",

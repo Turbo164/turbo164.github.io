@@ -49,36 +49,12 @@
       "photo": null
     },
     {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-063-BE-B",
-      "name": "1/64 Toyota GR Corolla Widebody Beige - Designed by Jon Sibal - Tarmac Works GLOBAL64 (Blister)",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-toyota-gr-corolla-widebody-beige-designed-by-jon-sibal-tarmac-works-global64-blister?variant=51013085888769",
-      "vendor": "Tarmac Works",
-      "releaseStatus": "unconfirmed",
-      "editionType": "unconfirmed",
-      "verification": "NEEDS VERIFICATION",
-      "photo": null
-    },
-    {
       "manufacturer": "Ignition Model",
       "productCode": "IG3992",
       "name": "Ignition Model 1:64 RWB 993  in Matte Pink",
       "variant": "Default Title",
       "sourceUrl": "https://www.modelcarshouston.com/products/preorder-ignition-model-1-64-rwb-993-in-matte-pink?variant=47354315374848",
       "vendor": "Ignition Model",
-      "releaseStatus": "unconfirmed",
-      "editionType": "unconfirmed",
-      "verification": "NEEDS VERIFICATION",
-      "photo": null
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-038-BK2-B",
-      "name": "1/64 HKS Toyota GR86 Black - Tarmac Works GLOBAL64 (Blister)",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-hks-toyota-gr86-black-tarmac-works-global64-blister?variant=51013083595009",
-      "vendor": "Tarmac Works",
       "releaseStatus": "unconfirmed",
       "editionType": "unconfirmed",
       "verification": "NEEDS VERIFICATION",
@@ -133,48 +109,12 @@
       "photo": null
     },
     {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-TL055-GR",
-      "name": "1/64 Pagani Utopia Green Metallic - Tarmac Works GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-pagani-utopia-green-metallic-tarmac-works-global64?variant=50367324389633",
-      "vendor": "Tarmac Works",
-      "releaseStatus": "unconfirmed",
-      "editionType": "unconfirmed",
-      "verification": "NEEDS VERIFICATION",
-      "photo": null
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-TL055-BL",
-      "name": "1/64 Pagani Utopia Blue Metallic - Tarmac Works GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-pagani-utopia-blue-metallic-tarmac-works-global64?variant=50663720386817",
-      "vendor": "Tarmac Works",
-      "releaseStatus": "unconfirmed",
-      "editionType": "unconfirmed",
-      "verification": "NEEDS VERIFICATION",
-      "photo": null
-    },
-    {
       "manufacturer": "Hobby Japan",
       "productCode": "HJDM005B-30",
       "name": "*PREORDER* Hobby Japan 1:64 Honda Civic Type-R (FL5) MUGEN Group B (2025) in Racing Blue Pearl",
       "variant": "Default Title",
       "sourceUrl": "https://www.modelcarshouston.com/products/preorder-hobby-japan-1-64-honda-civic-type-r-fl5-mugen-group-b-2025-in-racing-blue-pearl?variant=48762101629184",
       "vendor": "Hobby Japan",
-      "releaseStatus": "unconfirmed",
-      "editionType": "unconfirmed",
-      "verification": "NEEDS VERIFICATION",
-      "photo": null
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-068-SL",
-      "name": "1/64 Porsche 959 Silver - Tarmac Works x iXO Models GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-porsche-959-silver-tarmac-works-x-ixo-models-global64?variant=50367323963649",
-      "vendor": "Tarmac Works",
       "releaseStatus": "unconfirmed",
       "editionType": "unconfirmed",
       "verification": "NEEDS VERIFICATION",
@@ -193,11 +133,131 @@
       "photo": null
     },
     {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-063-WH",
-      "name": "1/64 Toyota GR Corolla Widebody White - Designed by Jon Sibal - Tarmac Works GLOBAL64",
+      "manufacturer": "Trends Hobby",
+      "productCode": "241084-J",
+      "name": "Trends Hobby 1:64 Porsche 911 GT3 R Iron Dames 2025 Le Mans 24H LMGT3 #85",
       "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-toyota-gr-corolla-widebody-white-designed-by-jon-sibal-tarmac-works-global64?variant=50367348474113",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-trends-hobby-1-64-porsche-911-gt3-r-iron-dames-2025-le-mans-24h-lmgt3-85?variant=48205016269056",
+      "vendor": "Trends Hobby",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Trends Hobby",
+      "productCode": "241086-B",
+      "name": "Trends Hobby 1:64 Porsche 918 Spyder in Black",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-trends-hobby-1-64-porsche-918-spyder-in-black?variant=48205009453312",
+      "vendor": "Trends Hobby",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "MotorHelix",
+      "productCode": "M65029",
+      "name": "MotorHelix 1:64 Honda Civic Type-R (EK9) J's Racing in White",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/motorhelix-1-64-honda-civic-type-r-ek9-js-racing-in-white?variant=49754921632000",
+      "vendor": "MotorHelix",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Johnny Lightning",
+      "productCode": "JLMC035B",
+      "name": "Johnny Lightning Muscle Cars USA 2025 Release 3 Set B (6-Car Sealed Case) 1:64 Diecast",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-usa-2025-release-3-set-b-6-car-sealed-case-1-64-diecast-due-late-august-2026?variant=48220457566398",
+      "vendor": "JohnnyLightning",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Hobby Japan",
+      "productCode": "HJDMD009",
+      "name": "Hobby Japan 1:64 Toyota MR2 (SW20) Initial D Kai Kogashiwa VS Takumi Fujiwara",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-hobby-japan-1-64-toyota-mr2-sw20-initial-d-kai-kogashiwa-vs-takumi-fujiwara?variant=47658079289600",
+      "vendor": "Hobby Japan",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Johnny Lightning",
+      "productCode": "JLMC035A",
+      "name": "Johnny Lightning Muscle Cars USA 2025 Release 3 Set A (6-Car Sealed Case) 1:64 Diecast",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-usa-2025-release-3-set-a-6-car-sealed-case-1-64-diecast-due-late-august-2026?variant=48220368076990",
+      "vendor": "JohnnyLightning",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Hobby Japan",
+      "productCode": "HJDMD003B",
+      "name": "Hobby Japan 1:64 MAZDA RX-7 (FC3S) RedSuns/ Initial D Ryosuke Takahashi VS Kyoichi Sudou",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-hobby-japan-1-64-mazda-rx-7-fc3s-redsuns-initial-d-ryosuke-takahashi-vs-kyoichi-sudou?variant=47658076504320",
+      "vendor": "Hobby Japan",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Hobby Japan",
+      "productCode": "HJDMD001F",
+      "name": "Hobby Japan 1:64 Toyota SPRINTER TRUENO (AE86) INITIAL D Takumi Fujiwara AND Natsuki Mogi",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-toyota-1-64-sprinter-trueno-ae86-initial-d-takumi-fujiwara-and-natsuki-mogi?variant=47623139655936",
+      "vendor": "Hobby Japan",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Trends Hobby",
+      "productCode": "241086-A",
+      "name": "Trends Hobby 1:64 Porsche 918 Spyder in Acid Green",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-trends-hobby-1-64-porsche-918-spyder-in-acid-green?variant=48205005684992",
+      "vendor": "Trends Hobby",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64G-TL015-BCF",
+      "name": "1/64 Pagani Zonda R Matte Exposed Carbon Fiber - Tarmac Works GLOBAL64",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.tarmacworks.com/products/1-64-pagani-zonda-r-matte-exposed-carbon-fiber-tarmac-works-global64?variant=50663722123521",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64T-TL001-LBY",
+      "name": "1/64 Mitsubishi Fuso Super Great LB-TRUCKS - Tarmac Works TRUCK64",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.tarmacworks.com/products/1-64-mitsubishi-fuso-super-great-lb-trucks-tarmac-works-truck64?variant=50250702455041",
       "vendor": "Tarmac Works",
       "releaseStatus": "unconfirmed",
       "editionType": "unconfirmed",
@@ -206,10 +266,46 @@
     },
     {
       "manufacturer": "Trends Hobby",
-      "productCode": "241084-J",
-      "name": "Trends Hobby 1:64 Porsche 911 GT3 R Iron Dames 2025 Le Mans 24H LMGT3 #85",
+      "productCode": "241084-H",
+      "name": "Trends Hobby 1:64 Porsche 911 GT3 R Manthey 1ST Phorm 2025 Le Mans 24H LMGT3 WINNER #92",
       "variant": "Default Title",
-      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-trends-hobby-1-64-porsche-911-gt3-r-iron-dames-2025-le-mans-24h-lmgt3-85?variant=48205016269056",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-trends-hobby-1-64-porsche-911-gt3-r-manthey-1st-phorm-2025-le-mans-24h-lmgt3-winner-92?variant=48205011616000",
+      "vendor": "Trends Hobby",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64G-038-GY",
+      "name": "1/64 HKS Toyota GR86 Grey with Oil Can - Tarmac Works GLOBAL64",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.tarmacworks.com/products/1-64-hks-toyota-gr86-grey-with-oil-can-tarmac-works-global64?variant=50367341363457",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64-090-WH",
+      "name": "Tarmac Works 1:64 LB-WORKS NISSAN GT-R R35 type 2 With Oil Can in White",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-lb-works-nissan-gt-r-r35-type-2-with-oil-can-in-white?variant=47675262861568",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Trends Hobby",
+      "productCode": "241084-I",
+      "name": "Trends Hobby 1:64 Porsche 911 GT3 R Le Man 24H 2025 #90 Chip Hart Racing",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-trends-hobby-1-64-porsche-911-gt3-r-le-man-24h-2025-90-chip-hart-racing?variant=48205013876992",
       "vendor": "Trends Hobby",
       "releaseStatus": "unconfirmed",
       "editionType": "unconfirmed",
@@ -709,6 +805,26 @@
       "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-lamborghini-countach-liberty-walk-in-white?variant=48771933372672"
     },
     {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64G-063-BE-B",
+      "variant_id": 51013085888769,
+      "title": "1/64 Toyota GR Corolla Widebody Beige - Designed by Jon Sibal - Tarmac Works GLOBAL64 (Blister)",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/1-64-toyota-gr-corolla-widebody-beige-designed-by-jon-sibal-tarmac-works-global64-blister?variant=51013085888769"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64G-038-BK2-B",
+      "variant_id": 51013083595009,
+      "title": "1/64 HKS Toyota GR86 Black - Tarmac Works GLOBAL64 (Blister)",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/1-64-hks-toyota-gr86-black-tarmac-works-global64-blister?variant=51013083595009"
+    },
+    {
       "manufacturer": "Schuco & Tarmac Works",
       "reason": "manufacturer mismatch or missing vendor",
       "sku": "T64S-017-MG",
@@ -729,6 +845,16 @@
       "url": "https://www.tarmacworks.com/products/1-64-grams28-mars-rover-collab64-schuco-x-tarmac-works?variant=49866713497857"
     },
     {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64G-TL055-GR",
+      "variant_id": 50367324389633,
+      "title": "1/64 Pagani Utopia Green Metallic - Tarmac Works GLOBAL64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/1-64-pagani-utopia-green-metallic-tarmac-works-global64?variant=50367324389633"
+    },
+    {
       "manufacturer": "Schuco & Tarmac Works",
       "reason": "manufacturer mismatch or missing vendor",
       "sku": "T64S-017-RS",
@@ -737,6 +863,26 @@
       "variant": "Default Title",
       "vendor": "Tarmac Works",
       "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-porsche-911-964-rs-in-ruby-star?variant=46528211845376"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64G-TL055-BL",
+      "variant_id": 50663720386817,
+      "title": "1/64 Pagani Utopia Blue Metallic - Tarmac Works GLOBAL64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/1-64-pagani-utopia-blue-metallic-tarmac-works-global64?variant=50663720386817"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64G-068-SL",
+      "variant_id": 50367323963649,
+      "title": "1/64 Porsche 959 Silver - Tarmac Works x iXO Models GLOBAL64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/1-64-porsche-959-silver-tarmac-works-x-ixo-models-global64?variant=50367323963649"
     },
     {
       "manufacturer": "Schuco & Tarmac Works",
@@ -757,6 +903,46 @@
       "variant": "Default Title",
       "vendor": "INNO Models",
       "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-lb-silhouette-works-miura-gt?variant=48771932782848"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64G-063-WH",
+      "variant_id": 50367348474113,
+      "title": "1/64 Toyota GR Corolla Widebody White - Designed by Jon Sibal - Tarmac Works GLOBAL64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/1-64-toyota-gr-corolla-widebody-white-designed-by-jon-sibal-tarmac-works-global64?variant=50367348474113"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-997P-PPIG",
+      "variant_id": 48771933864192,
+      "title": "*PREORDER* INNO64 1:64 Porsche 997 PANDEM \"PINK PIG\" Edition",
+      "variant": "Default Title",
+      "vendor": "INNO Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-porsche-997-pandem-pink-pig-edition?variant=48771933864192"
+    },
+    {
+      "manufacturer": "Schuco & Tarmac Works",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "T64S-001-GRS",
+      "variant_id": 50160798400769,
+      "title": "1/64 Volkswagen T3 Van GRS - Schuco x Tarmac Works COLLAB64",
+      "variant": "Default Title",
+      "vendor": "Schuco",
+      "url": "https://www.tarmacworks.com/products/1-64-volkswagen-t3-van-grs-schuco-x-tarmac-works-collab64?variant=50160798400769"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "duplicate candidate SKU; inspect variants manually",
+      "sku": "T64-090-WH",
+      "variant_id": 50251131617537,
+      "title": "1/64 LB-WORKS NISSAN GT-R R35 type 2 White - Tarmac Works HOBBY64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/1-64-lb-works-nissan-gt-r-r35-type-2-white-tarmac-works-hobby64?variant=50251131617537"
     }
   ]
 }
