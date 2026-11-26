@@ -1,4 +1,4 @@
-name: Turbo164 research V6.0
+name: Turbo164 research V6.1
 on:
   workflow_dispatch:
   push:
@@ -66,6 +66,20 @@ jobs:
           started=time.monotonic()
           deadline=started+53*60
           ua='Turbo164Research/1.0 (+https://turbo164.github.io/)'
+          initial_lead_count=len(rows)
+          import socket
+          socket.setdefaulttimeout(20)
+          robots_cache={}
+          def retry_due(record,hours):
+            if not record: return True
+            try:
+              return (datetime.datetime.fromisoformat(now)-datetime.datetime.fromisoformat(record['checked'])).total_seconds()>=hours*3600
+            except (KeyError,TypeError,ValueError):
+              return True
+          def search_due(record):
+            return not record or (bool(record.get('error')) and retry_due(record,12)) or (not record.get('hits') and retry_due(record,168))
+          def evidence_due(record):
+            return not record or (bool(record.get('error')) and retry_due(record,12))
           catalog=json.loads(pathlib.Path('catalog.json').read_text())
           codes={(str(x.get('manufacturer','')).casefold(),str(x.get('productCode','')).casefold()) for x in catalog if x.get('productCode')}
           seen={(r['Manufacturer'],r['Source URL'],r['Product Code'],r['Color/Variant']) for r in rows}
@@ -87,8 +101,12 @@ jobs:
             if time.monotonic()>=deadline: raise RuntimeError('research deadline reached')
             p=urllib.parse.urlsplit(url)
             url=urllib.parse.urlunsplit((p.scheme,p.netloc,urllib.parse.quote(p.path,safe="/%:@!$&'()*+,;=-._~"),urllib.parse.quote(p.query,safe='=&%+/:?'),''))
-            robots=urllib.robotparser.RobotFileParser(p.scheme+'://'+p.netloc+'/robots.txt')
-            robots.read()
+            origin=p.scheme+'://'+p.netloc
+            if origin not in robots_cache:
+              robots=urllib.robotparser.RobotFileParser(origin+'/robots.txt')
+              robots.read()
+              robots_cache[origin]=robots
+            robots=robots_cache[origin]
             if not robots.can_fetch(ua,url): raise RuntimeError('robots disallows')
             time.sleep(max(2,robots.crawl_delay(ua) or 0))
             with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':ua}),timeout=20) as f:
@@ -107,13 +125,19 @@ jobs:
           for brand,base in sources:
             page=state.get(base,1)
             try:
-              for _ in range(2):
-                if time.monotonic()>deadline: break
+              round_digests=set()
+              for _ in range(8):
+                if time.monotonic()>min(deadline,started+12*60): break
                 url=base+'/products.json?limit=250&page='+str(page)
                 products=json.loads(fetch(url))['products']
                 if not products:
                   state[base]=1;break
                 digest=hashlib.sha256(json.dumps([p.get('id') for p in products]).encode()).hexdigest()
+                if digest in round_digests:
+                  log.append([brand,'repeated within round; restart next round',page])
+                  state[base]=1
+                  break
+                round_digests.add(digest)
                 if digest in state.get(base+' fingerprints',[]):
                   log.append([brand,'repeated page; checking variants for changes',page])
                 for p in products:
@@ -220,19 +244,20 @@ jobs:
           for brand,items in groups.items():
             cursor=state.get(brand+' verify cursor',0)%len(items)
             ordered=items[cursor:]+items[:cursor]
-            queues[brand]=deque(row for row in ordered if row['Source URL'] not in evidence or (evidence[row['Source URL']].get('method')!='product-json-v43' and evidence[row['Source URL']].get('v43_attempts',0)<3))
+            queues[brand]=deque(row for row in ordered if evidence_due(evidence.get(row['Source URL'],{})))
           blocked_hosts=set()
           inspected=0
-          while time.monotonic()<deadline and any(queues.values()):
+          verify_deadline=min(deadline,started+20*60)
+          while time.monotonic()<verify_deadline and any(queues.values()):
             for brand,q in queues.items():
-              if time.monotonic()>=deadline: break
+              if time.monotonic()>=verify_deadline: break
               if not q: continue
               row=q.popleft()
               url=row['Source URL']
               host=urllib.parse.urlsplit(url).netloc
               if host in blocked_hosts: continue
               previous=evidence.get(url,{})
-              if previous.get('method')=='product-json-v43' or previous.get('v43_attempts',0)>=3: continue
+              if not evidence_due(previous): continue
               try:
                 p=urllib.parse.urlsplit(url)
                 variant_id=urllib.parse.parse_qs(p.query).get('variant',[''])[0]
@@ -253,6 +278,7 @@ jobs:
                 if any(x in str(e).lower() for x in ('403','429','robots','401')):
                   blocked_hosts.add(host)
               inspected+=1
+              state[brand+' verify cursor']=(state.get(brand+' verify cursor',0)+1)%len(groups[brand])
               if inspected%10==0:
                 evidencefile.write_text(json.dumps(evidence,indent=2))
                 save()
@@ -297,7 +323,7 @@ jobs:
           cachefile=root/'product-payload-cache.json'
           payload_cache=json.loads(cachefile.read_text()) if cachefile.exists() else {}
           cache_hits=0
-          inspection_deadline=min(deadline,started+20*60)
+          inspection_deadline=min(deadline,started+28*60)
           for key,record in list(searches.items()):
             if time.monotonic()>=inspection_deadline: break
             parts=key.split('|',2)
@@ -310,8 +336,7 @@ jobs:
               p=urllib.parse.urlsplit(url)
               if p.scheme!='https' or p.netloc!=urllib.parse.urlsplit(base).netloc or '/products/' not in p.path: continue
               ident=key+'|'+url
-              if ident in hit_evidence and not hit_evidence[ident].get('error'): continue
-              if hit_evidence.get(ident,{}).get('attempts',0)>=3: continue
+              if not evidence_due(hit_evidence.get(ident,{})): continue
               try:
                 endpoint=urllib.parse.urlunsplit((p.scheme,p.netloc,p.path.rstrip('/')+'.js','',''))
                 if endpoint in payload_cache:
@@ -339,16 +364,16 @@ jobs:
             for base in retailers:
               if urllib.parse.urlsplit(base).netloc==urllib.parse.urlsplit(row['Source URL']).netloc: continue
               key=base+'|'+row['Manufacturer']+'|'+sku
-              if key not in searches: pending[row['Manufacturer']].append((row,base,key))
-              elif not searches[key].get('hits') and key+'|model' not in searches: pending[row['Manufacturer']].append((row,base,key+'|model'))
+              if search_due(searches.get(key,{})): pending[row['Manufacturer']].append((row,base,key))
+              elif not searches[key].get('hits') and search_due(searches.get(key+'|model',{})): pending[row['Manufacturer']].append((row,base,key+'|model'))
           search_count=0
           search_deadline=min(deadline,started+40*60)
           while time.monotonic()<search_deadline and any(pending.values()):
             for brand,q in pending.items():
-              if time.monotonic()>=deadline: break
+              if time.monotonic()>=search_deadline: break
               if not q: continue
               row,base,key=q.popleft()
-              if key in searches or urllib.parse.urlsplit(base).netloc in blocked_hosts: continue
+              if not search_due(searches.get(key,{})) or urllib.parse.urlsplit(base).netloc in blocked_hosts: continue
               try:
                 query=urllib.parse.urlencode({'q':(row['Manufacturer']+' '+row['Model Name']) if key.endswith('|model') else row['Product Code'],'resources[type]':'product','resources[limit]':10})
                 data=json.loads(fetch(base+'/search/suggest.json?'+query))
@@ -413,7 +438,7 @@ jobs:
             if time.monotonic()>=deadline-300: break
             if norm(item['manufacturer'])!='tarmacworks': continue
             sku=item['productCode']
-            if sku in official_discovery: continue
+            if not search_due(official_discovery.get(sku,{})): continue
             try:
               base='https://www.tarmacworks.com'
               query=urllib.parse.urlencode({'q':sku,'resources[type]':'product','resources[limit]':10})
@@ -556,7 +581,7 @@ jobs:
             old.unlink()
           shutil.copyfile(master,root/('Turbo164_Pilot_Leads_'+stamp+'.csv'))
           shutil.copyfile(root/'cumulative-master.csv',root/('Turbo164_Master_Catalog_'+stamp+'.csv'))
-          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'6.0','historical_master_present':historical.exists(),'cumulative_count':len(combined),'review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'disabled; no verified master merge'},indent=2))
+          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'6.1','new_leads':len(rows)-initial_lead_count,'historical_master_present':historical.exists(),'cumulative_count':len(combined),'review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'pending separate publication step; see publication-result.json'},indent=2))
           print(json.dumps(log))
           PY
       - name: Publish verified missing models
