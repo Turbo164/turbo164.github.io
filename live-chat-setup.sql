@@ -61,6 +61,9 @@ create policy "Signed-in users send live chat messages" on public.community_live
 drop policy if exists "Chat admins delete live chat messages" on public.community_live_chat_messages;
 create policy "Chat admins delete live chat messages" on public.community_live_chat_messages
   for delete to authenticated using (public.is_arbox_photo_admin());
+drop policy if exists "Users delete own live chat messages" on public.community_live_chat_messages;
+create policy "Users delete own live chat messages" on public.community_live_chat_messages
+  for delete to authenticated using (author_id=auth.uid());
 
 drop policy if exists "Live chat settings are public" on public.community_live_chat_settings;
 create policy "Live chat settings are public" on public.community_live_chat_settings
@@ -133,6 +136,9 @@ create policy "Signed-in users upload own live chat media" on storage.objects fo
 drop policy if exists "Admins delete live chat media" on storage.objects;
 create policy "Admins delete live chat media" on storage.objects for delete to authenticated
   using (bucket_id='community-live-chat' and public.is_arbox_photo_admin());
+drop policy if exists "Users delete own live chat media" on storage.objects;
+create policy "Users delete own live chat media" on storage.objects for delete to authenticated
+  using (bucket_id='community-live-chat' and (storage.foldername(name))[1]=auth.uid()::text);
 
 do $$
 begin
