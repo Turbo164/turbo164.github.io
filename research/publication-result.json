@@ -1,45 +1,14 @@
 {
-  "published": 2,
-  "status": "verified readback",
-  "eligible": 2,
+  "published": 0,
+  "status": "no eligible additions",
+  "eligible": 0,
   "conflicting_candidates": {},
-  "catalog_base_commit": "c9d696ee24efe9c06ab294cf77d68f4e008d263b",
-  "catalog_base_count": 511,
-  "commit": "53799c2e7c6a50f79e15ab3f3c13e933783c1b9a",
-  "additions": [
-    {
-      "id": "tarmac-works-t6409478rp04",
-      "number": "T64-094-78RP04",
-      "productCode": "T64-094-78RP04",
-      "brand": "Fiat",
-      "vehicleMake": "Fiat",
-      "manufacturer": "Tarmac Works",
-      "name": "1/64 FIAT 131 ABARTH Rally Rallye de Portugal - Vinho do Porto 1978 Winner #04 - Tarmac Works HOBBY64",
-      "variant": "Unverified",
-      "editionType": "Unverified",
-      "release": "Unverified",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-fiat-131-abarth-rally-rallye-de-portugal-vinho-do-porto-1978-winner-04-tarmac-works-hobby64?variant=48503751082241",
-      "verification": "Official SKU and scale matched; edition, release and identity review pending"
-    },
-    {
-      "id": "tarmac-works-t6408194rs15",
-      "number": "T64-081-94RS15",
-      "productCode": "T64-081-94RS15",
-      "brand": "Ford",
-      "vehicleMake": "Ford",
-      "manufacturer": "Tarmac Works",
-      "name": "1/64 Ford Escort RS Cosworth WRC Rallye Sanremo 1994 #15 - Tarmac Works HOBBY64",
-      "variant": "Unverified",
-      "editionType": "Unverified",
-      "release": "Unverified",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-ford-escort-rs-cosworth-wrc-rallye-sanremo-1994-15-tarmac-works-hobby64?variant=48503762518273",
-      "verification": "Official SKU and scale matched; edition, release and identity review pending"
-    }
-  ],
+  "catalog_base_commit": "53799c2e7c6a50f79e15ab3f3c13e933783c1b9a",
+  "catalog_base_count": 513,
   "catalog_count": 513,
   "workflow_run": {
-    "run_id": "45968926003",
+    "run_id": "45984321022",
     "run_attempt": "1",
-    "commit": "43ae746eed5da4e3c3b449b3b919c17142e3ae98"
+    "commit": "53799c2e7c6a50f79e15ab3f3c13e933783c1b9a"
   }
 }

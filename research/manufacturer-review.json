@@ -505,18 +505,6 @@
       "photo": null
     },
     {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-094-78RP04",
-      "name": "Tarmac Works 1:64 FIAT 131 ABARTH Rally Rallye de Portugal \u2013 Vinho do Porto 1978 Winner Markku Al\u00e9n / Ilkka Kivim\u00e4ki",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-fiat-131-abarth-rally-rallye-de-portugal-vinho-do-porto-1978-winner-markku-alen-ilkka-kivimaki?variant=46883438952704",
-      "vendor": "Tarmac Works",
-      "releaseStatus": "unconfirmed",
-      "editionType": "unconfirmed",
-      "verification": "NEEDS VERIFICATION",
-      "photo": null
-    },
-    {
       "manufacturer": "MotorHelix",
       "productCode": "M65145",
       "name": "MotorHelix 1:64 Honda S2000 J's Racing in Moon Rock Metallic",
@@ -530,10 +518,10 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "productCode": "T64-081-94RS15",
-      "name": "Tarmac Works 1:64 Ford Escort RS Cosworth WRC Rallye Sanremo 1994 \u2013 Malcolm Wilson / Bryan Thomas",
+      "productCode": "T64-TL017-LBWK2",
+      "name": "Tarmac Works 1:64 RWB 993 Liberty Walk with Container",
       "variant": "Default Title",
-      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-ford-escort-rs-cosworth-wrc-rallye-sanremo-1994-malcolm-wilson-bryan-thomas?variant=46883129852160",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-rwb-993-liberty-walk-w-container?variant=47083783749888",
       "vendor": "Tarmac Works",
       "releaseStatus": "unconfirmed",
       "editionType": "unconfirmed",
@@ -3000,7 +2988,17 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "reason": "duplicate candidate SKU; inspect variants manually",
+      "reason": "possible existing SKU",
+      "sku": "T64-094-78RP04",
+      "variant_id": 46883438952704,
+      "title": "Tarmac Works 1:64 FIAT 131 ABARTH Rally Rallye de Portugal \u2013 Vinho do Porto 1978 Winner Markku Al\u00e9n / Ilkka Kivim\u00e4ki",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-fiat-131-abarth-rally-rallye-de-portugal-vinho-do-porto-1978-winner-markku-alen-ilkka-kivimaki?variant=46883438952704"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
       "sku": "T64-094-78RP04",
       "variant_id": 48503751082241,
       "title": "1/64 FIAT 131 ABARTH Rally Rallye de Portugal - Vinho do Porto 1978 Winner #04 - Tarmac Works HOBBY64",
@@ -3010,13 +3008,63 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "reason": "duplicate candidate SKU; inspect variants manually",
+      "reason": "possible existing SKU",
+      "sku": "T64-081-94RS15",
+      "variant_id": 46883129852160,
+      "title": "Tarmac Works 1:64 Ford Escort RS Cosworth WRC Rallye Sanremo 1994 \u2013 Malcolm Wilson / Bryan Thomas",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-ford-escort-rs-cosworth-wrc-rallye-sanremo-1994-malcolm-wilson-bryan-thomas?variant=46883129852160"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
       "sku": "T64-081-94RS15",
       "variant_id": 48503762518273,
       "title": "1/64 Ford Escort RS Cosworth WRC Rallye Sanremo 1994 #15 - Tarmac Works HOBBY64",
       "variant": "Default Title",
       "vendor": "Tarmac Works",
       "url": "https://www.tarmacworks.com/products/1-64-ford-escort-rs-cosworth-wrc-rallye-sanremo-1994-15-tarmac-works-hobby64?variant=48503762518273"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-LBWK-AZ1-01",
+      "variant_id": 48180580483328,
+      "title": "*PREORDER* INNO64 1:64 Mazda AZ-1 Liberty Walk LB40 \"PILOT\"",
+      "variant": "Default Title",
+      "vendor": "INNO Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-az-1-liberty-walk-lb40-pilot?variant=48180580483328"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-DC5TST-HFTH25",
+      "variant_id": 47603215991040,
+      "title": "INNO64 1:64 Honda INTEGRA Type-R (DC5) Top Secret Thailand Honda Fest Thailand 2025",
+      "variant": "Default Title",
+      "vendor": "INNO Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-honda-integra-type-r-dc5-top-secret-thailand-honda-fest-thailand-2025?variant=47603215991040"
+    },
+    {
+      "manufacturer": "Hobby Japan",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "HJ642011D",
+      "variant_id": 43930922057984,
+      "title": "Hobby Japan 1:64 Mitsubishi Lancer RS Evolution \u2163 / Initial D VS Takumi Fujiwara with Seiji Iwaki Figure",
+      "variant": "Default Title",
+      "vendor": "Hobby Japan Minicar Project",
+      "url": "https://www.modelcarshouston.com/products/preorder-hobby-japan-1-64-mitsubishi-lancer-rs-evolution-%E2%85%B3-initial-d-vs-takumi-fujiwara-with-seiji-iwaki-figure?variant=43930922057984"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "duplicate candidate SKU; inspect variants manually",
+      "sku": "T64-TL017-LBWK2",
+      "variant_id": 48277089583361,
+      "title": "1/64 RWB 993 Liberty Walk with Container Packaging - Tarmac Works HOBBY64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/1-64-rwb-993-liberty-walk-with-container-packaging-tarmac-works-hobby64?variant=48277089583361"
     }
   ]
 }

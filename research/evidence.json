@@ -47982,5 +47982,35 @@
     "checked": "2026-11-27T15:51:35.521213+07:00",
     "method": "product-json-v43",
     "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/xsteam.html": {
+    "checked": "2026-11-27T17:42:25.130193+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/yamahavmax.html": {
+    "checked": "2026-11-27T17:42:25.130193+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/yursofast.html": {
+    "checked": "2026-11-27T17:42:25.130193+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/zrod.html": {
+    "checked": "2026-11-27T17:42:25.130193+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/zelix.html": {
+    "checked": "2026-11-27T17:42:25.130193+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/zentner.html": {
+    "checked": "2026-11-27T17:42:25.130193+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
   }
 }

@@ -871,27 +871,6 @@
     ]
   },
   {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64-094-78RP04",
-    "name": "Tarmac Works 1:64 FIAT 131 ABARTH Rally Rallye de Portugal \u2013 Vinho do Porto 1978 Winner Markku Al\u00e9n / Ilkka Kivim\u00e4ki",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-fiat-131-abarth-rally-rallye-de-portugal-vinho-do-porto-1978-winner-markku-alen-ilkka-kivimaki?variant=46883438952704",
-    "vendor": "Tarmac Works",
-    "releaseStatus": "unconfirmed",
-    "editionType": "unconfirmed",
-    "verification": "NEEDS VERIFICATION",
-    "photo": null,
-    "official_source_host": false,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "official manufacturer product evidence missing",
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
     "manufacturer": "MotorHelix",
     "productCode": "M65145",
     "name": "MotorHelix 1:64 Honda S2000 J's Racing in Moon Rock Metallic",
@@ -914,10 +893,10 @@
   },
   {
     "manufacturer": "Tarmac Works",
-    "productCode": "T64-081-94RS15",
-    "name": "Tarmac Works 1:64 Ford Escort RS Cosworth WRC Rallye Sanremo 1994 \u2013 Malcolm Wilson / Bryan Thomas",
+    "productCode": "T64-TL017-LBWK2",
+    "name": "Tarmac Works 1:64 RWB 993 Liberty Walk with Container",
     "variant": "Default Title",
-    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-ford-escort-rs-cosworth-wrc-rallye-sanremo-1994-malcolm-wilson-bryan-thomas?variant=46883129852160",
+    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-rwb-993-liberty-walk-w-container?variant=47083783749888",
     "vendor": "Tarmac Works",
     "releaseStatus": "unconfirmed",
     "editionType": "unconfirmed",

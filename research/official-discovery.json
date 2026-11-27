@@ -15988,5 +15988,40 @@
       }
     ],
     "status": "official discovery only; exact variant verification pending"
+  },
+  "tarmacworks|T64-TL017-LBWK2": {
+    "checked": "2026-11-27T17:42:25.130193+07:00",
+    "hits": [
+      {
+        "available": false,
+        "body": "<p><span style=\"color: rgb(255, 128, 0);\"><strong>Decal Stickers Included</strong></span></p>\n<p>1/64 scale die-cast<br></p>\n<p>Limited production run and will never be produced again<br></p>\n<p>Detailed rims &amp; rubber wheels<br></p>\n<p>Detailed front and rear lights<br></p>\n<p>Container Packaging</p>\n<p>Includes a special container which also can be a display box (with an additional clear-plastic side wall)</p>\n<p>Fully licensed product<br></p>",
+        "compare_at_price_max": "0.00",
+        "compare_at_price_min": "0.00",
+        "handle": "1-64-rwb-993-liberty-walk-with-container-packaging-tarmac-works-hobby64",
+        "id": 9100843352321,
+        "image": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64-TL017-LBWK2_M02.jpg?v=1774500763",
+        "price": "28.50",
+        "price_max": "28.50",
+        "price_min": "28.50",
+        "tags": [
+          "1/64",
+          "HOBBY64/64+",
+          "New Release"
+        ],
+        "title": "1/64 RWB 993 Liberty Walk with Container Packaging - Tarmac Works HOBBY64",
+        "type": "1/64 Diecast",
+        "url": "/products/1-64-rwb-993-liberty-walk-with-container-packaging-tarmac-works-hobby64?_pos=1&_psq=T64-TL017-LBWK2&_psid=8a0b3cdb8&_ss=e",
+        "variants": [],
+        "vendor": "Tarmac Works",
+        "featured_image": {
+          "alt": "1/64 RWB 993 Liberty Walk with Container Packaging - Tarmac Works HOBBY64",
+          "aspect_ratio": 1.5,
+          "height": 2762,
+          "url": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64-TL017-LBWK2_M02.jpg?v=1774500763",
+          "width": 4143
+        }
+      }
+    ],
+    "status": "official discovery only; exact variant verification pending"
   }
 }
