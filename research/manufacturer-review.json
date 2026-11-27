@@ -553,12 +553,24 @@
       "photo": null
     },
     {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64R-052-PC",
-      "name": "1/64 Datsun 510 Police Car - Tarmac Works ROAD64",
+      "manufacturer": "MotorHelix",
+      "productCode": "M65441",
+      "name": "*PREORDER* MotorHelix 1:64 Honda Civic Type-R (FD2) FEEL'S Livery",
       "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-datsun-510-police-car-road64?variant=46263298294017",
-      "vendor": "Tarmac Works",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-honda-civic-type-r-feels-livery?variant=47272411660544",
+      "vendor": "MotorHelix",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Johnny Lightning",
+      "productCode": "JLPC009",
+      "name": "Johnny Lightning Pop Culture 2022 Release 4 (6-Car Sealed Case) 1:64 Diecast",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-pop-culture-2022-release-4-6-car-sealed-case-1-64-diecast?variant=42250577346750",
+      "vendor": "JohnnyLightning",
       "releaseStatus": "unconfirmed",
       "editionType": "unconfirmed",
       "verification": "NEEDS VERIFICATION",
@@ -566,10 +578,10 @@
     },
     {
       "manufacturer": "MotorHelix",
-      "productCode": "M65441",
-      "name": "*PREORDER* MotorHelix 1:64 Honda Civic Type-R (FD2) FEEL'S Livery",
+      "productCode": "M64021",
+      "name": "MotorHelix 1:64 Mitsubishi Lancer IV GSR Mine\u2019s Livery",
       "variant": "Default Title",
-      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-honda-civic-type-r-feels-livery?variant=47272411660544",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-mitsubishi-lancer?variant=47254376022272",
       "vendor": "MotorHelix",
       "releaseStatus": "unconfirmed",
       "editionType": "unconfirmed",
@@ -1520,13 +1532,6 @@
       "name": "Johnny Lightning 2026 Release 1 Scrapin' A (2-Pack) 1:64 Scale Diecast",
       "variant": "Default Title",
       "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-2026-release-1-scrapin-a-2-pack-1-64-scale-diecast-due-october-2026?variant=48793265438910"
-    },
-    {
-      "manufacturer": "Johnny Lightning",
-      "productCode": "JLPC009",
-      "name": "Johnny Lightning Pop Culture 2022 Release 4 (6-Car Sealed Case) 1:64 Diecast",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-pop-culture-2022-release-4-6-car-sealed-case-1-64-diecast?variant=42250577346750"
     },
     {
       "manufacturer": "Johnny Lightning",
@@ -3148,6 +3153,16 @@
       "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-audi-r8-lms-gt3-evo-ii-macau-gt-cup-fia-gt-world-cup-2024-uno-racing-30-with-tarmac-cards-and-truck-combo-set?variant=48062072619265"
     },
     {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64R-052-PC",
+      "variant_id": 46263298294017,
+      "title": "1/64 Datsun 510 Police Car - Tarmac Works ROAD64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-datsun-510-police-car-road64?variant=46263298294017"
+    },
+    {
       "manufacturer": "INNO64",
       "reason": "manufacturer mismatch or missing vendor",
       "sku": "IN64-R89C-BL",
@@ -3176,6 +3191,36 @@
       "variant": "Default Title",
       "vendor": "Inno Models",
       "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-skyline-2000gt-r-kpgc10-1-takahashi-kunimitsu-fuji-masters-250km-1971?variant=46574552023296"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-400R-HKTS23",
+      "variant_id": 43920498360576,
+      "title": "INNO64 1/64 Nissan Skyline (BNCR33) in Midnight Purple II HK Toycar Salon 2023 Special Edition",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-skyline-bncr33-in-midnight-purple-ii-hk-toycar-salon-2023-special-edition?variant=43920498360576"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-400R-SCR",
+      "variant_id": 43416301863168,
+      "title": "INNO64 1:64 Nissan Skyline GT-R (R33) NISMO 400R in Super Clear Red II",
+      "variant": "Default Title",
+      "vendor": "INNO Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-skyline-gt-r-r33-nismo-400r-in-super-clear-red-ii?variant=43416301863168"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-400R-LYL",
+      "variant_id": 43416297865472,
+      "title": "INNO64 1:64 Nissan Skyline GT-R (R33) NISMO 400R in Lightning Yellow",
+      "variant": "Default Title",
+      "vendor": "INNO Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-skyline-gt-r-r33-nismo-400r-in-lightning-yellow?variant=43416297865472"
     }
   ]
 }

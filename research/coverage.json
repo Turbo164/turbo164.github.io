@@ -1,30 +1,19 @@
 {
-  "time": "2026-11-27T21:42:27.393655+07:00",
+  "time": "2026-11-27T23:53:22.812178+07:00",
   "pilot_only": false,
   "version": "6.3",
-  "catalog_master_commit": "16b4375e9d40e3aa8a074fb25517f0277fe01e1c",
-  "catalog_master_count": 514,
-  "official_exact_candidates": 193,
+  "catalog_master_commit": "33e4d35d38a13bc9f1b9a5c28a1023e9634f7678",
+  "catalog_master_count": 515,
+  "official_exact_candidates": 192,
   "independent_exact_candidates": 0,
-  "new_leads": 0,
+  "new_leads": 1,
   "historical_master_present": false,
-  "cumulative_count": 6759,
+  "cumulative_count": 6760,
   "review_candidates": 1214,
-  "elapsed_research_seconds": 3019,
+  "elapsed_research_seconds": 2998,
   "catalog_count": 515,
-  "lead_count": 6759,
+  "lead_count": 6760,
   "sources": [
-    [
-      "Tarmac Works",
-      "repeated page; checking variants for changes",
-      1
-    ],
-    [
-      "Tarmac Works",
-      "page collected",
-      1,
-      247
-    ],
     [
       "Hobby Japan",
       "repeated page; checking variants for changes",
@@ -169,6 +158,17 @@
       107
     ],
     [
+      "Tarmac Works",
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "Tarmac Works",
+      "page collected",
+      1,
+      247
+    ],
+    [
       "MINI GT",
       "blocked",
       "robots disallows"
@@ -236,7 +236,7 @@
     [
       "wholesale",
       "new listing leads",
-      41,
+      1,
       0,
       "product links",
       45
@@ -244,15 +244,74 @@
     [
       "wholesale",
       "new listing leads",
-      42,
+      2,
       0,
       "product links",
-      21
+      47
     ],
     [
       "wholesale",
-      "no parseable product links",
-      43
+      "new listing leads",
+      3,
+      0,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      4,
+      0,
+      "product links",
+      41
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      5,
+      0,
+      "product links",
+      47
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      6,
+      0,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      7,
+      0,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      8,
+      1,
+      "product links",
+      44
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      9,
+      0,
+      "product links",
+      46
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      10,
+      0,
+      "product links",
+      48
     ],
     [
       "hobbysearch",
@@ -262,49 +321,49 @@
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1976guide.html",
+      "https://southtexasdiecast.com/hwguide/1983guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1977guide.html",
+      "https://southtexasdiecast.com/hwguide/1984guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1978guide.html",
+      "https://southtexasdiecast.com/hwguide/1985guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1979guide.html",
+      "https://southtexasdiecast.com/hwguide/1986guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1980_1989_guide.html",
+      "https://southtexasdiecast.com/hwguide/1987guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1980guide.html",
+      "https://southtexasdiecast.com/hwguide/1988guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1981guide.html",
+      "https://southtexasdiecast.com/hwguide/1989guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1982guide.html",
+      "https://southtexasdiecast.com/hwguide/1990_1999_guide.html",
       0
     ],
     [
@@ -315,57 +374,77 @@
     [
       "V6.1",
       "wholesale product pages attempted",
-      120,
+      91,
       "exact listing details",
-      1761
+      1850
+    ],
+    [
+      "Tarmac Works",
+      "verification blocked",
+      "HTTP Error 404: Not Found"
+    ],
+    [
+      "Tarmac Works",
+      "verification blocked",
+      "HTTP Error 404: Not Found"
+    ],
+    [
+      "Tarmac Works",
+      "verification blocked",
+      "HTTP Error 404: Not Found"
+    ],
+    [
+      "Tarmac Works",
+      "verification blocked",
+      "HTTP Error 404: Not Found"
     ],
     [
       "V4.1",
       "new page inspections",
-      0,
+      5,
       "pending accessible queue exhausted"
     ],
     [
       "V4.6",
       "product links inspected",
-      25441,
+      25675,
       "exact scale/SKU matches",
-      157
+      163
     ],
     [
       "V4.9",
       "cached product requests avoided",
       0,
       "unique cached endpoints",
-      1311
+      1343
     ],
     [
       "V4.5",
       "independent storefront searches",
-      319,
+      331,
       "wholesale SKU backlog",
-      1699,
+      1787,
       "new search records inspected",
-      319
+      331
     ],
     [
       "V4.7",
       "manufacturer-matched review candidates",
-      48,
+      49,
       "excluded or duplicate",
-      115
+      119
     ],
     [
       "V5.0",
       "official exact variant matches",
-      383,
+      381,
       "errors",
       0
     ],
     [
       "V4.8",
       "official-host candidates",
-      216,
+      215,
       "publication approved",
       0
     ],
@@ -382,7 +461,7 @@
     [
       "V5.1",
       "unique official candidates for final review",
-      193,
+      192,
       "approved for publication",
       0
     ],
@@ -391,17 +470,17 @@
       "historical master available",
       false,
       "combined records",
-      6759,
+      6760,
       "cross-source candidates",
       0
     ]
   ],
-  "publication": "verified readback",
-  "run_id": "46018293819",
+  "publication": "no eligible additions",
+  "run_id": "46037339318",
   "run_attempt": "1",
-  "commit": "16b4375e9d40e3aa8a074fb25517f0277fe01e1c",
-  "published": 1,
-  "eligible_verified": 1,
+  "commit": "33e4d35d38a13bc9f1b9a5c28a1023e9634f7678",
+  "published": 0,
+  "eligible_verified": 0,
   "research_status": "completed",
   "publication_step_outcome": "success"
 }

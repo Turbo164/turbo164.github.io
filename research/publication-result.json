@@ -1,31 +1,14 @@
 {
-  "published": 1,
-  "status": "verified readback",
-  "eligible": 1,
+  "published": 0,
+  "status": "no eligible additions",
+  "eligible": 0,
   "conflicting_candidates": {},
-  "catalog_base_commit": "16b4375e9d40e3aa8a074fb25517f0277fe01e1c",
-  "catalog_base_count": 514,
-  "commit": "33e4d35d38a13bc9f1b9a5c28a1023e9634f7678",
-  "additions": [
-    {
-      "id": "tarmac-works-t64r052pc",
-      "number": "T64R-052-PC",
-      "productCode": "T64R-052-PC",
-      "brand": "Datsun",
-      "vehicleMake": "Datsun",
-      "manufacturer": "Tarmac Works",
-      "name": "1/64 Datsun 510 Police Car - Tarmac Works ROAD64",
-      "variant": "Unverified",
-      "editionType": "Unverified",
-      "release": "Unverified",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-datsun-510-police-car-road64?variant=46263298294017",
-      "verification": "Official SKU and scale matched; edition, release and identity review pending"
-    }
-  ],
+  "catalog_base_commit": "33e4d35d38a13bc9f1b9a5c28a1023e9634f7678",
+  "catalog_base_count": 515,
   "catalog_count": 515,
   "workflow_run": {
-    "run_id": "46018293819",
+    "run_id": "46037339318",
     "run_attempt": "1",
-    "commit": "16b4375e9d40e3aa8a074fb25517f0277fe01e1c"
+    "commit": "33e4d35d38a13bc9f1b9a5c28a1023e9634f7678"
   }
 }

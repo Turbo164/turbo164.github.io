@@ -954,26 +954,6 @@
     ]
   },
   {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64R-052-PC",
-    "name": "1/64 Datsun 510 Police Car - Tarmac Works ROAD64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-datsun-510-police-car-road64?variant=46263298294017",
-    "vendor": "Tarmac Works",
-    "releaseStatus": "unconfirmed",
-    "editionType": "unconfirmed",
-    "verification": "NEEDS VERIFICATION",
-    "photo": null,
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
     "manufacturer": "MotorHelix",
     "productCode": "M65441",
     "name": "*PREORDER* MotorHelix 1:64 Honda Civic Type-R (FD2) FEEL'S Livery",
@@ -989,6 +969,47 @@
     "edition_hint": "unconfirmed",
     "review_flags": [
       "official manufacturer product evidence missing",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "Johnny Lightning",
+    "productCode": "JLPC009",
+    "name": "Johnny Lightning Pop Culture 2022 Release 4 (6-Car Sealed Case) 1:64 Diecast",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-pop-culture-2022-release-4-6-car-sealed-case-1-64-diecast?variant=42250577346750",
+    "vendor": "JohnnyLightning",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": true,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "MotorHelix",
+    "productCode": "M64021",
+    "name": "MotorHelix 1:64 Mitsubishi Lancer IV GSR Mine\u2019s Livery",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-mitsubishi-lancer?variant=47254376022272",
+    "vendor": "MotorHelix",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": false,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "official manufacturer product evidence missing",
+      "release status requires evidence",
       "edition requires evidence",
       "exact catalog variant and car make require final review"
     ]
@@ -3013,21 +3034,6 @@
     "name": "Johnny Lightning 2026 Release 1 Scrapin' A (2-Pack) 1:64 Scale Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-2026-release-1-scrapin-a-2-pack-1-64-scale-diecast-due-october-2026?variant=48793265438910",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLPC009",
-    "name": "Johnny Lightning Pop Culture 2022 Release 4 (6-Car Sealed Case) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-pop-culture-2022-release-4-6-car-sealed-case-1-64-diecast?variant=42250577346750",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
