@@ -7923,5 +7923,47 @@
     "release": "Unverified",
     "sourceUrl": "https://www.tarmacworks.com/products/1-64-porsche-911-gt3-type-996-yellow-tarmac-works-global64?variant=48277161509121",
     "verification": "Official SKU and scale matched; edition, release and identity review pending"
+  },
+  {
+    "id": "tarmac-works-t64g04788dtm44",
+    "number": "T64G-047-88DTM44",
+    "productCode": "T64G-047-88DTM44",
+    "brand": "Mercedes-Benz",
+    "vehicleMake": "Mercedes-Benz",
+    "manufacturer": "Tarmac Works",
+    "name": "1/64 Mercedes-Benz 190 E 2.3-16 DTM 1988 Johnny Cecotto #44 - Tarmac Works GLOBAL64",
+    "variant": "Unverified",
+    "editionType": "Unverified",
+    "release": "Unverified",
+    "sourceUrl": "https://www.tarmacworks.com/products/1-64-mercedes-benz-190-e-2-3-16-dtm-1988-johnny-cecotto-44-tarmac-works?variant=48503776215297",
+    "verification": "Official SKU and scale matched; edition, release and identity review pending"
+  },
+  {
+    "id": "tarmac-works-t64g026onp",
+    "number": "T64G-026-ONP",
+    "productCode": "T64G-026-ONP",
+    "brand": "Datsun",
+    "vehicleMake": "Datsun",
+    "manufacturer": "Tarmac Works",
+    "name": "1/64 Datsun Bluebird 510 Wagon OHIGE no PON - Tarmac Works GLOBAL64",
+    "variant": "Unverified",
+    "editionType": "Unverified",
+    "release": "Unverified",
+    "sourceUrl": "https://www.tarmacworks.com/products/1-64-datsun-bluebird-510-wagon-ohige-no-pon-tarmac-works-global64?variant=48277166555393",
+    "verification": "Official SKU and scale matched; edition, release and identity review pending"
+  },
+  {
+    "id": "tarmac-works-t6404992mcr04",
+    "number": "T64-049-92MCR04",
+    "productCode": "T64-049-92MCR04",
+    "brand": "Lancia",
+    "vehicleMake": "Lancia",
+    "manufacturer": "Tarmac Works",
+    "name": "1/64 Lancia Delta HF Integrale Monte Carlo Rally 1992 #04 Winner Didier Auriol / Bernard Occelli - Tarmac Works HOBBY64",
+    "variant": "Unverified",
+    "editionType": "Unverified",
+    "release": "Unverified",
+    "sourceUrl": "https://www.tarmacworks.com/products/1-64-lancia-delta-hf-integrale-monte-carlo-rally-1992-winner-didier-auriol-bernard-occelli-tarmac-works-hobby64?variant=48277088010497",
+    "verification": "Official SKU and scale matched; edition, release and identity review pending"
   }
 ]

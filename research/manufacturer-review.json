@@ -614,10 +614,70 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "productCode": "T64G-069-YL",
-      "name": "1/64 Porsche 911 GT3 (type 996) Yellow - Tarmac Works X iXO Models GLOBAL64",
+      "productCode": "T64G-047-88DTM44",
+      "name": "Tarmac Works 1:64 Mercedes-Benz 190 E 2.3-16 DTM 1988 Johny Cecotto - Black",
       "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-porsche-911-gt3-type-996-yellow-tarmac-works-global64?variant=48277161509121",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mercedes-benz-190-e-2-3-16-dtm-1988-johny-cecotto-black?variant=47173188124928",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64G-026-ONP",
+      "name": "Tarmac Works 1:64 Datsun Bluebird 510 Wagon OHIGE no PON in White",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-datsun-bluebird-510-wagon-ohige-no-pon-white?variant=47173217452288",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Johnny Lightning",
+      "productCode": "JLCG033B",
+      "name": "Johnny Lightning Classic Gold 2025 Release 1 Set B (6-Car Set) 1:64 Diecast",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-2025-release-1-set-b-6-car-set-1-64-diecast-due-october-2025?variant=45385302606014",
+      "vendor": "JohnnyLightning",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Johnny Lightning",
+      "productCode": "JLCG033A",
+      "name": "Johnny Lightning Classic Gold 2025 Release 1 Set A (6-Car Set) 1:64 Diecast",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-2025-release-1-set-a-6-car-set-1-64-diecast-due-october-2025?variant=45385246408894",
+      "vendor": "JohnnyLightning",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64-062-25BH888",
+      "name": "1/64 Mercedes-AMG GT3 Bathurst 12h 2025 GruppeM Racing Maro Engel / Mika\u00ebl Grenier / Maxime Martin - Tarmac Works HOBBY64",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.tarmacworks.com/products/1-64-mercedes-amg-gt3-bathurst-12h-2025-gruppem-racing-maro-engel-mikael-grenier-maxime-martin-tarmac-works-hobby64?variant=48277085520129",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64-049-92MCR04",
+      "name": "Tarmac Works 1:64 Lancia Delta HF Integrale Monte Carlo Rally 1992 Winner",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-lancia-delta-hf-integrale-monte-carlo?variant=47083672207616",
       "vendor": "Tarmac Works",
       "releaseStatus": "unconfirmed",
       "editionType": "unconfirmed",
@@ -1585,13 +1645,6 @@
     },
     {
       "manufacturer": "Johnny Lightning",
-      "productCode": "JLCG033B",
-      "name": "Johnny Lightning Classic Gold 2025 Release 1 Set B (6-Car Set) 1:64 Diecast",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-2025-release-1-set-b-6-car-set-1-64-diecast-due-october-2025?variant=45385302606014"
-    },
-    {
-      "manufacturer": "Johnny Lightning",
       "productCode": "JLMC034A",
       "name": "Johnny Lightning Muscle Cars USA 2025 Release 1 Set A (6-Car Sealed Case) 1:64 Diecast",
       "variant": "Default Title",
@@ -1617,13 +1670,6 @@
       "name": "Johnny Lightning Street Freaks 2025 Release 1 Set A (6-Car Sealed Case) 1:64 Scale Diecast",
       "variant": "Default Title",
       "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-street-freaks-2025-release-1-set-a-6-car-sealed-case-1-64-scale-diecast-due-late-october-2025?variant=45420948816062"
-    },
-    {
-      "manufacturer": "Johnny Lightning",
-      "productCode": "JLCG033A",
-      "name": "Johnny Lightning Classic Gold 2025 Release 1 Set A (6-Car Set) 1:64 Diecast",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-2025-release-1-set-a-6-car-set-1-64-diecast-due-october-2025?variant=45385246408894"
     },
     {
       "manufacturer": "Johnny Lightning",
@@ -3257,6 +3303,46 @@
       "variant": "Default Title",
       "vendor": "INNO Models",
       "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-skyline-gt-r-r33-nismo-400r-in-lightning-yellow?variant=43416297865472"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64G-069-YL",
+      "variant_id": 48277161509121,
+      "title": "1/64 Porsche 911 GT3 (type 996) Yellow - Tarmac Works X iXO Models GLOBAL64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/1-64-porsche-911-gt3-type-996-yellow-tarmac-works-global64?variant=48277161509121"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "duplicate candidate SKU; inspect variants manually",
+      "sku": "T64G-047-88DTM44",
+      "variant_id": 48503776215297,
+      "title": "1/64 Mercedes-Benz 190 E 2.3-16 DTM 1988 Johnny Cecotto #44 - Tarmac Works GLOBAL64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/1-64-mercedes-benz-190-e-2-3-16-dtm-1988-johnny-cecotto-44-tarmac-works?variant=48503776215297"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "duplicate candidate SKU; inspect variants manually",
+      "sku": "T64G-026-ONP",
+      "variant_id": 48277166555393,
+      "title": "1/64 Datsun Bluebird 510 Wagon OHIGE no PON - Tarmac Works GLOBAL64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/1-64-datsun-bluebird-510-wagon-ohige-no-pon-tarmac-works-global64?variant=48277166555393"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-ST165R-91MCW",
+      "variant_id": 46847115985152,
+      "title": "INNO64 1:64 Toyota Celica GT-FOUR (ST165) Winner Rally Monte Carlo 1991 C. Sainz / L. Moya",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-toyota-celica-gt-four-st165-winner-rally-monte-carlo-1991-c-sainz-l-moya?variant=46847115985152"
     }
   ]
 }
