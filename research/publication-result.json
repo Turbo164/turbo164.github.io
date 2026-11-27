@@ -1,13 +1,30 @@
 {
-  "published": 0,
-  "status": "no eligible additions",
-  "eligible": 0,
+  "published": 1,
+  "status": "verified readback",
+  "eligible": 1,
   "conflicting_candidates": {},
   "catalog_base_commit": "33e4d35d38a13bc9f1b9a5c28a1023e9634f7678",
   "catalog_base_count": 515,
-  "catalog_count": 515,
+  "commit": "ecd641fafda05c4e386541b2bc38a2a44a6c0953",
+  "additions": [
+    {
+      "id": "tarmac-works-t64g069yl",
+      "number": "T64G-069-YL",
+      "productCode": "T64G-069-YL",
+      "brand": "Porsche",
+      "vehicleMake": "Porsche",
+      "manufacturer": "Tarmac Works",
+      "name": "1/64 Porsche 911 GT3 (type 996) Yellow - Tarmac Works X iXO Models GLOBAL64",
+      "variant": "Unverified",
+      "editionType": "Unverified",
+      "release": "Unverified",
+      "sourceUrl": "https://www.tarmacworks.com/products/1-64-porsche-911-gt3-type-996-yellow-tarmac-works-global64?variant=48277161509121",
+      "verification": "Official SKU and scale matched; edition, release and identity review pending"
+    }
+  ],
+  "catalog_count": 516,
   "workflow_run": {
-    "run_id": "46037339318",
+    "run_id": "46051131916",
     "run_attempt": "1",
     "commit": "33e4d35d38a13bc9f1b9a5c28a1023e9634f7678"
   }

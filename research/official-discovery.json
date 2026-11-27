@@ -16127,5 +16127,40 @@
       }
     ],
     "status": "official discovery only; exact variant verification pending"
+  },
+  "tarmacworks|T64G-069-YL": {
+    "checked": "2026-11-28T01:39:55.411994+07:00",
+    "hits": [
+      {
+        "available": false,
+        "body": "<p><span style=\"color: rgb(255, 128, 0);\"><strong>Chase Version will replace normal version in random order</strong></span></p>\n<p><meta charset=\"utf-8\">1/64 scale die-cast</p>\n<p>Limited production run and will never be produced again</p>\n<p>Detailed rims &amp; rubber wheels<br></p>\n<p>Free rolling wheels<br></p>\n<p><span>Paper box packaging</span></p>\n<p>Fully licensed product<br></p>",
+        "compare_at_price_max": "0.00",
+        "compare_at_price_min": "0.00",
+        "handle": "1-64-porsche-911-gt3-type-996-yellow-tarmac-works-global64",
+        "id": 9100857082113,
+        "image": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64G-069-YL_M01.jpg?v=1774506395",
+        "price": "11.90",
+        "price_max": "11.90",
+        "price_min": "11.90",
+        "tags": [
+          "1/64",
+          "GLOBAL64",
+          "New Release"
+        ],
+        "title": "1/64 Porsche 911 GT3 (type 996) Yellow - Tarmac Works X iXO Models GLOBAL64",
+        "type": "1/64 Diecast",
+        "url": "/products/1-64-porsche-911-gt3-type-996-yellow-tarmac-works-global64?_pos=1&_psq=T64G-069-YL&_psid=78f5d3637&_ss=e",
+        "variants": [],
+        "vendor": "Tarmac Works",
+        "featured_image": {
+          "alt": "1/64 Porsche 911 GT3 (type 996) Yellow - Tarmac Works X iXO Models GLOBAL64",
+          "aspect_ratio": 1.5,
+          "height": 2762,
+          "url": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64G-069-YL_M01.jpg?v=1774506395",
+          "width": 4143
+        }
+      }
+    ],
+    "status": "official discovery only; exact variant verification pending"
   }
 }
