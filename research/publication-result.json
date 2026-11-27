@@ -3,29 +3,29 @@
   "status": "verified readback",
   "eligible": 1,
   "conflicting_candidates": {},
-  "catalog_base_commit": "53799c2e7c6a50f79e15ab3f3c13e933783c1b9a",
-  "catalog_base_count": 513,
-  "commit": "16b4375e9d40e3aa8a074fb25517f0277fe01e1c",
+  "catalog_base_commit": "16b4375e9d40e3aa8a074fb25517f0277fe01e1c",
+  "catalog_base_count": 514,
+  "commit": "33e4d35d38a13bc9f1b9a5c28a1023e9634f7678",
   "additions": [
     {
-      "id": "tarmac-works-t64g06110th",
-      "number": "T64G-061-10TH",
-      "productCode": "T64G-061-10TH",
-      "brand": "Nissan",
-      "vehicleMake": "Nissan",
+      "id": "tarmac-works-t64r052pc",
+      "number": "T64R-052-PC",
+      "productCode": "T64R-052-PC",
+      "brand": "Datsun",
+      "vehicleMake": "Datsun",
       "manufacturer": "Tarmac Works",
-      "name": "1/64 Nissan Skyline (R32) Widebody Tarmac Works 10th Anniversary - Designed by Jon Sibal - Tarmac Works GLOBAL64",
+      "name": "1/64 Datsun 510 Police Car - Tarmac Works ROAD64",
       "variant": "Unverified",
       "editionType": "Unverified",
       "release": "Unverified",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-nissan-skyline-r32-widebody-tarmac-works-10th-anniversary-designed-by-jon-sibal-global64?variant=46968148525313",
+      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-datsun-510-police-car-road64?variant=46263298294017",
       "verification": "Official SKU and scale matched; edition, release and identity review pending"
     }
   ],
-  "catalog_count": 514,
+  "catalog_count": 515,
   "workflow_run": {
-    "run_id": "46001945118",
+    "run_id": "46018293819",
     "run_attempt": "1",
-    "commit": "53799c2e7c6a50f79e15ab3f3c13e933783c1b9a"
+    "commit": "16b4375e9d40e3aa8a074fb25517f0277fe01e1c"
   }
 }

@@ -16093,5 +16093,39 @@
       }
     ],
     "status": "official discovery only; exact variant verification pending"
+  },
+  "tarmacworks|T64R-052-PC": {
+    "checked": "2026-11-27T21:42:27.393655+07:00",
+    "hits": [
+      {
+        "available": false,
+        "body": "<meta charset=\"utf-8\">\n<p>1/64 scale die-cast</p>\n<p>Limited production run and will never be produced again</p>\n<p>Detailed rims &amp; rubber wheels</p>\n<p>Detailed front and rear lights</p>\n<p>Display base and acrylic cover with a paper sleeve box</p>\n<p>Fully licensed product</p>\n<p>\u00a0</p>\n<p>\u00a0</p>",
+        "compare_at_price_max": "0.00",
+        "compare_at_price_min": "0.00",
+        "handle": "tarmac-works-1-64-datsun-510-police-car-road64",
+        "id": 8781046219009,
+        "image": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64R-052-PC_M02.jpg?v=1746157897",
+        "price": "19.90",
+        "price_max": "19.90",
+        "price_min": "19.90",
+        "tags": [
+          "1/64",
+          "New Release"
+        ],
+        "title": "1/64 Datsun 510 Police Car - Tarmac Works ROAD64",
+        "type": "1/64 Diecast",
+        "url": "/products/tarmac-works-1-64-datsun-510-police-car-road64?_pos=1&_psq=T64R-052-PC&_psid=57997a9fb&_ss=e",
+        "variants": [],
+        "vendor": "Tarmac Works",
+        "featured_image": {
+          "alt": "1/64 Datsun 510 Police Car - Tarmac Works ROAD64",
+          "aspect_ratio": 1.5,
+          "height": 3958,
+          "url": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64R-052-PC_M02.jpg?v=1746157897",
+          "width": 5937
+        }
+      }
+    ],
+    "status": "official discovery only; exact variant verification pending"
   }
 }

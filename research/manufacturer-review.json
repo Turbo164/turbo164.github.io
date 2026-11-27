@@ -530,10 +530,10 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "productCode": "T64G-061-10TH",
-      "name": "1/64 Nissan Skyline (R32) Widebody Tarmac Works 10th Anniversary - Designed by Jon Sibal - Tarmac Works GLOBAL64",
+      "productCode": "T64-043-24MGP30",
+      "name": "Tarmac Works 1:64 Audi R8 LMS GT3 evo II Sugo \u2013 Macau GT Cup \u2013 FIA GT World Cup 2024 Uno Racing James Yu \u2013 Hobby64 & Tarmac Cards",
       "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-nissan-skyline-r32-widebody-tarmac-works-10th-anniversary-designed-by-jon-sibal-global64?variant=46968148525313",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-audi-r8-lms-gt3-evo-ii-sugo-macau-gt-cup-fia-gt-world-cup-2024-uno-racing-james-yu-hobby64-tarmac-cards?variant=46883179036928",
       "vendor": "Tarmac Works",
       "releaseStatus": "unconfirmed",
       "editionType": "unconfirmed",
@@ -542,11 +542,35 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "productCode": "T64-043-24MGP30",
-      "name": "Tarmac Works 1:64 Audi R8 LMS GT3 evo II Sugo \u2013 Macau GT Cup \u2013 FIA GT World Cup 2024 Uno Racing James Yu \u2013 Hobby64 & Tarmac Cards",
+      "productCode": "T64G-F064-GR1",
+      "name": "1/64 Mercedes-AMG F1 W14 E Performance Spanish Grand Prix 2023 #63 George Russell - Tarmac Works X iXO Models GLOBAL64",
       "variant": "Default Title",
-      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-audi-r8-lms-gt3-evo-ii-sugo-macau-gt-cup-fia-gt-world-cup-2024-uno-racing-james-yu-hobby64-tarmac-cards?variant=46883179036928",
+      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mercedes-amg-f1-w14-e-performance-spanish-grand-prix-2023-63-george-russell-global64?variant=46263306912001",
       "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64R-052-PC",
+      "name": "1/64 Datsun 510 Police Car - Tarmac Works ROAD64",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-datsun-510-police-car-road64?variant=46263298294017",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "MotorHelix",
+      "productCode": "M65441",
+      "name": "*PREORDER* MotorHelix 1:64 Honda Civic Type-R (FD2) FEEL'S Livery",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-honda-civic-type-r-feels-livery?variant=47272411660544",
+      "vendor": "MotorHelix",
       "releaseStatus": "unconfirmed",
       "editionType": "unconfirmed",
       "verification": "NEEDS VERIFICATION",
@@ -831,13 +855,6 @@
       "name": "1/64 Mitsubishi Fuso Canter OG Beer - Tarmac Works TRUCK64",
       "variant": "Default Title",
       "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mitsubishi-fuso-canter-og-truck64?variant=46310130188545"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-F064-GR1",
-      "name": "1/64 Mercedes-AMG F1 W14 E Performance Spanish Grand Prix 2023 #63 George Russell - Tarmac Works X iXO Models GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mercedes-amg-f1-w14-e-performance-spanish-grand-prix-2023-63-george-russell-global64?variant=46263306912001"
     },
     {
       "manufacturer": "Tarmac Works",
@@ -3092,7 +3109,17 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "reason": "duplicate candidate SKU; inspect variants manually",
+      "reason": "possible existing SKU",
+      "sku": "T64G-061-10TH",
+      "variant_id": 46968148525313,
+      "title": "1/64 Nissan Skyline (R32) Widebody Tarmac Works 10th Anniversary - Designed by Jon Sibal - Tarmac Works GLOBAL64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-nissan-skyline-r32-widebody-tarmac-works-10th-anniversary-designed-by-jon-sibal-global64?variant=46968148525313"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
       "sku": "T64G-061-10TH",
       "variant_id": 46794782638336,
       "title": "Tarmac Works 1:64 Nissan Skyline (R32) Widebody Designed by Jon Sibal Tarmac Works 10th Anniversary Limited Edition",
@@ -3119,6 +3146,36 @@
       "variant": "Default Title",
       "vendor": "Tarmac Works",
       "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-audi-r8-lms-gt3-evo-ii-macau-gt-cup-fia-gt-world-cup-2024-uno-racing-30-with-tarmac-cards-and-truck-combo-set?variant=48062072619265"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-R89C-BL",
+      "variant_id": 46574543405312,
+      "title": "INNO64 1:64 Nissan R89C in Blue",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-r89c-in-blue?variant=46574543405312"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-R34TS-GOLD",
+      "variant_id": 46693403689216,
+      "title": "INNO64 1:64 Nissan Skyline GT-R (R34) TOP SECRET in Gold",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-skyline-gt-r-r34-top-secret-in-gold?variant=46693403689216"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-KPGC10-FM1971",
+      "variant_id": 46574552023296,
+      "title": "INNO64 1:64 Nissan Skyline 2000GT-R (KPGC10) #1 Takahashi Kunimitsu Fuji Masters 250Km 1971",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-skyline-2000gt-r-kpgc10-1-takahashi-kunimitsu-fuji-masters-250km-1971?variant=46574552023296"
     }
   ]
 }

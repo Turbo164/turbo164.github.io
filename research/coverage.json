@@ -1,25 +1,19 @@
 {
-  "time": "2026-11-27T19:50:11.252805+07:00",
+  "time": "2026-11-27T21:42:27.393655+07:00",
   "pilot_only": false,
   "version": "6.3",
-  "catalog_master_commit": "53799c2e7c6a50f79e15ab3f3c13e933783c1b9a",
-  "catalog_master_count": 513,
+  "catalog_master_commit": "16b4375e9d40e3aa8a074fb25517f0277fe01e1c",
+  "catalog_master_count": 514,
   "official_exact_candidates": 193,
   "independent_exact_candidates": 0,
   "new_leads": 0,
   "historical_master_present": false,
   "cumulative_count": 6759,
   "review_candidates": 1214,
-  "elapsed_research_seconds": 3199,
-  "catalog_count": 514,
+  "elapsed_research_seconds": 3019,
+  "catalog_count": 515,
   "lead_count": 6759,
   "sources": [
-    [
-      "Auto World",
-      "page collected",
-      1,
-      107
-    ],
     [
       "Tarmac Works",
       "repeated page; checking variants for changes",
@@ -55,9 +49,19 @@
     ],
     [
       "Johnny Lightning",
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "Johnny Lightning",
       "page collected",
       1,
       133
+    ],
+    [
+      "Auto World",
+      "repeated page; checking variants for changes",
+      1
     ],
     [
       "Auto World",
@@ -144,9 +148,25 @@
     ],
     [
       "Johnny Lightning",
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "Johnny Lightning",
       "page collected",
       1,
       160
+    ],
+    [
+      "Auto World",
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "Auto World",
+      "page collected",
+      1,
+      107
     ],
     [
       "MINI GT",
@@ -216,82 +236,23 @@
     [
       "wholesale",
       "new listing leads",
-      31,
+      41,
       0,
       "product links",
-      46
+      45
     ],
     [
       "wholesale",
       "new listing leads",
-      32,
+      42,
       0,
       "product links",
-      48
+      21
     ],
     [
       "wholesale",
-      "new listing leads",
-      33,
-      0,
-      "product links",
-      47
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      34,
-      0,
-      "product links",
-      37
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      35,
-      0,
-      "product links",
+      "no parseable product links",
       43
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      36,
-      0,
-      "product links",
-      39
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      37,
-      0,
-      "product links",
-      39
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      38,
-      0,
-      "product links",
-      41
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      39,
-      0,
-      "product links",
-      37
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      40,
-      0,
-      "product links",
-      47
     ],
     [
       "hobbysearch",
@@ -301,49 +262,49 @@
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1969guide.html",
+      "https://southtexasdiecast.com/hwguide/1976guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1970_1979_guide.html",
+      "https://southtexasdiecast.com/hwguide/1977guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1970guide.html",
+      "https://southtexasdiecast.com/hwguide/1978guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1971guide.html",
+      "https://southtexasdiecast.com/hwguide/1979guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1972guide.html",
+      "https://southtexasdiecast.com/hwguide/1980_1989_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1973guide.html",
+      "https://southtexasdiecast.com/hwguide/1980guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1974guide.html",
+      "https://southtexasdiecast.com/hwguide/1981guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1975guide.html",
+      "https://southtexasdiecast.com/hwguide/1982guide.html",
       0
     ],
     [
@@ -356,7 +317,7 @@
       "wholesale product pages attempted",
       120,
       "exact listing details",
-      1642
+      1761
     ],
     [
       "V4.1",
@@ -367,32 +328,32 @@
     [
       "V4.6",
       "product links inspected",
-      25021,
+      25441,
       "exact scale/SKU matches",
-      152
+      157
     ],
     [
       "V4.9",
       "cached product requests avoided",
       0,
       "unique cached endpoints",
-      1279
+      1311
     ],
     [
       "V4.5",
       "independent storefront searches",
-      334,
+      319,
       "wholesale SKU backlog",
-      1581,
+      1699,
       "new search records inspected",
-      334
+      319
     ],
     [
       "V4.7",
       "manufacturer-matched review candidates",
-      46,
+      48,
       "excluded or duplicate",
-      111
+      115
     ],
     [
       "V5.0",
@@ -411,7 +372,7 @@
     [
       "V5.2",
       "official detail evidence records",
-      238
+      239
     ],
     [
       "V6.1",
@@ -436,9 +397,9 @@
     ]
   ],
   "publication": "verified readback",
-  "run_id": "46001945118",
+  "run_id": "46018293819",
   "run_attempt": "1",
-  "commit": "53799c2e7c6a50f79e15ab3f3c13e933783c1b9a",
+  "commit": "16b4375e9d40e3aa8a074fb25517f0277fe01e1c",
   "published": 1,
   "eligible_verified": 1,
   "research_status": "completed",
