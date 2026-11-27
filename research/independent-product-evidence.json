@@ -146551,5 +146551,1061 @@
     "manufacturer_requested": "Ignition Model",
     "matches": [],
     "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|IXO Models|U64TRTR003M|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-sumatran-rhino-x-mizu-diecast?_pos=1&_psq=IXO+Models+1976+Kenworth+K100+Aerodyne+Truck+with+Modern+Trailer+Brown+with+Tan+and+Gold+Stripes+1%2F64+Diecast+Model+by+IXO+Models&_psid=2967caf64&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|IXO Models|U64TRTR003M|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-dually-on-fire-v2?_pos=2&_psq=IXO+Models+1976+Kenworth+K100+Aerodyne+Truck+with+Modern+Trailer+Brown+with+Tan+and+Gold+Stripes+1%2F64+Diecast+Model+by+IXO+Models&_psid=2967caf64&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|IXO Models|U64TRTR003M|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r33-active-carbon-r-v2?_pos=3&_psq=IXO+Models+1976+Kenworth+K100+Aerodyne+Truck+with+Modern+Trailer+Brown+with+Tan+and+Gold+Stripes+1%2F64+Diecast+Model+by+IXO+Models&_psid=2967caf64&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|INNO64|IN64-RX7FCP-PB|https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-rx-7-fc3s-pandem-rocket-bunny-in-purple?_pos=1&_psq=IN64-RX7FCP-PB&_psid=a81adb385&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "INNO64",
+    "matches": [
+      {
+        "sku": "IN64-RX7FCP-PB",
+        "variant_id": 46762343268608,
+        "title": "INNO64 1:64 Mazda RX-7 (FC3S) \"PANDEM ROCKET BUNNY\" in Purple",
+        "variant": "Default Title",
+        "vendor": "Inno Models",
+        "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-rx-7-fc3s-pandem-rocket-bunny-in-purple?variant=46762343268608"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Tarmac Works|T64G-074-OR|https://www.modelcarshouston.com/products/preorder-tarmac-works-armac-works-1-64-nissan-veilside-ffz400-fairlady-z-in-orange?_pos=1&_psq=T64G-074-OR&_psid=0752237e9&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Tarmac Works",
+    "matches": [
+      {
+        "sku": "T64G-074-OR",
+        "variant_id": 46411478106368,
+        "title": "Tarmac Works 1:64 Nissan VeilSide FFZ400 Fairlady Z in Orange",
+        "variant": "Default Title",
+        "vendor": "Tarmac Works",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-armac-works-1-64-nissan-veilside-ffz400-fairlady-z-in-orange?variant=46411478106368"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Tarmac Works|T64G-074-OR|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-nissan-veilside-ffz400-fairlady-z-in-white?_pos=2&_psq=T64G-074-OR&_psid=0752237e9&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Tarmac Works",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Autoart|20202|https://www.modelcarshouston.com/products/make-up-co-ltd-eidolon-1-18-lamborghini-aventador-svj-roadster-2020-ad-personam-2-tone-paint?_pos=1&_psq=20202&_psid=b8435c790&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Autoart",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Autoart|20202|https://www.modelcarshouston.com/products/make-up-co-ltd-idea-1-18-toyota-gr-supra-toms-edition-2020?_pos=2&_psq=20202&_psid=b8435c790&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Autoart",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Autoart|20202|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mercedes-amg-gt3-2-nurburgring-24h-2020?_pos=3&_psq=20202&_psid=b8435c790&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Autoart",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Autoart|20202|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-nissan-gt-r-nismo-gt3-gt-world-challenge-asia-esports-2020-tarmac-emotorsports?_pos=4&_psq=20202&_psid=b8435c790&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Autoart",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Autoart|20202|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mercedes-amg-f1-w11-eq-performance-austrian-grand-prix-2020-winner-valtteri-bottas?_pos=5&_psq=20202&_psid=b8435c790&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Autoart",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Autoart|20202|https://www.modelcarshouston.com/products/preorder-make-up-co-ltd-eidolon-1-18-lamborghini-aventador-svj-roadster-2020-ad-personam-2-tone-paint?_pos=6&_psq=20202&_psid=b8435c790&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Autoart",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Autoart|20202|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mercedes-amg-f1-w11-eq-performance-tuscan-grand-prix-2020-winner-lewis-hamilton?_pos=7&_psq=20202&_psid=b8435c790&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Autoart",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Autoart|20202|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mercedes-amg-f1-w11-eq-performance-turkish-grand-prix-2020-winner-world-champion-2020-lewis-hamilton?_pos=8&_psq=20202&_psid=b8435c790&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Autoart",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Autoart|20202|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mercedes-amg-f1-w11-eq-performance-sakhir-grand-prix-2020-george-russell?_pos=9&_psq=20202&_psid=b8435c790&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Autoart",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Autoart|20202|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mercedes-amg-f1-w11-eq-performance-british-grand-prix-2020-winner-lewis-hamilton?_pos=10&_psq=20202&_psid=b8435c790&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Autoart",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|IXO Models|U64TRTR001S|model|https://www.kaidohouse.com/products/kaido-gt-volkswagen-t1-greddy-pickup-v1?_pos=1&_psq=IXO+Models+1976+Ford+CL+9000+Truck+with+Refrigerated+Trailer+Blue+and+White+with+Stripes+1%2F64+Diecast+Model+by+IXO+Models&_psid=8fa13907f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|IXO Models|U64TRTR001S|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-intimidator-v1?_pos=2&_psq=IXO+Models+1976+Ford+CL+9000+Truck+with+Refrigerated+Trailer+Blue+and+White+with+Stripes+1%2F64+Diecast+Model+by+IXO+Models&_psid=8fa13907f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|IXO Models|U64TRTR001S|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-sumatran-rhino-x-mizu-diecast?_pos=3&_psq=IXO+Models+1976+Ford+CL+9000+Truck+with+Refrigerated+Trailer+Blue+and+White+with+Stripes+1%2F64+Diecast+Model+by+IXO+Models&_psid=8fa13907f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|IXO Models|U64TRTR001S|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-dually-on-fire-v2?_pos=4&_psq=IXO+Models+1976+Ford+CL+9000+Truck+with+Refrigerated+Trailer+Blue+and+White+with+Stripes+1%2F64+Diecast+Model+by+IXO+Models&_psid=8fa13907f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLCG037|https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-1987-ford-ranger-stx-black-w-silver-stx-stripes-1-64-scale-diecast-due-september-2025?_pos=1&_psq=JLCG037&_psid=1ad4bedf1&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLCG037|https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-1987-ford-ranger-stx-alpine-green-w-gold-stx-stripes-1-64-scale-diecast-due-september-2025?_pos=2&_psq=JLCG037&_psid=1ad4bedf1&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLCG037|https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-1969-amc-javelin-big-bad-blue-w-white-c-stripe-1-64-scale-diecast-due-september-2025?_pos=3&_psq=JLCG037&_psid=1ad4bedf1&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLCG037|https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-1969-amc-javelin-big-bad-green-w-white-c-stripe-1-64-scale-diecast-due-september-2025?_pos=4&_psq=JLCG037&_psid=1ad4bedf1&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLCG037|https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-1985-mazda-rx-7-v3-tender-blue-1-64-scale-diecast-due-september-2025?_pos=5&_psq=JLCG037&_psid=1ad4bedf1&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLCG037|https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-1985-mazda-rx-7-v9-metallic-silver-1-64-scale-diecast-due-september-2025?_pos=6&_psq=JLCG037&_psid=1ad4bedf1&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Autoart|20202|https://www.autoworldstore.com/products/johnny-lightning-2020-corvette-c8-orange-1-24-diecast?_pos=1&_psq=20202&_psid=3709497c9&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Autoart",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Autoart|20202|https://www.autoworldstore.com/products/pre-order-auto-world-2020-ford-f-150-truck-velocity-blue-1-64-diecast-due-may-2025?_pos=2&_psq=20202&_psid=3709497c9&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Autoart",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Minichamps|MC640064222|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-star-racing-v1?_pos=1&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=679980b10&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Minichamps|MC640064222|model|https://www.kaidohouse.com/products/kaido-gt-toyota-sprinter-trueno-kaido-street-v1?_pos=2&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=679980b10&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Minichamps|MC640064222|model|https://www.kaidohouse.com/products/kaido-gt-honda-civic-ef-kaido-works-v2?_pos=3&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=679980b10&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Minichamps|MC640064222|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r33-active-carbon-r-v2?_pos=4&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=679980b10&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Minichamps|MC640064222|model|https://www.kaidohouse.com/products/garage-find-nsx-custom-diecast?_pos=5&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=679980b10&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Tarmac Works|T64G-074-OR|https://www.tarmacworks.com/products/tarmac-works-1-64-nissan-veilside-ffz400-fairlady-z-orange-global64?_pos=1&_psq=T64G-074-OR&_psid=e1892aa64&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Tarmac Works",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Tarmac Works|T64G-074-OR|https://www.tarmacworks.com/products/tarmac-works-1-64-nissan-veilside-ffz400-fairlady-z-blue-global64?_pos=2&_psq=T64G-074-OR&_psid=e1892aa64&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Tarmac Works",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Majorette|MJ8505001012|model|https://www.tarmacworks.com/products/tarmac-works-x-one-piece-model-car-collection-vol-1-6-cars-set-collab64?_pos=1&_psq=Majorette+2005+Chevrolet+Corvette+C6R+%2316+White+with+Black+and+Red+Graphics+%22Collection%22+Series+1%2F64+Diecast+Model+Car+by+Majorette&_psid=7c6de6d91&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Majorette",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Majorette|MJ8505001012|model|https://www.tarmacworks.com/products/tarmac-works-1-64-vertex-nissan-silvia-s13-blue-grey-global64?_pos=2&_psq=Majorette+2005+Chevrolet+Corvette+C6R+%2316+White+with+Black+and+Red+Graphics+%22Collection%22+Series+1%2F64+Diecast+Model+Car+by+Majorette&_psid=7c6de6d91&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Majorette",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Majorette|MJ8505001012|model|https://www.tarmacworks.com/products/j-collection-1-64-nissan-skyline-2000gt-r-kpgc110-blue-metallic-collab64?_pos=3&_psq=Majorette+2005+Chevrolet+Corvette+C6R+%2316+White+with+Black+and+Red+Graphics+%22Collection%22+Series+1%2F64+Diecast+Model+Car+by+Majorette&_psid=7c6de6d91&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Majorette",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Majorette|MJ8505001012|model|https://www.tarmacworks.com/products/tarmac-works-x-one-piece-model-car-collection-vol-1-6-cars-set-with-volkswagen-type-ii-t2-panel-van-special-edition-collab64?_pos=4&_psq=Majorette+2005+Chevrolet+Corvette+C6R+%2316+White+with+Black+and+Red+Graphics+%22Collection%22+Series+1%2F64+Diecast+Model+Car+by+Majorette&_psid=7c6de6d91&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Majorette",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Majorette|MJ8505001012|model|https://www.tarmacworks.com/products/j-collection-x-tarmac-works-1-64-honda-prelude-ba4-white-collab64?_pos=5&_psq=Majorette+2005+Chevrolet+Corvette+C6R+%2316+White+with+Black+and+Red+Graphics+%22Collection%22+Series+1%2F64+Diecast+Model+Car+by+Majorette&_psid=7c6de6d91&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Majorette",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Majorette|MJ8505001012|model|https://www.tarmacworks.com/products/centauria-x-ixo-collections-ferrari-gt-1-64-magazine-asia-edition-ferrari-f40-1987-english-version?_pos=6&_psq=Majorette+2005+Chevrolet+Corvette+C6R+%2316+White+with+Black+and+Red+Graphics+%22Collection%22+Series+1%2F64+Diecast+Model+Car+by+Majorette&_psid=7c6de6d91&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Majorette",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Majorette|MJ8505001012|model|https://www.tarmacworks.com/products/centauria-x-ixo-collections-ferrari-gt-1-64-magazine-asia-edition-ferrari-250-gto-1962-english-version?_pos=7&_psq=Majorette+2005+Chevrolet+Corvette+C6R+%2316+White+with+Black+and+Red+Graphics+%22Collection%22+Series+1%2F64+Diecast+Model+Car+by+Majorette&_psid=7c6de6d91&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Majorette",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Majorette|MJ8505001012|model|https://www.tarmacworks.com/products/j-collection-honda-nsx-na1-white?_pos=8&_psq=Majorette+2005+Chevrolet+Corvette+C6R+%2316+White+with+Black+and+Red+Graphics+%22Collection%22+Series+1%2F64+Diecast+Model+Car+by+Majorette&_psid=7c6de6d91&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Majorette",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Majorette|MJ8505001012|model|https://www.tarmacworks.com/products/centauria-x-ixo-collections-ferrari-gt-1-64-magazine-asia-edition-ferrari-f12-tdf-2015-english-version?_pos=9&_psq=Majorette+2005+Chevrolet+Corvette+C6R+%2316+White+with+Black+and+Red+Graphics+%22Collection%22+Series+1%2F64+Diecast+Model+Car+by+Majorette&_psid=7c6de6d91&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Majorette",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Majorette|MJ8505001012|model|https://www.tarmacworks.com/products/tarmac-cards-honda-collection-vol-01-nsx-box?_pos=10&_psq=Majorette+2005+Chevrolet+Corvette+C6R+%2316+White+with+Black+and+Red+Graphics+%22Collection%22+Series+1%2F64+Diecast+Model+Car+by+Majorette&_psid=7c6de6d91&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Majorette",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84684CS|model|https://www.kaidohouse.com/products/kaido-gt-datsun-510-wagon-hks-v1?_pos=1&_psq=Diecast+Masters+CAT+Caterpillar+272D+Skid+Steer+Loader+and+297D+Compact+Track+Loader+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=aba253a8f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84684CS|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-dually-kaido-splash-v1?_pos=2&_psq=Diecast+Masters+CAT+Caterpillar+272D+Skid+Steer+Loader+and+297D+Compact+Track+Loader+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=aba253a8f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84684CS|model|https://www.kaidohouse.com/products/kaido-gt-volkswagen-t1-greddy-pickup-v1?_pos=3&_psq=Diecast+Masters+CAT+Caterpillar+272D+Skid+Steer+Loader+and+297D+Compact+Track+Loader+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=aba253a8f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84684CS|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-intimidator-v1?_pos=4&_psq=Diecast+Masters+CAT+Caterpillar+272D+Skid+Steer+Loader+and+297D+Compact+Track+Loader+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=aba253a8f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84684CS|model|https://www.kaidohouse.com/products/kaido-gt-honda-nsx-na1-kaido-works-v2?_pos=5&_psq=Diecast+Masters+CAT+Caterpillar+272D+Skid+Steer+Loader+and+297D+Compact+Track+Loader+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=aba253a8f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84684CS|model|https://www.kaidohouse.com/products/kaido-gt-nissan-fairlady-z-tamiya-x-kaido-house-the-frog-v1?_pos=6&_psq=Diecast+Masters+CAT+Caterpillar+272D+Skid+Steer+Loader+and+297D+Compact+Track+Loader+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=aba253a8f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84684CS|model|https://www.kaidohouse.com/products/kaido-gt-honda-civic-ef-kaido-works-v2?_pos=7&_psq=Diecast+Masters+CAT+Caterpillar+272D+Skid+Steer+Loader+and+297D+Compact+Track+Loader+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=aba253a8f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84684CS|model|https://www.kaidohouse.com/products/kaido-gt-nissan-fairlady-z-advan?_pos=8&_psq=Diecast+Masters+CAT+Caterpillar+272D+Skid+Steer+Loader+and+297D+Compact+Track+Loader+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=aba253a8f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84684CS|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-star-racing-v1?_pos=9&_psq=Diecast+Masters+CAT+Caterpillar+272D+Skid+Steer+Loader+and+297D+Compact+Track+Loader+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=aba253a8f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84684CS|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-intimidator-v2?_pos=10&_psq=Diecast+Masters+CAT+Caterpillar+272D+Skid+Steer+Loader+and+297D+Compact+Track+Loader+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=aba253a8f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064222|model|https://www.modelcarshouston.com/products/preorder-tarmac-works-x-minichamps-1-64-porsche-gt3rs-992-2-mr-in-red-white?_pos=1&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=9ddbf4ef7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064222|model|https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-porsche-911-gt3-r-992-77-ao-racing-skeleton-rexy-2026-imsa-petit-le-mans-glow-in-the-dark?_pos=2&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=9ddbf4ef7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064222|model|https://www.modelcarshouston.com/products/preorder-almost-real-ar-box-1-64-porsche-911-gt3-r-2026-gt-world-challenge-asia-mandalika-911-test-car?_pos=3&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=9ddbf4ef7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064222|model|https://www.modelcarshouston.com/products/preorder-ignition-model-1-64-rwb-997-gt3-in-white?_pos=4&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=9ddbf4ef7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064222|model|https://www.modelcarshouston.com/products/preorder-almost-real-ar-box-1-64-porsche-911-gt3-r-2026-gt-world-challenge-asia-fuji-absolute-racing-911?_pos=5&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=9ddbf4ef7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064222|model|https://www.modelcarshouston.com/products/mini-gt-1-64-porsche-911-992-gt3-rs-weissach-package-in-guards-red?_pos=6&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=9ddbf4ef7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064222|model|https://www.modelcarshouston.com/products/preorder-minigt-1-64-porsche-911-992-gt3-rs-weissach-package-in-white-with-pyro-red-accents?_pos=7&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=9ddbf4ef7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064222|model|https://www.modelcarshouston.com/products/preorder-minigt-1-64-porsche-911-992-gt3-rs-weissach-package-in-white-with-indigo-blue?_pos=8&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=9ddbf4ef7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064222|model|https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-porsche-911-gt3-r-27-hubauto-racing-2023-fia-gt-world-cup-70th-macau-grand-prix?_pos=9&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=9ddbf4ef7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064222|model|https://www.modelcarshouston.com/products/tarmac-works-1-64-porsche-911-992-gt3-rs-in-white-red?_pos=10&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=9ddbf4ef7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84683CS|model|https://www.kaidohouse.com/products/kaido-gt-volkswagen-t1-greddy-pickup-v1?_pos=1&_psq=Diecast+Masters+CAT+Caterpillar+320F+L+Excavator+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=8bfac993f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84683CS|model|https://www.kaidohouse.com/products/kaido-gt-honda-civic-ef-kaido-works-v2?_pos=2&_psq=Diecast+Masters+CAT+Caterpillar+320F+L+Excavator+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=8bfac993f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84683CS|model|https://www.kaidohouse.com/products/kaido-gt-nissan-fairlady-z-tamiya-x-kaido-house-the-frog-v1?_pos=3&_psq=Diecast+Masters+CAT+Caterpillar+320F+L+Excavator+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=8bfac993f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84683CS|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-dually-kaido-splash-v1?_pos=4&_psq=Diecast+Masters+CAT+Caterpillar+320F+L+Excavator+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=8bfac993f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84683CS|model|https://www.kaidohouse.com/products/kaido-gt-datsun-510-wagon-hks-v1?_pos=5&_psq=Diecast+Masters+CAT+Caterpillar+320F+L+Excavator+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=8bfac993f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84683CS|model|https://www.kaidohouse.com/products/kaido-gt-honda-nsx-na1-kaido-works-v2?_pos=6&_psq=Diecast+Masters+CAT+Caterpillar+320F+L+Excavator+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=8bfac993f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84683CS|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-intimidator-v2?_pos=7&_psq=Diecast+Masters+CAT+Caterpillar+320F+L+Excavator+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=8bfac993f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84683CS|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-intimidator-v1?_pos=8&_psq=Diecast+Masters+CAT+Caterpillar+320F+L+Excavator+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=8bfac993f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84683CS|model|https://www.kaidohouse.com/products/kaido-gt-nissan-fairlady-z-advan?_pos=9&_psq=Diecast+Masters+CAT+Caterpillar+320F+L+Excavator+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=8bfac993f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84683CS|model|https://www.kaidohouse.com/products/kaido-gt-volkswagen-t1-kaido-works-v1?_pos=10&_psq=Diecast+Masters+CAT+Caterpillar+320F+L+Excavator+with+Interchangeable+Attachment+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=8bfac993f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Minichamps|MC640064222|model|https://www.autoworldstore.com/products/tamiya-porsche-911-gt3-rs-992-1-24-scale-model-kit?_pos=1&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=1ba7fe077&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|MINI GT|MGT00953|https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-mazda-az-1-liberty-walk-lb40-in-white-2024-tokyo-auto-salon-edition?_pos=1&_psq=MGT00953&_psid=65be40e38&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "MINI GT",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|INNO64|IN64-FK8-WHI|https://www.modelcarshouston.com/products/preorder-inno64-1-64-honda-civic-fk8-type-r-in-white?_pos=1&_psq=IN64-FK8-WHI&_psid=7a8ecb0ca&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "INNO64",
+    "matches": [
+      {
+        "sku": "IN64-FK8-WHI",
+        "variant_id": 46693407195392,
+        "title": "INNO64 1:64 Honda Civic (FK8) Type-R in White",
+        "variant": "Default Title",
+        "vendor": "Inno Models",
+        "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-honda-civic-fk8-type-r-in-white?variant=46693407195392"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064222|model|https://www.tarmacworks.com/products/tarmac-works-1-64-porsche-911-gt3-r-dtm-champion-2023-91-hobby64?_pos=1&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=48cc05ad9&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064222|model|https://www.tarmacworks.com/products/tarmac-works-1-64-porsche-911-gt3-cup-type-996-presentation-twoc-members-only-model-global64?_pos=2&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=48cc05ad9&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064222|model|https://www.tarmacworks.com/products/1-64-porsche-911-gt3-r-nurburgring-24h-2024-33-tarmac-works-x-ixo-models-hobby64?_pos=3&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=48cc05ad9&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064222|model|https://www.tarmacworks.com/products/1-43-porsche-911-gt3-r-gt-world-challenge-asia-2025-fuji-13-phantom-global-racing-tarmac-works-x-ixo-models-hobby43?_pos=4&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=48cc05ad9&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064222|model|https://www.tarmacworks.com/products/1-64-porsche-911-carrera-rs-2-7-lightweight-white-red-collab64-schuco-x-tarmac-works-old-copy?_pos=5&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=48cc05ad9&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064222|model|https://www.tarmacworks.com/products/curitiba64-1-64-porsche-917-kh-test-car-22?_pos=6&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=48cc05ad9&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064222|model|https://www.tarmacworks.com/products/1-64-porsche-911-gt3-r-nurburgring-24h-2025-33-tarmac-works-x-ixo-models-hobby64?_pos=7&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=48cc05ad9&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064222|model|https://www.tarmacworks.com/products/minichamps-x-tarmac-works-1-64-porsche-718-spyder-rs-mint-green-collab64?_pos=8&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=48cc05ad9&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064222|model|https://www.tarmacworks.com/products/1-64-porsche-911-gt3-r-suzuka-1000km-intercontinental-gt-challenge-2025-phantom-global-racing-13-with-tarmac-cards-tarmac-works-x-ixo-models-hobby64?_pos=9&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=48cc05ad9&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064222|model|https://www.tarmacworks.com/products/1-64-porsche-911-gt3-r-gt-world-challenge-asia-2025-phantom-global-racing-13-with-tarmac-cards-tarmac-works-x-ixo-models-hobby64?_pos=10&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+Black+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=48cc05ad9&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84681CS|model|https://www.kaidohouse.com/products/kaido-gt-volkswagen-t1-greddy-pickup-v1?_pos=1&_psq=Diecast+Masters+CAT+Caterpillar+950M+Wheel+Loader+Yellow+with+Log+fork+and+Wood+Log+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=cd4a1f683&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84681CS|model|https://www.kaidohouse.com/products/kaido-gt-datsun-510-wagon-hks-v1?_pos=2&_psq=Diecast+Masters+CAT+Caterpillar+950M+Wheel+Loader+Yellow+with+Log+fork+and+Wood+Log+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=cd4a1f683&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84681CS|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-dually-kaido-splash-v1?_pos=3&_psq=Diecast+Masters+CAT+Caterpillar+950M+Wheel+Loader+Yellow+with+Log+fork+and+Wood+Log+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=cd4a1f683&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84681CS|model|https://www.kaidohouse.com/products/kaido-gt-honda-civic-ef-kaido-works-v2?_pos=4&_psq=Diecast+Masters+CAT+Caterpillar+950M+Wheel+Loader+Yellow+with+Log+fork+and+Wood+Log+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=cd4a1f683&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84681CS|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-intimidator-v2?_pos=5&_psq=Diecast+Masters+CAT+Caterpillar+950M+Wheel+Loader+Yellow+with+Log+fork+and+Wood+Log+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=cd4a1f683&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84681CS|model|https://www.kaidohouse.com/products/kaido-gt-nissan-fairlady-z-tamiya-x-kaido-house-the-frog-v1?_pos=6&_psq=Diecast+Masters+CAT+Caterpillar+950M+Wheel+Loader+Yellow+with+Log+fork+and+Wood+Log+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=cd4a1f683&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84681CS|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-intimidator-v1?_pos=7&_psq=Diecast+Masters+CAT+Caterpillar+950M+Wheel+Loader+Yellow+with+Log+fork+and+Wood+Log+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=cd4a1f683&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84681CS|model|https://www.kaidohouse.com/products/kaido-gt-volkswagen-t1-street-battle-spec-v1?_pos=8&_psq=Diecast+Masters+CAT+Caterpillar+950M+Wheel+Loader+Yellow+with+Log+fork+and+Wood+Log+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=cd4a1f683&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84681CS|model|https://www.kaidohouse.com/products/kaido-gt-honda-nsx-na1-kaido-works-v2?_pos=9&_psq=Diecast+Masters+CAT+Caterpillar+950M+Wheel+Loader+Yellow+with+Log+fork+and+Wood+Log+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=cd4a1f683&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84681CS|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-20000gt-r-kaido-v1?_pos=10&_psq=Diecast+Masters+CAT+Caterpillar+950M+Wheel+Loader+Yellow+with+Log+fork+and+Wood+Log+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=cd4a1f683&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Minichamps|MC640064221|model|https://www.kaidohouse.com/products/kaido-gt-toyota-sprinter-trueno-kaido-street-v1?_pos=1&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=2cbdc87ef&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Minichamps|MC640064221|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-star-racing-v1?_pos=2&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=2cbdc87ef&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Minichamps|MC640064221|model|https://www.kaidohouse.com/products/kaido-gt-honda-civic-ef-kaido-works-v2?_pos=3&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=2cbdc87ef&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Minichamps|MC640064221|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r33-active-carbon-r-v2?_pos=4&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=2cbdc87ef&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Minichamps|MC640064221|model|https://www.kaidohouse.com/products/garage-find-nsx-custom-diecast?_pos=5&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=2cbdc87ef&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Tarmac Works|T64-067-95LM23|https://www.tarmacworks.com/products/tarmac-works-1-64-nissan-nismo-gt-r-lm-24h-of-le-mans-1995-presentation-23-hobby64?_pos=1&_psq=T64-067-95LM23&_psid=c4263a66f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Tarmac Works",
+    "matches": [
+      {
+        "sku": "T64-067-95LM23",
+        "variant_id": 46521943720193,
+        "title": "1/64 Nissan NISMO GT-R LM 24h of Le Mans 1995 Presentation #23 - Tarmac Works HOBBY64",
+        "variant": "Default Title",
+        "vendor": "Tarmac Works",
+        "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-nissan-nismo-gt-r-lm-24h-of-le-mans-1995-presentation-23-hobby64?variant=46521943720193"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|84640CS|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-20000gt-r-kaido-v1?_pos=1&_psq=Diecast+Masters+CAT+Caterpillar+CB13+Roller+with+ROPS+Yellow+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=be47494e1&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064221|model|https://www.modelcarshouston.com/products/preorder-tarmac-works-x-minichamps-1-64-porsche-gt3rs-992-2-mr-in-red-white?_pos=1&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=066547f36&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064221|model|https://www.modelcarshouston.com/products/preorder-almost-real-ar-box-1-64-porsche-911-gt3-r-2026-gt-world-challenge-asia-mandalika-911-test-car?_pos=2&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=066547f36&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064221|model|https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-porsche-911-gt3-r-992-77-ao-racing-skeleton-rexy-2026-imsa-petit-le-mans-glow-in-the-dark?_pos=3&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=066547f36&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064221|model|https://www.modelcarshouston.com/products/preorder-ignition-model-1-64-rwb-997-gt3-in-white?_pos=4&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=066547f36&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064221|model|https://www.modelcarshouston.com/products/preorder-almost-real-ar-box-1-64-porsche-911-gt3-r-2026-gt-world-challenge-asia-fuji-absolute-racing-911?_pos=5&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=066547f36&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064221|model|https://www.modelcarshouston.com/products/mini-gt-1-64-porsche-911-992-gt3-rs-weissach-package-in-guards-red?_pos=6&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=066547f36&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064221|model|https://www.modelcarshouston.com/products/preorder-minigt-1-64-porsche-911-992-gt3-rs-weissach-package-in-white-with-pyro-red-accents?_pos=7&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=066547f36&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064221|model|https://www.modelcarshouston.com/products/preorder-minigt-1-64-porsche-911-992-gt3-rs-weissach-package-in-white-with-indigo-blue?_pos=8&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=066547f36&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064221|model|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-porsche-911-gt3-rs-4-0-997-2-in-white?_pos=9&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=066547f36&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Minichamps|MC640064221|model|https://www.modelcarshouston.com/products/tarmac-works-1-64-porsche-911-992-gt3-rs-in-white-red?_pos=10&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=066547f36&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|IXO Models|U64TR016|model|https://www.autoworldstore.com/products/pre-order-auto-world-1965-chevrolet-impala-willow-green-1-64-diecast-due-october-2025?_pos=1&_psq=IXO+Models+1970+GMC+Astro+95+Truck+Tractor+Dark+Green+with+Graphics+1%2F64+Diecast+Model+by+IXO+Models&_psid=710b358ab&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Minichamps|MC640064221|model|https://www.autoworldstore.com/products/tamiya-porsche-911-gt3-rs-992-1-24-scale-model-kit?_pos=1&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=4b5a42cc4&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|MINI GT|MGT00995|https://www.modelcarshouston.com/products/preorder-minigt-1-64-abarth-595-lb-works-x-abas-works-in-grey?_pos=1&_psq=MGT00995&_psid=556c689d3&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "MINI GT",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|INNO64|IN64-RX3-KTYM|https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-rx-3-savanna-lbwk-katayama-racing-livery?_pos=1&_psq=IN64-RX3-KTYM&_psid=195af5887&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "INNO64",
+    "matches": [
+      {
+        "sku": "IN64-RX3-KTYM",
+        "variant_id": 46693406376192,
+        "title": "INNO64 1:64 Mazda RX-3 Savanna LBWK \"KATAYAMA RACING\" Livery",
+        "variant": "Default Title",
+        "vendor": "Inno Models",
+        "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-rx-3-savanna-lbwk-katayama-racing-livery?variant=46693406376192"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064221|model|https://www.tarmacworks.com/products/tarmac-works-1-64-porsche-911-gt3-r-dtm-champion-2023-91-hobby64?_pos=1&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=47b034def&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064221|model|https://www.tarmacworks.com/products/tarmac-works-1-64-porsche-911-gt3-cup-type-996-presentation-twoc-members-only-model-global64?_pos=2&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=47b034def&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064221|model|https://www.tarmacworks.com/products/1-64-porsche-911-gt3-r-nurburgring-24h-2024-33-tarmac-works-x-ixo-models-hobby64?_pos=3&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=47b034def&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064221|model|https://www.tarmacworks.com/products/curitiba64-1-64-porsche-917-kh-test-car-22?_pos=4&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=47b034def&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064221|model|https://www.tarmacworks.com/products/1-64-porsche-911-carrera-rs-2-7-lightweight-white-red-collab64-schuco-x-tarmac-works-old-copy?_pos=5&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=47b034def&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064221|model|https://www.tarmacworks.com/products/1-43-porsche-911-gt3-r-gt-world-challenge-asia-2025-fuji-13-phantom-global-racing-tarmac-works-x-ixo-models-hobby43?_pos=6&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=47b034def&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064221|model|https://www.tarmacworks.com/products/1-64-porsche-911-gt3-r-nurburgring-24h-2025-33-tarmac-works-x-ixo-models-hobby64?_pos=7&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=47b034def&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064221|model|https://www.tarmacworks.com/products/minichamps-x-tarmac-works-1-64-porsche-718-spyder-rs-mint-green-collab64?_pos=8&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=47b034def&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064221|model|https://www.tarmacworks.com/products/1-64-porsche-911-gt3-r-suzuka-1000km-intercontinental-gt-challenge-2025-phantom-global-racing-13-with-tarmac-cards-tarmac-works-x-ixo-models-hobby64?_pos=9&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=47b034def&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Minichamps|MC640064221|model|https://www.tarmacworks.com/products/1-64-porsche-911-gt3-r-gt-world-challenge-asia-2025-phantom-global-racing-13-with-tarmac-cards-tarmac-works-x-ixo-models-hobby64?_pos=10&_psq=Minichamps+2025+Porsche+911+%28992.2%29+GT3+Weissach+Package+White+with+Carbon+Stripe+Limited+Edition+to+240+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+Minichamps&_psid=47b034def&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Minichamps",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4094|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-star-racing-v1?_pos=1&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+Blue+Metallic&_psid=8c3885f4f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4094|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r33-kaido-works-advan?_pos=2&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+Blue+Metallic&_psid=8c3885f4f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4094|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-works%E2%84%A2-shinjuku-v1-copy?_pos=3&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+Blue+Metallic&_psid=8c3885f4f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4094|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-20000gt-r-kaido-v1?_pos=4&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+Blue+Metallic&_psid=8c3885f4f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4094|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-2000gt-r-kpgc10-cortez-v1?_pos=5&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+Blue+Metallic&_psid=8c3885f4f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4094|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r33-bfthr-v1?_pos=6&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+Blue+Metallic&_psid=8c3885f4f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4094|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-2000gt-r-kpgc10-kaido-racing-v1?_pos=7&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+Blue+Metallic&_psid=8c3885f4f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4094|model|https://www.kaidohouse.com/products/kaido-nissan-skyline-2000gt-r-kpgc10-kaido-works%E2%84%A2?_pos=8&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+Blue+Metallic&_psid=8c3885f4f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4094|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-2000gt-r-kpgc10-kaido-street-v2?_pos=9&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+Blue+Metallic&_psid=8c3885f4f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4094|model|https://www.kaidohouse.com/products/kaido-gt-nissan-silvia-s13-r-kadio-splash-v1?_pos=10&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+Blue+Metallic&_psid=8c3885f4f&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Tarmac Works|T64G-TL032-ONP|https://www.tarmacworks.com/products/tarmac-works-1-64-dodge-van-ohige-no-pon-global64?_pos=1&_psq=T64G-TL032-ONP&_psid=bcd3ab9de&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Tarmac Works",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Maisto|11454RD|model|https://www.kaidohouse.com/products/kaido-house-x-offse7%C2%AE-enamel-pin-display-case-purple?_pos=1&_psq=Maisto+Mercedes-Benz+Actros+Open+Car+Hauler+Red+and+Black+with+White+Stripes+and+1990+Mercedes-Benz+190E+Red+%22Transporters%22+Series+1%2F64+Diecast+Models+by+Maisto&_psid=d80b8e7e8&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Maisto",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Maisto|11454RD|model|https://www.kaidohouse.com/products/kaido-house-x-offset-enamel-pin-display-case?_pos=2&_psq=Maisto+Mercedes-Benz+Actros+Open+Car+Hauler+Red+and+Black+with+White+Stripes+and+1990+Mercedes-Benz+190E+Red+%22Transporters%22+Series+1%2F64+Diecast+Models+by+Maisto&_psid=d80b8e7e8&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Maisto",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Maisto|11454RD|model|https://www.kaidohouse.com/products/kaido-house-x-offse7%C2%AE-enamel-pin-display-case-smoke?_pos=3&_psq=Maisto+Mercedes-Benz+Actros+Open+Car+Hauler+Red+and+Black+with+White+Stripes+and+1990+Mercedes-Benz+190E+Red+%22Transporters%22+Series+1%2F64+Diecast+Models+by+Maisto&_psid=d80b8e7e8&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Maisto",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Maisto|11454RD|model|https://www.kaidohouse.com/products/kaido-house-x-offse7%C2%AE-enamel-pin-display-case-red?_pos=4&_psq=Maisto+Mercedes-Benz+Actros+Open+Car+Hauler+Red+and+Black+with+White+Stripes+and+1990+Mercedes-Benz+190E+Red+%22Transporters%22+Series+1%2F64+Diecast+Models+by+Maisto&_psid=d80b8e7e8&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Maisto",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Maisto|11454RD|model|https://www.kaidohouse.com/products/kaido-house-x-offset-enamel-pin-display-case-yellow?_pos=5&_psq=Maisto+Mercedes-Benz+Actros+Open+Car+Hauler+Red+and+Black+with+White+Stripes+and+1990+Mercedes-Benz+190E+Red+%22Transporters%22+Series+1%2F64+Diecast+Models+by+Maisto&_psid=d80b8e7e8&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Maisto",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Maisto|11454RD|model|https://www.kaidohouse.com/products/kaido-house-x-offset-enamel-pin-display-case-pink?_pos=6&_psq=Maisto+Mercedes-Benz+Actros+Open+Car+Hauler+Red+and+Black+with+White+Stripes+and+1990+Mercedes-Benz+190E+Red+%22Transporters%22+Series+1%2F64+Diecast+Models+by+Maisto&_psid=d80b8e7e8&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Maisto",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Maisto|11454RD|model|https://www.kaidohouse.com/products/kaido-house-x-offse7%C2%AE-enamel-pin-display-case-blue?_pos=7&_psq=Maisto+Mercedes-Benz+Actros+Open+Car+Hauler+Red+and+Black+with+White+Stripes+and+1990+Mercedes-Benz+190E+Red+%22Transporters%22+Series+1%2F64+Diecast+Models+by+Maisto&_psid=d80b8e7e8&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Maisto",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Maisto|11454RD|model|https://www.kaidohouse.com/products/kaido-house-offset-6-pack-clear-case?_pos=8&_psq=Maisto+Mercedes-Benz+Actros+Open+Car+Hauler+Red+and+Black+with+White+Stripes+and+1990+Mercedes-Benz+190E+Red+%22Transporters%22+Series+1%2F64+Diecast+Models+by+Maisto&_psid=d80b8e7e8&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Maisto",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Maisto|11454RD|model|https://www.kaidohouse.com/products/copy-of-malaysia-candy-v2-custom-diecast?_pos=9&_psq=Maisto+Mercedes-Benz+Actros+Open+Car+Hauler+Red+and+Black+with+White+Stripes+and+1990+Mercedes-Benz+190E+Red+%22Transporters%22+Series+1%2F64+Diecast+Models+by+Maisto&_psid=d80b8e7e8&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Maisto",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Johnny Lightning|JLPK025B|model|https://www.kaidohouse.com/products/kaido-gt-toyota-sprinter-trueno-dgk-x-kaido-house-v1?_pos=1&_psq=Johnny+Lightning+Johnny+Lightning+%222-Packs%22+2026+Release+1+Set+B+of+6+pieces+1%2F64+Diecast+Model+Cars+by+Johnny+Lightning&_psid=ec8d94982&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4092|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-star-racing-v1?_pos=1&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+White&_psid=378aeecd7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4092|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r33-kaido-works-advan?_pos=2&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+White&_psid=378aeecd7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4092|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-20000gt-r-kaido-v1?_pos=3&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+White&_psid=378aeecd7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4092|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-works%E2%84%A2-shinjuku-v1-copy?_pos=4&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+White&_psid=378aeecd7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4092|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-2000gt-r-kpgc10-kaido-racing-v1?_pos=5&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+White&_psid=378aeecd7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4092|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-2000gt-r-kpgc10-cortez-v1?_pos=6&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+White&_psid=378aeecd7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4092|model|https://www.kaidohouse.com/products/kaido-nissan-skyline-2000gt-r-kpgc10-kaido-works%E2%84%A2?_pos=7&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+White&_psid=378aeecd7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4092|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r33-bfthr-v1?_pos=8&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+White&_psid=378aeecd7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4092|model|https://www.kaidohouse.com/products/kaido-gt-nissan-silvia-s13-r-kadio-splash-v1?_pos=9&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+White&_psid=378aeecd7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG4092|model|https://www.kaidohouse.com/products/kaido-gt-nissan-silvia-s13-r-kaido-works-v1?_pos=10&_psq=Ignition+Model+*PREORDER*+Ignition+Model+1%3A64+Nissan+Skyline+GT-R+%28BNR34%29+MINE%27S+in+White&_psid=378aeecd7&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|MotorHelix|M65811|https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-honda-integra-type-r-dc5-mugen-in-championship-white?_pos=1&_psq=M65811&_psid=ac2f578b0&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "MotorHelix",
+    "matches": [
+      {
+        "sku": "M65811",
+        "variant_id": 48159519604992,
+        "title": "MotorHelix 1:64 Honda Integra Type-R (DC5) MUGEN in Championship White",
+        "variant": "Default Title",
+        "vendor": "MotorHelix",
+        "url": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-honda-integra-type-r-dc5-mugen-in-championship-white?variant=48159519604992"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Maisto|11454RD|model|https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-mercedes-benz-actros-with-40-ft-dry-container-ups-europe?_pos=1&_psq=Maisto+Mercedes-Benz+Actros+Open+Car+Hauler+Red+and+Black+with+White+Stripes+and+1990+Mercedes-Benz+190E+Red+%22Transporters%22+Series+1%2F64+Diecast+Models+by+Maisto&_psid=f856be03a&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Maisto",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Maisto|11454RD|model|https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-mercedes-benz-actros-racing-transporter-advan-edition?_pos=2&_psq=Maisto+Mercedes-Benz+Actros+Open+Car+Hauler+Red+and+Black+with+White+Stripes+and+1990+Mercedes-Benz+190E+Red+%22Transporters%22+Series+1%2F64+Diecast+Models+by+Maisto&_psid=f856be03a&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Maisto",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Maisto|11454RD|model|https://www.modelcarshouston.com/products/preorder-minigt-1-64-mercedes-benz-actros-w-40-ft-container-lbwk-racing-transporter?_pos=3&_psq=Maisto+Mercedes-Benz+Actros+Open+Car+Hauler+Red+and+Black+with+White+Stripes+and+1990+Mercedes-Benz+190E+Red+%22Transporters%22+Series+1%2F64+Diecast+Models+by+Maisto&_psid=f856be03a&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Maisto",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Maisto|11454RD|model|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mitsubishi-fuso-super-great-eva-racing-transporter?_pos=4&_psq=Maisto+Mercedes-Benz+Actros+Open+Car+Hauler+Red+and+Black+with+White+Stripes+and+1990+Mercedes-Benz+190E+Red+%22Transporters%22+Series+1%2F64+Diecast+Models+by+Maisto&_psid=f856be03a&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Maisto",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Maisto|11454RD|model|https://www.modelcarshouston.com/products/preorder-isuzu-n-series-vehicle-transporter-lbwk-black?_pos=5&_psq=Maisto+Mercedes-Benz+Actros+Open+Car+Hauler+Red+and+Black+with+White+Stripes+and+1990+Mercedes-Benz+190E+Red+%22Transporters%22+Series+1%2F64+Diecast+Models+by+Maisto&_psid=f856be03a&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Maisto",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Maisto|11454RD|model|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mitsubishi-fuso-super-great-honda-racing-team-mugen?_pos=6&_psq=Maisto+Mercedes-Benz+Actros+Open+Car+Hauler+Red+and+Black+with+White+Stripes+and+1990+Mercedes-Benz+190E+Red+%22Transporters%22+Series+1%2F64+Diecast+Models+by+Maisto&_psid=f856be03a&_ss=e": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "manufacturer_requested": "Maisto",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
   }
 }

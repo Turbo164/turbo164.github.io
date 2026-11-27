@@ -15819,5 +15819,104 @@
       }
     ],
     "status": "official discovery only; exact variant verification pending"
+  },
+  "tarmacworks|T64G-074-OR": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "hits": [
+      {
+        "available": true,
+        "body": "<p><span style=\"color: #ff8000;\"><strong>New Tooling</strong></span></p>\n<p>\u00a0</p>\n<p><span style=\"color: #ff8000;\"><strong>Chase Version will replace normal version in random order</strong></span><br><br>1/64 scale die-cast</p>\n<p>Limited production run and will never be produced again</p>\n<p>Detailed rims &amp; rubber wheels</p>\n<p>Free rolling wheels</p>\n<p>Special Insert Card included with a chance to get Sung Kang &amp; Veilside CEO Hironao Yokomaku autographs (only 50 pcs randomly inserted)</p>\n<p>Paper box <span> packaging</span></p>\n<p>Fully licensed product</p>",
+        "compare_at_price_max": "0.00",
+        "compare_at_price_min": "0.00",
+        "handle": "tarmac-works-1-64-nissan-veilside-ffz400-fairlady-z-orange-global64",
+        "id": 8871264780545,
+        "image": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64G-074-OR_M03.jpg?v=1773649462",
+        "price": "13.90",
+        "price_max": "13.90",
+        "price_min": "13.90",
+        "tags": [
+          "1/64",
+          "GLOBAL64",
+          "New Release"
+        ],
+        "title": "1/64 Nissan VeilSide FFZ400 Fairlady Z Orange - Tarmac Works GLOBAL64",
+        "type": "1/64 Diecast",
+        "url": "/products/tarmac-works-1-64-nissan-veilside-ffz400-fairlady-z-orange-global64?_pos=1&_psq=T64G-074-OR&_psid=e1892aa64&_ss=e",
+        "variants": [],
+        "vendor": "Tarmac Works",
+        "featured_image": {
+          "alt": "1/64 Nissan VeilSide FFZ400 Fairlady Z Orange - Tarmac Works GLOBAL64",
+          "aspect_ratio": 1.5,
+          "height": 2775,
+          "url": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64G-074-OR_M03.jpg?v=1773649462",
+          "width": 4163
+        }
+      },
+      {
+        "available": true,
+        "body": "<p><span style=\"color: rgb(255, 128, 0);\"><strong>Chase Version will replace normal version in random order</strong></span></p>\n<p><meta charset=\"utf-8\">1/64 scale die-cast</p>\n<p>Limited production run and will never be produced again</p>\n<p>Detailed rims &amp; rubber wheels<br></p>\n<p>Free rolling wheels<br></p>\n<p>Paper box <span> packaging</span></p>\n<p>Fully licensed product</p>",
+        "compare_at_price_max": "0.00",
+        "compare_at_price_min": "0.00",
+        "handle": "tarmac-works-1-64-nissan-veilside-ffz400-fairlady-z-blue-global64",
+        "id": 8923653046529,
+        "image": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64G-074-BL_M02.jpg?v=1760432286",
+        "price": "13.90",
+        "price_max": "13.90",
+        "price_min": "13.90",
+        "tags": [
+          "1/64",
+          "GLOBAL64",
+          "New Release"
+        ],
+        "title": "1/64 Nissan VeilSide FFZ400 Fairlady Z Blue - Tarmac Works GLOBAL64",
+        "type": "1/64 Diecast",
+        "url": "/products/tarmac-works-1-64-nissan-veilside-ffz400-fairlady-z-blue-global64?_pos=2&_psq=T64G-074-OR&_psid=e1892aa64&_ss=e",
+        "variants": [],
+        "vendor": "Tarmac Works",
+        "featured_image": {
+          "alt": "1/64 Nissan VeilSide FFZ400 Fairlady Z Blue - Tarmac Works GLOBAL64",
+          "aspect_ratio": 1.5,
+          "height": 3958,
+          "url": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64G-074-BL_M02.jpg?v=1760432286",
+          "width": 5937
+        }
+      }
+    ],
+    "status": "official discovery only; exact variant verification pending"
+  },
+  "tarmacworks|T64-067-95LM23": {
+    "checked": "2026-11-27T13:53:01.018023+07:00",
+    "hits": [
+      {
+        "available": false,
+        "body": "<p>1/64 scale die-cast<br></p>\n<p>Limited production run and will never be produced again<br></p>\n<p>Detailed rims &amp; rubber wheels<br></p>\n<p>Detailed front and rear lights<br></p>\n<p>Display base and acrylic cover with a paper sleeve box</p>\n<p>Fully licensed product</p>",
+        "compare_at_price_max": "0.00",
+        "compare_at_price_min": "0.00",
+        "handle": "tarmac-works-1-64-nissan-nismo-gt-r-lm-24h-of-le-mans-1995-presentation-23-hobby64",
+        "id": 8857262260481,
+        "image": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64-067-95LM23_M03.jpg?v=1752410207",
+        "price": "21.90",
+        "price_max": "21.90",
+        "price_min": "21.90",
+        "tags": [
+          "1/64",
+          "HOBBY64/64+",
+          "New Release"
+        ],
+        "title": "1/64 Nissan NISMO GT-R LM 24h of Le Mans 1995 Presentation #23 - Tarmac Works HOBBY64",
+        "type": "1/64 Diecast",
+        "url": "/products/tarmac-works-1-64-nissan-nismo-gt-r-lm-24h-of-le-mans-1995-presentation-23-hobby64?_pos=1&_psq=T64-067-95LM23&_psid=c4263a66f&_ss=e",
+        "variants": [],
+        "vendor": "Tarmac Works",
+        "featured_image": {
+          "alt": "1/64 Nissan NISMO GT-R LM 24h of Le Mans 1995 Presentation #23 - Tarmac Works HOBBY64",
+          "aspect_ratio": 1.5,
+          "height": 3958,
+          "url": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64-067-95LM23_M03.jpg?v=1752410207",
+          "width": 5937
+        }
+      }
+    ],
+    "status": "official discovery only; exact variant verification pending"
   }
 }

@@ -470,6 +470,42 @@
     },
     {
       "manufacturer": "Tarmac Works",
+      "productCode": "T64G-074-OR",
+      "name": "Tarmac Works 1:64 Nissan VeilSide FFZ400 Fairlady Z in Orange",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-armac-works-1-64-nissan-veilside-ffz400-fairlady-z-in-orange?variant=46411478106368",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64-067-95LM23",
+      "name": "1/64 Nissan NISMO GT-R LM 24h of Le Mans 1995 Presentation #23 - Tarmac Works HOBBY64",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-nissan-nismo-gt-r-lm-24h-of-le-mans-1995-presentation-23-hobby64?variant=46521943720193",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "MotorHelix",
+      "productCode": "M65811",
+      "name": "MotorHelix 1:64 Honda Integra Type-R (DC5) MUGEN in Championship White",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-honda-integra-type-r-dc5-mugen-in-championship-white?variant=48159519604992",
+      "vendor": "MotorHelix",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
       "productCode": "T64G-088-BL",
       "name": "1/64 URAS Skyline ER34 Blue - Tarmac Works GLOBAL64",
       "variant": "Default Title",
@@ -1919,38 +1955,10 @@
     },
     {
       "manufacturer": "Johnny Lightning",
-      "productCode": "JLSF031falcon64yellow",
-      "name": "Johnny Lightning Street Freaks 1964 Ford Falcon Delivery Project in Progress (Phoenician Yellow w/ Rust Patina) 1:64 Scale Diecast",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-street-freaks-1964-ford-falcon-delivery-project-in-progress-phoenician-yellow-w-rust-patina-1-64-scale-diecast-due-october-2025?variant=45385404776638"
-    },
-    {
-      "manufacturer": "Johnny Lightning",
-      "productCode": "JLSP385A",
-      "name": "Johnny Lightning Muscle Cars 1987 Pontiac Trans Am King of the Jungle (Metallic Red w/Silver & Gold + King of the Jungle Race Graphics) 1:64 Scale Diecast",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1987-pontiac-trans-am-king-of-the-jungle-metallic-red-w-silver-gold-king-of-the-jungle-race-graphics-1-64-scale-diecast-due-november-2025?variant=45457131798718"
-    },
-    {
-      "manufacturer": "Johnny Lightning",
       "productCode": "JLSP382A",
       "name": "Johnny Lightning Muscle Cars Nickey 2002 Chevy Camaro ZL1 (Red w/White Stripes & Nicky Logos) 1:64 Scale Diecast",
       "variant": "Default Title",
       "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-nickey-2002-chevy-camaro-zl1-red-w-white-stripes-nicky-logos-1-64-scale-diecast-due-november-2025?variant=45457125310654"
-    },
-    {
-      "manufacturer": "Johnny Lightning",
-      "productCode": "JLMC030camaro13yellow",
-      "name": "Johnny Lightning Muscle Car 2013 NICKEY Chevrolet Camaro ZL1 Convertible (Rally Yellow) 1:64 Diecast",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-muscle-car-2013-nickey-chevrolet-camaro-zl1-convertible-rally-yellow-1-64-diecast?variant=44436204323006"
-    },
-    {
-      "manufacturer": "Auto World",
-      "productCode": "CP8256",
-      "name": "Auto World 1968 Dodge Coronet R/T Convertible (2025 MCACN Event Car) 1:64 Diecast",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-1968-dodge-coronet-r-t-convertible-2025-mcacn-event-car-1-64-diecast?variant=45590922494142"
     }
   ],
   "excluded": [
@@ -2913,6 +2921,36 @@
       "variant": "Default Title",
       "vendor": "Inno Models",
       "url": "https://www.modelcarshouston.com/products/preorder-pandem-gt-r-bcnr33-black?variant=46847074468096"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-RX7FCP-PB",
+      "variant_id": 46762343268608,
+      "title": "INNO64 1:64 Mazda RX-7 (FC3S) \"PANDEM ROCKET BUNNY\" in Purple",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-rx-7-fc3s-pandem-rocket-bunny-in-purple?variant=46762343268608"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-FK8-WHI",
+      "variant_id": 46693407195392,
+      "title": "INNO64 1:64 Honda Civic (FK8) Type-R in White",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-honda-civic-fk8-type-r-in-white?variant=46693407195392"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-RX3-KTYM",
+      "variant_id": 46693406376192,
+      "title": "INNO64 1:64 Mazda RX-3 Savanna LBWK \"KATAYAMA RACING\" Livery",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-rx-3-savanna-lbwk-katayama-racing-livery?variant=46693406376192"
     }
   ]
 }
