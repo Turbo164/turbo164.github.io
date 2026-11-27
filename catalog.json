@@ -5221,5 +5221,33 @@
     "release": "Unverified",
     "sourceUrl": "https://www.tarmacworks.com/products/1-64-toyota-supra-designed-by-joshua-vides-tarmac-works-hobby64?variant=48765891543297",
     "verification": "Official SKU and scale matched; edition, release and identity review pending"
+  },
+  {
+    "id": "tarmac-works-t64g042gr",
+    "number": "T64G-042-GR",
+    "productCode": "T64G-042-GR",
+    "brand": "Mercedes-Benz",
+    "vehicleMake": "Mercedes-Benz",
+    "manufacturer": "Tarmac Works",
+    "name": "1/64 Mercedes-Benz AMG GT Black Series Green - Tarmac Works GLOBAL64",
+    "variant": "Unverified",
+    "editionType": "Unverified",
+    "release": "Unverified",
+    "sourceUrl": "https://www.tarmacworks.com/products/1-64-mercedes-benz-amg-gt-black-series-green-tarmac-works-global64?variant=48277161967873",
+    "verification": "Official SKU and scale matched; edition, release and identity review pending"
+  },
+  {
+    "id": "tarmac-works-t64gf070op2",
+    "number": "T64G-F070-OP2",
+    "productCode": "T64G-F070-OP2",
+    "brand": "McLaren",
+    "vehicleMake": "McLaren",
+    "manufacturer": "Tarmac Works",
+    "name": "1/64 McLaren MCL60 Australian Grand Prix 2023 Oscar Piastri - Tarmac Works X iXO Models GLOBAL64",
+    "variant": "Unverified",
+    "editionType": "Unverified",
+    "release": "Unverified",
+    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mclaren-mcl60-australian-grand-prix-2023-oscar-piastri-global64?variant=48114201329921",
+    "verification": "Official SKU and scale matched; edition, release and identity review pending"
   }
 ]
