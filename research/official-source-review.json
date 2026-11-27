@@ -725,26 +725,6 @@
     ]
   },
   {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64R-066-YL",
-    "name": "1/64 Pandem Mazda RX-7 FC3S Yellow - Tarmac Works ROAD64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/1-64-pandem-mazda-rx-7-fc3s-yellow-tarmac-works-road64?variant=49232703488257",
-    "vendor": "Tarmac Works",
-    "releaseStatus": "unconfirmed",
-    "editionType": "unconfirmed",
-    "verification": "NEEDS VERIFICATION",
-    "photo": null,
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
     "manufacturer": "Hobby Japan",
     "productCode": "HJDMD005",
     "name": "Hobby Japan 1:64 Mitsubishi Lancer RS Evolution III / INITIAL D Seiji Iwaki VS Takumi Fujiwara",
@@ -760,6 +740,68 @@
     "edition_hint": "unconfirmed",
     "review_flags": [
       "official manufacturer product evidence missing",
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "Autoart",
+    "productCode": "20686",
+    "name": "AUTOart 1:64 Nissan Fairlady Z Wangan Midnight Akuma no Z, Comic #4 Verison",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-autoart-1-64-nissan-fairlady-z-wangan-midnight-akuma-no-z-comic-4-verison?variant=46723021177088",
+    "vendor": "AUTOart",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": false,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "official manufacturer product evidence missing",
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "Hobby Japan",
+    "productCode": "HJDMD004",
+    "name": "Hobby Japan 1:64 Mitsubishi Lancer RS Evolution III / INITIAL D Kyoichi Sudo VS Ryosuke Takahashi",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-hobby-japan-1-64-mitsubishi-lancer-rs-evolution-iii-initial-d-kyoichi-sudo-vs-ryosuke-takahashi?variant=46996267237632",
+    "vendor": "Hobby Japan",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": false,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "official manufacturer product evidence missing",
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "Tarmac Works",
+    "productCode": "T64G-F064-MS1",
+    "name": "1/64 Mercedes-AMG F1 W14 E Performance Spanish Grand Prix Tyre Testing 2023 #47 Mick Schumacher - Tarmac Works X iXO Models GLOBAL64",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mercedes-amg-f1-w14-e-performance-spanish-grand-prix-tyre-testing-2023-mick-schumacher-global64?variant=48062144971009",
+    "vendor": "Tarmac Works",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": true,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
       "release status requires evidence",
       "edition requires evidence",
       "exact catalog variant and car make require final review"
@@ -966,21 +1008,6 @@
     "name": "Carpsule 1/64 Model Car Bag Charm (Blue) - Tarmac Works",
     "variant": "Default Title",
     "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-capsule-bag-charm?variant=48186677821697",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64G-F064-MS1",
-    "name": "1/64 Mercedes-AMG F1 W14 E Performance Spanish Grand Prix Tyre Testing 2023 #47 Mick Schumacher - Tarmac Works X iXO Models GLOBAL64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mercedes-amg-f1-w14-e-performance-spanish-grand-prix-tyre-testing-2023-mick-schumacher-global64?variant=48062144971009",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -1234,21 +1261,6 @@
   },
   {
     "manufacturer": "Tarmac Works",
-    "productCode": "T64-041-WH2",
-    "name": "1/64 Toyota Hilux White - Tarmac Works HOBBY64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-toyota-hilux-white-hobby64-1?variant=46522001555713",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
     "productCode": "T64-083-99CHA82 (ST)",
     "name": "1/64 Ferrari F355 Challenge Ferrari F355 Challenge 1999 #82 - Tarmac Works X iXO Models HOBBY64",
     "variant": "Default Title",
@@ -1309,40 +1321,10 @@
   },
   {
     "manufacturer": "Tarmac Works",
-    "productCode": "T64R-052-LB",
-    "name": "1/64 Datsun 510 Light Blue - Tarmac Works ROAD64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-datsun-510-light-blue-road64?variant=46434730377473",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
     "productCode": "T64G-TL032-ONP (ST)",
     "name": "1/64 Dodge Van OHIGE no PON - Tarmac Works GLOBAL64",
     "variant": "Default Title",
     "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-dodge-van-ohige-no-pon-global64?variant=46380630769921",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64G-TL035-SL",
-    "name": "1/64 Pagani Huayra R Satin Silver - Tarmac Works GLOBAL64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-pagani-huayra-r-satin-silver-global64?variant=46380630147329",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -1401,70 +1383,10 @@
   },
   {
     "manufacturer": "Tarmac Works",
-    "productCode": "T64-011-BBC-SET",
-    "name": "1/64 Toyota Supra - Complex Con 2025 Special Edition with Exclusive Gift - Tarmac Works HOBBY64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-toyota-supra-complex-con-2025-special-edition-hobby64?variant=46380609667329",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
     "productCode": "T64-052-OG (ST)",
     "name": "1/64 Datsun 510 OG Beer - Tarmac Works HOBBY64",
     "variant": "Default Title",
     "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-datsun-510-og-hobby64?variant=46380603343105",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "CWB64-002-LMTC22",
-    "name": "1/64 Porsche 917 KH Test Car #22 - Curitiba64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/curitiba64-1-64-porsche-917-kh-test-car-22?variant=46380586631425",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64-050-87MAL04",
-    "name": "1/64 Volvo 240 Turbo Malaysian Group A Championships 1987 #04 Winner - Tarmac Works HOBBY64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-volvo-240-turbo-malaysian-group-a-championships-1987-04-winner-hobby64?variant=46310132285697",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64-082-94IGT25",
-    "name": "1/64 Ferrari 348 Challenge Italian GT 1994 #25 - Tarmac Works X iXO Models HOBBY64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-ferrari-348-challenge-italian-gt-1994-25-hobby64?variant=46310131826945",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -1521,96 +1443,6 @@
   },
   {
     "manufacturer": "Tarmac Works",
-    "productCode": "T64P-TL002-83YR03",
-    "name": "1/64 Lancia 037 Rally Ypres 24 Hours Rally 1983 #3 - Tarmac Works HOBBY64+",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-lancia-037-rally-ypres-24-hours-rally-1983-3-hobby64?variant=46263294394625",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64MC-008-VM",
-    "name": "1/64 Porsche 718 Spyder RS Viola Metallic - Tarmac Works X Minichamps COLLAB64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/minichamps-x-tarmac-works-1-64-porsche-718-spyder-rs-viola-metallic-collab64?variant=46263291150593",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64MC-008-MG",
-    "name": "1/64 Porsche 718 Spyder RS Mint Green - Tarmac Works X Minichamps COLLAB64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/minichamps-x-tarmac-works-1-64-porsche-718-spyder-rs-mint-green-collab64?variant=46214818300161",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64-082-PRE",
-    "name": "1/64 Ferrari 348 Challenge Presentation - Tarmac Works X iXO Models   HOBBY64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-ferrari-348-challenge-presentation-hobby64?variant=46158250115329",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64MC-008-VG",
-    "name": "1/64 Porsche 718 Spyder RS Vanadium Grey Metallic - Tarmac Works X Minichamps  COLLAB64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/minichamps-x-tarmac-works-1-64-porsche-718-spyder-rs-vanadium-grey-metallic-collab64?variant=46158194082049",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64MC-008-RS",
-    "name": "1/64 Porsche 718 Spyder RS Ruby Star Neo - Tarmac Works X Minichamps COLLAB64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/minichamps-x-tarmac-works-1-64-porsche-718-spyder-rs-ruby-star-neo-collab64?variant=46158177239297",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
     "productCode": "T64G-065-BL",
     "name": "1/64 Opel Kadett Gsi Blue Metallic - Tarmac Works GLOBAL64",
     "variant": "Default Title",
@@ -1656,55 +1488,10 @@
   },
   {
     "manufacturer": "Tarmac Works",
-    "productCode": "T64G-072-BO",
-    "name": "1/64 Mercedes-Benz S 55 AMG Bordeaux Red Metallic -  Tarmac Works GLOBAL64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mercedes-benz-s-55-amg-bordeaux-red-metallic-global64?variant=45887029379329",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
     "productCode": "T64-058-89NZR16 (ST)",
     "name": "1/64 Ford Sierra RS Cosworth Rally of New Zealand 1989 #16 - Tarmac Works HOBBY64",
     "variant": "Default Title",
     "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-ford-sierra-rs-cosworth-rally-of-new-zealand-1989-saeed-al-hajri-steve-bond-16-hobby64?variant=45887020335361",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64-TL061-87EHC35",
-    "name": "1/64 Renault 5 MAXI Turbo European Hill-Climb Championship 1987 Giovanni Rossi #35 - Tarmac Works HOBBY64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-renault-5-maxi-turbo-european-hill-climb-championship-1987-giovanni-rossi-35-hobby64?variant=45887015452929",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64G-026-PC",
-    "name": "1/64 Datsun Bluebird 510 Wagon Japan Police Car - Tarmac Works GLOBAL64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-datsun-bluebird-510-wagon-japan-police-car-global64?variant=45789327556865",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -1750,21 +1537,6 @@
     "name": "1/64 Ferrari F355 Challenge Macau Super Car Race 1994 Winner #01 Charles Kwan Special Edition - Tarmac Works X iXO Models HOBBY64",
     "variant": "Default Title",
     "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-ferrari-f355-challenge-macau-super-car-race-1994-winner-01-charles-kwan-special-edition-hobby64?variant=45716515029249",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64G-048-SL",
-    "name": "1/64 Mitsubishi Lancer GSR Evolution Silver Special Edition with Tarmac Cards - Tarmac Works GLOBAL64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mitsubishi-lancer-gsr-evolution-silver-special-edition-with-tarmac-cards-global64?variant=45716479410433",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -1881,21 +1653,6 @@
   },
   {
     "manufacturer": "Tarmac Works",
-    "productCode": "T64G-020-BL",
-    "name": "1/64\u00a0Land Rover Defender 110 Blue - Tarmac Works GLOBAL64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-land-rover-defender-110-blue-global64?variant=45247974375681",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
     "productCode": "T64G-TL031-MRY (MIJO)",
     "name": "1/64\u00a0Alfa Romeo Giulia GTAm Red/Yellow - Mijo Exclusive - Tarmac Works GLOBAL64",
     "variant": "Default Title",
@@ -1926,21 +1683,6 @@
   },
   {
     "manufacturer": "Tarmac Works",
-    "productCode": "T64G-019-TE",
-    "name": "1/64 Land Rover Defender 90 Trophy Edition - Tarmac Works GLOBAL64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-land-rover-defender-90-trophy-edition-global64?variant=44692700627201",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
     "productCode": "T64G-TL032-RE (ST)",
     "name": "1/64 Dodge Van Red - Tarmac Works GLOBAL64",
     "variant": "Default Title",
@@ -1960,21 +1702,6 @@
     "name": "1/64\u00a0Opel Kadett GSi Red - Tarmac Works GLOBAL64",
     "variant": "Default Title",
     "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-opel-kadett-gsi-red-global64?variant=44599574561025",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64-TL061-86RDV01",
-    "name": "1/64 Renault 5 MAXI Turbo Rallye du Var 1986 #1 - Tarmac Works HOBBY64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works1-64-renault-5-maxi-turbo-rallye-du-var-1986-1-hobby64?variant=44599554998529",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -2020,36 +1747,6 @@
     "name": "1/64 Toyota Supra Turbo (MA70) Macau Guia Race 1989 #3 - Macau GP 2023 Special Edition - Tarmac Works HOBBY64",
     "variant": "Default Title",
     "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-toyota-supra-turbo-ma70-macau-guia-race-1989-3-hobby64?variant=44291677061377",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64-016-LGT22",
-    "name": "1/64 Subaru WRX STI S207 Logitech G with Container - Logitech Special Edition -Tarmac Works HOBBY64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/logitech-3-hobby64?variant=44093712793857",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64-004-LGT22",
-    "name": "1/64 Mitsubishi Lancer Evo X Logitech G NEXT DIMENSION with Container - Logitech Special Edition - Tarmac Works HOBBY64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/logitech-1-hobby64?variant=44093710532865",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -2136,21 +1833,6 @@
   },
   {
     "manufacturer": "Tarmac Works",
-    "productCode": "T64R-TL049-CIT",
-    "name": "1/64 Lancia Delta HF Integrale\u00a0Club Italia -Tarmac Works ROAD64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-lancia-delta-hf-integrale-club-italia-road64?variant=43710189371649",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
     "productCode": "T64G-TL015-WH (ST)",
     "name": "1/64\u00a0Pagani Zonda R Bianco Benny -Tarmac Works GLOBAL64",
     "variant": "Default Title",
@@ -2170,21 +1852,6 @@
     "name": "1/64 Datsun Bluebird 510 Wagon Service Car - Tarmac Works GLOBAL64",
     "variant": "Default Title",
     "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-datsun-bluebird-510-wagon-service-car-global64?variant=43573366194433",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64-055-87JTC05",
-    "name": "1/64 Mitsubishi Starion JTC 1987 #5 - Tarmac Works HOBBY64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mitsubishi-starion-jtc-1987-5-hobby64?variant=43514619527425",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -2275,21 +1942,6 @@
     "name": "1/64 Land Rover Defender 110 TR\u0113K Edition - Tarmac Works GLOBAL64",
     "variant": "Default Title",
     "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-land-rover-defender-110-trek-edition-global64?variant=42903397269761",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "IG2496",
-    "name": "1/64 Mazda RX-7 (FC3S) RE Amemiya Green Metallic - Ignition Model",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/ignition-model-1-64-mazda-rx-7-fc3s-re-amemiya-green-metallic?variant=42722144846081",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -2435,81 +2087,6 @@
     ]
   },
   {
-    "manufacturer": "Tarmac Works",
-    "productCode": "IG1947",
-    "name": "1/64 Mazda RX-7 (FD3S) RE Amemiya Green Metallic - Ignition Model",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/ignition-model-1-64-mazda-rx-7-fd3s-re-amemiya-green-metallic?variant=37723507130528",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "IG1945",
-    "name": "1/64 Honda NSX (NA1) Matte Yellow - Ignition Model",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/ignition-model-1-64-honda-nsx-na1-matte-yellow?variant=37723450540192",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "IG1946",
-    "name": "1/64 Honda NSX (NA1) Titanium Gray - Ignition Model",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/ignition-model-1-64-honda-nsx-na1-titanium-gray?variant=36641108721824",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64-001-AB",
-    "name": "1/64 Honda Civic (EG6) Motegi Civic Race 2010 #246 - Tarmac Works HOBBY64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-honda-civic-eg6-motegi-civic-race-2010-246?variant=12956344942636",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64-003-RE",
-    "name": "1/64 Honda Civic Type R (FK2) Milano Red - Tarmac Works ROAD64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-honda-civic-type-r-fk2-milano-red?variant=48396180180",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
     "manufacturer": "Johnny Lightning",
     "productCode": "JLSS002",
     "name": "Johnny Lightning Barris Koach 1:64 Scale Diecast",
@@ -2530,21 +2107,6 @@
     "name": "Johnny Lightning Barris Drag-U-La 1:64 Scale Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-barris-drag-u-la-1-64-scale-diecast?variant=35007202951320",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP397",
-    "name": "Johnny Lightning John Wick 1969 Ford Mustang Mach I 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-john-wick-1969-ford-mustang-mach-i-1-64-scale-diecast-due-november-2024?variant=44598046654654",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -2646,51 +2208,6 @@
   },
   {
     "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP346",
-    "name": "Johnny Lightning Blues Brothers w/Roof Speaker 1974 Dodge Monaco 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-blues-brothers-w-roof-speaker-1974-dodge-monaco-1-64-scale-diecast?variant=42948416274622",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP283A",
-    "name": "Johnny Lightning Classic Gold 1971 Pontiac Grand Prix (Bronzini Gold Metallic) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-1971-pontiac-grand-prix-bronzini-gold-metallic-1-64-scale-diecast-due-july-2023?variant=42798979743934",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP282A",
-    "name": "Johnny Lightning Classic Gold 2014 Dodge Viper (Adrenaline Red) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-2014-dodge-viper-adrenaline-red-1-64-scale-diecast-due-july-2023?variant=42798971486398",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
     "productCode": "JLSP411",
     "name": "Johnny Lightning Rat Fink 1965 Chevy El Camino Zinger 1:64 Scale Diecast",
     "variant": "Default Title",
@@ -2736,40 +2253,10 @@
   },
   {
     "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP280B",
-    "name": "Johnny Lightning Classic Gold 1981 Chevrolet Citation X-11 (Bright Yellow) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-classic-gold-1981-chevrolet-citation-x-11-bright-yellow-1-64-scale-diecast?variant=42798957101246",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
     "productCode": "JLSP347",
     "name": "Johnny Lightning Richard Petty 1972 Plymouth Road Runner Stock Car 1:64 Scale Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-richard-petty-1972-plymouth-road-runner-stock-car-1-64-scale-diecast?variant=42948462018750",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP280A",
-    "name": "Johnny Lightning Classic Gold 1981 Chevrolet Citation X-11 (Dark Green Metallic) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-1981-chevrolet-citation-x-11-dark-green-metallic-1-64-scale-diecast-due-july-2023?variant=42798949957822",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -2796,21 +2283,6 @@
   },
   {
     "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP282B",
-    "name": "Johnny Lightning Classic Gold 2014 Dodge Viper (Billet Silver) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-2014-dodge-viper-billet-silver-1-64-scale-diecast-due-july-2023?variant=42798976008382",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
     "productCode": "JLSP369",
     "name": "Johnny Lightning Rat Fink 1950 Chevy Suburban 1:64 Scale Diecast (JLPC014)",
     "variant": "Default Title",
@@ -2826,100 +2298,10 @@
   },
   {
     "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP408",
-    "name": "Johnny Lightning Hobby Exclusive 1955 Chevrolet Bel Air (Red/White) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-hobby-exclusive-1955-chevrolet-bel-air-red-white-1-64-scale-diecast-due-april-2025?variant=44890163577022",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
     "productCode": "JLSP393",
     "name": "Johnny Lightning Mecum Auctions 1967 Shelby GT-350 1:64 Scale Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-mecum-auctions-1967-shelby-gt-350-1-64-scale-diecast-due-november-2024?variant=44598042034366",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP413",
-    "name": "Johnny Lightning John Wick 1968 Dodge Charger R/T 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-john-wick-1968-dodge-charger-r-t-1-64-scale-diecast-due-april-2025?variant=44890180288702",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP252B",
-    "name": "Johnny Lightning Street Freaks 1986 Ford Thunderbird Stock Car\u00a0(24hrs of LeMons) (Bright Blue w/White & Gold Stripes) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-street-freaks-1986-ford-thunderbird-stock-car-24hrs-of-lemons-bright-blue-w-white-gold-stripes-1-64-scale-diecast?variant=42550052651198",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP279B",
-    "name": "Johnny Lightning Classic Gold 2005 Chevrolet SSR (Torch Red w/White SS Stripes) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-classic-gold-2005-chevrolet-ssr-torch-red-w-white-ss-stripes-1-64-scale-diecast?variant=42798948253886",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP189B",
-    "name": "Johnny Lightning Classic Gold 2012 Chevrolet Corvette Z06 (Velocity Yellow w/ Black Stripes) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-classic-gold-2012-chevrolet-corvette-z06-velocity-yellow-w-black-stripes-1-64-scale-diecast?variant=44929479573694",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP294A",
-    "name": "Johnny Lightning Street Freaks 1932 Ford Hiboy\u00a0(Zingers) (Yellow w/Black Scallops) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-street-freaks-1932-ford-hiboy-zingers-yellow-w-black-scallops-1-64-scale-diecast?variant=42638761459902",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -2991,21 +2373,6 @@
   },
   {
     "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP396",
-    "name": "Johnny Lightning Blues Brothers 1975 Dodge Monaco Chicago Police (Dirty Version) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-blues-brothers-1975-dodge-monaco-chicago-police-dirty-version-1-64-scale-diecast-due-november-2024?variant=44598045573310",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
     "productCode": "JLSP390A",
     "name": "Johnny Lightning Classic Gold 1975 Chevy Camaro (Dark Red Poly w/Flat Black Roof) 1:64 Scale Diecast",
     "variant": "Default Title",
@@ -3021,70 +2388,10 @@
   },
   {
     "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP250A",
-    "name": "Johnny Lightning Street Freaks 2011 Chevrolet Camaro (Zingers) (Sunset Metallic Orange) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-street-freaks-2011-chevrolet-camaro-sunset-metallic-orange-1-64-scale-diecast?variant=45411954458814",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP394",
-    "name": "Johnny Lightning Rat Fink Dodge WC54 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-rat-fink-dodge-wc54-1-64-scale-diecast-due-november-2024?variant=44598043279550",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP266",
-    "name": "Johnny Lightning Vintage Clue 1933 Ford Delivery Mrs. White, Hall w/Wrench & Poker Chip 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-vintage-clue-1933-ford-delivery-mrs-white-hall-w-wrench-poker-chip?variant=42250610933950",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
     "productCode": "JLSP277A",
     "name": "Johnny Lightning 2022 Release 3 American Heroes Version A (2-Pack) 1:64 Scale Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-2022-release-3-american-heroes-version-a-2-pack-1-64-scale-diecast?variant=42399516033214",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP279A",
-    "name": "Johnny Lightning Classic Gold 2005 Chevrolet SSR (Bermuda Blue w/White SS Stripes) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-classic-gold-2005-chevrolet-ssr-bermuda-blue-w-black-ss-stripes-1-64-scale-diecast?variant=42798940389566",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -3115,51 +2422,6 @@
     "name": "Johnny Lightning Monster Truck Tiki Terror 1:64 Scale Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-monster-truck-tiki-terror-1-64-scale-diecast?variant=41931914313918",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP417A",
-    "name": "Johnny Lightning Classic Gold 1971 Dodge Challenger R/T (Panther Pink w/White Top) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-1971-dodge-challenger-r-t-panther-pink-w-white-top-1-64-scale-diecast-due-october-2025?variant=45385332424894",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP294B",
-    "name": "Johnny Lightning Street Freaks 1932 Ford Hiboy\u00a0(Zingers) (Red w/White Scallops) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-street-freaks-1932-ford-hiboy-zingers-red-w-white-scallops-1-64-scale-diecast?variant=42638762442942",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP414",
-    "name": "Johnny Lightning Goodyear Blue Streak 1969 Dodge Dart 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-goodyear-blue-streak-1969-dodge-dart-1-64-scale-diecast-due-april-2025?variant=44890181238974",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -3261,85 +2523,10 @@
   },
   {
     "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP399",
-    "name": "Johnny Lightning 1985 Toyota SR5 Pickup w/Malibu Speed Boat 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1985-toyota-sr5-pickup-w-malibu-speed-boat-1-64-diecast-due-march-2025?variant=44811623465150",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
     "productCode": "JLSP390B",
     "name": "Johnny Lightning Classic Gold 1975 Chevy Camaro (Cream Beige w/Brown Roof) 1:64 Scale Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-1975-chevy-camaro-cream-beige-w-brown-roof-1-64-scale-diecast-due-october-2025?variant=45385328066750",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP401",
-    "name": "Johnny Lightning 1980 Toyota Land Cruiser w/Open Car Trailer 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1980-toyota-land-cruiser-w-open-car-trailer-1-64-diecast-due-march-2025?variant=44811635228862",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP417B",
-    "name": "Johnny Lightning Classic Gold 1971 Dodge Challenger R/T (Butterscotch w/White Top) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-1971-dodge-challenger-r-t-butterscotch-w-white-top-1-64-scale-diecast-due-october-2025?variant=45385332949182",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLCT018ranchero70blue",
-    "name": "Johnny Lightning 1970 Ford Ranchero 500 (Acapulco Blue) with Collector Tin 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1970-ford-ranchero-500-acapulco-blue-with-collector-tin-1-64-diecast-due-january-2026?variant=45680270803134",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLBT023dodge78",
-    "name": "Johnny Lightning 1978 Dodge Midnite Express w/Enclosed Car Trailer 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1978-dodge-midnite-express-w-enclosed-car-trailer-1-64-diecast-due-june-2026?variant=46661805834430",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -3426,85 +2613,10 @@
   },
   {
     "manufacturer": "Johnny Lightning",
-    "productCode": "JLBT023mustang65",
-    "name": "Johnny Lightning 1965 Ford Mustang Convertible w/Small Enclosed Trailer 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1965-ford-mustang-convertible-w-small-enclosed-trailer-1-64-diecast-due-june-2026?variant=46661806358718",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLCT018nissan84red",
-    "name": "Johnny Lightning 1984 Nissan 300zx (Regatta Red) with Collector Tin 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1984-nissan-300zx-regatta-red-with-collector-tin-1-64-diecast-due-january-2026?variant=45680278208702",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP409",
-    "name": "Johnny Lightning Turtle Wax 1965 Volkswagen 21 Window Samba Bus 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-turtle-wax-1965-volkswagen-21-window-samba-bus-1-64-scale-diecast-due-april-2025?variant=44890167378110",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
     "productCode": "JLSP387B",
     "name": "Johnny Lightning Classic Gold 2003 Chevy Corvette 50th Anniversary (Anniversary Red) 1:64 Scale Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-2003-chevy-corvette-50th-anniversary-anniversary-red-1-64-scale-diecast-due-october-2025?variant=45385318498494",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLCT018ranchero70lime",
-    "name": "Johnny Lightning 1970 Ford Ranchero 500 (Medium Lime Poly) with Collector Tin 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1970-ford-ranchero-500-medium-lime-poly-with-collector-tin-1-64-diecast-due-january-2026?variant=45680267722942",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLCT018nissan84white",
-    "name": "Johnny Lightning 1984 Nissan 300zx (Mint White) with Collector Tin 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1984-nissan-300zx-mint-white-with-collector-tin-1-64-diecast-due-january-2026?variant=45680279519422",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -3531,40 +2643,10 @@
   },
   {
     "manufacturer": "Johnny Lightning",
-    "productCode": "JLCT020ventura74bronze",
-    "name": "Johnny Lightning 1974 Pontiac Ventura NEW TOOL (Fire Coral Bronze) with Collector Tin 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1974-pontiac-ventura-new-tool-fire-coral-bronze-with-collector-tin-1-64-diecast-due-april-2026?variant=46428584607934",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
     "productCode": "JLCT020camaro02silver",
     "name": "Johnny Lightning 2002 Chevy Camaro SS 35th Anniversary (Silver w/Black Stripes) with Collector Tin 1:64 Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-2002-chevy-camaro-ss-35th-anniversary-silver-w-black-stripes-with-collector-tin-1-64-diecast-due-april-2026?variant=46428611477694",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLCT020ventura74green",
-    "name": "Johnny Lightning 1974 Pontiac Ventura NEW TOOL (Fernmist Green) with Collector Tin 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1974-pontiac-ventura-new-tool-fernmist-green-with-collector-tin-1-64-diecast-due-april-2026?variant=46428581855422",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -3606,115 +2688,10 @@
   },
   {
     "manufacturer": "Johnny Lightning",
-    "productCode": "JLCT017f15093iris",
-    "name": "Johnny Lightning 1993 Ford F-150 (Iris Poly) with Collector Tin 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1993-ford-f-150-iris-poly-with-collector-tin-1-64-diecast-due-october-2025?variant=45342657020094",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLCG037ranger87green",
-    "name": "Johnny Lightning Classic Gold 1987 Ford Ranger STX (Alpine Green W/ Gold STX Stripes) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-1987-ford-ranger-stx-alpine-green-w-gold-stx-stripes-1-64-scale-diecast-due-september-2025?variant=45305802457278",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLBT024squire60",
-    "name": "Johnny Lightning 1960 Ford Country Squire & Mastercraft Boat 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1960-ford-country-squire-mastercraft-boat-1-64-diecast-due-september-2026?variant=48699995029694",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
     "productCode": "JLCG037javelin69blue",
     "name": "Johnny Lightning Classic Gold 1969 AMC Javelin (Big Bad Blue w/ White C Stripe) 1:64 Scale Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-1969-amc-javelin-big-bad-blue-w-white-c-stripe-1-64-scale-diecast-due-september-2025?variant=45305817137342",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLCT017f15093mocha",
-    "name": "Johnny Lightning 1993 Ford F-150 (Medium Mocha Poly) with Collector Tin 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1993-ford-f-150-medium-mocha-poly-with-collector-tin-1-64-diecast-due-october-2025?variant=45342649254078",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLCG037ranger87black",
-    "name": "Johnny Lightning Classic Gold 1987 Ford Ranger STX (Black w/ Silver STX Stripes) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-1987-ford-ranger-stx-black-w-silver-stx-stripes-1-64-scale-diecast-due-september-2025?variant=45305808191678",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLBT024van77",
-    "name": "Johnny Lightning 1977 Ford Van w/Small Enclosed Trailer 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1977-ford-van-w-small-enclosed-trailer-1-64-diecast-due-september-2026?variant=48699996373182",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLBT022fj14",
-    "name": "Johnny Lightning 2014 Toyota FJ Cruiser w/Small Open Trailer 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-2014-toyota-fj-cruiser-w-small-open-trailer-1-64-diecast-due-september-2025?variant=45273424920766",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -3786,36 +2763,6 @@
   },
   {
     "manufacturer": "Johnny Lightning",
-    "productCode": "JLCG037rx785blue",
-    "name": "Johnny Lightning Classic Gold 1985 Mazda RX-7 (V3 Tender Blue) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-1985-mazda-rx-7-v3-tender-blue-1-64-scale-diecast-due-september-2025?variant=45305814122686",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP392A",
-    "name": "Johnny Lightning Classic Gold 1967 Ford Bronco (Wimbledon White) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-1967-ford-bronco-wimbledon-white-1-64-scale-diecast-due-october-2025?variant=45385331015870",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
     "productCode": "JLCG034B",
     "name": "Johnny Lightning Classic Gold 2026 Release 1 Set B (6-Car Set) 1:64 Diecast",
     "variant": "Default Title",
@@ -3876,21 +2823,6 @@
   },
   {
     "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP392B",
-    "name": "Johnny Lightning Classic Gold 1967 Ford Bronco (Glen Green) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-1967-ford-bronco-glen-green-1-64-scale-diecast-due-october-2025?variant=45385331310782",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
     "productCode": "JLSP387A",
     "name": "Johnny Lightning Classic Gold 2003 Chevy Corvette 50th Anniversary (Millennium Yellow) 1:64 Scale Diecast",
     "variant": "Default Title",
@@ -3910,21 +2842,6 @@
     "name": "Johnny Lightning 2026 Release 1 Scrapin' A (2-Pack) 1:64 Scale Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-2026-release-1-scrapin-a-2-pack-1-64-scale-diecast-due-october-2026?variant=48793265438910",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLCG037rx785silver",
-    "name": "Johnny Lightning Classic Gold 1985 Mazda RX-7 (V9 Metallic Silver) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-1985-mazda-rx-7-v9-metallic-silver-1-64-scale-diecast-due-september-2025?variant=45305811927230",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -4086,21 +3003,6 @@
   },
   {
     "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP301A",
-    "name": "Johnny Lightning 1966 Ford Bronco w/Open Trailer & Tires (King of the Hammers) Version A 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-1966-ford-bronco-w-open-trailer-tires-king-of-the-hammers-version-a-1-64-diecast?variant=49113316458686",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
     "productCode": "JLMONSTERTRKCOLORED",
     "name": "Johnny Lightning Monster Truck Bundle (3 Trucks) (Colored Tires) 1:64 Scale Diecast",
     "variant": "Default Title",
@@ -4162,145 +3064,10 @@
   },
   {
     "manufacturer": "Auto World",
-    "productCode": "AWSP179B",
-    "name": "Auto World 1981 Chevrolet Silverado Stepside 4x4 (Medium Graystone Poly) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1981-chevrolet-silverado-stepside-medium-graystone-poly-1-64-diecast-due-march-2025?variant=44828604006590",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP181A",
-    "name": "Auto World 2023 Dodge Charger Swinger R/T Scat Pack (Sublime) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-2023-dodge-charger-swinger-r-t-scat-pack-sublime-1-64-diecast-due-march-2025?variant=44828613836990",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP181B",
-    "name": "Auto World 2023 Dodge Charger R/T Scat Pack (Plum Crazy) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-2023-dodge-charger-r-t-scat-pack-plum-crazy-1-64-diecast-due-march-2025?variant=44828616949950",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP171B",
-    "name": "Auto World 2021 Ford Mustang Shelby GT500 Carbon Fiber Track Pack (Twister Orange w/Black Roof) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-2021-ford-mustang-shelby-gt500-carbon-fiber-track-pack-twister-orange-w-black-roof-1-64-diecast-due-october-2024?variant=44567212359870",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP189B",
-    "name": "Auto World 1991 Mitsubishi Eclipse GSX (Tennessee Blue) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1991-mitsubishi-eclipse-gsx-tennessee-blue-1-64-diecast-due-may-2025?variant=44973981270206",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP172B",
-    "name": "Auto World 2021 Dodge Charger SRT Hellcat Redeye (Octane Red w/Flat Black Top/Hood) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-2021-dodge-charger-srt-hellcat-redeye-octane-red-w-flat-black-top-hood-1-64-diecast-due-october-2024?variant=44567228612798",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
     "productCode": "AWBC001silverado19",
     "name": "Auto World BCC Mossy Oak 2019 Chevy Silverado High Country Truck 1:64 Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/auto-world-bcc-mossy-oak-2019-chevy-silverado-high-country-truck-1-64-diecast?variant=44435642155198",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP185A",
-    "name": "Auto World 1967 Cadillac Eldorado (Sable Black) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1967-cadillac-eldorado-sable-black-1-64-diecast-duemay-2025?variant=44973958070462",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP172A",
-    "name": "Auto World 2021 Dodge Charger SRT Hellcat Redeye (White Knuckle) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-2021-dodge-charger-srt-hellcat-redeye-white-knuckle-1-64-diecast-due-october-2024?variant=44567220977854",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP189A",
-    "name": "Auto World 1991 Mitsubishi Eclipse GSX (Maranello Red) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1991-mitsubishi-eclipse-gsx-maranello-red-1-64-diecast-due-may-2025?variant=44973979173054",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -4342,96 +3109,6 @@
   },
   {
     "manufacturer": "Auto World",
-    "productCode": "AWSP171A",
-    "name": "Auto World 2021 Ford Mustang Shelby GT500 Carbon Fiber Track Pack (Grabber Yellow w/Black Roof) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-2021-ford-mustang-shelby-gt500-carbon-fiber-track-pack-grabber-yellow-w-black-roof-1-64-diecast-due-october-2024?variant=44567203971262",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP185B",
-    "name": "Auto World 1967 Cadillac Eldorado (Light Green Crystal Firemist Metallic) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1967-cadillac-eldorado-light-green-crystal-firemist-metallic-1-64-diecast-due-may-2025?variant=44973959872702",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP194B",
-    "name": "Auto World 1968 Dodge Coronet R/T Hardtop (Medium Gold Poly) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1968-dodge-coronet-r-t-hardtop-medium-gold-poly-1-64-diecast-due-october-2025?variant=45342786650302",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP193A",
-    "name": "Auto World 1965 Chevrolet Impala (Danube Blue) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-chevrolet-impala-danube-blue-1-64-diecast-due-october-2025?variant=45342763909310",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP194A",
-    "name": "Auto World 1968 Dodge Coronet R/T Hardtop (Medium Green Poly) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1968-dodge-coronet-r-t-hardtop-medium-green-poly-1-64-diecast-due-october-2025?variant=45342779703486",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP182B",
-    "name": "Auto World 1964 Ford GT40 GULF (Gulf Dark Blue w/Orange Stripe) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1964-ford-gt40-gulf-gulf-dark-blue-w-orange-stripe-1-64-diecast-due-march-2025?variant=44828232220862",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
     "productCode": "AWSP192A",
     "name": "Auto World 1970 Plymouth Sport Fury (Burnt Orange Poly) 1:64 Diecast",
     "variant": "Default Title",
@@ -4451,21 +3128,6 @@
     "name": "Auto World 1970 Chevy Kingswood Estate (Green Mist Poly w/Woodgrain Side Panels) 1:64 Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1970-chevy-kingswood-estate-green-mist-poly-w-woodgrain-side-panels-1-64-diecast-due-march-2025?variant=44828444623038",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP193B",
-    "name": "Auto World 1965 Chevrolet Impala (Willow Green) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-chevrolet-impala-willow-green-1-64-diecast-due-october-2025?variant=45342770299070",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -4507,40 +3169,10 @@
   },
   {
     "manufacturer": "Auto World",
-    "productCode": "AWSP178A",
-    "name": "Auto World Petty's Garage 2017 Ford Mustang GT Tribute Edition (Silver Body w/Petty Blue Sides) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-pettys-garage-2017-ford-mustang-gt-tribute-edition-silver-body-w-petty-blue-sides-1-64-diecast-due-march-2025?variant=44828447244478",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
     "productCode": "AWSP176B",
     "name": "Auto World 2018 Chevy Corvette Grand Sport (Admiral Blue) 1:64 Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-2018-chevy-corvette-grand-sport-admiral-blue-1-64-diecast-due-march-2025?variant=44828430336190",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP182A",
-    "name": "Auto World 1964 Ford GT40 (Gloss White w/Black Upper Front) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1964-ford-gt40-gloss-white-w-black-upper-front-1-64-diecast-due-march-2025?variant=44828231106750",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -4627,85 +3259,10 @@
   },
   {
     "manufacturer": "Auto World",
-    "productCode": "AWSP178B",
-    "name": "Auto World Petty's Garage 2016 Ford Mustang GT King Premier Edition (White Body w/Petty Blue Ground Effects) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-pettys-garage-2016-ford-mustang-gt-king-premier-edition-white-body-w-petty-blue-ground-effects-1-64-diecast-due-march-2025?variant=44828450357438",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP184A",
-    "name": "Auto World 2010 Chevrolet Camaro RS (Rally Yellow) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-2011-chevrolet-camaro-rs-rally-yellow-1-64-diecast-due-march-2025?variant=44828241887422",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP195B",
-    "name": "Auto World 1961 Dodge Phoenix Lowrider (Purple Sky Metallic w/ Lowrider Graphics) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1961-dodge-phoenix-lowrider-purple-sky-metallic-w-lowrider-graphics-1-64-diecast-due-october-2025?variant=45342795661502",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP195A",
-    "name": "Auto World 1961 Dodge Phoenix Lowrider (Mango Smoothie Metallic w/ Lowrider Graphics) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1961-dodge-phoenix-lowrider-mango-smoothie-metallic-w-lowrider-graphics-1-64-diecast-due-october-2025?variant=45342789861566",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
     "productCode": "AWSP207A",
     "name": "Auto World 1965 Plymouth Barracuda Formula S (Medium Turquoise Poly w/White Stripe)\u00a0premium 2025 release 3 1:64 Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-plymouth-barracuda-formula-s-medium-turquoise-poly-w-white-stripe-1-64-diecast-due-march-2026?variant=46000014590142",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP183B",
-    "name": "Auto World 1963 Chevrolet Nova II Wagon (Willow Green) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-chevrolet-nova-ii-wagon-willow-green-1-64-diecast-due-march-2025?variant=44828239167678",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -4732,156 +3289,6 @@
   },
   {
     "manufacturer": "Auto World",
-    "productCode": "AWSP188B",
-    "name": "Auto World 2020 Ford F-150 Truck (Velocity Blue) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-2020-ford-f-150-truck-velocity-blue-1-64-diecast-due-may-2025?variant=44973978157246",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP209B",
-    "name": "Auto World 1998 Toyota Supra (No Spoiler & Custom Wheels) (Caribbean Green)\u00a0premium 2025 release 3 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1998-toyota-supra-no-spoiler-custom-wheels-caribbean-green-1-64-diecast-due-march-2026?variant=46000024682686",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP210A",
-    "name": "Auto World 1976 Cadillac Coupe de Ville (Amberlite Firemist Poly)\u00a01:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1976-cadillac-coupe-de-ville-amberlite-firemist-poly-1-64-diecast-due-april-2026?variant=46412156764350",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP183A",
-    "name": "Auto World 1963 Chevrolet Nova II Wagon (Rally Red) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-chevrolet-nova-ii-wagon-rally-red-1-64-diecast-due-march-2025?variant=44828232777918",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP210B",
-    "name": "Auto World 1976 Cadillac Coupe de Ville (Phoenician Ivory)\u00a01:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1976-cadillac-coupe-de-ville-phoenician-ivory-1-64-diecast-due-april-2026?variant=46412157550782",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP209A",
-    "name": "Auto World 1998 Toyota Supra (No Spoiler & Custom Wheels) (Sedona Sunset Metallic)\u00a0premium 2025 release 3 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1998-toyota-supra-no-spoiler-custom-wheels-sedona-sunset-metallic-1-64-diecast-due-march-2026?variant=46000024027326",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP186B",
-    "name": "Auto World 2012 Ford Mustang Boss 302 (Competition Orange w/Black Accents) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-2012-ford-mustang-boss-302-competition-orange-w-black-accents-1-64-diecast-due-may-2025?variant=44973973307582",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP184B",
-    "name": "Auto World 2010 Chevrolet Camaro RS (Victory Red) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-2011-chevrolet-camaro-rs-victory-red-1-64-diecast-due-march-2025?variant=44828245688510",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP188A",
-    "name": "Auto World 2020 Ford F-150 Truck (Oxford White) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-2020-ford-f-150-truck-oxford-white-1-64-diecast-due-may-2025?variant=44973977600190",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP186A",
-    "name": "Auto World 2012 Ford Mustang Boss 302 (Yellow Blaze w/Black Accents) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-2012-ford-mustang-boss-302-yellow-blaze-w-black-accents-1-64-diecast-due-may-2025?variant=44973972357310",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
     "productCode": "AWSP203",
     "name": "Auto World 2006 Chevy Silverado Extended Cab/Stepside Polaris\u00a01:64 Diecast",
     "variant": "Default Title",
@@ -4897,55 +3304,10 @@
   },
   {
     "manufacturer": "Auto World",
-    "productCode": "AWSP167B",
-    "name": "Auto World 1985 Dodge Caravan (Crimson Red w/Black Lower Sides) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1985-dodge-caravan-crimson-red-w-black-lower-sides-1-64-diecast-due-october-2024?variant=44567722721470",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP212A",
-    "name": "Auto World 1968 Dodge Coronet 500 Convertible (Pale Blue Poly)\u00a01:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1968-dodge-coronet-500-convertible-pale-blue-poly-1-64-diecast-due-april-2026?variant=46412163907774",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
     "productCode": "AW2PK007classicmuscleA",
     "name": "Auto World 2025 Release 2 Classic Muscle Deluxe (2-Pack) Version A 1:64 Scale Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/auto-world-2025-release-2-classic-muscle-deluxe-2-pack-version-a-1-64-scale-diecast?variant=46580038205630",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP214A",
-    "name": "Auto World 1993 Mitsubishi 3000GT VR-4 (Albany Black Pearl)\u00a01:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1993-mitsubishi-3000gt-vr-4-albany-black-pearl-1-64-diecast-due-april-2026?variant=46412171018430",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -5032,36 +3394,6 @@
   },
   {
     "manufacturer": "Auto World",
-    "productCode": "AWSP168B",
-    "name": "Auto World 2023 Nissan Z (Black Diamond) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-2023-nissan-z-black-diamond-1-64-diecast-due-october-2024?variant=44567756538046",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP212B",
-    "name": "Auto World 1968 Dodge Coronet 500 Convertible (White)\u00a01:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1968-dodge-coronet-500-convertible-white-1-64-diecast-due-april-2026?variant=46412164825278",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
     "productCode": "AW2PK007firebirdsB",
     "name": "Auto World 2025 Release 2 Firebirds Deluxe (2-Pack) Version B 1:64 Scale Diecast",
     "variant": "Default Title",
@@ -5092,40 +3424,10 @@
   },
   {
     "manufacturer": "Auto World",
-    "productCode": "AWSP179A",
-    "name": "Auto World 1981 Chevrolet Silverado Stepside 4x4 (Medium Blue) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/auto-world-1981-chevrolet-silverado-stepside-4x4-medium-blue-1-64-diecast?variant=45342843076798",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
     "productCode": "AW64452B",
     "name": "Auto World Premium 2024 Release 3 Set B (6-Car Sealed Case) 1:64 Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-premium-2024-release-3-set-b-6-car-sealed-case-1-64-diecast-due-march-2025?variant=44828400156862",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP170B",
-    "name": "Auto World 2021 Dodge Challenger SRT Super Stock (Pitch Black w/ Flat Black Top/Hood) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/auto-world-2021-dodge-challenger-srt-super-stock-pitch-black-w-flat-black-top-hood-1-64-diecast?variant=46426924875966",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -5156,21 +3458,6 @@
     "name": "Auto World Premium 2024 Release 3 Set A (6-Car Sealed Case) 1:64 Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-premium-2024-release-3-set-a-6-car-sealed-case-1-64-diecast-due-march-2025?variant=44828373352638",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP214B",
-    "name": "Auto World 1993 Mitsubishi 3000GT VR-4 (Zurich White Pearl)\u00a01:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1993-mitsubishi-3000gt-vr-4-zurich-white-pearl-1-64-diecast-due-april-2026?variant=46412172656830",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -5257,36 +3544,6 @@
   },
   {
     "manufacturer": "Auto World",
-    "productCode": "AWSP170A",
-    "name": "Auto World 2021 Dodge Challenger SRT Super Stock (Sinamon Stick Metallic ) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/auto-world-2021-dodge-challenger-srt-super-stock-sinamon-stick-metallic-1-64-diecast?variant=46426924122302",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP206B",
-    "name": "Auto World 1989 Dodge Caravan Turbo (Black w/Dark Quartz Gray Lower & Red Pin Stripe)\u00a0premium 2025 release 3 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1989-dodge-caravan-turbo-black-w-dark-quartz-gray-lower-red-pin-stripe-1-64-diecast-due-march-2026?variant=46000012722366",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
     "productCode": "AW2PK008curvehuggersB",
     "name": "Auto World 2026 Release 1 Curvehuggers Deluxe (2-Pack) Version B 1:64 Scale Diecast",
     "variant": "Default Title",
@@ -5321,36 +3578,6 @@
     "name": "Auto World 1989 Plymouth Voyager Turbo (Bright White)\u00a01:64 Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1989-plymouth-voyager-turbo-bright-white-1-64-diecast-due-april-2026?variant=46412169478334",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP202",
-    "name": "Auto World 2021 Dodge Ram Limited Edition PBR\u00a01:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-2021-dodge-ram-limited-edition-pbr-1-64-diecast-due-late-january-2026?variant=45704734736574",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWSP168A",
-    "name": "Auto World 2023 Nissan Z (Passion Red Tri-Coat w/Black Roof) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-2023-nissan-z-passion-red-tri-coat-w-black-roof-1-64-diecast-due-october-2024?variant=44567747625150",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -5542,100 +3769,10 @@
   },
   {
     "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP173B",
-    "name": "Johnny Lightning Muscle Cars 1965 Turtle Wax Chevrolet Chevelle Wagon (Silver w/Turtle Wax Graphics) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-muscle-cars-1965-turtle-wax-chevrolet-chevelle-wagon-silver-w-turtle-wax-graphics-1-64-scale-diecast?variant=44929476133054",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLMC038coronet69copper",
-    "name": "Johnny Lightning Muscle Cars 1969 Dodge Coronet R/T Convertible (T5 Copper) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1969-dodge-coronet-r-t-convertible-t5-copper-1-64-scale-diecast-due-august-2025?variant=45226194239678",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP386A",
-    "name": "Johnny Lightning Muscle Cars 1974 Pontiac GTO (Gloss Black w/GTO RWB Stripes) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1974-pontiac-gto-gloss-black-w-gto-rwb-stripes-1-64-scale-diecast-due-november-2026?variant=45457134158014",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLMC038coronet69silver",
-    "name": "Johnny Lightning Muscle Cars 1969 Dodge Coronet R/T Convertible (A4 Silver) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1969-dodge-coronet-r-t-convertible-a4-silver-1-64-scale-diecast-due-august-2025?variant=45226221502654",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
     "productCode": "JLMC038skylark66green",
     "name": "Johnny Lightning Muscle Cars 1966 Buick Skylark GS (Seafoam Green Poly) 1:64 Scale Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1966-buick-skylark-gs-seafoam-green-poly-1-64-scale-diecast-due-august-2025?variant=45226224517310",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP386B",
-    "name": "Johnny Lightning Muscle Cars 1974 Pontiac GTO (Regatta Blue Poly w/RWB Stripes) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1974-pontiac-gto-regatta-blue-poly-w-rwb-stripes-1-64-scale-diecast-due-november-2025?variant=45457141039294",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP384B",
-    "name": "Johnny Lightning Muscle Cars Mr. Norm's 1970 Dodge Super Bee (Plum Crazy w/Flat Black Roof & White Super Bee \u201cC\u201d Stripe) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-mr-norms-1970-dodge-super-bee-plum-crazy-w-flat-black-roof-white-super-bee-c-stripe-1-64-scale-diecast-due-november-2025?variant=45457130979518",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
@@ -5677,70 +3814,10 @@
   },
   {
     "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP206",
-    "name": "Johnny Lightning 1969 Dodge Charger (Orange) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-1969-dodge-charger-orange-1-64-scale-diecast?variant=45345354055870",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
     "productCode": "JLMC038skylark66red",
     "name": "Johnny Lightning Muscle Cars 1966 Buick Skylark GS (Riviera Red Poly) 1:64 Scale Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1966-buick-skylark-gs-riviera-red-poly-1-64-scale-diecast-due-august-2025?variant=45226226221246",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP405B",
-    "name": "Johnny Lightning Street Freaks 1974 Pontiac GTO\u00a0(Black w/Flames) (Black/Shades of Blue) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-street-freaks-1974-pontiac-gto-black-w-flames-black-shades-of-blue-1-64-scale-diecast-due-late-october-2025?variant=45421013663934",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP405A",
-    "name": "Johnny Lightning Street Freaks 1974 Pontiac GTO\u00a0(Black w/Flames) (Black/Red, Orange & Yellow) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-street-freaks-1974-pontiac-gto-black-w-flames-black-red-orange-yellow-1-64-scale-diecast-due-late-october-2025?variant=45420994494654",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSP384A",
-    "name": "Johnny Lightning Muscle Cars Mr. Norm's 1970 Dodge Super Bee (Hemi Orange w/Black Super Bee \u201cC\u201d Stripe) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-mr-norms-1970-dodge-super-bee-hemi-orange-w-black-super-bee-c-stripe-1-64-scale-diecast-due-november-2025?variant=45457130455230",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",

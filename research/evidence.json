@@ -6613,9 +6613,9 @@
     "status": "retailer product evidence; independent manufacturer confirmation required"
   },
   "https://www.tarmacworks.com/products/werk83-1-64-bmw-320i-stw-1995-champion?variant=47029071249665": {
-    "checked": "2026-11-26T23:07:11.065709+07:00",
+    "checked": "2026-11-27T11:53:21.681829+07:00",
     "error": "HTTP Error 404: Not Found",
-    "v43_attempts": 4
+    "v43_attempts": 5
   },
   "https://www.modelcarshouston.com/products/preorder-hobby-japan-1-64-honda-prelude-2-2si-vtec-bb4-late-version-in-milano-red?variant=44663549493504": {
     "checked": "2026-11-25T09:40:43.073304+07:00",
@@ -10580,9 +10580,9 @@
     "status": "retailer product evidence; independent manufacturer confirmation required"
   },
   "https://www.tarmacworks.com/products/catch22-1-64-bmw-320i-macau-guia-race-2004-15-winner?variant=44353353580801": {
-    "checked": "2026-11-26T23:07:11.065709+07:00",
+    "checked": "2026-11-27T11:53:21.681829+07:00",
     "error": "HTTP Error 404: Not Found",
-    "v43_attempts": 4
+    "v43_attempts": 5
   },
   "https://www.modelcarshouston.com/products/preorder-hobby-japan-1-64-mitsubishi-lancer-gsr-evo-8-in-black-mica-with-engine-display?variant=43704577622272": {
     "checked": "2026-11-25T09:40:43.073304+07:00",
@@ -10611,9 +10611,9 @@
     "status": "retailer product evidence; independent manufacturer confirmation required"
   },
   "https://www.tarmacworks.com/products/catch22-1-64-bmw-320i-fia-wtcc-guia-race-of-macau-2005-1?variant=44353350369537": {
-    "checked": "2026-11-26T23:07:11.065709+07:00",
+    "checked": "2026-11-27T11:53:21.681829+07:00",
     "error": "HTTP Error 404: Not Found",
-    "v43_attempts": 4
+    "v43_attempts": 5
   },
   "https://www.modelcarshouston.com/products/preorder-hobby-japan-1-64-mitsubishi-lancer-gsr-evo-8-in-white-solid-with-engine-display?variant=43704576770304": {
     "checked": "2026-11-25T09:40:43.073304+07:00",
@@ -10876,9 +10876,9 @@
     "status": "retailer product evidence; independent manufacturer confirmation required"
   },
   "https://www.tarmacworks.com/products/catch22-1-64-320i-e46-super-production-macau-guia-race-2003-1-winner?variant=44005828657409": {
-    "checked": "2026-11-26T23:07:11.065709+07:00",
+    "checked": "2026-11-27T11:53:21.681829+07:00",
     "error": "HTTP Error 404: Not Found",
-    "v43_attempts": 4
+    "v43_attempts": 5
   },
   "https://www.modelcarshouston.com/products/preorder-hobby-japan-1-64-mitsubishi-lancer-evolution-x-in-phantom-black-pearl?variant=43567825518848": {
     "checked": "2026-11-25T09:40:43.073304+07:00",
@@ -46307,5 +46307,415 @@
     "vendor": "Auto World Store",
     "sku_match": true,
     "status": "retailer product evidence; independent manufacturer confirmation required"
+  },
+  "https://southtexasdiecast.com/hwguide/machspeeder.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/madmanga.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/madfast.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/madsplash.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/marsrovercuriosity.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/maseratimc12.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/mastrettamxr.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/maxsteelmotorcycle.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/maxsteelturboracer.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/maximumleeway.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/mazdafurai.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/mazdarx3.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/mazdarepu.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/mazdarx7.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/mclaren720s.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/mclarenf1gtr.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/mclarenp1.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/medevil.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/meganetrophy.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/megathrust.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/mercedes26190e.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/mercedescl55.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/mercedessl55.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/mercedesbenz190e.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/mercedesbenzg500.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/metaloid.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/middrift.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/midmill.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/migrig.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/mightymaverickv.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/milano.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/minichallenge.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/doubleshotz.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/mitsubishieclipseconcept.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/mobrod.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/monsterdairydelivery.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/monteracer.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/motosaurus.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/grasshopperv.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/mountainmauler.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/mr11.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/mysterymachine.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/neetstreeterv.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/nervehammer.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/nightshifter.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/nissanz2.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/nissan370z.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/nissanc10skylinewagon.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/nissanconcept2020visiongt.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/nissanfairladyz.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/nissangtrr34.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/nissanlaurel2000sgx.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/nissansilvias15.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/nissanskylinec210.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/nissanskylineht2000gtr.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/nissanskylineht2000gtx.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/nissanskylinegtrr33.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/nissantitan.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/nitrium.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/nitrodoorslammer.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/nitrotailgater.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/nittygrittykittyv.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/noodleheadv.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/69dodgecharger.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/1969dodgecoronetsuperbee.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/70chevynova.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/1970plymouthhemicuda.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/16angels.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/1997pontiacstocker.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/24ours.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/3squealer.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/4wardspeed.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/5alarm.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/occsplitback.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/octainium.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/offduty.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/oldnumber55.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/ollierocket.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/unscwarthog.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/openfirev.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/overbored454.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://southtexasdiecast.com/hwguide/overbored454t.html": {
+    "checked": "2026-11-27T11:53:21.681829+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
   }
 }

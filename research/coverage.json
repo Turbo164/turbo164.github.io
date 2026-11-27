@@ -1,63 +1,19 @@
 {
-  "time": "2026-11-27T09:45:25.644098+07:00",
+  "time": "2026-11-27T11:53:21.681829+07:00",
   "pilot_only": false,
   "version": "6.3",
-  "catalog_master_commit": "460046de670c9e5a14c23cc6080341fc3fa71b97",
-  "catalog_master_count": 375,
-  "official_exact_candidates": 320,
+  "catalog_master_commit": "56ed6ca0e050dfc03f8e5cd2ffb0c7f58c1b01b7",
+  "catalog_master_count": 506,
+  "official_exact_candidates": 195,
   "independent_exact_candidates": 0,
-  "new_leads": 54,
+  "new_leads": 82,
   "historical_master_present": false,
-  "cumulative_count": 6418,
-  "review_candidates": 1348,
-  "elapsed_research_seconds": 3215,
-  "catalog_count": 506,
-  "lead_count": 6418,
+  "cumulative_count": 6500,
+  "review_candidates": 1218,
+  "elapsed_research_seconds": 2999,
+  "catalog_count": 510,
+  "lead_count": 6500,
   "sources": [
-    [
-      "Ignition Model",
-      "repeated page; checking variants for changes",
-      1
-    ],
-    [
-      "Ignition Model",
-      "page collected",
-      1,
-      250
-    ],
-    [
-      "Ignition Model",
-      "repeated page; checking variants for changes",
-      2
-    ],
-    [
-      "Ignition Model",
-      "page collected",
-      2,
-      250
-    ],
-    [
-      "Ignition Model",
-      "repeated page; checking variants for changes",
-      3
-    ],
-    [
-      "Ignition Model",
-      "page collected",
-      3,
-      250
-    ],
-    [
-      "Ignition Model",
-      "repeated page; checking variants for changes",
-      4
-    ],
-    [
-      "Ignition Model",
-      "page collected",
-      4,
-      201
-    ],
     [
       "Kaido House",
       "repeated page; checking variants for changes",
@@ -169,6 +125,50 @@
       62
     ],
     [
+      "Ignition Model",
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "Ignition Model",
+      "page collected",
+      1,
+      250
+    ],
+    [
+      "Ignition Model",
+      "repeated page; checking variants for changes",
+      2
+    ],
+    [
+      "Ignition Model",
+      "page collected",
+      2,
+      250
+    ],
+    [
+      "Ignition Model",
+      "repeated page; checking variants for changes",
+      3
+    ],
+    [
+      "Ignition Model",
+      "page collected",
+      3,
+      250
+    ],
+    [
+      "Ignition Model",
+      "repeated page; checking variants for changes",
+      4
+    ],
+    [
+      "Ignition Model",
+      "page collected",
+      4,
+      201
+    ],
+    [
       "MINI GT",
       "blocked",
       "robots disallows"
@@ -236,82 +236,23 @@
     [
       "wholesale",
       "new listing leads",
-      31,
+      41,
       0,
       "product links",
-      46
+      45
     ],
     [
       "wholesale",
       "new listing leads",
-      32,
+      42,
       0,
       "product links",
-      48
+      21
     ],
     [
       "wholesale",
-      "new listing leads",
-      33,
-      0,
-      "product links",
-      47
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      34,
-      0,
-      "product links",
-      37
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      35,
-      0,
-      "product links",
+      "no parseable product links",
       43
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      36,
-      0,
-      "product links",
-      39
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      37,
-      0,
-      "product links",
-      39
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      38,
-      0,
-      "product links",
-      41
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      39,
-      0,
-      "product links",
-      37
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      40,
-      0,
-      "product links",
-      47
     ],
     [
       "hobbysearch",
@@ -321,50 +262,50 @@
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/i_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/m_ccguide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/i_guide.html",
-      10
+      "https://southtexasdiecast.com/hwguide/m_guide.html",
+      42
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/j_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/n_ccguide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/j_guide.html",
+      "https://southtexasdiecast.com/hwguide/n_guide.html",
+      21
+    ],
+    [
+      "Hot Wheels",
+      "historical archive leads",
+      "https://southtexasdiecast.com/hwguide/number_ccguide.html",
+      4
+    ],
+    [
+      "Hot Wheels",
+      "historical archive leads",
+      "https://southtexasdiecast.com/hwguide/number_guide.html",
       6
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/k_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/o_ccguide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/k_guide.html",
+      "https://southtexasdiecast.com/hwguide/o_guide.html",
       9
-    ],
-    [
-      "Hot Wheels",
-      "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/l_ccguide.html",
-      0
-    ],
-    [
-      "Hot Wheels",
-      "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/l_guide.html",
-      29
     ],
     [
       "Hot Wheels",
@@ -376,62 +317,82 @@
       "wholesale product pages attempted",
       120,
       "exact listing details",
-      1074
+      1193
+    ],
+    [
+      "Tarmac Works",
+      "verification blocked",
+      "HTTP Error 404: Not Found"
+    ],
+    [
+      "Tarmac Works",
+      "verification blocked",
+      "HTTP Error 404: Not Found"
+    ],
+    [
+      "Tarmac Works",
+      "verification blocked",
+      "HTTP Error 404: Not Found"
+    ],
+    [
+      "Tarmac Works",
+      "verification blocked",
+      "HTTP Error 404: Not Found"
     ],
     [
       "V4.1",
       "new page inspections",
-      229,
+      86,
       "pending accessible queue exhausted"
     ],
     [
       "V4.6",
       "product links inspected",
-      23703,
+      24111,
       "exact scale/SKU matches",
-      126
+      129
     ],
     [
       "V4.9",
       "cached product requests avoided",
       0,
       "unique cached endpoints",
-      1035
+      1102
     ],
     [
       "V4.5",
       "independent storefront searches",
-      319,
+      336,
       "wholesale SKU backlog",
-      1029,
+      1140,
       "new search records inspected",
-      319
+      336
     ],
     [
       "V4.7",
       "manufacturer-matched review candidates",
-      37,
+      39,
       "excluded or duplicate",
-      92
+      96
     ],
     [
       "V5.0",
       "official exact variant matches",
-      638,
+      388,
       "errors",
       0
     ],
     [
       "V4.8",
       "official-host candidates",
-      350,
+      219,
       "publication approved",
       0
     ],
     [
       "V5.2",
       "official detail evidence records",
-      44
+      233
     ],
     [
       "V6.1",
@@ -441,7 +402,7 @@
     [
       "V5.1",
       "unique official candidates for final review",
-      320,
+      195,
       "approved for publication",
       0
     ],
@@ -450,17 +411,17 @@
       "historical master available",
       false,
       "combined records",
-      6418,
+      6500,
       "cross-source candidates",
       0
     ]
   ],
   "publication": "verified readback",
-  "run_id": "45930180762",
+  "run_id": "45942515782",
   "run_attempt": "1",
-  "commit": "460046de670c9e5a14c23cc6080341fc3fa71b97",
-  "published": 131,
-  "eligible_verified": 131,
+  "commit": "56ed6ca0e050dfc03f8e5cd2ffb0c7f58c1b01b7",
+  "published": 4,
+  "eligible_verified": 4,
   "research_status": "completed",
   "publication_step_outcome": "success"
 }
