@@ -2,41 +2,41 @@
   "published": 2,
   "status": "verified readback",
   "eligible": 2,
-  "commit": "2632e5ac336f4840c5bfa18a0f743a428565e217",
+  "commit": "243affe85edd160b8328f7a54bffa8e2f937c1cf",
   "additions": [
     {
-      "id": "tarmac-works-t64g075bl",
-      "number": "T64G-075-BL",
-      "productCode": "T64G-075-BL",
-      "brand": "Mazda",
-      "vehicleMake": "Mazda",
+      "id": "tarmac-works-t64g042gr",
+      "number": "T64G-042-GR",
+      "productCode": "T64G-042-GR",
+      "brand": "Mercedes-Benz",
+      "vehicleMake": "Mercedes-Benz",
       "manufacturer": "Tarmac Works",
-      "name": "1/64 Mazda RX-7 VeilSide Fortune7 Blue - Tarmac Works GLOBAL64",
+      "name": "1/64 Mercedes-Benz AMG GT Black Series Green - Tarmac Works GLOBAL64",
       "variant": "Unverified",
       "editionType": "Unverified",
       "release": "Unverified",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-mazda-rx-7-veilside-fortune7-blue-tarmac-works-global64?variant=49232858349825",
+      "sourceUrl": "https://www.tarmacworks.com/products/1-64-mercedes-benz-amg-gt-black-series-green-tarmac-works-global64?variant=48277161967873",
       "verification": "Official SKU and scale matched; edition, release and identity review pending"
     },
     {
-      "id": "tarmac-works-t64011jv",
-      "number": "T64-011-JV",
-      "productCode": "T64-011-JV",
-      "brand": "Toyota",
-      "vehicleMake": "Toyota",
+      "id": "tarmac-works-t64gf070op2",
+      "number": "T64G-F070-OP2",
+      "productCode": "T64G-F070-OP2",
+      "brand": "McLaren",
+      "vehicleMake": "McLaren",
       "manufacturer": "Tarmac Works",
-      "name": "1/64 Toyota Supra - Designed by Joshua Vides - Tarmac Works HOBBY64",
+      "name": "1/64 McLaren MCL60 Australian Grand Prix 2023 Oscar Piastri - Tarmac Works X iXO Models GLOBAL64",
       "variant": "Unverified",
       "editionType": "Unverified",
       "release": "Unverified",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-toyota-supra-designed-by-joshua-vides-tarmac-works-hobby64?variant=48765891543297",
+      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mclaren-mcl60-australian-grand-prix-2023-oscar-piastri-global64?variant=48114201329921",
       "verification": "Official SKU and scale matched; edition, release and identity review pending"
     }
   ],
-  "catalog_count": 323,
+  "catalog_count": 325,
   "workflow_run": {
-    "run_id": "45906431485",
+    "run_id": "45918630154",
     "run_attempt": "1",
-    "commit": "4702c2ce5f61db4aca44649db38c8952aa409285"
+    "commit": "2632e5ac336f4840c5bfa18a0f743a428565e217"
   }
 }

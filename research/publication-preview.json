@@ -389,18 +389,6 @@
       "photo": null
     },
     {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-075-BL",
-      "name": "Tarmac Works 1:64 Mazda RX-7 VeilSide Fortune7 in Blue",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mazda-rx-7-veilside-fortune7-blue-global64?variant=47173127471360",
-      "vendor": "Tarmac Works",
-      "releaseStatus": "unconfirmed",
-      "editionType": "unconfirmed",
-      "verification": "NEEDS VERIFICATION",
-      "photo": null
-    },
-    {
       "manufacturer": "MotorHelix",
       "productCode": "M63521",
       "name": "MotorHelix 1:64 Nissan GT-R NISMO (R35) Special Edition 2022 NISMO in Stealth Gray",
@@ -413,11 +401,71 @@
       "photo": null
     },
     {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-011-JV",
-      "name": "Tarmac Works 1:64 Toyota Supra Designed by Joshua Vides",
+      "manufacturer": "MINI GT",
+      "productCode": "MGT01098",
+      "name": "MINI GT 1:64 Hyundai Ioniq 5N MINI GT RS-01T 2025 Tokyo Auto Salon",
       "variant": "Default Title",
-      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-toyota-supra-designed-by-joshua-vides?variant=47353185435904",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-hyundai-ioniq-5n-mini-gt-rs-01t-2025-tokyo-auto-salon?variant=47047754023168",
+      "vendor": "MINI GT",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "MotorHelix",
+      "productCode": "M63515",
+      "name": "MotorHelix 1:64 Nissan GT-R (R35) Track Edition Engineered by NISMO 2020 in Dark Metal Gray",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-nissan-skyline-gt-r-r35-track-edition-engineered-by-nismo-2020-dark-metal?variant=47133242786048",
+      "vendor": "MotorHelix",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Johnny Lightning",
+      "productCode": "JLSP441",
+      "name": "Johnny Lightning Hobby Exclusive 1970 Ford Ranchero 1:64 Scale Diecast",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-hobby-exclusive-1970-ford-ranchero-1-64-scale-diecast?variant=46512294887614",
+      "vendor": "JohnnyLightning",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Johnny Lightning",
+      "productCode": "JLSP440",
+      "name": "Johnny Lightning Hobby Exclusive 1991 Toyota MR2 1:64 Scale Diecast",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-hobby-exclusive-1991-toyota-mr2-1-64-scale-diecast?variant=46512290824382",
+      "vendor": "JohnnyLightning",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64G-042-GR",
+      "name": "1/64 Mercedes-Benz AMG GT Black Series Green - Tarmac Works GLOBAL64",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.tarmacworks.com/products/1-64-mercedes-benz-amg-gt-black-series-green-tarmac-works-global64?variant=48277161967873",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64G-F070-OP2",
+      "name": "1/64 McLaren MCL60 Australian Grand Prix 2023 Oscar Piastri - Tarmac Works X iXO Models GLOBAL64",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mclaren-mcl60-australian-grand-prix-2023-oscar-piastri-global64?variant=48114201329921",
       "vendor": "Tarmac Works",
       "releaseStatus": "unconfirmed",
       "editionType": "unconfirmed",
@@ -432,7 +480,7 @@
       "name": "1/64 LB-WORKS 720S Black - Tarmac Works HOBBY64",
       "variant": "Default Title",
       "sourceUrl": "https://www.tarmacworks.com/products/1-64-lb-works-720s-black-tarmac-works-hobby64?variant=50161024729345",
-      "checked": "2026-11-27T05:42:05.996048+07:00",
+      "checked": "2026-11-27T07:45:58.644123+07:00",
       "verification": "Official SKU and scale matched; edition, release and identity review pending",
       "retailerSource": "https://www.tarmacworks.com/products/1-64-lb-works-720s-black-tarmac-works-hobby64?variant=50161024729345",
       "official_description_evidence": [
@@ -455,7 +503,7 @@
       "name": "1/64 RWB 993 Furusato with Tarmac Cards - Tarmac Works HOBBY64",
       "variant": "Default Title",
       "sourceUrl": "https://www.tarmacworks.com/products/1-64-rwb-993-furusato-with-tarmac-cards-tarmac-works-hobby64?variant=50662897516801",
-      "checked": "2026-11-27T05:42:05.996048+07:00",
+      "checked": "2026-11-27T07:45:58.644123+07:00",
       "verification": "Official SKU and scale matched; edition, release and identity review pending",
       "retailerSource": "https://www.tarmacworks.com/products/1-64-rwb-993-furusato-with-tarmac-cards-tarmac-works-hobby64?variant=50662897516801",
       "official_description_evidence": [
@@ -479,7 +527,7 @@
       "name": "1/64 LB-WORKS 720S White - Tarmac Works HOBBY64",
       "variant": "Default Title",
       "sourceUrl": "https://www.tarmacworks.com/products/1-64-lb-works-720s-white-tarmac-works-hobby64?variant=50161181720833",
-      "checked": "2026-11-27T05:42:05.996048+07:00",
+      "checked": "2026-11-27T07:45:58.644123+07:00",
       "verification": "Official SKU and scale matched; edition, release and identity review pending",
       "retailerSource": "https://www.tarmacworks.com/products/1-64-lb-works-720s-white-tarmac-works-hobby64?variant=50161181720833",
       "official_description_evidence": [
@@ -502,7 +550,7 @@
       "name": "1/64 Koenigsegg Gemera Grey - Tarmac Works GLOBAL64",
       "variant": "Default Title",
       "sourceUrl": "https://www.tarmacworks.com/products/1-64-koenigsegg-gemera-grey-tarmac-works-global64?variant=48765921952001",
-      "checked": "2026-11-27T05:42:05.996048+07:00",
+      "checked": "2026-11-27T07:45:58.644123+07:00",
       "verification": "Official SKU and scale matched; edition, release and identity review pending",
       "retailerSource": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-koenigsegg-gemera-grey?variant=47173218828544",
       "official_description_evidence": [
@@ -525,7 +573,7 @@
       "name": "1/64 Mercedes-AMG F1 W14 E Performance Italian Grand Prix 2023 #63 George Russell - Tarmac Works x iXO Models GLOBAL64",
       "variant": "Default Title",
       "sourceUrl": "https://www.tarmacworks.com/products/1-64-mercedes-amg-f1-w14-e-performance-italian-grand-prix-2023-63-george-russell-tarmac-works-global64?variant=48765919428865",
-      "checked": "2026-11-27T05:42:05.996048+07:00",
+      "checked": "2026-11-27T07:45:58.644123+07:00",
       "verification": "Official SKU and scale matched; edition, release and identity review pending",
       "retailerSource": "https://www.tarmacworks.com/products/1-64-mercedes-amg-f1-w14-e-performance-italian-grand-prix-2023-63-george-russell-tarmac-works-global64?variant=48765919428865",
       "official_description_evidence": [
@@ -548,7 +596,7 @@
       "name": "1/64 Vertex Ridge TE3005 Soarer with Tarmac Cards - GLOBAL64",
       "variant": "Default Title",
       "sourceUrl": "https://www.tarmacworks.com/products/1-64-vertex-ridge-te3005-soarer-with-tarmac-cards-global64?variant=49232865263873",
-      "checked": "2026-11-27T05:42:05.996048+07:00",
+      "checked": "2026-11-27T07:45:58.644123+07:00",
       "verification": "Official SKU and scale matched; edition, release and identity review pending",
       "retailerSource": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-vertex-ridge-te3005-soarer-with-trading-card-in-red?variant=47170338488576",
       "official_description_evidence": [
@@ -569,15 +617,15 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "productCode": "T64G-075-BL",
-      "name": "1/64 Mazda RX-7 VeilSide Fortune7 Blue - Tarmac Works GLOBAL64",
+      "productCode": "T64G-042-GR",
+      "name": "1/64 Mercedes-Benz AMG GT Black Series Green - Tarmac Works GLOBAL64",
       "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-mazda-rx-7-veilside-fortune7-blue-tarmac-works-global64?variant=49232858349825",
-      "checked": "2026-11-27T05:42:05.996048+07:00",
+      "sourceUrl": "https://www.tarmacworks.com/products/1-64-mercedes-benz-amg-gt-black-series-green-tarmac-works-global64?variant=48277161967873",
+      "checked": "2026-11-27T07:45:58.644123+07:00",
       "verification": "Official SKU and scale matched; edition, release and identity review pending",
-      "retailerSource": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mazda-rx-7-veilside-fortune7-blue-global64?variant=47173127471360",
+      "retailerSource": "https://www.tarmacworks.com/products/1-64-mercedes-benz-amg-gt-black-series-green-tarmac-works-global64?variant=48277161967873",
       "official_description_evidence": [
-        "Chase Version will replace normal version in random order    1/64 scale die-cast",
+        "Chase Version will replace normal version in random order",
         "Limited production run and will never be produced again"
       ],
       "limited_production_hint": true,
@@ -593,13 +641,13 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "productCode": "T64-011-JV",
-      "name": "1/64 Toyota Supra - Designed by Joshua Vides - Tarmac Works HOBBY64",
+      "productCode": "T64G-F070-OP2",
+      "name": "1/64 McLaren MCL60 Australian Grand Prix 2023 Oscar Piastri - Tarmac Works X iXO Models GLOBAL64",
       "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-toyota-supra-designed-by-joshua-vides-tarmac-works-hobby64?variant=48765891543297",
-      "checked": "2026-11-27T05:42:05.996048+07:00",
+      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mclaren-mcl60-australian-grand-prix-2023-oscar-piastri-global64?variant=48114201329921",
+      "checked": "2026-11-27T07:45:58.644123+07:00",
       "verification": "Official SKU and scale matched; edition, release and identity review pending",
-      "retailerSource": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-toyota-supra-designed-by-joshua-vides?variant=47353185435904",
+      "retailerSource": "https://www.tarmacworks.com/products/tarmac-works-1-64-mclaren-mcl60-australian-grand-prix-2023-oscar-piastri-global64?variant=48114201329921",
       "official_description_evidence": [
         "Limited production run and will never be produced again"
       ],

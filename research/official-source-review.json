@@ -664,27 +664,6 @@
     ]
   },
   {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64G-075-BL",
-    "name": "Tarmac Works 1:64 Mazda RX-7 VeilSide Fortune7 in Blue",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mazda-rx-7-veilside-fortune7-blue-global64?variant=47173127471360",
-    "vendor": "Tarmac Works",
-    "releaseStatus": "unconfirmed",
-    "editionType": "unconfirmed",
-    "verification": "NEEDS VERIFICATION",
-    "photo": null,
-    "official_source_host": false,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "official manufacturer product evidence missing",
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
     "manufacturer": "MotorHelix",
     "productCode": "M63521",
     "name": "MotorHelix 1:64 Nissan GT-R NISMO (R35) Special Edition 2022 NISMO in Stealth Gray",
@@ -706,12 +685,12 @@
     ]
   },
   {
-    "manufacturer": "Tarmac Works",
-    "productCode": "T64-011-JV",
-    "name": "Tarmac Works 1:64 Toyota Supra Designed by Joshua Vides",
+    "manufacturer": "MINI GT",
+    "productCode": "MGT01098",
+    "name": "MINI GT 1:64 Hyundai Ioniq 5N MINI GT RS-01T 2025 Tokyo Auto Salon",
     "variant": "Default Title",
-    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-toyota-supra-designed-by-joshua-vides?variant=47353185435904",
-    "vendor": "Tarmac Works",
+    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-hyundai-ioniq-5n-mini-gt-rs-01t-2025-tokyo-auto-salon?variant=47047754023168",
+    "vendor": "MINI GT",
     "releaseStatus": "unconfirmed",
     "editionType": "unconfirmed",
     "verification": "NEEDS VERIFICATION",
@@ -721,6 +700,109 @@
     "edition_hint": "unconfirmed",
     "review_flags": [
       "official manufacturer product evidence missing",
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "MotorHelix",
+    "productCode": "M63515",
+    "name": "MotorHelix 1:64 Nissan GT-R (R35) Track Edition Engineered by NISMO 2020 in Dark Metal Gray",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-nissan-skyline-gt-r-r35-track-edition-engineered-by-nismo-2020-dark-metal?variant=47133242786048",
+    "vendor": "MotorHelix",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": false,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "official manufacturer product evidence missing",
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "Johnny Lightning",
+    "productCode": "JLSP441",
+    "name": "Johnny Lightning Hobby Exclusive 1970 Ford Ranchero 1:64 Scale Diecast",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-hobby-exclusive-1970-ford-ranchero-1-64-scale-diecast?variant=46512294887614",
+    "vendor": "JohnnyLightning",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": false,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "official manufacturer product evidence missing",
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "Johnny Lightning",
+    "productCode": "JLSP440",
+    "name": "Johnny Lightning Hobby Exclusive 1991 Toyota MR2 1:64 Scale Diecast",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-hobby-exclusive-1991-toyota-mr2-1-64-scale-diecast?variant=46512290824382",
+    "vendor": "JohnnyLightning",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": false,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "official manufacturer product evidence missing",
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "Tarmac Works",
+    "productCode": "T64G-042-GR",
+    "name": "1/64 Mercedes-Benz AMG GT Black Series Green - Tarmac Works GLOBAL64",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.tarmacworks.com/products/1-64-mercedes-benz-amg-gt-black-series-green-tarmac-works-global64?variant=48277161967873",
+    "vendor": "Tarmac Works",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": true,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "Tarmac Works",
+    "productCode": "T64G-F070-OP2",
+    "name": "1/64 McLaren MCL60 Australian Grand Prix 2023 Oscar Piastri - Tarmac Works X iXO Models GLOBAL64",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mclaren-mcl60-australian-grand-prix-2023-oscar-piastri-global64?variant=48114201329921",
+    "vendor": "Tarmac Works",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": true,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
       "release status requires evidence",
       "edition requires evidence",
       "exact catalog variant and car make require final review"

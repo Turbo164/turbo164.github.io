@@ -1602,5 +1602,75 @@
       }
     ],
     "status": "official discovery only; exact variant verification pending"
+  },
+  "T64G-042-GR": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "hits": [
+      {
+        "available": false,
+        "body": "<p><span style=\"color: rgb(255, 128, 0);\"><strong>Chase Version will replace normal version in random order</strong></span></p>\n<p><meta charset=\"utf-8\">1/64 scale die-cast</p>\n<p>Limited production run and will never be produced again</p>\n<p>Detailed rims &amp; rubber wheels<br></p>\n<p>Free rolling wheels<br></p>\n<p><span>Paper box packaging</span></p>\n<p>Fully licensed product<br></p>",
+        "compare_at_price_max": "0.00",
+        "compare_at_price_min": "0.00",
+        "handle": "1-64-mercedes-benz-amg-gt-black-series-green-tarmac-works-global64",
+        "id": 9100857344257,
+        "image": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64G-042-GR_M02_5407246d-9deb-40d2-9893-6c1013ad6c0c.jpg?v=1784516198",
+        "price": "11.90",
+        "price_max": "11.90",
+        "price_min": "11.90",
+        "tags": [
+          "1/64",
+          "GLOBAL64",
+          "New Release"
+        ],
+        "title": "1/64 Mercedes-Benz AMG GT Black Series Green - Tarmac Works GLOBAL64",
+        "type": "1/64 Diecast",
+        "url": "/products/1-64-mercedes-benz-amg-gt-black-series-green-tarmac-works-global64?_pos=1&_psq=T64G-042-GR&_psid=1cf466151&_ss=e",
+        "variants": [],
+        "vendor": "Tarmac Works",
+        "featured_image": {
+          "alt": "1/64 Mercedes-Benz AMG GT Black Series Green - Tarmac Works GLOBAL64",
+          "aspect_ratio": 1.5,
+          "height": 3362,
+          "url": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64G-042-GR_M02_5407246d-9deb-40d2-9893-6c1013ad6c0c.jpg?v=1784516198",
+          "width": 5043
+        }
+      }
+    ],
+    "status": "official discovery only; exact variant verification pending"
+  },
+  "T64G-F070-OP2": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "hits": [
+      {
+        "available": true,
+        "body": "<p><meta charset=\"utf-8\">1/64 scale die-cast</p>\n<p>Limited production run and will never be produced again</p>\n<p>Detailed rims &amp; rubber wheels<br></p>\n<p>Free rolling wheels<br></p>\n<p><span>Paper box packaging</span></p>\n<p>Fully licensed product</p>",
+        "compare_at_price_max": "0.00",
+        "compare_at_price_min": "0.00",
+        "handle": "tarmac-works-1-64-mclaren-mcl60-australian-grand-prix-2023-oscar-piastri-global64",
+        "id": 9042416369921,
+        "image": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64G-F070-OP2_M03.jpg?v=1772096010",
+        "price": "16.90",
+        "price_max": "16.90",
+        "price_min": "16.90",
+        "tags": [
+          "1/64",
+          "GLOBAL64",
+          "New Release"
+        ],
+        "title": "1/64 McLaren MCL60 Australian Grand Prix 2023 Oscar Piastri - Tarmac Works X iXO Models GLOBAL64",
+        "type": "1/64 Diecast",
+        "url": "/products/tarmac-works-1-64-mclaren-mcl60-australian-grand-prix-2023-oscar-piastri-global64?_pos=1&_psq=T64G-F070-OP2&_psid=2192c70d5&_ss=e",
+        "variants": [],
+        "vendor": "Tarmac Works",
+        "featured_image": {
+          "alt": "1/64 McLaren MCL60 Australian Grand Prix 2023 Oscar Piastri - Tarmac Works X iXO Models GLOBAL64",
+          "aspect_ratio": 1.5,
+          "height": 3958,
+          "url": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64G-F070-OP2_M03.jpg?v=1772096010",
+          "width": 5937
+        }
+      }
+    ],
+    "status": "official discovery only; exact variant verification pending"
   }
 }

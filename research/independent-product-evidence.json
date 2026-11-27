@@ -141427,5 +141427,1133 @@
       }
     ],
     "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|MINI GT|MGT01098|https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-hyundai-ioniq-5n-mini-gt-rs-01t-2025-tokyo-auto-salon?_pos=1&_psq=MGT01098&_psid=327c0b54c&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "MINI GT",
+    "matches": [
+      {
+        "sku": "MGT01098",
+        "variant_id": 47047754023168,
+        "title": "MINI GT 1:64 Hyundai Ioniq 5N MINI GT RS-01T 2025 Tokyo Auto Salon",
+        "variant": "Default Title",
+        "vendor": "MINI GT",
+        "url": "https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-hyundai-ioniq-5n-mini-gt-rs-01t-2025-tokyo-auto-salon?variant=47047754023168"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Motor City Classics|450030|model|https://www.modelcarshouston.com/products/nissan-sunny-hakotora-pickup-coca-cola?_pos=1&_psq=Motor+City+Classics+2018+Ford+Mustang+GT+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=48bc84b02&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Motor City Classics|450030|model|https://www.modelcarshouston.com/products/nissan-silvia-s13-v2-pandem-rocket-bunny-coca-cola?_pos=2&_psq=Motor+City+Classics+2018+Ford+Mustang+GT+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=48bc84b02&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|MotorHelix|M63515|https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-nissan-skyline-gt-r-r35-track-edition-engineered-by-nismo-2020-dark-metal?_pos=1&_psq=M63515&_psid=0290fee69&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "MotorHelix",
+    "matches": [
+      {
+        "sku": "M63515",
+        "variant_id": 47133242786048,
+        "title": "MotorHelix 1:64 Nissan GT-R (R35) Track Edition Engineered by NISMO 2020 in Dark Metal Gray",
+        "variant": "Default Title",
+        "vendor": "MotorHelix",
+        "url": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-nissan-skyline-gt-r-r35-track-edition-engineered-by-nismo-2020-dark-metal?variant=47133242786048"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLSP441|https://www.autoworldstore.com/products/johnny-lightning-hobby-exclusive-1970-ford-ranchero-1-64-scale-diecast?_pos=1&_psq=JLSP441&_psid=d231adbca&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [
+      {
+        "sku": "JLSP441",
+        "variant_id": 46512294887614,
+        "title": "Johnny Lightning Hobby Exclusive 1970 Ford Ranchero 1:64 Scale Diecast",
+        "variant": "Default Title",
+        "vendor": "JohnnyLightning",
+        "url": "https://www.autoworldstore.com/products/johnny-lightning-hobby-exclusive-1970-ford-ranchero-1-64-scale-diecast?variant=46512294887614"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Model Model|MM64-RWB930-006|model|https://www.modelcarshouston.com/products/preorder-ignition-model-1-64-rwb-993-in-white-metallic?_pos=1&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=c5affe2a4&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Model Model|MM64-RWB930-006|model|https://www.modelcarshouston.com/products/motorhelix-1-64-rwb-993-motozolo-edition-with-engine-display?_pos=2&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=c5affe2a4&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Model Model|MM64-RWB930-006|model|https://www.modelcarshouston.com/products/preorder-ignition-model-1-64-rwb-997-gt3-in-white?_pos=3&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=c5affe2a4&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Model Model|MM64-RWB930-006|model|https://www.modelcarshouston.com/products/preorder-almost-real-ar-box-1-64-porsche-911-gt3-r-2026-gt-world-challenge-asia-mandalika-911-test-car?_pos=4&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=c5affe2a4&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Model Model|MM64-RWB930-006|model|https://www.modelcarshouston.com/products/motorhelix-1-64-subaru-impreza-wagon-wrx-sti-ver-vi-customized-in-world-rally-blue-mica-with-carbon-bonnet?_pos=5&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=c5affe2a4&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Model Model|MM64-RWB930-006|model|https://www.modelcarshouston.com/products/preorder-hobby-japan-1-64-subaru-s207-nbr-challenge-package-in-wr-blue-pearl?_pos=6&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=c5affe2a4&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Model Model|MM64-RWB930-006|model|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-toyota-soarer-jzz30-vertex-edition-in-white?_pos=7&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=c5affe2a4&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Model Model|MM64-RWB930-006|model|https://www.modelcarshouston.com/products/rwb-930-wallys-jeans?_pos=8&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=c5affe2a4&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Model Model|MM64-RWB930-006|model|https://www.modelcarshouston.com/products/copy-of-rwb-930-speedycycles?_pos=9&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=c5affe2a4&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Model Model|MM64-RWB930-006|model|https://www.modelcarshouston.com/products/preorder-ignition-model-1-64-rwb-993-in-light-blue?_pos=10&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=c5affe2a4&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-ZONDATRICOLORE-01|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-2002-chevy-monte-carlo-pace-edition-superior-blue-w-silver-graphics-with-collector-tin-1-64-diecast-due-april-2026?_pos=1&_psq=CM+Model+Pagani+Zonda+Tricolore+Blue+Metallic+with+Carbon+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=ca1bb5884&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-ZONDATRICOLORE-01|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1987-pontiac-trans-am-king-of-the-jungle-metallic-red-w-silver-gold-king-of-the-jungle-race-graphics-1-64-scale-diecast-due-november-2025?_pos=2&_psq=CM+Model+Pagani+Zonda+Tricolore+Blue+Metallic+with+Carbon+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=ca1bb5884&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-ZONDATRICOLORE-01|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1967-shelby-gt-500-gulf-dark-blue-w-orange-stripe-1-64-scale-diecast-due-august-2025?_pos=3&_psq=CM+Model+Pagani+Zonda+Tricolore+Blue+Metallic+with+Carbon+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=ca1bb5884&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-ZONDATRICOLORE-01|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1967-shelby-gt-500-gulf-light-blue-w-orange-stripe-1-64-scale-diecast-due-august-2025?_pos=4&_psq=CM+Model+Pagani+Zonda+Tricolore+Blue+Metallic+with+Carbon+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=ca1bb5884&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Shoom64 Models|103014-MJ1|model|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-b-works-dodge-challenger-srt-hellcat-with-truck-special-edition?_pos=1&_psq=Shoom64+Models+2003+Dodge+Ram+SRT-10+Pickup+Truck+Electric+Blue+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Shoom64+Models&_psid=295924ef2&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Shoom64 Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|MINI GT|MGT01084|https://www.modelcarshouston.com/products/preorder-minigt-1-64-lancia-stratos-hf-4-1978-rally-sanremo-winner?_pos=1&_psq=MGT01084&_psid=0cfc8c0b7&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "MINI GT",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|GreenLight|28170C|https://www.autoworldstore.com/products/johnny-lightning-classic-gold-2012-chevrolet-corvette-z06-velocity-yellow-w-black-stripes-1-64-scale-diecast?_pos=1&_psq=28170C&_psid=2a4dd6db4&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "GreenLight",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|GreenLight|28170C|https://www.autoworldstore.com/products/pre-order-auto-world-2018-chevy-corvette-grand-sport-arctic-white-1-64-diecast-due-march-2025?_pos=2&_psq=28170C&_psid=2a4dd6db4&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "GreenLight",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|GreenLight|28170C|https://www.autoworldstore.com/products/pre-order-auto-world-2018-chevy-corvette-grand-sport-admiral-blue-1-64-diecast-due-march-2025?_pos=3&_psq=28170C&_psid=2a4dd6db4&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "GreenLight",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|GreenLight|28170C|https://www.autoworldstore.com/products/pre-order-auto-world-premium-2024-release-3-set-a-6-car-sealed-case-1-64-diecast-due-march-2025?_pos=4&_psq=28170C&_psid=2a4dd6db4&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "GreenLight",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450030|model|https://www.autoworldstore.com/products/pre-order-amt-ford-c-600-city-holiday-delivery-truck-coca-cola-1-25-scale-model-kit-due-late-october-2024?_pos=1&_psq=Motor+City+Classics+2018+Ford+Mustang+GT+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=75a57bbb6&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450030|model|https://www.autoworldstore.com/products/pre-order-amt-volkswagen-van-show-rod-coca-cola-1-25-scale-model-kit-due-late-february-2026?_pos=2&_psq=Motor+City+Classics+2018+Ford+Mustang+GT+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=75a57bbb6&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450030|model|https://www.autoworldstore.com/products/mpc-1969-dodge-charger-rt-coca-cola-1-25-scale-snap-kit?_pos=3&_psq=Motor+City+Classics+2018+Ford+Mustang+GT+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=75a57bbb6&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450030|model|https://www.autoworldstore.com/products/amt-1963-chevy-ii-nova-wagon-w-crates-coke-1-25-scale-model-kit?_pos=4&_psq=Motor+City+Classics+2018+Ford+Mustang+GT+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=75a57bbb6&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450030|model|https://www.autoworldstore.com/products/amt-1953-ford-pickup-coca-cola-1-25-scale-model-kit?_pos=5&_psq=Motor+City+Classics+2018+Ford+Mustang+GT+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=75a57bbb6&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450030|model|https://www.autoworldstore.com/products/pre-order-amt-1925-ford-model-t-panel-w-tin-packaging-coca-cola-1-25-scale-model-kit-due-july-2026?_pos=6&_psq=Motor+City+Classics+2018+Ford+Mustang+GT+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=75a57bbb6&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450030|model|https://www.autoworldstore.com/products/pre-order-amt-1972-chevy-racers-wedge-pickup-coke-1-25-scale-model-kit-due-december-2025-copy?_pos=7&_psq=Motor+City+Classics+2018+Ford+Mustang+GT+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=75a57bbb6&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450030|model|https://www.autoworldstore.com/products/pre-order-amt-1940-willys-coupe-coke-race-team-1-25-scale-model-kit-due-july-2025?_pos=8&_psq=Motor+City+Classics+2018+Ford+Mustang+GT+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=75a57bbb6&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450030|model|https://www.autoworldstore.com/products/amt-1940-willys-pickup-gasser-coca-cola-1-25-scale-model-kit?_pos=9&_psq=Motor+City+Classics+2018+Ford+Mustang+GT+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=75a57bbb6&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450030|model|https://www.autoworldstore.com/products/amt-1955-chevy-cameo-pickup-coca-cola-1-25-scale-model-kit?_pos=10&_psq=Motor+City+Classics+2018+Ford+Mustang+GT+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=75a57bbb6&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLSP440|https://www.autoworldstore.com/products/johnny-lightning-hobby-exclusive-1991-toyota-mr2-1-64-scale-diecast?_pos=1&_psq=JLSP440&_psid=868c7b5fe&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [
+      {
+        "sku": "JLSP440",
+        "variant_id": 46512290824382,
+        "title": "Johnny Lightning Hobby Exclusive 1991 Toyota MR2 1:64 Scale Diecast",
+        "variant": "Default Title",
+        "vendor": "JohnnyLightning",
+        "url": "https://www.autoworldstore.com/products/johnny-lightning-hobby-exclusive-1991-toyota-mr2-1-64-scale-diecast?variant=46512290824382"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Model Model|MM64-RWB930-006|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1974-pontiac-gto-regatta-blue-poly-w-rwb-stripes-1-64-scale-diecast-due-november-2025?_pos=1&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=8cc368559&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Model Model|MM64-RWB930-006|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1974-pontiac-gto-gloss-black-w-gto-rwb-stripes-1-64-scale-diecast-due-november-2026?_pos=2&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=8cc368559&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Model Model|MM64-RWB930-006|model|https://www.autoworldstore.com/products/johnny-lightning-street-freaks-1986-ford-thunderbird-stock-car-24hrs-of-lemons-bright-blue-w-white-gold-stripes-1-64-scale-diecast?_pos=3&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=8cc368559&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Model Model|MM64-RWB930-006|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-mecum-1971-plymouth-cuda-convertible-1-64-scale-diecast-due-march-2024?_pos=4&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=8cc368559&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Model Model|MM64-RWB930-006|model|https://www.autoworldstore.com/products/auto-world-2025-release-2-classic-muscle-deluxe-2-pack-version-a-1-64-scale-diecast?_pos=5&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=8cc368559&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Model Model|MM64-RWB930-006|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-rat-fink-dodge-wc54-1-64-scale-diecast-due-november-2024?_pos=6&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=8cc368559&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Model Model|MM64-RWB930-006|model|https://www.autoworldstore.com/products/pre-order-auto-world-premium-2026-release-1-set-b-6-car-sealed-case-1-64-diecast-due-april-2026?_pos=7&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=8cc368559&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Model Model|MM64-RWB930-006|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1967-shelby-gt-500-gulf-dark-blue-w-orange-stripe-1-64-scale-diecast-due-august-2025?_pos=8&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=8cc368559&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Model Model|MM64-RWB930-006|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1967-shelby-gt-500-gulf-light-blue-w-orange-stripe-1-64-scale-diecast-due-august-2025?_pos=9&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=8cc368559&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Model Model|MM64-RWB930-006|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-john-wick-1968-dodge-charger-r-t-1-64-scale-diecast-due-april-2025?_pos=10&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=8cc368559&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-ZONDATRICOLORE-01|model|https://www.tarmacworks.com/products/1-64-pagani-zonda-r-matte-exposed-carbon-fiber-tarmac-works-global64?_pos=1&_psq=CM+Model+Pagani+Zonda+Tricolore+Blue+Metallic+with+Carbon+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=99dda227b&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-ZONDATRICOLORE-01|model|https://www.tarmacworks.com/products/1-64-pagani-utopia-blue-metallic-tarmac-works-global64?_pos=2&_psq=CM+Model+Pagani+Zonda+Tricolore+Blue+Metallic+with+Carbon+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=99dda227b&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-ZONDATRICOLORE-01|model|https://www.tarmacworks.com/products/tarmac-works-1-64-pagani-zonda-r-bianco-benny-global64?_pos=3&_psq=CM+Model+Pagani+Zonda+Tricolore+Blue+Metallic+with+Carbon+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=99dda227b&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-ZONDATRICOLORE-01|model|https://www.tarmacworks.com/products/tarmac-works-1-64-honda-ballade-sports-mugen-cr-x-pro-silver-with-tarmac-cards-global64?_pos=4&_psq=CM+Model+Pagani+Zonda+Tricolore+Blue+Metallic+with+Carbon+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=99dda227b&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-ZONDATRICOLORE-01|model|https://www.tarmacworks.com/products/tarmac-works-1-64-honda-ballade-sports-mugen-cr-x-pro-blue-global64?_pos=5&_psq=CM+Model+Pagani+Zonda+Tricolore+Blue+Metallic+with+Carbon+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=99dda227b&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-ZONDATRICOLORE-01|model|https://www.tarmacworks.com/products/tarmac-works-1-64-pagani-huayra-bc-grigio-mercurio-global64?_pos=6&_psq=CM+Model+Pagani+Zonda+Tricolore+Blue+Metallic+with+Carbon+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=99dda227b&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-ZONDATRICOLORE-01|model|https://www.tarmacworks.com/products/tarmac-works-1-64-opel-kadett-gsi-blue-metallic-global64?_pos=7&_psq=CM+Model+Pagani+Zonda+Tricolore+Blue+Metallic+with+Carbon+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=99dda227b&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-ZONDATRICOLORE-01|model|https://www.tarmacworks.com/products/1-64-ford-mustang-gtd-blue-tarmac-works-x-ixo-models-global64?_pos=8&_psq=CM+Model+Pagani+Zonda+Tricolore+Blue+Metallic+with+Carbon+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=99dda227b&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-ZONDATRICOLORE-01|model|https://www.tarmacworks.com/products/tarmac-works-1-64-mitsubishi-lancer-gsr-evolution-red-global64-1?_pos=9&_psq=CM+Model+Pagani+Zonda+Tricolore+Blue+Metallic+with+Carbon+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=99dda227b&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-ZONDATRICOLORE-01|model|https://www.tarmacworks.com/products/1-64-ford-mustang-gtd-blue-blister-tarmac-works-x-ixo-models-global64?_pos=10&_psq=CM+Model+Pagani+Zonda+Tricolore+Blue+Metallic+with+Carbon+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=99dda227b&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Shoom64 Models|103014-MJ1|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-2002-chevy-camaro-ss-35th-anniversary-silver-w-black-stripes-with-collector-tin-1-64-diecast-due-april-2026?_pos=1&_psq=Shoom64+Models+2003+Dodge+Ram+SRT-10+Pickup+Truck+Electric+Blue+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Shoom64+Models&_psid=0e42aa506&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Shoom64 Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Shoom64 Models|103014-MJ1|model|https://www.autoworldstore.com/products/johnny-lightning-classic-gold-2005-chevrolet-ssr-bermuda-blue-w-black-ss-stripes-1-64-scale-diecast?_pos=2&_psq=Shoom64+Models+2003+Dodge+Ram+SRT-10+Pickup+Truck+Electric+Blue+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Shoom64+Models&_psid=0e42aa506&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Shoom64 Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Shoom64 Models|103014-MJ1|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-nickey-2002-chevy-camaro-zl1-metallic-blue-with-white-stripes-1-64-scale-diecast-due-november-2025?_pos=3&_psq=Shoom64+Models+2003+Dodge+Ram+SRT-10+Pickup+Truck+Electric+Blue+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Shoom64+Models&_psid=0e42aa506&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Shoom64 Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Shoom64 Models|103014-MJ1|model|https://www.autoworldstore.com/products/pre-order-auto-world-1965-chevy-impala-aw-exclusive-1-64-diecast-due-september-2025?_pos=4&_psq=Shoom64+Models+2003+Dodge+Ram+SRT-10+Pickup+Truck+Electric+Blue+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Shoom64+Models&_psid=0e42aa506&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Shoom64 Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Shoom64 Models|103014-MJ1|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-1955-chevy-cameo-pickup-lemon-yellow-with-collector-tin-1-64-diecast-due-january-2026?_pos=5&_psq=Shoom64+Models+2003+Dodge+Ram+SRT-10+Pickup+Truck+Electric+Blue+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Shoom64+Models&_psid=0e42aa506&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Shoom64 Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Shoom64 Models|103014-MJ1|model|https://www.autoworldstore.com/products/amt-1953-ford-pickup-modified-stocker-hauler-gulf-1-25-scale-model-kit?_pos=6&_psq=Shoom64+Models+2003+Dodge+Ram+SRT-10+Pickup+Truck+Electric+Blue+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Shoom64+Models&_psid=0e42aa506&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Shoom64 Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Shoom64 Models|103014-MJ1|model|https://www.autoworldstore.com/products/pre-order-auto-world-2019-chevy-silverado-high-country-silver-ice-1-64-diecast-due-april-2026?_pos=7&_psq=Shoom64+Models+2003+Dodge+Ram+SRT-10+Pickup+Truck+Electric+Blue+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Shoom64+Models&_psid=0e42aa506&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Shoom64 Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Shoom64 Models|103014-MJ1|model|https://www.autoworldstore.com/products/pre-order-auto-world-2006-chevy-silverado-extended-cab-stepside-polaris-1-64-diecast-due-late-january-2026?_pos=8&_psq=Shoom64+Models+2003+Dodge+Ram+SRT-10+Pickup+Truck+Electric+Blue+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Shoom64+Models&_psid=0e42aa506&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Shoom64 Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Shoom64 Models|103014-MJ1|model|https://www.autoworldstore.com/products/auto-world-2026-release-1-pickups-deluxe-2-pack-version-b-1-64-scale-diecast?_pos=9&_psq=Shoom64+Models+2003+Dodge+Ram+SRT-10+Pickup+Truck+Electric+Blue+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Shoom64+Models&_psid=0e42aa506&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Shoom64 Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Shoom64 Models|103014-MJ1|model|https://www.autoworldstore.com/products/pre-order-auto-world-2020-ford-f-150-truck-velocity-blue-1-64-diecast-due-may-2025?_pos=10&_psq=Shoom64+Models+2003+Dodge+Ram+SRT-10+Pickup+Truck+Electric+Blue+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Shoom64+Models&_psid=0e42aa506&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Shoom64 Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Tarmac Works|T64G-042-GR|https://www.tarmacworks.com/products/1-64-mercedes-benz-amg-gt-black-series-green-tarmac-works-global64?_pos=1&_psq=T64G-042-GR&_psid=1cf466151&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Tarmac Works",
+    "matches": [
+      {
+        "sku": "T64G-042-GR",
+        "variant_id": 48277161967873,
+        "title": "1/64 Mercedes-Benz AMG GT Black Series Green - Tarmac Works GLOBAL64",
+        "variant": "Default Title",
+        "vendor": "Tarmac Works",
+        "url": "https://www.tarmacworks.com/products/1-64-mercedes-benz-amg-gt-black-series-green-tarmac-works-global64?variant=48277161967873"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-RWB930-006|model|https://www.tarmacworks.com/products/1-64-rwb-993-furusato-with-tarmac-cards-tarmac-works-hobby64?_pos=1&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=204a02141&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-RWB930-006|model|https://www.tarmacworks.com/products/tarmac-works-1-64-old-new-997-gray-metallic-road64?_pos=2&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=204a02141&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-RWB930-006|model|https://www.tarmacworks.com/products/tarmac-works-1-64-datsun-510-light-blue-road64?_pos=3&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=204a02141&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-RWB930-006|model|https://www.tarmacworks.com/products/1-64-porsche-911-gt3-r-nurburgring-24h-2024-33-tarmac-works-x-ixo-models-hobby64?_pos=4&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=204a02141&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-RWB930-006|model|https://www.tarmacworks.com/products/1-64-toyota-hiace-widebody-monsters-university-with-tarmac-cards-tarmac-works-hobby64?_pos=5&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=204a02141&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-RWB930-006|model|https://www.tarmacworks.com/products/1-64-eva-rt-production-model-02-s15-tarmac-works-global64?_pos=6&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=204a02141&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-RWB930-006|model|https://www.tarmacworks.com/products/tarmac-works-x-one-piece-model-car-collection-vol-1-6-cars-set-with-volkswagen-type-ii-t2-panel-van-special-edition-collab64?_pos=7&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=204a02141&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-RWB930-006|model|https://www.tarmacworks.com/products/tarmac-works-1-64-honda-integra-type-r-dc5-custom-blue-metallic-road64?_pos=8&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=204a02141&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-RWB930-006|model|https://www.tarmacworks.com/products/1-64-lb-kaido-works-nissan-r32-skyline-hobby-expo-china-2026-cldc-special-edition-tarmac-works-hobby64?_pos=9&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=204a02141&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-RWB930-006|model|https://www.tarmacworks.com/products/1-64-porsche-959-silver-tarmac-works-x-ixo-models-global64?_pos=10&_psq=Model+Model+RWB+930+Light+Blue+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=204a02141&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|CM Model|CM64-TUNDRA-05|model|https://www.modelcarshouston.com/products/minigt-1-64-land-rover-defender-90-pickup-with-car-hauler-trailer?_pos=1&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=183134c2c&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|CM Model|CM64-TUNDRA-05|model|https://www.modelcarshouston.com/products/preorder-hobby-japan-1-64-toyota-mr2-1600g-limited-supercharged-1988-t-top-in-super-white-ii?_pos=2&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=183134c2c&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Shoom64 Models|103014-MJ1|model|https://www.tarmacworks.com/products/tarmac-works-1-64-toyota-hilux-grey-road64?_pos=1&_psq=Shoom64+Models+2003+Dodge+Ram+SRT-10+Pickup+Truck+Electric+Blue+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Shoom64+Models&_psid=41c66c270&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Shoom64 Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Shoom64 Models|103014-MJ1|model|https://www.tarmacworks.com/products/tarmac-works-1-64-dodge-van-ohige-no-pon-global64?_pos=2&_psq=Shoom64+Models+2003+Dodge+Ram+SRT-10+Pickup+Truck+Electric+Blue+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Shoom64+Models&_psid=41c66c270&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Shoom64 Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Shoom64 Models|103014-MJ1|model|https://www.tarmacworks.com/products/tarmac-works-1-64-toyota-hilux-red?_pos=3&_psq=Shoom64+Models+2003+Dodge+Ram+SRT-10+Pickup+Truck+Electric+Blue+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Shoom64+Models&_psid=41c66c270&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Shoom64 Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Shoom64 Models|103014-MJ1|model|https://www.tarmacworks.com/products/tarmac-works-1-64-mitsubishi-fuso-canter-new-york-sunshine-new-york-sunshine-special-edition-truck64?_pos=4&_psq=Shoom64+Models+2003+Dodge+Ram+SRT-10+Pickup+Truck+Electric+Blue+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Shoom64+Models&_psid=41c66c270&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Shoom64 Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Shoom64 Models|103014-MJ1|model|https://www.tarmacworks.com/products/1-64-mitsubishi-fuso-super-great-eva-racing-tarmac-works-truck64-copy?_pos=5&_psq=Shoom64+Models+2003+Dodge+Ram+SRT-10+Pickup+Truck+Electric+Blue+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Shoom64+Models&_psid=41c66c270&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Shoom64 Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Shoom64 Models|103014-MJ1|model|https://www.tarmacworks.com/products/1-64-mitsubishi-fuso-super-great-lb-trucks-tarmac-works-truck64?_pos=6&_psq=Shoom64+Models+2003+Dodge+Ram+SRT-10+Pickup+Truck+Electric+Blue+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Shoom64+Models&_psid=41c66c270&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Shoom64 Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|INNO64|IN64-RX7FDP-TIFBLU|https://www.modelcarshouston.com/products/preorder-inno64-1-64-pandem-rocket-bunny-rx7-fd3s-tiffany-blue?_pos=1&_psq=IN64-RX7FDP-TIFBLU&_psid=0f25cc2d0&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "INNO64",
+    "matches": [
+      {
+        "sku": "IN64-RX7FDP-TIFBLU",
+        "variant_id": 47043808264448,
+        "title": "INNO64 1:64 Pandem Rocket Bunny RX-7 (FD3S) in Tiffany Blue",
+        "variant": "Default Title",
+        "vendor": "Inno Models",
+        "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-pandem-rocket-bunny-rx7-fd3s-tiffany-blue?variant=47043808264448"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Motor City Classics|450029|model|https://www.modelcarshouston.com/products/nissan-sunny-hakotora-pickup-coca-cola?_pos=1&_psq=Motor+City+Classics+2013+Chevrolet+Camaro+SS+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=876fb4d5f&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Motor City Classics|450029|model|https://www.modelcarshouston.com/products/nissan-silvia-s13-v2-pandem-rocket-bunny-coca-cola?_pos=2&_psq=Motor+City+Classics+2013+Chevrolet+Camaro+SS+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=876fb4d5f&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|MotorHelix|M65521|https://www.modelcarshouston.com/products/pre-order-motorhelix-1-64-honda-nsx-r-gt-in-white-1?_pos=1&_psq=M65521&_psid=4570e3f90&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "MotorHelix",
+    "matches": [
+      {
+        "sku": "M65521",
+        "variant_id": 46932616839424,
+        "title": "MotorHelix 1:64 Honda NSX-R GT in White",
+        "variant": "Default Title",
+        "vendor": "Honda",
+        "url": "https://www.modelcarshouston.com/products/pre-order-motorhelix-1-64-honda-nsx-r-gt-in-white-1?variant=46932616839424"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLCT020|https://www.autoworldstore.com/products/pre-order-johnny-lightning-2002-chevy-camaro-ss-35th-anniversary-silver-w-black-stripes-with-collector-tin-1-64-diecast-due-april-2026?_pos=1&_psq=JLCT020&_psid=126096fad&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLCT020|https://www.autoworldstore.com/products/pre-order-johnny-lightning-1974-pontiac-ventura-new-tool-fernmist-green-with-collector-tin-1-64-diecast-due-april-2026?_pos=2&_psq=JLCT020&_psid=126096fad&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLCT020|https://www.autoworldstore.com/products/pre-order-johnny-lightning-1974-pontiac-ventura-new-tool-fire-coral-bronze-with-collector-tin-1-64-diecast-due-april-2026?_pos=3&_psq=JLCT020&_psid=126096fad&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLCT020|https://www.autoworldstore.com/products/pre-order-johnny-lightning-2002-chevy-monte-carlo-pace-edition-superior-blue-w-silver-graphics-with-collector-tin-1-64-diecast-due-april-2026?_pos=4&_psq=JLCT020&_psid=126096fad&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLCT020|https://www.autoworldstore.com/products/pre-order-johnny-lightning-2002-chevy-monte-carlo-pace-edition-competition-yellow-w-silver-graphics-with-collector-tin-1-64-diecast-due-april-2026?_pos=5&_psq=JLCT020&_psid=126096fad&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLCT020|https://www.autoworldstore.com/products/pre-order-johnny-lightning-2002-chevy-camaro-ss-35th-anniversary-black-w-silver-stripes-with-collector-tin-1-64-diecast-due-april-2026?_pos=6&_psq=JLCT020&_psid=126096fad&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-FD2-001A|model|https://www.tarmacworks.com/products/1-64-honda-civic-type-r-fk8-nasa-western-endurance-racing-championship-2022-7-student-driver-tarmac-works-hobby64?_pos=1&_psq=Model+Model+2009+Honda+Civic+Type-R+%28FD2%29+RHD+%28Right+Hand+Drive%29+White+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=eac4ca730&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-FD2-001A|model|https://www.tarmacworks.com/products/1-64-honda-civic-type-r-fk8-nasa-western-endurance-racing-championship-2021-72-student-driver-by-daniel-wu-tarmac-works-hobby64?_pos=2&_psq=Model+Model+2009+Honda+Civic+Type-R+%28FD2%29+RHD+%28Right+Hand+Drive%29+White+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=eac4ca730&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-FD2-001A|model|https://www.tarmacworks.com/products/redemption-02-honda-civic-type-r-fk8-custom-black?_pos=3&_psq=Model+Model+2009+Honda+Civic+Type-R+%28FD2%29+RHD+%28Right+Hand+Drive%29+White+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=eac4ca730&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-FD2-001A|model|https://www.tarmacworks.com/products/tarmac-works-1-64-honda-civic-eg6-tarmac-works-10th-anniversary-hobby64?_pos=4&_psq=Model+Model+2009+Honda+Civic+Type-R+%28FD2%29+RHD+%28Right+Hand+Drive%29+White+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=eac4ca730&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-FD2-001A|model|https://www.tarmacworks.com/products/tarmac-works-1-64-honda-civic-type-r-fk2-milano-red?_pos=5&_psq=Model+Model+2009+Honda+Civic+Type-R+%28FD2%29+RHD+%28Right+Hand+Drive%29+White+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=eac4ca730&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-FD2-001A|model|https://www.tarmacworks.com/products/tarmac-works-1-64-honda-integra-type-r-dc5-custom-blue-metallic-road64?_pos=6&_psq=Model+Model+2009+Honda+Civic+Type-R+%28FD2%29+RHD+%28Right+Hand+Drive%29+White+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=eac4ca730&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-FD2-001A|model|https://www.tarmacworks.com/products/tarmac-works-1-64-honda-civic-eg6-new-york-sunshine-new-york-sunshine-special-edition-hobby64?_pos=7&_psq=Model+Model+2009+Honda+Civic+Type-R+%28FD2%29+RHD+%28Right+Hand+Drive%29+White+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=eac4ca730&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-FD2-001A|model|https://www.tarmacworks.com/products/tarmac-works-1-64-honda-integra-type-r-dc5-custom-red-road64?_pos=8&_psq=Model+Model+2009+Honda+Civic+Type-R+%28FD2%29+RHD+%28Right+Hand+Drive%29+White+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=eac4ca730&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-FD2-001A|model|https://www.tarmacworks.com/products/tarmac-works-1-64-honda-civic-eg6-motegi-civic-race-2010-246?_pos=9&_psq=Model+Model+2009+Honda+Civic+Type-R+%28FD2%29+RHD+%28Right+Hand+Drive%29+White+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=eac4ca730&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Model Model|MM64-FD2-001A|model|https://www.tarmacworks.com/products/1-64-lancia-delta-hf-integrale-mogurt-salgo-rallye-1993-winner-1-tarmac-works-hobby64?_pos=10&_psq=Model+Model+2009+Honda+Civic+Type-R+%28FD2%29+RHD+%28Right+Hand+Drive%29+White+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=eac4ca730&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-TUNDRA-05|model|https://www.autoworldstore.com/products/pre-order-auto-world-2019-chevy-silverado-high-country-silver-ice-1-64-diecast-due-april-2026?_pos=1&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=bc2b03a26&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-TUNDRA-05|model|https://www.autoworldstore.com/products/pre-order-auto-world-big-country-collectibles-2025-release-1-6-car-sealed-case-1-64-diecast-due-late-january-2026?_pos=2&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=bc2b03a26&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-TUNDRA-05|model|https://www.autoworldstore.com/products/pre-order-auto-world-2020-ford-f-150-truck-oxford-white-1-64-diecast-due-may-2025?_pos=3&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=bc2b03a26&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-TUNDRA-05|model|https://www.autoworldstore.com/products/pre-order-auto-world-1964-ford-gt40-gloss-white-w-black-upper-front-1-64-diecast-due-march-2025?_pos=4&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=bc2b03a26&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-TUNDRA-05|model|https://www.autoworldstore.com/products/pre-order-auto-world-1991-eagle-talon-tsi-bright-white-1-64-diecast-due-october-2025?_pos=5&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=bc2b03a26&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-TUNDRA-05|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-mystery-matinee-1985-toyota-sr5-pickup-1-64-scale-diecast-due-late-july-2024?_pos=6&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=bc2b03a26&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-TUNDRA-05|model|https://www.autoworldstore.com/products/auto-world-bcc-huett-farms-1965-chevy-suburban-1-64-diecast?_pos=7&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=bc2b03a26&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-TUNDRA-05|model|https://www.autoworldstore.com/products/johnny-lightning-1968-dodge-coronet-r-t-convertible-2025-mcacn-event-car-1-64-diecast?_pos=8&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=bc2b03a26&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-TUNDRA-05|model|https://www.autoworldstore.com/products/pre-order-auto-world-premium-2025-release-1-set-a-6-car-sealed-case-1-64-diecast-due-may-2025?_pos=9&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=bc2b03a26&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-TUNDRA-05|model|https://www.autoworldstore.com/products/pre-order-auto-world-premium-2025-release-2-set-b-6-car-sealed-case-1-64-diecast-due-october-2025?_pos=10&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=bc2b03a26&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Diecast Masters|84681CS|model|https://www.tarmacworks.com/products/tarmac-works-1-64-ferrari-348-challenge-presentation-hobby64?_pos=1&_psq=Diecast+Masters+CAT+Caterpillar+950M+Wheel+Loader+Yellow+with+Log+fork+and+Wood+Log+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=34a21e769&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Diecast Masters|84681CS|model|https://www.tarmacworks.com/products/1-64-lb-works-nissan-gt-r-r35-type-2-white-tarmac-works-hobby64?_pos=2&_psq=Diecast+Masters+CAT+Caterpillar+950M+Wheel+Loader+Yellow+with+Log+fork+and+Wood+Log+1%2F64+Diecast+Model+by+Diecast+Masters&_psid=34a21e769&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Diecast Masters",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|MINI GT|MGT01144|https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-range-rover-1981-camel-trophy-suma?_pos=1&_psq=MGT01144&_psid=aee8410cb&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "MINI GT",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450029|model|https://www.autoworldstore.com/products/pre-order-amt-ford-c-600-city-holiday-delivery-truck-coca-cola-1-25-scale-model-kit-due-late-october-2024?_pos=1&_psq=Motor+City+Classics+2013+Chevrolet+Camaro+SS+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=869a618d8&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450029|model|https://www.autoworldstore.com/products/amt-1963-chevy-ii-nova-wagon-w-crates-coke-1-25-scale-model-kit?_pos=2&_psq=Motor+City+Classics+2013+Chevrolet+Camaro+SS+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=869a618d8&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450029|model|https://www.autoworldstore.com/products/pre-order-amt-volkswagen-van-show-rod-coca-cola-1-25-scale-model-kit-due-late-february-2026?_pos=3&_psq=Motor+City+Classics+2013+Chevrolet+Camaro+SS+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=869a618d8&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450029|model|https://www.autoworldstore.com/products/mpc-1969-dodge-charger-rt-coca-cola-1-25-scale-snap-kit?_pos=4&_psq=Motor+City+Classics+2013+Chevrolet+Camaro+SS+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=869a618d8&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450029|model|https://www.autoworldstore.com/products/pre-order-amt-1972-chevy-racers-wedge-pickup-coke-1-25-scale-model-kit-due-december-2025-copy?_pos=5&_psq=Motor+City+Classics+2013+Chevrolet+Camaro+SS+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=869a618d8&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450029|model|https://www.autoworldstore.com/products/amt-1955-chevy-cameo-pickup-coca-cola-1-25-scale-model-kit?_pos=6&_psq=Motor+City+Classics+2013+Chevrolet+Camaro+SS+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=869a618d8&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450029|model|https://www.autoworldstore.com/products/pre-order-amt-1925-ford-model-t-panel-w-tin-packaging-coca-cola-1-25-scale-model-kit-due-july-2026?_pos=7&_psq=Motor+City+Classics+2013+Chevrolet+Camaro+SS+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=869a618d8&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450029|model|https://www.autoworldstore.com/products/amt-1953-ford-pickup-coca-cola-1-25-scale-model-kit?_pos=8&_psq=Motor+City+Classics+2013+Chevrolet+Camaro+SS+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=869a618d8&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450029|model|https://www.autoworldstore.com/products/pre-order-amt-1940-willys-coupe-coke-race-team-1-25-scale-model-kit-due-july-2025?_pos=9&_psq=Motor+City+Classics+2013+Chevrolet+Camaro+SS+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=869a618d8&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Motor City Classics|450029|model|https://www.autoworldstore.com/products/amt-1940-willys-pickup-gasser-coca-cola-1-25-scale-model-kit?_pos=10&_psq=Motor+City+Classics+2013+Chevrolet+Camaro+SS+%22Coca-Cola%22+Red+with+White+Stripes+1%2F64+Diecast+Model+by+Motor+City+Classics&_psid=869a618d8&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Motor City Classics",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-TUNDRA-05|model|https://www.tarmacworks.com/products/tarmac-works-1-64-toyota-hiace-widebody-trd-hobby64?_pos=1&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=40109df6e&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-TUNDRA-05|model|https://www.tarmacworks.com/products/1-64-lb-kaido-works-nissan-r32-skyline-hobby-expo-china-2026-cldc-special-edition-tarmac-works-hobby64?_pos=2&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=40109df6e&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-TUNDRA-05|model|https://www.tarmacworks.com/products/tarmac-works-1-64-nissan-s-cargo-white-global64?_pos=3&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=40109df6e&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-TUNDRA-05|model|https://www.tarmacworks.com/products/1-64-toyota-hiace-widebody-monsters-university-with-tarmac-cards-tarmac-works-hobby64?_pos=4&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=40109df6e&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-TUNDRA-05|model|https://www.tarmacworks.com/products/tarmac-works-1-64-honda-ballade-sports-mugen-cr-x-pro-white-global64?_pos=5&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=40109df6e&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-TUNDRA-05|model|https://www.tarmacworks.com/products/1-64-toyota-gr-corolla-widebody-beige-designed-by-jon-sibal-tarmac-works-global64?_pos=6&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=40109df6e&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-TUNDRA-05|model|https://www.tarmacworks.com/products/1-64-toyota-gr-corolla-grey-with-oil-can-packaging-tarmac-works-global64?_pos=7&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=40109df6e&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-TUNDRA-05|model|https://www.tarmacworks.com/products/1-64-hks-toyota-gr86-black-tarmac-works-global64-blister?_pos=8&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=40109df6e&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-TUNDRA-05|model|https://www.tarmacworks.com/products/tarmac-works-1-64-toyota-hilux-grey-road64?_pos=9&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=40109df6e&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-TUNDRA-05|model|https://www.tarmacworks.com/products/tarmac-works-x-one-piece-model-car-collection-vol-1-6-cars-set-with-volkswagen-type-ii-t2-panel-van-special-edition-collab64?_pos=10&_psq=CM+Model+Toyota+Tundra+Pickup+Truck+White+with+TRD+Graphics+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=40109df6e&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-765LT-23|model|https://www.tarmacworks.com/products/minichamps-1-64-mclaren-formula-1-team-mcl39-lando-norris-winner-australian-gp-2025?_pos=1&_psq=CM+Model+McLaren+765LT+Papaya+Orange+with+Black+Top+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=83fc29d59&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-765LT-23|model|https://www.tarmacworks.com/products/1-64-mclaren-mcl60-british-grand-prix-2023-lando-norris-tarmac-works-global64?_pos=2&_psq=CM+Model+McLaren+765LT+Papaya+Orange+with+Black+Top+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=83fc29d59&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-765LT-23|model|https://www.tarmacworks.com/products/1-64-mclaren-mcl60-japanese-grand-prix-2023-4-lando-norris-tarmac-works-x-ixo-models-global64?_pos=3&_psq=CM+Model+McLaren+765LT+Papaya+Orange+with+Black+Top+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=83fc29d59&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-765LT-23|model|https://www.tarmacworks.com/products/tarmac-works-1-64-mclaren-mcl60-australian-grand-prix-2023-oscar-piastri-global64?_pos=4&_psq=CM+Model+McLaren+765LT+Papaya+Orange+with+Black+Top+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=83fc29d59&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-765LT-23|model|https://www.tarmacworks.com/products/tarmac-works-1-64mclaren-mcl60-spanish-grand-prix-2023-qualifying-4-lando-norris-global64?_pos=5&_psq=CM+Model+McLaren+765LT+Papaya+Orange+with+Black+Top+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=83fc29d59&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-765LT-23|model|https://www.tarmacworks.com/products/minichamps-1-64-mclaren-formula-1-team-mcl39-oscar-piastri-australian-gp-2025?_pos=6&_psq=CM+Model+McLaren+765LT+Papaya+Orange+with+Black+Top+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=83fc29d59&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-765LT-23|model|https://www.tarmacworks.com/products/minichamps-1-64-mclaren-formula-1-team-mcl39-lando-norris-china-gp-2025?_pos=7&_psq=CM+Model+McLaren+765LT+Papaya+Orange+with+Black+Top+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=83fc29d59&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-765LT-23|model|https://www.tarmacworks.com/products/1-64-mitsubishi-lancer-evolution-vi-tommi-makinen-edition-blue-tarmac-works-road64?_pos=8&_psq=CM+Model+McLaren+765LT+Papaya+Orange+with+Black+Top+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=83fc29d59&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-765LT-23|model|https://www.tarmacworks.com/products/minichamps-1-64-mclaren-formula-1-team-mcl39-oscar-piastri-winner-china-gp-2025?_pos=9&_psq=CM+Model+McLaren+765LT+Papaya+Orange+with+Black+Top+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=83fc29d59&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-765LT-23|model|https://www.tarmacworks.com/products/1-64-lb-works-720s-black-tarmac-works-hobby64?_pos=10&_psq=CM+Model+McLaren+765LT+Papaya+Orange+with+Black+Top+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=83fc29d59&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Tarmac Works|T64G-F070-OP2|https://www.tarmacworks.com/products/tarmac-works-1-64-mclaren-mcl60-australian-grand-prix-2023-oscar-piastri-global64?_pos=1&_psq=T64G-F070-OP2&_psid=2192c70d5&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Tarmac Works",
+    "matches": [
+      {
+        "sku": "T64G-F070-OP2",
+        "variant_id": 48114201329921,
+        "title": "1/64 McLaren MCL60 Australian Grand Prix 2023 Oscar Piastri - Tarmac Works X iXO Models GLOBAL64",
+        "variant": "Default Title",
+        "vendor": "Tarmac Works",
+        "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-mclaren-mcl60-australian-grand-prix-2023-oscar-piastri-global64?variant=48114201329921"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Almost Real|6K0000101|model|https://www.modelcarshouston.com/products/preorder-porsche-930-rwb-stella-artois-in-matte-black?_pos=1&_psq=Almost+Real+RWB+930+%22Stella+Artois%22+Matt+Black+1%2F64+Diecast+Model+Car+by+Almost+Real&_psid=20e5ccf57&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Almost Real",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|MINI GT|MGT01079|https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-honda-civic-type-r-2024-pace-car-hrc?_pos=1&_psq=MGT01079&_psid=d42005e6f&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "MINI GT",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|ERTL TOMY|85004|https://www.autoworldstore.com/products/atlantis-tom-mcewen-rear-engine-dragster-1-24-scale-model-kit?_pos=1&_psq=85004&_psid=7c9bccb40&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "ERTL TOMY",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|ERTL TOMY|85004|https://www.autoworldstore.com/products/atlantis-1926-mack-bulldog-dump-truck-1-24-scale-model-kit?_pos=2&_psq=85004&_psid=7c9bccb40&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "ERTL TOMY",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|ERTL TOMY|85004|https://www.autoworldstore.com/products/atlantis-u-s-route-66-1956-chevrolet-265-c-u-1-25-scale-model-kit?_pos=3&_psq=85004&_psid=7c9bccb40&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "ERTL TOMY",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|ERTL TOMY|85004|https://www.autoworldstore.com/products/atlantis-1955-chevrolet-custom-street-rod-x-parts-garage-1-25-scale-model-kit?_pos=4&_psq=85004&_psid=7c9bccb40&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "ERTL TOMY",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|ERTL TOMY|85004|https://www.autoworldstore.com/products/atlantis-u-s-route-66-1955-chevrolet-bel-air-hardtop-1-25-scale-model-kit?_pos=5&_psq=85004&_psid=7c9bccb40&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "ERTL TOMY",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|ERTL TOMY|85004|https://www.autoworldstore.com/products/atlantis-fred-flypogger-as-superfuzz-model-kit?_pos=6&_psq=85004&_psid=7c9bccb40&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "ERTL TOMY",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|ERTL TOMY|85004|https://www.autoworldstore.com/products/atlantis-flash-gordon-and-the-martian-1-8-scale-model-kit?_pos=7&_psq=85004&_psid=7c9bccb40&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "ERTL TOMY",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|ERTL TOMY|85004|https://www.autoworldstore.com/products/atlantis-lockheed-wv-2-warning-star-early-warning-radar-picket-usn-1-128-scale-model-kit?_pos=8&_psq=85004&_psid=7c9bccb40&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "ERTL TOMY",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|ERTL TOMY|85004|https://www.autoworldstore.com/products/atlantis-the-silver-knight-of-augsburg-with-display-base-9-5-inches-tall-1-8-model-kit?_pos=9&_psq=85004&_psid=7c9bccb40&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "ERTL TOMY",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|ERTL TOMY|85004|https://www.autoworldstore.com/products/atlantis-f-100c-super-sabre-united-states-air-force-usaf-with-swivel-stand-1-70-scale-model-kit?_pos=10&_psq=85004&_psid=7c9bccb40&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "ERTL TOMY",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Tarmac Works|T64G-080-WH|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-toyota-soarer-jzz30-vertex-edition-in-white?_pos=1&_psq=T64G-080-WH&_psid=269e6756d&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "Tarmac Works",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-720SEGTR-01|model|https://www.autoworldstore.com/products/johnny-lightning-1968-dodge-coronet-r-t-convertible-2025-mcacn-event-car-1-64-diecast?_pos=1&_psq=CM+Model+DarwinPro+720S+SEGTR+%2319+Light+Blue+with+Carbon+Hood+and+Black+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=81b57c317&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-720SEGTR-01|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-2002-chevy-camaro-ss-35th-anniversary-silver-w-black-stripes-with-collector-tin-1-64-diecast-due-april-2026?_pos=2&_psq=CM+Model+DarwinPro+720S+SEGTR+%2319+Light+Blue+with+Carbon+Hood+and+Black+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=81b57c317&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-720SEGTR-01|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-goodyear-blue-streak-1969-dodge-dart-1-64-scale-diecast-due-april-2025?_pos=3&_psq=CM+Model+DarwinPro+720S+SEGTR+%2319+Light+Blue+with+Carbon+Hood+and+Black+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=81b57c317&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-720SEGTR-01|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1969-dodge-coronet-r-t-convertible-a4-silver-1-64-scale-diecast-due-august-2025?_pos=4&_psq=CM+Model+DarwinPro+720S+SEGTR+%2319+Light+Blue+with+Carbon+Hood+and+Black+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=81b57c317&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-720SEGTR-01|model|https://www.autoworldstore.com/products/johnny-lightning-1997-chevyl-tahoe-w-camper-trailer-police-swat-1-64-diecast?_pos=5&_psq=CM+Model+DarwinPro+720S+SEGTR+%2319+Light+Blue+with+Carbon+Hood+and+Black+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=81b57c317&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-720SEGTR-01|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-1965-chevy-impala-ss-lowrider-custom-bronze-poly-auto-world-store-exclusive-1-64-diecast-due-march-2025?_pos=6&_psq=CM+Model+DarwinPro+720S+SEGTR+%2319+Light+Blue+with+Carbon+Hood+and+Black+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=81b57c317&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-720SEGTR-01|model|https://www.autoworldstore.com/products/pre-order-auto-world-1965-ford-gt40-mk1-auto-world-store-exclusive-1-64-diecast-due-april-2026?_pos=7&_psq=CM+Model+DarwinPro+720S+SEGTR+%2319+Light+Blue+with+Carbon+Hood+and+Black+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=81b57c317&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-720SEGTR-01|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-2002-subaru-impreza-wrx-auto-world-store-exclusive-1-64-diecast-late-may-2026?_pos=8&_psq=CM+Model+DarwinPro+720S+SEGTR+%2319+Light+Blue+with+Carbon+Hood+and+Black+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=81b57c317&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-720SEGTR-01|model|https://www.autoworldstore.com/products/pre-order-auto-world-1968-dodge-coronet-aw-exclusive-1-64-diecast-due-september-2025?_pos=9&_psq=CM+Model+DarwinPro+720S+SEGTR+%2319+Light+Blue+with+Carbon+Hood+and+Black+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=81b57c317&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-720SEGTR-01|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1974-pontiac-gto-gloss-black-w-gto-rwb-stripes-1-64-scale-diecast-due-november-2026?_pos=10&_psq=CM+Model+DarwinPro+720S+SEGTR+%2319+Light+Blue+with+Carbon+Hood+and+Black+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=81b57c317&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-720SEGTR-01|model|https://www.tarmacworks.com/products/1-64-lb-works-720s-white-tarmac-works-hobby64?_pos=1&_psq=CM+Model+DarwinPro+720S+SEGTR+%2319+Light+Blue+with+Carbon+Hood+and+Black+Top+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=8dd8801c7&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|CM Model|CM64-ZONDAF-04|model|https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-pagani-zonda-r-in-carbon-fiber?_pos=1&_psq=CM+Model+Pagani+Zonda+F+Rosso+Dubai+Red+Metallic+with+Moonroof+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=852e6af8b&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|CM Model|CM64-ZONDAF-04|model|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-pagani-imola-in-rosso-dubai?_pos=2&_psq=CM+Model+Pagani+Zonda+F+Rosso+Dubai+Red+Metallic+with+Moonroof+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=852e6af8b&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|MINI GT|MGT01140|https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-subaru-impreza-wrc97-1-1999-drm-champion?_pos=1&_psq=MGT01140&_psid=f58f0f36a&_ss=e": {
+    "checked": "2026-11-27T07:45:58.644123+07:00",
+    "manufacturer_requested": "MINI GT",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
   }
 }
