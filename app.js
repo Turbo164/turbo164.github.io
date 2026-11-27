@@ -39,7 +39,7 @@ function availableCarManufacturers(brand){return [...new Set(sharedDiecastModels
 state={};
 const statuses=['Owned','Ordered','Missing','Unconfirmed','Wishlist'];
 const allowedBrands=['ARBOX','PGM','Tarmac Works','INNO64','BBR'];
-const editionTypes=['Regular','Chase','Event Exclusive','Limited Edition'];
+const editionTypes=['Regular','Chase','Rare','Event Exclusive','Limited Edition'];
 function maker(m){return m.manufacturer||(m.brand==='Porsche'||m.brand==='Land Rover'?'ARBOX':m.brand)}
 function eligible(m){
  const brand=maker(m);
