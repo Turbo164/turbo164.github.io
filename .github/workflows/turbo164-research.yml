@@ -1,4 +1,4 @@
-name: Turbo164 research V6.1
+name: Turbo164 research V6.3
 on:
   workflow_dispatch:
   push:
@@ -43,14 +43,11 @@ jobs:
           mkdir -p research
           run=$(gh run list --workflow turbo164-research.yml --status success --limit 1 --json databaseId --jq '.[0].databaseId // empty')
           if [ ! -s research/cumulative-master.csv ] && [ -n "$run" ]; then gh run download "$run" -n turbo164-research -D research; fi
-      - name: Import historical checkpoint if supplied
+      - name: Confirm live catalog master is available
         run: |
-          mkdir -p research-master
-          if [ -f research-master/historical.csv ]; then
-            echo 'Historical checkpoint present'
-          else
-            echo 'Historical checkpoint missing; preserving recovered pilot history only'
-          fi
+          git fetch origin main:refs/remotes/origin/main
+          git show refs/remotes/origin/main:catalog.json > /tmp/turbo164-catalog-master.json
+          python -c "import json; x=json.load(open('/tmp/turbo164-catalog-master.json')); assert isinstance(x,list) and x and len({r['id'] for r in x})==len(x); print('Live catalog master validated:',len(x))"
       - name: Collect research leads
         id: collect
         run: |
@@ -65,7 +62,7 @@ jobs:
           rows=list(csv.DictReader(master.open())) if master.exists() else []
           now=datetime.datetime.now(ZoneInfo('Asia/Bangkok')).isoformat()
           started=time.monotonic()
-          deadline=started+53*60
+          deadline=started+54*60
           ua='Turbo164Research/1.0 (+https://turbo164.github.io/)'
           initial_lead_count=len(rows)
           import socket
@@ -84,7 +81,11 @@ jobs:
           import subprocess
           subprocess.run(['git','fetch','origin','main:refs/remotes/origin/main'],check=True)
           catalog=json.loads(subprocess.check_output(['git','show','refs/remotes/origin/main:catalog.json'],text=True))
-          codes={(str(x.get('manufacturer','')).casefold(),str(x.get('productCode','')).casefold()) for x in catalog if x.get('productCode')}
+          assert isinstance(catalog,list) and catalog and len({x['id'] for x in catalog})==len(catalog)
+          master_commit=subprocess.check_output(['git','rev-parse','refs/remotes/origin/main'],text=True).strip()
+          (root/'catalog-master.json').write_text(json.dumps(catalog,ensure_ascii=False,indent=2))
+          print('Catalog master:',master_commit,len(catalog))
+          codes={(str(x.get('manufacturer','')).casefold(),str(x.get(k,'')).casefold()) for x in catalog for k in ('productCode','number') if x.get(k)}
           seen={(r['Manufacturer'],r['Source URL'],r['Product Code'],r['Color/Variant']) for r in rows}
           sources=[
             ('Tarmac Works','https://www.tarmacworks.com/collections/1-64-scale'),
@@ -98,7 +99,10 @@ jobs:
             ('Kaido House','https://www.modelcarshouston.com/collections/kaido-house'),
             ('Ignition Model','https://www.modelcarshouston.com/collections/ignition-model'),
             ('GreenLight','https://www.modelcarshouston.com/collections/greenlight'),
-            ('M2 Machines','https://www.modelcarshouston.com/collections/m2-machines')]
+            ('M2 Machines','https://www.modelcarshouston.com/collections/m2-machines'),
+            ('Kaido House','https://www.kaidohouse.com/collections/diecast'),
+            ('Johnny Lightning','https://www.autoworldstore.com/collections/die-cast-1'),
+            ('Auto World','https://www.autoworldstore.com/collections/diecast')]
           log=[]
           def fetch(url):
             if time.monotonic()>=deadline: raise RuntimeError('research deadline reached')
@@ -124,9 +128,14 @@ jobs:
           # V5.2: rotate collection priority and revisit previously seen pages for changes.
           offset=state.get('collection_rotation',0)%len(sources)
           sources=sources[offset:]+sources[:offset]
+          # Rotate on every round; defer previously blocked sources without dropping them.
+          health=state.setdefault('v63_source_health',{})
+          sources.sort(key=lambda pair: not retry_due(health.get(pair[1],{}),6) if health.get(pair[1],{}).get('error') else False)
           state['collection_rotation']=offset+1
           for brand,base in sources:
             page=state.get(base,1)
+            if health.get(base,{}).get('error') and not retry_due(health[base],6):
+              log.append([brand,'collection cooling down',base]);continue
             try:
               round_digests=set()
               for _ in range(8):
@@ -153,11 +162,14 @@ jobs:
                     row=dict.fromkeys(cols,'')
                     row.update({'Check Date (Bangkok)':now,'Manufacturer':brand,'Product Code':sku,'Model Name':p['title'],'Color/Variant':key[3],'Source URL':link,'Image Status':'MISSING PHOTO','GitHub Status':'POSSIBLE DUPLICATE' if sku and (brand.casefold(),sku.casefold()) in codes else 'NEEDS VERIFICATION','Verification':'NEEDS VERIFICATION','Notes':'Shopify lead only; scale, manufacturer SKU, edition and release require independent verification','First Seen Date':now,'Last Checked Date':now})
                     rows.append(row)
+                health[base]={'checked':now,'products':len(products)}
                 log.append([brand,'page collected',page,len(products)])
                 state[base+' fingerprints']=(state.get(base+' fingerprints',[])+[digest])[-100:]
                 page+=1;state[base]=page;save()
             except Exception as e:
+              health[base]={'checked':now,'error':str(e)}
               log.append([brand,'blocked',str(e)])
+              save()
           # Discover links on official archives; never infer SKU or scale from URL.
           from html.parser import HTMLParser
           class Links(HTMLParser):
@@ -175,7 +187,7 @@ jobs:
             ('INNO64','https://www.inno-models.com/scale/1-64/'),
             ('ARBOX','https://www.armodel.com.cn/product.html?cid=22'),
             ('PGM','https://www.modelcarshouston.com/collections/pgm'),
-            ('POP RACE','https://www.poprace.net/'),
+            ('POP RACE','https://poprace.net/en/'),
             ('Ignition Model','https://ig-model.com/'),
             ('GreenLight','https://www.greenlightcollectibles.com/'),
             ('M2 Machines','https://www.m2machines.com/'),
@@ -388,7 +400,7 @@ jobs:
             queues[brand]=deque(row for row in ordered if evidence_due(evidence.get(row['Source URL'],{})))
           blocked_hosts=set()
           inspected=0
-          verify_deadline=min(deadline,started+20*60)
+          verify_deadline=min(deadline-22*60,time.monotonic()+12*60)
           while time.monotonic()<verify_deadline and any(queues.values()):
             for brand,q in queues.items():
               if time.monotonic()>=verify_deadline: break
@@ -453,7 +465,10 @@ jobs:
           # V4.5: search independent retailer storefronts by exact SKU.
           searchfile=root/'independent-search.json'
           searches=json.loads(searchfile.read_text()) if searchfile.exists() else {}
-          retailers=['https://www.modelcarshouston.com','https://www.autoworldstore.com','https://www.tarmacworks.com']
+          retailers=['https://www.modelcarshouston.com','https://www.autoworldstore.com','https://www.tarmacworks.com','https://www.kaidohouse.com','https://hotdc.sg']
+          rotation=int(state.get('v63_retailer_rotation',0))%len(retailers)
+          retailers=retailers[rotation:]+retailers[:rotation]
+          state['v63_retailer_rotation']=rotation+1
           # Inspect discovered links before spending the remaining budget on discovery.
           hitfile=root/'independent-product-evidence.json'
           hit_evidence=json.loads(hitfile.read_text()) if hitfile.exists() else {}
@@ -464,7 +479,7 @@ jobs:
           cachefile=root/'product-payload-cache.json'
           payload_cache=json.loads(cachefile.read_text()) if cachefile.exists() else {}
           cache_hits=0
-          inspection_deadline=min(deadline,started+28*60)
+          inspection_deadline=min(deadline-15*60,time.monotonic()+8*60)
           def inspect_search_hits(records,inspection_deadline):
             global cache_hits
             for key,record in records:
@@ -522,7 +537,7 @@ jobs:
               elif not searches[key].get('hits') and search_due(searches.get(key+'|model',{})): pending[row['Manufacturer']].append((row,base,key+'|model'))
           search_count=0
           newly_searched=[]
-          search_deadline=min(deadline-600,time.monotonic()+10*60)
+          search_deadline=min(deadline-600,time.monotonic()+12*60)
           while time.monotonic()<search_deadline and any(pending.values()):
             for brand,q in pending.items():
               if time.monotonic()>=search_deadline: break
@@ -591,22 +606,39 @@ jobs:
               candidate_rows.append({'manufacturer':brand,'productCode':sku,'name':match.get('title'),'variant':match.get('variant'),'sourceUrl':match.get('url'),'vendor':vendor,'releaseStatus':'unconfirmed','editionType':'unconfirmed','verification':'NEEDS VERIFICATION','photo':None})
           (root/'manufacturer-review.json').write_text(json.dumps({'candidates':candidate_rows,'excluded':rejected},indent=2))
           log.append(['V4.7','manufacturer-matched review candidates',len(candidate_rows),'excluded or duplicate',len(rejected)])
-          # V4.9: targeted official storefront discovery for matched Tarmac candidates.
+          # V6.3: explicit brand-to-official-host registry; other brands remain eligible via independent proof.
+          official_bases={'tarmacworks':'https://www.tarmacworks.com','kaidohouse':'https://www.kaidohouse.com','autoworld':'https://www.autoworldstore.com','johnnylightning':'https://www.autoworldstore.com'}
+          def official_host(brand,url):
+            base=official_bases.get(brandkey(brand))
+            p=urllib.parse.urlsplit(url)
+            return bool(base and p.scheme=='https' and p.hostname and p.hostname.removeprefix('www.')==urllib.parse.urlsplit(base).hostname.removeprefix('www.'))
+          # Include direct collection evidence as well as retailer search hits.
+          for row in review:
+            brand=row['Manufacturer'];sku=row['Product Code'].strip();url=row['Source URL']
+            key=(brandkey(brand),norm(sku))
+            ev=evidence.get(url,{})
+            if not official_host(brand,url) or brandkey(ev.get('vendor'))!=brandkey(brand) or key in candidate_keys: continue
+            candidate_keys.add(key)
+            candidate_rows.append({'manufacturer':brand,'productCode':sku,'name':row['Model Name'],'variant':row['Color/Variant'],'sourceUrl':url})
+          (root/'manufacturer-review.json').write_text(json.dumps({'candidates':candidate_rows,'excluded':rejected},indent=2))
+          # Official search is an evidence adapter, not a permission to infer missing fields.
           officialfile=root/'official-discovery.json'
           official_discovery=json.loads(officialfile.read_text()) if officialfile.exists() else {}
+          official_blocked=set()
           for item in candidate_rows:
-            if time.monotonic()>=deadline-300: break
-            if norm(item['manufacturer'])!='tarmacworks': continue
+            if time.monotonic()>=deadline-420: break
+            base=official_bases.get(brandkey(item['manufacturer']))
+            if not base or base in official_blocked: continue
             sku=item['productCode']
-            if not search_due(official_discovery.get(sku,{})): continue
+            discovery_key=brandkey(item['manufacturer'])+'|'+sku
+            if not search_due(official_discovery.get(discovery_key,{})): continue
             try:
-              base='https://www.tarmacworks.com'
               query=urllib.parse.urlencode({'q':sku,'resources[type]':'product','resources[limit]':10})
               result=json.loads(fetch(base+'/search/suggest.json?'+query))
-              official_discovery[sku]={'checked':now,'hits':result.get('resources',{}).get('results',{}).get('products',[]),'status':'official discovery only; exact variant verification pending'}
+              official_discovery[discovery_key]={'checked':now,'hits':result.get('resources',{}).get('results',{}).get('products',[]),'status':'official discovery only; exact variant verification pending'}
             except Exception as e:
-              official_discovery[sku]={'checked':now,'error':str(e)}
-              if any(x in str(e).lower() for x in ('403','429','robots','401')): break
+              official_discovery[discovery_key]={'checked':now,'error':str(e)}
+              if any(x in str(e).lower() for x in ('403','429','robots','401')): official_blocked.add(base)
             finally:
               officialfile.write_text(json.dumps(official_discovery,indent=2))
           # V5.0: independently fetch official exact variant payloads.
@@ -614,23 +646,29 @@ jobs:
           official_errors=[]
           for item in candidate_rows:
             if time.monotonic()>=deadline-30: break
-            if norm(item['manufacturer'])!='tarmacworks': continue
+            brand=item['manufacturer']
+            base=official_bases.get(brandkey(brand))
+            if not base: continue
             sku=item['productCode']
-            for hit in official_discovery.get(sku,{}).get('hits',[]):
+            discovery_key=brandkey(brand)+'|'+sku
+            hits=official_discovery.get(discovery_key,{}).get('hits',[])
+            if official_host(brand,item.get('sourceUrl','')): hits=[{'url':item['sourceUrl']}]+hits
+            for hit in hits:
               if time.monotonic()>=deadline-30: break
-              url=urllib.parse.urljoin('https://www.tarmacworks.com',hit.get('url') or '')
+              url=urllib.parse.urljoin(base,hit.get('url') or '')
               p=urllib.parse.urlsplit(url)
-              if p.scheme!='https' or p.hostname not in ('www.tarmacworks.com','tarmacworks.com') or '/products/' not in p.path: continue
+              if not official_host(brand,url) or '/products/' not in p.path: continue
               try:
                 endpoint=urllib.parse.urlunsplit((p.scheme,p.netloc,p.path.rstrip('/')+'.js','',''))
                 product=json.loads(fetch(endpoint))
                 for v in product.get('variants',[]):
                   title=str(product.get('title',''))+' '+str(v.get('title',''))
                   if str(v.get('sku') or '').strip().casefold()!=sku.strip().casefold() or scales(title)!={'64'}: continue
-                  if norm(product.get('vendor'))!='tarmacworks': continue
+                  if brandkey(product.get('vendor'))!=brandkey(brand): continue
                   if re.search(r'\b(bundle|combo|multipack|assortment|trading.card|gift.set|set of|case of|multi.pack|2.pack|3.pack)\b',title,re.I): continue
-                  if catalog_index.get(('tarmacworks',norm(sku))): continue
-                  verified_official.append({'manufacturer':'Tarmac Works','productCode':sku,'name':product.get('title'),'variant':v.get('title'),'sourceUrl':url.split('?')[0]+'?variant='+str(v.get('id')),'checked':now,'verification':'Official SKU and scale matched; edition, release and identity review pending','retailerSource':item.get('sourceUrl')})
+                  if catalog_index.get((brandkey(brand),norm(sku))): continue
+                  if not v.get('id'): continue
+                  verified_official.append({'manufacturer':brand,'method':'official-exact-v63','productCode':sku,'name':product.get('title'),'variant':v.get('title'),'sourceUrl':url.split('?')[0]+'?variant='+str(v.get('id')),'checked':now,'verification':'Official SKU and scale matched; edition, release and identity review pending','retailerSource':item.get('sourceUrl')})
               except Exception as e:
                 official_errors.append({'sku':sku,'url':url,'error':str(e)})
           (root/'official-variant-verification.json').write_text(json.dumps({'matches':verified_official,'errors':official_errors},indent=2))
@@ -639,7 +677,7 @@ jobs:
           official_review=[]
           for item in candidate_rows:
             p=urllib.parse.urlsplit(item.get('sourceUrl') or '')
-            official=(norm(item['manufacturer'])=='tarmacworks' and p.scheme=='https' and p.hostname in ('www.tarmacworks.com','tarmacworks.com'))
+            official=official_host(item['manufacturer'],item.get('sourceUrl') or '')
             title=str(item.get('name') or '')+' '+str(item.get('variant') or '')
             flags=[]
             if not official: flags.append('official manufacturer product evidence missing')
@@ -659,7 +697,7 @@ jobs:
             if time.monotonic()>=deadline-45: break
             url=item['sourceUrl']
             p=urllib.parse.urlsplit(url)
-            if p.scheme!='https' or p.hostname not in ('www.tarmacworks.com','tarmacworks.com'): continue
+            if not official_host(item['manufacturer'],url): continue
             try:
               endpoint=urllib.parse.urlunsplit((p.scheme,p.netloc,p.path.rstrip('/')+'.js','',''))
               product=json.loads(fetch(endpoint))
@@ -677,9 +715,12 @@ jobs:
           # V5.1: final review gate; never infer release or edition from missing evidence.
           final_review=[]
           final_keys=set()
+          official_identities=defaultdict(set)
+          for item in verified_official:
+            official_identities[(norm(item['manufacturer']),norm(item['productCode']))].add((norm(item['name']),norm(item['variant']),item['sourceUrl']))
           for item in verified_official:
             key=(norm(item['manufacturer']),norm(item['productCode']))
-            if key in final_keys or catalog_index.get(key): continue
+            if key in final_keys or catalog_index.get(key) or len(official_identities[key])!=1: continue
             final_keys.add(key)
             title=str(item.get('name') or '')+' '+str(item.get('variant') or '')
             if re.search(r'\b(bundle|combo|multipack|assortment|trading.card|gift.set|set of|case of|multi.pack|2.pack|3.pack)\b',title,re.I): continue
@@ -711,6 +752,10 @@ jobs:
           assert not exact_pair(aa,{**bb,'model':'fordgtblue'})
           assert not exact_pair(aa,{**bb,'sku':'MGT002'})
           assert not exact_pair(aa,{**bb,'variant':'chase'})
+          assert official_host('Kaido House','https://www.kaidohouse.com/products/example?variant=1')
+          assert not official_host('MINI GT','https://www.kaidohouse.com/products/example?variant=1')
+          assert not official_host('Tarmac Works','https://tarmacworks.com.evil.example/products/example')
+          print('Evidence regression assertions passed')
           proofs=defaultdict(list)
           for row in rows:
             url=row['Source URL'];ev=evidence.get(url,{})
@@ -800,7 +845,7 @@ jobs:
           with (root/'cumulative-master.csv').open('w',newline='',encoding='utf-8') as f:
             w=csv.DictWriter(f,fieldnames=cols);w.writeheader();w.writerows(combined)
           log.append(['V4.4','historical master available',historical.exists(),'combined records',len(combined),'cross-source candidates',len(corroborated)])
-          (root/'publication-preview.json').write_text(json.dumps({'eligible_verified':0,'quarantined':len(quarantine),'review_candidates':len(review),'additions':[],'manufacturer_matched_review':candidate_rows,'official_final_review':final_review,'reason':'Exact product-level evidence and historical master reconciliation required before publication'},indent=2))
+          (root/'publication-preview.json').write_text(json.dumps({'eligible_verified':0,'quarantined':len(quarantine),'review_candidates':len(review),'additions':[],'manufacturer_matched_review':candidate_rows,'official_final_review':final_review,'reason':'Exact product-level evidence and fresh live catalog reconciliation required before publication'},indent=2))
           save()
           stamp=datetime.datetime.now(ZoneInfo('Asia/Bangkok')).strftime('%Y-%m-%d_%H%M')
           import shutil
@@ -810,7 +855,7 @@ jobs:
             old.unlink()
           shutil.copyfile(master,root/('Turbo164_Pilot_Leads_'+stamp+'.csv'))
           shutil.copyfile(root/'cumulative-master.csv',root/('Turbo164_Master_Catalog_'+stamp+'.csv'))
-          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':True,'version':'6.1','new_leads':len(rows)-initial_lead_count,'historical_master_present':historical.exists(),'cumulative_count':len(combined),'review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'pending separate publication step; see publication-result.json'},indent=2))
+          (root/'coverage.json').write_text(json.dumps({'time':now,'pilot_only':False,'version':'6.3','catalog_master_commit':master_commit,'catalog_master_count':len(catalog),'official_exact_candidates':len(final_review),'independent_exact_candidates':len(cross_ready),'new_leads':len(rows)-initial_lead_count,'historical_master_present':historical.exists(),'cumulative_count':len(combined),'review_candidates':len(review),'elapsed_research_seconds':round(time.monotonic()-started),'catalog_count':len(catalog),'lead_count':len(rows),'sources':log,'publication':'pending separate publication step; see publication-result.json'},indent=2))
           print(json.dumps(log))
           PY
       - name: Publish verified missing models
@@ -819,11 +864,22 @@ jobs:
           python - <<'PY'
           import json,pathlib,re,subprocess,csv,urllib.parse
           root=pathlib.Path('research')
-          report={'published':0,'status':'not started'}
+          report={'published':None,'status':'not started'}
           def git(*args):
             return subprocess.check_output(['git',*args],text=True).strip()
           def norm(s):
             return re.sub(r'[^a-z0-9]','',str(s or '').lower())
+          official_hosts={'tarmacworks':'tarmacworks.com','kaidohouse':'kaidohouse.com','autoworld':'autoworldstore.com','johnnylightning':'autoworldstore.com'}
+          def exact_official(brand,url):
+            p=urllib.parse.urlsplit(url)
+            return bool(p.scheme=='https' and p.hostname and p.hostname.removeprefix('www.')==official_hosts.get(brand) and re.fullmatch(r'/products/[^/]+',p.path) and re.fullmatch(r'\d+',urllib.parse.parse_qs(p.query).get('variant',[''])[0]))
+          def duplicate_key(brand,sku):
+            return (norm(brand),norm(sku))
+          assert duplicate_key('Tarmac Works','ABC-001')!=duplicate_key('Tarmac Works','ABC-002')
+          assert duplicate_key('Tarmac Works','ABC-001')==duplicate_key('Tarmac Works','abc-001')
+          assert exact_official('kaidohouse','https://www.kaidohouse.com/products/test?variant=1')
+          assert not exact_official('kaidohouse','https://kaidohouse.com.evil.example/products/test?variant=1')
+          print('Publication identity regression assertions passed')
           try:
             git('fetch','origin','main')
             git('checkout','--detach','origin/main')
@@ -833,10 +889,17 @@ jobs:
             ids={x['id'] for x in original}
             assert len(ids)==len(original)
             codes={(norm(x.get('manufacturer')),norm(x.get(k))) for x in original for k in ('number','productCode') if x.get(k)}
-            names={(norm(x.get('manufacturer')),norm(x.get('name'))) for x in original}
+            # Names and shared page URLs are not identities when exact SKUs differ.
+            unresolved_names={(norm(x.get('manufacturer')),norm(x.get('name'))) for x in original if not (x.get('number') or x.get('productCode'))}
+            existing_urls={(norm(x.get('manufacturer')),str(x.get('sourceUrl') or '')) for x in original if x.get('sourceUrl')}
+            candidate_claims={}
+            blocked={}
             additions=[]
             makes=['Mercedes-Benz','Alfa Romeo','Land Rover','Aston Martin','Volkswagen','Porsche','Ferrari','Nissan','Toyota','Honda','Mitsubishi','Subaru','Mazda','BMW','Audi','Ford','Chevrolet','Dodge','Lamborghini','McLaren','Hyundai','Lancia','Fiat','Peugeot','Renault','Bentley','Lotus','Pagani','Bugatti','Suzuki','Isuzu','Volvo','Acura','Lexus','Datsun','Jaguar','Pontiac','Cadillac']
             candidates=json.loads((root/'final-publication-review.json').read_text())+json.loads((root/'cross-publication-review.json').read_text())
+            for x in candidates:
+              k=duplicate_key(x.get('manufacturer'),x.get('productCode'))
+              candidate_claims.setdefault(k,set()).add((norm(x.get('name')),norm(x.get('variant')) if str(x.get('variant') or '').lower() not in ('','default title','regular','standard') else ''))
             for x in candidates:
               sku=str(x.get('productCode') or '').strip()
               title=str(x.get('name') or '').strip()
@@ -852,14 +915,17 @@ jobs:
                 if any(p.get('manufacturer')!=key[0] or str(p.get('sku','')).casefold()!=sku.casefold() or urllib.parse.urlsplit(p.get('url','')).scheme!='https' for p in evidence): continue
                 if a.get('host')==b.get('host') or a.get('model')!=b.get('model') or len(a.get('model',''))<10 or a.get('variant')!=b.get('variant'): continue
                 if a.get('url')!=url or b.get('url')!=x.get('corroboratingSource') or a.get('title')!=title or a.get('variant_title')!=variant: continue
-              elif manufacturer!='Tarmac Works' or not re.fullmatch(r'https://(?:www\.)?tarmacworks\.com/products/[^?]+\?variant=\d+',url): continue
-              if key in codes or (key[0],norm(title)) in names: continue
-              if any(norm(y.get('manufacturer'))==key[0] and str(y.get('sourceUrl') or y.get('photoSource') or '').split('?')[0]==url.split('?')[0] for y in original): continue
+              elif x.get('method')!='official-exact-v63' or not exact_official(key[0],url): continue
+              if len(candidate_claims.get(key,()))!=1:
+                blocked[sku]='conflicting candidate identities';continue
+              if key in codes or (key[0],norm(title)) in unresolved_names: continue
+              if (key[0],url) in existing_urls: continue
               if re.search(r'\b(bundle|combo|set of|multipack|assortment|trading.card|gift.set|case of)\b',title,re.I): continue
               found=[m for m in makes if re.search(r'\b'+re.escape(m)+r'\b',title,re.I)]
               if not found and x.get('verifiedMake') in makes and x.get('makeEvidence'): found=[x['verifiedMake']]
               if len(found)!=1: continue
-              if x.get('method')!='cross-source-exact-v61' and variant.lower() not in ('','default title','regular','standard'): continue
+              if re.search(r'\b(random|mystery|chance|assortment|choose|bundle|set of)\b',title+' '+variant,re.I): continue
+              # A distinct exact SKU is required; ambiguous shared-SKU chase variants remain pending.
               make=found[0]
               edition='Unverified'
               for pattern,label in [(r'\bchase\b','Chase'),(r'\bevent (?:special|exclusive)\b','Event Exclusive'),(r'\bexclusive\b','Exclusive'),(r'\blimited edition\b','Limited Edition'),(r'\bspecial edition\b','Special Edition')]:
@@ -870,8 +936,11 @@ jobs:
               addition={'id':ident,'number':sku,'productCode':sku,'brand':make,'vehicleMake':make,'manufacturer':manufacturer,'name':title,'variant':variant if variant.lower() not in ('','default title','regular','standard') else edition,'editionType':edition,'release':release,'sourceUrl':url,'verification':x.get('verification','Exact SKU and scale confirmed; edition and release may remain unverified.')}
               if x.get('corroboratingSource') or x.get('makeEvidence'): addition['verificationSource']=x.get('corroboratingSource') or x.get('makeEvidence')
               additions.append(addition)
-              ids.add(ident);codes.add(key);names.add((key[0],norm(title)))
+              ids.add(ident);codes.add(key);existing_urls.add((key[0],url))
             report['eligible']=len(additions)
+            report['conflicting_candidates']=blocked
+            report['catalog_base_commit']=git('rev-parse','HEAD')
+            report['catalog_base_count']=len(original)
             if additions:
               merged=original+additions
               p.write_text(json.dumps(merged,ensure_ascii=False,indent=2)+'\n')
@@ -887,8 +956,12 @@ jobs:
               git('fetch','origin','main')
               remote=json.loads(git('show','origin/main:catalog.json'))
               assert all(x in remote for x in additions)
+              assert all(x in remote for x in original), 'Existing catalog entries not preserved in readback'
+              (root/'catalog-master.json').write_text(json.dumps(remote,ensure_ascii=False,indent=2))
               report.update(published=len(additions),status='verified readback',commit=commit,additions=additions,catalog_count=len(remote))
-            else: report.update(status='no eligible additions',catalog_count=len(original))
+            else:
+              report.update(published=0,status='no eligible additions',catalog_count=len(original))
+              (root/'catalog-master.json').write_text(json.dumps(original,ensure_ascii=False,indent=2))
             # Reconcile only exact source/SKU matches, preserving all historical identity fields.
             if report['published']:
               for filename in ('cumulative-master.csv','pilot-leads.csv'):
@@ -907,6 +980,7 @@ jobs:
           except Exception as e:
             report['status']='deferred or uncertain; do not retry blindly'
             report['error']=str(e)
+            raise
           finally:
             (root/'publication-result.json').write_text(json.dumps(report,indent=2))
             print(json.dumps(report))
@@ -929,12 +1003,13 @@ jobs:
             coverage=json.loads(cp.read_text())
           else:
             coverage={'research_status':'failed or skipped','new_leads':None,'cumulative_count':None}
-          if collected and executed and pp.exists():
+          if collected and pp.exists() and os.environ.get('PUBLISH_OUTCOME') in ('success','failure'):
             report=json.loads(pp.read_text())
           else:
             report={'status':'not executed or failed; see job logs','published':None,'eligible':None}
           run={'run_id':os.environ.get('GITHUB_RUN_ID'),'run_attempt':os.environ.get('GITHUB_RUN_ATTEMPT'),'commit':os.environ.get('GITHUB_SHA')}
           coverage.update(run,publication=report['status'],published=report.get('published'),eligible_verified=report.get('eligible'),research_status='completed' if collected else 'failed or skipped')
+          coverage['publication_step_outcome']=os.environ.get('PUBLISH_OUTCOME')
           if report.get('catalog_count') is not None: coverage['catalog_count']=report['catalog_count']
           else: coverage['catalog_count']=None
           report.update({'workflow_run':run})
