@@ -1,14 +1,23 @@
--- Award one catalog-photo point per user per catalog card.
--- Photo resubmissions and repeat approvals for the same card never award another point.
+-- Award five points for an approved missing catalog photo, once per user per card.
+-- Photo resubmissions and repeat approvals for the same card never award another reward.
 -- Run this migration in Supabase SQL Editor after the existing community points setup.
 
 create table if not exists public.community_photo_contribution_points (
   user_id uuid not null references auth.users(id) on delete cascade,
   model_id text not null,
   awarded_at timestamptz not null default now(),
-  points smallint not null default 1 check (points = 1),
-  primary key (user_id, model_id)
+  points smallint not null default 5,
+  primary key (user_id, model_id),
+  constraint community_photo_contribution_points_points_check check (points = 5)
 );
+
+-- Upgrade the earlier one-point draft safely if it was already run.
+alter table public.community_photo_contribution_points
+  drop constraint if exists community_photo_contribution_points_points_check;
+update public.community_photo_contribution_points set points = 5 where points <> 5;
+alter table public.community_photo_contribution_points
+  alter column points set default 5,
+  add constraint community_photo_contribution_points_points_check check (points = 5);
 
 alter table public.community_photo_contribution_points enable row level security;
 revoke all on public.community_photo_contribution_points from anon, authenticated;
@@ -67,6 +76,11 @@ begin
     from public.community_photo_contribution_points photo_points, settings cfg
     where photo_points.awarded_at >= cfg.month_start
     group by photo_points.user_id
+  ), photo_point_counts as (
+    select photo_points.user_id, sum(photo_points.points)::bigint as total
+    from public.community_photo_contribution_points photo_points, settings cfg
+    where photo_points.awarded_at >= cfg.month_start
+    group by photo_points.user_id
   ), combined_car_counts as (
     select user_id, sum(total)::bigint as total
     from car_counts
@@ -82,16 +96,19 @@ begin
     union
     select user_id from combined_car_counts
     union
+    select user_id from photo_point_counts
+    union
     select user_id from login_counts
   ), scores as (
     select c.user_id,
            coalesce(pc.total,0)::bigint as posts_shared,
            coalesce(cc.total,0)::bigint as car_uploads,
-           (coalesce(pc.total,0)+coalesce(cc.total,0)+coalesce(lc.total,0))::bigint as points,
+           (coalesce(pc.total,0)+coalesce(cc.total,0)+coalesce(pp.total,0)+coalesce(lc.total,0))::bigint as points,
            case when cp.show_username then btrim(cp.username) else 'Anonymous contributor' end as username
     from contributors c
     left join post_counts pc on pc.user_id=c.user_id
     left join combined_car_counts cc on cc.user_id=c.user_id
+    left join photo_point_counts pp on pp.user_id=c.user_id
     left join login_counts lc on lc.user_id=c.user_id
     left join public.community_appearance cp on cp.user_id=c.user_id
   ), ranked as (
@@ -131,6 +148,15 @@ as $function$
          where photo_points.user_id=auth.uid()
            and photo_points.awarded_at >= start_local at time zone 'Asia/Bangkok')
       ) as car_uploads,
+      (
+        (select count(*) from public.arbox_model_submissions s
+         where s.user_id=auth.uid() and s.status='approved'
+           and s.approved_at >= start_local at time zone 'Asia/Bangkok')
+        +
+        (select coalesce(sum(photo_points.points),0) from public.community_photo_contribution_points photo_points
+         where photo_points.user_id=auth.uid()
+           and photo_points.awarded_at >= start_local at time zone 'Asia/Bangkok')
+      ) as approved_upload_points,
       (select count(*) from public.community_daily_login_claims claims
        where claims.user_id=auth.uid()
          and claims.claim_date >= start_local::date
@@ -138,7 +164,7 @@ as $function$
     from month where auth.uid() is not null
   )
   select t.month_start,t.posts_shared,t.car_uploads,
-         (t.posts_shared+t.car_uploads+t.login_points)::bigint as points
+         (t.posts_shared+t.approved_upload_points+t.login_points)::bigint as points
   from totals t;
 $function$;
 
@@ -154,26 +180,26 @@ begin
   with events as (
     select p.author_id as user_id,
            date_trunc('month',timezone('Asia/Bangkok',p.created_at))::date as month_start,
-           1::bigint as post_count,0::bigint as car_count,0::bigint as login_count
+           1::bigint as post_count,0::bigint as car_count,0::bigint as upload_points,0::bigint as login_count
     from public.community_posts p
     where date_trunc('month',timezone('Asia/Bangkok',p.created_at))::date < this_month
     union all
     select s.user_id,
            date_trunc('month',timezone('Asia/Bangkok',s.approved_at))::date as month_start,
-           0::bigint as post_count,1::bigint as car_count,0::bigint as login_count
+           0::bigint as post_count,1::bigint as car_count,1::bigint as upload_points,0::bigint as login_count
     from public.arbox_model_submissions s
     where s.status='approved' and s.approved_at is not null
       and date_trunc('month',timezone('Asia/Bangkok',s.approved_at))::date < this_month
     union all
     select photo_points.user_id,
            date_trunc('month',timezone('Asia/Bangkok',photo_points.awarded_at))::date as month_start,
-           0::bigint as post_count,photo_points.points::bigint as car_count,0::bigint as login_count
+           0::bigint as post_count,1::bigint as car_count,photo_points.points::bigint as upload_points,0::bigint as login_count
     from public.community_photo_contribution_points photo_points
     where date_trunc('month',timezone('Asia/Bangkok',photo_points.awarded_at))::date < this_month
     union all
     select claims.user_id,
            date_trunc('month',claims.claim_date::timestamp)::date as month_start,
-           0::bigint as post_count,0::bigint as car_count,claims.points::bigint as login_count
+           0::bigint as post_count,0::bigint as car_count,0::bigint as upload_points,claims.points::bigint as login_count
     from public.community_daily_login_claims claims
     where claims.claim_date < this_month
   ), unarchived_events as (
@@ -186,7 +212,7 @@ begin
     select e.month_start,e.user_id,
            sum(e.post_count)::bigint as posts_shared,
            sum(e.car_count)::bigint as car_uploads,
-           sum(e.post_count+e.car_count+e.login_count)::bigint as points,
+           sum(e.post_count+e.upload_points+e.login_count)::bigint as points,
            case when cp.show_username then btrim(cp.username) else 'Anonymous contributor' end as username
     from unarchived_events e
     left join public.community_appearance cp on cp.user_id=e.user_id
