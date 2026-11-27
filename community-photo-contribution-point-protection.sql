@@ -36,13 +36,14 @@ begin
   if new.status = 'approved'
      and (tg_op = 'INSERT' or old.status is distinct from 'approved') then
     v_card_key :=
-      lower(btrim(new.brand)) || '|' ||
+      regexp_replace(lower(btrim(new.brand)), '[[:space:][:punct:]]+', '', 'g') || '|' ||
       case
-        when nullif(btrim(new.product_code), '') is not null
-          then 'code:' || lower(btrim(new.product_code))
-        else 'model:' || lower(btrim(new.vehicle_make)) || '|' ||
-             lower(btrim(new.name)) || '|' ||
-             lower(btrim(new.edition_type)) || '|' ||
+        when nullif(regexp_replace(lower(btrim(coalesce(new.product_code, ''))), '[[:space:][:punct:]]+', '', 'g'), '') is not null
+          then 'code:' || regexp_replace(lower(btrim(new.product_code)), '[[:space:][:punct:]]+', '', 'g')
+        else 'model:' ||
+             regexp_replace(lower(btrim(new.vehicle_make)), '[[:space:][:punct:]]+', '', 'g') || '|' ||
+             regexp_replace(lower(btrim(new.name)), '[[:space:][:punct:]]+', '', 'g') || '|' ||
+             regexp_replace(lower(btrim(new.edition_type)), '[[:space:][:punct:]]+', '', 'g') || '|' ||
              coalesce(new.release_year::text, '')
       end;
 
