@@ -37,18 +37,6 @@
       "photo": null
     },
     {
-      "manufacturer": "Johnny Lightning",
-      "productCode": "JLSP433",
-      "name": "Johnny Lightning Hobby Exclusive 2002 Subaru WRX \"Evelyn\" Twisted Metal in Collector Box 1:64 Scale Diecast",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-hobby-exclusive-2002-subaru-wrx-evelyn-twisted-metal-in-collector-box-1-64-scale-diecast-due-november-2026?variant=49257271361726",
-      "vendor": "JohnnyLightning",
-      "releaseStatus": "unconfirmed",
-      "editionType": "unconfirmed",
-      "verification": "NEEDS VERIFICATION",
-      "photo": null
-    },
-    {
       "manufacturer": "Ignition Model",
       "productCode": "IG3992",
       "name": "Ignition Model 1:64 RWB 993  in Matte Pink",
@@ -421,30 +409,6 @@
       "photo": null
     },
     {
-      "manufacturer": "Johnny Lightning",
-      "productCode": "JLSP441",
-      "name": "Johnny Lightning Hobby Exclusive 1970 Ford Ranchero 1:64 Scale Diecast",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-hobby-exclusive-1970-ford-ranchero-1-64-scale-diecast?variant=46512294887614",
-      "vendor": "JohnnyLightning",
-      "releaseStatus": "unconfirmed",
-      "editionType": "unconfirmed",
-      "verification": "NEEDS VERIFICATION",
-      "photo": null
-    },
-    {
-      "manufacturer": "Johnny Lightning",
-      "productCode": "JLSP440",
-      "name": "Johnny Lightning Hobby Exclusive 1991 Toyota MR2 1:64 Scale Diecast",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.autoworldstore.com/products/johnny-lightning-hobby-exclusive-1991-toyota-mr2-1-64-scale-diecast?variant=46512290824382",
-      "vendor": "JohnnyLightning",
-      "releaseStatus": "unconfirmed",
-      "editionType": "unconfirmed",
-      "verification": "NEEDS VERIFICATION",
-      "photo": null
-    },
-    {
       "manufacturer": "Ignition Model",
       "productCode": "IG3843",
       "name": "Ignition Model 1:64 Toyota Supra (JZA80) RZ Max Orido Edition in Blue Metallic",
@@ -458,11 +422,23 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "productCode": "T64T-TL001-EVA2",
-      "name": "1/64 Mitsubishi Fuso Super Great EVA Racing - Tarmac Works TRUCK64",
+      "productCode": "T64R-066-YL",
+      "name": "1/64 Pandem Mazda RX-7 FC3S Yellow - Tarmac Works ROAD64",
       "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-mitsubishi-fuso-super-great-eva-racing-tarmac-works-truck64-copy?variant=49232133325057",
+      "sourceUrl": "https://www.tarmacworks.com/products/1-64-pandem-mazda-rx-7-fc3s-yellow-tarmac-works-road64?variant=49232703488257",
       "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Hobby Japan",
+      "productCode": "HJDMD005",
+      "name": "Hobby Japan 1:64 Mitsubishi Lancer RS Evolution III / INITIAL D Seiji Iwaki VS Takumi Fujiwara",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-hobby-japan-1-64-mitsubishi-lancer-rs-evolution-iii-initial-d-seiji-iwaki-vs-takumi-fujiwara?variant=46996278870272",
+      "vendor": "Hobby Japan",
       "releaseStatus": "unconfirmed",
       "editionType": "unconfirmed",
       "verification": "NEEDS VERIFICATION",
@@ -484,13 +460,6 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "productCode": "T64G-061-SEAN",
-      "name": "1/64 Nissan Skyline (R32) Widebody - Designed by Jon Sibal - Sean Wotherspoon - Tarmac Works GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-nissan-skyline-r32-widebody-designed-by-jon-sibal-sean-wotherspoon-tarmac-works-global64?variant=51279809839361"
-    },
-    {
-      "manufacturer": "Tarmac Works",
       "productCode": "T64G-061-SEAN with PL",
       "name": "1/64 Nissan Skyline (R32) Widebody - Designed by Jon Sibal - Sean Wotherspoon with Tarmac Works x Leen Customs Pin Badge",
       "variant": "Default Title",
@@ -498,59 +467,10 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "productCode": "T64G-083-SC",
-      "name": "1/64 Porsche 928 S Safety Car - Tarmac Works x iXO Models GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-porsche-928-s-safety-car-tarmac-works-x-ixo-models-global64?variant=51279686172929"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-083-SC-B",
-      "name": "1/64 Porsche 928 S Safety Car (Blister) - Tarmac Works x iXO Models GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-porsche-928-s-safety-car-blister-tarmac-works-x-ixo-models-global64?variant=51279684141313"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-086-BL",
-      "name": "1/64 Ford Mustang GTD Blue - Tarmac Works GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-ford-mustang-gtd-blue-tarmac-works-x-ixo-models-global64?variant=51279664316673"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-086-BL-B",
-      "name": "1/64 Ford Mustang GTD Blue (Blister) - Tarmac Works GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-ford-mustang-gtd-blue-blister-tarmac-works-x-ixo-models-global64?variant=51279550742785"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-043-23SPA16",
-      "name": "1/64 Audi R8 LMS GT3 evo II 24h of SPA 2023 #16 - UNO Racing - Tarmac Works HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-audi-r8-lms-gt3-evo-ii-24h-of-spa-2023-16-uno-racing-tarmac-works-hobby64?variant=51279519416577"
-    },
-    {
-      "manufacturer": "Tarmac Works",
       "productCode": "T64-062-26SH",
       "name": "1/64 Mercedes-AMG GT3 Shanghai 8 Hours - Initial D Presentation - Climax Racing - Tarmac Works HOBBY64",
       "variant": "Default Title",
       "sourceUrl": "https://www.tarmacworks.com/products/1-64-mercedes-amg-gt3-shanghai-8-hours-initial-d-presentation-climax-racing-tarmac-works-hobby64?variant=51279504146689"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-084-25NUR33",
-      "name": "1/64 Porsche 911 GT3 R N\u00fcrburgring 24h 2025 #33 - Tarmac Works x iXO Models HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-porsche-911-gt3-r-nurburgring-24h-2025-33-tarmac-works-x-ixo-models-hobby64?variant=51279501263105"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-076-93IGT05",
-      "name": "1/64 Ferrari F40 GT Italian GT Championship 1993 #5 - Tarmac Works x iXO Models HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-ferrari-f40-gt-italian-gt-championship-1993-5-tarmac-works-x-ixo-models-hobby64?variant=51279498281217"
     },
     {
       "manufacturer": "Tarmac Works",
@@ -568,38 +488,10 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "productCode": "T64-043-25MGP36",
-      "name": "1/64 Audi R8 LMS GT3 evo II Macau GT Cup - FIA GT World Cup 2025 #13 Cinnamoroll - Uno Racing - Adderly Fong with Tarmac Cards - Tarmac Works HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-audi-r8-lms-gt3-evo-ii-macau-gt-cup-fia-gt-world-cup-2025-13-cinnamoroll-uno-racing-adderly-fong-with-tarmac-cards-tarmac-works-hobby64?variant=51279487041793"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-084-25DTM90",
-      "name": "1/64 Porsche 911 GT3 R DTM Champion 2025 #90 Ayhancan G\u00fcven - Tarmac Works x iXO Models HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-porsche-911-gt3-r-dtm-champion-2025-90-ayhancan-guven-tarmac-works-x-ixo-models-hobby64?variant=51279466889473"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-077-99MGP53",
-      "name": "1/64 Audi A4 quattro Macau Guia Race 1999 Winner #53 - Tarmac Works HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-audi-a4-quattro-macau-guia-race-1999-winner-53-tarmac-works-hobby64?variant=51279462891777"
-    },
-    {
-      "manufacturer": "Tarmac Works",
       "productCode": "T64G-023-EVA02-B",
       "name": "1/64 EVA RT PRODUCTION MODEL-02 S15 - Tarmac Works GLOBAL64 (Blister)",
       "variant": "Default Title",
       "sourceUrl": "https://www.tarmacworks.com/products/1-64-eva-rt-production-model-02-s15-tarmac-works-global64-blister-tarmac-works-global64-blister?variant=51012908777729"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-038-MI",
-      "name": "1/64 Toyota Hiace Widebody Monsters University with Tarmac Cards - Tarmac Works HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-toyota-hiace-widebody-monsters-university-with-tarmac-cards-tarmac-works-hobby64?variant=51012046356737"
     },
     {
       "manufacturer": "Tarmac Works",
@@ -610,73 +502,10 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "productCode": "T64-TL014-SD72",
-      "name": "1/64 Honda Civic TYPE R FK8 NASA Western Endurance Racing Championship 2021 #72 Student Driver (by Daniel Wu) - Tarmac Works HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-honda-civic-type-r-fk8-nasa-western-endurance-racing-championship-2021-72-student-driver-by-daniel-wu-tarmac-works-hobby64?variant=51012024008961"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-084-24NUR33",
-      "name": "1/64 Porsche 911 GT3 R N\u00fcrburgring 24h 2024 #33 - Tarmac Works x iXO Models HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-porsche-911-gt3-r-nurburgring-24h-2024-33-tarmac-works-x-ixo-models-hobby64?variant=51012015587585"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-081-BK",
-      "name": "1/64 VERTEX Toyota Aristo JZS161 Black - TOC Members Only Model - Tarmac Works GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-vertex-toyota-aristo-jzs161-black-toc-members-only-model-global64?variant=50663799914753"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-080-SL",
-      "name": "1/64 VERTEX Toyota Soarer JZZ30 Silver Special Edition - Tarmac Works GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-aston-martin-dbs-superleggera-brown-metallic-tarmac-works-x-ixo-models-global64-1?variant=50663792476417"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-080-SL-B",
-      "name": "1/64 VERTEX Toyota Soarer JZZ30 Silver Special Edition - Tarmac Works GLOBAL64 (Blister)",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-vertex-toyota-soarer-jzz30-silver-special-edition-blister-tarmac-works-global64?variant=50663774159105"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-TL058-RE",
-      "name": "1/64 Honda Ballade Sports MUGEN CR-X PRO Red - Tarmac Works GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-honda-ballade-sports-mugen-cr-x-pro-red-tarmac-works-global64?variant=50663712948481"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-091-DR",
-      "name": "1/64 LB-Super Silhouette Nissan SILVIA (S15) Drift 2025 - Tarmac Works HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-lb-super-silhouette-nissan-silvia-s15-drift-2025-tarmac-works-hobby64?variant=50662901055745"
-    },
-    {
-      "manufacturer": "Tarmac Works",
       "productCode": "T64-TL017-KJ",
       "name": "1/64 RWB 993 Karajishi Special Edition - Tarmac Works HOBBY64",
       "variant": "Default Title",
       "sourceUrl": "https://www.tarmacworks.com/products/1-64-rwb-993-karajishi-special-edition-tarmac-works-hobby64?variant=50367270617345"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-084-25SUZ13",
-      "name": "1/64 Porsche 911 GT3 R Suzuka 1000km - Intercontinental GT Challenge 2025 - Phantom Global Racing #13 with Tarmac Cards - Tarmac Works x iXO Models HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-porsche-911-gt3-r-suzuka-1000km-intercontinental-gt-challenge-2025-phantom-global-racing-13-with-tarmac-cards-tarmac-works-x-ixo-models-hobby64?variant=50367187288321"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-075-BC",
-      "name": "1/64 Ferrari F40 LM Chrome Blue - Tarmac Works x iXO Models HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-ferrari-f40-lm-chrome-blue-tarmac-works-x-ixo-models-hobby64?variant=50363556462849"
     },
     {
       "manufacturer": "Tarmac Works",
@@ -687,45 +516,10 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "productCode": "T64-TL014-SD07",
-      "name": "1/64 Honda Civic TYPE R FK8 NASA Western Endurance Racing Championship 2022 #7 Student Driver (by Daniel Wu) - Tarmac Works HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-honda-civic-type-r-fk8-nasa-western-endurance-racing-championship-2022-7-student-driver-tarmac-works-hobby64?variant=50251078500609"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-F070-OP3",
-      "name": "1/64 McLaren MCL60 Japanese Grand Prix 2023 #81 Oscar Piastri - Tarmac Works x iXO Models GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-mclaren-mcl60-japanese-grand-prix-2023-81-oscar-piastri-tarmac-works-x-ixo-models-global64?variant=50161207017729"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-049-94HKBR03",
-      "name": "1/64 Mitsubishi Lancer Evolution II Hong Kong Beijing Rally 1994 #3 - Tarmac Works GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-mitsubishi-lancer-evolution-ii-hong-kong-beijing-rally-1994-3-tarmac-works-global64?variant=50161182736641"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-049-93MSR01",
-      "name": "1/64 Lancia Delta HF Integrale Mog\u00fcrt-Salg\u00f3 Rallye 1993 Winner #1 - Tarmac Works HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-lancia-delta-hf-integrale-mogurt-salgo-rallye-1993-winner-1-tarmac-works-hobby64?variant=50160970006785"
-    },
-    {
-      "manufacturer": "Tarmac Works",
       "productCode": "T64G-018-MN",
       "name": "1/64 VERTEX Silvia (S 14) Minnie Mouse - Tarmac Works GLOBAL64",
       "variant": "Default Title",
       "sourceUrl": "https://www.tarmacworks.com/products/1-64-vertex-silvia-s-14-minnie-mouse-tarmac-works-global64?variant=49406253007105"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-F070-LN3",
-      "name": "1/64 McLaren MCL60 Japanese Grand Prix 2023 #4 Lando Norris - Tarmac Works x iXO Models GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-mclaren-mcl60-japanese-grand-prix-2023-4-lando-norris-tarmac-works-x-ixo-models-global64?variant=49405572808961"
     },
     {
       "manufacturer": "Tarmac Works",
@@ -743,27 +537,6 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "productCode": "T64-049-92SAF01",
-      "name": "1/64 Lancia Delta HF Integrale Safari Rally 1992 #1 - Tarmac Works HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-lancia-delta-hf-integrale-safari-rally-1992-1-tarmac-works-hobby64?variant=49232740548865"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-081-93RDF03",
-      "name": "1/64 Ford Escort RS Cosworth Tour de Corse - Rallye de France 1993 Winner #3 - Tarmac Works HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-ford-escort-rs-cosworth-tour-de-corse-rallye-de-france-1993-winner-3-tarmac-works-hobby64?variant=48763912585473"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64R-021-TMEB",
-      "name": "1/64 Mitsubishi Lancer Evolution VI Tommi Makinen Edition Blue - Tarmac Works ROAD64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/1-64-mitsubishi-lancer-evolution-vi-tommi-makinen-edition-blue-tarmac-works-road64?variant=48503750492417"
-    },
-    {
-      "manufacturer": "Tarmac Works",
       "productCode": "TW-Carpsule-blue",
       "name": "Carpsule 1/64 Model Car Bag Charm (Blue) - Tarmac Works",
       "variant": "Default Title",
@@ -775,41 +548,6 @@
       "name": "1/64 Mercedes-AMG F1 W14 E Performance Spanish Grand Prix Tyre Testing 2023 #47 Mick Schumacher - Tarmac Works X iXO Models GLOBAL64",
       "variant": "Default Title",
       "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mercedes-amg-f1-w14-e-performance-spanish-grand-prix-tyre-testing-2023-mick-schumacher-global64?variant=48062144971009"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64R-094-RE",
-      "name": "1/64 FIAT 131 ABARTH Rally Stradale Red - Tarmac Works ROAD64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-fiat-131-abarth-rally-stradale-red?variant=48062115741953"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-038-YAS",
-      "name": "1/64 Toyota Hiace Widebody Yasaki Special Edition - Tarmac Works HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-toyota-hiace-widebody-yasaki?variant=48062109417729"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-032-NYS",
-      "name": "1/64 Dodge Van New York Sunshine - New York Sunshine Special Edition - Tarmac Works GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-dodge-van-new-york-sunshine-new-york-sunshine-special-edition-global64?variant=47057741644033"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-TL001-NYS",
-      "name": "1/64 Honda Civic EG6 New York Sunshine - New York Sunshine Special Edition - Tarmac Works HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-honda-civic-eg6-new-york-sunshine-new-york-sunshine-special-edition-hobby64?variant=47057711890689"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64T-TL002-NYS",
-      "name": "1/64 Mitsubishi Fuso Canter New York Sunshine - New York Sunshine Special Edition - Tarmac Works TRUCK64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mitsubishi-fuso-canter-new-york-sunshine-new-york-sunshine-special-edition-truck64?variant=47057707008257"
     },
     {
       "manufacturer": "Tarmac Works",
@@ -827,24 +565,10 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "productCode": "T64G-069-PRE",
-      "name": "1/64 Porsche 911 GT3 Cup (type 996) Presentation - TWOC Members Only Model - Tarmac Works X iXO Models GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-porsche-911-gt3-cup-type-996-presentation-twoc-members-only-model-global64?variant=46968279204097"
-    },
-    {
-      "manufacturer": "Tarmac Works",
       "productCode": "T64G-073-PRE",
       "name": "1/64 Nissan S-Cargo Presentation with Tarmac Cards Combo Set - Tarmac Works GLOBAL64",
       "variant": "Default Title",
       "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-nissan-s-cargo-presentation-with-tarmac-cards-combo-set-global64?variant=46968154816769"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-038-HB-SET",
-      "name": "1/64 Toyota Hiace Widebody - Hashtag B Special Edition with Special Diorama Display Base \u2013 Tarmac Works HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-toyota-hiace-widebody-hashtag-b-special-edition-hobby64?variant=46968145477889"
     },
     {
       "manufacturer": "Tarmac Works",
@@ -855,80 +579,10 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "productCode": "T64-TL001-10TH",
-      "name": "1/64 Honda Civic EG6 Tarmac Works 10th Anniversary - Tarmac Works HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-honda-civic-eg6-tarmac-works-10th-anniversary-hobby64?variant=46968122114305"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-057-89DTM11",
-      "name": "1/64 Mercedes-Benz 190 E 2.5-16 EVO 1 DTM 1989 Dany Snobeck - Tarmac Works GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mercedes-benz-190-e-2-5-16-evo-1-dtm-1989-dany-snobeck-global64?variant=46926500856065"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-TL058-BL",
-      "name": "1/64 Honda Ballade Sports MUGEN CR-X PRO Blue - Tarmac Works GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-honda-ballade-sports-mugen-cr-x-pro-blue-global64?variant=46926500659457"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-052-71BRE46",
-      "name": "1/64 BRE Datsun 510 Trans-Am 2.5 Championship 1971 #46 - USA Special Edition - Tarmac Works HOBBY64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-bre-datsun-510-trans-am-2-5-championship-1971-46-usa-special-edition-hobby64?variant=46926496399617"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64R-052-BB",
-      "name": "1/64 BRE Datsun 510 Brock Buster Peter Brock \u2013 USA Special Edition - Tarmac Works ROAD64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-bre-datsun-510-brock-buster-peter-brock-usa-special-edition-road64?variant=46926495252737"
-    },
-    {
-      "manufacturer": "Tarmac Works",
       "productCode": "T64G-067-RE",
       "name": "1/64 Saab 900 Turbo Convertible Red - Tarmac Works GLOBAL64",
       "variant": "Default Title",
       "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-saab-900-turbo-convertible-red-global64?variant=46779318567169"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-072-BK",
-      "name": "1/64 Mercedes-Benz S-Class Wald Black - Tarmac Works GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mercedes-benz-s-class-wald-black-global64?variant=46779318305025"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-074-BL",
-      "name": "1/64 Nissan VeilSide FFZ400 Fairlady Z Blue - Tarmac Works GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-nissan-veilside-ffz400-fairlady-z-blue-global64?variant=46779315978497"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64R-TL022-BL",
-      "name": "1/64 Honda Integra TYPE R DC5 Custom Blue Metallic - Tarmac Works ROAD64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-honda-integra-type-r-dc5-custom-blue-metallic-road64?variant=46779308114177"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-TL035-TCF",
-      "name": "1/64 Pagani Huayra R Turquoise Carbon Fiber \u2013 USA Special Edition - Tarmac Works GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-pagani-huayra-r-turquoise-carbon-fiber-usa-special-edition-global64?variant=46742002270465"
-    },
-    {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64G-047-84ROC05",
-      "name": "1/64 Mercedes-Benz 190 E 2.3-16 Race of Champion 1984 #5 Alain Prost - Tarmac Works GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mercedes-benz-190-e-2-3-16-race-of-champion-1984-alain-prost-5-global64?variant=46741865955585"
     },
     {
       "manufacturer": "Tarmac Works",
@@ -3684,6 +3338,16 @@
       "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-lamborghini-countach-liberty-walk-in-white?variant=48771933372672"
     },
     {
+      "manufacturer": "Johnny Lightning",
+      "reason": "possible existing SKU",
+      "sku": "JLSP433",
+      "variant_id": 49257271361726,
+      "title": "Johnny Lightning Hobby Exclusive 2002 Subaru WRX \"Evelyn\" Twisted Metal in Collector Box 1:64 Scale Diecast",
+      "variant": "Default Title",
+      "vendor": "JohnnyLightning",
+      "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-hobby-exclusive-2002-subaru-wrx-evelyn-twisted-metal-in-collector-box-1-64-scale-diecast-due-november-2026?variant=49257271361726"
+    },
+    {
       "manufacturer": "Tarmac Works",
       "reason": "possible existing SKU",
       "sku": "T64G-063-BE-B",
@@ -4014,6 +3678,26 @@
       "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-toyota-supra-designed-by-joshua-vides?variant=47353185435904"
     },
     {
+      "manufacturer": "Johnny Lightning",
+      "reason": "possible existing SKU",
+      "sku": "JLSP441",
+      "variant_id": 46512294887614,
+      "title": "Johnny Lightning Hobby Exclusive 1970 Ford Ranchero 1:64 Scale Diecast",
+      "variant": "Default Title",
+      "vendor": "JohnnyLightning",
+      "url": "https://www.autoworldstore.com/products/johnny-lightning-hobby-exclusive-1970-ford-ranchero-1-64-scale-diecast?variant=46512294887614"
+    },
+    {
+      "manufacturer": "Johnny Lightning",
+      "reason": "possible existing SKU",
+      "sku": "JLSP440",
+      "variant_id": 46512290824382,
+      "title": "Johnny Lightning Hobby Exclusive 1991 Toyota MR2 1:64 Scale Diecast",
+      "variant": "Default Title",
+      "vendor": "JohnnyLightning",
+      "url": "https://www.autoworldstore.com/products/johnny-lightning-hobby-exclusive-1991-toyota-mr2-1-64-scale-diecast?variant=46512290824382"
+    },
+    {
       "manufacturer": "Tarmac Works",
       "reason": "possible existing SKU",
       "sku": "T64G-042-GR",
@@ -4062,6 +3746,26 @@
       "variant": "Default Title",
       "vendor": "Tarmac Works",
       "url": "https://www.tarmacworks.com/products/ig-1-64-toyota-supra-jza80-rz-red-tarmac-special-edition?variant=46968071913729"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64T-TL001-EVA2",
+      "variant_id": 49232133325057,
+      "title": "1/64 Mitsubishi Fuso Super Great EVA Racing - Tarmac Works TRUCK64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/1-64-mitsubishi-fuso-super-great-eva-racing-tarmac-works-truck64-copy?variant=49232133325057"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible bundle",
+      "sku": "T64G-061-HKS",
+      "variant_id": 48503777558785,
+      "title": "1/64 Nissan Skyline (R32) Widebody HKS with Tarmac Cards Combo Set - Designed by Jon Sibal - Tarmac Works GLOBAL64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/1-64-nissan-skyline-r32-widebody-hks-with-tarmac-cards-combo-set-tarmac-works-global64?variant=48503777558785"
     }
   ]
 }
