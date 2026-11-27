@@ -530,6 +530,30 @@
     },
     {
       "manufacturer": "Tarmac Works",
+      "productCode": "T64G-061-10TH",
+      "name": "1/64 Nissan Skyline (R32) Widebody Tarmac Works 10th Anniversary - Designed by Jon Sibal - Tarmac Works GLOBAL64",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-nissan-skyline-r32-widebody-tarmac-works-10th-anniversary-designed-by-jon-sibal-global64?variant=46968148525313",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64-043-24MGP30",
+      "name": "Tarmac Works 1:64 Audi R8 LMS GT3 evo II Sugo \u2013 Macau GT Cup \u2013 FIA GT World Cup 2024 Uno Racing James Yu \u2013 Hobby64 & Tarmac Cards",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-audi-r8-lms-gt3-evo-ii-sugo-macau-gt-cup-fia-gt-world-cup-2024-uno-racing-james-yu-hobby64-tarmac-cards?variant=46883179036928",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
       "productCode": "T64G-088-BL",
       "name": "1/64 URAS Skyline ER34 Blue - Tarmac Works GLOBAL64",
       "variant": "Default Title",
@@ -3065,6 +3089,36 @@
       "variant": "Default Title",
       "vendor": "Tarmac Works",
       "url": "https://www.tarmacworks.com/products/1-64-rwb-993-liberty-walk-with-container-packaging-tarmac-works-hobby64?variant=48277089583361"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "duplicate candidate SKU; inspect variants manually",
+      "sku": "T64G-061-10TH",
+      "variant_id": 46794782638336,
+      "title": "Tarmac Works 1:64 Nissan Skyline (R32) Widebody Designed by Jon Sibal Tarmac Works 10th Anniversary Limited Edition",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.modelcarshouston.com/products/tarmac-works-1-64-nissan-skyline-r32-widebody-designed-by-jon-sibal-tarmac-works-10th-anniversary-limited-edition?variant=46794782638336"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-R89C-89LM23",
+      "variant_id": 46762332487936,
+      "title": "INNO64 1:64 Nissan R89C Le Mans 1989 No23  Masahiro Hasemi / Kazuyoshi Hoshino / Toshio Suzuki",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-r89c-le-mans-1989-no23-masahiro-hasemi-kazuyoshi-hoshino-toshio-suzuki?variant=46762332487936"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible bundle",
+      "sku": "T64-043-24MGP30",
+      "variant_id": 48062072619265,
+      "title": "1/64 Audi R8 LMS GT3 evo II Macau GT Cup - FIA GT World Cup 2024 Uno Racing #30 with Tarmac Cards Combo Set and Truck Packaging - Tarmac Works HOBBY64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-audi-r8-lms-gt3-evo-ii-macau-gt-cup-fia-gt-world-cup-2024-uno-racing-30-with-tarmac-cards-and-truck-combo-set?variant=48062072619265"
     }
   ]
 }

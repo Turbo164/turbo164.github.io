@@ -16023,5 +16023,75 @@
       }
     ],
     "status": "official discovery only; exact variant verification pending"
+  },
+  "tarmacworks|T64G-061-10TH": {
+    "checked": "2026-11-27T19:50:11.252805+07:00",
+    "hits": [
+      {
+        "available": false,
+        "body": "<p>1/64 scale die-cast<br></p>\n<p>Limited production run and will never be produced again<br></p>\n<p>Detailed rims &amp; rubber wheels</p>\n<p>Free rolling wheels</p>\n<p>Display base and acrylic cover with a paper sleeve box</p>\n<p>Fully licensed product</p>",
+        "compare_at_price_max": "0.00",
+        "compare_at_price_min": "0.00",
+        "handle": "tarmac-works-1-64-nissan-skyline-r32-widebody-tarmac-works-10th-anniversary-designed-by-jon-sibal-global64",
+        "id": 8975144747265,
+        "image": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64G-061-10TH_M01_ad8d43a4-55d2-4f28-835d-301c74d8d335.jpg?v=1764835537",
+        "price": "17.90",
+        "price_max": "17.90",
+        "price_min": "17.90",
+        "tags": [
+          "1/64",
+          "HOBBY64/64+",
+          "New Release"
+        ],
+        "title": "1/64 Nissan Skyline (R32) Widebody Tarmac Works 10th Anniversary - Designed by Jon Sibal - Tarmac Works GLOBAL64",
+        "type": "1/64 Diecast",
+        "url": "/products/tarmac-works-1-64-nissan-skyline-r32-widebody-tarmac-works-10th-anniversary-designed-by-jon-sibal-global64?_pos=1&_psq=T64G-061-10TH&_psid=1ca471be5&_ss=e",
+        "variants": [],
+        "vendor": "Tarmac Works",
+        "featured_image": {
+          "alt": "1/64 Nissan Skyline (R32) Widebody Tarmac Works 10th Anniversary - Designed by Jon Sibal - Tarmac Works GLOBAL64",
+          "aspect_ratio": 1.5,
+          "height": 3958,
+          "url": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64G-061-10TH_M01_ad8d43a4-55d2-4f28-835d-301c74d8d335.jpg?v=1764835537",
+          "width": 5937
+        }
+      }
+    ],
+    "status": "official discovery only; exact variant verification pending"
+  },
+  "tarmacworks|T64-043-24MGP30": {
+    "checked": "2026-11-27T19:50:11.252805+07:00",
+    "hits": [
+      {
+        "available": false,
+        "body": "<p>1/64 scale die-cast<br></p>\n<p>Limited production run and will never be produced again<br></p>\n<p>Detailed rims &amp; rubber wheels<br></p>\n<p>Detailed front and rear lights</p>\n<p>Truck packaging with a paper box</p>\n<p>With 1 x poster</p>\n<p>Fully licensed product<br></p>\n<p>\u00a0</p>\n<p><span style=\"color: rgb(255, 128, 0);\"><strong>AUTOMOTIVE COLLECTOR CARDS</strong></span></p>\n<p>\u2060Each pack comes with 3 cards</p>\n<p>Hunt down the non-serial Silver and Thunderbolt Parallel!</p>\n<p>\u2060Chase the very rare Lavender [#'d/99] and Nu-Disco [#'d/199] parallel card!</p>",
+        "compare_at_price_max": "0.00",
+        "compare_at_price_min": "0.00",
+        "handle": "tarmac-works-1-64-audi-r8-lms-gt3-evo-ii-macau-gt-cup-fia-gt-world-cup-2024-uno-racing-30-with-tarmac-cards-and-truck-combo-set",
+        "id": 9027132981505,
+        "image": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64-043-24MGP30_M01.jpg?v=1770867570",
+        "price": "43.90",
+        "price_max": "43.90",
+        "price_min": "43.90",
+        "tags": [
+          "1/64",
+          "HOBBY64/64+",
+          "New Release"
+        ],
+        "title": "1/64 Audi R8 LMS GT3 evo II Macau GT Cup - FIA GT World Cup 2024 Uno Racing #30 with Tarmac Cards Combo Set and Truck Packaging - Tarmac Works HOBBY64",
+        "type": "1/64 Diecast",
+        "url": "/products/tarmac-works-1-64-audi-r8-lms-gt3-evo-ii-macau-gt-cup-fia-gt-world-cup-2024-uno-racing-30-with-tarmac-cards-and-truck-combo-set?_pos=1&_psq=T64-043-24MGP30&_psid=71bd5973c&_ss=e",
+        "variants": [],
+        "vendor": "Tarmac Works",
+        "featured_image": {
+          "alt": "1/64 Audi R8 LMS GT3 evo II Macau GT Cup - FIA GT World Cup 2024 Uno Racing #30 with Tarmac Cards Combo Set and Truck Packaging - Tarmac Works HOBBY64",
+          "aspect_ratio": 1.5,
+          "height": 3958,
+          "url": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64-043-24MGP30_M01.jpg?v=1770867570",
+          "width": 5937
+        }
+      }
+    ],
+    "status": "official discovery only; exact variant verification pending"
   }
 }
