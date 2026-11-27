@@ -1,18 +1,18 @@
 {
-  "time": "2026-11-27T13:53:01.018023+07:00",
+  "time": "2026-11-27T15:51:35.521213+07:00",
   "pilot_only": false,
   "version": "6.3",
-  "catalog_master_commit": "720b6a1e6312c084ce77a065d0039549168fa4cc",
-  "catalog_master_count": 510,
-  "official_exact_candidates": 192,
+  "catalog_master_commit": "43ae746eed5da4e3c3b449b3b919c17142e3ae98",
+  "catalog_master_count": 511,
+  "official_exact_candidates": 193,
   "independent_exact_candidates": 0,
-  "new_leads": 175,
+  "new_leads": 78,
   "historical_master_present": false,
-  "cumulative_count": 6675,
+  "cumulative_count": 6753,
   "review_candidates": 1214,
-  "elapsed_research_seconds": 3049,
-  "catalog_count": 511,
-  "lead_count": 6675,
+  "elapsed_research_seconds": 3094,
+  "catalog_count": 513,
+  "lead_count": 6753,
   "sources": [
     [
       "Kaido House",
@@ -236,23 +236,7 @@
     [
       "wholesale",
       "new listing leads",
-      1,
-      0,
-      "product links",
-      45
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      2,
-      0,
-      "product links",
-      47
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      3,
+      11,
       0,
       "product links",
       48
@@ -260,23 +244,15 @@
     [
       "wholesale",
       "new listing leads",
-      4,
+      12,
       0,
       "product links",
-      41
+      42
     ],
     [
       "wholesale",
       "new listing leads",
-      5,
-      0,
-      "product links",
-      47
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      6,
+      13,
       0,
       "product links",
       48
@@ -284,7 +260,7 @@
     [
       "wholesale",
       "new listing leads",
-      7,
+      14,
       0,
       "product links",
       48
@@ -292,15 +268,15 @@
     [
       "wholesale",
       "new listing leads",
-      8,
+      15,
       0,
       "product links",
-      44
+      48
     ],
     [
       "wholesale",
       "new listing leads",
-      9,
+      16,
       0,
       "product links",
       46
@@ -308,10 +284,34 @@
     [
       "wholesale",
       "new listing leads",
-      10,
+      17,
       0,
       "product links",
       48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      18,
+      0,
+      "product links",
+      45
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      19,
+      0,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      20,
+      0,
+      "product links",
+      45
     ],
     [
       "hobbysearch",
@@ -321,49 +321,49 @@
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/p_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/t_guide.html",
+      47
+    ],
+    [
+      "Hot Wheels",
+      "historical archive leads",
+      "https://southtexasdiecast.com/hwguide/treasurehuntset.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/p_guide.html",
-      45
+      "https://southtexasdiecast.com/hwguide/u_guide.html",
+      6
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/q_guide.html",
-      7
+      "https://southtexasdiecast.com/hwguide/v_ccguide.html",
+      1
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/r_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/v_guide.html",
+      19
+    ],
+    [
+      "Hot Wheels",
+      "historical archive leads",
+      "https://southtexasdiecast.com/hwguide/w_ccguide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/r_guide.html",
-      41
+      "https://southtexasdiecast.com/hwguide/w_guide.html",
+      5
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/s_ccguide.html",
-      0
-    ],
-    [
-      "Hot Wheels",
-      "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/s_guide.html",
-      82
-    ],
-    [
-      "Hot Wheels",
-      "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/t_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/wheelguide.html",
       0
     ],
     [
@@ -376,43 +376,43 @@
       "wholesale product pages attempted",
       120,
       "exact listing details",
-      1311
+      1431
     ],
     [
       "V4.1",
       "new page inspections",
-      175,
+      78,
       "pending accessible queue exhausted"
     ],
     [
       "V4.6",
       "product links inspected",
-      24223,
+      24390,
       "exact scale/SKU matches",
-      135
+      141
     ],
     [
       "V4.9",
       "cached product requests avoided",
       0,
       "unique cached endpoints",
-      1136
+      1163
     ],
     [
       "V4.5",
       "independent storefront searches",
-      325,
+      336,
       "wholesale SKU backlog",
-      1254,
+      1373,
       "new search records inspected",
-      325
+      336
     ],
     [
       "V4.7",
       "manufacturer-matched review candidates",
-      42,
+      45,
       "excluded or duplicate",
-      99
+      102
     ],
     [
       "V5.0",
@@ -424,14 +424,14 @@
     [
       "V4.8",
       "official-host candidates",
-      216,
+      215,
       "publication approved",
       0
     ],
     [
       "V5.2",
       "official detail evidence records",
-      234
+      236
     ],
     [
       "V6.1",
@@ -441,7 +441,7 @@
     [
       "V5.1",
       "unique official candidates for final review",
-      192,
+      193,
       "approved for publication",
       0
     ],
@@ -450,17 +450,17 @@
       "historical master available",
       false,
       "combined records",
-      6675,
+      6753,
       "cross-source candidates",
       0
     ]
   ],
   "publication": "verified readback",
-  "run_id": "45954702793",
+  "run_id": "45968926003",
   "run_attempt": "1",
-  "commit": "720b6a1e6312c084ce77a065d0039549168fa4cc",
-  "published": 1,
-  "eligible_verified": 1,
+  "commit": "43ae746eed5da4e3c3b449b3b919c17142e3ae98",
+  "published": 2,
+  "eligible_verified": 2,
   "research_status": "completed",
   "publication_step_outcome": "success"
 }

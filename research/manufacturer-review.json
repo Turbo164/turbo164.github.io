@@ -481,11 +481,35 @@
       "photo": null
     },
     {
-      "manufacturer": "Tarmac Works",
-      "productCode": "T64-067-95LM23",
-      "name": "1/64 Nissan NISMO GT-R LM 24h of Le Mans 1995 Presentation #23 - Tarmac Works HOBBY64",
+      "manufacturer": "MotorHelix",
+      "productCode": "M65811",
+      "name": "MotorHelix 1:64 Honda Integra Type-R (DC5) MUGEN in Championship White",
       "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-nissan-nismo-gt-r-lm-24h-of-le-mans-1995-presentation-23-hobby64?variant=46521943720193",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-honda-integra-type-r-dc5-mugen-in-championship-white?variant=48159519604992",
+      "vendor": "MotorHelix",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "MotorHelix",
+      "productCode": "M65146",
+      "name": "MotorHelix 1:64 Honda S2000 J's Racing in New Indy Yellow Pearl",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-honda-s2000-js-racing-new-indy-yellow-pearl?variant=47127953408256",
+      "vendor": "MotorHelix",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64-094-78RP04",
+      "name": "Tarmac Works 1:64 FIAT 131 ABARTH Rally Rallye de Portugal \u2013 Vinho do Porto 1978 Winner Markku Al\u00e9n / Ilkka Kivim\u00e4ki",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-fiat-131-abarth-rally-rallye-de-portugal-vinho-do-porto-1978-winner-markku-alen-ilkka-kivimaki?variant=46883438952704",
       "vendor": "Tarmac Works",
       "releaseStatus": "unconfirmed",
       "editionType": "unconfirmed",
@@ -494,11 +518,23 @@
     },
     {
       "manufacturer": "MotorHelix",
-      "productCode": "M65811",
-      "name": "MotorHelix 1:64 Honda Integra Type-R (DC5) MUGEN in Championship White",
+      "productCode": "M65145",
+      "name": "MotorHelix 1:64 Honda S2000 J's Racing in Moon Rock Metallic",
       "variant": "Default Title",
-      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-honda-integra-type-r-dc5-mugen-in-championship-white?variant=48159519604992",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-18-honda-s2000-js-racing-moon-rock-metallic?variant=47127927259392",
       "vendor": "MotorHelix",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64-081-94RS15",
+      "name": "Tarmac Works 1:64 Ford Escort RS Cosworth WRC Rallye Sanremo 1994 \u2013 Malcolm Wilson / Bryan Thomas",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-ford-escort-rs-cosworth-wrc-rallye-sanremo-1994-malcolm-wilson-bryan-thomas?variant=46883129852160",
+      "vendor": "Tarmac Works",
       "releaseStatus": "unconfirmed",
       "editionType": "unconfirmed",
       "verification": "NEEDS VERIFICATION",
@@ -2943,6 +2979,16 @@
       "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-honda-civic-fk8-type-r-in-white?variant=46693407195392"
     },
     {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64-067-95LM23",
+      "variant_id": 46521943720193,
+      "title": "1/64 Nissan NISMO GT-R LM 24h of Le Mans 1995 Presentation #23 - Tarmac Works HOBBY64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-nissan-nismo-gt-r-lm-24h-of-le-mans-1995-presentation-23-hobby64?variant=46521943720193"
+    },
+    {
       "manufacturer": "INNO64",
       "reason": "manufacturer mismatch or missing vendor",
       "sku": "IN64-RX3-KTYM",
@@ -2951,6 +2997,26 @@
       "variant": "Default Title",
       "vendor": "Inno Models",
       "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-rx-3-savanna-lbwk-katayama-racing-livery?variant=46693406376192"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "duplicate candidate SKU; inspect variants manually",
+      "sku": "T64-094-78RP04",
+      "variant_id": 48503751082241,
+      "title": "1/64 FIAT 131 ABARTH Rally Rallye de Portugal - Vinho do Porto 1978 Winner #04 - Tarmac Works HOBBY64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/1-64-fiat-131-abarth-rally-rallye-de-portugal-vinho-do-porto-1978-winner-04-tarmac-works-hobby64?variant=48503751082241"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "duplicate candidate SKU; inspect variants manually",
+      "sku": "T64-081-94RS15",
+      "variant_id": 48503762518273,
+      "title": "1/64 Ford Escort RS Cosworth WRC Rallye Sanremo 1994 #15 - Tarmac Works HOBBY64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/1-64-ford-escort-rs-cosworth-wrc-rallye-sanremo-1994-15-tarmac-works-hobby64?variant=48503762518273"
     }
   ]
 }

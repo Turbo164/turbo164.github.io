@@ -15918,5 +15918,75 @@
       }
     ],
     "status": "official discovery only; exact variant verification pending"
+  },
+  "tarmacworks|T64-094-78RP04": {
+    "checked": "2026-11-27T15:51:35.521213+07:00",
+    "hits": [
+      {
+        "available": false,
+        "body": "<p>1/64 scale die-cast<br></p>\n<p>Limited production run and will never be produced again<br></p>\n<p>Detailed rims &amp; rubber wheels<br></p>\n<p>Detailed front and rear lights<br></p>\n<p>Display base and acrylic cover with a paper sleeve box</p>\n<p>Fully licensed product</p>",
+        "compare_at_price_max": "0.00",
+        "compare_at_price_min": "0.00",
+        "handle": "1-64-fiat-131-abarth-rally-rallye-de-portugal-vinho-do-porto-1978-winner-04-tarmac-works-hobby64",
+        "id": 9117838311681,
+        "image": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64-094-78RP04_M01.jpg?v=1776072075",
+        "price": "21.90",
+        "price_max": "21.90",
+        "price_min": "21.90",
+        "tags": [
+          "1/64",
+          "HOBBY64/64+",
+          "New Release"
+        ],
+        "title": "1/64 FIAT 131 ABARTH Rally Rallye de Portugal - Vinho do Porto 1978 Winner #04 - Tarmac Works HOBBY64",
+        "type": "1/64 Diecast",
+        "url": "/products/1-64-fiat-131-abarth-rally-rallye-de-portugal-vinho-do-porto-1978-winner-04-tarmac-works-hobby64?_pos=1&_psq=T64-094-78RP04&_psid=e97efec10&_ss=e",
+        "variants": [],
+        "vendor": "Tarmac Works",
+        "featured_image": {
+          "alt": "1/64 FIAT 131 ABARTH Rally Rallye de Portugal - Vinho do Porto 1978 Winner #04 - Tarmac Works HOBBY64",
+          "aspect_ratio": 1.5,
+          "height": 2762,
+          "url": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64-094-78RP04_M01.jpg?v=1776072075",
+          "width": 4143
+        }
+      }
+    ],
+    "status": "official discovery only; exact variant verification pending"
+  },
+  "tarmacworks|T64-081-94RS15": {
+    "checked": "2026-11-27T15:51:35.521213+07:00",
+    "hits": [
+      {
+        "available": false,
+        "body": "<p><span style=\"color: rgb(255, 128, 0);\"><strong>New Tooling</strong></span></p>\n<p><span style=\"color: rgb(255, 128, 0);\"><strong>Decal Stickers Included</strong></span></p>\n<p>1/64 scale die-cast<br></p>\n<p>Limited production run and will never be produced again<br></p>\n<p>Detailed rims &amp; rubber wheels<br></p>\n<p>Detailed front and rear lights<br></p>\n<p>Display base and acrylic cover with a paper sleeve box</p>\n<p>Fully licensed product</p>",
+        "compare_at_price_max": "0.00",
+        "compare_at_price_min": "0.00",
+        "handle": "1-64-ford-escort-rs-cosworth-wrc-rallye-sanremo-1994-15-tarmac-works-hobby64",
+        "id": 9117839393025,
+        "image": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64-081-94RS15_M01.jpg?v=1776072589",
+        "price": "21.90",
+        "price_max": "21.90",
+        "price_min": "21.90",
+        "tags": [
+          "1/64",
+          "HOBBY64/64+",
+          "New Release"
+        ],
+        "title": "1/64 Ford Escort RS Cosworth WRC Rallye Sanremo 1994 #15 - Tarmac Works HOBBY64",
+        "type": "1/64 Diecast",
+        "url": "/products/1-64-ford-escort-rs-cosworth-wrc-rallye-sanremo-1994-15-tarmac-works-hobby64?_pos=1&_psq=T64-081-94RS15&_psid=9550ceed7&_ss=e",
+        "variants": [],
+        "vendor": "Tarmac Works",
+        "featured_image": {
+          "alt": "1/64 Ford Escort RS Cosworth WRC Rallye Sanremo 1994 #15 - Tarmac Works HOBBY64",
+          "aspect_ratio": 1.5,
+          "height": 2248,
+          "url": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64-081-94RS15_M01.jpg?v=1776072589",
+          "width": 3373
+        }
+      }
+    ],
+    "status": "official discovery only; exact variant verification pending"
   }
 }
