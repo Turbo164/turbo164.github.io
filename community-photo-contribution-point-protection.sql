@@ -11,6 +11,8 @@ create table if not exists public.community_model_reward_config (
 insert into public.community_model_reward_config (id)
 values (true)
 on conflict (id) do nothing;
+alter table public.community_model_reward_config enable row level security;
+revoke all on public.community_model_reward_config from anon, authenticated;
 
 create table if not exists public.community_model_submission_points (
   user_id uuid not null references auth.users(id) on delete cascade,
