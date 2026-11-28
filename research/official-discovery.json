@@ -16624,5 +16624,75 @@
     "checked": "2026-11-28T17:39:40.400856+07:00",
     "hits": [],
     "status": "official discovery only; exact variant verification pending"
+  },
+  "tarmacworks|T64-079-K3V": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "available": false,
+        "body": "<p>1/64 scale die-cast<br></p>\n<p>Limited production run and will never be produced again<br></p>\n<p>Detailed rims &amp; rubber wheels<br></p>\n<p>Detailed front and rear lights<br></p>\n<p>Display base and acrylic cover with a paper sleeve box</p>\n<p>Fully licensed product</p>\n<p><span style=\"color: rgb(255, 128, 0);\"><strong>AUTOMOTIVE COLLECTOR CARDS</strong></span></p>\n<p>\u2060Each pack comes with 2 cards</p>\n<p>Hunt down the non-serial Silver and Bisimoto Parallel!</p>\n<p>\u2060Chase the very rare Disco [#'d/199] parallel card!</p>",
+        "compare_at_price_max": "0.00",
+        "compare_at_price_min": "0.00",
+        "handle": "tarmac-works-1-64-bisimoto-porsche-935-k3v-with-tarmac-cards-combo-set-hobby64",
+        "id": 8826907263233,
+        "image": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64-079-K3V_M03.jpg?v=1751425839",
+        "price": "24.90",
+        "price_max": "24.90",
+        "price_min": "24.90",
+        "tags": [
+          "1/64",
+          "HOBBY64/64+",
+          "New Release"
+        ],
+        "title": "1/64 Bisimoto Porsche 935 K3V with Tarmac Cards Combo Set - Tarmac Works  X iXO Models HOBBY64",
+        "type": "1/64 Diecast",
+        "url": "/products/tarmac-works-1-64-bisimoto-porsche-935-k3v-with-tarmac-cards-combo-set-hobby64?_pos=1&_psq=T64-079-K3V&_psid=e0158be4d&_ss=e",
+        "variants": [],
+        "vendor": "Tarmac Works",
+        "featured_image": {
+          "alt": "1/64 Bisimoto Porsche 935 K3V with Tarmac Cards Combo Set - Tarmac Works  X iXO Models HOBBY64",
+          "aspect_ratio": 1.5,
+          "height": 3958,
+          "url": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64-079-K3V_M03.jpg?v=1751425839",
+          "width": 5937
+        }
+      }
+    ],
+    "status": "official discovery only; exact variant verification pending"
+  },
+  "tarmacworks|T64-067-TC": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "available": false,
+        "body": "<p><span style=\"color: rgb(255, 128, 0);\"><strong>New Tooling</strong></span></p>\n<p>1/64 scale die-cast<br></p>\n<p>Limited production run and will never be produced again<br></p>\n<p>Detailed rims &amp; rubber wheels<br></p>\n<p>Detailed front and rear lights<br></p>\n<p>Display base and acrylic cover with a paper sleeve box</p>\n<p>Fully licensed product</p>",
+        "compare_at_price_max": "0.00",
+        "compare_at_price_min": "0.00",
+        "handle": "tarmac-works-1-64-nismo-gt-r-lm-1995-launch-ver-hobby64",
+        "id": 8813163380993,
+        "image": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64-067-TC_M01.jpg?v=1749441361",
+        "price": "21.90",
+        "price_max": "21.90",
+        "price_min": "21.90",
+        "tags": [
+          "1/64",
+          "HOBBY64/64+",
+          "New Release"
+        ],
+        "title": "1/64 NISMO GT-R LM (1995 Launch Ver.) - Tarmac Works HOBBY64",
+        "type": "1/64 Diecast",
+        "url": "/products/tarmac-works-1-64-nismo-gt-r-lm-1995-launch-ver-hobby64?_pos=1&_psq=T64-067-TC&_psid=724eda0f2&_ss=e",
+        "variants": [],
+        "vendor": "Tarmac Works",
+        "featured_image": {
+          "alt": "1/64 NISMO GT-R LM (1995 Launch Ver.) - Tarmac Works HOBBY64",
+          "aspect_ratio": 1.5,
+          "height": 3958,
+          "url": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64-067-TC_M01.jpg?v=1749441361",
+          "width": 5937
+        }
+      }
+    ],
+    "status": "official discovery only; exact variant verification pending"
   }
 }

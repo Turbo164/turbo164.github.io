@@ -1,16 +1,16 @@
 {
-  "time": "2026-11-28T17:39:40.400856+07:00",
+  "time": "2026-11-28T19:41:09.518819+07:00",
   "pilot_only": false,
   "version": "6.3",
   "catalog_master_commit": "ea1e52e3e0d437cebaae863676a2a35e5aebabff",
   "catalog_master_count": 522,
-  "official_exact_candidates": 195,
+  "official_exact_candidates": 196,
   "independent_exact_candidates": 0,
   "new_leads": 0,
   "historical_master_present": false,
   "cumulative_count": 6763,
   "review_candidates": 1214,
-  "elapsed_research_seconds": 2616,
+  "elapsed_research_seconds": 2732,
   "catalog_count": 522,
   "lead_count": 6763,
   "sources": [
@@ -147,7 +147,7 @@
     [
       "wholesale",
       "new listing leads",
-      41,
+      1,
       0,
       "product links",
       45
@@ -155,15 +155,74 @@
     [
       "wholesale",
       "new listing leads",
-      42,
+      2,
       0,
       "product links",
-      15
+      47
     ],
     [
       "wholesale",
-      "no parseable product links",
-      43
+      "new listing leads",
+      3,
+      0,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      4,
+      0,
+      "product links",
+      41
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      5,
+      0,
+      "product links",
+      47
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      6,
+      0,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      7,
+      0,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      8,
+      0,
+      "product links",
+      44
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      9,
+      0,
+      "product links",
+      46
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      10,
+      0,
+      "product links",
+      48
     ],
     [
       "hobbysearch",
@@ -173,49 +232,49 @@
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/w_guide.html",
+      "https://southtexasdiecast.com/hwguide/1960_1969_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/wheelguide.html",
+      "https://southtexasdiecast.com/hwguide/1968guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/x_guide.html",
+      "https://southtexasdiecast.com/hwguide/1969guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/y_guide.html",
+      "https://southtexasdiecast.com/hwguide/1970_1979_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/z_guide.html",
+      "https://southtexasdiecast.com/hwguide/1970guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1900_1939_guide.html",
+      "https://southtexasdiecast.com/hwguide/1971guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1940_1949_guide.html",
+      "https://southtexasdiecast.com/hwguide/1972guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1950_1959_guide.html",
+      "https://southtexasdiecast.com/hwguide/1973guide.html",
       0
     ],
     [
@@ -239,37 +298,37 @@
     [
       "V4.6",
       "product links inspected",
-      28210,
+      28538,
       "exact scale/SKU matches",
-      205
+      209
     ],
     [
       "V4.9",
       "cached product requests avoided",
       0,
       "unique cached endpoints",
-      1625
+      1644
     ],
     [
       "V4.5",
       "independent storefront searches",
-      324,
+      325,
       "wholesale SKU backlog",
       1782,
       "new search records inspected",
-      324
+      325
     ],
     [
       "V4.7",
       "manufacturer-matched review candidates",
-      70,
+      72,
       "excluded or duplicate",
-      139
+      142
     ],
     [
       "V5.0",
       "official exact variant matches",
-      387,
+      388,
       "errors",
       2
     ],
@@ -283,7 +342,7 @@
     [
       "V5.2",
       "official detail evidence records",
-      250
+      251
     ],
     [
       "V6.1",
@@ -293,7 +352,7 @@
     [
       "V5.1",
       "unique official candidates for final review",
-      195,
+      196,
       "approved for publication",
       0
     ],
@@ -308,7 +367,7 @@
     ]
   ],
   "publication": "no eligible additions",
-  "run_id": "46136200991",
+  "run_id": "46145872268",
   "run_attempt": "1",
   "commit": "ea1e52e3e0d437cebaae863676a2a35e5aebabff",
   "published": 0,

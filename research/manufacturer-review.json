@@ -842,6 +842,30 @@
     },
     {
       "manufacturer": "Tarmac Works",
+      "productCode": "T64-079-K3V",
+      "name": "Tarmac Works 1:64 Bisimoto Porsche 935 K3V with Trading Cards",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-bisimoto-porsche-935-k3v-with-trading-cards?variant=46144559612160",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64-067-TC",
+      "name": "Tarmac Works 1:64 Nissan NISMO GT-R LM Test Car",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-nissan-nismo-gt-r-lm-test-car?variant=46047922192640",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
       "productCode": "T64G-088-BL",
       "name": "1/64 URAS Skyline ER34 Blue - Tarmac Works GLOBAL64",
       "variant": "Default Title",
@@ -3638,6 +3662,36 @@
       "variant": "Default Title",
       "vendor": "Inno Models",
       "url": "https://www.modelcarshouston.com/products/inno64-1-64-nissan-skyline-gt-r-bnr32-top-secret-in-gold?variant=46847063064832"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-RX7FCP-WHI1",
+      "variant_id": 46574557626624,
+      "title": "INNO64 1:64 Mazda RX-7 (FC3S) \"PANDEM\" in White",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-rx-7-fc3s-pandem-in-white?variant=46574557626624"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-R35N-BLA",
+      "variant_id": 46574545305856,
+      "title": "INNO64 1:64 Nissan GT-R (R35) NISMO in Black",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-gt-r-r35-nismo-in-black?variant=46574545305856"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-RX3P-D1GP24",
+      "variant_id": 46394386448640,
+      "title": "INNO64 1:64 Mazda RX-3 Station Wagon MAD MIKE D1GP Series 2024",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-rx-3-station-wagon-mad-mike-d1gp-series-2024?variant=46394386448640"
     }
   ]
 }

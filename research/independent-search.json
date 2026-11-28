@@ -182823,5 +182823,2951 @@
       }
     ],
     "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Pop Race|PR640126|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://hotdc.sg|Tarmac Works|T64G-F064-GR1": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "https://www.kaidohouse.com|INNO64|IN64-R89C-BL|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|MINI GT|MGT00860|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|GreenLight|30397|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Paragon Models|PA-55527|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|DCP/First Gear|60-1954|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Tarmac Works|CWB64-002-LMW22|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Pop Race|PR640126|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|INNO64|IN64-R89C-BL|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|MINI GT|MGT00860|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|GreenLight|30397|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Paragon Models|PA-55527|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|M2 Machines|31500-HS59|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Johnny Lightning|JLPC016-JLSP414|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|DCP/First Gear|60-1954|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Pop Race|PR640126|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Tarmac Works|CWB64-002-LMW22|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|INNO64|IN64-R89C-BL|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|MINI GT|MGT00860|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|GreenLight|30397|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Paragon Models|PA-55527|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|M2 Machines|31500-HS59|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|SpecCast|UBC072|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Auto World|64502-AWSP187A|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Auto World 2026 Release 1 Modern Muscle Deluxe (2-Pack) Version B 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/auto-world-2026-release-1-modern-muscle-deluxe-2-pack-version-b-1-64-scale-diecast?_pos=1&_psq=Auto+World+1988+Chrysler+Conquest+TSi+Bright+Blue+Metallic+%22Modern+Muscle%22+Series+1%2F64+Diecast+Model+Car+by+Auto+World&_psid=84f0c2781&_ss=e"
+      },
+      {
+        "title": "Auto World 2026 Release 1 Modern Muscle Deluxe (2-Pack) Version A 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/auto-world-2026-release-1-modern-muscle-deluxe-2-pack-version-a-1-64-scale-diecast?_pos=2&_psq=Auto+World+1988+Chrysler+Conquest+TSi+Bright+Blue+Metallic+%22Modern+Muscle%22+Series+1%2F64+Diecast+Model+Car+by+Auto+World&_psid=84f0c2781&_ss=e"
+      },
+      {
+        "title": "AMT 2017 Chevy Camaro 50th Anniversary 1:25 Scale Model Kit",
+        "url": "https://www.autoworldstore.com/products/amt-2017-chevy-camaro-50th-anniversary-1-25-scale-model-kit?_pos=3&_psq=Auto+World+1988+Chrysler+Conquest+TSi+Bright+Blue+Metallic+%22Modern+Muscle%22+Series+1%2F64+Diecast+Model+Car+by+Auto+World&_psid=84f0c2781&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-IMOLA-03|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Auto World 1965 Chevy Impala SS 396 (Evening Orchid Poly) (AW Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-chevy-impala-aw-exclusive-1-64-diecast-due-september-2025?_pos=1&_psq=CM+Model+Pagani+Imola+Dark+Gray+Metallic+with+Carbon+and+Orange+Accents+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=ea8c846a7&_ss=e"
+      },
+      {
+        "title": "Auto World 2021 Ford Mustang Shelby GT500 Carbon Fiber Track Pack (Twister Orange w/Black Roof) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-2021-ford-mustang-shelby-gt500-carbon-fiber-track-pack-twister-orange-w-black-roof-1-64-diecast-due-october-2024?_pos=2&_psq=CM+Model+Pagani+Imola+Dark+Gray+Metallic+with+Carbon+and+Orange+Accents+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=ea8c846a7&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 2002 Subaru Impreza WRX (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-2002-subaru-impreza-wrx-auto-world-store-exclusive-1-64-diecast-late-may-2026?_pos=3&_psq=CM+Model+Pagani+Imola+Dark+Gray+Metallic+with+Carbon+and+Orange+Accents+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=ea8c846a7&_ss=e"
+      },
+      {
+        "title": "Auto World 1961 Dodge Phoenix Lowrider (Mango Smoothie Metallic w/ Lowrider Graphics) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1961-dodge-phoenix-lowrider-mango-smoothie-metallic-w-lowrider-graphics-1-64-diecast-due-october-2025?_pos=4&_psq=CM+Model+Pagani+Imola+Dark+Gray+Metallic+with+Carbon+and+Orange+Accents+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=ea8c846a7&_ss=e"
+      },
+      {
+        "title": "Auto World 1965 Chevrolet Impala (Willow Green) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-chevrolet-impala-willow-green-1-64-diecast-due-october-2025?_pos=5&_psq=CM+Model+Pagani+Imola+Dark+Gray+Metallic+with+Carbon+and+Orange+Accents+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=ea8c846a7&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 1965 Chevy Impala SS Lowrider (Custom Bronze Poly) (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1965-chevy-impala-ss-lowrider-custom-bronze-poly-auto-world-store-exclusive-1-64-diecast-due-march-2025?_pos=6&_psq=CM+Model+Pagani+Imola+Dark+Gray+Metallic+with+Carbon+and+Orange+Accents+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=ea8c846a7&_ss=e"
+      },
+      {
+        "title": "Auto World 1988 Chrysler Conquest TSi (San Marino Yellow) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1988-chrysler-conquest-tsi-san-marino-yellow-1-64-diecast-due-may-2025?_pos=7&_psq=CM+Model+Pagani+Imola+Dark+Gray+Metallic+with+Carbon+and+Orange+Accents+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=ea8c846a7&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 1985 Fiero (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1984-fiero-auto-world-store-exclusive-1-64-diecast-due-april-2026?_pos=8&_psq=CM+Model+Pagani+Imola+Dark+Gray+Metallic+with+Carbon+and+Orange+Accents+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=ea8c846a7&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning Hobby Exclusive 2002 Subaru WRX \"Evelyn\" Twisted Metal in Collector Box 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-hobby-exclusive-2002-subaru-wrx-evelyn-twisted-metal-in-collector-box-1-64-scale-diecast-due-november-2026?_pos=9&_psq=CM+Model+Pagani+Imola+Dark+Gray+Metallic+with+Carbon+and+Orange+Accents+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=ea8c846a7&_ss=e"
+      },
+      {
+        "title": "Auto World 2021 Ford Mustang Shelby GT500 Carbon Fiber Track Pack (Grabber Yellow w/Black Roof) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-2021-ford-mustang-shelby-gt500-carbon-fiber-track-pack-grabber-yellow-w-black-roof-1-64-diecast-due-october-2024?_pos=10&_psq=CM+Model+Pagani+Imola+Dark+Gray+Metallic+with+Carbon+and+Orange+Accents+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=ea8c846a7&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|DCP/First Gear|60-1954|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Pop Race|PR640126|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "1/64 EVA RT PRODUCTION MODEL-02 S15 - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/1-64-eva-rt-production-model-02-s15-tarmac-works-global64?_pos=1&_psq=Pop+Race+Toyota+Goodride+GR+Yaris+RHD+%28Right+Hand+Drive%29+%22EVA+RT+Production+Model-02%22+Red+Metallic+with+Graphics+1%2F64+Diecast+Model+Car+by+Pop+Race&_psid=6fbea7349&_ss=e"
+      },
+      {
+        "title": "1/64 EVA RT PRODUCTION MODEL-02 S15 - Tarmac Works GLOBAL64 (Blister)",
+        "url": "https://www.tarmacworks.com/products/1-64-eva-rt-production-model-02-s15-tarmac-works-global64-blister-tarmac-works-global64-blister?_pos=2&_psq=Pop+Race+Toyota+Goodride+GR+Yaris+RHD+%28Right+Hand+Drive%29+%22EVA+RT+Production+Model-02%22+Red+Metallic+with+Graphics+1%2F64+Diecast+Model+Car+by+Pop+Race&_psid=6fbea7349&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Tarmac Works|CWB64-002-LMW22|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|INNO64|IN64-R34TS-GOLD|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|MINI GT|MGT00860|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|GreenLight|30397|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Paragon Models|PA-55527|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|M2 Machines|31500-HS59|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|SpecCast|UBC066|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Auto World|64502-AWSP186B|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Johnny Lightning|JLPC016-JLSP414|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|CM Model|CM64-IMOLA-01|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Kaido GT Nissan Silvia S13-R Kaido Drift V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-nissan-silvia-s13-r-kaido-drift-v1?_pos=1&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=c29561685&_ss=e"
+      },
+      {
+        "title": "Kaido GT Toyota Sprinter Trueno Kaido Street V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-toyota-sprinter-trueno-kaido-street-v1?_pos=2&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=c29561685&_ss=e"
+      },
+      {
+        "title": "Kaido GT Honda Civic EF Kaido Works\u00ae V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-honda-civic-ef-kaido-works-v2?_pos=3&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=c29561685&_ss=e"
+      },
+      {
+        "title": "Kaido GT Nissan Skyline GT-R (R33) Active Carbon R V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r33-active-carbon-r-v2?_pos=4&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=c29561685&_ss=e"
+      },
+      {
+        "title": "Kaido GT Nissan Skyline GT-R (R34) Kaido Works\u00ae Greddy V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-works-greddy-v2?_pos=5&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=c29561685&_ss=e"
+      },
+      {
+        "title": "Kaido GT Chevrolet Silverado Sumatran Rhino x Mizu Diecast",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-sumatran-rhino-x-mizu-diecast?_pos=6&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=c29561685&_ss=e"
+      },
+      {
+        "title": "\"MALAYSIA CANDY\" V2 Custom Diecast",
+        "url": "https://www.kaidohouse.com/products/malaysia-candy-v2-custom-diecast?_pos=7&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=c29561685&_ss=e"
+      },
+      {
+        "title": "\"BLUE STEEL\" Vault experimental model",
+        "url": "https://www.kaidohouse.com/products/blue-steel-vault-experimental-model?_pos=8&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=c29561685&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|DCP/First Gear|60-1954|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Pop Race|PR640212|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Tarmac Works|CWB64-002-LMW22|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|MINI GT|MGT00850|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|GreenLight|32315B|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Paragon Models|PA-55445|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Kaido GT Nissan Fairlady Z Advan",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-nissan-fairlady-z-advan?_pos=1&_psq=Paragon+Models+1984+Toyota+Celica+Supra+%2337+%22ADVAN%22+Black+and+Red+1%2F64+Diecast+Model+Car+by+Paragon+Models&_psid=6b6477389&_ss=e"
+      },
+      {
+        "title": "Kaido GT Toyota AE86 Sprinter Trueno Kaido Advan",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-toyota-ae86-sprinter-trueno-kaido-advan?_pos=2&_psq=Paragon+Models+1984+Toyota+Celica+Supra+%2337+%22ADVAN%22+Black+and+Red+1%2F64+Diecast+Model+Car+by+Paragon+Models&_psid=6b6477389&_ss=e"
+      },
+      {
+        "title": "Kaido GT Nissan Skyline GT-R (R33) Kaido Works\u00ae  Advan",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r33-kaido-works-advan?_pos=3&_psq=Paragon+Models+1984+Toyota+Celica+Supra+%2337+%22ADVAN%22+Black+and+Red+1%2F64+Diecast+Model+Car+by+Paragon+Models&_psid=6b6477389&_ss=e"
+      },
+      {
+        "title": "\"MALAYSIA CANDY\" V2 Custom Diecast",
+        "url": "https://www.kaidohouse.com/products/malaysia-candy-v2-custom-diecast?_pos=4&_psq=Paragon+Models+1984+Toyota+Celica+Supra+%2337+%22ADVAN%22+Black+and+Red+1%2F64+Diecast+Model+Car+by+Paragon+Models&_psid=6b6477389&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|M2 Machines|11228-126|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLPC016-JLSP414": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Tarmac Works|T64T-TL002-OG|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|INNO64|IN64-R34TS-GOLD|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|SpecCast|UBC066": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Auto World|64502-AWSP186B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Johnny Lightning|JLPC016-JLSP414|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|CM Model|CM64-IMOLA-01|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Tarmac Works 1:64 Pagani Imola in Rosso Dubai",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-pagani-imola-in-rosso-dubai?_pos=1&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=63214dba9&_ss=e"
+      },
+      {
+        "title": "MotorHelix 1:64 Pagani Zonda R in Carbon Fiber",
+        "url": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-pagani-zonda-r-in-carbon-fiber?_pos=2&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=63214dba9&_ss=e"
+      },
+      {
+        "title": "Tarmac Works 1:64 Pagani Utopia in Black Carbon Fiber Edition",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-pagani-utopia-in-black-carbon-fiber-edition?_pos=3&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=63214dba9&_ss=e"
+      },
+      {
+        "title": "Tarmac Works 1:64 Pagani Huayra R in Matte Black Carbon Fiber",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-pagani-huayra-r-in-matte-black-carbon-fiber?_pos=4&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=63214dba9&_ss=e"
+      },
+      {
+        "title": "MINI GT 1:64 Subaru Impreza WRC98 1998 Rally Monte-Carlo 3rd Place #3",
+        "url": "https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-subaru-impreza-wrc98-1998-rally-monte-carlo-3rd-place-3?_pos=5&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=63214dba9&_ss=e"
+      },
+      {
+        "title": "INNO64 1:64 Nissan GT-R (R35) NISMO in Black",
+        "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-gt-r-r35-nismo-in-black?_pos=6&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=63214dba9&_ss=e"
+      },
+      {
+        "title": "Tarmac Works 1:64 Pagani Huayra BC in Rosso Dubai",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-pagani-huayra-bc-in-rosso-dubai?_pos=7&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=63214dba9&_ss=e"
+      },
+      {
+        "title": "Tarmac Works 1:64 Pagani Zonda Revoluci\u00f3n Nero Oro",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-pagani-zonda-revolucion-nero-oro?_pos=8&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=63214dba9&_ss=e"
+      },
+      {
+        "title": "Tarmac Works 1:64 Pagani Huayra BC in Trifoglio Verde",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-pagani-huayra-bc-in-trifoglio-verde?_pos=9&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=63214dba9&_ss=e"
+      },
+      {
+        "title": "Tarmac Works 1:64 Pagani Zonda R N\u00fcrburgring Lap Time Record Edition Special Edition",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-pagani-zonda-r-nurburgring-lap-time-record-edition-special-edition?_pos=10&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=63214dba9&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Pop Race|PR640212|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|INNO64|IN64-R34TS-GOLD|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Top Secret Capsule 02 - Top Secret Thailand (Box) - Tarmac Cards",
+        "url": "https://www.tarmacworks.com/products/tarmac-cards-top-secret-capsule-02-top-secret-thailand-box?_pos=1&_psq=INNO64+Nissan+Skyline+GT-R+%28R34%29+RHD+%28Right+Hand+Drive%29+%22Top+Secret%22+Gold+Metallic+with+Carbon+Hood+and+Trunk+1%2F64+Diecast+Model+Car+by+Inno+Models&_psid=0aac60fc3&_ss=e"
+      },
+      {
+        "title": "Top Secret Capsule 02 - Top Secret Thailand (Inner Case) - Tarmac Cards",
+        "url": "https://www.tarmacworks.com/products/tarmac-cards-top-secret-capsule-02-top-secret-thailand-inner-case?_pos=2&_psq=INNO64+Nissan+Skyline+GT-R+%28R34%29+RHD+%28Right+Hand+Drive%29+%22Top+Secret%22+Gold+Metallic+with+Carbon+Hood+and+Trunk+1%2F64+Diecast+Model+Car+by+Inno+Models&_psid=0aac60fc3&_ss=e"
+      },
+      {
+        "title": "Top Secret Capsule 02 - Top Secret Thailand (Pack) - Tarmac Cards",
+        "url": "https://www.tarmacworks.com/products/tarmac-cards-top-secret-capsule-02-top-secret-thailand-pack?_pos=3&_psq=INNO64+Nissan+Skyline+GT-R+%28R34%29+RHD+%28Right+Hand+Drive%29+%22Top+Secret%22+Gold+Metallic+with+Carbon+Hood+and+Trunk+1%2F64+Diecast+Model+Car+by+Inno+Models&_psid=0aac60fc3&_ss=e"
+      },
+      {
+        "title": "Graded Slab - Top Secret - Tarmac Cards",
+        "url": "https://www.tarmacworks.com/products/graded-slab-top-secret-tarmac-cards?_pos=4&_psq=INNO64+Nissan+Skyline+GT-R+%28R34%29+RHD+%28Right+Hand+Drive%29+%22Top+Secret%22+Gold+Metallic+with+Carbon+Hood+and+Trunk+1%2F64+Diecast+Model+Car+by+Inno+Models&_psid=0aac60fc3&_ss=e"
+      },
+      {
+        "title": "Top Secret Capsule 01 (Box) - Tarmac Cards",
+        "url": "https://www.tarmacworks.com/products/tarmac-cards-top-secret-capsule-01-box?_pos=5&_psq=INNO64+Nissan+Skyline+GT-R+%28R34%29+RHD+%28Right+Hand+Drive%29+%22Top+Secret%22+Gold+Metallic+with+Carbon+Hood+and+Trunk+1%2F64+Diecast+Model+Car+by+Inno+Models&_psid=0aac60fc3&_ss=e"
+      },
+      {
+        "title": "Pristine 10 Graded Slab - Top Secret - Tarmac Cards",
+        "url": "https://www.tarmacworks.com/products/pristine-10-graded-slab-top-secret-tarmac-cards?_pos=6&_psq=INNO64+Nissan+Skyline+GT-R+%28R34%29+RHD+%28Right+Hand+Drive%29+%22Top+Secret%22+Gold+Metallic+with+Carbon+Hood+and+Trunk+1%2F64+Diecast+Model+Car+by+Inno+Models&_psid=0aac60fc3&_ss=e"
+      },
+      {
+        "title": "Top Secret Capsule 01 (Pack) - Tarmac Cards",
+        "url": "https://www.tarmacworks.com/products/tarmac-cards-top-secret-capsule-01?_pos=7&_psq=INNO64+Nissan+Skyline+GT-R+%28R34%29+RHD+%28Right+Hand+Drive%29+%22Top+Secret%22+Gold+Metallic+with+Carbon+Hood+and+Trunk+1%2F64+Diecast+Model+Car+by+Inno+Models&_psid=0aac60fc3&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|MINI GT|MGT00850|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|GreenLight|32315B|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Paragon Models|PA-55445|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Ignition Model 1:64 Toyota Supra (JZA80) RZ Max Orido Edition in Red",
+        "url": "https://www.modelcarshouston.com/products/preorder-ignition-model-1-64-toyota-supra-jza80-rz-max-orido-edition-in-red?_pos=1&_psq=Paragon+Models+1984+Toyota+Celica+Supra+%2337+%22ADVAN%22+Black+and+Red+1%2F64+Diecast+Model+Car+by+Paragon+Models&_psid=32bec538c&_ss=e"
+      },
+      {
+        "title": "Ignition Model 1:64 Toyota Supra (JZA80) RZ Max Orido Edition in Blue Metallic",
+        "url": "https://www.modelcarshouston.com/products/preorder-ignition-model-1-64-toyota-supra-jza80-rz-max-orido-edition-in-blue?_pos=2&_psq=Paragon+Models+1984+Toyota+Celica+Supra+%2337+%22ADVAN%22+Black+and+Red+1%2F64+Diecast+Model+Car+by+Paragon+Models&_psid=32bec538c&_ss=e"
+      },
+      {
+        "title": "INNO64 1:64 Nissan Skyline GT-R (R34) #3 \"ENDLESS ADVAN\"  Super Taikyu Series 2002 Winner",
+        "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-skyline-gt-r-r34-3-endless-advan-super-taikyu-series-2002-winner?_pos=3&_psq=Paragon+Models+1984+Toyota+Celica+Supra+%2337+%22ADVAN%22+Black+and+Red+1%2F64+Diecast+Model+Car+by+Paragon+Models&_psid=32bec538c&_ss=e"
+      },
+      {
+        "title": "Hobby Japan 1:64 Toyota Supra (JZA80) JDM Custom Version in Advan Livery",
+        "url": "https://www.modelcarshouston.com/products/preorder-hobby-japan-1-64-toyota-supra-jza80-jdm-custom-version-in-advan-livery?_pos=4&_psq=Paragon+Models+1984+Toyota+Celica+Supra+%2337+%22ADVAN%22+Black+and+Red+1%2F64+Diecast+Model+Car+by+Paragon+Models&_psid=32bec538c&_ss=e"
+      },
+      {
+        "title": "MINIGT 1:64 Toyota Supra (GR) HKS Advan",
+        "url": "https://www.modelcarshouston.com/products/toyota-supra-gr-hks-advan?_pos=5&_psq=Paragon+Models+1984+Toyota+Celica+Supra+%2337+%22ADVAN%22+Black+and+Red+1%2F64+Diecast+Model+Car+by+Paragon+Models&_psid=32bec538c&_ss=e"
+      },
+      {
+        "title": "INNO64 1:64 Nissan Skyline GT-R (R34) #3 \"ENDLESS ADVAN\" TAS 2023/2024 Special Edition",
+        "url": "https://www.modelcarshouston.com/products/inno64-1-64-nissan-skyline-gt-r-r34-3-endless-advan-tas-2023-edition?_pos=6&_psq=Paragon+Models+1984+Toyota+Celica+Supra+%2337+%22ADVAN%22+Black+and+Red+1%2F64+Diecast+Model+Car+by+Paragon+Models&_psid=32bec538c&_ss=e"
+      },
+      {
+        "title": "Tarmac Works 1:64 Nissan Skyline GT-R R32 ADVAN Widebody Jonsibal 2024 JCCS Special Edition (MAXIMUM 2 PER ORDER PER CUSTOMER)",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-nissan-skyline-gt-r-r32-advan-widebody-jonsibal-2024-jccs-special-edition?_pos=7&_psq=Paragon+Models+1984+Toyota+Celica+Supra+%2337+%22ADVAN%22+Black+and+Red+1%2F64+Diecast+Model+Car+by+Paragon+Models&_psid=32bec538c&_ss=e"
+      },
+      {
+        "title": "MINI GT 1:64 Nissan Silvia (S15) LB-Super Silhouette \"ADVAN\" Edition",
+        "url": "https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-nissan-silvia-s15-lb-super-silhouette-advan-edition?_pos=8&_psq=Paragon+Models+1984+Toyota+Celica+Supra+%2337+%22ADVAN%22+Black+and+Red+1%2F64+Diecast+Model+Car+by+Paragon+Models&_psid=32bec538c&_ss=e"
+      },
+      {
+        "title": "MINI GT 1:64 Mazda RX-7 LB-Super Silhouette Advan Edition",
+        "url": "https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-mazda-rx-7-lb-super-silhouette-advan-edition?_pos=9&_psq=Paragon+Models+1984+Toyota+Celica+Supra+%2337+%22ADVAN%22+Black+and+Red+1%2F64+Diecast+Model+Car+by+Paragon+Models&_psid=32bec538c&_ss=e"
+      },
+      {
+        "title": "MotorHelix 1:64 Honda Civic Type R (FL5) Advan Livery",
+        "url": "https://www.modelcarshouston.com/products/motorhelix-1-64-honda-civic-type-r-fl5-advan-livery?_pos=10&_psq=Paragon+Models+1984+Toyota+Celica+Supra+%2337+%22ADVAN%22+Black+and+Red+1%2F64+Diecast+Model+Car+by+Paragon+Models&_psid=32bec538c&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|M2 Machines|11228-126|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|ERTL TOMY|44410|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|SpecCast|UBC066": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Auto World|64502-AWSP186B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Johnny Lightning|JLPC016-JLSP410": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-IMOLA-01|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Auto World 1965 Chevy Impala SS 396 (Evening Orchid Poly) (AW Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-chevy-impala-aw-exclusive-1-64-diecast-due-september-2025?_pos=1&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=59a687018&_ss=e"
+      },
+      {
+        "title": "Auto World 1991 Eagle Talon Tsi (Medium Quartz Metallic) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1991-eagle-talon-tsi-medium-quartz-metallic-1-64-diecast-due-october-2025?_pos=2&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=59a687018&_ss=e"
+      },
+      {
+        "title": "Auto World 1965 Chevrolet Impala (Willow Green) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-chevrolet-impala-willow-green-1-64-diecast-due-october-2025?_pos=3&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=59a687018&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 1965 Chevy 2-Door Wagon (Black) with Collector Tin 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1965-chevy-2-door-wagon-black-with-collector-tin-1-64-diecast-due-october-2025?_pos=4&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=59a687018&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 1965 Chevy Impala SS Lowrider (Custom Bronze Poly) (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1965-chevy-impala-ss-lowrider-custom-bronze-poly-auto-world-store-exclusive-1-64-diecast-due-march-2025?_pos=5&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=59a687018&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 2002 Subaru Impreza WRX (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-2002-subaru-impreza-wrx-auto-world-store-exclusive-1-64-diecast-late-may-2026?_pos=6&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=59a687018&_ss=e"
+      },
+      {
+        "title": "Auto World 2021 Ford Mustang Shelby GT500 Carbon Fiber Track Pack (Twister Orange w/Black Roof) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-2021-ford-mustang-shelby-gt500-carbon-fiber-track-pack-twister-orange-w-black-roof-1-64-diecast-due-october-2024?_pos=7&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=59a687018&_ss=e"
+      },
+      {
+        "title": "Auto World 1970 Plymouth Sport Fury GT (Black Velvet) (AW Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1970-plymouth-sport-fury-aw-exclusive-1-64-diecast-due-september-2025?_pos=8&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=59a687018&_ss=e"
+      },
+      {
+        "title": "Auto World 1965 Ford GT40 Mk1 (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-ford-gt40-mk1-auto-world-store-exclusive-1-64-diecast-due-april-2026?_pos=9&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=59a687018&_ss=e"
+      },
+      {
+        "title": "Auto World 2025 Release 2 Classic Muscle Deluxe (2-Pack) Version A 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/auto-world-2025-release-2-classic-muscle-deluxe-2-pack-version-a-1-64-scale-diecast?_pos=10&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=59a687018&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|DCP/First Gear|60-1797|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "MPC Mack DM800 Semi Tractor 1:25 Scale Model Kit",
+        "url": "https://www.autoworldstore.com/products/mpc-mack-dm800-semi-tractor-1-25-scale-model-kit?_pos=1&_psq=DCP%2FFirst+Gear+Mack+LR+Refuse+Garbage+Truck+with+McNeilus+Meridian+Front+Loader+White+and+Blue+with+Trash+Bin+1%2F64+Diecast+Model+by+DCP%2FFirst+Gear&_psid=c6bd9194a&_ss=e"
+      },
+      {
+        "title": "Auto World 1968 Dodge Coronet R/T (Dick Landy) (AW Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1968-dodge-coronet-aw-exclusive-1-64-diecast-due-september-2025?_pos=2&_psq=DCP%2FFirst+Gear+Mack+LR+Refuse+Garbage+Truck+with+McNeilus+Meridian+Front+Loader+White+and+Blue+with+Trash+Bin+1%2F64+Diecast+Model+by+DCP%2FFirst+Gear&_psid=c6bd9194a&_ss=e"
+      },
+      {
+        "title": "Auto World 1968 Dodge Coronet R/T Convertible (2025 MCACN Event Car) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/johnny-lightning-1968-dodge-coronet-r-t-convertible-2025-mcacn-event-car-1-64-diecast?_pos=3&_psq=DCP%2FFirst+Gear+Mack+LR+Refuse+Garbage+Truck+with+McNeilus+Meridian+Front+Loader+White+and+Blue+with+Trash+Bin+1%2F64+Diecast+Model+by+DCP%2FFirst+Gear&_psid=c6bd9194a&_ss=e"
+      },
+      {
+        "title": "Auto World Big Country Collectibles 2025 Release 1 (6-Car Sealed Case) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-big-country-collectibles-2025-release-1-6-car-sealed-case-1-64-diecast-due-late-january-2026?_pos=4&_psq=DCP%2FFirst+Gear+Mack+LR+Refuse+Garbage+Truck+with+McNeilus+Meridian+Front+Loader+White+and+Blue+with+Trash+Bin+1%2F64+Diecast+Model+by+DCP%2FFirst+Gear&_psid=c6bd9194a&_ss=e"
+      },
+      {
+        "title": "AMT Mack R685ST Semi Tractor 1:25 Scale Model Kit",
+        "url": "https://www.autoworldstore.com/products/amt-mack-r685st-semi-tractor-1-25-scale-model-kit?_pos=5&_psq=DCP%2FFirst+Gear+Mack+LR+Refuse+Garbage+Truck+with+McNeilus+Meridian+Front+Loader+White+and+Blue+with+Trash+Bin+1%2F64+Diecast+Model+by+DCP%2FFirst+Gear&_psid=c6bd9194a&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning Blues Brothers w/Roof Speaker 1974 Dodge Monaco 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/johnny-lightning-blues-brothers-w-roof-speaker-1974-dodge-monaco-1-64-scale-diecast?_pos=6&_psq=DCP%2FFirst+Gear+Mack+LR+Refuse+Garbage+Truck+with+McNeilus+Meridian+Front+Loader+White+and+Blue+with+Trash+Bin+1%2F64+Diecast+Model+by+DCP%2FFirst+Gear&_psid=c6bd9194a&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning Mecum Auctions 1967 Shelby GT-350 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-mecum-auctions-1967-shelby-gt-350-1-64-scale-diecast-due-november-2024?_pos=7&_psq=DCP%2FFirst+Gear+Mack+LR+Refuse+Garbage+Truck+with+McNeilus+Meridian+Front+Loader+White+and+Blue+with+Trash+Bin+1%2F64+Diecast+Model+by+DCP%2FFirst+Gear&_psid=c6bd9194a&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Pop Race|PR640212|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Tarmac Works|T64T-TL002-OG": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|INNO64|IN64-KPGC10-FM1971|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|MINI GT|MGT00850|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|GreenLight|32315B|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Paragon Models|PA-55445|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|M2 Machines|11228-126|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|ERTL TOMY|44410|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|SpecCast|UBC066": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Auto World|64502-AWSP186B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-IMOLA-01|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "1/64 Pagani Imola Matt Silver - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/1-64-pagani-imola-matt-silver-tarmac-works-global64?_pos=1&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=f859d62a7&_ss=e"
+      },
+      {
+        "title": "1/64 Pagani Zonda R Matte Exposed Carbon Fiber - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/1-64-pagani-zonda-r-matte-exposed-carbon-fiber-tarmac-works-global64?_pos=2&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=f859d62a7&_ss=e"
+      },
+      {
+        "title": "1/64 Pagani Utopia Green Metallic - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/1-64-pagani-utopia-green-metallic-tarmac-works-global64?_pos=3&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=f859d62a7&_ss=e"
+      },
+      {
+        "title": "1/64 Pagani Utopia Blue Metallic - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/1-64-pagani-utopia-blue-metallic-tarmac-works-global64?_pos=4&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=f859d62a7&_ss=e"
+      },
+      {
+        "title": "1/64 Pagani Huayra R Satin Silver - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-pagani-huayra-r-satin-silver-global64?_pos=5&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=f859d62a7&_ss=e"
+      },
+      {
+        "title": "1/64 Pagani Utopia Rinascimento - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-pagani-utopia-rinascimento-global64?_pos=6&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=f859d62a7&_ss=e"
+      },
+      {
+        "title": "1/64 Pagani Huayra BC Grigio Mercurio - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-pagani-huayra-bc-grigio-mercurio-global64?_pos=7&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=f859d62a7&_ss=e"
+      },
+      {
+        "title": "1/64 Pagani Huayra BC Bianco Benny - Tarmac Works  GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-pagani-huayra-bc-bianco-benny-global64?_pos=8&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=f859d62a7&_ss=e"
+      },
+      {
+        "title": "CENTAURIA x IXO COLLECTIONS FERRARI GT 1:64 Magazine ASIA EDITION - FERRARI F40 1987 (English Version)",
+        "url": "https://www.tarmacworks.com/products/centauria-x-ixo-collections-ferrari-gt-1-64-magazine-asia-edition-ferrari-f40-1987-english-version?_pos=9&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=f859d62a7&_ss=e"
+      },
+      {
+        "title": "1/64 Ferrari 348 Challenge Presentation - Tarmac Works X iXO Models   HOBBY64",
+        "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-ferrari-348-challenge-presentation-hobby64?_pos=10&_psq=CM+Model+Pagani+Imola+Gold+Carbon+Metallic+with+Black+Carbon+Top+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=f859d62a7&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Pop Race|PR640212|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Tarmac Works|T64T-TL002-OG": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|MINI GT|MGT00959|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Kaido GT BMW M3 Kaidohaus V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-bmw-m3-kaidohaus-v1?_pos=1&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=54237681d&_ss=e"
+      },
+      {
+        "title": "Kaido GT BMW M3 KAIDO GT V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-bmw-m3-kaido-gt-v2?_pos=2&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=54237681d&_ss=e"
+      },
+      {
+        "title": "Kaido GT BMW M3 Kaido Touring Champ V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-mbw-m3-kaido-touring-champ-v1?_pos=3&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=54237681d&_ss=e"
+      },
+      {
+        "title": "Kaido GT Nissan Silvia S13-R Kaido Drift V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-nissan-silvia-s13-r-kaido-drift-v1?_pos=4&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=54237681d&_ss=e"
+      },
+      {
+        "title": "Kaido GT BMW M3 Kaido KW V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-bmw-m3-kaido-kw-v1?_pos=5&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=54237681d&_ss=e"
+      },
+      {
+        "title": "Kaido GT Nissan Silvia S13-R Circuit Spec V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-nissan-silvia-s13-r-circuit-spec-v1?_pos=6&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=54237681d&_ss=e"
+      },
+      {
+        "title": "Kaido GT Nissan Skyline GT-R (R34) Kaido Star\u2122 Racing V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-star-racing-v1?_pos=7&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=54237681d&_ss=e"
+      },
+      {
+        "title": "Kaido GT Toyota Sprinter Trueno Kaido Street V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-toyota-sprinter-trueno-kaido-street-v1?_pos=8&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=54237681d&_ss=e"
+      },
+      {
+        "title": "Kaido GT Nissan Skyline GT-R (R34) Kaido Works\u00ae Greddy V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-works-greddy-v2?_pos=9&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=54237681d&_ss=e"
+      },
+      {
+        "title": "Kaido GT Toyota Sprinter Trueno kaido Street V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-toyota-sprinter-trueno-kaido-street-v2?_pos=10&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=54237681d&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|GreenLight|32315B|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Paragon Models|PA-55445|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "1/43 Pandem Toyota Yaris ADVAN - Tarmac Works HOBBY43",
+        "url": "https://www.tarmacworks.com/products/tarmac-works-1-43-pandem-toyota-yaris-advan-hobby43?_pos=1&_psq=Paragon+Models+1984+Toyota+Celica+Supra+%2337+%22ADVAN%22+Black+and+Red+1%2F64+Diecast+Model+Car+by+Paragon+Models&_psid=b9dc9be47&_ss=e"
+      },
+      {
+        "title": "1/43 Liberty Walk LB-ER34 Super Silhouette SKYLINE ADVAN - Tarmac Works HOBBY43",
+        "url": "https://www.tarmacworks.com/products/tarmac-works-1-43-lb-er34-super-silhouette-skyline-advan-hobby43?_pos=2&_psq=Paragon+Models+1984+Toyota+Celica+Supra+%2337+%22ADVAN%22+Black+and+Red+1%2F64+Diecast+Model+Car+by+Paragon+Models&_psid=b9dc9be47&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|M2 Machines|11228-126|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|ERTL TOMY|44379|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|SpecCast|UBC064": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Auto World|64502-AWSP185B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Johnny Lightning|JLPC016-JLSP410": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|CM Model|CM64-35RR-10|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Pop Race|PR640165|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Tarmac Works|T64G-057-TOYO": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|INNO64|IN64-KPGC10-FM1971|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|GreenLight|68070SET|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Paragon Models|PA-55377|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|M2 Machines|56000-TW38": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLPC016-JLSP410": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|INNO64|IN64-KPGC10-FM1971|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|MINI GT|MGT00959|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "MINIGT 1:64 Toyota Alphard 40 KUHL in Black",
+        "url": "https://www.modelcarshouston.com/products/preorder-minigt-1-64-toyota-alphard-40-kuhl-in-black?_pos=1&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=24e7a7e6a&_ss=e"
+      },
+      {
+        "title": "MINIGT 1:64 BMW Z8 Alpina in Alpine Blue",
+        "url": "https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-bmw-m5-touring-g99-in-marina-bay-blue-metallic-copy?_pos=2&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=24e7a7e6a&_ss=e"
+      },
+      {
+        "title": "MINIGT 1:64 Toyota Alphard 40 KUHL in White",
+        "url": "https://www.modelcarshouston.com/products/preorder-minigt-1-64-toyota-vellfire-40-kuhl-in-white?_pos=3&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=24e7a7e6a&_ss=e"
+      },
+      {
+        "title": "MINIGT 1:64 LB-WORKS Lamborghini Aventador Limited Edition in Matte Black",
+        "url": "https://www.modelcarshouston.com/products/preorder-minigt-1-64-lb-works-lamborghini-aventador-limited-edition-in-matte-black?_pos=4&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=24e7a7e6a&_ss=e"
+      },
+      {
+        "title": "MINIGT 1:64 ABARTH 595 LB-WORKS x Abas Works in Red",
+        "url": "https://www.modelcarshouston.com/products/preorder-minigt-1-64-abarth-595-lb-works-x-abas-works-in-red?_pos=5&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=24e7a7e6a&_ss=e"
+      },
+      {
+        "title": "MINI GT 1:64 Nissan Silvia (S15) Top Secret D1GP in Gold",
+        "url": "https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-nissan-silvia-s15-top-secret-d1gp-in-gold?_pos=6&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=24e7a7e6a&_ss=e"
+      },
+      {
+        "title": "*PREORDER* MINIGT 1:64 BMW M4 GT3 EVO #33 610 Racing 2026 China GT Shanghai",
+        "url": "https://www.modelcarshouston.com/products/preorder-minigt-1-64-bmw-m4-gt3-evo-33-610-racing-2026-china-gt-shanghai?_pos=7&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=24e7a7e6a&_ss=e"
+      },
+      {
+        "title": "MINI GT 1:64 BMW 750IL in Aspen Silver Metallic",
+        "url": "https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-bmw-750il-in-aspen-silver-metallic?_pos=8&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=24e7a7e6a&_ss=e"
+      },
+      {
+        "title": "MINI GT 1:64 Nissan Silvia (S15) LB-Super Silhouette Auto Finesse SEMA 2023",
+        "url": "https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-nissan-silvia-s15-lb-super-silhouette-auto-finesse-sema-2023?_pos=9&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=24e7a7e6a&_ss=e"
+      },
+      {
+        "title": "*PREORDER* MINIGT 1:64 Toyota Alphard 40 KUHL in Gold Metallic",
+        "url": "https://www.modelcarshouston.com/products/preorder-minigt-1-64-toyota-alphard-40-kuhl-in-gold-metallic?_pos=10&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=24e7a7e6a&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|ERTL TOMY|44379|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|SpecCast|UBC064": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Auto World|64502-AWSP185B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Johnny Lightning|JLPC016-JLSP410": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|CM Model|CM64-35RR-10|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "MINIGT 1:64 LB-Silhouette WORKS GT NISSAN 35GT-RR Ver.2 in Blue",
+        "url": "https://www.modelcarshouston.com/products/preorder-minigt-1-64-lb-silhouette-works-gt-nissan-35gt-rr-ver-2-in-blue?_pos=1&_psq=CM+Model+Nissan+35GT-RR+%22LB-Silhouette+Works+GT%22+RHD+%28Right+Hand+Drive%29+White+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=49bfb62b7&_ss=e"
+      },
+      {
+        "title": "Ignition Model 1:64 Nissan Skyline 35GT-RR LB-Silhouette WORKS GT in Pearl White with Mr. Kato Figure",
+        "url": "https://www.modelcarshouston.com/products/nissan-skyline-35gt-rr-lb-silhouette-works-gt-in-pearl-white-with-mr-kato-figure?_pos=2&_psq=CM+Model+Nissan+35GT-RR+%22LB-Silhouette+Works+GT%22+RHD+%28Right+Hand+Drive%29+White+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=49bfb62b7&_ss=e"
+      },
+      {
+        "title": "Ignition Model 1:18 Nissan 35GT-RR LB-Silhouette WORKS GT in White / Yellow with Engine",
+        "url": "https://www.modelcarshouston.com/products/preorder-ignition-model-1-18-nissan-35gt-rr-lb-silhouette-works-gt-in-white-yellow-with-engine?_pos=3&_psq=CM+Model+Nissan+35GT-RR+%22LB-Silhouette+Works+GT%22+RHD+%28Right+Hand+Drive%29+White+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=49bfb62b7&_ss=e"
+      },
+      {
+        "title": "Ignition Model 1:43 Nissan 35GT-RR LB-Silhouette WORKS GT in Black with Engine Display",
+        "url": "https://www.modelcarshouston.com/products/ignition-model-1-43-nissan-35gt-rr-lb-silhouette-works-gt-in-black-with-engine-display?_pos=4&_psq=CM+Model+Nissan+35GT-RR+%22LB-Silhouette+Works+GT%22+RHD+%28Right+Hand+Drive%29+White+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=49bfb62b7&_ss=e"
+      },
+      {
+        "title": "Ignition Model 1:64 Nissan Skyline 35GT-RR LB-Silhouette WORKS GT in Green Metallic",
+        "url": "https://www.modelcarshouston.com/products/nissan-skyline-35gt-rr-lb-silhouette-works-gt-in-green-metallic?_pos=5&_psq=CM+Model+Nissan+35GT-RR+%22LB-Silhouette+Works+GT%22+RHD+%28Right+Hand+Drive%29+White+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=49bfb62b7&_ss=e"
+      },
+      {
+        "title": "Tarmac Works 1:43 Nissan LB-Silhouette WORKS GT 35GT-RR in Candy Blue",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-43-nissan-lb-silhouette-works-gt-35gt-rr-in-candy-blue?_pos=6&_psq=CM+Model+Nissan+35GT-RR+%22LB-Silhouette+Works+GT%22+RHD+%28Right+Hand+Drive%29+White+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=49bfb62b7&_ss=e"
+      },
+      {
+        "title": "Ignition Model 1:64 Nissan Skyline 35GT-RR LB-Silhouette WORKS GT in Light Blue Metallic",
+        "url": "https://www.modelcarshouston.com/products/nissan-skyline-35gt-rr-lb-silhouette-works-gt-in-light-blue-metallic?_pos=7&_psq=CM+Model+Nissan+35GT-RR+%22LB-Silhouette+Works+GT%22+RHD+%28Right+Hand+Drive%29+White+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=49bfb62b7&_ss=e"
+      },
+      {
+        "title": "Ignition Model 1:18 Nissan 35GT-RR LB-Silhouette WORKS GT in Red/Black #5 with Engine",
+        "url": "https://www.modelcarshouston.com/products/preorder-ignition-model-1-18-nissan-35gt-rr-lb-silhouette-works-gt-in-red-black-5-with-engine?_pos=8&_psq=CM+Model+Nissan+35GT-RR+%22LB-Silhouette+Works+GT%22+RHD+%28Right+Hand+Drive%29+White+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=49bfb62b7&_ss=e"
+      },
+      {
+        "title": "Ignition Model 1:18 Nissan 35GT-RR LB-Silhouette WORKS GT in Silver",
+        "url": "https://www.modelcarshouston.com/products/preorder-nissan-35gt-rr-lb-silhouette-works-gt-in-silver?_pos=9&_psq=CM+Model+Nissan+35GT-RR+%22LB-Silhouette+Works+GT%22+RHD+%28Right+Hand+Drive%29+White+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=49bfb62b7&_ss=e"
+      },
+      {
+        "title": "Ignition Model 1:18 Nissan 35GT-RR LB-Silhouette WORKS GT in Blue Metallic",
+        "url": "https://www.modelcarshouston.com/products/preorder-nissan-gtr-35gt-rr-lb-silhouette-works-gt-in-blue-metallic?_pos=10&_psq=CM+Model+Nissan+35GT-RR+%22LB-Silhouette+Works+GT%22+RHD+%28Right+Hand+Drive%29+White+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=49bfb62b7&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Majorette|MJ8502100002": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Pop Race|PR640165|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Tarmac Works|T64G-057-TOYO": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|INNO64|IN64-RX7FCP-WHI1": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|MINI GT|MGT00959|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Auto World 1970 Plymouth Sport Fury GT (Black Velvet) (AW Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1970-plymouth-sport-fury-aw-exclusive-1-64-diecast-due-september-2025?_pos=1&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=f8c2b4f17&_ss=e"
+      },
+      {
+        "title": "Auto World 1964 Ford GT40 (Gloss White w/Black Upper Front) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1964-ford-gt40-gloss-white-w-black-upper-front-1-64-diecast-due-march-2025?_pos=2&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=f8c2b4f17&_ss=e"
+      },
+      {
+        "title": "Auto World 1965 Chevy Impala SS 396 (Evening Orchid Poly) (AW Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-chevy-impala-aw-exclusive-1-64-diecast-due-september-2025?_pos=3&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=f8c2b4f17&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 2002 Subaru Impreza WRX (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-2002-subaru-impreza-wrx-auto-world-store-exclusive-1-64-diecast-late-may-2026?_pos=4&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=f8c2b4f17&_ss=e"
+      },
+      {
+        "title": "Auto World 1965 Ford GT40 Mk1 (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-ford-gt40-mk1-auto-world-store-exclusive-1-64-diecast-due-april-2026?_pos=5&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=f8c2b4f17&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 1965 Chevy Impala SS Lowrider (Custom Bronze Poly) (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1965-chevy-impala-ss-lowrider-custom-bronze-poly-auto-world-store-exclusive-1-64-diecast-due-march-2025?_pos=6&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=f8c2b4f17&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 2003 Chevy Monte Carlo Pace Edition (\"Competition Yellow w/Silver Graphics\") with Collector Tin 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-2002-chevy-monte-carlo-pace-edition-competition-yellow-w-silver-graphics-with-collector-tin-1-64-diecast-due-april-2026?_pos=7&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=f8c2b4f17&_ss=e"
+      },
+      {
+        "title": "Auto World 1965 Chevrolet Impala (Danube Blue) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-chevrolet-impala-danube-blue-1-64-diecast-due-october-2025?_pos=8&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=f8c2b4f17&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 1965 Chevy Impala SS Lowrider (Perfect Metallic Purple) (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1965-chevy-impala-ss-lowrider-purple-auto-world-store-exclusive-1-64-diecast-due-march-2025?_pos=9&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=f8c2b4f17&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 2002 Chevy Camaro SS 35th Anniversary (Black w/Silver Stripes) with Collector Tin 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-2002-chevy-camaro-ss-35th-anniversary-black-w-silver-stripes-with-collector-tin-1-64-diecast-due-april-2026?_pos=10&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=f8c2b4f17&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|GreenLight|68070SET|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Paragon Models|PA-55377|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|M2 Machines|56000-TW38": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|ERTL TOMY|44379|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|SpecCast|UBC064": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Auto World|64502-AWSP185B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Johnny Lightning|JLPK023B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-35RR-10|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|85630|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Pop Race|PR640165|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Tarmac Works|T64G-057-TOYO": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|MINI GT|MGT00959|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "1/64 Porsche 911 GT3 R DTM Champion 2023 #91 - Tarmac Works X iXO Models HOBBY64",
+        "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-porsche-911-gt3-r-dtm-champion-2023-91-hobby64?_pos=1&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=5dabb1929&_ss=e"
+      },
+      {
+        "title": "1/64 Ferrari 348 Challenge Italian GT 1994 #25 - Tarmac Works X iXO Models HOBBY64",
+        "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-ferrari-348-challenge-italian-gt-1994-25-hobby64?_pos=2&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=5dabb1929&_ss=e"
+      },
+      {
+        "title": "CENTAURIA x IXO COLLECTIONS FERRARI GT 1:64 Magazine ASIA EDITION - FERRARI F40 1987 (English Version)",
+        "url": "https://www.tarmacworks.com/products/centauria-x-ixo-collections-ferrari-gt-1-64-magazine-asia-edition-ferrari-f40-1987-english-version?_pos=3&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=5dabb1929&_ss=e"
+      },
+      {
+        "title": "CENTAURIA x IXO COLLECTIONS FERRARI GT 1:64 Magazine ASIA EDITION - FERRARI F12 TDF 2015 (English Version)",
+        "url": "https://www.tarmacworks.com/products/centauria-x-ixo-collections-ferrari-gt-1-64-magazine-asia-edition-ferrari-f12-tdf-2015-english-version?_pos=4&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=5dabb1929&_ss=e"
+      },
+      {
+        "title": "1/64 Ferrari F40 LM Chrome Blue - Tarmac Works x iXO Models HOBBY64",
+        "url": "https://www.tarmacworks.com/products/1-64-ferrari-f40-lm-chrome-blue-tarmac-works-x-ixo-models-hobby64?_pos=5&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=5dabb1929&_ss=e"
+      },
+      {
+        "title": "1/64 Ferrari F40 Black - Event Special Edition - Tarmac Works X iXO Models ROAD64",
+        "url": "https://www.tarmacworks.com/products/1-64-ferrari-f40-black-event-special-edition-tarmac-works-road64?_pos=6&_psq=MINI+GT+BMW+i7+xDrive60+Dravit+Alpine+White+and+Black+Sapphire+Limited+Edition+1%2F64+Diecast+Model+Car+by+Mini+GT&_psid=5dabb1929&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|GreenLight|68070SET|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Paragon Models|PA-55377|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|M2 Machines|56000-TW38": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|ERTL TOMY|44379|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|SpecCast|UBC064": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Auto World|64502-AWSP185B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-35RR-10|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Liberty Walk Collection Vol.02 Special Parallel - LB-silhouette Works GT Miura (Hanabi/99) - Tarmac Cards",
+        "url": "https://www.tarmacworks.com/products/tarmac-cards-liberty-walk-collection-vol-02-special-parallel-lb-silhouette-works-gt-miura-hanabi-99?_pos=1&_psq=CM+Model+Nissan+35GT-RR+%22LB-Silhouette+Works+GT%22+RHD+%28Right+Hand+Drive%29+White+with+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=bce3bf99f&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Majorette|MJ8502100002|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Pop Race|PR640165|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Tarmac Works|T64G-057-TOYO": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|INNO64|IN64-RX7FCP-WHI1": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "INNO64 1:64 Mazda RX-7 (FC3S) \"PANDEM\" in White",
+        "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-rx-7-fc3s-pandem-in-white?_pos=1&_psq=IN64-RX7FCP-WHI1&_psid=2872c2339&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|MINI GT|MGT00960": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|GreenLight|68070SET|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Paragon Models|PA-55377|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|M2 Machines|56000-TW38": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|ERTL TOMY|45903|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|SpecCast|UBC063": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Auto World|64502B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Johnny Lightning|JLPK023B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Diecast Masters|85630|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Majorette|MJ8502100002|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|IXO Models|IA64021|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Kaido GT Nissan Silvia S13-R Kaido Drift V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-nissan-silvia-s13-r-kaido-drift-v1?_pos=1&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=fea537178&_ss=e"
+      },
+      {
+        "title": "Kaido GT Honda Civic EF Kaido Works\u00ae V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-honda-civic-ef-kaido-works-v2?_pos=2&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=fea537178&_ss=e"
+      },
+      {
+        "title": "Kaido GT Chevrolet Silverado Kaido Intimidator V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-intimidator-v2?_pos=3&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=fea537178&_ss=e"
+      },
+      {
+        "title": "Kaido GT Toyota Sprinter Trueno Kaido Street V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-toyota-sprinter-trueno-kaido-street-v1?_pos=4&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=fea537178&_ss=e"
+      },
+      {
+        "title": "Kaido GT BMW M3 KAIDO GT V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-bmw-m3-kaido-gt-v2?_pos=5&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=fea537178&_ss=e"
+      },
+      {
+        "title": "Kaido GT Nissan Silvia S13-R  Kaido Works\u00ae V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-nissan-silvia-s13-r-kaido-works-v1?_pos=6&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=fea537178&_ss=e"
+      },
+      {
+        "title": "Kaido GT Chevrolet Silverado Sumatran Rhino x Mizu Diecast",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-sumatran-rhino-x-mizu-diecast?_pos=7&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=fea537178&_ss=e"
+      },
+      {
+        "title": "Kaido GT Nissan Skyline GT-R (R34) Kaido Works\u00ae Greddy V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-works-greddy-v2?_pos=8&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=fea537178&_ss=e"
+      },
+      {
+        "title": "Kaido GT Chevrolet Silverado Dually Vintage Spec V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-dually-vintage-spec-v1?_pos=9&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=fea537178&_ss=e"
+      },
+      {
+        "title": "Kaido GT Chevrolet Silverado Dually On Fire V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-dually-on-fire-v2?_pos=10&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=fea537178&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Pop Race|PR64-PRE003": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Tarmac Works|T64-089-24MCR11": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|INNO64|IN64-RX7FCP-WHI1": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|GreenLight|62040SET": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Paragon Models|PA-55368": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|M2 Machines|32600-88": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLPK023B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|CM Model|CM64-964-INA|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Ignition Model 1:64 RWB 993  in Matte Pink",
+        "url": "https://www.modelcarshouston.com/products/preorder-ignition-model-1-64-rwb-993-in-matte-pink?_pos=1&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=a2c0ca3c6&_ss=e"
+      },
+      {
+        "title": "Tarmac Works 1:64 RWB 964 in Green",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-rwb-964-in-green?_pos=2&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=a2c0ca3c6&_ss=e"
+      },
+      {
+        "title": "Make Up Co., Ltd / Titan 64 1:64 Porsche 911 (964) Singer DLS",
+        "url": "https://www.modelcarshouston.com/products/preorder-make-up-co-ltd-titan-64-1-64-porsche-911-964-singer-dls?_pos=3&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=a2c0ca3c6&_ss=e&variant=43909809864960"
+      },
+      {
+        "title": "Ignition Model 1:64 Porsche RWB 993 in Black",
+        "url": "https://www.modelcarshouston.com/products/preorder-ignition-model-1-64-porsche-rwb-993-in-black?_pos=4&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=a2c0ca3c6&_ss=e"
+      },
+      {
+        "title": "Ignition Model 1:64 Porsche RWB 993 in Matte Green",
+        "url": "https://www.modelcarshouston.com/products/preorder-ignition-model-1-18-porsche-993-rwb-in-matte-green?_pos=5&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=a2c0ca3c6&_ss=e"
+      },
+      {
+        "title": "AUTOart 1:64 Porsche 911 (930) Turbo Wangan Midnight \u201cBlackbird\u201d Comic Version 1",
+        "url": "https://www.modelcarshouston.com/products/preorder-autoart-1-64-porsche-911-930-turbo-wangan-midnight-blackbird?_pos=6&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=a2c0ca3c6&_ss=e"
+      },
+      {
+        "title": "Ignition Model 1:64 Porsche 993 RWB in Pink",
+        "url": "https://www.modelcarshouston.com/products/porsche-993-rwb-in-pink-1?_pos=7&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=a2c0ca3c6&_ss=e"
+      },
+      {
+        "title": "Tarmac Works 1:64 Porsche Old & New 997 in Matte Black",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-porsche-old-new-997-in-matte-black?_pos=8&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=a2c0ca3c6&_ss=e"
+      },
+      {
+        "title": "Trends Hobby 1:64 Porsche 911 GT1 Mobil 1 Le Mans 1998",
+        "url": "https://www.modelcarshouston.com/products/preorder-trends-hobby-1-64-porsche-911-gt1-mobil-1-le-mans-1998?_pos=9&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=a2c0ca3c6&_ss=e"
+      },
+      {
+        "title": "Tarmac Works 1:64 Porsche Cayman GT4 RS in GT Silver Metallic",
+        "url": "https://www.modelcarshouston.com/products/tarmac-works-1-64-porsche-cayman-gt4-rs-in-gt-silver-metallic?_pos=10&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=a2c0ca3c6&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Diecast Masters|85630|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Majorette|MJ8502100002": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|INNO64|IN64-RX7FCP-WHI1": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|MINI GT|MGT00960": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "MINI GT 1:64 Jaguar C-X75 in Silver",
+        "url": "https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-jaguar-c-x75-in-silver?_pos=1&_psq=MGT00960&_psid=8eaa94ffc&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|ERTL TOMY|45903|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|SpecCast|UBC063": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Auto World|64502B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Johnny Lightning|JLPK023B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-964-INA|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Johnny Lightning Hobby Exclusive 2002 Subaru WRX \"Evelyn\" Twisted Metal in Collector Box 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-hobby-exclusive-2002-subaru-wrx-evelyn-twisted-metal-in-collector-box-1-64-scale-diecast-due-november-2026?_pos=1&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=b7853df2c&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 2002 Subaru Impreza WRX (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-2002-subaru-impreza-wrx-auto-world-store-exclusive-1-64-diecast-late-may-2026?_pos=2&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=b7853df2c&_ss=e"
+      },
+      {
+        "title": "Auto World 2006 Chevy Silverado Extended Cab/Stepside Polaris\u00a01:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-2006-chevy-silverado-extended-cab-stepside-polaris-1-64-diecast-due-late-january-2026?_pos=3&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=b7853df2c&_ss=e"
+      },
+      {
+        "title": "Auto World 1970 Plymouth Sport Fury GT (Black Velvet) (AW Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1970-plymouth-sport-fury-aw-exclusive-1-64-diecast-due-september-2025?_pos=4&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=b7853df2c&_ss=e"
+      },
+      {
+        "title": "Auto World 1976 Cadillac Coupe de Ville (Phoenician Ivory)\u00a01:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1976-cadillac-coupe-de-ville-phoenician-ivory-1-64-diecast-due-april-2026?_pos=5&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=b7853df2c&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 1997 Chevy Tahoe w/Camper Trailer (Police SWAT) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/johnny-lightning-1997-chevyl-tahoe-w-camper-trailer-police-swat-1-64-diecast?_pos=6&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=b7853df2c&_ss=e"
+      },
+      {
+        "title": "Auto World 1965 Ford GT40 Mk1 (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-ford-gt40-mk1-auto-world-store-exclusive-1-64-diecast-due-april-2026?_pos=7&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=b7853df2c&_ss=e"
+      },
+      {
+        "title": "Auto World 1968 Dodge Coronet R/T Convertible (2025 MCACN Event Car) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/johnny-lightning-1968-dodge-coronet-r-t-convertible-2025-mcacn-event-car-1-64-diecast?_pos=8&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=b7853df2c&_ss=e"
+      },
+      {
+        "title": "Auto World Petty's Garage 2016 Ford Mustang GT King Premier Edition (White Body w/Petty Blue Ground Effects) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-pettys-garage-2016-ford-mustang-gt-king-premier-edition-white-body-w-petty-blue-ground-effects-1-64-diecast-due-march-2025?_pos=9&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=b7853df2c&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 1985 Fiero (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1984-fiero-auto-world-store-exclusive-1-64-diecast-due-april-2026?_pos=10&_psq=CM+Model+Porsche+964+Widebody+Hot+Pink+Metallic+with+Extra+Wheels+and+Wing+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=b7853df2c&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Maisto|11516GRY|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Muscle Machines|15572RD|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Diecast Masters|85630|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Majorette|MJ8502100000": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|IXO Models|IA64021|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Pop Race|PR64-PRE003": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Tarmac Works|T64-089-24MCR11": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|INNO64|IN64-R35N-BLA": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|MINI GT|MGT00960": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|GreenLight|62040SET": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Paragon Models|PA-55368": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|M2 Machines|32600-88": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|ERTL TOMY|45903|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|SpecCast|UBC063": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Auto World|64502B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Johnny Lightning|JLBT021-JLSP400": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|CM Model|CM64-SV800-01|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Kaido GT Chevrolet Silverado Sumatran Rhino x Mizu Diecast",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-sumatran-rhino-x-mizu-diecast?_pos=1&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=056133012&_ss=e"
+      },
+      {
+        "title": "Kaido GT Nissan Skyline GT-R (R34) Kaido Works\u00ae Greddy V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-works-greddy-v2?_pos=2&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=056133012&_ss=e"
+      },
+      {
+        "title": "Kaido GT Nissan Skyline GT-R (R33) Active Carbon R V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r33-active-carbon-r-v2?_pos=3&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=056133012&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|85697|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|IXO Models|IA64021|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Johnny Lightning Hobby Exclusive 1955 Chevrolet Bel Air (Red/White) 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-hobby-exclusive-1955-chevrolet-bel-air-red-white-1-64-scale-diecast-due-april-2025?_pos=1&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=119a13ddb&_ss=e"
+      },
+      {
+        "title": "MPC 1957 Chevy Bel Air \"Spirit of 57\" 1:25 Scale Model Kit",
+        "url": "https://www.autoworldstore.com/products/mpc-1957-chevy-bel-air-spirit-of-57-1-25-scale-model-kit?_pos=2&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=119a13ddb&_ss=e"
+      },
+      {
+        "title": "AMT 1957 Chevy Bel Air \"Pepper Shaker\" Silent Box 1:25 Scale Model Kit",
+        "url": "https://www.autoworldstore.com/products/amt-1957-chevy-bel-air-pepper-shaker-silent-box-1-25-scale-model-kit?_pos=3&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=119a13ddb&_ss=e"
+      },
+      {
+        "title": "Atlantis 1957 Chevy Bel Air Stock/Drag 1:25 Scale Model Kit",
+        "url": "https://www.autoworldstore.com/products/atlantis-1957-chevy-bel-air-stock-drag-1-25-scale-model-kit?_pos=4&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=119a13ddb&_ss=e"
+      },
+      {
+        "title": "AMT 1957 Chevy Bel Air Convertible 1:16 Scale Model Kit",
+        "url": "https://www.autoworldstore.com/products/amt-1957-chevy-bel-air-convertible-1-16-scale-model-kit?_pos=5&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=119a13ddb&_ss=e"
+      },
+      {
+        "title": "AMT 1957 Chevy Bel Air 1:25 Scale Model Kit",
+        "url": "https://www.autoworldstore.com/products/amt-1957-chevy-bel-air-1-25-scale-model-kit?_pos=6&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=119a13ddb&_ss=e"
+      },
+      {
+        "title": "AMT 1955 Chevy Bel Air Sedan 1:25 Scale Model Kit",
+        "url": "https://www.autoworldstore.com/products/amt-1955-chevy-bel-air-sedan-1-25-scale-model-kit?_pos=7&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=119a13ddb&_ss=e"
+      },
+      {
+        "title": "Auto World 1957 Chevrolet Bel Air Convertible 1:18 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/auto-world-1957-chevrolet-bel-air-convertible-1-18-scale-diecast-1?_pos=8&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=119a13ddb&_ss=e"
+      },
+      {
+        "title": "AMT 1957 Chevy Bel Air Street Machine 1:25 Scale Model Kit",
+        "url": "https://www.autoworldstore.com/products/pre-order-amt-1957-chevy-bel-air-street-machine-1-25-scale-model-kit-due-october-2024?_pos=9&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=119a13ddb&_ss=e"
+      },
+      {
+        "title": "Auto World 1965 Chevy Impala SS 396 (Evening Orchid Poly) (AW Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-chevy-impala-aw-exclusive-1-64-diecast-due-september-2025?_pos=10&_psq=IXO+Models+1957+Chevrolet+Bel+Air+Sedan+Harbor+Blue+Metallic+with+Blue+Interior+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=119a13ddb&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Pop Race|PR64-PRE003": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Tarmac Works|T64-089-24MCR11": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|MINI GT|MGT00960": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|GreenLight|62040SET": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Paragon Models|PA-55368": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|M2 Machines|32600-88": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|ERTL TOMY|45903|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|SpecCast|UBC063": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Auto World|64502B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Maisto|11516GRY|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Muscle Machines|15572RD|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Majorette|MJ8502100000": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|IXO Models|IA64019|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Kaido GT Chevrolet Silverado Kaido Dually Kaido Splash V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-dually-kaido-splash-v1?_pos=1&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=10bb445c4&_ss=e"
+      },
+      {
+        "title": "Kaido GT Chevrolet Silverado Kaido Intimidator V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-intimidator-v1?_pos=2&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=10bb445c4&_ss=e"
+      },
+      {
+        "title": "Kaido GT Chevrolet Silverado Kaido Intimidator V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-intimidator-v2?_pos=3&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=10bb445c4&_ss=e"
+      },
+      {
+        "title": "Kaido GT Volkswagen T1 Greddy Pickup V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-volkswagen-t1-greddy-pickup-v1?_pos=4&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=10bb445c4&_ss=e"
+      },
+      {
+        "title": "Kaido GT Honda Civic EF Kaido Works\u00ae V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-honda-civic-ef-kaido-works-v2?_pos=5&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=10bb445c4&_ss=e"
+      },
+      {
+        "title": "Kaido GT Toyota Sprinter Trueno Kaido Street V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-toyota-sprinter-trueno-kaido-street-v1?_pos=6&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=10bb445c4&_ss=e"
+      },
+      {
+        "title": "Kaido GT BMW M3 KAIDO GT V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-bmw-m3-kaido-gt-v2?_pos=7&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=10bb445c4&_ss=e"
+      },
+      {
+        "title": "Kaido GT Chevrolet Silverado Dually Vintage Spec V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-dually-vintage-spec-v2?_pos=8&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=10bb445c4&_ss=e"
+      },
+      {
+        "title": "Kaido GT Chevrolet Silverado Sumatran Rhino x Mizu Diecast",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-sumatran-rhino-x-mizu-diecast?_pos=9&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=10bb445c4&_ss=e"
+      },
+      {
+        "title": "Kaido GT Chevrolet Silverado Dually On Fire V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-dually-on-fire-v2?_pos=10&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=10bb445c4&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Pop Race|PR64-PRE003": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Tarmac Works|T64-089-24MCR11": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|INNO64|IN64-R35N-BLA": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "INNO64 1:64 Nissan GT-R (R35) NISMO in Black",
+        "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-gt-r-r35-nismo-in-black?_pos=1&_psq=IN64-R35N-BLA&_psid=10e15a194&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|MINI GT|MGT00955": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|GreenLight|62040SET": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Paragon Models|PA-55368": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|M2 Machines|32600-88": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|ERTL TOMY|61016": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|SpecCast|UBC062": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Auto World|64502A": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Johnny Lightning|JLBT021-JLSP400": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|CM Model|CM64-SV800-01|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "MotorHelix 1:64 Honda NSX Customized Version in Blue",
+        "url": "https://www.modelcarshouston.com/products/pre-order-motorhelix-1-64-honda-nsx-r-gt-in-white?_pos=1&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=40ba7a673&_ss=e"
+      },
+      {
+        "title": "MotorHelix 1:64 Honda Civic Type-R (FL5) Idemitsu Motion in Red",
+        "url": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-honda-civic-type-r-fl5-idemitsu-motion-in-red?_pos=2&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=40ba7a673&_ss=e"
+      },
+      {
+        "title": "Hobby Japan 1:64 Toyota Supra (A70) 2.5 GT Twin Turbo Custom Version Super Red II",
+        "url": "https://www.modelcarshouston.com/products/toyota-supra-a70-2-5-gt-twin-turbo-custom-version-super-red-ii?_pos=3&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=40ba7a673&_ss=e"
+      },
+      {
+        "title": "MotorHelix 1:64 Honda S2000 (AP2) in Indy Yellow Pearl",
+        "url": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-honda-s2000-ap2-in-indy-yellow-pearl?_pos=4&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=40ba7a673&_ss=e"
+      },
+      {
+        "title": "MotorHelix 1:64 Honda S2000 (AP2) in Grand Prix White",
+        "url": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-honda-s2000-ap2-in-grand-prix-white?_pos=5&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=40ba7a673&_ss=e"
+      },
+      {
+        "title": "MotorHelix 1:64 Honda Civic Type-R (EK9) Racing Livery TMCS Special Event Edition (ONE PER PERSON PER ORDER)",
+        "url": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-honda-civic-type-r-ek9-racing-livery-tmcs-special-event-edition-one-per-person-per-order?_pos=6&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=40ba7a673&_ss=e"
+      },
+      {
+        "title": "Hobby Japan 1:64 Toyota MR2 1600G-Limited Supercharged 1988 T-Top in Super Red II",
+        "url": "https://www.modelcarshouston.com/products/preorder-hobby-japan-1-64-toyota-mr2-1600g-limited-supercharged-1988-t-top-in-super-red-ii?_pos=7&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=40ba7a673&_ss=e"
+      },
+      {
+        "title": "MotorHelix 1:64 Pagani Zonda R in Carbon Fiber",
+        "url": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-pagani-zonda-r-in-carbon-fiber?_pos=8&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=40ba7a673&_ss=e"
+      },
+      {
+        "title": "MotorHelix 1:64 Honda S2000 Type S Platinum White Pearl",
+        "url": "https://www.modelcarshouston.com/products/motorhelix-1-64-honda-s2000-ap2-in-indy-yellow-pearl-copy?_pos=9&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=40ba7a673&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Maisto|11516or|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Diecast Masters|85697|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Majorette|MJ8502100000": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Pop Race|PR640092": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Tarmac Works|T64-079-K3V": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|INNO64|IN64-R35N-BLA": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|GreenLight|41175D": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Paragon Models|PA-65465": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|M2 Machines|56000-TW37": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLBT021-JLSP400": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-SV800-01|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Auto World 1989 Dodge Caravan Turbo (Solid Red \"Flash Red-Custom Order\")\u00a01premium 2025 release 3 :64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1989-dodge-caravan-turbo-solid-red-flash-red-custom-order-1-64-diecast-due-march-2026?_pos=1&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=ec8f73d62&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning Classic Gold 2014 Dodge Viper (Adrenaline Red) 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-2014-dodge-viper-adrenaline-red-1-64-scale-diecast-due-july-2023?_pos=2&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=ec8f73d62&_ss=e"
+      },
+      {
+        "title": "Auto World 1970 Plymouth Sport Fury GT (Black Velvet) (AW Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1970-plymouth-sport-fury-aw-exclusive-1-64-diecast-due-september-2025?_pos=3&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=ec8f73d62&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 1984 Nissan 300zx (Regatta Red) with Collector Tin 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1984-nissan-300zx-regatta-red-with-collector-tin-1-64-diecast-due-january-2026?_pos=4&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=ec8f73d62&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning Hobby Exclusive 1955 Chevrolet Bel Air (Red/White) 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-hobby-exclusive-1955-chevrolet-bel-air-red-white-1-64-scale-diecast-due-april-2025?_pos=5&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=ec8f73d62&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 1970 Ford Ranchero Squire (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1970-ford-ranchero-auto-world-store-exclusive-1-64-diecast-due-april-2026?_pos=6&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=ec8f73d62&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 1985 Fiero (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1984-fiero-auto-world-store-exclusive-1-64-diecast-due-april-2026?_pos=7&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=ec8f73d62&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning Classic Gold 1969 AMC Javelin (Big Bad Blue w/ White C Stripe) 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-1969-amc-javelin-big-bad-blue-w-white-c-stripe-1-64-scale-diecast-due-september-2025?_pos=8&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=ec8f73d62&_ss=e"
+      },
+      {
+        "title": "Auto World 2025 Release 2 Classic Muscle Deluxe (2-Pack) Version A 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/auto-world-2025-release-2-classic-muscle-deluxe-2-pack-version-a-1-64-scale-diecast?_pos=9&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=ec8f73d62&_ss=e"
+      },
+      {
+        "title": "Auto World 1965 Ford GT40 Mk1 (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-ford-gt40-mk1-auto-world-store-exclusive-1-64-diecast-due-april-2026?_pos=10&_psq=CM+Model+MV+Agusta+Superveloce+800+Motorcycle+Red+and+Silver+with+Figure+1%2F64+Diecast+Model+by+CM+Model&_psid=ec8f73d62&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|DCP/First Gear|60-2416|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Muscle Machines|15580GRN|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Johnny Lightning Muscle Cars 1969 Chevy Camaro Z28 (Red with White Stripes) 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1969-chevy-camaro-z28-red-with-white-stripes-1-64-scale-diecast-due-november-2025?_pos=1&_psq=Muscle+Machines+1972+Chevrolet+C10+Pickup+Truck+Light+Green+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=80becd13b&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning Muscle Cars 1969 Chevy Camaro Z28 (Metallic Blue w/White Stripes) 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1969-chevy-camaro-z28-metallic-blue-w-white-stripes-1-64-scale-diecast-due-november-2025?_pos=2&_psq=Muscle+Machines+1972+Chevrolet+C10+Pickup+Truck+Light+Green+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=80becd13b&_ss=e"
+      },
+      {
+        "title": "Auto World 1965 Chevrolet Impala (Willow Green) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-chevrolet-impala-willow-green-1-64-diecast-due-october-2025?_pos=3&_psq=Muscle+Machines+1972+Chevrolet+C10+Pickup+Truck+Light+Green+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=80becd13b&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 1955 Chevy Cameo Pickup (Lemon Yellow) with Collector Tin 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1955-chevy-cameo-pickup-lemon-yellow-with-collector-tin-1-64-diecast-due-january-2026?_pos=4&_psq=Muscle+Machines+1972+Chevrolet+C10+Pickup+Truck+Light+Green+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=80becd13b&_ss=e"
+      },
+      {
+        "title": "Auto World 2025 Release 2 Classic Muscle Deluxe (2-Pack) Version A 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/auto-world-2025-release-2-classic-muscle-deluxe-2-pack-version-a-1-64-scale-diecast?_pos=5&_psq=Muscle+Machines+1972+Chevrolet+C10+Pickup+Truck+Light+Green+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=80becd13b&_ss=e"
+      },
+      {
+        "title": "Auto World 1963 Chevrolet Nova II Wagon (Willow Green) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-chevrolet-nova-ii-wagon-willow-green-1-64-diecast-due-march-2025?_pos=6&_psq=Muscle+Machines+1972+Chevrolet+C10+Pickup+Truck+Light+Green+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=80becd13b&_ss=e"
+      },
+      {
+        "title": "MPC 1972 Chevy Racer's Wedge Pick Up 1:25 Scale Model Kit",
+        "url": "https://www.autoworldstore.com/products/mpc-1972-chevy-racers-wedge-pick-up-1-25-scale-model-kit?_pos=7&_psq=Muscle+Machines+1972+Chevrolet+C10+Pickup+Truck+Light+Green+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=80becd13b&_ss=e"
+      },
+      {
+        "title": "Auto World 1981 Chevy Silverado Fleetside Lowered (Custom Cream w/5-Color Stripe Graphics) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1981-chevy-silverado-fleetside-lowered-custom-cream-w-5-color-stripe-graphics-1-64-diecast-due-august-2025?_pos=8&_psq=Muscle+Machines+1972+Chevrolet+C10+Pickup+Truck+Light+Green+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=80becd13b&_ss=e"
+      },
+      {
+        "title": "Auto World 2025 Release 2 Classic Muscle Deluxe (2-Pack) Version B 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/auto-world-2025-release-2-classic-muscle-deluxe-2-pack-version-b-1-64-scale-diecast?_pos=9&_psq=Muscle+Machines+1972+Chevrolet+C10+Pickup+Truck+Light+Green+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=80becd13b&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 1970 Ford Ranchero Squire (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1970-ford-ranchero-auto-world-store-exclusive-1-64-diecast-due-april-2026?_pos=10&_psq=Muscle+Machines+1972+Chevrolet+C10+Pickup+Truck+Light+Green+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=80becd13b&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Diecast Masters|85697|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Majorette|MJ8502100000": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|IXO Models|IA64019|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|INNO64|IN64-R35N-BLA": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|MINI GT|MGT00955": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|ERTL TOMY|61016": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|SpecCast|UBC062": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Auto World|64502A": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Johnny Lightning|JLBT021-JLSP400": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-SV800-01|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Maisto|11516or": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Muscle Machines|15565GRY|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Diecast Masters|85697|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Majorette|MJ8502005001": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|MotorHelix|M63851|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|IXO Models|IA64019|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "AMT 1996 Chevrolet C-3500 Dually Pickup Easy Build 1:25 Scale Model Kit",
+        "url": "https://www.autoworldstore.com/products/amt-1996-chevrolet-c-3500-dually-pickup-easy-build-1-25-scale-model-kit?_pos=1&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=d40bed500&_ss=e"
+      },
+      {
+        "title": "Auto World 1965 Chevy Impala SS 396 (Evening Orchid Poly) (AW Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-chevy-impala-aw-exclusive-1-64-diecast-due-september-2025?_pos=2&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=d40bed500&_ss=e"
+      },
+      {
+        "title": "Auto World 1965 Chevrolet Impala (Willow Green) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-chevrolet-impala-willow-green-1-64-diecast-due-october-2025?_pos=3&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=d40bed500&_ss=e"
+      },
+      {
+        "title": "Auto World Big Country Collectibles 2025 Release 1 (6-Car Sealed Case) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-big-country-collectibles-2025-release-1-6-car-sealed-case-1-64-diecast-due-late-january-2026?_pos=4&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=d40bed500&_ss=e"
+      },
+      {
+        "title": "Auto World 2026 Release 1 Pickups Deluxe (2-Pack) Version B 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/auto-world-2026-release-1-pickups-deluxe-2-pack-version-b-1-64-scale-diecast?_pos=5&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=d40bed500&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 1955 Chevy Cameo Pickup (Lemon Yellow) with Collector Tin 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1955-chevy-cameo-pickup-lemon-yellow-with-collector-tin-1-64-diecast-due-january-2026?_pos=6&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=d40bed500&_ss=e"
+      },
+      {
+        "title": "Auto World 1968 Dodge Coronet R/T Convertible (2025 MCACN Event Car) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/johnny-lightning-1968-dodge-coronet-r-t-convertible-2025-mcacn-event-car-1-64-diecast?_pos=7&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=d40bed500&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 1970 Ford Ranchero 500 (Acapulco Blue) with Collector Tin 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1970-ford-ranchero-500-acapulco-blue-with-collector-tin-1-64-diecast-due-january-2026?_pos=8&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=d40bed500&_ss=e"
+      },
+      {
+        "title": "Auto World 2026 Release 1 Pickups Deluxe (2-Pack) Version A 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/auto-world-2026-release-1-pickups-deluxe-2-pack-version-a-1-64-scale-diecast?_pos=9&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=d40bed500&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 1965 Chevy Impala SS Lowrider (Custom Bronze Poly) (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1965-chevy-impala-ss-lowrider-custom-bronze-poly-auto-world-store-exclusive-1-64-diecast-due-march-2025?_pos=10&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=d40bed500&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Pop Race|PR640092": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Tarmac Works|T64-079-K3V": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Tarmac Works 1:64 Bisimoto Porsche 935 K3V with Trading Cards",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-bisimoto-porsche-935-k3v-with-trading-cards?_pos=1&_psq=T64-079-K3V&_psid=1c07a8a97&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|INNO64|IN64-RX3P-D1GP24": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|MINI GT|MGT00955": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|GreenLight|41175D": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Paragon Models|PA-65465": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|M2 Machines|56000-TW37": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|ERTL TOMY|61016": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|SpecCast|UBC062": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Auto World|64502A": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Johnny Lightning|JLPC014-JLSP374|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|CM Model|CM64-UTOPIA-03|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Kaido GT Nissan Silvia S13-R  Kaido Works\u00ae V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-nissan-silvia-s13-r-kaido-works-v1?_pos=1&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=f11ed7e11&_ss=e"
+      },
+      {
+        "title": "Kaido GT Toyota Sprinter Trueno DGK X KAIDO HOUSE V1  (2 PACK)",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-toyota-sprinter-trueno-dgk-x-kaido-house-v1?_pos=2&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=f11ed7e11&_ss=e"
+      },
+      {
+        "title": "Kaido House X DGK 3 Pack Bundle",
+        "url": "https://www.kaidohouse.com/products/dgk-bundle?_pos=3&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=f11ed7e11&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|DCP/First Gear|60-2344|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Maisto|11516or": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|85693|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Kaido GT Datsun Kaido 510 Wagon HKS V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-datsun-510-wagon-hks-v1?_pos=1&_psq=Diecast+Masters+Set+of+2+pieces+CAT+Caterpillar+272D2+Skid+Steer+Loader+and+CAT+Caterpillar+297D2+Compact+Track+Loader+with+Accessories+1%2F64+Diecast+Models+by+Diecast+Masters&_psid=94d8c3a2d&_ss=e"
+      },
+      {
+        "title": "Kaido GT Honda NSX (NA1) Kaido Works\u00ae V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-honda-nsx-na1-kaido-works-v2?_pos=2&_psq=Diecast+Masters+Set+of+2+pieces+CAT+Caterpillar+272D2+Skid+Steer+Loader+and+CAT+Caterpillar+297D2+Compact+Track+Loader+with+Accessories+1%2F64+Diecast+Models+by+Diecast+Masters&_psid=94d8c3a2d&_ss=e"
+      },
+      {
+        "title": "Kaido GT Volkswagen T1 Greddy Pickup V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-volkswagen-t1-greddy-pickup-v1?_pos=3&_psq=Diecast+Masters+Set+of+2+pieces+CAT+Caterpillar+272D2+Skid+Steer+Loader+and+CAT+Caterpillar+297D2+Compact+Track+Loader+with+Accessories+1%2F64+Diecast+Models+by+Diecast+Masters&_psid=94d8c3a2d&_ss=e"
+      },
+      {
+        "title": "Kaido GT Chevrolet Silverado Kaido Dually Kaido Splash V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-dually-kaido-splash-v1?_pos=4&_psq=Diecast+Masters+Set+of+2+pieces+CAT+Caterpillar+272D2+Skid+Steer+Loader+and+CAT+Caterpillar+297D2+Compact+Track+Loader+with+Accessories+1%2F64+Diecast+Models+by+Diecast+Masters&_psid=94d8c3a2d&_ss=e"
+      },
+      {
+        "title": "Kaido GT Honda Civic EF Kaido Works\u00ae V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-honda-civic-ef-kaido-works-v2?_pos=5&_psq=Diecast+Masters+Set+of+2+pieces+CAT+Caterpillar+272D2+Skid+Steer+Loader+and+CAT+Caterpillar+297D2+Compact+Track+Loader+with+Accessories+1%2F64+Diecast+Models+by+Diecast+Masters&_psid=94d8c3a2d&_ss=e"
+      },
+      {
+        "title": "Kaido GT NIssan Fairlady Z Tamiya x Kaido House \"The Frog\" V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-nissan-fairlady-z-tamiya-x-kaido-house-the-frog-v1?_pos=6&_psq=Diecast+Masters+Set+of+2+pieces+CAT+Caterpillar+272D2+Skid+Steer+Loader+and+CAT+Caterpillar+297D2+Compact+Track+Loader+with+Accessories+1%2F64+Diecast+Models+by+Diecast+Masters&_psid=94d8c3a2d&_ss=e"
+      },
+      {
+        "title": "Kaido GT Chevrolet Silverado Kaido Intimidator V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-intimidator-v1?_pos=7&_psq=Diecast+Masters+Set+of+2+pieces+CAT+Caterpillar+272D2+Skid+Steer+Loader+and+CAT+Caterpillar+297D2+Compact+Track+Loader+with+Accessories+1%2F64+Diecast+Models+by+Diecast+Masters&_psid=94d8c3a2d&_ss=e"
+      },
+      {
+        "title": "Kaido GT Chevrolet Silverado Kaido Intimidator V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-intimidator-v2?_pos=8&_psq=Diecast+Masters+Set+of+2+pieces+CAT+Caterpillar+272D2+Skid+Steer+Loader+and+CAT+Caterpillar+297D2+Compact+Track+Loader+with+Accessories+1%2F64+Diecast+Models+by+Diecast+Masters&_psid=94d8c3a2d&_ss=e"
+      },
+      {
+        "title": "Kaido GT Volkswagen T1 Street Battle Spec V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-volkswagen-t1-street-battle-spec-v1?_pos=9&_psq=Diecast+Masters+Set+of+2+pieces+CAT+Caterpillar+272D2+Skid+Steer+Loader+and+CAT+Caterpillar+297D2+Compact+Track+Loader+with+Accessories+1%2F64+Diecast+Models+by+Diecast+Masters&_psid=94d8c3a2d&_ss=e"
+      },
+      {
+        "title": "Kaido GT Volkswagen T1 Kaido Works\u00ae V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-volkswagen-t1-kaido-works-v1?_pos=10&_psq=Diecast+Masters+Set+of+2+pieces+CAT+Caterpillar+272D2+Skid+Steer+Loader+and+CAT+Caterpillar+297D2+Compact+Track+Loader+with+Accessories+1%2F64+Diecast+Models+by+Diecast+Masters&_psid=94d8c3a2d&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Model Model|MM64-PM-001|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "*PREORDER* MotorHelix 1:64 Subaru Impreza Wagon WRX STi Ver. VI Customized in Cherry Red Blossom",
+        "url": "https://www.modelcarshouston.com/products/motorhelix-1-64-subaru-impreza-wagon-wrx-sti-ver-vi-customized-in-cherry-red-blossom?_pos=1&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=cce1d4ecc&_ss=e"
+      },
+      {
+        "title": "*PREORDER* Almost Real \"AR Box\" 1:64 BMW M4 GT3 EVO Presentation Car",
+        "url": "https://www.modelcarshouston.com/products/preorder-almost-real-ar-box-1-64-bmw-m4-gt3-evo-presentation-car?_pos=2&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=cce1d4ecc&_ss=e"
+      },
+      {
+        "title": "*PREORDER* Almost Real \"AR Box\" 1:64 Porsche 911 GT3 R 2026 GT World Challenge Asia Mandalika #911 Test Car",
+        "url": "https://www.modelcarshouston.com/products/preorder-almost-real-ar-box-1-64-porsche-911-gt3-r-2026-gt-world-challenge-asia-mandalika-911-test-car?_pos=3&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=cce1d4ecc&_ss=e"
+      },
+      {
+        "title": "*PREORDER* Tarmac Works x MiniChamps 1:64 Porsche GT3RS (992.2) MR in Red & White",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-x-minichamps-1-64-porsche-gt3rs-992-2-mr-in-red-white?_pos=4&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=cce1d4ecc&_ss=e"
+      },
+      {
+        "title": "*PREORDER* Hobby Japan 1:64 Honda Civic Type-R (FK8) MUGEN in Flame Red",
+        "url": "https://www.modelcarshouston.com/products/preorder-hobby-japan-1-64-honda-civic-type-r-fk8-mugen-in-flame-red?_pos=5&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=cce1d4ecc&_ss=e"
+      },
+      {
+        "title": "*PREORDER* INNO64 1:64 Mazda RX-7 (FD3S) MAD MIKE \"MADBUL GEN8\" Edition",
+        "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-rx-7-fd3s-mad-mike-madbul-gen8-edition?_pos=6&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=cce1d4ecc&_ss=e"
+      },
+      {
+        "title": "MotorHelix 1:64 Subaru Impreza Wagon WRX STi Ver. VI in Arctic Silver Metallic",
+        "url": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-subaru-impreza-wagon-wrx-sti-ver-vi-in-arctic-silver-metallic?_pos=7&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=cce1d4ecc&_ss=e"
+      },
+      {
+        "title": "*PREORDER* Almost Real \"AR Box\" 1:64 Porsche 911 GT3 R 2026 GT World Challenge Asia Fuji - Absolute Racing #911",
+        "url": "https://www.modelcarshouston.com/products/preorder-almost-real-ar-box-1-64-porsche-911-gt3-r-2026-gt-world-challenge-asia-fuji-absolute-racing-911?_pos=8&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=cce1d4ecc&_ss=e"
+      },
+      {
+        "title": "*PREORDER* Hobby Japan 1:64 Honda Civic Type-R (FK8) MUGEN in Racing Blue Pearl",
+        "url": "https://www.modelcarshouston.com/products/preorder-hobby-japan-1-64-honda-civic-type-r-fk8-mugen-in-racing-blue-pearl?_pos=9&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=cce1d4ecc&_ss=e"
+      },
+      {
+        "title": "Hobby Japan 1:64 Subaru S207 NBR Challenge Package in Crystal Black Silica",
+        "url": "https://www.modelcarshouston.com/products/preorder-hobby-japan-1-64-subaru-s207-nbr-challenge-package-in-crystal-black-silica?_pos=10&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=cce1d4ecc&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|IXO Models|IA64019|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "1/64 Mitsubishi Fuso Canter New York Sunshine - New York Sunshine Special Edition - Tarmac Works TRUCK64",
+        "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-mitsubishi-fuso-canter-new-york-sunshine-new-york-sunshine-special-edition-truck64?_pos=1&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=8b1d68c47&_ss=e"
+      },
+      {
+        "title": "1/64 Mitsubishi Fuso Super Great EVA Racing - Tarmac Works TRUCK64",
+        "url": "https://www.tarmacworks.com/products/1-64-mitsubishi-fuso-super-great-eva-racing-tarmac-works-truck64-copy?_pos=2&_psq=IXO+Models+1975+Chevrolet+Silverado+K30+Crew+Cab+Dually+Pickup+Truck+Grecian+Bronze+and+Santa+Fe+Tan+1%2F64+Diecast+Model+Car+by+IXO+Models&_psid=8b1d68c47&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Pop Race|PR640092": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Tarmac Works|T64-079-K3V": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|MINI GT|MGT00955": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|GreenLight|41175D": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Paragon Models|PA-65465": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|M2 Machines|56000-TW37": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|ERTL TOMY|61016|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|SpecCast|UBC062": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Auto World|64502A": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Maisto|11516or|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Muscle Machines|15565GRY|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "MINI GT 1:64 Ford Mustang Dark Horse 2024 in Carbonized Gray",
+        "url": "https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-ford-mustang-dark-horse-2024-in-carbonized-gray?_pos=1&_psq=Muscle+Machines+Ford+Mustang+RTR-X+Gray+Metallic+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=adbccc136&_ss=e"
+      },
+      {
+        "title": "MINI GT 1:64 Ford Mustang Mach1- Grabber Yellow",
+        "url": "https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-ford-mustang-mach1-grabber-yellow?_pos=2&_psq=Muscle+Machines+Ford+Mustang+RTR-X+Gray+Metallic+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=adbccc136&_ss=e"
+      },
+      {
+        "title": "MINI GT 1:64 Ford Mustang LB-WORKS in Triple Yellow",
+        "url": "https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-ford-mustang-lb-works-in-triple-yellow?_pos=3&_psq=Muscle+Machines+Ford+Mustang+RTR-X+Gray+Metallic+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=adbccc136&_ss=e"
+      },
+      {
+        "title": "Hobby Japan 1:64 Toyota MR2 1600G-Limited Supercharged 1988 T-Top in Gray Metallic",
+        "url": "https://www.modelcarshouston.com/products/preorder-hobby-japan-1-64-toyota-mr2-1600g-limited-supercharged-1988-t-top-in-gray-metallic?_pos=4&_psq=Muscle+Machines+Ford+Mustang+RTR-X+Gray+Metallic+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=adbccc136&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Majorette|MJ8502005001": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Model Model|MM64-PM-001|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Johnny Lightning Muscle Cars 1969 Chevy Camaro Z28 (Red with White Stripes) 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1969-chevy-camaro-z28-red-with-white-stripes-1-64-scale-diecast-due-november-2025?_pos=1&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=46c9d9a60&_ss=e"
+      },
+      {
+        "title": "Auto World 2025 Release 2 Classic Muscle Deluxe (2-Pack) Version B 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/auto-world-2025-release-2-classic-muscle-deluxe-2-pack-version-b-1-64-scale-diecast?_pos=2&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=46c9d9a60&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning Classic Gold 2014 Dodge Viper (Adrenaline Red) 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-classic-gold-2014-dodge-viper-adrenaline-red-1-64-scale-diecast-due-july-2023?_pos=3&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=46c9d9a60&_ss=e"
+      },
+      {
+        "title": "Auto World 1991 Mitsubishi Eclipse GSX (Maranello Red) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1991-mitsubishi-eclipse-gsx-maranello-red-1-64-diecast-due-may-2025?_pos=4&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=46c9d9a60&_ss=e"
+      },
+      {
+        "title": "Auto World 1968 Dodge Coronet R/T Convertible (2025 MCACN Event Car) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/johnny-lightning-1968-dodge-coronet-r-t-convertible-2025-mcacn-event-car-1-64-diecast?_pos=5&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=46c9d9a60&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning Classic Gold 2005 Chevrolet SSR (Torch Red w/White SS Stripes) 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/johnny-lightning-classic-gold-2005-chevrolet-ssr-torch-red-w-white-ss-stripes-1-64-scale-diecast?_pos=6&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=46c9d9a60&_ss=e"
+      },
+      {
+        "title": "Auto World 1965 Ford GT40 Mk1 (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-ford-gt40-mk1-auto-world-store-exclusive-1-64-diecast-due-april-2026?_pos=7&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=46c9d9a60&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 1965 Ford Mustang Convertible w/Small Enclosed Trailer 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1965-ford-mustang-convertible-w-small-enclosed-trailer-1-64-diecast-due-june-2026?_pos=8&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=46c9d9a60&_ss=e"
+      },
+      {
+        "title": "Auto World 1989 Dodge Caravan Turbo (Solid Red \"Flash Red-Custom Order\")\u00a01premium 2025 release 3 :64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1989-dodge-caravan-turbo-solid-red-flash-red-custom-order-1-64-diecast-due-march-2026?_pos=9&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=46c9d9a60&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning Muscle Cars USA 2025 Release 3 Set B (6-Car Sealed Case) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-usa-2025-release-3-set-b-6-car-sealed-case-1-64-diecast-due-late-august-2026?_pos=10&_psq=Model+Model+Pandem+Mustang+Red+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=46c9d9a60&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|MotorHelix|M63851|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|IXO Models|IAPR1027": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Pop Race|PR640092": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Tarmac Works|T64-079-K3V": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "1/64 Bisimoto Porsche 935 K3V with Tarmac Cards Combo Set - Tarmac Works  X iXO Models HOBBY64",
+        "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-bisimoto-porsche-935-k3v-with-tarmac-cards-combo-set-hobby64?_pos=1&_psq=T64-079-K3V&_psid=e0158be4d&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|INNO64|IN64-RX3P-D1GP24": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "INNO64 1:64 Mazda RX-3 Station Wagon MAD MIKE D1GP Series 2024",
+        "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-rx-3-station-wagon-mad-mike-d1gp-series-2024?_pos=1&_psq=IN64-RX3P-D1GP24&_psid=166dda546&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|MINI GT|MGT00782": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|GreenLight|41175D": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Paragon Models|PA-65465": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|M2 Machines|56000-TW37": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|ERTL TOMY|13975": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|SpecCast|UBC061": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Auto World|64452-AWSP178B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Johnny Lightning|JLPC014-JLSP374|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|CM Model|CM64-UTOPIA-03|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Tarmac Works 1:64 Pagani Utopia in Black Carbon Fiber Edition",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-pagani-utopia-in-black-carbon-fiber-edition?_pos=1&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=658de3e8f&_ss=e"
+      },
+      {
+        "title": "MINIGT 1:64 BMW M5 (G90) Isle of Man in Green Metallic",
+        "url": "https://www.modelcarshouston.com/products/preorder-minigt-1-64-bmw-m5-g90-isle-of-man-green-metallic?_pos=2&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=658de3e8f&_ss=e"
+      },
+      {
+        "title": "Tarmac Works 1:64 Pagani Imola in Rosso Dubai",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-pagani-imola-in-rosso-dubai?_pos=3&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=658de3e8f&_ss=e"
+      },
+      {
+        "title": "*PREORDER* MINIGT 1:64 BMW M4 CS Frozen Isle of Man Green Metallic",
+        "url": "https://www.modelcarshouston.com/products/preorder-minigt-1-64-bmw-m4-cs-frozen-isle-of-man-green-metallic?_pos=4&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=658de3e8f&_ss=e"
+      },
+      {
+        "title": "Tarmac Works 1:64 Pagani Huayra BC in Trifoglio Verde",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-pagani-huayra-bc-in-trifoglio-verde?_pos=5&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=658de3e8f&_ss=e"
+      },
+      {
+        "title": "MINI GT 1:64 Porsche 911 Dakar Shade Green Metallic",
+        "url": "https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-porsche-911-dakar-shade-green-metallic?_pos=6&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=658de3e8f&_ss=e"
+      },
+      {
+        "title": "Tarmac Works 1:64 Pagani Zonda R N\u00fcrburgring Lap Time Record Edition Special Edition",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-pagani-zonda-r-nurburgring-lap-time-record-edition-special-edition?_pos=7&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=658de3e8f&_ss=e"
+      },
+      {
+        "title": "Tarmac Works 1:64 Pagani Zonda Cinque in Verde Firenze",
+        "url": "https://www.modelcarshouston.com/products/preorder-pagani-zonda-cinque-in-verde-firenze?_pos=8&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=658de3e8f&_ss=e"
+      },
+      {
+        "title": "Tarmac Works 1:64 Pagani Huayra BC in Rosso Dubai",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-pagani-huayra-bc-in-rosso-dubai?_pos=9&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=658de3e8f&_ss=e"
+      },
+      {
+        "title": "Tarmac Works 1:64 Porsche 911 (992) GT3 RS in Acid Green",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-porsche-911-992-gt3-rs-in-acid-green?_pos=10&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=658de3e8f&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|DCP/First Gear|60-2344|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Muscle Machines|15565GRY|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Johnny Lightning Muscle Cars 1969 Dodge Coronet R/T Convertible (A4 Silver) 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1969-dodge-coronet-r-t-convertible-a4-silver-1-64-scale-diecast-due-august-2025?_pos=1&_psq=Muscle+Machines+Ford+Mustang+RTR-X+Gray+Metallic+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=e1840ae7a&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning John Wick 1969 Ford Mustang Mach I 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-john-wick-1969-ford-mustang-mach-i-1-64-scale-diecast-due-november-2024?_pos=2&_psq=Muscle+Machines+Ford+Mustang+RTR-X+Gray+Metallic+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=e1840ae7a&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Diecast Masters|85693": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Majorette|MJ8502005001": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|MotorHelix|M63851|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Pop Race|PR640110": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Tarmac Works|T64-067-TC": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|INNO64|IN64-RX3P-D1GP24": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|GreenLight|41175B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Paragon Models|PA-55684": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|M2 Machines|37000-78": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLPC014-JLSP374|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Johnny Lightning Mystery Matinee 1985 Toyota SR5 Pickup 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-mystery-matinee-1985-toyota-sr5-pickup-1-64-scale-diecast-due-late-july-2024?_pos=1&_psq=Johnny+Lightning+1985+Toyota+SR5+Pickup+Truck+Black+%22Mystery+Matinee%22+Movie+Pop+Culture+2024+Release+1+1%2F64+Diecast+Model+Car+by+Johnny+Lightning&_psid=4d39dac5b&_ss=e"
+      },
+      {
+        "title": "Auto World Xtraction 1969 Dodge Daytona Mystery Matinee (Red) HO Scale Slot Car",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-xtraction-1969-dodge-daytona-mystery-matinee-red-ho-scale-slot-car-due-march-2026?_pos=2&_psq=Johnny+Lightning+1985+Toyota+SR5+Pickup+Truck+Black+%22Mystery+Matinee%22+Movie+Pop+Culture+2024+Release+1+1%2F64+Diecast+Model+Car+by+Johnny+Lightning&_psid=4d39dac5b&_ss=e"
+      },
+      {
+        "title": "Auto World Xtraction 1969 Dodge Daytona Mystery Matinee (Yellow & Blue) HO Scale Slot Car",
+        "url": "https://www.autoworldstore.com/products/auto-world-xtraction-1969-dodge-daytona-mystery-matinee-yellow-blue-ho-scale-slot-car-due-march-2026?_pos=3&_psq=Johnny+Lightning+1985+Toyota+SR5+Pickup+Truck+Black+%22Mystery+Matinee%22+Movie+Pop+Culture+2024+Release+1+1%2F64+Diecast+Model+Car+by+Johnny+Lightning&_psid=4d39dac5b&_ss=e"
+      },
+      {
+        "title": "Auto World Xtraction 1969 Dodge Daytona Mystery Matinee (iWheels) HO Scale Slot Car",
+        "url": "https://www.autoworldstore.com/products/auto-world-xtraction-1969-dodge-daytona-mystery-matinee-iwheels-ho-scale-slot-car?_pos=4&_psq=Johnny+Lightning+1985+Toyota+SR5+Pickup+Truck+Black+%22Mystery+Matinee%22+Movie+Pop+Culture+2024+Release+1+1%2F64+Diecast+Model+Car+by+Johnny+Lightning&_psid=4d39dac5b&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning Mystery Matinee 1969 Dodge Charger Daytona 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-mystery-matinee-1969-dodge-charger-daytona-1-64-scale-diecast-due-november-2024?_pos=5&_psq=Johnny+Lightning+1985+Toyota+SR5+Pickup+Truck+Black+%22Mystery+Matinee%22+Movie+Pop+Culture+2024+Release+1+1%2F64+Diecast+Model+Car+by+Johnny+Lightning&_psid=4d39dac5b&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-UTOPIA-03|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Auto World 2025 Release 2 Classic Muscle Deluxe (2-Pack) Version A 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/auto-world-2025-release-2-classic-muscle-deluxe-2-pack-version-a-1-64-scale-diecast?_pos=1&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=d0da7f4e7&_ss=e"
+      },
+      {
+        "title": "Auto World 2025 Release 2 Ragtops Deluxe (2-Pack) Version A 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/auto-world-2025-release-2-ragtops-deluxe-2-pack-version-a-1-64-scale-diecast?_pos=2&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=d0da7f4e7&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 1965 Chevy Impala SS Lowrider (Custom Bronze Poly) (Auto World Store Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1965-chevy-impala-ss-lowrider-custom-bronze-poly-auto-world-store-exclusive-1-64-diecast-due-march-2025?_pos=3&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=d0da7f4e7&_ss=e"
+      },
+      {
+        "title": "Auto World 1965 Chevy Impala SS 396 (Evening Orchid Poly) (AW Exclusive) 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-auto-world-1965-chevy-impala-aw-exclusive-1-64-diecast-due-september-2025?_pos=4&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=d0da7f4e7&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning Muscle Cars 1966 Buick Skylark GS (Seafoam Green Poly) 1:64 Scale Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1966-buick-skylark-gs-seafoam-green-poly-1-64-scale-diecast-due-august-2025?_pos=5&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=d0da7f4e7&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|DCP/First Gear|60-2344|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Auto World BCC Mossy Oak 2019 Chevy Silverado High Country Truck 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/auto-world-bcc-mossy-oak-2019-chevy-silverado-high-country-truck-1-64-diecast?_pos=1&_psq=DCP%2FFirst+Gear+GMC+General+with+60%22+Flat+Top+Sleeper+%26+48%27+Utility+Flatbed+Trailer+with+Lumber+Load+Black+with+Red+Stripes+1%2F64+Diecast+Model+by+DCP%2FFirst+Gear&_psid=6ae70d9ab&_ss=e"
+      },
+      {
+        "title": "Johnny Lightning 1980 Toyota Land Cruiser w/Open Car Trailer 1:64 Diecast",
+        "url": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-1980-toyota-land-cruiser-w-open-car-trailer-1-64-diecast-due-march-2025?_pos=2&_psq=DCP%2FFirst+Gear+GMC+General+with+60%22+Flat+Top+Sleeper+%26+48%27+Utility+Flatbed+Trailer+with+Lumber+Load+Black+with+Red+Stripes+1%2F64+Diecast+Model+by+DCP%2FFirst+Gear&_psid=6ae70d9ab&_ss=e"
+      },
+      {
+        "title": "Moebius 48' Flatbed Trailer w/Cambered Deck 1/25 Scale Model Kit",
+        "url": "https://www.autoworldstore.com/products/moebius-48-flatbed-trailer-w-cambered-deck-1-25-scale-model-kit?_pos=3&_psq=DCP%2FFirst+Gear+GMC+General+with+60%22+Flat+Top+Sleeper+%26+48%27+Utility+Flatbed+Trailer+with+Lumber+Load+Black+with+Red+Stripes+1%2F64+Diecast+Model+by+DCP%2FFirst+Gear&_psid=6ae70d9ab&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Muscle Machines|15565GRY|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "1/64 Old & New 997 Gray Metallic - Tarmac Works ROAD64",
+        "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-old-new-997-gray-metallic-road64?_pos=1&_psq=Muscle+Machines+Ford+Mustang+RTR-X+Gray+Metallic+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=ffdb15a35&_ss=e"
+      },
+      {
+        "title": "1/64 Toyota GR Corolla Grey with oil can packaging - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/1-64-toyota-gr-corolla-grey-with-oil-can-packaging-tarmac-works-global64?_pos=2&_psq=Muscle+Machines+Ford+Mustang+RTR-X+Gray+Metallic+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=ffdb15a35&_ss=e"
+      },
+      {
+        "title": "1/64 Honda NSX (NA1) Titanium Gray - Ignition Model",
+        "url": "https://www.tarmacworks.com/products/ignition-model-1-64-honda-nsx-na1-titanium-gray?_pos=3&_psq=Muscle+Machines+Ford+Mustang+RTR-X+Gray+Metallic+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=ffdb15a35&_ss=e"
+      },
+      {
+        "title": "1/64 Porsche 718 Spyder RS Vanadium Grey Metallic - Tarmac Works X Minichamps  COLLAB64",
+        "url": "https://www.tarmacworks.com/products/minichamps-x-tarmac-works-1-64-porsche-718-spyder-rs-vanadium-grey-metallic-collab64?_pos=4&_psq=Muscle+Machines+Ford+Mustang+RTR-X+Gray+Metallic+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=ffdb15a35&_ss=e"
+      },
+      {
+        "title": "1/64 Porsche 959 Silver - Tarmac Works x iXO Models GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/1-64-porsche-959-silver-tarmac-works-x-ixo-models-global64?_pos=5&_psq=Muscle+Machines+Ford+Mustang+RTR-X+Gray+Metallic+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=ffdb15a35&_ss=e"
+      },
+      {
+        "title": "1/64 Mazda RX-7 VeilSide Fortune7 Grey Metallic / Black - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-mazda-rx-7-veilside-fortune7-grey-metallic-black-global64?_pos=6&_psq=Muscle+Machines+Ford+Mustang+RTR-X+Gray+Metallic+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=ffdb15a35&_ss=e"
+      },
+      {
+        "title": "1/64 Toyota Hilux Grey - Tarmac Works ROAD64",
+        "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-toyota-hilux-grey-road64?_pos=7&_psq=Muscle+Machines+Ford+Mustang+RTR-X+Gray+Metallic+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=ffdb15a35&_ss=e"
+      },
+      {
+        "title": "1/64 Pagani Zonda R Matte Exposed Carbon Fiber - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/1-64-pagani-zonda-r-matte-exposed-carbon-fiber-tarmac-works-global64?_pos=8&_psq=Muscle+Machines+Ford+Mustang+RTR-X+Gray+Metallic+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=ffdb15a35&_ss=e"
+      },
+      {
+        "title": "1/64 Ford Mustang GTD Blue - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/1-64-ford-mustang-gtd-blue-tarmac-works-x-ixo-models-global64?_pos=9&_psq=Muscle+Machines+Ford+Mustang+RTR-X+Gray+Metallic+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=ffdb15a35&_ss=e"
+      },
+      {
+        "title": "1/64 EVA RT PRODUCTION MODEL-02 S15 - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/1-64-eva-rt-production-model-02-s15-tarmac-works-global64?_pos=10&_psq=Muscle+Machines+Ford+Mustang+RTR-X+Gray+Metallic+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=ffdb15a35&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Diecast Masters|85693": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Majorette|MJ8502005001": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|MotorHelix|M65029": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|IXO Models|IAPR1027|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|INNO64|IN64-RX3P-D1GP24": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|MINI GT|MGT00782": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "MINI GT 1:64 Nissan Z Pandem in Gold",
+        "url": "https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-nissan-z-pandem-in-gold?_pos=1&_psq=MGT00782&_psid=1ac48d8bc&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|ERTL TOMY|13975": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|SpecCast|UBC061": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Auto World|64452-AWSP178B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Johnny Lightning|JLPC014-JLSP374|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-UTOPIA-03|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "1/64 Pagani Utopia Green Metallic - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/1-64-pagani-utopia-green-metallic-tarmac-works-global64?_pos=1&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=6d5f730fe&_ss=e"
+      },
+      {
+        "title": "1/64 Pagani Utopia Blue Metallic - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/1-64-pagani-utopia-blue-metallic-tarmac-works-global64?_pos=2&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=6d5f730fe&_ss=e"
+      },
+      {
+        "title": "1/64 Pagani Utopia Rinascimento - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-pagani-utopia-rinascimento-global64?_pos=3&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=6d5f730fe&_ss=e"
+      },
+      {
+        "title": "1/64 Pagani Imola Matt Silver - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/1-64-pagani-imola-matt-silver-tarmac-works-global64?_pos=4&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=6d5f730fe&_ss=e"
+      },
+      {
+        "title": "1/64 Pagani Zonda R Matte Exposed Carbon Fiber - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/1-64-pagani-zonda-r-matte-exposed-carbon-fiber-tarmac-works-global64?_pos=5&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=6d5f730fe&_ss=e"
+      },
+      {
+        "title": "1/64 Pagani Huayra R Satin Silver - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-pagani-huayra-r-satin-silver-global64?_pos=6&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=6d5f730fe&_ss=e"
+      },
+      {
+        "title": "1/64 PANDEM Supra (A90) Green Metallic - Ignition Model",
+        "url": "https://www.tarmacworks.com/products/ignition-model-1-64-pandem-supra-a90-green-metallic?_pos=7&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=6d5f730fe&_ss=e"
+      },
+      {
+        "title": "1/64 Pagani Huayra BC Bianco Benny - Tarmac Works  GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-pagani-huayra-bc-bianco-benny-global64?_pos=8&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=6d5f730fe&_ss=e"
+      },
+      {
+        "title": "1/64 Mitsubishi Lancer GSR Evolution Green Metallic - Tarmac Works GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/1-64-mitsubishi-lancer-gsr-evolution-green-metallic-tarmac-works-global64?_pos=9&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=6d5f730fe&_ss=e"
+      },
+      {
+        "title": "1/64 Aston Martin DBS Superleggera Green Metallic - Tarmac Works x iXO Models GLOBAL64",
+        "url": "https://www.tarmacworks.com/products/1-64-aston-martin-dbs-superleggera-green-metallic-tarmac-works-x-ixo-models-global64?_pos=10&_psq=CM+Model+Pagani+Utopia+Green+Metallic+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=6d5f730fe&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|DCP/First Gear|60-2344|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Muscle Machines|15561YL|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Kaido GT Honda Civic EF Kaido Works\u00ae V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-honda-civic-ef-kaido-works-v2?_pos=1&_psq=Muscle+Machines+Gene+Winfield%E2%80%99s+1961+Cadillac+Maybelline+Yellow+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=3b633e9d8&_ss=e"
+      },
+      {
+        "title": "Kaido GT Nissan Silvia S13-R Kaido Drift V1",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-nissan-silvia-s13-r-kaido-drift-v1?_pos=2&_psq=Muscle+Machines+Gene+Winfield%E2%80%99s+1961+Cadillac+Maybelline+Yellow+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=3b633e9d8&_ss=e"
+      },
+      {
+        "title": "Kaido GT Nissan Skyline GT-R (R34) Kaido Works\u00ae Greddy V2",
+        "url": "https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-works-greddy-v2?_pos=3&_psq=Muscle+Machines+Gene+Winfield%E2%80%99s+1961+Cadillac+Maybelline+Yellow+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=3b633e9d8&_ss=e"
+      },
+      {
+        "title": "\"Garage Find NSX\" Custom Diecast",
+        "url": "https://www.kaidohouse.com/products/garage-find-nsx-custom-diecast?_pos=4&_psq=Muscle+Machines+Gene+Winfield%E2%80%99s+1961+Cadillac+Maybelline+Yellow+Metallic+with+White+Stripes+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=3b633e9d8&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Diecast Masters|85693|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|IXO Models|IAPR1026": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Pop Race|PR640110": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Tarmac Works|T64-067-TC": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [
+      {
+        "title": "Tarmac Works 1:64 Nissan NISMO GT-R LM Test Car",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-nissan-nismo-gt-r-lm-test-car?_pos=1&_psq=T64-067-TC&_psid=56e138b59&_ss=e"
+      }
+    ],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|INNO64|IN64-R33R-RAZO": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|MINI GT|MGT00782": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|GreenLight|41175B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Paragon Models|PA-55684": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|M2 Machines|37000-78": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|ERTL TOMY|13975": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|SpecCast|UBC061": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Auto World|64452-AWSP178B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.kaidohouse.com|Diecast Masters|85692": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|MotorHelix|M65029|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Pop Race|PR640110": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Tarmac Works|T64-067-TC": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|MINI GT|MGT00782": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|GreenLight|41175B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|Paragon Models|PA-55684": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.autoworldstore.com|M2 Machines|37000-78": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|ERTL TOMY|13975": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|SpecCast|UBC061": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.tarmacworks.com|Auto World|64452-AWSP178B": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
+  },
+  "https://www.modelcarshouston.com|Muscle Machines|15561YL|model": {
+    "checked": "2026-11-28T19:41:09.518819+07:00",
+    "hits": [],
+    "status": "discovery only; exact SKU and variant not verified"
   }
 }
