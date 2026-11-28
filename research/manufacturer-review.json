@@ -662,18 +662,6 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "productCode": "T64G-060-BG",
-      "name": "1/64 Toyota Sprinter Trueno AE86 Widebody Black/Grey - Designed by Jon Sibal - Malaysia Special Edition - Tarmac Works GLOBAL64",
-      "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-toyota-sprinter-trueno-ae86-widebody-black-grey-malaysia-special-edition-global64?variant=46673606902017",
-      "vendor": "Tarmac Works",
-      "releaseStatus": "unconfirmed",
-      "editionType": "unconfirmed",
-      "verification": "NEEDS VERIFICATION",
-      "photo": null
-    },
-    {
-      "manufacturer": "Tarmac Works",
       "productCode": "T64G-F037-LV",
       "name": "Tarmac Works 1:64 Mercedes-AMG F1 W12 E Performance Las Vegas Grand Prix Launch Party",
       "variant": "Default Title",
@@ -698,11 +686,35 @@
     },
     {
       "manufacturer": "Tarmac Works",
-      "productCode": "T64R-082-YL",
-      "name": "1/64 Ferrari 348 Challenge Yellow - Tarmac Works X iXO Models ROAD64",
+      "productCode": "T64G-F041-DR2",
+      "name": "Tarmac Works 1:64 McLaren MCL36 Japanese Grand Prix 2022 Daniel Ricciardo",
       "variant": "Default Title",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-ferrari-348-challenge-yellow-road64?variant=46521932218625",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mclaren-mcl36-japanese-grand-prix-2022-daniel-ricciardo?variant=44975535489280",
       "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64-066-WP",
+      "name": "Tarmac Works 1:64 Mazda RX-7 FC3S PANDEM in White and Purple",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mazda-rx-7-fc3s-pandem-in-white-and-purple?variant=44616389787904",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "MotorHelix",
+      "productCode": "M65018",
+      "name": "MotorHelix 1:64 Honda Civic Type-R (EK9) Customized Motul Livery",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/motorhelix-1-64-honda-civic-type-r-ek9-customized-motul-livery?variant=49150555980032",
+      "vendor": "MotorHelix",
       "releaseStatus": "unconfirmed",
       "editionType": "unconfirmed",
       "verification": "NEEDS VERIFICATION",
@@ -3409,6 +3421,16 @@
       "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-toyota-sprinter-trueno-ae86-keiichi-tsuchiya-with-chase-car-limited-edition?variant=47094625042688"
     },
     {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64G-060-BG",
+      "variant_id": 46673606902017,
+      "title": "1/64 Toyota Sprinter Trueno AE86 Widebody Black/Grey - Designed by Jon Sibal - Malaysia Special Edition - Tarmac Works GLOBAL64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-toyota-sprinter-trueno-ae86-widebody-black-grey-malaysia-special-edition-global64?variant=46673606902017"
+    },
+    {
       "manufacturer": "INNO64",
       "reason": "manufacturer mismatch or missing vendor",
       "sku": "IN64-MADLAB01-MADBUL",
@@ -3437,6 +3459,66 @@
       "variant": "Default Title",
       "vendor": "Inno Models",
       "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-toyota-supra-a80-top-secret-gt300-in-red?variant=46762338451712"
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "reason": "possible existing SKU",
+      "sku": "T64R-082-YL",
+      "variant_id": 46521932218625,
+      "title": "1/64 Ferrari 348 Challenge Yellow - Tarmac Works X iXO Models ROAD64",
+      "variant": "Default Title",
+      "vendor": "Tarmac Works",
+      "url": "https://www.tarmacworks.com/products/tarmac-works-1-64-ferrari-348-challenge-yellow-road64?variant=46521932218625"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-R35TS-TAS2021",
+      "variant_id": 45804800737536,
+      "title": "INNO64 1:64 Nissan GT-R (R35) \"TOP SECRET\" Tokyo Auto Salon 2021",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-gt-r-r35-top-secret-tokyo-auto-salon-2021?variant=45804800737536"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-R35TS-HKTS24",
+      "variant_id": 45991771078912,
+      "title": "INNO64 1:64 Nissan GT-R (R35) NISMO 2024 \"TOP SECRET\" Hong Kong Toy Car Salon Special Edition (ONE PER CUSTOMER)",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-gt-r-r35-nismo-2024-top-secret-hong-kong-toy-car-salon-special-edition-one-per-customer-order?variant=45991771078912"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-R34TS-MDX24",
+      "variant_id": 45804760563968,
+      "title": "INNO64 1:64 Nissan Skyline GT-R (R34) \"TOP SECRET\" Tokyo Auto Salon 2024 MDX Edition (ONE PER CUSTOMER / ORDER)",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-skyline-gt-r-r34-top-secret-tokyo-auto-salon-2024-mdx-edition?variant=45804760563968"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-LBWK-RX7-03",
+      "variant_id": 45049361498368,
+      "title": "INNO64 1:64 Mazda RX7 (FD3S) LB-SUPER SILHOUETTE Hobby Expo China 2024 Edition (ONE CAR PER PERSON)",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-rx7-fd3s-lb-super-silhouette-hobby-expo-china-2024-edition?variant=45049361498368"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-LBWK-RX7-01",
+      "variant_id": 44401956651264,
+      "title": "INNO64 1:64 Mazda RX7 (FD3S) LB-SUPER SILHOUETTE in Black",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-rx7-fd3s-lb-super-silhouette-in-black?variant=44401956651264"
     }
   ]
 }

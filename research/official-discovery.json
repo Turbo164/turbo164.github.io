@@ -16477,5 +16477,45 @@
       }
     ],
     "status": "official discovery only; exact variant verification pending"
+  },
+  "tarmacworks|T64G-F041-DR2": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "hits": [],
+    "status": "official discovery only; exact variant verification pending"
+  },
+  "tarmacworks|T64-066-WP": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "hits": [
+      {
+        "available": true,
+        "body": "<p>1/64 scale die-cast<br></p>\n<p>Limited production run and will never be produced again<br></p>\n<p>Detailed rims &amp; rubber wheels<br></p>\n<p>Detailed front and rear lights</p>\n<p>Display base and acrylic cover with a paper sleeve box<br><br><meta charset=\"utf-8\">Include individual numbered collector card<br></p>\n<p>Fully licensed product</p>",
+        "compare_at_price_max": "0.00",
+        "compare_at_price_min": "0.00",
+        "handle": "tarmac-works-1-64-pandem-mazda-rx-7-fc3s-white-purple-hobby64",
+        "id": 8607061410049,
+        "image": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64-066-WP_M03.jpg?v=1792604236",
+        "price": "21.90",
+        "price_max": "21.90",
+        "price_min": "21.90",
+        "tags": [
+          "1/64",
+          "HOBBY64/64+",
+          "New Release"
+        ],
+        "title": "1/64 Pandem Mazda RX-7 FC3S White / purple - Tarmac Works HOBBY64",
+        "type": "1/64 Diecast",
+        "url": "/products/tarmac-works-1-64-pandem-mazda-rx-7-fc3s-white-purple-hobby64?_pos=1&_psq=T64-066-WP&_psid=5fdd53184&_ss=e",
+        "variants": [],
+        "vendor": "Tarmac Works",
+        "featured_image": {
+          "alt": "1/64 Pandem Mazda RX-7 FC3S White / purple - Tarmac Works HOBBY64",
+          "aspect_ratio": 1.5,
+          "height": 3105,
+          "url": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64-066-WP_M03.jpg?v=1792604236",
+          "width": 4657
+        }
+      }
+    ],
+    "status": "official discovery only; exact variant verification pending"
   }
 }

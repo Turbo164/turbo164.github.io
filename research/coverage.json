@@ -1,41 +1,19 @@
 {
-  "time": "2026-11-28T07:42:58.641963+07:00",
+  "time": "2026-11-28T09:41:06.625758+07:00",
   "pilot_only": false,
   "version": "6.3",
-  "catalog_master_commit": "1bf314365a3a5c9eb7b970fc52a398394a947296",
-  "catalog_master_count": 519,
-  "official_exact_candidates": 195,
+  "catalog_master_commit": "e9ec0980fec105212a8b0261f3a0c47f9d33c93b",
+  "catalog_master_count": 521,
+  "official_exact_candidates": 193,
   "independent_exact_candidates": 0,
   "new_leads": 0,
   "historical_master_present": false,
   "cumulative_count": 6762,
   "review_candidates": 1214,
-  "elapsed_research_seconds": 2733,
+  "elapsed_research_seconds": 2680,
   "catalog_count": 521,
   "lead_count": 6762,
   "sources": [
-    [
-      "MINI GT",
-      "repeated page; checking variants for changes",
-      1
-    ],
-    [
-      "MINI GT",
-      "page collected",
-      1,
-      250
-    ],
-    [
-      "MINI GT",
-      "repeated page; checking variants for changes",
-      2
-    ],
-    [
-      "MINI GT",
-      "page collected",
-      2,
-      62
-    ],
     [
       "Ignition Model",
       "repeated page; checking variants for changes",
@@ -170,6 +148,28 @@
     ],
     [
       "MINI GT",
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "MINI GT",
+      "page collected",
+      1,
+      250
+    ],
+    [
+      "MINI GT",
+      "repeated page; checking variants for changes",
+      2
+    ],
+    [
+      "MINI GT",
+      "page collected",
+      2,
+      62
+    ],
+    [
+      "MINI GT",
       "blocked",
       "robots disallows"
     ],
@@ -236,7 +236,7 @@
     [
       "wholesale",
       "new listing leads",
-      41,
+      1,
       0,
       "product links",
       45
@@ -244,15 +244,74 @@
     [
       "wholesale",
       "new listing leads",
-      42,
+      2,
       0,
       "product links",
-      16
+      47
     ],
     [
       "wholesale",
-      "no parseable product links",
-      43
+      "new listing leads",
+      3,
+      0,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      4,
+      0,
+      "product links",
+      41
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      5,
+      0,
+      "product links",
+      47
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      6,
+      0,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      7,
+      0,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      8,
+      0,
+      "product links",
+      44
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      9,
+      0,
+      "product links",
+      46
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      10,
+      0,
+      "product links",
+      48
     ],
     [
       "hobbysearch",
@@ -262,49 +321,49 @@
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/d_guide.html",
+      "https://southtexasdiecast.com/hwguide/h_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/e_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/hwcollectible_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/e_guide.html",
+      "https://southtexasdiecast.com/hwguide/i_ccguide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/f_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/i_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/f_guide.html",
+      "https://southtexasdiecast.com/hwguide/j_ccguide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/g_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/j_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/g_guide.html",
+      "https://southtexasdiecast.com/hwguide/k_ccguide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/h_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/k_guide.html",
       0
     ],
     [
@@ -328,44 +387,44 @@
     [
       "V4.6",
       "product links inspected",
-      26844,
+      27211,
       "exact scale/SKU matches",
-      182
+      189
     ],
     [
       "V4.9",
       "cached product requests avoided",
       0,
       "unique cached endpoints",
-      1492
+      1518
     ],
     [
       "V4.5",
       "independent storefront searches",
-      319,
+      324,
       "wholesale SKU backlog",
-      1785,
+      1783,
       "new search records inspected",
-      319
+      324
     ],
     [
       "V4.7",
       "manufacturer-matched review candidates",
-      59,
+      60,
       "excluded or duplicate",
-      130
+      137
     ],
     [
       "V5.0",
       "official exact variant matches",
-      387,
+      383,
       "errors",
       2
     ],
     [
       "V4.8",
       "official-host candidates",
-      219,
+      217,
       "publication approved",
       0
     ],
@@ -382,7 +441,7 @@
     [
       "V5.1",
       "unique official candidates for final review",
-      195,
+      193,
       "approved for publication",
       0
     ],
@@ -396,12 +455,12 @@
       0
     ]
   ],
-  "publication": "verified readback",
-  "run_id": "46089353863",
+  "publication": "no eligible additions",
+  "run_id": "46099264624",
   "run_attempt": "1",
-  "commit": "1bf314365a3a5c9eb7b970fc52a398394a947296",
-  "published": 2,
-  "eligible_verified": 2,
+  "commit": "e9ec0980fec105212a8b0261f3a0c47f9d33c93b",
+  "published": 0,
+  "eligible_verified": 0,
   "research_status": "completed",
   "publication_step_outcome": "success"
 }

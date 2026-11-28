@@ -164965,5 +164965,1121 @@
     "manufacturer_requested": "MINI GT",
     "matches": [],
     "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|INNO64|IN64-R35TS-TAS2021|https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-gt-r-r35-top-secret-tokyo-auto-salon-2021?_pos=1&_psq=IN64-R35TS-TAS2021&_psid=eecb293d6&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "INNO64",
+    "matches": [
+      {
+        "sku": "IN64-R35TS-TAS2021",
+        "variant_id": 45804800737536,
+        "title": "INNO64 1:64 Nissan GT-R (R35) \"TOP SECRET\" Tokyo Auto Salon 2021",
+        "variant": "Default Title",
+        "vendor": "Inno Models",
+        "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-gt-r-r35-top-secret-tokyo-auto-salon-2021?variant=45804800737536"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|MINI GT|MGT00785|https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-mazda-rx-7-lb-super-silhouette-in-black?_pos=1&_psq=MGT00785&_psid=52c7f9522&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "MINI GT",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Tarmac Works|T64G-F041-DR2|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mclaren-mcl36-japanese-grand-prix-2022-daniel-ricciardo?_pos=1&_psq=T64G-F041-DR2&_psid=b2dadd921&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Tarmac Works",
+    "matches": [
+      {
+        "sku": "T64G-F041-DR2",
+        "variant_id": 44975535489280,
+        "title": "Tarmac Works 1:64 McLaren MCL36 Japanese Grand Prix 2022 Daniel Ricciardo",
+        "variant": "Default Title",
+        "vendor": "Tarmac Works",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mclaren-mcl36-japanese-grand-prix-2022-daniel-ricciardo?variant=44975535489280"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|GreenLight|43040D|https://www.autoworldstore.com/products/amt-international-transtar-4300-eagle-sprite-1-25-scale-model-kit?_pos=1&_psq=43040D&_psid=7ebacbb40&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "GreenLight",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|DCP/First Gear|60-1797|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-intimidator-v1?_pos=1&_psq=DCP%2FFirst+Gear+Mack+LR+Refuse+Garbage+Truck+with+McNeilus+Meridian+Front+Loader+White+and+Blue+with+Trash+Bin+1%2F64+Diecast+Model+by+DCP%2FFirst+Gear&_psid=eeb4bcc3e&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "DCP/First Gear",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|DCP/First Gear|60-1797|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-sumatran-rhino-x-mizu-diecast?_pos=2&_psq=DCP%2FFirst+Gear+Mack+LR+Refuse+Garbage+Truck+with+McNeilus+Meridian+Front+Loader+White+and+Blue+with+Trash+Bin+1%2F64+Diecast+Model+by+DCP%2FFirst+Gear&_psid=eeb4bcc3e&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "DCP/First Gear",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|DCP/First Gear|60-1797|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-dually-on-fire-v2?_pos=3&_psq=DCP%2FFirst+Gear+Mack+LR+Refuse+Garbage+Truck+with+McNeilus+Meridian+Front+Loader+White+and+Blue+with+Trash+Bin+1%2F64+Diecast+Model+by+DCP%2FFirst+Gear&_psid=eeb4bcc3e&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "DCP/First Gear",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|DCP/First Gear|60-1797|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-works-greddy-v2?_pos=4&_psq=DCP%2FFirst+Gear+Mack+LR+Refuse+Garbage+Truck+with+McNeilus+Meridian+Front+Loader+White+and+Blue+with+Trash+Bin+1%2F64+Diecast+Model+by+DCP%2FFirst+Gear&_psid=eeb4bcc3e&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "DCP/First Gear",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|M2 Machines|32500-40|model|https://www.kaidohouse.com/products/blkltd-display-case?_pos=1&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=256e39b09&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|M2 Machines|32500-40|model|https://www.kaidohouse.com/products/kaido-gt-honda-civic-ef-kaido-works-v2?_pos=2&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=256e39b09&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|M2 Machines|32500-40|model|https://www.kaidohouse.com/products/kaido-house-x-offse7%C2%AE-enamel-pin-display-case-smoke?_pos=3&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=256e39b09&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|M2 Machines|32500-40|model|https://www.kaidohouse.com/products/blkltd%C2%AE-display-case-blue-edition-case-only?_pos=4&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=256e39b09&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|M2 Machines|32500-40|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-works-greddy-v2?_pos=5&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=256e39b09&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|M2 Machines|32500-40|model|https://www.kaidohouse.com/products/blkltd%E2%84%A2-display-case-purple?_pos=6&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=256e39b09&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|M2 Machines|32500-40|model|https://www.kaidohouse.com/products/malaysia-candy-v2-custom-diecast?_pos=7&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=256e39b09&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|M2 Machines|32500-40|model|https://www.kaidohouse.com/products/garage-find-nsx-custom-diecast?_pos=8&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=256e39b09&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|M2 Machines|32500-40|model|https://www.kaidohouse.com/products/barn-find-hks-custom-diecast?_pos=9&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=256e39b09&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|M2 Machines|32500-40|model|https://www.kaidohouse.com/products/copy-of-malaysia-candy-v2-custom-diecast?_pos=10&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=256e39b09&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|INNO64|IN64-R35TS-HKTS24|https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-gt-r-r35-nismo-2024-top-secret-hong-kong-toy-car-salon-special-edition-one-per-customer-order?_pos=1&_psq=IN64-R35TS-HKTS24&_psid=a0b19c799&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "INNO64",
+    "matches": [
+      {
+        "sku": "IN64-R35TS-HKTS24",
+        "variant_id": 45991771078912,
+        "title": "INNO64 1:64 Nissan GT-R (R35) NISMO 2024 \"TOP SECRET\" Hong Kong Toy Car Salon Special Edition (ONE PER CUSTOMER)",
+        "variant": "Default Title",
+        "vendor": "Inno Models",
+        "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-gt-r-r35-nismo-2024-top-secret-hong-kong-toy-car-salon-special-edition-one-per-customer-order?variant=45991771078912"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Tarmac Works|T64-066-WP|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mazda-rx-7-fc3s-pandem-in-white-and-purple?_pos=1&_psq=T64-066-WP&_psid=d214e8a25&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Tarmac Works",
+    "matches": [
+      {
+        "sku": "T64-066-WP",
+        "variant_id": 44616389787904,
+        "title": "Tarmac Works 1:64 Mazda RX-7 FC3S PANDEM in White and Purple",
+        "variant": "Default Title",
+        "vendor": "Tarmac Works",
+        "url": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mazda-rx-7-fc3s-pandem-in-white-and-purple?variant=44616389787904"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|M2 Machines|32500-40|model|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-ferrari-f40-gte-24h-of-le-mans-1996?_pos=1&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=3300319e5&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|M2 Machines|32500-40|model|https://www.modelcarshouston.com/products/showcase-1-64-12-car-display-case-wall-mount-plastic-black-back-version-with-cover?_pos=2&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=3300319e5&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|M2 Machines|32500-40|model|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-ferrari-f40-lm-red?_pos=3&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=3300319e5&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|M2 Machines|32500-40|model|https://www.autoworldstore.com/products/auto-world-six-car-interlocking-display-case-1-64-scale?_pos=1&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=f5e3a8a2c&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|M2 Machines|32500-40|model|https://www.autoworldstore.com/products/pre-order-auto-world-premium-2026-release-1-set-a-6-car-sealed-case-1-64-diecast-due-april-2026?_pos=2&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=f5e3a8a2c&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|M2 Machines|32500-40|model|https://www.autoworldstore.com/products/pre-order-auto-world-premium-2025-release-1-set-b-6-car-sealed-case-1-64-diecast-due-may-2025?_pos=3&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=f5e3a8a2c&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|M2 Machines|32500-40|model|https://www.autoworldstore.com/products/pre-order-auto-world-premium-2025-release-3-set-a-6-car-sealed-case-1-64-diecast-due-march-2026?_pos=4&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=f5e3a8a2c&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|M2 Machines|32500-40|model|https://www.autoworldstore.com/products/pre-order-auto-world-premium-2025-release-1-set-a-6-car-sealed-case-1-64-diecast-due-may-2025?_pos=5&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=f5e3a8a2c&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|M2 Machines|32500-40|model|https://www.autoworldstore.com/products/pre-order-auto-world-1965-ford-gt40-mk1-auto-world-store-exclusive-1-64-diecast-due-april-2026?_pos=6&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=f5e3a8a2c&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|M2 Machines|32500-40|model|https://www.autoworldstore.com/products/pre-order-auto-world-big-country-collectibles-2025-release-1-6-car-sealed-case-1-64-diecast-due-late-january-2026?_pos=7&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=f5e3a8a2c&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|M2 Machines|32500-40|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-1970-ford-ranchero-auto-world-store-exclusive-1-64-diecast-due-april-2026?_pos=8&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=f5e3a8a2c&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|M2 Machines|32500-40|model|https://www.autoworldstore.com/products/pre-order-auto-world-premium-2026-release-1-set-b-6-car-sealed-case-1-64-diecast-due-april-2026?_pos=9&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=f5e3a8a2c&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|M2 Machines|32500-40|model|https://www.autoworldstore.com/products/pre-order-auto-world-premium-2025-release-2-set-a-6-car-sealed-case-1-64-diecast-due-october-2025?_pos=10&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=f5e3a8a2c&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Tarmac Works|T64-066-WP|https://www.tarmacworks.com/products/tarmac-works-1-64-pandem-mazda-rx-7-fc3s-white-purple-hobby64?_pos=1&_psq=T64-066-WP&_psid=5fdd53184&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Tarmac Works",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|M2 Machines|32500-40|model|https://www.tarmacworks.com/products/tarmac-works-1-64-6-car-display-case?_pos=1&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=25eca377b&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|M2 Machines|32500-40|model|https://www.tarmacworks.com/products/tarmac-works-x-one-piece-model-car-collection-vol-1-6-cars-set-collab64?_pos=2&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=25eca377b&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|M2 Machines|32500-40|model|https://www.tarmacworks.com/products/1-64-lb-works-nissan-gt-r-r35-type-2-white-tarmac-works-hobby64?_pos=3&_psq=M2+Machines+Auto+Projects+6+Piece+Set+Release+40+IN+DISPLAY+CASES+1%2F64+Diecast+Model+Cars+by+M2+Machines&_psid=25eca377b&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|MotorHelix|M65531DZ-CA|model|https://www.kaidohouse.com/products/kaido-gt-honda-nsx-na1-kaido-works-v2?_pos=1&_psq=MotorHelix+Honda+NSX-R+%28NA2%29+RHD+%28Right+Hand+Drive%29+Customized+Chameleon+Chrome+1%2F64+Diecast+Model+Car+by+MotorHelix&_psid=184f6cd26&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "MotorHelix",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|MotorHelix|M65531DZ-CA|model|https://www.kaidohouse.com/products/kaido-gt-honda-nsx-kaido-test-car-spec-v1-dai-nsx?_pos=2&_psq=MotorHelix+Honda+NSX-R+%28NA2%29+RHD+%28Right+Hand+Drive%29+Customized+Chameleon+Chrome+1%2F64+Diecast+Model+Car+by+MotorHelix&_psid=184f6cd26&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "MotorHelix",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|MotorHelix|M65531DZ-CA|model|https://www.kaidohouse.com/products/kaido-gt-honda-nsx-kaido-racing-v1?_pos=3&_psq=MotorHelix+Honda+NSX-R+%28NA2%29+RHD+%28Right+Hand+Drive%29+Customized+Chameleon+Chrome+1%2F64+Diecast+Model+Car+by+MotorHelix&_psid=184f6cd26&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "MotorHelix",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|MotorHelix|M65531DZ-CA|model|https://www.kaidohouse.com/products/kaido-gt-honda-civic-ef-kaido-works-v2?_pos=4&_psq=MotorHelix+Honda+NSX-R+%28NA2%29+RHD+%28Right+Hand+Drive%29+Customized+Chameleon+Chrome+1%2F64+Diecast+Model+Car+by+MotorHelix&_psid=184f6cd26&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "MotorHelix",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|MotorHelix|M65531DZ-CA|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-star-racing-v1?_pos=5&_psq=MotorHelix+Honda+NSX-R+%28NA2%29+RHD+%28Right+Hand+Drive%29+Customized+Chameleon+Chrome+1%2F64+Diecast+Model+Car+by+MotorHelix&_psid=184f6cd26&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "MotorHelix",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|MotorHelix|M65531DZ-CA|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-2000gt-r-kpgc10-cortez-v1?_pos=6&_psq=MotorHelix+Honda+NSX-R+%28NA2%29+RHD+%28Right+Hand+Drive%29+Customized+Chameleon+Chrome+1%2F64+Diecast+Model+Car+by+MotorHelix&_psid=184f6cd26&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "MotorHelix",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|MotorHelix|M65531DZ-CA|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-works%E2%84%A2-shinjuku-v1-copy?_pos=7&_psq=MotorHelix+Honda+NSX-R+%28NA2%29+RHD+%28Right+Hand+Drive%29+Customized+Chameleon+Chrome+1%2F64+Diecast+Model+Car+by+MotorHelix&_psid=184f6cd26&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "MotorHelix",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|MotorHelix|M65531DZ-CA|model|https://www.kaidohouse.com/products/kaido-gt-nissan-silvia-s13-r-kaido-drift-v1?_pos=8&_psq=MotorHelix+Honda+NSX-R+%28NA2%29+RHD+%28Right+Hand+Drive%29+Customized+Chameleon+Chrome+1%2F64+Diecast+Model+Car+by+MotorHelix&_psid=184f6cd26&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "MotorHelix",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|MotorHelix|M65531DZ-CA|model|https://www.kaidohouse.com/products/kaido-nissan-skyline-2000gt-r-kpgc10-kaido-works%E2%84%A2?_pos=9&_psq=MotorHelix+Honda+NSX-R+%28NA2%29+RHD+%28Right+Hand+Drive%29+Customized+Chameleon+Chrome+1%2F64+Diecast+Model+Car+by+MotorHelix&_psid=184f6cd26&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "MotorHelix",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|MotorHelix|M65531DZ-CA|model|https://www.kaidohouse.com/products/kaido-gt-honda-nsx-kaido-racing-v2?_pos=10&_psq=MotorHelix+Honda+NSX-R+%28NA2%29+RHD+%28Right+Hand+Drive%29+Customized+Chameleon+Chrome+1%2F64+Diecast+Model+Car+by+MotorHelix&_psid=184f6cd26&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "MotorHelix",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Muscle Machines|15583BO|model|https://www.modelcarshouston.com/products/porsche-993-rwb-in-matte-black?_pos=1&_psq=Muscle+Machines+RWB+993+911+Matt+Black+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=1e7378c23&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Muscle Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Muscle Machines|15583BO|model|https://www.modelcarshouston.com/products/preorder-ignition-model-1-64-porsche-rwb-993-in-black?_pos=2&_psq=Muscle+Machines+RWB+993+911+Matt+Black+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=1e7378c23&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Muscle Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Muscle Machines|15583BO|model|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-porsche-993-rwb-rough-rhythm-fuel-fest-student-driver-in-green?_pos=3&_psq=Muscle+Machines+RWB+993+911+Matt+Black+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=1e7378c23&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Muscle Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Muscle Machines|15583BO|model|https://www.modelcarshouston.com/products/porsche-964-rwb-in-black?_pos=4&_psq=Muscle+Machines+RWB+993+911+Matt+Black+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=1e7378c23&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Muscle Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Muscle Machines|15583BO|model|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-rwb-993-tarmac-works-10th-anniversary-limited-edition?_pos=5&_psq=Muscle+Machines+RWB+993+911+Matt+Black+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=1e7378c23&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Muscle Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Muscle Machines|15583BO|model|https://www.modelcarshouston.com/products/motorhelix-1-64-rwb-993-motozolo-edition-with-engine-display?_pos=6&_psq=Muscle+Machines+RWB+993+911+Matt+Black+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=1e7378c23&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Muscle Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|INNO64|IN64-R34TS-MDX24|https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-skyline-gt-r-r34-top-secret-tokyo-auto-salon-2024-mdx-edition?_pos=1&_psq=IN64-R34TS-MDX24&_psid=677fffbf6&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "INNO64",
+    "matches": [
+      {
+        "sku": "IN64-R34TS-MDX24",
+        "variant_id": 45804760563968,
+        "title": "INNO64 1:64 Nissan Skyline GT-R (R34) \"TOP SECRET\" Tokyo Auto Salon 2024 MDX Edition (ONE PER CUSTOMER / ORDER)",
+        "variant": "Default Title",
+        "vendor": "Inno Models",
+        "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-nissan-skyline-gt-r-r34-top-secret-tokyo-auto-salon-2024-mdx-edition?variant=45804760563968"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|MINI GT|MGT00756|https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-super-gt-series-nissan-z-gt500-23-motul-autech-z-nismo-2023?_pos=1&_psq=MGT00756&_psid=c860bb344&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "MINI GT",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|Tarmac Works|T64G-TL051-SL|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-koenigsegg-cc850-in-orange?_pos=1&_psq=T64G-TL051-SL&_psid=04f7ba8c2&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Tarmac Works",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|IXO Models|U64TR013|model|https://www.tarmacworks.com/products/1-64-porsche-928-s-safety-car-tarmac-works-x-ixo-models-global64?_pos=1&_psq=IXO+Models+1980+GMC+General+Truck+Tractor+Orange+with+Stripes+1%2F64+Diecast+Model+by+IXO+Models&_psid=81182fdbb&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|IXO Models|U64TR013|model|https://www.tarmacworks.com/products/1-64-mclaren-mcl60-british-grand-prix-2023-lando-norris-tarmac-works-global64?_pos=2&_psq=IXO+Models+1980+GMC+General+Truck+Tractor+Orange+with+Stripes+1%2F64+Diecast+Model+by+IXO+Models&_psid=81182fdbb&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|IXO Models|U64TR013|model|https://www.tarmacworks.com/products/1-64-ferrari-f40-gt-italian-gt-championship-1993-5-tarmac-works-x-ixo-models-hobby64?_pos=3&_psq=IXO+Models+1980+GMC+General+Truck+Tractor+Orange+with+Stripes+1%2F64+Diecast+Model+by+IXO+Models&_psid=81182fdbb&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|IXO Models|U64TR013|model|https://www.tarmacworks.com/products/1-64-porsche-928-s-safety-car-blister-tarmac-works-x-ixo-models-global64?_pos=4&_psq=IXO+Models+1980+GMC+General+Truck+Tractor+Orange+with+Stripes+1%2F64+Diecast+Model+by+IXO+Models&_psid=81182fdbb&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|IXO Models|U64TR013|model|https://www.tarmacworks.com/products/tarmac-works-1-64-ford-sierra-rs-cosworth-rally-of-new-zealand-1989-saeed-al-hajri-steve-bond-16-hobby64?_pos=5&_psq=IXO+Models+1980+GMC+General+Truck+Tractor+Orange+with+Stripes+1%2F64+Diecast+Model+by+IXO+Models&_psid=81182fdbb&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLPK019-JLSP276B|model|https://www.autoworldstore.com/products/amt-1969-chevy-camaro-yenko-1-25-scale-model-kit?_pos=1&_psq=Johnny+Lightning+1969+Chevrolet+Camaro+Hugger+Orange+with+Black+Top+and+Stripes+and+1967+Chevrolet+Camaro+Black+with+White+Stripe+and+Red+Interior+%22Yenko%22+Series+Set+of+2+Cars+1%2F64+Diecast+Model+Cars+by+Johnny+Lightning&_psid=6a234a391&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLPK019-JLSP276B|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-usa-2025-release-1-set-a-6-car-sealed-case-1-64-diecast-due-november-2025?_pos=2&_psq=Johnny+Lightning+1969+Chevrolet+Camaro+Hugger+Orange+with+Black+Top+and+Stripes+and+1967+Chevrolet+Camaro+Black+with+White+Stripe+and+Red+Interior+%22Yenko%22+Series+Set+of+2+Cars+1%2F64+Diecast+Model+Cars+by+Johnny+Lightning&_psid=6a234a391&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLPK019-JLSP276B|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-usa-2025-release-1-set-b-6-car-sealed-case-1-64-diecast-due-november-2025?_pos=3&_psq=Johnny+Lightning+1969+Chevrolet+Camaro+Hugger+Orange+with+Black+Top+and+Stripes+and+1967+Chevrolet+Camaro+Black+with+White+Stripe+and+Red+Interior+%22Yenko%22+Series+Set+of+2+Cars+1%2F64+Diecast+Model+Cars+by+Johnny+Lightning&_psid=6a234a391&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLPK019-JLSP276B|model|https://www.autoworldstore.com/products/american-muscle-1967-chevrolet-camaro-hardtop-mcacn-yenko-1-18-scale-diecast?_pos=4&_psq=Johnny+Lightning+1969+Chevrolet+Camaro+Hugger+Orange+with+Black+Top+and+Stripes+and+1967+Chevrolet+Camaro+Black+with+White+Stripe+and+Red+Interior+%22Yenko%22+Series+Set+of+2+Cars+1%2F64+Diecast+Model+Cars+by+Johnny+Lightning&_psid=6a234a391&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|Johnny Lightning|JLPK019-JLSP276B|model|https://www.autoworldstore.com/products/auto-world-thunderjet-yenko-1970-chevrolet-nova-yellow-ho-slot-car?_pos=5&_psq=Johnny+Lightning+1969+Chevrolet+Camaro+Hugger+Orange+with+Black+Top+and+Stripes+and+1967+Chevrolet+Camaro+Black+with+White+Stripe+and+Red+Interior+%22Yenko%22+Series+Set+of+2+Cars+1%2F64+Diecast+Model+Cars+by+Johnny+Lightning&_psid=6a234a391&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|IXO Models|U64TR012|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-intimidator-v1?_pos=1&_psq=IXO+Models+1963+Peterbilt+381+Truck+Tractor+Yellow+with+Red+Graphics+1%2F64+Diecast+Model+by+IXO+Models&_psid=40fad45d1&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|IXO Models|U64TR012|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-sumatran-rhino-x-mizu-diecast?_pos=2&_psq=IXO+Models+1963+Peterbilt+381+Truck+Tractor+Yellow+with+Red+Graphics+1%2F64+Diecast+Model+by+IXO+Models&_psid=40fad45d1&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|CM Model|CM64-ELVA-01|model|https://www.kaidohouse.com/products/kaido-gt-honda-civic-ef-kaido-works-v2?_pos=1&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=1b29126bc&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|CM Model|CM64-ELVA-01|model|https://www.kaidohouse.com/products/kaido-gt-toyota-sprinter-trueno-kaido-street-v1?_pos=2&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=1b29126bc&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|CM Model|CM64-ELVA-01|model|https://www.kaidohouse.com/products/kaido-gt-nissan-silvia-s13-r-kaido-drift-v1?_pos=3&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=1b29126bc&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|CM Model|CM64-ELVA-01|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-intimidator-v1?_pos=4&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=1b29126bc&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|CM Model|CM64-ELVA-01|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-dually-kaido-splash-v1?_pos=5&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=1b29126bc&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|CM Model|CM64-ELVA-01|model|https://www.kaidohouse.com/products/kaido-gt-nissan-fairlady-z-tamiya-x-kaido-house-the-frog-v1?_pos=6&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=1b29126bc&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|CM Model|CM64-ELVA-01|model|https://www.kaidohouse.com/products/kaido-gt-datsun-510-wagon-hks-v1?_pos=7&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=1b29126bc&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|CM Model|CM64-ELVA-01|model|https://www.kaidohouse.com/products/kaido-gt-bmw-m3-kaidohaus-v1?_pos=8&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=1b29126bc&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|CM Model|CM64-ELVA-01|model|https://www.kaidohouse.com/products/kaido-gt-bmw-m3-kaido-gt-v2?_pos=9&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=1b29126bc&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|CM Model|CM64-ELVA-01|model|https://www.kaidohouse.com/products/kaido-gt-volkswagen-t1-street-battle-spec-v1?_pos=10&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=1b29126bc&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Johnny Lightning|JLPC009|model|https://www.kaidohouse.com/products/kaido-gt-honda-civic-ef-kaido-works-v2?_pos=1&_psq=Johnny+Lightning+Pop+Culture+2022+Set+of+6+Cars+Release+4+1%2F64+Diecast+Model+Cars+by+Johnny+Lightning&_psid=c5a98675b&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Johnny Lightning|JLPC009|model|https://www.kaidohouse.com/products/kaido-gt-nissan-silvia-s13-r-kaido-drift-v1?_pos=2&_psq=Johnny+Lightning+Pop+Culture+2022+Set+of+6+Cars+Release+4+1%2F64+Diecast+Model+Cars+by+Johnny+Lightning&_psid=c5a98675b&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Johnny Lightning|JLPC009|model|https://www.kaidohouse.com/products/kaido-gt-toyota-sprinter-trueno-kaido-street-v1?_pos=3&_psq=Johnny+Lightning+Pop+Culture+2022+Set+of+6+Cars+Release+4+1%2F64+Diecast+Model+Cars+by+Johnny+Lightning&_psid=c5a98675b&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Johnny Lightning|JLPC009|model|https://www.kaidohouse.com/products/kaido-gt-datsun-510-wagon-hks-v1?_pos=4&_psq=Johnny+Lightning+Pop+Culture+2022+Set+of+6+Cars+Release+4+1%2F64+Diecast+Model+Cars+by+Johnny+Lightning&_psid=c5a98675b&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Johnny Lightning|JLPC009|model|https://www.kaidohouse.com/products/kaido-gt-honda-nsx-na1-kaido-works-v2?_pos=5&_psq=Johnny+Lightning+Pop+Culture+2022+Set+of+6+Cars+Release+4+1%2F64+Diecast+Model+Cars+by+Johnny+Lightning&_psid=c5a98675b&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Johnny Lightning|JLPC009|model|https://www.kaidohouse.com/products/kaido-gt-nissan-fairlady-z-advan?_pos=6&_psq=Johnny+Lightning+Pop+Culture+2022+Set+of+6+Cars+Release+4+1%2F64+Diecast+Model+Cars+by+Johnny+Lightning&_psid=c5a98675b&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Johnny Lightning|JLPC009|model|https://www.kaidohouse.com/products/kaido-gt-nissan-silvia-s13-r-kaido-works-v1?_pos=7&_psq=Johnny+Lightning+Pop+Culture+2022+Set+of+6+Cars+Release+4+1%2F64+Diecast+Model+Cars+by+Johnny+Lightning&_psid=c5a98675b&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Johnny Lightning|JLPC009|model|https://www.kaidohouse.com/products/kaido-nissan-skyline-2000gt-r-kpgc10-kaido-works%E2%84%A2?_pos=8&_psq=Johnny+Lightning+Pop+Culture+2022+Set+of+6+Cars+Release+4+1%2F64+Diecast+Model+Cars+by+Johnny+Lightning&_psid=c5a98675b&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Johnny Lightning|JLPC009|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r33-bfthr-v1?_pos=9&_psq=Johnny+Lightning+Pop+Culture+2022+Set+of+6+Cars+Release+4+1%2F64+Diecast+Model+Cars+by+Johnny+Lightning&_psid=c5a98675b&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Johnny Lightning|JLPC009|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-20000gt-r-kaido-v1?_pos=10&_psq=Johnny+Lightning+Pop+Culture+2022+Set+of+6+Cars+Release+4+1%2F64+Diecast+Model+Cars+by+Johnny+Lightning&_psid=c5a98675b&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Johnny Lightning",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Muscle Machines|15566BK|model|https://www.tarmacworks.com/products/spotlight-lb-kaido-works-r32-skyline-hong-kong-taxi-tarmac-cards-pack?_pos=1&_psq=Muscle+Machines+1999+Nissan+Skyline+GT-R+%28R34%29+%235+%22Liberty+Walk%22+Black+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=cc4bf75fd&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Muscle Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Muscle Machines|15566BK|model|https://www.tarmacworks.com/products/spotlight-lb-kaido-works-nissan-r32-skyline-flying-dragon-tarmac-cards-pack?_pos=2&_psq=Muscle+Machines+1999+Nissan+Skyline+GT-R+%28R34%29+%235+%22Liberty+Walk%22+Black+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=cc4bf75fd&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Muscle Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Muscle Machines|15566BK|model|https://www.tarmacworks.com/products/tarmac-cards-liberty-walk-collection-vol-02-special-parallel-wataru-kato-lightspeed-149?_pos=3&_psq=Muscle+Machines+1999+Nissan+Skyline+GT-R+%28R34%29+%235+%22Liberty+Walk%22+Black+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=cc4bf75fd&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Muscle Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Muscle Machines|15566BK|model|https://www.tarmacworks.com/products/spotlight-lb-kaido-works-r32-skyline-hong-kong-taxi-tarmac-cards-box?_pos=4&_psq=Muscle+Machines+1999+Nissan+Skyline+GT-R+%28R34%29+%235+%22Liberty+Walk%22+Black+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=cc4bf75fd&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Muscle Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Muscle Machines|15566BK|model|https://www.tarmacworks.com/products/tarmac-cards-liberty-walk-collection-vol-02-special-parallel-lb-silhouette-works-gt-miura-hanabi-99?_pos=5&_psq=Muscle+Machines+1999+Nissan+Skyline+GT-R+%28R34%29+%235+%22Liberty+Walk%22+Black+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=cc4bf75fd&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Muscle Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Muscle Machines|15566BK|model|https://www.tarmacworks.com/products/lb-mag-case-35pt-size?_pos=6&_psq=Muscle+Machines+1999+Nissan+Skyline+GT-R+%28R34%29+%235+%22Liberty+Walk%22+Black+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=cc4bf75fd&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Muscle Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Muscle Machines|15566BK|model|https://www.tarmacworks.com/products/liberty-walk-collection-vol-02-special-parallel-lb-works-f40-hanabi-99-tarmac-cards?_pos=7&_psq=Muscle+Machines+1999+Nissan+Skyline+GT-R+%28R34%29+%235+%22Liberty+Walk%22+Black+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=cc4bf75fd&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Muscle Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Muscle Machines|15566BK|model|https://www.tarmacworks.com/products/liberty-walk-collection-vol-02-special-parallel-lb-kenmeri-hanabi-99-tarmac-cards?_pos=8&_psq=Muscle+Machines+1999+Nissan+Skyline+GT-R+%28R34%29+%235+%22Liberty+Walk%22+Black+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=cc4bf75fd&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Muscle Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Muscle Machines|15566BK|model|https://www.tarmacworks.com/products/1-64-rwb-993-liberty-walk-with-container-packaging-tarmac-works-hobby64?_pos=9&_psq=Muscle+Machines+1999+Nissan+Skyline+GT-R+%28R34%29+%235+%22Liberty+Walk%22+Black+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=cc4bf75fd&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Muscle Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|Muscle Machines|15566BK|model|https://www.tarmacworks.com/products/tarmac-cards-lb-liberty-walk-collection-vol-1-special-parallel-lw-ta-13-nissan-r35-type2-hanabi-99?_pos=10&_psq=Muscle+Machines+1999+Nissan+Skyline+GT-R+%28R34%29+%235+%22Liberty+Walk%22+Black+1%2F64+Diecast+Model+Car+by+Muscle+Machines&_psid=cc4bf75fd&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Muscle Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|INNO64|IN64-LBWK-RX7-03|https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-rx7-fd3s-lb-super-silhouette-hobby-expo-china-2024-edition?_pos=1&_psq=IN64-LBWK-RX7-03&_psid=f75956f04&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "INNO64",
+    "matches": [
+      {
+        "sku": "IN64-LBWK-RX7-03",
+        "variant_id": 45049361498368,
+        "title": "INNO64 1:64 Mazda RX7 (FD3S) LB-SUPER SILHOUETTE Hobby Expo China 2024 Edition (ONE CAR PER PERSON)",
+        "variant": "Default Title",
+        "vendor": "Inno Models",
+        "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-rx7-fd3s-lb-super-silhouette-hobby-expo-china-2024-edition?variant=45049361498368"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|CM Model|CM64-ELVA-01|model|https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-mclaren-f1-gtr-59-1995-le-mans-24hr-winner-post-race-weathered?_pos=1&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=5a187b98d&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|CM Model|CM64-ELVA-01|model|https://www.modelcarshouston.com/products/preorder-minigt-1-64-mclaren-f1-gtr-59-1995-le-mans-24hr-winner?_pos=2&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=5a187b98d&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|CM Model|CM64-ELVA-01|model|https://www.modelcarshouston.com/products/pre-order-motorhelix-1-64-honda-nsx-r-gt-in-white?_pos=3&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=5a187b98d&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|CM Model|CM64-ELVA-01|model|https://www.modelcarshouston.com/products/preorder-minigt-1-64-mclaren-f1-gtr-1995-presentation?_pos=4&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=5a187b98d&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|CM Model|CM64-ELVA-01|model|https://www.modelcarshouston.com/products/preorder-minigt-1-64-mclaren-mp4-6-1-ayrton-senna-1991-japanese-grand-prix-2nd-place?_pos=5&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=5a187b98d&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|CM Model|CM64-ELVA-01|model|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mclaren-mcl35m-abu-dhabi-grand-prix-2021-lando-norris?_pos=6&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=5a187b98d&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|CM Model|CM64-ELVA-01|model|https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-mitsubishi-lancer-evo-iv-in-icelle-blue?_pos=7&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=5a187b98d&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|CM Model|CM64-ELVA-01|model|https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mclaren-mcl60-british-grand-prix-2023-lando-norris?_pos=8&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=5a187b98d&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|CM Model|CM64-ELVA-01|model|https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-mitsubishi-lancer-evo-iv-in-scotia-white?_pos=9&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=5a187b98d&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|CM Model|CM64-ELVA-01|model|https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-mitsubishi-lancer-evo-iv-in-steel-silver-metallic?_pos=10&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=5a187b98d&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|DCP/First Gear|60-2385|model|https://www.autoworldstore.com/products/amt-western-star-4964-tractor-1-24-scale-model-kit?_pos=1&_psq=DCP%2FFirst+Gear+Ford+CLT-9000+Truck+Tractor+with+Brenner+Chemical+Grade+Tank+Trailer+Black+and+White+with+Green+Stripes+1%2F64+Diecast+Model+by+DCP%2FFirst+Gear&_psid=d099d5cf4&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "DCP/First Gear",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|DCP/First Gear|60-2385|model|https://www.autoworldstore.com/products/amt-mack-r685st-semi-tractor-1-25-scale-model-kit?_pos=2&_psq=DCP%2FFirst+Gear+Ford+CLT-9000+Truck+Tractor+with+Brenner+Chemical+Grade+Tank+Trailer+Black+and+White+with+Green+Stripes+1%2F64+Diecast+Model+by+DCP%2FFirst+Gear&_psid=d099d5cf4&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "DCP/First Gear",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|DCP/First Gear|60-2385|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-1980-toyota-land-cruiser-w-open-car-trailer-1-64-diecast-due-march-2025?_pos=3&_psq=DCP%2FFirst+Gear+Ford+CLT-9000+Truck+Tractor+with+Brenner+Chemical+Grade+Tank+Trailer+Black+and+White+with+Green+Stripes+1%2F64+Diecast+Model+by+DCP%2FFirst+Gear&_psid=d099d5cf4&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "DCP/First Gear",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|MINI GT|MGT00754|https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-super-gt-series-nissan-gt-r-nismo-gt3-360-runup-rivaux-gt-r-tomei-sports-2023?_pos=1&_psq=MGT00754&_psid=b975d575c&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "MINI GT",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Model Model|MM64-RWB993-008|model|https://www.kaidohouse.com/products/kaido-gt-nissan-silvia-s13-r-kaido-works-v1?_pos=1&_psq=Model+Model+RWB+993+Green+with+Black+Stripes+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=964235468&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Model Model|MM64-RWB993-008|model|https://www.kaidohouse.com/products/kaido-gt-bmw-m3-kaido-works-v2?_pos=2&_psq=Model+Model+RWB+993+Green+with+Black+Stripes+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=964235468&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Model Model|MM64-RWB993-008|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-works%E2%84%A2-shinjuku-v1-copy?_pos=3&_psq=Model+Model+RWB+993+Green+with+Black+Stripes+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=964235468&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Model Model|MM64-RWB993-008|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-20000gt-r-kaido-works%E2%84%A2-v1?_pos=4&_psq=Model+Model+RWB+993+Green+with+Black+Stripes+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=964235468&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Model Model|MM64-RWB993-008|model|https://www.kaidohouse.com/products/datsun-510-pro-street-sung-kang-orange?_pos=5&_psq=Model+Model+RWB+993+Green+with+Black+Stripes+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=964235468&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Model Model|MM64-RWB993-008|model|https://www.kaidohouse.com/products/kaido-gt-datsun-510-wagon-hks-v1?_pos=6&_psq=Model+Model+RWB+993+Green+with+Black+Stripes+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=964235468&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Model Model|MM64-RWB993-008|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-20000gt-r-kaido-v1?_pos=7&_psq=Model+Model+RWB+993+Green+with+Black+Stripes+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=964235468&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Model Model|MM64-RWB993-008|model|https://www.kaidohouse.com/products/kaido-gt-datsun-street-510-racing-v2?_pos=8&_psq=Model+Model+RWB+993+Green+with+Black+Stripes+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=964235468&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Model Model|MM64-RWB993-008|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-works%E2%84%A2-v3?_pos=9&_psq=Model+Model+RWB+993+Green+with+Black+Stripes+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=964235468&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Model Model|MM64-RWB993-008|model|https://www.kaidohouse.com/products/kaido-gt-toyota-sprinter-trueno-dgk-x-kaido-house-v1?_pos=10&_psq=Model+Model+RWB+993+Green+with+Black+Stripes+1%2F64+Diecast+Model+Car+by+Model+Model&_psid=964235468&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Model Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|IXO Models|U64TR012|model|https://www.tarmacworks.com/products/tarmac-works-1-64-ferrari-348-challenge-italian-gt-1994-25-hobby64?_pos=1&_psq=IXO+Models+1963+Peterbilt+381+Truck+Tractor+Yellow+with+Red+Graphics+1%2F64+Diecast+Model+by+IXO+Models&_psid=1f13d4e6a&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|IXO Models|U64TR012|model|https://www.tarmacworks.com/products/centauria-x-ixo-collections-ferrari-gt-1-64-magazine-asia-edition-ferrari-250-gto-1962-english-version?_pos=2&_psq=IXO+Models+1963+Peterbilt+381+Truck+Tractor+Yellow+with+Red+Graphics+1%2F64+Diecast+Model+by+IXO+Models&_psid=1f13d4e6a&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|IXO Models|U64TR012|model|https://www.tarmacworks.com/products/tarmac-works-1-64-ferrari-348-challenge-presentation-hobby64?_pos=3&_psq=IXO+Models+1963+Peterbilt+381+Truck+Tractor+Yellow+with+Red+Graphics+1%2F64+Diecast+Model+by+IXO+Models&_psid=1f13d4e6a&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|IXO Models|U64TR012|model|https://www.tarmacworks.com/products/centauria-x-ixo-collections-ferrari-gt-1-64-magazine-asia-edition-ferrari-testarossa-1984-english-version?_pos=4&_psq=IXO+Models+1963+Peterbilt+381+Truck+Tractor+Yellow+with+Red+Graphics+1%2F64+Diecast+Model+by+IXO+Models&_psid=1f13d4e6a&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|IXO Models|U64TR012|model|https://www.tarmacworks.com/products/1-64-mitsubishi-fuso-super-great-eva-racing-tarmac-works-truck64-copy?_pos=5&_psq=IXO+Models+1963+Peterbilt+381+Truck+Tractor+Yellow+with+Red+Graphics+1%2F64+Diecast+Model+by+IXO+Models&_psid=1f13d4e6a&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "IXO Models",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-ELVA-01|model|https://www.autoworldstore.com/products/pre-order-auto-world-1967-cadillac-eldorado-light-green-crystal-firemist-metallic-1-64-diecast-due-may-2025?_pos=1&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=742cc0d9a&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-ELVA-01|model|https://www.autoworldstore.com/products/johnny-lightning-1968-dodge-coronet-r-t-convertible-2025-mcacn-event-car-1-64-diecast?_pos=2&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=742cc0d9a&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-ELVA-01|model|https://www.autoworldstore.com/products/pre-order-auto-world-1968-dodge-coronet-500-convertible-pale-blue-poly-1-64-diecast-due-april-2026?_pos=3&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=742cc0d9a&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-ELVA-01|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-2002-chevy-camaro-ss-35th-anniversary-silver-w-black-stripes-with-collector-tin-1-64-diecast-due-april-2026?_pos=4&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=742cc0d9a&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-ELVA-01|model|https://www.autoworldstore.com/products/auto-world-2026-release-1-modern-muscle-deluxe-2-pack-version-b-1-64-scale-diecast?_pos=5&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=742cc0d9a&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-ELVA-01|model|https://www.autoworldstore.com/products/pre-order-auto-world-1965-chevrolet-impala-danube-blue-1-64-diecast-due-october-2025?_pos=6&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=742cc0d9a&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-ELVA-01|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-muscle-cars-1967-shelby-gt-500-gulf-dark-blue-w-orange-stripe-1-64-scale-diecast-due-august-2025?_pos=7&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=742cc0d9a&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-ELVA-01|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-2002-chevy-camaro-ss-35th-anniversary-black-w-silver-stripes-with-collector-tin-1-64-diecast-due-april-2026?_pos=8&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=742cc0d9a&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.autoworldstore.com|CM Model|CM64-ELVA-01|model|https://www.autoworldstore.com/products/pre-order-johnny-lightning-mecum-auctions-1967-shelby-gt-350-1-64-scale-diecast-due-november-2024?_pos=9&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=742cc0d9a&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|M2 Machines|31500-HS88|model|https://www.kaidohouse.com/products/kaido-gt-honda-civic-ef-kaido-works-v2?_pos=1&_psq=M2+Machines+1995+Chevrolet+S10+SS+Pickup+Truck+Black+with+Red+Hood+Stripes+Limited+Edition+to+21582+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+M2+Machines&_psid=f7c802b76&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|M2 Machines|31500-HS88|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-intimidator-v2?_pos=2&_psq=M2+Machines+1995+Chevrolet+S10+SS+Pickup+Truck+Black+with+Red+Hood+Stripes+Limited+Edition+to+21582+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+M2+Machines&_psid=f7c802b76&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|M2 Machines|31500-HS88|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-kaido-intimidator-v1?_pos=3&_psq=M2+Machines+1995+Chevrolet+S10+SS+Pickup+Truck+Black+with+Red+Hood+Stripes+Limited+Edition+to+21582+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+M2+Machines&_psid=f7c802b76&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|M2 Machines|31500-HS88|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-sumatran-rhino-x-mizu-diecast?_pos=4&_psq=M2+Machines+1995+Chevrolet+S10+SS+Pickup+Truck+Black+with+Red+Hood+Stripes+Limited+Edition+to+21582+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+M2+Machines&_psid=f7c802b76&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|M2 Machines|31500-HS88|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-works-greddy-v2?_pos=5&_psq=M2+Machines+1995+Chevrolet+S10+SS+Pickup+Truck+Black+with+Red+Hood+Stripes+Limited+Edition+to+21582+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+M2+Machines&_psid=f7c802b76&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|M2 Machines|31500-HS88|model|https://www.kaidohouse.com/products/kaido-gt-chevrolet-silverado-dually-on-fire-v2?_pos=6&_psq=M2+Machines+1995+Chevrolet+S10+SS+Pickup+Truck+Black+with+Red+Hood+Stripes+Limited+Edition+to+21582+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+M2+Machines&_psid=f7c802b76&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|M2 Machines|31500-HS88|model|https://www.kaidohouse.com/products/copy-of-malaysia-candy-v2-custom-diecast?_pos=7&_psq=M2+Machines+1995+Chevrolet+S10+SS+Pickup+Truck+Black+with+Red+Hood+Stripes+Limited+Edition+to+21582+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+M2+Machines&_psid=f7c802b76&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|M2 Machines|31500-HS88|model|https://www.kaidohouse.com/products/garage-find-nsx-custom-diecast?_pos=8&_psq=M2+Machines+1995+Chevrolet+S10+SS+Pickup+Truck+Black+with+Red+Hood+Stripes+Limited+Edition+to+21582+pieces+Worldwide+1%2F64+Diecast+Model+Car+by+M2+Machines&_psid=f7c802b76&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "M2 Machines",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-ELVA-01|model|https://www.tarmacworks.com/products/minichamps-1-64-mclaren-formula-1-team-mcl39-lando-norris-winner-australian-gp-2025?_pos=1&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=75bc5a3f4&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-ELVA-01|model|https://www.tarmacworks.com/products/1-64-mitsubishi-lancer-evolution-vi-tommi-makinen-edition-blue-tarmac-works-road64?_pos=2&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=75bc5a3f4&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-ELVA-01|model|https://www.tarmacworks.com/products/1-64-mclaren-mcl60-japanese-grand-prix-2023-4-lando-norris-tarmac-works-x-ixo-models-global64?_pos=3&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=75bc5a3f4&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-ELVA-01|model|https://www.tarmacworks.com/products/1-64-lb-works-720s-white-tarmac-works-hobby64?_pos=4&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=75bc5a3f4&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-ELVA-01|model|https://www.tarmacworks.com/products/1-64-mclaren-mcl60-japanese-grand-prix-2023-81-oscar-piastri-tarmac-works-x-ixo-models-global64?_pos=5&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=75bc5a3f4&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.tarmacworks.com|CM Model|CM64-ELVA-01|model|https://www.tarmacworks.com/products/1-64-lb-works-720s-black-tarmac-works-hobby64?_pos=6&_psq=CM+Model+McLaren+Elva+Convertible+%2326+Matt+Blue+with+White+Stripes+and+Extra+Wheels+1%2F64+Diecast+Model+Car+by+CM+Model&_psid=75bc5a3f4&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "CM Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|MotorHelix|M65018|https://www.modelcarshouston.com/products/motorhelix-1-64-honda-civic-type-r-ek9-customized-motul-livery?_pos=1&_psq=M65018&_psid=2b2adba85&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "MotorHelix",
+    "matches": [
+      {
+        "sku": "M65018",
+        "variant_id": 49150555980032,
+        "title": "MotorHelix 1:64 Honda Civic Type-R (EK9) Customized Motul Livery",
+        "variant": "Default Title",
+        "vendor": "MotorHelix",
+        "url": "https://www.modelcarshouston.com/products/motorhelix-1-64-honda-civic-type-r-ek9-customized-motul-livery?variant=49150555980032"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.modelcarshouston.com|INNO64|IN64-LBWK-RX7-01|https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-rx7-fd3s-lb-super-silhouette-in-black?_pos=1&_psq=IN64-LBWK-RX7-01&_psid=0f96efb11&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "INNO64",
+    "matches": [
+      {
+        "sku": "IN64-LBWK-RX7-01",
+        "variant_id": 44401956651264,
+        "title": "INNO64 1:64 Mazda RX7 (FD3S) LB-SUPER SILHOUETTE in Black",
+        "variant": "Default Title",
+        "vendor": "Inno Models",
+        "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-rx7-fd3s-lb-super-silhouette-in-black?variant=44401956651264"
+      }
+    ],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|DCP/First Gear|60-2342|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-works-greddy-v2?_pos=1&_psq=DCP%2FFirst+Gear+Peterbilt+389+Day+Cab+and+28%27+Wilson+Silverstar+Double+Livestock+Trailers+Black+with+Magenta+Stripes+1%2F64+Diecast+Model+by+DCP%2FFirst+Gear&_psid=006635709&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "DCP/First Gear",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Hobby Japan|HJ646052DCK|model|https://www.kaidohouse.com/products/kaido-gt-toyota-ae86-sprinter-trueno-kaido-advan?_pos=1&_psq=Hobby+Japan+*PREORDER*+Hobby+Japan+1%3A64+Toyota+Sprinter+TRUENO+GT+APEX+%28AE86%29+DK+Tsuchiya+Street+Car+2011&_psid=86e6fba91&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Hobby Japan",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Hobby Japan|HJ646052DCK|model|https://www.kaidohouse.com/products/kaido-gt-toyota-ae86-sprinter-treuno-kaido-racing-dev-v1?_pos=2&_psq=Hobby+Japan+*PREORDER*+Hobby+Japan+1%3A64+Toyota+Sprinter+TRUENO+GT+APEX+%28AE86%29+DK+Tsuchiya+Street+Car+2011&_psid=86e6fba91&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Hobby Japan",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Hobby Japan|HJ646052DCK|model|https://www.kaidohouse.com/products/kaido-gt-toyota-sprinter-trueno-kaido-street-v1?_pos=3&_psq=Hobby+Japan+*PREORDER*+Hobby+Japan+1%3A64+Toyota+Sprinter+TRUENO+GT+APEX+%28AE86%29+DK+Tsuchiya+Street+Car+2011&_psid=86e6fba91&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Hobby Japan",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Hobby Japan|HJ646052DCK|model|https://www.kaidohouse.com/products/kaido-gt-toyota-ae86-sprinter-trueno-kaido-racing-v1?_pos=4&_psq=Hobby+Japan+*PREORDER*+Hobby+Japan+1%3A64+Toyota+Sprinter+TRUENO+GT+APEX+%28AE86%29+DK+Tsuchiya+Street+Car+2011&_psid=86e6fba91&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Hobby Japan",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Hobby Japan|HJ646052DCK|model|https://www.kaidohouse.com/products/kaido-gt-honda-nsx-tamiya-x-kaido-house-avante?_pos=5&_psq=Hobby+Japan+*PREORDER*+Hobby+Japan+1%3A64+Toyota+Sprinter+TRUENO+GT+APEX+%28AE86%29+DK+Tsuchiya+Street+Car+2011&_psid=86e6fba91&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Hobby Japan",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Hobby Japan|HJ646052DCK|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-works%E2%84%A2-shinjuku-v1-copy?_pos=6&_psq=Hobby+Japan+*PREORDER*+Hobby+Japan+1%3A64+Toyota+Sprinter+TRUENO+GT+APEX+%28AE86%29+DK+Tsuchiya+Street+Car+2011&_psid=86e6fba91&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Hobby Japan",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Hobby Japan|HJ646052DCK|model|https://www.kaidohouse.com/products/kaido-gt-honda-civic-ef-kaido-works-v2?_pos=7&_psq=Hobby+Japan+*PREORDER*+Hobby+Japan+1%3A64+Toyota+Sprinter+TRUENO+GT+APEX+%28AE86%29+DK+Tsuchiya+Street+Car+2011&_psid=86e6fba91&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Hobby Japan",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Hobby Japan|HJ646052DCK|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-2000gt-r-kpgc10-cortez-v1?_pos=8&_psq=Hobby+Japan+*PREORDER*+Hobby+Japan+1%3A64+Toyota+Sprinter+TRUENO+GT+APEX+%28AE86%29+DK+Tsuchiya+Street+Car+2011&_psid=86e6fba91&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Hobby Japan",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Hobby Japan|HJ646052DCK|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-star-racing-v1?_pos=9&_psq=Hobby+Japan+*PREORDER*+Hobby+Japan+1%3A64+Toyota+Sprinter+TRUENO+GT+APEX+%28AE86%29+DK+Tsuchiya+Street+Car+2011&_psid=86e6fba91&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Hobby Japan",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Hobby Japan|HJ646052DCK|model|https://www.kaidohouse.com/products/kaido-gt-nissan-fairlady-z-advan?_pos=10&_psq=Hobby+Japan+*PREORDER*+Hobby+Japan+1%3A64+Toyota+Sprinter+TRUENO+GT+APEX+%28AE86%29+DK+Tsuchiya+Street+Car+2011&_psid=86e6fba91&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Hobby Japan",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG3846|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-star-racing-v1?_pos=1&_psq=Ignition+Model+*CANCELLED*+Ignition+Model+1%3A64+Nissan+Skyline+%28BNR32%29+TOP+SECRET+GT-R+%28VR32%29+Gold&_psid=1b6c60e37&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG3846|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r33-kaido-works-advan?_pos=2&_psq=Ignition+Model+*CANCELLED*+Ignition+Model+1%3A64+Nissan+Skyline+%28BNR32%29+TOP+SECRET+GT-R+%28VR32%29+Gold&_psid=1b6c60e37&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG3846|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r33-bfthr-v1?_pos=3&_psq=Ignition+Model+*CANCELLED*+Ignition+Model+1%3A64+Nissan+Skyline+%28BNR32%29+TOP+SECRET+GT-R+%28VR32%29+Gold&_psid=1b6c60e37&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG3846|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-gt-r-r34-kaido-works%E2%84%A2-shinjuku-v1-copy?_pos=4&_psq=Ignition+Model+*CANCELLED*+Ignition+Model+1%3A64+Nissan+Skyline+%28BNR32%29+TOP+SECRET+GT-R+%28VR32%29+Gold&_psid=1b6c60e37&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG3846|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-20000gt-r-kaido-v1?_pos=5&_psq=Ignition+Model+*CANCELLED*+Ignition+Model+1%3A64+Nissan+Skyline+%28BNR32%29+TOP+SECRET+GT-R+%28VR32%29+Gold&_psid=1b6c60e37&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG3846|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-2000gt-r-kpgc10-kaido-racing-v1?_pos=6&_psq=Ignition+Model+*CANCELLED*+Ignition+Model+1%3A64+Nissan+Skyline+%28BNR32%29+TOP+SECRET+GT-R+%28VR32%29+Gold&_psid=1b6c60e37&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG3846|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-2000gt-r-kpgc10-cortez-v1?_pos=7&_psq=Ignition+Model+*CANCELLED*+Ignition+Model+1%3A64+Nissan+Skyline+%28BNR32%29+TOP+SECRET+GT-R+%28VR32%29+Gold&_psid=1b6c60e37&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG3846|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-2000gt-r-kpgc10-kaido-street-v2?_pos=8&_psq=Ignition+Model+*CANCELLED*+Ignition+Model+1%3A64+Nissan+Skyline+%28BNR32%29+TOP+SECRET+GT-R+%28VR32%29+Gold&_psid=1b6c60e37&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG3846|model|https://www.kaidohouse.com/products/kaido-nissan-skyline-2000gt-r-kpgc10-kaido-works%E2%84%A2?_pos=9&_psq=Ignition+Model+*CANCELLED*+Ignition+Model+1%3A64+Nissan+Skyline+%28BNR32%29+TOP+SECRET+GT-R+%28VR32%29+Gold&_psid=1b6c60e37&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
+  },
+  "https://www.kaidohouse.com|Ignition Model|IG3846|model|https://www.kaidohouse.com/products/kaido-gt-nissan-skyline-20000gt-r-kaido-works%E2%84%A2-v1?_pos=10&_psq=Ignition+Model+*CANCELLED*+Ignition+Model+1%3A64+Nissan+Skyline+%28BNR32%29+TOP+SECRET+GT-R+%28VR32%29+Gold&_psid=1b6c60e37&_ss=e": {
+    "checked": "2026-11-28T09:41:06.625758+07:00",
+    "manufacturer_requested": "Ignition Model",
+    "matches": [],
+    "status": "review only; manufacturer and edition require confirmation"
   }
 }

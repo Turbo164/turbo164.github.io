@@ -1137,26 +1137,6 @@
   },
   {
     "manufacturer": "Tarmac Works",
-    "productCode": "T64G-060-BG",
-    "name": "1/64 Toyota Sprinter Trueno AE86 Widebody Black/Grey - Designed by Jon Sibal - Malaysia Special Edition - Tarmac Works GLOBAL64",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-toyota-sprinter-trueno-ae86-widebody-black-grey-malaysia-special-edition-global64?variant=46673606902017",
-    "vendor": "Tarmac Works",
-    "releaseStatus": "unconfirmed",
-    "editionType": "unconfirmed",
-    "verification": "NEEDS VERIFICATION",
-    "photo": null,
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Tarmac Works",
     "productCode": "T64G-F037-LV",
     "name": "Tarmac Works 1:64 Mercedes-AMG F1 W12 E Performance Las Vegas Grand Prix Launch Party",
     "variant": "Default Title",
@@ -1199,19 +1179,62 @@
   },
   {
     "manufacturer": "Tarmac Works",
-    "productCode": "T64R-082-YL",
-    "name": "1/64 Ferrari 348 Challenge Yellow - Tarmac Works X iXO Models ROAD64",
+    "productCode": "T64G-F041-DR2",
+    "name": "Tarmac Works 1:64 McLaren MCL36 Japanese Grand Prix 2022 Daniel Ricciardo",
     "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-ferrari-348-challenge-yellow-road64?variant=46521932218625",
+    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mclaren-mcl36-japanese-grand-prix-2022-daniel-ricciardo?variant=44975535489280",
     "vendor": "Tarmac Works",
     "releaseStatus": "unconfirmed",
     "editionType": "unconfirmed",
     "verification": "NEEDS VERIFICATION",
     "photo": null,
-    "official_source_host": true,
+    "official_source_host": false,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",
     "review_flags": [
+      "official manufacturer product evidence missing",
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "Tarmac Works",
+    "productCode": "T64-066-WP",
+    "name": "Tarmac Works 1:64 Mazda RX-7 FC3S PANDEM in White and Purple",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mazda-rx-7-fc3s-pandem-in-white-and-purple?variant=44616389787904",
+    "vendor": "Tarmac Works",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": false,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "official manufacturer product evidence missing",
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "MotorHelix",
+    "productCode": "M65018",
+    "name": "MotorHelix 1:64 Honda Civic Type-R (EK9) Customized Motul Livery",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.modelcarshouston.com/products/motorhelix-1-64-honda-civic-type-r-ek9-customized-motul-livery?variant=49150555980032",
+    "vendor": "MotorHelix",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": false,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "official manufacturer product evidence missing",
       "release status requires evidence",
       "edition requires evidence",
       "exact catalog variant and car make require final review"
