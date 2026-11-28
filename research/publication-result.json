@@ -1,13 +1,44 @@
 {
-  "published": 0,
-  "status": "no eligible additions",
-  "eligible": 0,
+  "published": 2,
+  "status": "verified readback",
+  "eligible": 2,
   "conflicting_candidates": {},
   "catalog_base_commit": "1bf314365a3a5c9eb7b970fc52a398394a947296",
   "catalog_base_count": 519,
-  "catalog_count": 519,
+  "commit": "e9ec0980fec105212a8b0261f3a0c47f9d33c93b",
+  "additions": [
+    {
+      "id": "tarmac-works-t64g060bg",
+      "number": "T64G-060-BG",
+      "productCode": "T64G-060-BG",
+      "brand": "Toyota",
+      "vehicleMake": "Toyota",
+      "manufacturer": "Tarmac Works",
+      "name": "1/64 Toyota Sprinter Trueno AE86 Widebody Black/Grey - Designed by Jon Sibal - Malaysia Special Edition - Tarmac Works GLOBAL64",
+      "variant": "Special Edition",
+      "editionType": "Special Edition",
+      "release": "Unverified",
+      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-toyota-sprinter-trueno-ae86-widebody-black-grey-malaysia-special-edition-global64?variant=46673606902017",
+      "verification": "Official SKU and scale matched; edition, release and identity review pending"
+    },
+    {
+      "id": "tarmac-works-t64r082yl",
+      "number": "T64R-082-YL",
+      "productCode": "T64R-082-YL",
+      "brand": "Ferrari",
+      "vehicleMake": "Ferrari",
+      "manufacturer": "Tarmac Works",
+      "name": "1/64 Ferrari 348 Challenge Yellow - Tarmac Works X iXO Models ROAD64",
+      "variant": "Unverified",
+      "editionType": "Unverified",
+      "release": "Unverified",
+      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-ferrari-348-challenge-yellow-road64?variant=46521932218625",
+      "verification": "Official SKU and scale matched; edition, release and identity review pending"
+    }
+  ],
+  "catalog_count": 521,
   "workflow_run": {
-    "run_id": "46078368785",
+    "run_id": "46089353863",
     "run_attempt": "1",
     "commit": "1bf314365a3a5c9eb7b970fc52a398394a947296"
   }

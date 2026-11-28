@@ -662,6 +662,54 @@
     },
     {
       "manufacturer": "Tarmac Works",
+      "productCode": "T64G-060-BG",
+      "name": "1/64 Toyota Sprinter Trueno AE86 Widebody Black/Grey - Designed by Jon Sibal - Malaysia Special Edition - Tarmac Works GLOBAL64",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-toyota-sprinter-trueno-ae86-widebody-black-grey-malaysia-special-edition-global64?variant=46673606902017",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64G-F037-LV",
+      "name": "Tarmac Works 1:64 Mercedes-AMG F1 W12 E Performance Las Vegas Grand Prix Launch Party",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-mercedes-amg-f1-w12-e-performance-las-vegas-grand-prix-launch-party?variant=46411511234816",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64G-F064-LH1",
+      "name": "Tarmac Works 1:64 Mercedes-AMG F1 W14 E Performance \u2013 Hungarian Grand Prix 2023 Pole Position Lewis Hamilton #44",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/tarmac-works-1-64-mercedes-amg-f1-w14-e-performance-hungarian-grand-prix-2023-pole-position-lewis-hamilton-44?variant=46321998168320",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
+      "productCode": "T64R-082-YL",
+      "name": "1/64 Ferrari 348 Challenge Yellow - Tarmac Works X iXO Models ROAD64",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-ferrari-348-challenge-yellow-road64?variant=46521932218625",
+      "vendor": "Tarmac Works",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Tarmac Works",
       "productCode": "T64G-088-BL",
       "name": "1/64 URAS Skyline ER34 Blue - Tarmac Works GLOBAL64",
       "variant": "Default Title",
@@ -3359,6 +3407,36 @@
       "variant": "Default Title",
       "vendor": "Inno Models",
       "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-toyota-sprinter-trueno-ae86-keiichi-tsuchiya-with-chase-car-limited-edition?variant=47094625042688"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-MADLAB01-MADBUL",
+      "variant_id": 46762337763584,
+      "title": "INNO64 1:64 Mazda RX-7 \"PANDEM ROCKET BUNNY\" MADBUL MADLAB COLLECTION 001",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-mazda-rx-7-pandem-rocket-bunny-madbul-madlab-collection-001?variant=46762337763584"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-GR86-CUSCO",
+      "variant_id": 46762344907008,
+      "title": "INNO64 1:64 Toyota GR86 Tuned by \"CUSCO\" Edition",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-toyota-gr86-tuned-by-cusco-edition?variant=46762344907008"
+    },
+    {
+      "manufacturer": "INNO64",
+      "reason": "manufacturer mismatch or missing vendor",
+      "sku": "IN64-A80TS-RED",
+      "variant_id": 46762338451712,
+      "title": "INNO64 1:64 Toyota Supra (A80) TOP SECRET GT300 in Red",
+      "variant": "Default Title",
+      "vendor": "Inno Models",
+      "url": "https://www.modelcarshouston.com/products/preorder-inno64-1-64-toyota-supra-a80-top-secret-gt300-in-red?variant=46762338451712"
     }
   ]
 }
