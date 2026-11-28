@@ -1386,11 +1386,52 @@
   },
   {
     "manufacturer": "Tarmac Works",
-    "productCode": "T64G-076-97MCR01",
-    "name": "1/64 Mitsubishi Lancer Evolution IV Rallye Monte-Carlo 1997 #1 - Tarmac Works GLOBAL64",
+    "productCode": "T64G-061-GDY",
+    "name": "Tarmac Works 1:64 Nissan Skyline GT-R (R32) Widebody Jonsibal Designworks & Greddy Special Limited Edition in White",
     "variant": "Default Title",
-    "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mitsubishi-lancer-evolution-iv-rallye-monte-carlo-1997-1-global64?variant=47029206778113",
+    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-nissan-skyline-gt-r-r32-widebody-jonsibal-designworks-greddy-special-limited-edition-in-white?variant=46843542929664",
     "vendor": "Tarmac Works",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": false,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "official manufacturer product evidence missing",
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "Auto World",
+    "productCode": "AWBC003",
+    "name": "Auto World Big Country Collectibles 2025 Release 1 (6-Car Sealed Case) 1:64 Diecast",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-big-country-collectibles-2025-release-1-6-car-sealed-case-1-64-diecast-due-late-january-2026?variant=45704685781182",
+    "vendor": "AutoWorld",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": true,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "Auto World",
+    "productCode": "AWSP191",
+    "name": "Auto World 1981 Chevy Silverado Fleetside Lowered (Custom Cream w/5-Color Stripe Graphics) 1:64 Diecast",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1981-chevy-silverado-fleetside-lowered-custom-cream-w-5-color-stripe-graphics-1-64-diecast-due-august-2025?variant=45133365018814",
+    "vendor": "AutoWorld",
     "releaseStatus": "unconfirmed",
     "editionType": "unconfirmed",
     "verification": "NEEDS VERIFICATION",
@@ -3541,21 +3582,6 @@
   },
   {
     "manufacturer": "Auto World",
-    "productCode": "AWSP191",
-    "name": "Auto World 1981 Chevy Silverado Fleetside Lowered (Custom Cream w/5-Color Stripe Graphics) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-1981-chevy-silverado-fleetside-lowered-custom-cream-w-5-color-stripe-graphics-1-64-diecast-due-august-2025?variant=45133365018814",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
     "productCode": "AWSP147",
     "name": "Auto World BCC Huett Farms 1965 Chevy Suburban 1:64 Diecast",
     "variant": "Default Title",
@@ -4205,21 +4231,6 @@
     "name": "Auto World Premium 2025 Release 3 Set B (6-Car Sealed Case) 1:64 Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-premium-2025-release-3-set-b-6-car-sealed-case-1-64-diecast-due-march-2026?variant=45999990702270",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Auto World",
-    "productCode": "AWBC003",
-    "name": "Auto World Big Country Collectibles 2025 Release 1 (6-Car Sealed Case) 1:64 Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-auto-world-big-country-collectibles-2025-release-1-6-car-sealed-case-1-64-diecast-due-late-january-2026?variant=45704685781182",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",

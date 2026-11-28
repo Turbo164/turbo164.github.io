@@ -1,94 +1,83 @@
 {
-  "time": "2026-11-28T15:39:29.682665+07:00",
+  "time": "2026-11-28T17:39:40.400856+07:00",
   "pilot_only": false,
   "version": "6.3",
-  "catalog_master_commit": "e9ec0980fec105212a8b0261f3a0c47f9d33c93b",
-  "catalog_master_count": 521,
-  "official_exact_candidates": 196,
+  "catalog_master_commit": "ea1e52e3e0d437cebaae863676a2a35e5aebabff",
+  "catalog_master_count": 522,
+  "official_exact_candidates": 195,
   "independent_exact_candidates": 0,
   "new_leads": 0,
   "historical_master_present": false,
   "cumulative_count": 6763,
   "review_candidates": 1214,
-  "elapsed_research_seconds": 2713,
+  "elapsed_research_seconds": 2616,
   "catalog_count": 522,
   "lead_count": 6763,
   "sources": [
     [
-      "Ignition Model",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
-    ],
-    [
       "M2 Machines",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "collection cooling down",
+      "https://www.modelcarshouston.com/collections/m2-machines"
     ],
     [
       "Kaido House",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "collection cooling down",
+      "https://www.kaidohouse.com/collections/diecast"
     ],
     [
       "Johnny Lightning",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "collection cooling down",
+      "https://www.autoworldstore.com/collections/die-cast-1"
     ],
     [
       "Auto World",
-      "repeated page; checking variants for changes",
-      1
-    ],
-    [
-      "Auto World",
-      "page collected",
-      1,
-      106
-    ],
-    [
-      "Auto World",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "collection cooling down",
+      "https://www.autoworldstore.com/collections/diecast"
     ],
     [
       "Tarmac Works",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "collection cooling down",
+      "https://www.tarmacworks.com/collections/1-64-scale"
     ],
     [
       "Hobby Japan",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "collection cooling down",
+      "https://www.modelcarshouston.com/collections/hobby-japan-minicar-project"
     ],
     [
       "Johnny Lightning",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "collection cooling down",
+      "https://www.autoworldstore.com/collections/johnny-lightning-1-64-scale"
     ],
     [
       "Auto World",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "collection cooling down",
+      "https://www.autoworldstore.com/collections/auto-world-1-64-scale"
     ],
     [
       "PGM",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "collection cooling down",
+      "https://www.modelcarshouston.com/collections/pgm"
     ],
     [
       "MINI GT",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "collection cooling down",
+      "https://www.modelcarshouston.com/collections/mini-gt"
     ],
     [
       "POP RACE",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "collection cooling down",
+      "https://www.modelcarshouston.com/collections/pop-race"
     ],
     [
       "Kaido House",
-      "blocked",
-      "HTTP Error 429: Too Many Requests"
+      "collection cooling down",
+      "https://www.modelcarshouston.com/collections/kaido-house"
+    ],
+    [
+      "Ignition Model",
+      "collection cooling down",
+      "https://www.modelcarshouston.com/collections/ignition-model"
     ],
     [
       "MINI GT",
@@ -158,82 +147,23 @@
     [
       "wholesale",
       "new listing leads",
-      31,
+      41,
       0,
       "product links",
-      46
+      45
     ],
     [
       "wholesale",
       "new listing leads",
-      32,
+      42,
       0,
       "product links",
-      48
+      15
     ],
     [
       "wholesale",
-      "new listing leads",
-      33,
-      0,
-      "product links",
+      "no parseable product links",
       43
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      34,
-      0,
-      "product links",
-      40
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      35,
-      0,
-      "product links",
-      43
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      36,
-      0,
-      "product links",
-      40
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      37,
-      0,
-      "product links",
-      37
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      38,
-      0,
-      "product links",
-      39
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      39,
-      0,
-      "product links",
-      41
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      40,
-      0,
-      "product links",
-      47
     ],
     [
       "hobbysearch",
@@ -243,49 +173,49 @@
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/s_guide.html",
+      "https://southtexasdiecast.com/hwguide/w_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/t_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/wheelguide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/t_guide.html",
+      "https://southtexasdiecast.com/hwguide/x_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/treasurehuntset.html",
+      "https://southtexasdiecast.com/hwguide/y_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/u_guide.html",
+      "https://southtexasdiecast.com/hwguide/z_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/v_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/1900_1939_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/v_guide.html",
+      "https://southtexasdiecast.com/hwguide/1940_1949_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/w_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/1950_1959_guide.html",
       0
     ],
     [
@@ -309,44 +239,44 @@
     [
       "V4.6",
       "product links inspected",
-      27786,
+      28210,
       "exact scale/SKU matches",
-      203
+      205
     ],
     [
       "V4.9",
       "cached product requests avoided",
       0,
       "unique cached endpoints",
-      1584
+      1625
     ],
     [
       "V4.5",
       "independent storefront searches",
-      335,
+      324,
       "wholesale SKU backlog",
-      1783,
+      1782,
       "new search records inspected",
-      335
+      324
     ],
     [
       "V4.7",
       "manufacturer-matched review candidates",
-      68,
+      70,
       "excluded or duplicate",
-      137
+      139
     ],
     [
       "V5.0",
       "official exact variant matches",
-      389,
+      387,
       "errors",
       2
     ],
     [
       "V4.8",
       "official-host candidates",
-      220,
+      219,
       "publication approved",
       0
     ],
@@ -363,7 +293,7 @@
     [
       "V5.1",
       "unique official candidates for final review",
-      196,
+      195,
       "approved for publication",
       0
     ],
@@ -377,12 +307,12 @@
       0
     ]
   ],
-  "publication": "verified readback",
-  "run_id": "46126821823",
+  "publication": "no eligible additions",
+  "run_id": "46136200991",
   "run_attempt": "1",
-  "commit": "e9ec0980fec105212a8b0261f3a0c47f9d33c93b",
-  "published": 1,
-  "eligible_verified": 1,
+  "commit": "ea1e52e3e0d437cebaae863676a2a35e5aebabff",
+  "published": 0,
+  "eligible_verified": 0,
   "research_status": "completed",
   "publication_step_outcome": "success"
 }

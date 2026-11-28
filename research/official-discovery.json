@@ -16619,5 +16619,10 @@
       }
     ],
     "status": "official discovery only; exact variant verification pending"
+  },
+  "tarmacworks|T64G-061-GDY": {
+    "checked": "2026-11-28T17:39:40.400856+07:00",
+    "hits": [],
+    "status": "official discovery only; exact variant verification pending"
   }
 }

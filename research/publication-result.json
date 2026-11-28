@@ -1,31 +1,14 @@
 {
-  "published": 1,
-  "status": "verified readback",
-  "eligible": 1,
+  "published": 0,
+  "status": "no eligible additions",
+  "eligible": 0,
   "conflicting_candidates": {},
-  "catalog_base_commit": "e9ec0980fec105212a8b0261f3a0c47f9d33c93b",
-  "catalog_base_count": 521,
-  "commit": "ea1e52e3e0d437cebaae863676a2a35e5aebabff",
-  "additions": [
-    {
-      "id": "tarmac-works-t64g07697mcr01",
-      "number": "T64G-076-97MCR01",
-      "productCode": "T64G-076-97MCR01",
-      "brand": "Mitsubishi",
-      "vehicleMake": "Mitsubishi",
-      "manufacturer": "Tarmac Works",
-      "name": "1/64 Mitsubishi Lancer Evolution IV Rallye Monte-Carlo 1997 #1 - Tarmac Works GLOBAL64",
-      "variant": "Unverified",
-      "editionType": "Unverified",
-      "release": "Unverified",
-      "sourceUrl": "https://www.tarmacworks.com/products/tarmac-works-1-64-mitsubishi-lancer-evolution-iv-rallye-monte-carlo-1997-1-global64?variant=47029206778113",
-      "verification": "Official SKU and scale matched; edition, release and identity review pending"
-    }
-  ],
+  "catalog_base_commit": "ea1e52e3e0d437cebaae863676a2a35e5aebabff",
+  "catalog_base_count": 522,
   "catalog_count": 522,
   "workflow_run": {
-    "run_id": "46126821823",
+    "run_id": "46136200991",
     "run_attempt": "1",
-    "commit": "e9ec0980fec105212a8b0261f3a0c47f9d33c93b"
+    "commit": "ea1e52e3e0d437cebaae863676a2a35e5aebabff"
   }
 }
