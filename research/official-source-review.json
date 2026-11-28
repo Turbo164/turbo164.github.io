@@ -1529,6 +1529,67 @@
     ]
   },
   {
+    "manufacturer": "MINI GT",
+    "productCode": "MGT01147-BL",
+    "name": "*PREORDER* MINI GT 1:64 Honda Civic Type-R Ultimate Edition in White",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-mini-gt-1-64-honda-civic-type-r-ultimate-edition-white?variant=47139348152576",
+    "vendor": "MINI GT",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": false,
+    "release_hint": "preorder",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "official manufacturer product evidence missing",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "Johnny Lightning",
+    "productCode": "JLSF027B",
+    "name": "Johnny Lightning Street Freaks 2025 Release 1 Set B (6-Car Sealed Case) 1:64 Scale Diecast",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-street-freaks-2025-release-1-set-b-6-car-sealed-case-1-64-scale-diecast-due-late-october-2025?variant=45420966314174",
+    "vendor": "JohnnyLightning",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": true,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "Tarmac Works",
+    "productCode": "T64-TL017-10TH",
+    "name": "Tarmac Works 1:64 RWB 993 Tarmac Works 10th Anniversary Limited Edition",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-rwb-993-tarmac-works-10th-anniversary-limited-edition?variant=46794833133824",
+    "vendor": "Tarmac Works",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": false,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "official manufacturer product evidence missing",
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
     "manufacturer": "Tarmac Works",
     "productCode": "T64G-088-BL",
     "name": "1/64 URAS Skyline ER34 Blue - Tarmac Works GLOBAL64",
@@ -3623,21 +3684,6 @@
     "name": "Johnny Lightning Street Freaks 2025 Release 1 Set A (6-Car Sealed Case) 1:64 Scale Diecast",
     "variant": "Default Title",
     "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-street-freaks-2025-release-1-set-a-6-car-sealed-case-1-64-scale-diecast-due-late-october-2025?variant=45420948816062",
-    "official_source_host": true,
-    "release_hint": "unconfirmed",
-    "edition_hint": "unconfirmed",
-    "review_flags": [
-      "release status requires evidence",
-      "edition requires evidence",
-      "exact catalog variant and car make require final review"
-    ]
-  },
-  {
-    "manufacturer": "Johnny Lightning",
-    "productCode": "JLSF027B",
-    "name": "Johnny Lightning Street Freaks 2025 Release 1 Set B (6-Car Sealed Case) 1:64 Scale Diecast",
-    "variant": "Default Title",
-    "sourceUrl": "https://www.autoworldstore.com/products/pre-order-johnny-lightning-street-freaks-2025-release-1-set-b-6-car-sealed-case-1-64-scale-diecast-due-late-october-2025?variant=45420966314174",
     "official_source_host": true,
     "release_hint": "unconfirmed",
     "edition_hint": "unconfirmed",

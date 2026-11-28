@@ -16730,5 +16730,40 @@
       }
     ],
     "status": "official discovery only; exact variant verification pending"
+  },
+  "tarmacworks|T64-TL017-10TH": {
+    "checked": "2026-11-28T23:34:00.613809+07:00",
+    "hits": [
+      {
+        "available": false,
+        "body": "<p>1/64 scale die-cast<br></p>\n<p>Limited production run and will never be produced again<br></p>\n<p>Detailed rims &amp; rubber wheels<br></p>\n<p>Detailed front and rear lights<br></p>\n<p>Display base and acrylic cover with a paper sleeve box</p>\n<p>Fully licensed product</p>",
+        "compare_at_price_max": "0.00",
+        "compare_at_price_min": "0.00",
+        "handle": "tarmac-works-1-64-rwb-993-tarmac-works-10th-anniversary-hobby64",
+        "id": 8975137505537,
+        "image": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64-TL017-10TH_M03_0e788cd4-0e92-4405-bb1f-a9e54ee61180.jpg?v=1764833130",
+        "price": "21.90",
+        "price_max": "21.90",
+        "price_min": "21.90",
+        "tags": [
+          "1/64",
+          "HOBBY64/64+",
+          "New Release"
+        ],
+        "title": "1/64 RWB 993 Tarmac Works 10th Anniversary - Tarmac Works HOBBY64",
+        "type": "1/64 Diecast",
+        "url": "/products/tarmac-works-1-64-rwb-993-tarmac-works-10th-anniversary-hobby64?_pos=1&_psq=T64-TL017-10TH&_psid=1ec71a928&_ss=e",
+        "variants": [],
+        "vendor": "Tarmac Works",
+        "featured_image": {
+          "alt": "1/64 RWB 993 Tarmac Works 10th Anniversary - Tarmac Works HOBBY64",
+          "aspect_ratio": 1.5,
+          "height": 3958,
+          "url": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64-TL017-10TH_M03_0e788cd4-0e92-4405-bb1f-a9e54ee61180.jpg?v=1764833130",
+          "width": 5937
+        }
+      }
+    ],
+    "status": "official discovery only; exact variant verification pending"
   }
 }

@@ -1,83 +1,146 @@
 {
-  "time": "2026-11-28T21:34:36.222072+07:00",
+  "time": "2026-11-28T23:34:00.613809+07:00",
   "pilot_only": false,
   "version": "6.3",
   "catalog_master_commit": "ea1e52e3e0d437cebaae863676a2a35e5aebabff",
   "catalog_master_count": 522,
-  "official_exact_candidates": 196,
+  "official_exact_candidates": 197,
   "independent_exact_candidates": 0,
   "new_leads": 0,
   "historical_master_present": false,
   "cumulative_count": 6763,
   "review_candidates": 1214,
-  "elapsed_research_seconds": 2705,
+  "elapsed_research_seconds": 2838,
   "catalog_count": 522,
   "lead_count": 6763,
   "sources": [
     [
-      "Kaido House",
-      "collection cooling down",
-      "https://www.kaidohouse.com/collections/diecast"
-    ],
-    [
       "Johnny Lightning",
-      "collection cooling down",
-      "https://www.autoworldstore.com/collections/die-cast-1"
-    ],
-    [
-      "Auto World",
-      "collection cooling down",
-      "https://www.autoworldstore.com/collections/diecast"
+      "page collected",
+      1,
+      159
     ],
     [
       "Tarmac Works",
-      "collection cooling down",
-      "https://www.tarmacworks.com/collections/1-64-scale"
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "Tarmac Works",
+      "page collected",
+      1,
+      247
     ],
     [
       "Hobby Japan",
-      "collection cooling down",
-      "https://www.modelcarshouston.com/collections/hobby-japan-minicar-project"
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "Hobby Japan",
+      "page collected",
+      1,
+      250
+    ],
+    [
+      "Hobby Japan",
+      "repeated page; checking variants for changes",
+      2
+    ],
+    [
+      "Hobby Japan",
+      "page collected",
+      2,
+      149
     ],
     [
       "Johnny Lightning",
-      "collection cooling down",
-      "https://www.autoworldstore.com/collections/johnny-lightning-1-64-scale"
+      "page collected",
+      1,
+      132
     ],
     [
       "Auto World",
-      "collection cooling down",
-      "https://www.autoworldstore.com/collections/auto-world-1-64-scale"
-    ],
-    [
-      "PGM",
-      "collection cooling down",
-      "https://www.modelcarshouston.com/collections/pgm"
+      "page collected",
+      1,
+      101
     ],
     [
       "MINI GT",
-      "collection cooling down",
-      "https://www.modelcarshouston.com/collections/mini-gt"
+      "repeated page; checking variants for changes",
+      1
     ],
     [
-      "POP RACE",
-      "collection cooling down",
-      "https://www.modelcarshouston.com/collections/pop-race"
+      "MINI GT",
+      "page collected",
+      1,
+      250
     ],
     [
-      "Kaido House",
-      "collection cooling down",
-      "https://www.modelcarshouston.com/collections/kaido-house"
+      "MINI GT",
+      "repeated page; checking variants for changes",
+      2
+    ],
+    [
+      "MINI GT",
+      "page collected",
+      2,
+      62
     ],
     [
       "Ignition Model",
-      "collection cooling down",
-      "https://www.modelcarshouston.com/collections/ignition-model"
+      "repeated page; checking variants for changes",
+      1
     ],
     [
-      "M2 Machines",
-      "collection cooling down",
-      "https://www.modelcarshouston.com/collections/m2-machines"
+      "Ignition Model",
+      "page collected",
+      1,
+      250
+    ],
+    [
+      "Ignition Model",
+      "repeated page; checking variants for changes",
+      2
+    ],
+    [
+      "Ignition Model",
+      "page collected",
+      2,
+      250
+    ],
+    [
+      "Ignition Model",
+      "repeated page; checking variants for changes",
+      3
+    ],
+    [
+      "Ignition Model",
+      "page collected",
+      3,
+      250
+    ],
+    [
+      "Ignition Model",
+      "repeated page; checking variants for changes",
+      4
+    ],
+    [
+      "Ignition Model",
+      "page collected",
+      4,
+      201
+    ],
+    [
+      "Kaido House",
+      "repeated page; checking variants for changes",
+      1
+    ],
+    [
+      "Kaido House",
+      "page collected",
+      1,
+      82
     ],
     [
       "MINI GT",
@@ -147,47 +210,7 @@
     [
       "wholesale",
       "new listing leads",
-      11,
-      0,
-      "product links",
-      48
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      12,
-      0,
-      "product links",
-      42
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      13,
-      0,
-      "product links",
-      48
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      14,
-      0,
-      "product links",
-      48
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      15,
-      0,
-      "product links",
-      48
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      16,
+      21,
       0,
       "product links",
       46
@@ -195,7 +218,7 @@
     [
       "wholesale",
       "new listing leads",
-      17,
+      22,
       0,
       "product links",
       48
@@ -203,7 +226,7 @@
     [
       "wholesale",
       "new listing leads",
-      18,
+      23,
       0,
       "product links",
       45
@@ -211,7 +234,7 @@
     [
       "wholesale",
       "new listing leads",
-      19,
+      24,
       0,
       "product links",
       48
@@ -219,10 +242,50 @@
     [
       "wholesale",
       "new listing leads",
-      20,
+      25,
       0,
       "product links",
-      45
+      46
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      26,
+      0,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      27,
+      0,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      28,
+      0,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      29,
+      0,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      30,
+      0,
+      "product links",
+      46
     ],
     [
       "hobbysearch",
@@ -232,49 +295,49 @@
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1974guide.html",
+      "https://southtexasdiecast.com/hwguide/1981guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1975guide.html",
+      "https://southtexasdiecast.com/hwguide/1982guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1976guide.html",
+      "https://southtexasdiecast.com/hwguide/1983guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1977guide.html",
+      "https://southtexasdiecast.com/hwguide/1984guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1978guide.html",
+      "https://southtexasdiecast.com/hwguide/1985guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1979guide.html",
+      "https://southtexasdiecast.com/hwguide/1986guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1980_1989_guide.html",
+      "https://southtexasdiecast.com/hwguide/1987guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1980guide.html",
+      "https://southtexasdiecast.com/hwguide/1988guide.html",
       0
     ],
     [
@@ -298,37 +361,37 @@
     [
       "V4.6",
       "product links inspected",
-      28856,
+      29160,
       "exact scale/SKU matches",
-      214
+      217
     ],
     [
       "V4.9",
       "cached product requests avoided",
       0,
       "unique cached endpoints",
-      1690
+      1724
     ],
     [
       "V4.5",
       "independent storefront searches",
-      325,
+      320,
       "wholesale SKU backlog",
       1782,
       "new search records inspected",
-      325
+      320
     ],
     [
       "V4.7",
       "manufacturer-matched review candidates",
-      74,
+      77,
       "excluded or duplicate",
-      143
+      145
     ],
     [
       "V5.0",
       "official exact variant matches",
-      388,
+      389,
       "errors",
       2
     ],
@@ -342,7 +405,7 @@
     [
       "V5.2",
       "official detail evidence records",
-      251
+      252
     ],
     [
       "V6.1",
@@ -352,7 +415,7 @@
     [
       "V5.1",
       "unique official candidates for final review",
-      196,
+      197,
       "approved for publication",
       0
     ],
@@ -367,7 +430,7 @@
     ]
   ],
   "publication": "no eligible additions",
-  "run_id": "46155358674",
+  "run_id": "46165822137",
   "run_attempt": "1",
   "commit": "ea1e52e3e0d437cebaae863676a2a35e5aebabff",
   "published": 0,
