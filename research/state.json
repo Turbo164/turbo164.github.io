@@ -57,10 +57,13 @@
     "7daa46c8ff444d1cefd23326dfc4c257d5961ab442aa9da784d8bd26edd64f6b",
     "7daa46c8ff444d1cefd23326dfc4c257d5961ab442aa9da784d8bd26edd64f6b",
     "7daa46c8ff444d1cefd23326dfc4c257d5961ab442aa9da784d8bd26edd64f6b",
+    "7daa46c8ff444d1cefd23326dfc4c257d5961ab442aa9da784d8bd26edd64f6b",
     "7daa46c8ff444d1cefd23326dfc4c257d5961ab442aa9da784d8bd26edd64f6b"
   ],
   "https://www.tarmacworks.com/collections/1-64-scale": 1,
   "https://www.modelcarshouston.com/collections/hobby-japan-minicar-project fingerprints": [
+    "362a0b8452eec2eb9cafde1572638961d87e34f4b77a0f2edaa9b22fea702f0e",
+    "7af460c34ccc81f85f4a8c18937648d42a60ee041ef1218c519aab00d5aa44a7",
     "362a0b8452eec2eb9cafde1572638961d87e34f4b77a0f2edaa9b22fea702f0e",
     "7af460c34ccc81f85f4a8c18937648d42a60ee041ef1218c519aab00d5aa44a7",
     "362a0b8452eec2eb9cafde1572638961d87e34f4b77a0f2edaa9b22fea702f0e",
@@ -171,6 +174,7 @@
     "af44f805aeeb3635660afbbabc77a7257a0bf74328a3a13ac3680bc8d968bfcc",
     "af44f805aeeb3635660afbbabc77a7257a0bf74328a3a13ac3680bc8d968bfcc",
     "af44f805aeeb3635660afbbabc77a7257a0bf74328a3a13ac3680bc8d968bfcc",
+    "af44f805aeeb3635660afbbabc77a7257a0bf74328a3a13ac3680bc8d968bfcc",
     "af44f805aeeb3635660afbbabc77a7257a0bf74328a3a13ac3680bc8d968bfcc"
   ],
   "https://www.autoworldstore.com/collections/johnny-lightning-1-64-scale": 1,
@@ -216,11 +220,14 @@
     "595daf823ff30687a3e5fe8e2064f1942a323420013b72f7ae3afb07aecd360e",
     "595daf823ff30687a3e5fe8e2064f1942a323420013b72f7ae3afb07aecd360e",
     "595daf823ff30687a3e5fe8e2064f1942a323420013b72f7ae3afb07aecd360e",
+    "595daf823ff30687a3e5fe8e2064f1942a323420013b72f7ae3afb07aecd360e",
     "595daf823ff30687a3e5fe8e2064f1942a323420013b72f7ae3afb07aecd360e"
   ],
   "https://www.autoworldstore.com/collections/auto-world-1-64-scale": 1,
   "https://www.modelcarshouston.com/collections/pgm": 1,
   "https://www.modelcarshouston.com/collections/mini-gt fingerprints": [
+    "65224b87829f85338f4f47ea0b481671db2e1d474001d4220d7d4202408ae55b",
+    "52a522dd51610f0bde9b05a371476b13330ca7012402f036db51a3a68ad7eed2",
     "65224b87829f85338f4f47ea0b481671db2e1d474001d4220d7d4202408ae55b",
     "52a522dd51610f0bde9b05a371476b13330ca7012402f036db51a3a68ad7eed2",
     "65224b87829f85338f4f47ea0b481671db2e1d474001d4220d7d4202408ae55b",
@@ -397,10 +404,10 @@
   "https://www.modelcarshouston.com/collections/ignition-model": 1,
   "https://www.modelcarshouston.com/collections/greenlight": 1,
   "https://www.modelcarshouston.com/collections/m2-machines": 1,
-  "collection_rotation": 7,
-  "v61 extra last wholesale": "ff6faa99a2e4a988e8629d6b2cafdaf486cda7e10eb466df185cadea62fd94a1",
-  "v61 extra wholesale": 11,
-  "v61 historical cursor": 69,
+  "collection_rotation": 8,
+  "v61 extra last wholesale": "e1f7225690cffdf0dc68d374eedf57da1719e9dc36d4ef889f206fd13cb5e896",
+  "v61 extra wholesale": 21,
+  "v61 historical cursor": 77,
   "MINI GT verify cursor": 167,
   "DCP/First Gear verify cursor": 58,
   "INNO64 verify cursor": 85,
@@ -442,7 +449,7 @@
   "Minichamps verify cursor": 0,
   "American Diorama verify cursor": 2,
   "Autoart verify cursor": 11,
-  "wholesale search cursor": 1613,
+  "wholesale search cursor": 156,
   "Kyosho verify cursor": 1,
   "Muscle Machines verify cursor": 15,
   "Panzerkampf verify cursor": 0,
@@ -460,39 +467,39 @@
   "Code 3 verify cursor": 0,
   "v63_source_health": {
     "https://www.modelcarshouston.com/collections/ignition-model": {
-      "checked": "2026-11-28T09:41:06.625758+07:00",
+      "checked": "2026-11-28T11:47:40.610208+07:00",
       "products": 201
     },
     "https://www.kaidohouse.com/collections/diecast": {
-      "checked": "2026-11-28T09:41:06.625758+07:00",
-      "products": 83
+      "checked": "2026-11-28T11:47:40.610208+07:00",
+      "products": 82
     },
     "https://www.autoworldstore.com/collections/die-cast-1": {
-      "checked": "2026-11-28T09:41:06.625758+07:00",
+      "checked": "2026-11-28T11:47:40.610208+07:00",
       "products": 159
     },
     "https://www.autoworldstore.com/collections/diecast": {
-      "checked": "2026-11-28T09:41:06.625758+07:00",
+      "checked": "2026-11-28T11:47:40.610208+07:00",
       "products": 106
     },
     "https://www.tarmacworks.com/collections/1-64-scale": {
-      "checked": "2026-11-28T09:41:06.625758+07:00",
+      "checked": "2026-11-28T11:47:40.610208+07:00",
       "products": 247
     },
     "https://www.modelcarshouston.com/collections/hobby-japan-minicar-project": {
-      "checked": "2026-11-28T09:41:06.625758+07:00",
+      "checked": "2026-11-28T11:47:40.610208+07:00",
       "products": 149
     },
     "https://www.autoworldstore.com/collections/johnny-lightning-1-64-scale": {
-      "checked": "2026-11-28T09:41:06.625758+07:00",
+      "checked": "2026-11-28T11:47:40.610208+07:00",
       "products": 132
     },
     "https://www.autoworldstore.com/collections/auto-world-1-64-scale": {
-      "checked": "2026-11-28T09:41:06.625758+07:00",
+      "checked": "2026-11-28T11:47:40.610208+07:00",
       "products": 101
     },
     "https://www.modelcarshouston.com/collections/mini-gt": {
-      "checked": "2026-11-28T09:41:06.625758+07:00",
+      "checked": "2026-11-28T11:47:40.610208+07:00",
       "products": 62
     }
   },
@@ -510,7 +517,8 @@
     "5f95d037ca055019c46b1af289cfd0523d1385aaa93750b2e28cbdce8be792d5",
     "5f95d037ca055019c46b1af289cfd0523d1385aaa93750b2e28cbdce8be792d5",
     "5f95d037ca055019c46b1af289cfd0523d1385aaa93750b2e28cbdce8be792d5",
-    "5f95d037ca055019c46b1af289cfd0523d1385aaa93750b2e28cbdce8be792d5"
+    "5f95d037ca055019c46b1af289cfd0523d1385aaa93750b2e28cbdce8be792d5",
+    "773d59d6e39250011c8f7a4891725bc0022d438a4ae836c53316185ee95c9575"
   ],
   "https://www.kaidohouse.com/collections/diecast": 1,
   "https://www.autoworldstore.com/collections/die-cast-1 fingerprints": [
@@ -524,6 +532,7 @@
     "37a2d46f26f3519cc4964779d81da89025f5769bc2bf539b44aa19229d2e1e02",
     "37a2d46f26f3519cc4964779d81da89025f5769bc2bf539b44aa19229d2e1e02",
     "37a2d46f26f3519cc4964779d81da89025f5769bc2bf539b44aa19229d2e1e02",
+    "c083bac1b0b5f87041fe9398295595d8ce5fc7eb0bdfa2e589c5294b030a38ea",
     "c083bac1b0b5f87041fe9398295595d8ce5fc7eb0bdfa2e589c5294b030a38ea",
     "c083bac1b0b5f87041fe9398295595d8ce5fc7eb0bdfa2e589c5294b030a38ea",
     "c083bac1b0b5f87041fe9398295595d8ce5fc7eb0bdfa2e589c5294b030a38ea",
@@ -544,10 +553,11 @@
     "bdefd040d412e923d422b17bdc971833e2ce0e91953f11097160fde4ed8538b5",
     "bdefd040d412e923d422b17bdc971833e2ce0e91953f11097160fde4ed8538b5",
     "bdefd040d412e923d422b17bdc971833e2ce0e91953f11097160fde4ed8538b5",
+    "bdefd040d412e923d422b17bdc971833e2ce0e91953f11097160fde4ed8538b5",
     "bdefd040d412e923d422b17bdc971833e2ce0e91953f11097160fde4ed8538b5"
   ],
   "https://www.autoworldstore.com/collections/diecast": 1,
-  "Kaido House verify cursor": 83,
-  "v63_retailer_rotation": 4,
+  "Kaido House verify cursor": 84,
+  "v63_retailer_rotation": 5,
   "Forces of Valor verify cursor": 0
 }

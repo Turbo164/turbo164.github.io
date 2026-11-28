@@ -16517,5 +16517,71 @@
       }
     ],
     "status": "official discovery only; exact variant verification pending"
+  },
+  "autoworld|AWDC008": {
+    "checked": "2026-11-28T11:47:40.610208+07:00",
+    "hits": [
+      {
+        "available": true,
+        "body": "<ul>\n<li>Keep your collection dust-free with the 6-pack of display cases!</li>\n<li>Crystal-clear plastic dome with angled area for custom nameplate.</li>\n<li>4.25\u201d x 2\u201d x 1.875\u201d case fits most 1:64 scale vehicles</li>\n</ul>",
+        "compare_at_price_max": "0.00",
+        "compare_at_price_min": "0.00",
+        "handle": "auto-world-display-case-6-pack-for-1-64-scale",
+        "id": 5409642610840,
+        "image": "https://cdn.shopify.com/s/files/1/0400/0910/5560/products/AWDC008-2_69651ec8-e375-4b61-a3fe-7928d6d3d914.jpg?v=1603246428",
+        "price": "21.99",
+        "price_max": "21.99",
+        "price_min": "21.99",
+        "tags": [
+          "MCF"
+        ],
+        "title": "Auto World Display Case (6 Pack) for 1:64 scale",
+        "type": "B1.064.4-RCCA",
+        "url": "/products/auto-world-display-case-6-pack-for-1-64-scale?_pos=1&_psq=AWDC008&_psid=c2d06080a&_ss=e",
+        "variants": [],
+        "vendor": "AutoWorld",
+        "featured_image": {
+          "alt": "Auto World Display Case (6 Pack) for 1:64 scale - Auto World Store",
+          "aspect_ratio": 1.333,
+          "height": 375,
+          "url": "https://cdn.shopify.com/s/files/1/0400/0910/5560/products/AWDC008-2_69651ec8-e375-4b61-a3fe-7928d6d3d914.jpg?v=1603246428",
+          "width": 500
+        }
+      }
+    ],
+    "status": "official discovery only; exact variant verification pending"
+  },
+  "autoworld|AWDC003": {
+    "checked": "2026-11-28T11:47:40.610208+07:00",
+    "hits": [
+      {
+        "available": true,
+        "body": "<ul>\n<li>Displays six vehicles</li>\n</ul>\n<ul>\n<li>Front panel opens for easy access</li>\n</ul>\n<ul>\n<li>Interlock more cases as your collection grows</li>\n</ul>\n<ul>\n<li>Mirror back and wall-mounting hardware included</li>\n</ul>",
+        "compare_at_price_max": "0.00",
+        "compare_at_price_min": "0.00",
+        "handle": "auto-world-six-car-interlocking-display-case-1-64-scale",
+        "id": 5409640579224,
+        "image": "https://cdn.shopify.com/s/files/1/0400/0910/5560/products/AWDC003-2_c59434e6-9a76-409c-84da-5be17e0f6c88.jpg?v=1603246419",
+        "price": "18.49",
+        "price_max": "18.49",
+        "price_min": "18.49",
+        "tags": [
+          "MCF"
+        ],
+        "title": "Auto World Six Car Interlocking Display Case 1:64 Scale",
+        "type": "B1.072.5-RCCA",
+        "url": "/products/auto-world-six-car-interlocking-display-case-1-64-scale?_pos=1&_psq=AWDC003&_psid=61b09c9cc&_ss=e",
+        "variants": [],
+        "vendor": "AutoWorld",
+        "featured_image": {
+          "alt": "Auto World Six Car Interlocking Display Case 1:64 Scale - Auto World Store",
+          "aspect_ratio": 1.333,
+          "height": 375,
+          "url": "https://cdn.shopify.com/s/files/1/0400/0910/5560/products/AWDC003-2_c59434e6-9a76-409c-84da-5be17e0f6c88.jpg?v=1603246419",
+          "width": 500
+        }
+      }
+    ],
+    "status": "official discovery only; exact variant verification pending"
   }
 }

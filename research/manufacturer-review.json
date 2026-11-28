@@ -721,6 +721,42 @@
       "photo": null
     },
     {
+      "manufacturer": "Auto World",
+      "productCode": "AWDC008",
+      "name": "Auto World Display Case (6 Pack) for 1:64 scale",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.autoworldstore.com/products/auto-world-display-case-6-pack-for-1-64-scale?variant=35005660823704",
+      "vendor": "AutoWorld",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "MotorHelix",
+      "productCode": "M63471",
+      "name": "MotorHelix 1:64 Nissan Skyline GT-R (R34) V-Spec Customized in Metallic Orange",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.modelcarshouston.com/products/preorder-motorhelix-1-64-nissan-skyline-gt-r-r34-v-spec-customized-metallic-orange?variant=47128182325504",
+      "vendor": "MotorHelix",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
+      "manufacturer": "Auto World",
+      "productCode": "AWDC003",
+      "name": "Auto World Six Car Interlocking Display Case 1:64 Scale",
+      "variant": "Default Title",
+      "sourceUrl": "https://www.autoworldstore.com/products/auto-world-six-car-interlocking-display-case-1-64-scale?variant=35005655318680",
+      "vendor": "AutoWorld",
+      "releaseStatus": "unconfirmed",
+      "editionType": "unconfirmed",
+      "verification": "NEEDS VERIFICATION",
+      "photo": null
+    },
+    {
       "manufacturer": "Tarmac Works",
       "productCode": "T64G-088-BL",
       "name": "1/64 URAS Skyline ER34 Blue - Tarmac Works GLOBAL64",

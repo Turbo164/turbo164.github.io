@@ -48027,5 +48027,10 @@
     "checked": "2026-11-28T05:43:50.588236+07:00",
     "method": "product-json-v43",
     "status": "manual review required: no exact Shopify variant identifier"
+  },
+  "https://kaidohouse.com/products/kaido-gt-honda-nsx-tamiya-x-kaido-house-avante": {
+    "checked": "2026-11-28T11:47:40.610208+07:00",
+    "method": "product-json-v43",
+    "status": "manual review required: no exact Shopify variant identifier"
   }
 }
