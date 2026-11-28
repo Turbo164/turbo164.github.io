@@ -16583,5 +16583,41 @@
       }
     ],
     "status": "official discovery only; exact variant verification pending"
+  },
+  "tarmacworks|T64G-076-97MCR01": {
+    "checked": "2026-11-28T15:39:29.682665+07:00",
+    "hits": [
+      {
+        "available": false,
+        "body": "<p><span style=\"color: rgb(255, 128, 0);\"><strong>New Tooling</strong></span></p>\n<p><meta charset=\"utf-8\"><span style=\"color: rgb(255, 128, 0);\"><strong>Chase Version will replace normal version in random order</strong></span><br><br>1/64 scale die-cast</p>\n<p>Limited production run and will never be produced again</p>\n<p>Detailed rims &amp; rubber wheels<br></p>\n<p>Free rolling wheels<br></p>\n<p>Paper box<span>\u00a0packaging</span></p>\n<p>Fully licensed product</p>",
+        "compare_at_price_max": "0.00",
+        "compare_at_price_min": "0.00",
+        "handle": "tarmac-works-1-64-mitsubishi-lancer-evolution-iv-rallye-monte-carlo-1997-1-global64",
+        "id": 8989429203201,
+        "image": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64G-076-97MCR01_M01.jpg?v=1767586340",
+        "price": "14.90",
+        "price_max": "14.90",
+        "price_min": "14.90",
+        "tags": [
+          "1/64",
+          "GLOBAL64",
+          "New Release",
+          "Special Editions"
+        ],
+        "title": "1/64 Mitsubishi Lancer Evolution IV Rallye Monte-Carlo 1997 #1 - Tarmac Works GLOBAL64",
+        "type": "1/64 Diecast",
+        "url": "/products/tarmac-works-1-64-mitsubishi-lancer-evolution-iv-rallye-monte-carlo-1997-1-global64?_pos=1&_psq=T64G-076-97MCR01&_psid=f3a3dadd7&_ss=e",
+        "variants": [],
+        "vendor": "Tarmac Works",
+        "featured_image": {
+          "alt": "1/64 Mitsubishi Lancer Evolution IV Rallye Monte-Carlo 1997 #1 - Tarmac Works GLOBAL64",
+          "aspect_ratio": 1.5,
+          "height": 3958,
+          "url": "https://cdn.shopify.com/s/files/1/0762/0201/files/T64G-076-97MCR01_M01.jpg?v=1767586340",
+          "width": 5937
+        }
+      }
+    ],
+    "status": "official discovery only; exact variant verification pending"
   }
 }

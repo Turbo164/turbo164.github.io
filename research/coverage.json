@@ -1,84 +1,38 @@
 {
-  "time": "2026-11-28T13:48:49.547506+07:00",
+  "time": "2026-11-28T15:39:29.682665+07:00",
   "pilot_only": false,
   "version": "6.3",
   "catalog_master_commit": "e9ec0980fec105212a8b0261f3a0c47f9d33c93b",
   "catalog_master_count": 521,
-  "official_exact_candidates": 195,
+  "official_exact_candidates": 196,
   "independent_exact_candidates": 0,
   "new_leads": 0,
   "historical_master_present": false,
   "cumulative_count": 6763,
   "review_candidates": 1214,
-  "elapsed_research_seconds": 2777,
-  "catalog_count": 521,
+  "elapsed_research_seconds": 2713,
+  "catalog_count": 522,
   "lead_count": 6763,
   "sources": [
     [
       "Ignition Model",
-      "repeated page; checking variants for changes",
-      1
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
-      "Ignition Model",
-      "page collected",
-      1,
-      250
-    ],
-    [
-      "Ignition Model",
-      "repeated page; checking variants for changes",
-      2
-    ],
-    [
-      "Ignition Model",
-      "page collected",
-      2,
-      250
-    ],
-    [
-      "Ignition Model",
-      "repeated page; checking variants for changes",
-      3
-    ],
-    [
-      "Ignition Model",
-      "page collected",
-      3,
-      250
-    ],
-    [
-      "Ignition Model",
-      "repeated page; checking variants for changes",
-      4
-    ],
-    [
-      "Ignition Model",
-      "page collected",
-      4,
-      201
+      "M2 Machines",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
       "Kaido House",
-      "repeated page; checking variants for changes",
-      1
-    ],
-    [
-      "Kaido House",
-      "page collected",
-      1,
-      82
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
       "Johnny Lightning",
-      "repeated page; checking variants for changes",
-      1
-    ],
-    [
-      "Johnny Lightning",
-      "page collected",
-      1,
-      159
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
       "Auto World",
@@ -92,81 +46,49 @@
       106
     ],
     [
-      "Tarmac Works",
-      "repeated page; checking variants for changes",
-      1
+      "Auto World",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
       "Tarmac Works",
-      "page collected",
-      1,
-      247
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
       "Hobby Japan",
-      "repeated page; checking variants for changes",
-      1
-    ],
-    [
-      "Hobby Japan",
-      "page collected",
-      1,
-      250
-    ],
-    [
-      "Hobby Japan",
-      "repeated page; checking variants for changes",
-      2
-    ],
-    [
-      "Hobby Japan",
-      "page collected",
-      2,
-      149
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
       "Johnny Lightning",
-      "repeated page; checking variants for changes",
-      1
-    ],
-    [
-      "Johnny Lightning",
-      "page collected",
-      1,
-      132
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
       "Auto World",
-      "repeated page; checking variants for changes",
-      1
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
-      "Auto World",
-      "page collected",
-      1,
-      101
-    ],
-    [
-      "MINI GT",
-      "repeated page; checking variants for changes",
-      1
+      "PGM",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
       "MINI GT",
-      "page collected",
-      1,
-      250
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
-      "MINI GT",
-      "repeated page; checking variants for changes",
-      2
+      "POP RACE",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
-      "MINI GT",
-      "page collected",
-      2,
-      62
+      "Kaido House",
+      "blocked",
+      "HTTP Error 429: Too Many Requests"
     ],
     [
       "MINI GT",
@@ -236,7 +158,7 @@
     [
       "wholesale",
       "new listing leads",
-      21,
+      31,
       0,
       "product links",
       46
@@ -244,7 +166,7 @@
     [
       "wholesale",
       "new listing leads",
-      22,
+      32,
       0,
       "product links",
       48
@@ -252,66 +174,66 @@
     [
       "wholesale",
       "new listing leads",
-      23,
+      33,
       0,
       "product links",
-      45
+      43
     ],
     [
       "wholesale",
       "new listing leads",
-      24,
+      34,
       0,
       "product links",
-      48
+      40
     ],
     [
       "wholesale",
       "new listing leads",
-      25,
+      35,
       0,
       "product links",
-      46
+      43
     ],
     [
       "wholesale",
       "new listing leads",
-      26,
+      36,
       0,
       "product links",
-      48
+      40
     ],
     [
       "wholesale",
       "new listing leads",
-      27,
+      37,
       0,
       "product links",
-      48
+      37
     ],
     [
       "wholesale",
       "new listing leads",
-      28,
+      38,
       0,
       "product links",
-      48
+      39
     ],
     [
       "wholesale",
       "new listing leads",
-      29,
+      39,
       0,
       "product links",
-      48
+      41
     ],
     [
       "wholesale",
       "new listing leads",
-      30,
+      40,
       0,
       "product links",
-      46
+      47
     ],
     [
       "hobbysearch",
@@ -321,49 +243,49 @@
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/o_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/s_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/o_guide.html",
+      "https://southtexasdiecast.com/hwguide/t_ccguide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/p_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/t_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/p_guide.html",
+      "https://southtexasdiecast.com/hwguide/treasurehuntset.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/q_guide.html",
+      "https://southtexasdiecast.com/hwguide/u_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/r_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/v_ccguide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/r_guide.html",
+      "https://southtexasdiecast.com/hwguide/v_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/s_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/w_ccguide.html",
       0
     ],
     [
@@ -379,79 +301,59 @@
       1852
     ],
     [
-      "Tarmac Works",
-      "verification blocked",
-      "HTTP Error 404: Not Found"
-    ],
-    [
-      "Tarmac Works",
-      "verification blocked",
-      "HTTP Error 404: Not Found"
-    ],
-    [
-      "Tarmac Works",
-      "verification blocked",
-      "HTTP Error 404: Not Found"
-    ],
-    [
-      "Tarmac Works",
-      "verification blocked",
-      "HTTP Error 404: Not Found"
-    ],
-    [
       "V4.1",
       "new page inspections",
-      4,
+      0,
       "pending accessible queue exhausted"
     ],
     [
       "V4.6",
       "product links inspected",
-      27530,
+      27786,
       "exact scale/SKU matches",
-      200
+      203
     ],
     [
       "V4.9",
       "cached product requests avoided",
       0,
       "unique cached endpoints",
-      1553
+      1584
     ],
     [
       "V4.5",
       "independent storefront searches",
-      321,
+      335,
       "wholesale SKU backlog",
       1783,
       "new search records inspected",
-      321
+      335
     ],
     [
       "V4.7",
       "manufacturer-matched review candidates",
-      66,
+      68,
       "excluded or duplicate",
       137
     ],
     [
       "V5.0",
       "official exact variant matches",
-      387,
+      389,
       "errors",
       2
     ],
     [
       "V4.8",
       "official-host candidates",
-      219,
+      220,
       "publication approved",
       0
     ],
     [
       "V5.2",
       "official detail evidence records",
-      249
+      250
     ],
     [
       "V6.1",
@@ -461,7 +363,7 @@
     [
       "V5.1",
       "unique official candidates for final review",
-      195,
+      196,
       "approved for publication",
       0
     ],
@@ -475,12 +377,12 @@
       0
     ]
   ],
-  "publication": "no eligible additions",
-  "run_id": "46118324977",
+  "publication": "verified readback",
+  "run_id": "46126821823",
   "run_attempt": "1",
   "commit": "e9ec0980fec105212a8b0261f3a0c47f9d33c93b",
-  "published": 0,
-  "eligible_verified": 0,
+  "published": 1,
+  "eligible_verified": 1,
   "research_status": "completed",
   "publication_step_outcome": "success"
 }
