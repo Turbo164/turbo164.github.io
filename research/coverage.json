@@ -1,5 +1,5 @@
 {
-  "time": "2026-11-28T19:41:09.518819+07:00",
+  "time": "2026-11-28T21:34:36.222072+07:00",
   "pilot_only": false,
   "version": "6.3",
   "catalog_master_commit": "ea1e52e3e0d437cebaae863676a2a35e5aebabff",
@@ -10,15 +10,10 @@
   "historical_master_present": false,
   "cumulative_count": 6763,
   "review_candidates": 1214,
-  "elapsed_research_seconds": 2732,
+  "elapsed_research_seconds": 2705,
   "catalog_count": 522,
   "lead_count": 6763,
   "sources": [
-    [
-      "M2 Machines",
-      "collection cooling down",
-      "https://www.modelcarshouston.com/collections/m2-machines"
-    ],
     [
       "Kaido House",
       "collection cooling down",
@@ -78,6 +73,11 @@
       "Ignition Model",
       "collection cooling down",
       "https://www.modelcarshouston.com/collections/ignition-model"
+    ],
+    [
+      "M2 Machines",
+      "collection cooling down",
+      "https://www.modelcarshouston.com/collections/m2-machines"
     ],
     [
       "MINI GT",
@@ -147,23 +147,7 @@
     [
       "wholesale",
       "new listing leads",
-      1,
-      0,
-      "product links",
-      45
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      2,
-      0,
-      "product links",
-      47
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      3,
+      11,
       0,
       "product links",
       48
@@ -171,23 +155,15 @@
     [
       "wholesale",
       "new listing leads",
-      4,
+      12,
       0,
       "product links",
-      41
+      42
     ],
     [
       "wholesale",
       "new listing leads",
-      5,
-      0,
-      "product links",
-      47
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      6,
+      13,
       0,
       "product links",
       48
@@ -195,7 +171,7 @@
     [
       "wholesale",
       "new listing leads",
-      7,
+      14,
       0,
       "product links",
       48
@@ -203,15 +179,15 @@
     [
       "wholesale",
       "new listing leads",
-      8,
+      15,
       0,
       "product links",
-      44
+      48
     ],
     [
       "wholesale",
       "new listing leads",
-      9,
+      16,
       0,
       "product links",
       46
@@ -219,10 +195,34 @@
     [
       "wholesale",
       "new listing leads",
-      10,
+      17,
       0,
       "product links",
       48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      18,
+      0,
+      "product links",
+      45
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      19,
+      0,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      20,
+      0,
+      "product links",
+      45
     ],
     [
       "hobbysearch",
@@ -232,49 +232,49 @@
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1960_1969_guide.html",
+      "https://southtexasdiecast.com/hwguide/1974guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1968guide.html",
+      "https://southtexasdiecast.com/hwguide/1975guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1969guide.html",
+      "https://southtexasdiecast.com/hwguide/1976guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1970_1979_guide.html",
+      "https://southtexasdiecast.com/hwguide/1977guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1970guide.html",
+      "https://southtexasdiecast.com/hwguide/1978guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1971guide.html",
+      "https://southtexasdiecast.com/hwguide/1979guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1972guide.html",
+      "https://southtexasdiecast.com/hwguide/1980_1989_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/1973guide.html",
+      "https://southtexasdiecast.com/hwguide/1980guide.html",
       0
     ],
     [
@@ -298,16 +298,16 @@
     [
       "V4.6",
       "product links inspected",
-      28538,
+      28856,
       "exact scale/SKU matches",
-      209
+      214
     ],
     [
       "V4.9",
       "cached product requests avoided",
       0,
       "unique cached endpoints",
-      1644
+      1690
     ],
     [
       "V4.5",
@@ -321,9 +321,9 @@
     [
       "V4.7",
       "manufacturer-matched review candidates",
-      72,
+      74,
       "excluded or duplicate",
-      142
+      143
     ],
     [
       "V5.0",
@@ -367,7 +367,7 @@
     ]
   ],
   "publication": "no eligible additions",
-  "run_id": "46145872268",
+  "run_id": "46155358674",
   "run_attempt": "1",
   "commit": "ea1e52e3e0d437cebaae863676a2a35e5aebabff",
   "published": 0,

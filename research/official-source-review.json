@@ -1488,6 +1488,47 @@
     ]
   },
   {
+    "manufacturer": "MINI GT",
+    "productCode": "MGT01207-L",
+    "name": "*PREORDER* MINIGT 1:64 Hyundai Concept N Vision 74 (VP2) \u2013 Silver \u2013 Korea Exclusive",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-minigt-1-64-hyundai-concept-n-vision-74-vp2-silver-korea-exclusive?variant=48042852253952",
+    "vendor": "MINI GT",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": false,
+    "release_hint": "preorder",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "official manufacturer product evidence missing",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
+    "manufacturer": "Tarmac Works",
+    "productCode": "T64G-069-RE",
+    "name": "Tarmac Works 1:64 Tarmac Works 1:64 Porsche 911 GT3 (Type 996) in Red",
+    "variant": "Default Title",
+    "sourceUrl": "https://www.modelcarshouston.com/products/preorder-tarmac-works-1-64-tarmac-works-1-64-porsche-911-gt3-type-996-in-red?variant=46761044017408",
+    "vendor": "Tarmac Works",
+    "releaseStatus": "unconfirmed",
+    "editionType": "unconfirmed",
+    "verification": "NEEDS VERIFICATION",
+    "photo": null,
+    "official_source_host": false,
+    "release_hint": "unconfirmed",
+    "edition_hint": "unconfirmed",
+    "review_flags": [
+      "official manufacturer product evidence missing",
+      "release status requires evidence",
+      "edition requires evidence",
+      "exact catalog variant and car make require final review"
+    ]
+  },
+  {
     "manufacturer": "Tarmac Works",
     "productCode": "T64G-088-BL",
     "name": "1/64 URAS Skyline ER34 Blue - Tarmac Works GLOBAL64",
