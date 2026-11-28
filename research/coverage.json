@@ -1,16 +1,16 @@
 {
-  "time": "2026-11-28T11:47:40.610208+07:00",
+  "time": "2026-11-28T13:48:49.547506+07:00",
   "pilot_only": false,
   "version": "6.3",
   "catalog_master_commit": "e9ec0980fec105212a8b0261f3a0c47f9d33c93b",
   "catalog_master_count": 521,
   "official_exact_candidates": 195,
   "independent_exact_candidates": 0,
-  "new_leads": 1,
+  "new_leads": 0,
   "historical_master_present": false,
   "cumulative_count": 6763,
   "review_candidates": 1214,
-  "elapsed_research_seconds": 2681,
+  "elapsed_research_seconds": 2777,
   "catalog_count": 521,
   "lead_count": 6763,
   "sources": [
@@ -57,6 +57,11 @@
       "page collected",
       4,
       201
+    ],
+    [
+      "Kaido House",
+      "repeated page; checking variants for changes",
+      1
     ],
     [
       "Kaido House",
@@ -206,7 +211,7 @@
     [
       "Kaido House",
       "archive links",
-      1
+      0
     ],
     [
       "Hot Wheels",
@@ -231,47 +236,7 @@
     [
       "wholesale",
       "new listing leads",
-      11,
-      0,
-      "product links",
-      48
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      12,
-      0,
-      "product links",
-      42
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      13,
-      0,
-      "product links",
-      48
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      14,
-      0,
-      "product links",
-      48
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      15,
-      0,
-      "product links",
-      48
-    ],
-    [
-      "wholesale",
-      "new listing leads",
-      16,
+      21,
       0,
       "product links",
       46
@@ -279,7 +244,7 @@
     [
       "wholesale",
       "new listing leads",
-      17,
+      22,
       0,
       "product links",
       48
@@ -287,7 +252,7 @@
     [
       "wholesale",
       "new listing leads",
-      18,
+      23,
       0,
       "product links",
       45
@@ -295,7 +260,7 @@
     [
       "wholesale",
       "new listing leads",
-      19,
+      24,
       0,
       "product links",
       48
@@ -303,10 +268,50 @@
     [
       "wholesale",
       "new listing leads",
-      20,
+      25,
       0,
       "product links",
-      45
+      46
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      26,
+      0,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      27,
+      0,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      28,
+      0,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      29,
+      0,
+      "product links",
+      48
+    ],
+    [
+      "wholesale",
+      "new listing leads",
+      30,
+      0,
+      "product links",
+      46
     ],
     [
       "hobbysearch",
@@ -316,49 +321,49 @@
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/l_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/o_ccguide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/l_guide.html",
+      "https://southtexasdiecast.com/hwguide/o_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/m_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/p_ccguide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/m_guide.html",
+      "https://southtexasdiecast.com/hwguide/p_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/n_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/q_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/n_guide.html",
+      "https://southtexasdiecast.com/hwguide/r_ccguide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/number_ccguide.html",
+      "https://southtexasdiecast.com/hwguide/r_guide.html",
       0
     ],
     [
       "Hot Wheels",
       "historical archive leads",
-      "https://southtexasdiecast.com/hwguide/number_guide.html",
+      "https://southtexasdiecast.com/hwguide/s_ccguide.html",
       0
     ],
     [
@@ -374,38 +379,58 @@
       1852
     ],
     [
+      "Tarmac Works",
+      "verification blocked",
+      "HTTP Error 404: Not Found"
+    ],
+    [
+      "Tarmac Works",
+      "verification blocked",
+      "HTTP Error 404: Not Found"
+    ],
+    [
+      "Tarmac Works",
+      "verification blocked",
+      "HTTP Error 404: Not Found"
+    ],
+    [
+      "Tarmac Works",
+      "verification blocked",
+      "HTTP Error 404: Not Found"
+    ],
+    [
       "V4.1",
       "new page inspections",
-      1,
+      4,
       "pending accessible queue exhausted"
     ],
     [
       "V4.6",
       "product links inspected",
-      27385,
+      27530,
       "exact scale/SKU matches",
-      197
+      200
     ],
     [
       "V4.9",
       "cached product requests avoided",
       0,
       "unique cached endpoints",
-      1539
+      1553
     ],
     [
       "V4.5",
       "independent storefront searches",
-      326,
+      321,
       "wholesale SKU backlog",
       1783,
       "new search records inspected",
-      326
+      321
     ],
     [
       "V4.7",
       "manufacturer-matched review candidates",
-      63,
+      66,
       "excluded or duplicate",
       137
     ],
@@ -451,7 +476,7 @@
     ]
   ],
   "publication": "no eligible additions",
-  "run_id": "46109161774",
+  "run_id": "46118324977",
   "run_attempt": "1",
   "commit": "e9ec0980fec105212a8b0261f3a0c47f9d33c93b",
   "published": 0,
